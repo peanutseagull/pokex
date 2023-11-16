@@ -107,22 +107,32 @@ VanivilleTown_TeacherStopsYouScene4:
 	end
 
 VanivilleTownTeacherScript:
-	jumptextfaceplayer Text_ElmDiscoveredNewMon
-;	faceplayer
-;	opentext
+	faceplayer
+	opentext
 ;	checkevent EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST
 ;	iftrue .CallMom
 ;	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
 ;	iftrue .TellMomYoureLeaving
-;	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
-;	iftrue .MonIsAdorable
-;	writetext Text_GearIsImpressive
-;	waitbutton
-;	closetext
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iftrue .MonIsAdorable
+	writetext Text_No
+	waitbutton
+	closetext
 	end
 	
+.MonIsAdorable:
+	writetext Text_YourMonIsAdorable
+	waitbutton
+	closetext
+	end
 
-Text_ElmDiscoveredNewMon:
+Text_YourMonIsAdorable:
+	text "Oh! Your #MON"
+	line "is adorable!"
+	cont "I wish I had one!"
+	done
+	
+Text_No:
 	text "No."
 	done
 	
