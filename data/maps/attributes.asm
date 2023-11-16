@@ -101,14 +101,14 @@ ENDM
 ;	connection west, Route29, ROUTE_29, 0
 ;	connection east, Route27, ROUTE_27, 0
 
-	map_attributes CherrygroveCity, CHERRYGROVE_CITY, $35, NORTH | EAST
-	connection north, Route30, ROUTE_30, 5
+;	map_attributes CherrygroveCity, CHERRYGROVE_CITY, $35, NORTH | EAST
+;	connection north, Route30, ROUTE_30, 5
 ;	connection east, Route29, ROUTE_29, 0
 
 	map_attributes VioletCity, VIOLET_CITY, $05, SOUTH | WEST | EAST
 	connection south, Route32, ROUTE_32, 0
 	connection west, Route36, ROUTE_36, 0
-	connection east, Route31, ROUTE_31, 9
+;	connection east, Route31, ROUTE_31, 9
 
 	map_attributes AzaleaTown, AZALEA_TOWN, $05, WEST | EAST
 	connection west, Route34, ROUTE_34, -18
@@ -160,13 +160,13 @@ ENDM
 ;	connection west, CherrygroveCity, CHERRYGROVE_CITY, 0
 ;	connection east, NewBarkTown, NEW_BARK_TOWN, 0
 
-	map_attributes Route30, ROUTE_30, $05, NORTH | SOUTH
-	connection north, Route31, ROUTE_31, -10
-	connection south, CherrygroveCity, CHERRYGROVE_CITY, -5
+;	map_attributes Route30, ROUTE_30, $05, NORTH | SOUTH
+;	connection north, Route31, ROUTE_31, -10
+;	connection south, CherrygroveCity, CHERRYGROVE_CITY, -5
 
-	map_attributes Route31, ROUTE_31, $05, SOUTH | WEST
-	connection south, Route30, ROUTE_30, 10
-	connection west, VioletCity, VIOLET_CITY, -9
+;	map_attributes Route31, ROUTE_31, $05, SOUTH | WEST
+;	connection south, Route30, ROUTE_30, 10
+;	connection west, VioletCity, VIOLET_CITY, -9
 
 	map_attributes Route32, ROUTE_32, $05, NORTH | SOUTH
 	connection north, VioletCity, VIOLET_CITY, 0
@@ -233,10 +233,6 @@ ENDM
 	connection south, Route2, ROUTE_2, 5
 	connection east, Route3, ROUTE_3, 5
 
-	map_attributes Route2, ROUTE_2, $0f, NORTH | SOUTH
-	connection north, PewterCity, PEWTER_CITY, -5
-	connection south, ViridianCity, VIRIDIAN_CITY, -5
-
 	map_attributes ViridianCity, VIRIDIAN_CITY, $0f, NORTH | SOUTH | WEST
 	connection north, Route2, ROUTE_2, 5
 ;	connection south, Route1, ROUTE_1, 10
@@ -248,8 +244,16 @@ ENDM
 	map_attributes VanivilleTown, VANIVILLE_TOWN, $05, NORTH
 	connection north, Route1, ROUTE_1, 2
 
-	map_attributes Route1, ROUTE_1, $05, SOUTH
+	map_attributes Route1, ROUTE_1, $05, NORTH | SOUTH
+	connection north, AquacordeTown, AQUACORDE_TOWN, -1
 	connection south, VanivilleTown, VANIVILLE_TOWN, -2
+	
+	map_attributes AquacordeTown, AQUACORDE_TOWN, $05, NORTH | SOUTH
+	connection north, Route2, ROUTE_2, 0
+	connection south, Route1, ROUTE_1, 1
+	
+	map_attributes Route2, ROUTE_2, $05, SOUTH
+	connection south, AquacordeTown, AQUACORDE_TOWN, 0
 
 	map_attributes PalletTown, PALLET_TOWN, $0f, NORTH | SOUTH
 ;	connection north, Route1, ROUTE_1, 0
@@ -689,13 +693,15 @@ ENDM
 	map_attributes Route5UndergroundPathEntrance, ROUTE_5_UNDERGROUND_PATH_ENTRANCE, $00, 0
 	map_attributes Route5SaffronGate, ROUTE_5_SAFFRON_GATE, $00, 0
 	map_attributes Route5CleanseTagHouse, ROUTE_5_CLEANSE_TAG_HOUSE, $00, 0
-	map_attributes CherrygroveMart, CHERRYGROVE_MART, $00, 0
-	map_attributes CherrygrovePokecenter1F, CHERRYGROVE_POKECENTER_1F, $00, 0
-	map_attributes CherrygroveGymSpeechHouse, CHERRYGROVE_GYM_SPEECH_HOUSE, $00, 0
-	map_attributes GuideGentsHouse, GUIDE_GENTS_HOUSE, $00, 0
-	map_attributes CherrygroveEvolutionSpeechHouse, CHERRYGROVE_EVOLUTION_SPEECH_HOUSE, $00, 0
-	map_attributes Route30BerryHouse, ROUTE_30_BERRY_HOUSE, $00, 0
-	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
-	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
+;	map_attributes CherrygroveMart, CHERRYGROVE_MART, $00, 0
+;	map_attributes CherrygrovePokecenter1F, CHERRYGROVE_POKECENTER_1F, $00, 0
+;	map_attributes CherrygroveGymSpeechHouse, CHERRYGROVE_GYM_SPEECH_HOUSE, $00, 0
+;	map_attributes GuideGentsHouse, GUIDE_GENTS_HOUSE, $00, 0
+;	map_attributes CherrygroveEvolutionSpeechHouse, CHERRYGROVE_EVOLUTION_SPEECH_HOUSE, $00, 0
+;	map_attributes Route30BerryHouse, ROUTE_30_BERRY_HOUSE, $00, 0
+;	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
+;	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
 	map_attributes SerenasHouse1F, SERENAS_HOUSE_1F, $00, 0
 	map_attributes SerenasHouse2F, SERENAS_HOUSE_2F, $00, 0
+	map_attributes AquacordePokecenter1F, AQUACORDE_POKECENTER_1F, $00, 0
+	map_attributes AquacordeMart, AQUACORDE_MART, $00, 0

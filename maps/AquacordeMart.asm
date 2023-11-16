@@ -3,21 +3,14 @@
 	const CHERRYGROVEMART_COOLTRAINER_M
 	const CHERRYGROVEMART_YOUNGSTER
 
-CherrygroveMart_MapScripts:
+AquacordeMart_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
 CherrygroveMartClerkScript:
 	opentext
-	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
-	iftrue .PokeBallsInStock
-	pokemart MARTTYPE_STANDARD, MART_CHERRYGROVE
-	closetext
-	end
-
-.PokeBallsInStock:
-	pokemart MARTTYPE_STANDARD, MART_CHERRYGROVE_DEX
+	pokemart MARTTYPE_STANDARD, MART_AQUACORDE
 	closetext
 	end
 
@@ -69,12 +62,12 @@ CherrygroveMartYoungsterText:
 	line "ANTIDOTE with you."
 	done
 
-CherrygroveMart_MapEvents:
+AquacordeMart_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  2,  7, CHERRYGROVE_CITY, 1
-	warp_event  3,  7, CHERRYGROVE_CITY, 1
+	warp_event  2,  7, AQUACORDE_TOWN, 1
+	warp_event  3,  7, AQUACORDE_TOWN, 1
 
 	def_coord_events
 

@@ -28,7 +28,7 @@ MomPhoneLandmark:
 MomPhoneInTown:
 	readvar VAR_MAPGROUP
 	ifequal GROUP_VANIVILLE_TOWN, .newbark
-	ifequal GROUP_CHERRYGROVE_CITY, .cherrygrove
+	ifequal GROUP_AQUACORDE_TOWN, .cherrygrove
 	ifequal GROUP_VIOLET_CITY, .violet
 	ifequal GROUP_AZALEA_TOWN, .azalea
 	ifequal GROUP_GOLDENROD_CITY, .goldenrod

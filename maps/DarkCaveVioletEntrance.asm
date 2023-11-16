@@ -35,7 +35,7 @@ DarkCaveVioletEntrance_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  3, 15, ROUTE_31, 3
+;	warp_event  3, 15, ROUTE_31, 3
 	warp_event 17,  1, DARK_CAVE_BLACKTHORN_ENTRANCE, 2
 	warp_event 35, 33, ROUTE_46, 3
 

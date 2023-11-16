@@ -4,42 +4,43 @@
 ; Johto landmarks
 ;	const LANDMARK_NEW_BARK_TOWN
 	const LANDMARK_VANIVILLE_TOWN	 ; 01
-;	const LANDMARK_ROUTE_29          ; 02
-	const LANDMARK_CHERRYGROVE_CITY  ; 03
-	const LANDMARK_ROUTE_30          ; 04
-	const LANDMARK_ROUTE_31          ; 05
-	const LANDMARK_VIOLET_CITY       ; 06
-	const LANDMARK_SPROUT_TOWER      ; 07
-	const LANDMARK_ROUTE_32          ; 08
-	const LANDMARK_RUINS_OF_ALPH     ; 09
-	const LANDMARK_UNION_CAVE        ; 0a
-	const LANDMARK_ROUTE_33          ; 0b
-	const LANDMARK_AZALEA_TOWN       ; 0c
-	const LANDMARK_SLOWPOKE_WELL     ; 0d
-	const LANDMARK_ILEX_FOREST       ; 0e
-	const LANDMARK_ROUTE_34          ; 0f
-	const LANDMARK_GOLDENROD_CITY    ; 10
-	const LANDMARK_RADIO_TOWER       ; 11
-	const LANDMARK_ROUTE_35          ; 12
-	const LANDMARK_NATIONAL_PARK     ; 13
-	const LANDMARK_ROUTE_36          ; 14
-	const LANDMARK_ROUTE_37          ; 15
-	const LANDMARK_ECRUTEAK_CITY     ; 16
-	const LANDMARK_TIN_TOWER         ; 17
-	const LANDMARK_BURNED_TOWER      ; 18
-	const LANDMARK_ROUTE_38          ; 19
-	const LANDMARK_ROUTE_39          ; 1a
-	const LANDMARK_OLIVINE_CITY      ; 1b
-	const LANDMARK_LIGHTHOUSE        ; 1c
-	const LANDMARK_BATTLE_TOWER      ; 1d
-	const LANDMARK_ROUTE_40          ; 1e
-	const LANDMARK_WHIRL_ISLANDS     ; 1f
-	const LANDMARK_ROUTE_41          ; 20
-	const LANDMARK_CIANWOOD_CITY     ; 21
-	const LANDMARK_ROUTE_42          ; 22
-	const LANDMARK_MT_MORTAR         ; 23
-	const LANDMARK_MAHOGANY_TOWN     ; 24
-	const LANDMARK_ROUTE_43          ; 25
+;	const LANDMARK_ROUTE_29          
+;	const LANDMARK_CHERRYGROVE_CITY  
+;	const LANDMARK_ROUTE_30          
+;	const LANDMARK_ROUTE_31         
+	const LANDMARK_AQUACORDE_TOWN	 ; 02
+	const LANDMARK_VIOLET_CITY       ; 03
+	const LANDMARK_SPROUT_TOWER      ; 04
+	const LANDMARK_ROUTE_32          ; 05
+	const LANDMARK_RUINS_OF_ALPH     ; 06
+	const LANDMARK_UNION_CAVE        ; 07
+	const LANDMARK_ROUTE_33          ; 08
+	const LANDMARK_AZALEA_TOWN       ; 09
+	const LANDMARK_SLOWPOKE_WELL     ; 0a
+	const LANDMARK_ILEX_FOREST       ; 0b
+	const LANDMARK_ROUTE_34          ; 0c
+	const LANDMARK_GOLDENROD_CITY    ; 0d
+	const LANDMARK_RADIO_TOWER       ; 0e
+	const LANDMARK_ROUTE_35          ; 0f
+	const LANDMARK_NATIONAL_PARK     ; 10
+	const LANDMARK_ROUTE_36          ; 11
+	const LANDMARK_ROUTE_37          ; 12
+	const LANDMARK_ECRUTEAK_CITY     ; 13
+	const LANDMARK_TIN_TOWER         ; 14
+	const LANDMARK_BURNED_TOWER      ; 15
+	const LANDMARK_ROUTE_38          ; 16
+	const LANDMARK_ROUTE_39          ; 17
+	const LANDMARK_OLIVINE_CITY      ; 18
+	const LANDMARK_LIGHTHOUSE        ; 19
+	const LANDMARK_BATTLE_TOWER      ; 1a
+	const LANDMARK_ROUTE_40          ; 1b
+	const LANDMARK_WHIRL_ISLANDS     ; 1c
+	const LANDMARK_ROUTE_41          ; 1d
+	const LANDMARK_CIANWOOD_CITY     ; 1e
+	const LANDMARK_ROUTE_42          ; 1f
+	const LANDMARK_MT_MORTAR         ; 20
+	const LANDMARK_MAHOGANY_TOWN     ; 21
+	const LANDMARK_ROUTE_43          ; 22
 	const LANDMARK_LAKE_OF_RAGE      ; 26
 	const LANDMARK_ROUTE_44          ; 27
 	const LANDMARK_ICE_PATH          ; 28
