@@ -4,7 +4,7 @@
 	const CHERRYGROVEPOKECENTER1F_GENTLEMAN
 	const CHERRYGROVEPOKECENTER1F_TEACHER
 
-CherrygrovePokecenter1F_MapScripts:
+AquacordePokecenter1F_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
@@ -66,12 +66,12 @@ CherrygrovePokecenter1FTeacherText_CommCenterOpen:
 	line "there already!"
 	done
 
-CherrygrovePokecenter1F_MapEvents:
+AquacordePokecenter1F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  3,  7, CHERRYGROVE_CITY, 2
-	warp_event  4,  7, CHERRYGROVE_CITY, 2
+	warp_event  3,  7, AQUACORDE_TOWN, 2
+	warp_event  4,  7, AQUACORDE_TOWN, 2
 	warp_event  0,  7, POKECENTER_2F, 1
 
 	def_coord_events

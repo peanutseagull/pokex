@@ -26,7 +26,8 @@ SpawnPoints:
 
 ;	spawn NEW_BARK_TOWN,              13,  6
 	spawn VANIVILLE_TOWN,			  18,  5
-	spawn CHERRYGROVE_CITY,           29,  4
+;	spawn CHERRYGROVE_CITY,           29,  4
+	spawn AQUACORDE_TOWN,			  15, 29
 	spawn VIOLET_CITY,                31, 26
 	spawn ROUTE_32,                   11, 74
 	spawn AZALEA_TOWN,                15, 10

@@ -3114,13 +3114,13 @@ wBrunosRoomSceneID::                              db
 wKarensRoomSceneID::                              db
 wLancesRoomSceneID::                              db
 wHallOfFameSceneID::                              db
-wRoute27SceneID::                                 db
-wNewBarkTownSceneID::                             db
+;Route27SceneID::                                 db
+;wNewBarkTownSceneID::                             db
 wElmsLabSceneID::                                 db
 wPlayersHouse1FSceneID::                          db
-wRoute29SceneID::                                 db
-wCherrygroveCitySceneID::                         db
-wMrPokemonsHouseSceneID::                         db
+;wRoute29SceneID::                                 db
+;wCherrygroveCitySceneID::                         db
+;wMrPokemonsHouseSceneID::                         db
 wRoute32SceneID::                                 db
 wRoute35NationalParkGateSceneID::                 db
 wRoute36SceneID::                                 db
@@ -3174,8 +3174,10 @@ wFastShipB1FSceneID::                             db
 wMountMoonSquareSceneID::                         db
 wMobileTradeRoomSceneID::                         db
 wMobileBattleRoomSceneID::                        db
+wVanivilleTownSceneID::						      db
+wSerenasHouseSceneID::							  db
 
-	ds 49
+	ds 50
 
 ; fight counts
 wJackFightCount::    db

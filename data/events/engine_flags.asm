@@ -89,7 +89,8 @@ EngineFlags:
 	engine_flag wVisitedSpawns, SPAWN_INDIGO
 ;	engine_flag wVisitedSpawns, SPAWN_NEW_BARK
 	engine_flag wVisitedSpawns, SPAWN_VANIVILLE
-	engine_flag wVisitedSpawns, SPAWN_CHERRYGROVE
+;	engine_flag wVisitedSpawns, SPAWN_CHERRYGROVE
+	engine_flag wVisitedSpawns, SPAWN_AQUACORDE
 	engine_flag wVisitedSpawns, SPAWN_VIOLET
 	engine_flag wVisitedSpawns, SPAWN_AZALEA
 	engine_flag wVisitedSpawns, SPAWN_CIANWOOD
