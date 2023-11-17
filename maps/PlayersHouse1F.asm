@@ -34,7 +34,7 @@ MeetMomRightScript:
 	applymovement PLAYERSHOUSE1F_MOM1, MomWalksToPlayerMovement
 MeetMomScript:
 	opentext
-	writetext ElmsLookingForYouText
+	writetext GoodMorningText
 	promptbutton
 	getstring STRING_BUFFER_4, PokegearName
 	scall PlayersHouse1FReceiveItemStd
@@ -124,7 +124,7 @@ MomScript:
 	iftrue .GaveMysteryEgg
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .GotAPokemon
-	writetext HurryUpElmIsWaitingText
+	writetext HurryUpText
 	waitbutton
 	closetext
 	end
@@ -210,16 +210,19 @@ MomWalksBackMovement:
 	slow_step LEFT
 	step_end
 
-ElmsLookingForYouText:
-	text "Oh, <PLAYER>…! Our"
-	line "neighbor, PROF."
+GoodMorningText:
+	text "Morning, <PLAYER>!"
 
-	para "ELM, was looking"
-	line "for you."
+	para "You sure slept"
+	line "well! All rested"
+	cont "up from the move?"
 
-	para "He said he wanted"
-	line "you to do some-"
-	cont "thing for him."
+	para "It's about time"
+	line "you got going!"
+	
+	para "Why don't you go"
+	line "say hi to the"
+	cont "neighbours?"
 
 	para "Oh! I almost for-"
 	line "got! Your #MON"
@@ -290,11 +293,9 @@ InstructionsNextText:
 	line "convenient?"
 	done
 
-HurryUpElmIsWaitingText:
-	text "PROF.ELM is wait-"
-	line "ing for you."
-
-	para "Hurry up, baby!"
+HurryUpText:
+	text "Hurry up! And don't"
+	line "wake up Rhyhorn!"
 	done
 
 SoWhatWasProfElmsErrandText:

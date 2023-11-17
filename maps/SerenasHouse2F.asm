@@ -33,7 +33,9 @@ SerenasHouseSerena:
 	closetext
 	applymovement SERENASHOUSE_COOLTRAINER_F, SerenasHouse_SerenaLeaves
 	disappear SERENASHOUSE_COOLTRAINER_F
+	clearevent EVENT_VANIVILLE_TOWN_RIVALS
 	setscene SCENE_SERENASHOUSE2F_NOOP
+	setmapscene VANIVILLE_TOWN, SCENE_VANIVILLETOWN_RIVALS
 	playmapmusic
 	end
 
@@ -72,20 +74,40 @@ SerenasHouse_SerenaLeaves:
 
 Text_SerenasHouseSerena1:
 	text "Oh, <PLAY_G>!"
+	line "Come in!"
 	
 	para "It's so nice"
-	line "to meet you!"
+	line "to finally meet"
+	cont "you!"
 	
 	para "Come over here!"
 	done
 
 Text_SerenasHouseSerena2:
-	text "Are you excited"
+	text "Welcome to"
+	line "VANIVILLE TOWN!"
+	
+	para "My name's Serena!"
+	
+	para "Are you excited"
 	line "to start our"
 	cont "#MON journeys?"
 	
-	para "I'll race you"
-	line "outside!"
+	para "My friend Shauna"
+	line "told me that"
+	cont "5 of us will"
+	
+	para "be starting our"
+	line "journeys together!"
+	
+	para "How exciting!"
+	
+	para "Surely the others"
+	line "must be here by"
+	cont "now..."
+	
+	para "Come on! I'll"
+	line "race you outside!"
 	done
 	
 SerenasHouse2F_MapEvents:
