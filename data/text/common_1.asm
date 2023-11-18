@@ -1535,12 +1535,6 @@ _NPCTradeAfterText4::
 	done
 
 _MomLeavingText1::
-	text "Wow, that's a cute"
-	line "#MON."
-
-	para "Where did you get"
-	line "it?"
-
 	para "…"
 
 	para "So, you're leaving"
@@ -1576,7 +1570,9 @@ _MomLeavingText3::
 	line "friends. You need"
 	cont "to work as a team."
 
-	para "Now, go on!"
+	para "Go on now, I'm"
+	line "just a phone call"
+	cont "away!"
 	done
 
 _MomIsThisAboutYourMoneyText::

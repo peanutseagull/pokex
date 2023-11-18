@@ -31,8 +31,8 @@ SerenasHouse1F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  6,  7, VANIVILLE_TOWN, 3
-	warp_event  7,  7, VANIVILLE_TOWN, 3
+	warp_event  6,  7, VANIVILLE_TOWN, 2
+	warp_event  7,  7, VANIVILLE_TOWN, 2
 	warp_event  9,  0, SERENAS_HOUSE_2F, 1
 
 	def_coord_events

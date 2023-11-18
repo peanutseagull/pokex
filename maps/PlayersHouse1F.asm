@@ -118,23 +118,38 @@ MomScript:
 	opentext
 	checkevent EVENT_FIRST_TIME_BANKING_WITH_MOM
 	iftrue .FirstTimeBanking
-	checkevent EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST
-	iftrue .BankOfMom
-	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
-	iftrue .GaveMysteryEgg
+	; checkevent EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST
+	; iftrue .BankOfMom
+	; checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
+	; iftrue .GaveMysteryEgg
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .GotAPokemon
-	writetext HurryUpText
+	writetext ImBehindYouText
 	waitbutton
 	closetext
 	end
 
 .GotAPokemon:
-	writetext SoWhatWasProfElmsErrandText
+	writetext GotAPokemonText
+	promptbutton
+	getstring STRING_BUFFER_4, .mapcardname
+	scall .JumpstdReceiveItem
+	setflag ENGINE_MAP_CARD
+	writetext GotMapCardText
+	promptbutton
+	writetext MomPokegearMapText
 	waitbutton
 	closetext
+	setevent EVENT_FIRST_TIME_BANKING_WITH_MOM
+	end
+	
+.JumpstdReceiveItem:
+	jumpstd ReceiveItemScript
 	end
 
+.mapcardname
+	db "MAP CARD@"
+	
 .FirstTimeBanking:
 	writetext ImBehindYouText
 	waitbutton
@@ -293,25 +308,52 @@ InstructionsNextText:
 	line "convenient?"
 	done
 
-HurryUpText:
-	text "Hurry up! And don't"
-	line "wake up Rhyhorn!"
+	para "Now get going! And"
+	line "don't wake up"
+	cont "Rhyhorn!"
 	done
 
-SoWhatWasProfElmsErrandText:
-	text "So, what was PROF."
-	line "ELM's errand?"
+GotAPokemonText:
+	text "So, what did you"
+	line "guys get up to?"
 
 	para "…"
 
-	para "That does sound"
-	line "challenging."
+	para "Is that a"
+	line "#ball?"
 
-	para "But, you should be"
-	line "proud that people"
-	cont "rely on you."
+	para "You got your very"
+	line "own #MON? Lucky"
+	cont "you!"
+
+	para "How about that?"
+	line "You're a #MON"
+	cont "trainer now!"
+	
+	para "If you're going"
+	line "on a #MON"
+	cont "journey,"
+	
+	para "you'll need this."
+	
+	para "Go on now, I'm"
+	line "just a phone call"
+	cont "away!"
+	done
+	
+GotMapCardText:
+	text "<PLAYER>'s #GEAR"
+	line "now has a MAP!"
 	done
 
+MomPokegearMapText:
+	text "It's a map of"
+	line "the Kalos region!"
+	
+	para "It'll definitely"
+	line "come in handy!"
+	done
+	
 ImBehindYouText:
 	text "<PLAYER>, do it!"
 
@@ -342,14 +384,11 @@ NeighborText:
 	text "<PLAY_G>, have you"
 	line "heard?"
 
-	para "My daughter is"
-	line "adamant about"
+	para "My son wants to"
+	line "become a #MON"
+	cont "trainer!"
 
-	para "becoming PROF."
-	line "ELM's assistant."
-
-	para "She really loves"
-	line "#MON!"
+	para "Just like you!"
 	done
 
 PlayersHouse1FStoveText:
@@ -388,8 +427,8 @@ PlayersHouse1F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  6,  7, VANIVILLE_TOWN, 2
-	warp_event  7,  7, VANIVILLE_TOWN, 2
+	warp_event  6,  7, VANIVILLE_TOWN, 1
+	warp_event  7,  7, VANIVILLE_TOWN, 1
 	warp_event  9,  0, PLAYERS_HOUSE_2F, 1
 
 	def_coord_events

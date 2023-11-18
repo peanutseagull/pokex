@@ -86,4 +86,5 @@ MapScenes::
 	scene_var MOBILE_BATTLE_ROOM,                          wMobileBattleRoomSceneID
 	scene_var VANIVILLE_TOWN,							   wVanivilleTownSceneID
 	scene_var SERENAS_HOUSE_2F,							   wSerenasHouseSceneID
+	scene_var ROUTE_1,									   wRoute1SceneID
 	db -1 ; end

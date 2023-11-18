@@ -668,7 +668,7 @@ ENDM
 	map_attributes ViridianMart, VIRIDIAN_MART, $00, 0
 	map_attributes ViridianPokecenter1F, VIRIDIAN_POKECENTER_1F, $00, 0
 	map_attributes ViridianPokecenter2FBeta, VIRIDIAN_POKECENTER_2F_BETA, $00, 0
-	map_attributes Route2NuggetHouse, ROUTE_2_NUGGET_HOUSE, $00, 0
+;	map_attributes Route2NuggetHouse, ROUTE_2_NUGGET_HOUSE, $00, 0
 	map_attributes Route2Gate, ROUTE_2_GATE, $00, 0
 	map_attributes VictoryRoadGate, VICTORY_ROAD_GATE, $00, 0
 	map_attributes ElmsLab, ELMS_LAB, $00, 0
@@ -703,5 +703,6 @@ ENDM
 ;	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
 	map_attributes SerenasHouse1F, SERENAS_HOUSE_1F, $00, 0
 	map_attributes SerenasHouse2F, SERENAS_HOUSE_2F, $00, 0
+	map_attributes NeighboursHouse, NEIGHBOURS_HOUSE, $00, 0
 	map_attributes AquacordePokecenter1F, AQUACORDE_POKECENTER_1F, $00, 0
 	map_attributes AquacordeMart, AQUACORDE_MART, $00, 0

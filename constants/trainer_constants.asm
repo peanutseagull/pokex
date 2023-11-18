@@ -70,7 +70,7 @@ DEF KRIS EQU __trainer_class__
 	const RIVAL1_5_TOTODILE
 
 	trainerclass POKEMON_PROF ; a
-
+	
 	trainerclass WILL ; b
 	const WILL1
 
@@ -702,5 +702,15 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass MYSTICALMAN ; 43
 	const EUSINE
+	
+	trainerclass SHAUNA ; 44
+	const SHAUNA_1_CHIKORITA
+	const SHAUNA_1_CYNDAQUIL
+	const SHAUNA_1_TOTODILE
+	
+	trainerclass SERENA ; 45
+	const SERENA_1_CHIKORITA
+	const SERENA_1_CYNDAQUIL
+	const SERENA_1_TOTODILE
 
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

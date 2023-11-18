@@ -36,7 +36,7 @@ SerenasHouseSerena:
 	clearevent EVENT_VANIVILLE_TOWN_RIVALS
 	setscene SCENE_SERENASHOUSE2F_NOOP
 	setmapscene VANIVILLE_TOWN, SCENE_VANIVILLETOWN_RIVALS
-	playmapmusic
+	special RestartMapMusic
 	end
 
 SerenasHouse_SerenaGetsYou:

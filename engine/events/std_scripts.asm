@@ -479,6 +479,7 @@ BugContestResults_CopyContestantsToResults:
 
 InitializeEventsScript:
 	setevent EVENT_VANIVILLE_TOWN_RIVALS
+	setevent EVENT_ROUTE_1_SHAUNA
 	setevent EVENT_EARLS_ACADEMY_EARL
 	setevent EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	setevent EVENT_GOLDENROD_CITY_ROCKET_TAKEOVER

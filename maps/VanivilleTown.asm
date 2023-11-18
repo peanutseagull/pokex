@@ -135,10 +135,6 @@ VanivilleTownTeacherScript:
 	end
 
 VanivilleTown_RivalsScene:
-	moveobject VANIVILLETOWN_COOLTRAINER_F, 23, 6
-	moveobject VANIVILLETOWN_KAREN, 19, 12
-	moveobject VANIVILLETOWN_FISHER, 16, 11
-	moveobject VANIVILLETOWN_SUPER_NERD, 16, 12
 	turnobject PLAYER, LEFT
 	showemote EMOTE_SHOCK, PLAYER, 15
 	opentext
@@ -333,13 +329,23 @@ VanivilleTown_RivalsScene:
 	closetext
 	follow VANIVILLETOWN_FISHER, VANIVILLETOWN_SUPER_NERD
 	applymovement VANIVILLETOWN_FISHER, VanivilleTown_TiernoLeaves
+	setmapscene ROUTE_1, SCENE_ROUTE1_SHAUNA
 	disappear VANIVILLETOWN_KAREN
 	disappear VANIVILLETOWN_COOLTRAINER_F
 	disappear VANIVILLETOWN_FISHER
 	disappear VANIVILLETOWN_SUPER_NERD 
 	setscene SCENE_VANIVILLETOWN_NOOP
 	end
+	
+VanivilleTownSign:
+	jumptext VanivilleTownSignText
 
+VanivilleTownPlayersHouseSign:
+	jumptext VanivilleTownPlayersHouseSignText
+
+VanivilleTownSerenasHouseSign:
+	jumptext VanivilleTownSerenasHouseSignText
+	
 Text_LetsGoTrevor:
 	text "TIERNO: Let's go "
 	line "catch some"
@@ -634,7 +640,6 @@ VanivilleTown_GoMeetOthers:
 	step LEFT
 	step LEFT
 	step LEFT
-	step LEFT
 	step_end
 
 VanivilleTown_ShaunaMovement1:
@@ -719,26 +724,80 @@ Text_ItsDangerousToGoAlone:
 	line "to the next town."
 	done
 	
+VanivilleTownSignText:
+	text "VANIVILLE TOWN"
+
+	para "A town whose"
+	line "flower is about"
+	cont "to bloom."
+	done
+
+VanivilleTownPlayersHouseSignText:
+	text "<PLAYER>'s House"
+	done
+
+VanivilleTownSerenasHouseSignText:
+	text "SERENA'S HOUSE"
+	done
+	
+VanivilleTownGrampsScript:
+	jumptextfaceplayer Text_TechnologyGuy
+	
+VanivilleTownYoungsterScript:
+	jumptextfaceplayer Text_VanivilleYoungster
+	
+Text_VanivilleYoungster:
+	text "VANIVILLE TOWN is"
+	line "pretty nice,"
+	cont "right?"
+	
+	para "Kalos has so many"
+	line "cool towns -"
+	
+	para "I wanna see them"
+	line "all when I get"
+	cont "big!"
+	done
+	
+Text_TechnologyGuy:
+	text "Oh, <PLAYER>!"
+
+	para "Is that a"
+	line "#gear?"
+	
+	para "You can call people"
+	line "from anywhere in"
+	cont "Kalos!"
+	
+	para "Isn't technology"
+	line "incredible?"
+	done
+
 VanivilleTown_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  4,  5, ELMS_LAB, 1
-	warp_event 18,  5, PLAYERS_HOUSE_1F, 1
-	warp_event 24,  5, SERENAS_HOUSE_1F, 1
+	warp_event 17,  5, PLAYERS_HOUSE_1F, 1
+	warp_event 23,  5, SERENAS_HOUSE_1F, 1
+	warp_event  5,  5, NEIGHBOURS_HOUSE, 1
 
 	def_coord_events
 	coord_event 10,  7, SCENE_VANIVILLETOWN_TEACHER_STOPS_YOU, VanivilleTown_TeacherStopsYouScene1
 	coord_event 11,  7, SCENE_VANIVILLETOWN_TEACHER_STOPS_YOU, VanivilleTown_TeacherStopsYouScene2
 	coord_event 12,  7, SCENE_VANIVILLETOWN_TEACHER_STOPS_YOU, VanivilleTown_TeacherStopsYouScene3
 	coord_event 13,  7, SCENE_VANIVILLETOWN_TEACHER_STOPS_YOU, VanivilleTown_TeacherStopsYouScene4
-	coord_event 24,  6, SCENE_VANIVILLETOWN_RIVALS, VanivilleTown_RivalsScene
+	coord_event 23,  6, SCENE_VANIVILLETOWN_RIVALS, VanivilleTown_RivalsScene
 	
 	def_bg_events
-
+	bg_event  8, 10, BGEVENT_READ, VanivilleTownSign
+	bg_event 16,  6, BGEVENT_READ, VanivilleTownPlayersHouseSign
+	bg_event 24,  6, BGEVENT_READ, VanivilleTownSerenasHouseSign
+	
 	def_object_events
 	object_event 11, 11, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VanivilleTownTeacherScript, -1
-	object_event 23,  6, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_VANIVILLE_TOWN_RIVALS
+	object_event 22,  6, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_VANIVILLE_TOWN_RIVALS
 	object_event 16, 12, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_VANIVILLE_TOWN_RIVALS
 	object_event 16, 11, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_VANIVILLE_TOWN_RIVALS
 	object_event 19, 12, SPRITE_KAREN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_VANIVILLE_TOWN_RIVALS
+	object_event  6, 14, SPRITE_GRAMPS, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VanivilleTownGrampsScript, -1
+	object_event  3,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, VanivilleTownYoungsterScript, -1

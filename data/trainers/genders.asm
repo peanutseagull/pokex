@@ -11,8 +11,8 @@ BTTrainerClassGenders:
 	db FEMALE ; JASMINE
 	db MALE   ; CHUCK
 	db FEMALE ; CLAIR
-	db MALE   ; RIVAL1
-	db MALE   ; POKEMON_PROF
+	db FEMALE ; SHAUNA
+	db MALE ; POKEMON_PROF
 	db FEMALE ; WILL
 	db MALE   ; CAL
 	db MALE   ; BRUNO
@@ -69,4 +69,7 @@ BTTrainerClassGenders:
 	db MALE   ; BLUE
 	db MALE   ; OFFICER
 	db FEMALE ; GRUNTF
-	assert_table_length NUM_TRAINER_CLASSES - 1 ; exclude MYSTICALMAN
+	db MALE   ; MYSTICALMAN
+	db FEMALE ; SHAUNA
+	db FEMALE ; SERENA
+	assert_table_length NUM_TRAINER_CLASSES

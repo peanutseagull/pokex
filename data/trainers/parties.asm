@@ -3495,3 +3495,35 @@ MysticalmanGroup:
 	db 23, HAUNTER,    LICK, HYPNOSIS, MEAN_LOOK, CURSE
 	db 25, ELECTRODE,  SCREECH, SONICBOOM, THUNDER, ROLLOUT
 	db -1 ; end
+
+ShaunaGroup:
+	; SHAUNA (1)
+	db "SHAUNA@", TRAINERTYPE_NORMAL
+	db  5, CHIKORITA
+	db -1 ; end
+
+	; SHAUNA (2)
+	db "SHAUNA@", TRAINERTYPE_NORMAL
+	db  5, CYNDAQUIL
+	db -1 ; end
+
+	; SHAUNA (3)
+	db "SHAUNA@", TRAINERTYPE_NORMAL
+	db  5, TOTODILE
+	db -1 ; end
+
+SerenaGroup:
+	; SERENA (1)
+	db "SERENA@", TRAINERTYPE_NORMAL
+	db  5, CHIKORITA
+	db -1 ; end
+
+	; SERENA (2)
+	db "SERENA@", TRAINERTYPE_NORMAL
+	db  5, CYNDAQUIL
+	db -1 ; end
+
+	; SERENA (3)
+	db "SERENA@", TRAINERTYPE_NORMAL
+	db  5, TOTODILE
+	db -1 ; end

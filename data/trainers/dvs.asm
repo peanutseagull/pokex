@@ -10,7 +10,7 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; JASMINE
 	dn  9,  8,  8,  8 ; CHUCK
 	dn  7, 12, 13, 13 ; CLAIR
-	dn 13, 13, 13, 13 ; RIVAL1
+	dn 10, 10, 10, 10 ; RIVAL1
 	dn  9,  8,  8,  8 ; POKEMON_PROF
 	dn 13, 12, 13, 13 ; WILL
 	dn 13, 12, 13, 13 ; CAL
@@ -43,8 +43,7 @@ TrainerClassDVs:
 	dn  7,  8,  8,  8 ; SWIMMERF
 	dn  9,  8,  8,  8 ; SAILOR
 	dn  9,  8,  8,  8 ; SUPER_NERD
-; BUG: RIVAL2 has lower DVs than RIVAL1 (see docs/bugs_and_glitches.md)
-	dn  9,  8,  8,  8 ; RIVAL2
+	dn 13, 13, 13, 13 ; RIVAL2
 	dn  9,  8,  8,  8 ; GUITARIST
 	dn 10,  8,  8,  8 ; HIKER
 	dn  9,  8,  8,  8 ; BIKER
@@ -70,4 +69,6 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; OFFICER
 	dn  7, 14, 10,  8 ; GRUNTF
 	dn  9,  8,  8,  8 ; MYSTICALMAN
+	dn 10, 10, 10, 10 ; SHAUNA
+	dn 13, 13, 13, 13 ; SERENA
 	assert_table_length NUM_TRAINER_CLASSES

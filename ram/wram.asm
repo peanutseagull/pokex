@@ -3176,6 +3176,7 @@ wMobileTradeRoomSceneID::                         db
 wMobileBattleRoomSceneID::                        db
 wVanivilleTownSceneID::						      db
 wSerenasHouseSceneID::							  db
+wRoute1SceneID::								  db
 
 	ds 50
 
