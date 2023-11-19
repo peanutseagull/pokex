@@ -5,15 +5,21 @@ VanivilleTown_Blocks:
 
 AquacordeTown_Blocks:
 	INCBIN "maps/AquacordeTown.blk"
+	
+SantaluneForest_Blocks:
+	INCBIN "maps/SantaluneForest.blk"
 
-Route32_Blocks:
-	INCBIN "maps/Route32.blk"
+SantaluneCity_Blocks:
+	INCBIN "maps/SantaluneCity.blk"
+
+; Route32_Blocks:
+	; INCBIN "maps/Route32.blk"
 
 Route40_Blocks:
 	INCBIN "maps/Route40.blk"
 
-Route36_Blocks:
-	INCBIN "maps/Route36.blk"
+; Route36_Blocks:
+	; INCBIN "maps/Route36.blk"
 
 Route44_Blocks:
 	INCBIN "maps/Route44.blk"
@@ -85,8 +91,8 @@ Route45_Blocks:
 ;Route29_Blocks:
 ;	INCBIN "maps/Route29.blk"
 
-Route37_Blocks:
-	INCBIN "maps/Route37.blk"
+; Route37_Blocks:
+	; INCBIN "maps/Route37.blk"
 
 LavenderTown_Blocks:
 	INCBIN "maps/LavenderTown.blk"
@@ -205,14 +211,16 @@ Route5CleanseTagHouse_Blocks:
 ;CherrygroveEvolutionSpeechHouse_Blocks:
 ;Route30BerryHouse_Blocks:
 NeighboursHouse_Blocks:
+TrevorsHouse_Blocks:
+ShaunasHouse_Blocks:
 	INCBIN "maps/House1.blk"
 
 SafariZoneFuchsiaGateBeta_Blocks:
 Route19FuchsiaGate_Blocks:
 Route43MahoganyGate_Blocks:
 Route43Gate_Blocks:
-Route35GoldenrodGate_Blocks:
-Route36RuinsOfAlphGate_Blocks:
+; Route35GoldenrodGate_Blocks:
+; Route36RuinsOfAlphGate_Blocks:
 Route34IlexForestGate_Blocks:
 Route6SaffronGate_Blocks:
 Route40BattleTowerGate_Blocks:
@@ -263,8 +271,8 @@ BetaMahoganyTown_Blocks: ; unreferenced
 ;Route27_Blocks:
 ;	INCBIN "maps/Route27.blk"
 
-Route35_Blocks:
-	INCBIN "maps/Route35.blk"
+; Route35_Blocks:
+	; INCBIN "maps/Route35.blk"
 
 Route43_Blocks:
 	INCBIN "maps/Route43.blk"
@@ -278,7 +286,7 @@ SerenasHouse1F_Blocks:
 
 Route38EcruteakGate_Blocks:
 Route42EcruteakGate_Blocks:
-Route32RuinsOfAlphGate_Blocks:
+; Route32RuinsOfAlphGate_Blocks:
 IlexForestAzaleaGate_Blocks:
 Route15FuchsiaGate_Blocks:
 Route8SaffronGate_Blocks:
@@ -332,7 +340,7 @@ EcruteakMart_Blocks:
 BlackthornMart_Blocks:
 CeruleanMart_Blocks:
 AzaleaMart_Blocks:
-VioletMart_Blocks:
+;VioletMart_Blocks:
 VermilionMart_Blocks:
 PewterMart_Blocks:
 FuchsiaMart_Blocks:
@@ -340,6 +348,7 @@ LavenderMart_Blocks:
 ViridianMart_Blocks:
 SaffronMart_Blocks:
 AquacordeMart_Blocks:
+SantaluneMart_Blocks:
 ;CherrygroveMart_Blocks:
 	INCBIN "maps/Mart.blk"
 
@@ -358,7 +367,7 @@ CeruleanPokecenter1F_Blocks:
 Route10Pokecenter1F_Blocks:
 AzaleaPokecenter1F_Blocks:
 VioletPokecenter1F_Blocks:
-Route32Pokecenter1F_Blocks:
+; Route32Pokecenter1F_Blocks:
 GoldenrodPokecenter1F_Blocks:
 VermilionPokecenter1F_Blocks:
 PewterPokecenter1F_Blocks:
@@ -370,6 +379,7 @@ CianwoodPokecenter1F_Blocks:
 ViridianPokecenter1F_Blocks:
 SaffronPokecenter1F_Blocks:
 AquacordePokecenter1F_Blocks:
+SantalunePokecenter1F_Blocks:
 ;CherrygrovePokecenter1F_Blocks:
 	INCBIN "maps/Pokecenter1F.blk"
 
@@ -379,8 +389,8 @@ BetaPewterMuseumOfScience1F_Blocks: ; unreferenced
 BetaPewterMuseumOfScience2F_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaPewterMuseumOfScience2F.blk"
 
-EarlsPokemonAcademy_Blocks:
-	INCBIN "maps/EarlsPokemonAcademy.blk"
+; EarlsPokemonAcademy_Blocks:
+	; INCBIN "maps/EarlsPokemonAcademy.blk"
 
 BetaCinnabarPokemonLabHallway_Blocks: ; unreferenced
 	INCBIN "maps/unused/BetaCinnabarPokemonLabHallway.blk"
@@ -452,8 +462,8 @@ TimeCapsule_Blocks:
 
 EcruteakLugiaSpeechHouse_Blocks:
 EcruteakItemfinderHouse_Blocks:
-VioletNicknameSpeechHouse_Blocks:
-VioletKylesHouse_Blocks:
+; VioletNicknameSpeechHouse_Blocks:
+; VioletKylesHouse_Blocks:
 	INCBIN "maps/House2.blk"
 
 BetaUnionCave_Blocks: ; unreferenced
@@ -539,8 +549,8 @@ RadioTower5F_Blocks:
 ;CherrygroveCity_Blocks:
 ;	INCBIN "maps/CherrygroveCity.blk"
 
-VioletCity_Blocks:
-	INCBIN "maps/VioletCity.blk"
+; VioletCity_Blocks:
+	; INCBIN "maps/VioletCity.blk"
 
 AzaleaTown_Blocks:
 	INCBIN "maps/AzaleaTown.blk"
@@ -741,8 +751,14 @@ KarensRoom_Blocks:
 AzaleaGym_Blocks:
 	INCBIN "maps/AzaleaGym.blk"
 
-VioletGym_Blocks:
-	INCBIN "maps/VioletGym.blk"
+; VioletGym_Blocks:
+	; INCBIN "maps/VioletGym.blk"
+	
+SantaluneGym_Blocks:
+	INCBIN "maps/SantaluneGym.blk"
+
+SantaluneGymB1F_Blocks:
+	INCBIN "maps/SantaluneGymB1F.blk"
 
 GoldenrodGym_Blocks:
 	INCBIN "maps/GoldenrodGym.blk"
@@ -822,11 +838,11 @@ EcruteakTinTowerEntrance_Blocks:
 GoldenrodGameCorner_Blocks:
 	INCBIN "maps/GoldenrodGameCorner.blk"
 
-Route35NationalParkGate_Blocks:
-	INCBIN "maps/Route35NationalParkGate.blk"
+; Route35NationalParkGate_Blocks:
+	; INCBIN "maps/Route35NationalParkGate.blk"
 
-Route36NationalParkGate_Blocks:
-	INCBIN "maps/Route36NationalParkGate.blk"
+; Route36NationalParkGate_Blocks:
+	; INCBIN "maps/Route36NationalParkGate.blk"
 
 FastShip1F_Blocks:
 	INCBIN "maps/FastShip1F.blk"

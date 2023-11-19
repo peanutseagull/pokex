@@ -31,7 +31,7 @@ Route42SuicuneScript:
 	pause 10
 	setscene SCENE_ROUTE42_NOOP
 	clearevent EVENT_SAW_SUICUNE_ON_ROUTE_36
-	setmapscene ROUTE_36, SCENE_ROUTE36_SUICUNE
+;	setmapscene ROUTE_36, SCENE_ROUTE36_SUICUNE
 	end
 
 TrainerFisherTully:

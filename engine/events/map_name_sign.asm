@@ -14,7 +14,7 @@ InitMapNameSign::
 	ld c, a
 	call GetWorldMapLocation
 	ld [wCurLandmark], a
-	call .CheckNationalParkGate
+	; call .CheckNationalParkGate
 	jr z, .gate
 
 	call GetMapEnvironment
@@ -88,15 +88,15 @@ InitMapNameSign::
 	and a
 	ret
 
-.CheckNationalParkGate:
-	ld a, [wMapGroup]
-	cp GROUP_ROUTE_35_NATIONAL_PARK_GATE
-	ret nz
-	ld a, [wMapNumber]
-	cp MAP_ROUTE_35_NATIONAL_PARK_GATE
-	ret z
-	cp MAP_ROUTE_36_NATIONAL_PARK_GATE
-	ret
+; .CheckNationalParkGate:
+	; ld a, [wMapGroup]
+	; cp GROUP_ROUTE_35_NATIONAL_PARK_GATE
+	; ret nz
+	; ld a, [wMapNumber]
+	; cp MAP_ROUTE_35_NATIONAL_PARK_GATE
+	; ret z
+	; cp MAP_ROUTE_36_NATIONAL_PARK_GATE
+	; ret
 
 PlaceMapNameSign::
 	ld hl, wLandmarkSignTimer

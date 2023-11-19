@@ -1318,33 +1318,33 @@ JohtoGrassWildMons:
 	; db 5, GASTLY
 	; end_grass_wildmons
 
-	def_grass_wildmons ROUTE_32
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	; morn
-	db 4, EKANS
-	db 5, RATTATA
-	db 7, BELLSPROUT
-	db 6, HOPPIP
-	db 7, PIDGEY
-	db 7, HOPPIP
-	db 7, HOPPIP
-	; day
-	db 4, EKANS
-	db 5, RATTATA
-	db 7, BELLSPROUT
-	db 6, HOPPIP
-	db 7, PIDGEY
-	db 7, HOPPIP
-	db 7, HOPPIP
-	; nite
-	db 4, WOOPER
-	db 5, RATTATA
-	db 7, BELLSPROUT
-	db 6, ZUBAT
-	db 7, HOOTHOOT
-	db 7, GASTLY
-	db 7, GASTLY
-	end_grass_wildmons
+	; def_grass_wildmons ROUTE_32
+	; db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; ; morn
+	; db 4, EKANS
+	; db 5, RATTATA
+	; db 7, BELLSPROUT
+	; db 6, HOPPIP
+	; db 7, PIDGEY
+	; db 7, HOPPIP
+	; db 7, HOPPIP
+	; ; day
+	; db 4, EKANS
+	; db 5, RATTATA
+	; db 7, BELLSPROUT
+	; db 6, HOPPIP
+	; db 7, PIDGEY
+	; db 7, HOPPIP
+	; db 7, HOPPIP
+	; ; nite
+	; db 4, WOOPER
+	; db 5, RATTATA
+	; db 7, BELLSPROUT
+	; db 6, ZUBAT
+	; db 7, HOOTHOOT
+	; db 7, GASTLY
+	; db 7, GASTLY
+	; end_grass_wildmons
 
 	def_grass_wildmons ROUTE_33
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -1402,89 +1402,89 @@ JohtoGrassWildMons:
 	db 10, DITTO
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_35
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	; morn
-	db 12, SNUBBULL
-	db 14, PIDGEY
-	db 13, GROWLITHE
-	db 10, ABRA
-	db 12, JIGGLYPUFF
-	db 10, DITTO
-	db 12, YANMA
-	; day
-	db 12, SNUBBULL
-	db 14, PIDGEY
-	db 13, GROWLITHE
-	db 10, ABRA
-	db 12, JIGGLYPUFF
-	db 10, DITTO
-	db 12, YANMA
-	; nite
-	db 12, DROWZEE
-	db 14, HOOTHOOT
-	db 13, PSYDUCK
-	db 10, ABRA
-	db 12, JIGGLYPUFF
-	db 10, DITTO
-	db 12, YANMA
-	end_grass_wildmons
+	; def_grass_wildmons ROUTE_35
+	; db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; ; morn
+	; db 12, SNUBBULL
+	; db 14, PIDGEY
+	; db 13, GROWLITHE
+	; db 10, ABRA
+	; db 12, JIGGLYPUFF
+	; db 10, DITTO
+	; db 12, YANMA
+	; ; day
+	; db 12, SNUBBULL
+	; db 14, PIDGEY
+	; db 13, GROWLITHE
+	; db 10, ABRA
+	; db 12, JIGGLYPUFF
+	; db 10, DITTO
+	; db 12, YANMA
+	; ; nite
+	; db 12, DROWZEE
+	; db 14, HOOTHOOT
+	; db 13, PSYDUCK
+	; db 10, ABRA
+	; db 12, JIGGLYPUFF
+	; db 10, DITTO
+	; db 12, YANMA
+	; end_grass_wildmons
 
-	def_grass_wildmons ROUTE_36
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	; morn
-	db 4, LEDYBA
-	db 4, PIDGEY
-	db 5, BELLSPROUT
-	db 5, GROWLITHE
-	db 5, PIDGEY
-	db 6, PIDGEY
-	db 6, PIDGEY
-	; day
-	db 4, PIDGEY
-	db 4, PIDGEY
-	db 5, BELLSPROUT
-	db 5, GROWLITHE
-	db 5, PIDGEY
-	db 6, PIDGEY
-	db 6, PIDGEY
-	; nite
-	db 4, SPINARAK
-	db 4, HOOTHOOT
-	db 5, BELLSPROUT
-	db 5, HOOTHOOT
-	db 5, HOOTHOOT
-	db 5, GASTLY
-	db 5, GASTLY
-	end_grass_wildmons
+	; def_grass_wildmons ROUTE_36
+	; db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; ; morn
+	; db 4, LEDYBA
+	; db 4, PIDGEY
+	; db 5, BELLSPROUT
+	; db 5, GROWLITHE
+	; db 5, PIDGEY
+	; db 6, PIDGEY
+	; db 6, PIDGEY
+	; ; day
+	; db 4, PIDGEY
+	; db 4, PIDGEY
+	; db 5, BELLSPROUT
+	; db 5, GROWLITHE
+	; db 5, PIDGEY
+	; db 6, PIDGEY
+	; db 6, PIDGEY
+	; ; nite
+	; db 4, SPINARAK
+	; db 4, HOOTHOOT
+	; db 5, BELLSPROUT
+	; db 5, HOOTHOOT
+	; db 5, HOOTHOOT
+	; db 5, GASTLY
+	; db 5, GASTLY
+	; end_grass_wildmons
 
-	def_grass_wildmons ROUTE_37
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	; morn
-	db 13, LEDYBA
-	db 14, GROWLITHE
-	db 15, PIDGEY
-	db 16, GROWLITHE
-	db 15, PIDGEOTTO
-	db 15, LEDIAN
-	db 15, LEDIAN
-	; day
-	db 13, PIDGEY
-	db 14, GROWLITHE
-	db 15, PIDGEY
-	db 16, GROWLITHE
-	db 15, PIDGEOTTO
-	db 15, PIDGEY
-	db 15, PIDGEY
-	; nite
-	db 13, SPINARAK
-	db 14, STANTLER
-	db 15, HOOTHOOT
-	db 16, STANTLER
-	db 15, NOCTOWL
-	db 15, ARIADOS
-	db 15, ARIADOS
-	end_grass_wildmons
+	; def_grass_wildmons ROUTE_37
+	; db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; ; morn
+	; db 13, LEDYBA
+	; db 14, GROWLITHE
+	; db 15, PIDGEY
+	; db 16, GROWLITHE
+	; db 15, PIDGEOTTO
+	; db 15, LEDIAN
+	; db 15, LEDIAN
+	; ; day
+	; db 13, PIDGEY
+	; db 14, GROWLITHE
+	; db 15, PIDGEY
+	; db 16, GROWLITHE
+	; db 15, PIDGEOTTO
+	; db 15, PIDGEY
+	; db 15, PIDGEY
+	; ; nite
+	; db 13, SPINARAK
+	; db 14, STANTLER
+	; db 15, HOOTHOOT
+	; db 16, STANTLER
+	; db 15, NOCTOWL
+	; db 15, ARIADOS
+	; db 15, ARIADOS
+	; end_grass_wildmons
 
 	def_grass_wildmons ROUTE_38
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite

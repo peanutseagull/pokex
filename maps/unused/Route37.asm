@@ -46,7 +46,7 @@ TrainerTwinsAnnandanne2:
 	end
 
 TrainerPsychicGreg:
-	trainer PSYCHIC_T, GREG, EVENT_BEAT_PSYCHIC_GREG, PsychicGregSeenText, PsychicGregBeatenText, 0, .Script
+	trainer PSYCHIC_T, GREGB, EVENT_BEAT_PSYCHIC_GREG, PsychicGregSeenText, PsychicGregBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled

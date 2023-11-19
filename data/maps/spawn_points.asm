@@ -28,8 +28,9 @@ SpawnPoints:
 	spawn VANIVILLE_TOWN,			  18,  5
 ;	spawn CHERRYGROVE_CITY,           29,  4
 	spawn AQUACORDE_TOWN,			  15, 29
-	spawn VIOLET_CITY,                31, 26
-	spawn ROUTE_32,                   11, 74
+;	spawn VIOLET_CITY,                31, 26
+	spawn SANTALUNE_CITY,			  23, 28
+	spawn ROUTE_1,                 	   5,  5
 	spawn AZALEA_TOWN,                15, 10
 	spawn CIANWOOD_CITY,              23, 44
 	spawn GOLDENROD_CITY,             15, 28

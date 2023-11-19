@@ -188,7 +188,7 @@ ItemEffects:
 	dw NoEffect            ; UP_GRADE
 	dw RestoreHPEffect     ; BERRY
 	dw RestoreHPEffect     ; GOLD_BERRY
-	dw SquirtbottleEffect  ; SQUIRTBOTTLE
+	dw NoEffect			   ; SQUIRTBOTTLE
 	dw NoEffect            ; ITEM_B0
 	dw PokeBallEffect      ; PARK_BALL
 	dw NoEffect            ; RAINBOW_WING
@@ -2545,9 +2545,9 @@ PPRestoredText:
 	text_far _PPRestoredText
 	text_end
 
-SquirtbottleEffect:
-	farcall _Squirtbottle
-	ret
+; SquirtbottleEffect:
+	; farcall _Squirtbottle
+	; ret
 
 CardKeyEffect:
 	farcall _CardKey

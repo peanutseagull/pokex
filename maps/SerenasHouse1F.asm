@@ -7,12 +7,17 @@ SerenasHouse1F_MapScripts:
 	def_callbacks
 
 SerenasMotherScript:
-	jumptextfaceplayer SerenasMotherText
+	checkevent EVENT_VANIVILLE_TOWN_RIVALS
+	iftrue .AlreadyMetSerena
+	jumptextfaceplayer SerenasMotherText2
+
+.AlreadyMetSerena:
+	jumptextfaceplayer SerenasMotherText1
 
 PlayersNeighborsHouseBookshelfScript:
 	jumpstd MagazineBookshelfScript
 
-SerenasMotherText:
+SerenasMotherText1:
 	text "Oh hi, <PLAY_G>!"
 
 	para "My daughter is so"
@@ -25,6 +30,24 @@ SerenasMotherText:
 	para "Why don't you go"
 	line "upstairs and say"
 	cont "hi?"
+	done
+	
+SerenasMotherText2:
+	text "She's grown up"
+	line "so fast..."
+	
+	para "To think she's"
+	line "already going on"
+	cont "a #MON journey."
+	
+	para "As a mother, I'm"
+	line "worried for her."
+	
+	para "But as an ex-"
+	line "#MON trainer,"
+	
+	para "I couldn't be"
+	line "prouder!"
 	done
 
 SerenasHouse1F_MapEvents:

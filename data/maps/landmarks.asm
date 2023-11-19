@@ -11,13 +11,18 @@ Landmarks:
 ;	landmark 140, 100, NewBarkTownName
 ;	landmark 128, 100, Route29Name
 	landmark 140, 100, VanivilleTownName
+	landmark 128, 100, Route1Name
 ;	landmark 100, 100, CherrygroveCityName
 ;	landmark 100,  80, Route30Name
 ;	landmark  96,  60, Route31Name
 	landmark 100, 100, AquacordeTownName
-	landmark  84,  60, VioletCityName
+	landmark 100,  80, Route2Name
+	landmark 100,  70, SantaluneForestName
+	landmark 100,  60, Route3Name
+	landmark  84,  60, SantaluneCityName
+	; landmark  84,  60, VioletCityName
 	landmark  85,  58, SproutTowerName
-	landmark  84,  92, Route32Name
+	; landmark  84,  92, Route32Name
 	landmark  76,  76, RuinsOfAlphName
 	landmark  84, 124, UnionCaveName
 	landmark  82, 124, Route33Name
@@ -27,10 +32,10 @@ Landmarks:
 	landmark  52, 112, Route34Name
 	landmark  52,  92, GoldenrodCityName
 	landmark  50,  92, RadioTowerName
-	landmark  52,  76, Route35Name
+	; landmark  52,  76, Route35Name
 	landmark  52,  60, NationalParkName
-	landmark  64,  60, Route36Name
-	landmark  68,  52, Route37Name
+	; landmark  64,  60, Route36Name
+	; landmark  68,  52, Route37Name
 	landmark  68,  44, EcruteakCityName
 	landmark  70,  42, TinTowerName
 	landmark  66,  42, BurnedTowerName
@@ -58,11 +63,11 @@ Landmarks:
 	landmark 148,  68, SilverCaveName
 	assert_table_length KANTO_LANDMARK
 	landmark  52, 108, PalletTownName
-	landmark  52,  92, Route1Name
+	; landmark  52,  92, Route1Name
 	landmark  52,  76, ViridianCityName
-	landmark  52,  64, Route2Name
+	; landmark  52,  64, Route2Name
 	landmark  52,  52, PewterCityName
-	landmark  64,  52, Route3Name
+	; landmark  64,  52, Route3Name
 	landmark  76,  52, MtMoonName
 	landmark  88,  52, Route4Name
 	landmark 100,  52, CeruleanCityName
@@ -111,7 +116,9 @@ Landmarks:
 ;NewBarkTownName:     db "NEW BARK¯TOWN@"
 VanivilleTownName:	 db "VANIVILLE¯TOWN@"
 AquacordeTownName:   db "AQUACORDE¯TOWN@"
-VioletCityName:      db "VIOLET CITY@"
+SantaluneForestName: db "SANTALUNE¯FOREST@"
+SantaluneCityName:   db "SANTALUNE¯CITY@"
+; VioletCityName:      db "VIOLET CITY@"
 AzaleaTownName:      db "AZALEA TOWN@"
 GoldenrodCityName:   db "GOLDENROD¯CITY@"
 EcruteakCityName:    db "ECRUTEAK¯CITY@"
@@ -186,12 +193,12 @@ Route28Name:         db "ROUTE 28@"
 ;Route29Name:         db "ROUTE 29@"
 ;Route30Name:         db "ROUTE 30@"
 ;Route31Name:         db "ROUTE 31@"
-Route32Name:         db "ROUTE 32@"
+; Route32Name:         db "ROUTE 32@"
 Route33Name:         db "ROUTE 33@"
 Route34Name:         db "ROUTE 34@"
-Route35Name:         db "ROUTE 35@"
-Route36Name:         db "ROUTE 36@"
-Route37Name:         db "ROUTE 37@"
+; Route35Name:         db "ROUTE 35@"
+; Route36Name:         db "ROUTE 36@"
+; Route37Name:         db "ROUTE 37@"
 Route38Name:         db "ROUTE 38@"
 Route39Name:         db "ROUTE 39@"
 Route40Name:         db "ROUTE 40@"

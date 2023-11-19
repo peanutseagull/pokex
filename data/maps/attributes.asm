@@ -105,10 +105,10 @@ ENDM
 ;	connection north, Route30, ROUTE_30, 5
 ;	connection east, Route29, ROUTE_29, 0
 
-	map_attributes VioletCity, VIOLET_CITY, $05, SOUTH | WEST | EAST
-	connection south, Route32, ROUTE_32, 0
-	connection west, Route36, ROUTE_36, 0
-;	connection east, Route31, ROUTE_31, 9
+	; map_attributes VioletCity, VIOLET_CITY, $05, SOUTH | WEST | EAST
+	; connection south, Route32, ROUTE_32, 0
+	; connection west, Route36, ROUTE_36, 0
+    ; connection east, Route31, ROUTE_31, 9
 
 	map_attributes AzaleaTown, AZALEA_TOWN, $05, WEST | EAST
 	connection west, Route34, ROUTE_34, -18
@@ -118,7 +118,7 @@ ENDM
 	connection east, Route41, ROUTE_41, 0
 
 	map_attributes GoldenrodCity, GOLDENROD_CITY, $35, NORTH | SOUTH
-	connection north, Route35, ROUTE_35, 5
+	; connection north, Route35, ROUTE_35, 5
 	connection south, Route34, ROUTE_34, 5
 
 	map_attributes OlivineCity, OLIVINE_CITY, $35, NORTH | WEST
@@ -126,7 +126,7 @@ ENDM
 	connection west, Route40, ROUTE_40, 9
 
 	map_attributes EcruteakCity, ECRUTEAK_CITY, $05, SOUTH | WEST | EAST
-	connection south, Route37, ROUTE_37, 5
+	; connection south, Route37, ROUTE_37, 5
 	connection west, Route38, ROUTE_38, 5
 	connection east, Route42, ROUTE_42, 9
 
@@ -168,30 +168,30 @@ ENDM
 ;	connection south, Route30, ROUTE_30, 10
 ;	connection west, VioletCity, VIOLET_CITY, -9
 
-	map_attributes Route32, ROUTE_32, $05, NORTH | SOUTH
-	connection north, VioletCity, VIOLET_CITY, 0
-	connection south, Route33, ROUTE_33, 0
+	; map_attributes Route32, ROUTE_32, $05, NORTH | SOUTH
+	; connection north, VioletCity, VIOLET_CITY, 0
+	; connection south, Route33, ROUTE_33, 0
 
 	map_attributes Route33, ROUTE_33, $05, NORTH | WEST
-	connection north, Route32, ROUTE_32, 0
+	; connection north, Route32, ROUTE_32, 0
 	connection west, AzaleaTown, AZALEA_TOWN, 0
 
 	map_attributes Route34, ROUTE_34, $05, NORTH | EAST
 	connection north, GoldenrodCity, GOLDENROD_CITY, -5
 	connection east, AzaleaTown, AZALEA_TOWN, 18
 
-	map_attributes Route35, ROUTE_35, $05, NORTH | SOUTH
-	connection north, Route36, ROUTE_36, 0
-	connection south, GoldenrodCity, GOLDENROD_CITY, -5
+	; map_attributes Route35, ROUTE_35, $05, NORTH | SOUTH
+	; connection north, Route36, ROUTE_36, 0
+	; connection south, GoldenrodCity, GOLDENROD_CITY, -5
 
-	map_attributes Route36, ROUTE_36, $05, NORTH | SOUTH | EAST
-	connection north, Route37, ROUTE_37, 10
-	connection south, Route35, ROUTE_35, 0
-	connection east, VioletCity, VIOLET_CITY, 0
+	; map_attributes Route36, ROUTE_36, $05, NORTH | SOUTH | EAST
+	; connection north, Route37, ROUTE_37, 10
+	; connection south, Route35, ROUTE_35, 0
+	; connection east, VioletCity, VIOLET_CITY, 0
 
-	map_attributes Route37, ROUTE_37, $05, NORTH | SOUTH
-	connection north, EcruteakCity, ECRUTEAK_CITY, -5
-	connection south, Route36, ROUTE_36, -10
+	; map_attributes Route37, ROUTE_37, $05, NORTH | SOUTH
+	; connection north, EcruteakCity, ECRUTEAK_CITY, -5
+	; connection south, Route36, ROUTE_36, -10
 
 	map_attributes Route38, ROUTE_38, $05, WEST | EAST
 	connection west, Route39, ROUTE_39, 0
@@ -231,7 +231,7 @@ ENDM
 
 	map_attributes PewterCity, PEWTER_CITY, $0f, SOUTH | EAST
 	connection south, Route2, ROUTE_2, 5
-	connection east, Route3, ROUTE_3, 5
+;	connection east, Route3, ROUTE_3, 5
 
 	map_attributes ViridianCity, VIRIDIAN_CITY, $0f, NORTH | SOUTH | WEST
 	connection north, Route2, ROUTE_2, 5
@@ -254,6 +254,12 @@ ENDM
 	
 	map_attributes Route2, ROUTE_2, $05, SOUTH
 	connection south, AquacordeTown, AQUACORDE_TOWN, 0
+	
+	map_attributes Route3, ROUTE_3, $05, NORTH
+	connection north, SantaluneCity, SANTALUNE_CITY, -10
+	
+	map_attributes SantaluneCity, SANTALUNE_CITY, $05, SOUTH
+	connection south, Route3, ROUTE_3, 10
 
 	map_attributes PalletTown, PALLET_TOWN, $0f, NORTH | SOUTH
 ;	connection north, Route1, ROUTE_1, 0
@@ -361,9 +367,9 @@ ENDM
 	map_attributes Route25, ROUTE_25, $2c, SOUTH
 	connection south, Route24, ROUTE_24, 0
 
-	map_attributes Route3, ROUTE_3, $2c, WEST | EAST
-	connection west, PewterCity, PEWTER_CITY, -5
-	connection east, Route4, ROUTE_4, 0
+;	map_attributes Route3, ROUTE_3, $2c, WEST | EAST
+;	connection west, PewterCity, PEWTER_CITY, -5
+;	connection east, Route4, ROUTE_4, 0
 
 	map_attributes Route4, ROUTE_4, $2c, WEST | EAST
 	connection west, Route3, ROUTE_3, 0
@@ -527,18 +533,18 @@ ENDM
 	map_attributes LakeOfRageMagikarpHouse, LAKE_OF_RAGE_MAGIKARP_HOUSE, $00, 0
 	map_attributes Route43MahoganyGate, ROUTE_43_MAHOGANY_GATE, $00, 0
 	map_attributes Route43Gate, ROUTE_43_GATE, $00, 0
-	map_attributes VioletMart, VIOLET_MART, $00, 0
-	map_attributes VioletGym, VIOLET_GYM, $00, 0
-	map_attributes EarlsPokemonAcademy, EARLS_POKEMON_ACADEMY, $00, 0
-	map_attributes VioletNicknameSpeechHouse, VIOLET_NICKNAME_SPEECH_HOUSE, $00, 0
-	map_attributes VioletPokecenter1F, VIOLET_POKECENTER_1F, $00, 0
-	map_attributes VioletKylesHouse, VIOLET_KYLES_HOUSE, $00, 0
-	map_attributes Route32RuinsOfAlphGate, ROUTE_32_RUINS_OF_ALPH_GATE, $00, 0
-	map_attributes Route32Pokecenter1F, ROUTE_32_POKECENTER_1F, $00, 0
-	map_attributes Route35GoldenrodGate, ROUTE_35_GOLDENROD_GATE, $00, 0
-	map_attributes Route35NationalParkGate, ROUTE_35_NATIONAL_PARK_GATE, $00, 0
-	map_attributes Route36RuinsOfAlphGate, ROUTE_36_RUINS_OF_ALPH_GATE, $00, 0
-	map_attributes Route36NationalParkGate, ROUTE_36_NATIONAL_PARK_GATE, $00, 0
+	; map_attributes VioletMart, VIOLET_MART, $00, 0
+	; map_attributes VioletGym, VIOLET_GYM, $00, 0
+	; map_attributes EarlsPokemonAcademy, EARLS_POKEMON_ACADEMY, $00, 0
+	; map_attributes VioletNicknameSpeechHouse, VIOLET_NICKNAME_SPEECH_HOUSE, $00, 0
+	; map_attributes VioletPokecenter1F, VIOLET_POKECENTER_1F, $00, 0
+	; map_attributes VioletKylesHouse, VIOLET_KYLES_HOUSE, $00, 0
+	; map_attributes Route32RuinsOfAlphGate, ROUTE_32_RUINS_OF_ALPH_GATE, $00, 0
+	; map_attributes Route32Pokecenter1F, ROUTE_32_POKECENTER_1F, $00, 0
+	; map_attributes Route35GoldenrodGate, ROUTE_35_GOLDENROD_GATE, $00, 0
+	; map_attributes Route35NationalParkGate, ROUTE_35_NATIONAL_PARK_GATE, $00, 0
+	; map_attributes Route36RuinsOfAlphGate, ROUTE_36_RUINS_OF_ALPH_GATE, $00, 0
+	; map_attributes Route36NationalParkGate, ROUTE_36_NATIONAL_PARK_GATE, $00, 0
 	map_attributes GoldenrodGym, GOLDENROD_GYM, $00, 0
 	map_attributes GoldenrodBikeShop, GOLDENROD_BIKE_SHOP, $00, 0
 	map_attributes GoldenrodHappinessRater, GOLDENROD_HAPPINESS_RATER, $00, 0
@@ -706,3 +712,10 @@ ENDM
 	map_attributes NeighboursHouse, NEIGHBOURS_HOUSE, $00, 0
 	map_attributes AquacordePokecenter1F, AQUACORDE_POKECENTER_1F, $00, 0
 	map_attributes AquacordeMart, AQUACORDE_MART, $00, 0
+	map_attributes TrevorsHouse, TREVORS_HOUSE, $00, 0
+	map_attributes ShaunasHouse, SHAUNAS_HOUSE, $00, 0
+	map_attributes SantaluneForest, SANTALUNE_FOREST, $05, 0
+	map_attributes SantalunePokecenter1F, SANTALUNE_POKECENTER_1F, $00, 0
+	map_attributes SantaluneMart, SANTALUNE_MART, $00, 0
+	map_attributes SantaluneGym, SANTALUNE_GYM, $00, 0
+	map_attributes SantaluneGymB1F, SANTALUNE_GYM_B1F, $00, 0

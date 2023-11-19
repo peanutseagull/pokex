@@ -154,6 +154,7 @@ ENDM
 	map_const SAFARI_ZONE_FUCHSIA_GATE_BETA,                5,  4 ; 89
 	map_const SAFARI_ZONE_BETA,                            10, 18 ; 90
 	map_const VICTORY_ROAD,                                10, 36 ; 91
+	map_const SANTALUNE_FOREST,							   20, 24 ; 92
 	endgroup
 
 	newgroup ECRUTEAK                                             ;  4
@@ -231,24 +232,33 @@ ENDM
 	map_const LAKE_OF_RAGE,                                20, 18 ;  6
 	endgroup
 
-	newgroup VIOLET                                               ; 10
-	map_const ROUTE_32,                                    10, 45 ;  1
-	map_const ROUTE_35,                                    10, 18 ;  2
-	map_const ROUTE_36,                                    30,  9 ;  3
-	map_const ROUTE_37,                                    10,  9 ;  4
-	map_const VIOLET_CITY,                                 20, 18 ;  5
-	map_const VIOLET_MART,                                  6,  4 ;  6
-	map_const VIOLET_GYM,                                   5,  8 ;  7
-	map_const EARLS_POKEMON_ACADEMY,                        4,  8 ;  8
-	map_const VIOLET_NICKNAME_SPEECH_HOUSE,                 4,  4 ;  9
-	map_const VIOLET_POKECENTER_1F,                         5,  4 ; 10
-	map_const VIOLET_KYLES_HOUSE,                           4,  4 ; 11
-	map_const ROUTE_32_RUINS_OF_ALPH_GATE,                  5,  4 ; 12
-	map_const ROUTE_32_POKECENTER_1F,                       5,  4 ; 13
-	map_const ROUTE_35_GOLDENROD_GATE,                      5,  4 ; 14
-	map_const ROUTE_35_NATIONAL_PARK_GATE,                  4,  4 ; 15
-	map_const ROUTE_36_RUINS_OF_ALPH_GATE,                  5,  4 ; 16
-	map_const ROUTE_36_NATIONAL_PARK_GATE,                  5,  4 ; 17
+	; newgroup VIOLET                                               ; 10
+	; map_const ROUTE_32,                                    10, 45 ;  1
+	; map_const ROUTE_35,                                    10, 18 ;  2
+	; map_const ROUTE_36,                                    30,  9 ;  3
+	; map_const ROUTE_37,                                    10,  9 ;  4
+	; map_const VIOLET_CITY,                                 20, 18 ;  5
+	; map_const VIOLET_MART,                                  6,  4 ;  6
+	; map_const VIOLET_GYM,                                   5,  8 ;  7
+	; map_const EARLS_POKEMON_ACADEMY,                        4,  8 ;  8
+	; map_const VIOLET_NICKNAME_SPEECH_HOUSE,                 4,  4 ;  9
+	; map_const VIOLET_POKECENTER_1F,                         5,  4 ; 10
+	; map_const VIOLET_KYLES_HOUSE,                           4,  4 ; 11
+	; map_const ROUTE_32_RUINS_OF_ALPH_GATE,                  5,  4 ; 12
+	; map_const ROUTE_32_POKECENTER_1F,                       5,  4 ; 13
+	; map_const ROUTE_35_GOLDENROD_GATE,                      5,  4 ; 14
+	; map_const ROUTE_35_NATIONAL_PARK_GATE,                  4,  4 ; 15
+	; map_const ROUTE_36_RUINS_OF_ALPH_GATE,                  5,  4 ; 16
+	; map_const ROUTE_36_NATIONAL_PARK_GATE,                  5,  4 ; 17
+	; endgroup
+	
+	newgroup SANTALUNE											  ; 10
+	map_const SANTALUNE_CITY,							   16, 18 ;  1
+	map_const ROUTE_3,									   15, 15 ;  2
+	map_const SANTALUNE_POKECENTER_1F,					    5,  4 ;  3
+	map_const SANTALUNE_MART,							    6,  4 ;  4
+	map_const SANTALUNE_GYM,								5,  3 ;  5
+	map_const SANTALUNE_GYM_B1F,						   15, 15 ;  6
 	endgroup
 
 	newgroup GOLDENROD                                            ; 11
@@ -303,7 +313,7 @@ ENDM
 	endgroup
 
 	newgroup PEWTER                                               ; 14
-	map_const ROUTE_3,                                     30,  9 ;  1
+;	map_const ROUTE_3,                                     30,  9 ;  1
 	map_const PEWTER_CITY,                                 20, 18 ;  2
 	map_const PEWTER_NIDORAN_SPEECH_HOUSE,                  4,  4 ;  3
 	map_const PEWTER_GYM,                                   5,  7 ;  4
@@ -502,6 +512,8 @@ ENDM
 	map_const ROUTE_2,                                     10, 20 ; 2
 	map_const AQUACORDE_POKECENTER_1F,					    5,  4 ; 3
 	map_const AQUACORDE_MART,								6,  4 ; 4
+	map_const TREVORS_HOUSE, 								4,  4 ; 5
+	map_const SHAUNAS_HOUSE,								4,  4 ; 6
 	endgroup
 	
 ;	newgroup CHERRYGROVE                                          ;

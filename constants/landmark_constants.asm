@@ -4,14 +4,19 @@
 ; Johto landmarks
 ;	const LANDMARK_NEW_BARK_TOWN
 	const LANDMARK_VANIVILLE_TOWN	 ; 01
+	const LANDMARK_ROUTE_1           ; 30
 ;	const LANDMARK_ROUTE_29          
 ;	const LANDMARK_CHERRYGROVE_CITY  
 ;	const LANDMARK_ROUTE_30          
 ;	const LANDMARK_ROUTE_31         
 	const LANDMARK_AQUACORDE_TOWN	 ; 02
-	const LANDMARK_VIOLET_CITY       ; 03
+	const LANDMARK_ROUTE_2           ; 03
+	const LANDMARK_SANTALUNE_FOREST  ; 04
+	const LANDMARK_ROUTE_3           ; 05
+	const LANDMARK_SANTALUNE_CITY    ; 06
+;	const LANDMARK_VIOLET_CITY       ; 03
 	const LANDMARK_SPROUT_TOWER      ; 04
-	const LANDMARK_ROUTE_32          ; 05
+	; const LANDMARK_ROUTE_32          ; 05
 	const LANDMARK_RUINS_OF_ALPH     ; 06
 	const LANDMARK_UNION_CAVE        ; 07
 	const LANDMARK_ROUTE_33          ; 08
@@ -21,10 +26,10 @@
 	const LANDMARK_ROUTE_34          ; 0c
 	const LANDMARK_GOLDENROD_CITY    ; 0d
 	const LANDMARK_RADIO_TOWER       ; 0e
-	const LANDMARK_ROUTE_35          ; 0f
+	; const LANDMARK_ROUTE_35          ; 0f
 	const LANDMARK_NATIONAL_PARK     ; 10
-	const LANDMARK_ROUTE_36          ; 11
-	const LANDMARK_ROUTE_37          ; 12
+	; const LANDMARK_ROUTE_36          ; 11
+	; const LANDMARK_ROUTE_37          ; 12
 	const LANDMARK_ECRUTEAK_CITY     ; 13
 	const LANDMARK_TIN_TOWER         ; 14
 	const LANDMARK_BURNED_TOWER      ; 15
@@ -52,11 +57,8 @@
 	const LANDMARK_SILVER_CAVE       ; 2e
 DEF KANTO_LANDMARK EQU const_value
 	const LANDMARK_PALLET_TOWN       ; 2f
-	const LANDMARK_ROUTE_1           ; 30
 	const LANDMARK_VIRIDIAN_CITY     ; 31
-	const LANDMARK_ROUTE_2           ; 32
 	const LANDMARK_PEWTER_CITY       ; 33
-	const LANDMARK_ROUTE_3           ; 34
 	const LANDMARK_MT_MOON           ; 35
 	const LANDMARK_ROUTE_4           ; 36
 	const LANDMARK_CERULEAN_CITY     ; 37

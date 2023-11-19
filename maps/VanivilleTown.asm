@@ -765,9 +765,9 @@ Text_TechnologyGuy:
 	para "Is that a"
 	line "#gear?"
 	
-	para "You can call people"
-	line "from anywhere in"
-	cont "Kalos!"
+	para "You can call"
+	line "people from"
+	cont "anywhere in Kalos!"
 	
 	para "Isn't technology"
 	line "incredible?"

@@ -290,9 +290,6 @@ RuinsOfAlphOutside_MapEvents:
 	warp_event 17, 11, RUINS_OF_ALPH_RESEARCH_CENTER, 1
 	warp_event  6, 19, UNION_CAVE_B1F, 1
 	warp_event  6, 27, UNION_CAVE_B1F, 2
-	warp_event  7,  5, ROUTE_36_RUINS_OF_ALPH_GATE, 3
-	warp_event 13, 20, ROUTE_32_RUINS_OF_ALPH_GATE, 1
-	warp_event 13, 21, ROUTE_32_RUINS_OF_ALPH_GATE, 2
 
 	def_coord_events
 	coord_event 11, 14, SCENE_RUINSOFALPHOUTSIDE_GET_UNOWN_DEX, RuinsOfAlphOutsideScientistScene1

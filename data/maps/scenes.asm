@@ -31,10 +31,10 @@ MapScenes::
 ;	scene_var ROUTE_29,                                    wRoute29SceneID
 ;	scene_var CHERRYGROVE_CITY,                            wCherrygroveCitySceneID
 ;	scene_var MR_POKEMONS_HOUSE,                           wMrPokemonsHouseSceneID
-	scene_var ROUTE_32,                                    wRoute32SceneID
-	scene_var ROUTE_35_NATIONAL_PARK_GATE,                 wRoute35NationalParkGateSceneID
-	scene_var ROUTE_36,                                    wRoute36SceneID
-	scene_var ROUTE_36_NATIONAL_PARK_GATE,                 wRoute36NationalParkGateSceneID
+	; scene_var ROUTE_32,                                    wRoute32SceneID
+	; scene_var ROUTE_35_NATIONAL_PARK_GATE,                 wRoute35NationalParkGateSceneID
+	; scene_var ROUTE_36,                                    wRoute36SceneID
+	; scene_var ROUTE_36_NATIONAL_PARK_GATE,                 wRoute36NationalParkGateSceneID
 	scene_var AZALEA_TOWN,                                 wAzaleaTownSceneID
 	scene_var GOLDENROD_GYM,                               wGoldenrodGymSceneID
 	scene_var GOLDENROD_MAGNET_TRAIN_STATION,              wGoldenrodMagnetTrainStationSceneID

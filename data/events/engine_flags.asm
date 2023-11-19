@@ -91,7 +91,8 @@ EngineFlags:
 	engine_flag wVisitedSpawns, SPAWN_VANIVILLE
 ;	engine_flag wVisitedSpawns, SPAWN_CHERRYGROVE
 	engine_flag wVisitedSpawns, SPAWN_AQUACORDE
-	engine_flag wVisitedSpawns, SPAWN_VIOLET
+	; engine_flag wVisitedSpawns, SPAWN_VIOLET
+	engine_flag wVisitedSpawns, SPAWN_SANTALUNE
 	engine_flag wVisitedSpawns, SPAWN_AZALEA
 	engine_flag wVisitedSpawns, SPAWN_CIANWOOD
 	engine_flag wVisitedSpawns, SPAWN_GOLDENROD

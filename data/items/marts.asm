@@ -4,7 +4,7 @@ Marts:
 ;	dw MartCherrygrove
 ;	dw MartCherrygroveDex
 	dw MartAquacorde
-	dw MartViolet
+	dw MartSantalune
 	dw MartAzalea
 	dw MartCianwood
 	dw MartGoldenrod2F1
@@ -64,7 +64,7 @@ MartAquacorde:
 	db AWAKENING
 	db -1 ; end
 
-MartViolet:
+MartSantalune:
 	db 10 ; # items
 	db POKE_BALL
 	db POTION

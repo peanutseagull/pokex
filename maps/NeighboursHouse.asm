@@ -1,4 +1,5 @@
 	object_const_def
+	const NEIGHBOURSHOUSE_POKEFAN_M
 	
 NeighboursHouse_MapScripts:
 	def_scene_scripts
@@ -14,8 +15,10 @@ NeighboursHouseText:
 	cont "my son a #MON."
 	
 	para "Going on a #MON"
-	line "journey really helps"
-	cont "you to mature..."
+	line "journey really"
+	cont "helps a young man"
+	
+	para "to mature..."
 	done
 	
 NeighboursHouse_MapEvents:

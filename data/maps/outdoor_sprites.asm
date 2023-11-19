@@ -13,7 +13,8 @@ OutdoorSprites:
 	dw CeruleanGroupSprites
 	dw AzaleaGroupSprites
 	dw LakeOfRageGroupSprites
-	dw VioletGroupSprites
+;	dw VioletGroupSprites
+	dw SantaluneGroupSprites
 	dw GoldenrodGroupSprites
 	dw VermilionGroupSprites
 	dw PalletGroupSprites
@@ -386,7 +387,8 @@ SilverGroupSprites:
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 
-VioletGroupSprites:
+;VioletGroupSprites:
+SantaluneGroupSprites:
 	db SPRITE_SUICUNE
 	db SPRITE_SILVER_TROPHY
 	db SPRITE_FAMICOM
