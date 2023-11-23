@@ -87,7 +87,7 @@ CianwoodCityChucksWife:
 	iftrue .GotFly
 	writetext ChucksWifeEasierToFlyText
 	promptbutton
-	checkevent EVENT_BEAT_CHUCK
+;	checkevent EVENT_BEAT_CHUCK
 	iftrue .BeatChuck
 	writetext ChucksWifeBeatChuckText
 	waitbutton

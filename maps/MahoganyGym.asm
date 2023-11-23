@@ -15,16 +15,16 @@ MahoganyGym_MapScripts:
 MahoganyGymPryceScript:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_PRYCE
+;	checkevent EVENT_BEAT_PRYCE
 	iftrue .FightDone
 	writetext PryceText_Intro
 	waitbutton
 	closetext
 	winlosstext PryceText_Impressed, 0
-	loadtrainer PRYCE, PRYCE1
+	loadtrainer OLYMPIA, OLYMPIA1
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_PRYCE
+;	setevent EVENT_BEAT_PRYCE
 	opentext
 	writetext Text_ReceivedGlacierBadge
 	playsound SFX_GET_BADGE
@@ -126,7 +126,7 @@ TrainerBoarderDouglas:
 MahoganyGymGuideScript:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_PRYCE
+;	checkevent EVENT_BEAT_PRYCE
 	iftrue .MahoganyGymGuideWinScript
 	writetext MahoganyGymGuideText
 	waitbutton
@@ -144,7 +144,7 @@ MahoganyGymStatue:
 	iftrue .Beaten
 	jumpstd GymStatue1Script
 .Beaten:
-	gettrainername STRING_BUFFER_4, PRYCE, PRYCE1
+	gettrainername STRING_BUFFER_4, OLYMPIA, OLYMPIA1
 	jumpstd GymStatue2Script
 
 PryceText_Intro:

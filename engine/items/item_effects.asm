@@ -782,7 +782,7 @@ HeavyBall_GetDexEntryBank:
 	db BANK("Pokedex Entries 001-064")
 	db BANK("Pokedex Entries 065-128")
 	db BANK("Pokedex Entries 129-192")
-	db BANK("Pokedex Entries 193-251")
+	db BANK("Pokedex Entries 193-253")
 
 HeavyBallMultiplier:
 ; subtract 20 from catch rate if weight < 102.4 kg

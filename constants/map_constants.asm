@@ -464,7 +464,7 @@ ENDM
 
 	newgroup VANIVILLE											  ; 24
 	map_const VANIVILLE_TOWN,							   15, 10 ;  1
-	map_const ELMS_LAB,                                     5,  6 ;  2
+;	map_const ELMS_LAB,                                     5,  6 ;  2
 	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  3
 	map_const PLAYERS_HOUSE_2F,                             4,  3 ;  4
 	map_const ROUTE_1,                                      8, 17 ;  5

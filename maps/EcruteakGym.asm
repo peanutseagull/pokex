@@ -24,16 +24,16 @@ EcruteakGymNoopScene:
 EcruteakGymMortyScript:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_MORTY
+;	checkevent EVENT_BEAT_MORTY
 	iftrue .FightDone
 	writetext MortyIntroText
 	waitbutton
 	closetext
 	winlosstext MortyWinLossText, 0
-	loadtrainer MORTY, MORTY1
+	loadtrainer RAMOS, RAMOS1
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_MORTY
+;	setevent EVENT_BEAT_MORTY
 	opentext
 	writetext Text_ReceivedFogBadge
 	playsound SFX_GET_BADGE
@@ -142,7 +142,7 @@ TrainerMediumGrace:
 EcruteakGymGuideScript:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_MORTY
+;	checkevent EVENT_BEAT_MORTY
 	iftrue .EcruteakGymGuideWinScript
 	writetext EcruteakGymGuideText
 	waitbutton
@@ -160,7 +160,7 @@ EcruteakGymStatue:
 	iftrue .Beaten
 	jumpstd GymStatue1Script
 .Beaten:
-	gettrainername STRING_BUFFER_4, MORTY, MORTY1
+	gettrainername STRING_BUFFER_4, RAMOS, RAMOS1
 	jumpstd GymStatue2Script
 
 EcruteakGymPlayerStepUpMovement:

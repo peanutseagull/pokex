@@ -3954,9 +3954,9 @@ BattleTower_UbersCheck:
 	ld a, [de]
 	cp MEWTWO
 	jr z, .uber
-	cp MEW
+	cp MEWTWO
 	jr z, .uber
-	cp LUGIA
+	cp MEWTWO
 	jr c, .next
 	cp NUM_POKEMON + 1
 	jr nc, .next

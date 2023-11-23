@@ -17,7 +17,7 @@ CianwoodGym_MapScripts:
 CianwoodGymChuckScript:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_CHUCK
+;	checkevent EVENT_BEAT_CHUCK
 	iftrue .FightDone
 	writetext ChuckIntroText1
 	waitbutton
@@ -38,10 +38,10 @@ CianwoodGymChuckScript:
 	waitbutton
 	closetext
 	winlosstext ChuckLossText, 0
-	loadtrainer CHUCK, CHUCK1
+	loadtrainer CLEMONT, CLEMONT1
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_CHUCK
+;	setevent EVENT_BEAT_CHUCK
 	opentext
 	writetext GetStormBadgeText
 	playsound SFX_GET_BADGE
@@ -136,7 +136,7 @@ CianwoodGymStatue:
 	iftrue .Beaten
 	jumpstd GymStatue1Script
 .Beaten:
-	gettrainername STRING_BUFFER_4, CHUCK, CHUCK1
+	gettrainername STRING_BUFFER_4, CLEMONT, CLEMONT1
 	jumpstd GymStatue2Script
 
 CianwoodGymMovement_ChuckChucksBoulder:

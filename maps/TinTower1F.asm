@@ -46,7 +46,7 @@ TinTower1FNPCsCallback:
 	checkevent EVENT_FOUGHT_SUICUNE
 	iftrue .FoughtSuicune
 	appear TINTOWER1F_SUICUNE
-	setval RAIKOU
+	setval MEWTWO
 	special MonCheck
 	iftrue .NoRaikou
 	appear TINTOWER1F_RAIKOU
@@ -55,7 +55,7 @@ TinTower1FNPCsCallback:
 .NoRaikou:
 	disappear TINTOWER1F_RAIKOU
 .CheckEntei:
-	setval ENTEI
+	setval MEWTWO
 	special MonCheck
 	iftrue .NoEntei
 	appear TINTOWER1F_ENTEI
@@ -84,12 +84,12 @@ TinTower1FStairsCallback:
 TinTower1FSuicuneBattleScript:
 	applymovement PLAYER, TinTower1FPlayerEntersMovement
 	pause 15
-	setval RAIKOU
+	setval MEWTWO
 	special MonCheck
 	iftrue .Next1 ; if player caught Raikou, it doesn't appear in Tin Tower
 	applymovement TINTOWER1F_RAIKOU, TinTower1FRaikouApproachesMovement
 	turnobject PLAYER, LEFT
-	cry RAIKOU
+	cry MEWTWO
 	pause 10
 	playsound SFX_WARP_FROM
 	applymovement TINTOWER1F_RAIKOU, TinTower1FRaikouLeavesMovement
@@ -97,12 +97,12 @@ TinTower1FSuicuneBattleScript:
 	playsound SFX_EXIT_BUILDING
 	waitsfx
 .Next1:
-	setval ENTEI
+	setval MEWTWO
 	special MonCheck
 	iftrue .Next2 ; if player caught Entei, it doesn't appear in Tin Tower
 	applymovement TINTOWER1F_ENTEI, TinTower1FEnteiApproachesMovement
 	turnobject PLAYER, RIGHT
-	cry ENTEI
+	cry MEWTWO
 	pause 10
 	playsound SFX_WARP_FROM
 	applymovement TINTOWER1F_ENTEI, TinTower1FEnteiLeavesMovement
@@ -114,9 +114,9 @@ TinTower1FSuicuneBattleScript:
 	pause 10
 	applymovement PLAYER, TinTower1FPlayerBacksUpMovement
 	applymovement TINTOWER1F_SUICUNE, TinTower1FSuicuneApproachesMovement
-	cry SUICUNE
+	cry MEWTWO
 	pause 20
-	loadwildmon SUICUNE, 40
+	loadwildmon MEWTWO, 40
 	loadvar VAR_BATTLETYPE, BATTLETYPE_SUICUNE
 	startbattle
 	dontrestartmapmusic

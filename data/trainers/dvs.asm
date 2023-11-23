@@ -2,21 +2,21 @@ TrainerClassDVs:
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
 	table_width 2, TrainerClassDVs
 	;  atk,def,spd,spc
-	dn  9, 10,  7,  7 ; FALKNER
-	dn  8,  8,  8,  8 ; WHITNEY
-	dn  9,  8,  8,  8 ; BUGSY
-	dn  9,  8,  8,  8 ; MORTY
-	dn  9,  8,  8,  8 ; PRYCE
-	dn  9,  8,  8,  8 ; JASMINE
-	dn  9,  8,  8,  8 ; CHUCK
-	dn  7, 12, 13, 13 ; CLAIR
+	dn  9, 10,  7,  7 ; VIOLA
+	dn  8,  8,  8,  8 ; KORRINA
+	dn  9,  8,  8,  8 ; GRANT
+	dn  9,  8,  8,  8 ; RAMOS
+	dn  9,  8,  8,  8 ; OLYMPIA
+	dn  9,  8,  8,  8 ; VALERIE
+	dn  9,  8,  8,  8 ; CLEMONT
+	dn  7, 12, 13, 13 ; WULFRIC
 	dn 10, 10, 10, 10 ; RIVAL1
 	dn  9,  8,  8,  8 ; POKEMON_PROF
-	dn 13, 12, 13, 13 ; WILL
+	dn 13, 12, 13, 13 ; WIKSTROM
 	dn 13, 12, 13, 13 ; CAL
-	dn 13, 12, 13, 13 ; BRUNO
-	dn  7, 15, 13, 15 ; KAREN
-	dn 13, 12, 13, 13 ; KOGA
+	dn 13, 12, 13, 13 ; MALVA
+	dn  7, 15, 13, 15 ; DRASNA
+	dn 13, 12, 13, 13 ; SIEBOLD
 	dn 13, 12, 13, 13 ; CHAMPION
 	dn  9,  8,  8,  8 ; BROCK
 	dn  7,  8,  8,  8 ; MISTY

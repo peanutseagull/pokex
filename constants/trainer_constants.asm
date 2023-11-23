@@ -28,29 +28,29 @@ DEF CHRIS EQU __trainer_class__
 DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 
 DEF KRIS EQU __trainer_class__
-	trainerclass FALKNER ; 1
-	const FALKNER1
+	trainerclass VIOLA ; 1
+	const VIOLA1
 
-	trainerclass WHITNEY ; 2
-	const WHITNEY1
+	trainerclass KORRINA ; 2
+	const KORRINA1
 
-	trainerclass BUGSY ; 3
-	const BUGSY1
+	trainerclass GRANT ; 3
+	const GRANT1
 
-	trainerclass MORTY ; 4
-	const MORTY1
+	trainerclass RAMOS ; 4
+	const RAMOS1
 
-	trainerclass PRYCE ; 5
-	const PRYCE1
+	trainerclass OLYMPIA ; 5
+	const OLYMPIA1
 
-	trainerclass JASMINE ; 6
-	const JASMINE1
+	trainerclass VALERIE ; 6
+	const VALERIE1
 
-	trainerclass CHUCK ; 7
-	const CHUCK1
+	trainerclass CLEMONT ; 7
+	const CLEMONT1
 
-	trainerclass CLAIR ; 8
-	const CLAIR1
+	trainerclass WULFRIC ; 8
+	const WULFRIC1
 
 	trainerclass RIVAL1 ; 9
 	const RIVAL1_1_CHIKORITA
@@ -71,25 +71,25 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass POKEMON_PROF ; a
 	
-	trainerclass WILL ; b
-	const WILL1
+	trainerclass WIKSTROM ; b
+	const WIKSTROM1
 
 	trainerclass CAL ; c
 	const CAL1 ; unused
 	const CAL2
 	const CAL3
 
-	trainerclass BRUNO ; d
-	const BRUNO1
+	trainerclass MALVA ; d
+	const MALVA1
 
-	trainerclass KAREN ; e
-	const KAREN1
+	trainerclass DRASNA ; e
+	const DRASNA1
 
-	trainerclass KOGA ; f
-	const KOGA1
+	trainerclass SIEBOLD ; f
+	const SIEBOLD1
 
 	trainerclass CHAMPION ; 10
-	const LANCE
+	const DIANTHA
 
 	trainerclass BROCK ; 11
 	const BROCK1
@@ -112,6 +112,9 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass YOUNGSTER ; 16
 	const MIKEY
+	const JOEY
+	const DAVID
+	const ZACHARY
 	const SAMUEL
 	const IAN
 	const WARREN
@@ -120,6 +123,7 @@ DEF KRIS EQU __trainer_class__
 	const JASON
 	
 	trainerclass SCHOOLBOY ; 17
+	const BRIGHTON
 	const JACK1
 	const KIPP
 	const JOHNNY
@@ -156,8 +160,11 @@ DEF KRIS EQU __trainer_class__
 	const VANCE3
 
 	trainerclass LASS ; 19
+	const ANNA
+	const LISE
+	const CHARLOTTE
 	const CARRIE
-	const BRIDGET
+;	const BRIDGET
 	const ALICE
 	const KRISE
 	const CONNIE1
@@ -207,7 +214,7 @@ DEF KRIS EQU __trainer_class__
 	const SAMANTHA
 	const CASSIE
 	const JULIA
-	const VALERIE
+	const VALERIA
 	const OLIVIA
 
 	trainerclass POKEMANIAC ; 1e
@@ -274,6 +281,7 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass BUG_CATCHER ; 24
 	const DON
+	const OLIVER
 	const ROB
 	const ED
 	const BUG_CATCHER_BENNY
@@ -449,6 +457,8 @@ DEF KRIS EQU __trainer_class__
 	const RODNEY
 
 	trainerclass PICNICKER ; 35
+	const ELLA
+	const BRIDGET
 	const GINA1
 	const CINDY
 	const HOPE
@@ -569,13 +579,13 @@ DEF KRIS EQU __trainer_class__
 	const EUSINE
 	
 	trainerclass SHAUNA ; 44
-	const SHAUNA_1_CHIKORITA
-	const SHAUNA_1_CYNDAQUIL
-	const SHAUNA_1_TOTODILE
+	const SHAUNA_1_CHESPIN
+	const SHAUNA_1_FENNEKIN
+	const SHAUNA_1_FROAKIE
 	
 	trainerclass SERENA ; 45
-	const SERENA_1_CHIKORITA
-	const SERENA_1_CYNDAQUIL
-	const SERENA_1_TOTODILE
+	const SERENA_1_CHESPIN
+	const SERENA_1_FENNEKIN
+	const SERENA_1_FROAKIE
 
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1

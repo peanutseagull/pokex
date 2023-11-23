@@ -57,11 +57,11 @@ LancesRoomLanceScript:
 	closetext
 	winlosstext LanceBattleWinText, 0
 	setlasttalked LANCESROOM_LANCE
-	loadtrainer CHAMPION, LANCE
+	loadtrainer CHAMPION, DIANTHA
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
-	setevent EVENT_BEAT_CHAMPION_LANCE
+;	setevent EVENT_BEAT_CHAMPION_LANCE
 	opentext
 	writetext LanceBattleAfterText
 	waitbutton

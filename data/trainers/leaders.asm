@@ -5,18 +5,18 @@
 ; accounted for prior to the list check.
 
 GymLeaders:
-	db FALKNER
-	db WHITNEY
-	db BUGSY
-	db MORTY
-	db PRYCE
-	db JASMINE
-	db CHUCK
-	db CLAIR
-	db WILL
-	db BRUNO
-	db KAREN
-	db KOGA
+	db VIOLA
+	db KORRINA
+	db GRANT
+	db RAMOS
+	db OLYMPIA
+	db VALERIE
+	db CLEMONT
+	db WULFRIC
+	db WIKSTROM
+	db MALVA
+	db DRASNA
+	db SIEBOLD
 	db CHAMPION
 	db RED
 ; fallthrough

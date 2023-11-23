@@ -4,21 +4,21 @@ TrainerEncounterMusic::
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
 	table_width 1, TrainerEncounterMusic
 	db MUSIC_HIKER_ENCOUNTER       ; none
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; falkner
-	db MUSIC_LASS_ENCOUNTER        ; whitney
-	db MUSIC_YOUNGSTER_ENCOUNTER   ; bugsy
-	db MUSIC_OFFICER_ENCOUNTER     ; morty
-	db MUSIC_OFFICER_ENCOUNTER     ; pryce
-	db MUSIC_LASS_ENCOUNTER        ; jasmine
-	db MUSIC_OFFICER_ENCOUNTER     ; chuck
-	db MUSIC_BEAUTY_ENCOUNTER      ; clair
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; viola
+	db MUSIC_LASS_ENCOUNTER        ; korrina
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; grant
+	db MUSIC_OFFICER_ENCOUNTER     ; ramos
+	db MUSIC_OFFICER_ENCOUNTER     ; olympia
+	db MUSIC_LASS_ENCOUNTER        ; valerie
+	db MUSIC_OFFICER_ENCOUNTER     ; clemont
+	db MUSIC_BEAUTY_ENCOUNTER      ; wulfric
 	db MUSIC_RIVAL_ENCOUNTER       ; rival1
 	db MUSIC_HIKER_ENCOUNTER       ; pokemon_prof
-	db MUSIC_HIKER_ENCOUNTER       ; will
+	db MUSIC_HIKER_ENCOUNTER       ; wikstrom
 	db MUSIC_HIKER_ENCOUNTER       ; cal
-	db MUSIC_OFFICER_ENCOUNTER     ; bruno
-	db MUSIC_HIKER_ENCOUNTER       ; karen
-	db MUSIC_HIKER_ENCOUNTER       ; koga
+	db MUSIC_OFFICER_ENCOUNTER     ; malva
+	db MUSIC_HIKER_ENCOUNTER       ; drasna
+	db MUSIC_HIKER_ENCOUNTER       ; siebold
 	db MUSIC_OFFICER_ENCOUNTER     ; champion
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; brock
 	db MUSIC_LASS_ENCOUNTER        ; misty
@@ -74,6 +74,3 @@ TrainerEncounterMusic::
 	db MUSIC_RIVAL_ENCOUNTER       ; shauna
 	db MUSIC_RIVAL_ENCOUNTER       ; serena
 	assert_table_length NUM_TRAINER_CLASSES + 1
-	db MUSIC_HIKER_ENCOUNTER       ; unused
-	db MUSIC_HIKER_ENCOUNTER       ; unused
-	db MUSIC_HIKER_ENCOUNTER       ; unused

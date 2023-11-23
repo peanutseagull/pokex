@@ -31,16 +31,16 @@ BlackthornGymClairScript:
 	opentext
 	checkflag ENGINE_RISINGBADGE
 	iftrue .AlreadyGotBadge
-	checkevent EVENT_BEAT_CLAIR
+;	checkevent EVENT_BEAT_CLAIR
 	iftrue .FightDone
 	writetext ClairIntroText
 	waitbutton
 	closetext
 	winlosstext ClairWinText, 0
-	loadtrainer CLAIR, CLAIR1
+	loadtrainer WULFRIC, WULFRIC1
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_CLAIR
+;	setevent EVENT_BEAT_CLAIR
 	opentext
 	writetext ClairText_GoToDragonsDen
 	waitbutton
@@ -126,7 +126,7 @@ TrainerCooltrainerfLola:
 BlackthornGymGuideScript:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_CLAIR
+;	checkevent EVENT_BEAT_CLAIR
 	iftrue .BlackthornGymGuideWinScript
 	writetext BlackthornGymGuideText
 	waitbutton
@@ -144,7 +144,7 @@ BlackthornGymStatue:
 	iftrue .Beaten
 	jumpstd GymStatue1Script
 .Beaten:
-	gettrainername STRING_BUFFER_4, CLAIR, CLAIR1
+	gettrainername STRING_BUFFER_4, WULFRIC, WULFRIC1
 	jumpstd GymStatue2Script
 
 ClairIntroText:

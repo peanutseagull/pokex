@@ -157,15 +157,15 @@ MonMenuIconPals:
 	icon_pals RED,    GRAY   ; DRAGONITE
 	icon_pals PURPLE, BROWN  ; MEWTWO
 	icon_pals PINK,   BLUE   ; MEW
-	icon_pals GREEN,  BROWN  ; CHIKORITA
-	icon_pals GREEN,  BROWN  ; BAYLEEF
-	icon_pals GREEN,  GREEN  ; MEGANIUM
-	icon_pals PINK,   PURPLE ; CYNDAQUIL
-	icon_pals PINK,   PURPLE ; QUILAVA
-	icon_pals PINK,   PURPLE ; TYPHLOSION
-	icon_pals BLUE,   TEAL   ; TOTODILE
-	icon_pals BLUE,   TEAL   ; CROCONAW
-	icon_pals BLUE,   GREEN  ; FERALIGATR
+	icon_pals GREEN,  BROWN  ; CHESPIN
+	icon_pals GREEN,  BROWN  ; QUILLADIN
+	icon_pals GREEN,  GREEN  ; CHESNAUGHT
+	icon_pals YELLOW, RED    ; FENNEKIN
+	icon_pals YELLOW, RED    ; BRAIXEN
+	icon_pals YELLOW, RED    ; DELPHOX
+	icon_pals BLUE,   YELLOW ; FROAKIE
+	icon_pals BLUE,   YELLOW ; FROGADIER
+	icon_pals BLUE,   PINK   ; GRENINJA
 	icon_pals BROWN,  PURPLE ; SENTRET
 	icon_pals BROWN,  PURPLE ; FURRET
 	icon_pals BROWN,  BROWN  ; HOOTHOOT
@@ -256,6 +256,8 @@ MonMenuIconPals:
 	icon_pals GREEN,  BROWN  ; TYRANITAR
 	icon_pals BLUE,   TEAL   ; LUGIA
 	icon_pals RED,    BROWN  ; HO_OH
+	icon_pals GREEN,  PINK   ; CELEBI
+	icon_pals GREEN,  PINK   ; CELEBI
 	icon_pals GREEN,  PINK   ; CELEBI
 	assert_table_length NUM_POKEMON
 	icon_pals RED,    RED    ; unused

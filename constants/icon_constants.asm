@@ -18,3 +18,4 @@
 	const PAL_ICON_GRAY   ; 5
 	const PAL_ICON_TEAL   ; 6
 	const PAL_ICON_PURPLE ; 7
+	const PAL_ICON_YELLOW ; 8

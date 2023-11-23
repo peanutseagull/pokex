@@ -153,4 +153,34 @@ KantoMonSpecials:
 	db 100 ; DRAGONITE
 	db 154 ; MEWTWO
 	db 100 ; MEW
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
+	db 50
 	assert_table_length JOHTO_POKEMON - 1

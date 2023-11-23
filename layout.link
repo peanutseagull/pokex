@@ -145,13 +145,8 @@ ROMX $32
 ROMX $33
 	"Move Animations"
 	"Extra Songs 2"
-ROMX $34
-	"Pic Animations 1"
-ROMX $35
-	"Pic Animations 2"
 ROMX $36
 	"Font Inversed"
-	"Pic Animations 3"
 ROMX $37
 	"Tileset Data 6"
 ROMX $38
@@ -297,7 +292,7 @@ ROMX $72
 ROMX $73
 	"Pokedex Entries 129-192"
 ROMX $74
-	"Pokedex Entries 193-251"
+	"Pokedex Entries 193-253"
 ROMX $77
 	"Unown Font"
 	"Print Party"

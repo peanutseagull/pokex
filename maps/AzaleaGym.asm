@@ -15,16 +15,16 @@ AzaleaGym_MapScripts:
 AzaleaGymBugsyScript:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_BUGSY
+;	checkevent EVENT_BEAT_BUGSY
 	iftrue .FightDone
 	writetext BugsyText_INeverLose
 	waitbutton
 	closetext
 	winlosstext BugsyText_ResearchIncomplete, 0
-	loadtrainer BUGSY, BUGSY1
+	loadtrainer GRANT, GRANT1
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_BUGSY
+;	setevent EVENT_BEAT_BUGSY
 	opentext
 	writetext Text_ReceivedHiveBadge
 	playsound SFX_GET_BADGE
@@ -124,7 +124,7 @@ TrainerBugCatcherJosh:
 
 AzaleaGymGuideScript:
 	faceplayer
-	checkevent EVENT_BEAT_BUGSY
+;	checkevent EVENT_BEAT_BUGSY
 	iftrue .AzaleaGymGuideWinScript
 	opentext
 	writetext AzaleaGymGuideText
@@ -144,7 +144,7 @@ AzaleaGymStatue:
 	iftrue .Beaten
 	jumpstd GymStatue1Script
 .Beaten:
-	gettrainername STRING_BUFFER_4, BUGSY, BUGSY1
+	gettrainername STRING_BUFFER_4, GRANT, GRANT1
 	jumpstd GymStatue2Script
 
 BugsyText_INeverLose:

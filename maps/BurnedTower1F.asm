@@ -60,9 +60,9 @@ BurnedTowerRivalBattleScript:
 	writetext BurnedTowerRival_BeforeText
 	waitbutton
 	closetext
-	checkevent EVENT_GOT_TOTODILE_FROM_ELM
+;	checkevent EVENT_GOT_TOTODILE_FROM_ELM
 	iftrue .totodile
-	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
+;	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
 	iftrue .chikorita
 	winlosstext BurnedTowerRival_WinText, BurnedTowerRival_LossText
 	setlasttalked BURNEDTOWER1F_RIVAL

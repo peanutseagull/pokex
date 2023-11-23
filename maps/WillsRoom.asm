@@ -43,16 +43,16 @@ WillsRoomDoorLocksBehindYouScript:
 WillScript_Battle:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_ELITE_4_WILL
+	; checkevent EVENT_BEAT_ELITE_4_WILL
 	iftrue WillScript_AfterBattle
 	writetext WillScript_WillBeforeText
 	waitbutton
 	closetext
 	winlosstext WillScript_WillBeatenText, 0
-	loadtrainer WILL, WILL1
+	loadtrainer WIKSTROM, WIKSTROM1
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_ELITE_4_WILL
+	; setevent EVENT_BEAT_ELITE_4_WILL
 	opentext
 	writetext WillScript_WillDefeatText
 	waitbutton

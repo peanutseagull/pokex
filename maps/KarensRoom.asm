@@ -43,16 +43,16 @@ KarensRoomDoorLocksBehindYouScript:
 KarenScript_Battle:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_ELITE_4_KAREN
+	; checkevent EVENT_BEAT_ELITE_4_KAREN
 	iftrue KarenScript_AfterBattle
 	writetext KarenScript_KarenBeforeText
 	waitbutton
 	closetext
 	winlosstext KarenScript_KarenBeatenText, 0
-	loadtrainer KAREN, KAREN1
+	loadtrainer DRASNA, DRASNA1
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_ELITE_4_KAREN
+	; setevent EVENT_BEAT_ELITE_4_KAREN
 	opentext
 	writetext KarenScript_KarenDefeatText
 	waitbutton

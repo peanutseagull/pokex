@@ -9,7 +9,7 @@ SantaluneGym_MapScripts:
 SantaluneGymGuideScript:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_FALKNER
+	checkevent EVENT_BEAT_VIOLA
 	iftrue .SantaluneGymGuideWinScript
 	writetext SantaluneGymGuideText
 	waitbutton
@@ -27,32 +27,44 @@ SantaluneGymStatue:
 	iftrue .Beaten
 	jumpstd GymStatue1Script
 .Beaten:
-	gettrainername STRING_BUFFER_4, FALKNER, FALKNER1
+	gettrainername STRING_BUFFER_4, VIOLA, VIOLA1
 	jumpstd GymStatue2Script
 
-
-
 SantaluneGymGuideText:
-	text "Hey! I'm no train-"
-	line "er but I can give"
-	cont "some advice!"
+	text "What's the"
+	line "hustle, Crustle?"
+	
+	para "Welcome to the"
+	line "SANTALUNE CITY"
+	cont "Gym!"
+	
+	para "So, future champ,"
+	
+	para "This is your first"
+	line "time challenging"
+	cont "a gym, huh?"
+	
+	para "Are you thrilled?"
+	line "Are you pumped?"
+	
+	para "The Gym Leader is"
+	line "waiting for you!"
+	
+	para "Just drop down"
+	line "below!"
+	
+	para "Before you go -"
+	line "Here's a tip"
+	cont "from you to me."
+	
+	para "Everyone in this"
+	line "gym uses BUG-"
+	cont "type #MON."
 
-	para "Believe me!"
-	line "If you believe, a"
-
-	para "championship dream"
-	line "can come true."
-
-	para "You believe?"
-	line "Then listen."
-
-	para "The grass-type is"
-	line "weak against the"
-
-	para "flying-type. Keep"
-	line "this in mind."
+	para "Got it? Good"
+	line "luck!"
 	done
-
+	
 SantaluneGymGuideWinText:
 	text "Nice battle! Keep"
 	line "it up, and you'll"

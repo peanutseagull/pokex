@@ -3,21 +3,21 @@
 BTTrainerClassGenders:
 ; entries correspond to trainer classes
 	table_width 1, BTTrainerClassGenders
-	db MALE   ; FALKNER
-	db FEMALE ; WHITNEY
-	db FEMALE ; BUGSY
-	db MALE   ; MORTY
-	db MALE   ; PRYCE
-	db FEMALE ; JASMINE
-	db MALE   ; CHUCK
-	db FEMALE ; CLAIR
-	db FEMALE ; SHAUNA
-	db MALE ; POKEMON_PROF
-	db FEMALE ; WILL
+	db FEMALE ; VIOLA
+	db FEMALE ; KORRINA
+	db MALE   ; GRANT
+	db MALE   ; RAMOS
+	db FEMALE ; OLYMPIA
+	db FEMALE ; VALERIE
+	db MALE   ; CLEMONT
+	db MALE   ; WULFRIC
+	db FEMALE ; RIVAL1
+	db MALE   ; POKEMON_PROF
+	db MALE   ; WIKSTROM
 	db MALE   ; CAL
-	db MALE   ; BRUNO
-	db FEMALE ; KAREN
-	db MALE   ; KOGA
+	db FEMALE ; MALVA
+	db FEMALE ; DRASNA
+	db MALE   ; SIEBOLD
 	db MALE   ; CHAMPION
 	db MALE   ; BROCK
 	db FEMALE ; MISTY

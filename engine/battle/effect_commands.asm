@@ -1139,7 +1139,7 @@ BattleCommand_Critical:
 .Item:
 	ld c, 0
 
-	cp CHANSEY
+	; cp CHANSEY
 	jr nz, .Farfetchd
 	ld a, [hl]
 	cp LUCKY_PUNCH

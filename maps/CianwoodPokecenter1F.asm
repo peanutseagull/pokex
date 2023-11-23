@@ -17,7 +17,7 @@ CianwoodPokecenter1FLassScript:
 
 CianwoodGymGuideScript:
 	faceplayer
-	checkevent EVENT_BEAT_CHUCK
+;	checkevent EVENT_BEAT_CHUCK
 	iftrue .CianwoodGymGuideWinScript
 	opentext
 	writetext CianwoodGymGuideText

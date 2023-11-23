@@ -5,6 +5,15 @@ SantaluneCity_MapScripts:
 
 	def_callbacks
 
+SantaluneCitySign:
+	jumptext SantaluneCitySignText
+	
+SantaluneCitySignText:
+	text "SANTALUNE CITY"
+	line "A traditional"
+	cont "city."
+	done
+	
 SantaluneCity_MapEvents:
 	db 0, 0 ; filler
 
@@ -16,5 +25,6 @@ SantaluneCity_MapEvents:
 	def_coord_events
 
 	def_bg_events
+	bg_event 21, 27, BGEVENT_READ, SantaluneCitySign
 
 	def_object_events

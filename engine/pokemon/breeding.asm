@@ -237,7 +237,7 @@ HatchEggs:
 	call SetSeenAndCaughtMon
 
 	ld a, [wCurPartySpecies]
-	cp TOGEPI
+	cp MEWTWO
 	jr nz, .nottogepi
 	; set the event flag for hatching togepi
 	ld de, EVENT_TOGEPI_HATCHED
@@ -755,10 +755,7 @@ EggHatch_AnimationSequence:
 	call WaitSFX
 	ld a, [wJumptableIndex]
 	ld [wCurPartySpecies], a
-	hlcoord 6, 3
-	ld d, $0
-	ld e, ANIM_MON_HATCH
-	predef AnimateFrontpic
+	call PlayMonCry2
 	pop af
 	ld [wCurSpecies], a
 	ret

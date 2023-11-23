@@ -10,16 +10,16 @@ OlivineGym_MapScripts:
 OlivineGymJasmineScript:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_JASMINE
+;	checkevent EVENT_BEAT_JASMINE
 	iftrue .FightDone
 	writetext Jasmine_SteelTypeIntro
 	waitbutton
 	closetext
 	winlosstext Jasmine_BetterTrainer, 0
-	loadtrainer JASMINE, JASMINE1
+	loadtrainer VALERIE, VALERIE1
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_JASMINE
+;	setevent EVENT_BEAT_JASMINE
 	opentext
 	writetext Text_ReceivedMineralBadge
 	playsound SFX_GET_BADGE
@@ -60,7 +60,7 @@ OlivineGymActivateRockets:
 
 OlivineGymGuideScript:
 	faceplayer
-	checkevent EVENT_BEAT_JASMINE
+;	checkevent EVENT_BEAT_JASMINE
 	iftrue .OlivineGymGuideWinScript
 	checkevent EVENT_JASMINE_RETURNED_TO_GYM
 	iffalse .OlivineGymGuidePreScript
@@ -89,7 +89,7 @@ OlivineGymStatue:
 	iftrue .Beaten
 	jumpstd GymStatue1Script
 .Beaten:
-	gettrainername STRING_BUFFER_4, JASMINE, JASMINE1
+	gettrainername STRING_BUFFER_4, VALERIE, VALERIE1
 	jumpstd GymStatue2Script
 
 Jasmine_SteelTypeIntro:

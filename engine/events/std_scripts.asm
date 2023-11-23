@@ -163,7 +163,7 @@ PokecenterNurseScript:
 
 .pokerus_done
 	setflag ENGINE_CAUGHT_POKERUS
-	specialphonecall SPECIALCALL_POKERUS
+;	specialphonecall SPECIALCALL_POKERUS
 	end
 
 DifficultBookshelfScript:
@@ -301,7 +301,7 @@ RadioTowerRocketsScript:
 	clearevent EVENT_RADIO_TOWER_ROCKET_TAKEOVER
 	clearevent EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER
 	setevent EVENT_MAHOGANY_TOWN_POKEFAN_M_BLOCKS_EAST
-	specialphonecall SPECIALCALL_WEIRDBROADCAST
+;	specialphonecall SPECIALCALL_WEIRDBROADCAST
 	setmapscene MAHOGANY_TOWN, SCENE_MAHOGANYTOWN_NOOP
 	end
 

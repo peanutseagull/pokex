@@ -173,48 +173,48 @@ VanivilleTown_RivalsScene:
 	loadmenu .MenuHeader
 	verticalmenu
 	closewindow
-	ifequal 1, .cyndaquil
-	ifequal 2, .totodile
-	ifequal 3, .chikorita
+	ifequal 1, .fennekin
+	ifequal 2, .froakie
+	ifequal 3, .chespin
 
-.cyndaquil
+.fennekin
 	writetext Text_ThisPokemon
 	yesorno
 	iffalse .loop
-	pokenamemem CYNDAQUIL, MEM_BUFFER_0
-	givepoke CYNDAQUIL, 5
-	setevent EVENT_GOT_CYNDAQUIL_FROM_ELM
+	pokenamemem FENNEKIN, MEM_BUFFER_0
+	givepoke FENNEKIN, 5
+	setevent EVENT_CHOSE_FENNEKIN
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
 	closetext
-	jump .SerenaTotodile
+	jump .SerenaFroakie
 
-.totodile
+.froakie
 	writetext Text_ThisPokemon
 	yesorno
 	iffalse .loop
-	pokenamemem TOTODILE, MEM_BUFFER_0
-	givepoke TOTODILE, 5
-	setevent EVENT_GOT_TOTODILE_FROM_ELM
+	pokenamemem FROAKIE, MEM_BUFFER_0
+	givepoke FROAKIE, 5
+	setevent EVENT_CHOSE_FROAKIE
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
 	closetext
-	jump .SerenaChikorita
+	jump .SerenaChespin
 	
-.chikorita
+.chespin
 	writetext Text_ThisPokemon
 	yesorno
 	iffalse .loop
-	pokenamemem CHIKORITA, MEM_BUFFER_0
-	givepoke CHIKORITA, 5
-	setevent EVENT_GOT_CHIKORITA_FROM_ELM
+	pokenamemem CHESPIN, MEM_BUFFER_0
+	givepoke CHESPIN, 5
+	setevent EVENT_CHOSE_CHESPIN
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
 	closetext
-	jump .SerenaCyndaquil
+	jump .SerenaFennekin
 
 .MenuHeader:
 	db MENU_BACKUP_TILES ; flags
@@ -225,71 +225,71 @@ VanivilleTown_RivalsScene:
 .MenuData:
 	db STATICMENU_CURSOR ; flags
 	db 3 ; items
-	db "CYNDAQUIL@"
-	db "TOTODILE@"
-	db "CHIKORITA@"
+	db "FENNEKIN@"
+	db "FROAKIE@"
+	db "CHESPIN@"
 
 .loop
 	writetext Text_WhichOne
 	loadmenu .MenuHeader
 	verticalmenu
 	closewindow
-	ifequal 1, .cyndaquil
-	ifequal 2, .totodile
-	ifequal 3, .chikorita
+	ifequal 1, .fennekin
+	ifequal 2, .froakie
+	ifequal 3, .chespin
 	
-.SerenaTotodile
+.SerenaFroakie
 	applymovement VANIVILLETOWN_KAREN, VanivilleTown_ShaunaMovement2
 	opentext
 	writetext Text_NowSerena
 	waitbutton
 	closetext
 	opentext 
-	writetext Text_SerenaTotodile
+	writetext Text_SerenaFroakie
 	waitbutton
 	closetext
 	showemote EMOTE_HAPPY, VANIVILLETOWN_KAREN, 15
 	opentext
-	writetext Text_ShaunaChikorita
+	writetext Text_ShaunaChespin
 	waitbutton
 	closetext
 	jump .SceneEnd
 	
-.SerenaChikorita
+.SerenaChespin
 	applymovement VANIVILLETOWN_KAREN, VanivilleTown_ShaunaMovement2
 	opentext
 	writetext Text_NowSerena
 	waitbutton
 	closetext
 	opentext 
-	writetext Text_SerenaChikorita
+	writetext Text_SerenaChespin
 	waitbutton
 	closetext
 	showemote EMOTE_HAPPY, VANIVILLETOWN_KAREN, 15
 	opentext
-	writetext Text_ShaunaCyndaquil
+	writetext Text_ShaunaFennekin
 	waitbutton
 	closetext
 	jump .SceneEnd
 	
-.SerenaCyndaquil
+.SerenaFennekin
 	applymovement VANIVILLETOWN_KAREN, VanivilleTown_ShaunaMovement2
 	opentext
 	writetext Text_NowSerena
 	waitbutton
 	closetext
 	opentext 
-	writetext Text_SerenaCyndaquil
+	writetext Text_SerenaFennekin
+	waitbutton
+	closetext
+	showemote EMOTE_HAPPY, VANIVILLETOWN_KAREN, 15
+	opentext
+	writetext Text_ShaunaFroakie
 	waitbutton
 	closetext
 	jump .SceneEnd
 
 .SceneEnd
-	showemote EMOTE_HAPPY, VANIVILLETOWN_KAREN, 15
-	opentext
-	writetext Text_ShaunaTotodile
-	waitbutton
-	closetext
 	applymovement VANIVILLETOWN_KAREN, VanivilleTown_ShaunaMovement3
 	applymovement VANIVILLETOWN_SUPER_NERD, VanivilleTown_Trevor1
 	turnobject VANIVILLETOWN_SUPER_NERD, UP
@@ -394,60 +394,58 @@ Text_NowSerena:
 	line "turn, SERENA!"
 	done
 	
-Text_SerenaTotodile:
+Text_SerenaFroakie:
 	text "SERENA: Hmmmm..."
 	
-	para "I'll take TOTODILE."
+	para "I'll take FROAKIE."
 	
 	para "It clearly looks"
 	line "the strongest!"
 	done
 	
-Text_SerenaCyndaquil:
+Text_SerenaFennekin:
 	text "SERENA: Hmmmm..."
 	
-	para "I'll take"
-	line "CYNDAQUIL."
+	para "I'll take FENNEKIN."
 	
 	para "It clearly looks"
 	line "the strongest!"
 	done
 	
-Text_SerenaChikorita:
+Text_SerenaChespin:
 	text "SERENA: Hmmm..."
 	
-	para "I'll take"
-	line "CHIKORITA."
+	para "I'll take CHESPIN."
 	
 	para "It clearly looks"
 	line "the strongest!"
 	done
 
-Text_ShaunaChikorita:
+Text_ShaunaChespin:
 	text "SHAUNA: YAY!"
 	
 	para "That means I"
-	line "get CHIKORITA!"
+	line "get CHESPIN!"
 	
 	para "Isn't it just"
 	line "the cutest?"
 	done
 	
-Text_ShaunaCyndaquil:
+Text_ShaunaFennekin:
 	text "SHAUNA: YAY!"
 	
 	para "That means I"
-	line "get CYNDAQUIL!"
+	line "get FENNEKIN!"
 	
 	para "Isn't it just"
 	line "the cutest?"
 	done
 	
-Text_ShaunaTotodile:
+Text_ShaunaFroakie:
 	text "SHAUNA: YAY!"
 	
 	para "That means I"
-	line "get TOTODILE!"
+	line "get FROAKIE!"
 	
 	para "Isn't it just"
 	line "the cutest?"

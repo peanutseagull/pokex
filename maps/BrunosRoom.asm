@@ -43,16 +43,16 @@ BrunosRoomDoorLocksBehindYouScript:
 BrunoScript_Battle:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_ELITE_4_BRUNO
+	; checkevent EVENT_BEAT_ELITE_4_BRUNO
 	iftrue BrunoScript_AfterBattle
 	writetext BrunoScript_BrunoBeforeText
 	waitbutton
 	closetext
 	winlosstext BrunoScript_BrunoBeatenText, 0
-	loadtrainer BRUNO, BRUNO1
+	loadtrainer MALVA, MALVA1
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_ELITE_4_BRUNO
+	; setevent EVENT_BEAT_ELITE_4_BRUNO
 	opentext
 	writetext BrunoScript_BrunoDefeatText
 	waitbutton

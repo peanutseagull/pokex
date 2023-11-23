@@ -43,16 +43,16 @@ KogasRoomDoorLocksBehindYouScript:
 KogaScript_Battle:
 	faceplayer
 	opentext
-	checkevent EVENT_BEAT_ELITE_4_KOGA
+	; checkevent EVENT_BEAT_ELITE_4_KOGA
 	iftrue KogaScript_AfterBattle
 	writetext KogaScript_KogaBeforeText
 	waitbutton
 	closetext
 	winlosstext KogaScript_KogaBeatenText, 0
-	loadtrainer KOGA, KOGA1
+	loadtrainer SIEBOLD, SIEBOLD1
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_ELITE_4_KOGA
+	; setevent EVENT_BEAT_ELITE_4_KOGA
 	opentext
 	writetext KogaScript_KogaDefeatText
 	waitbutton

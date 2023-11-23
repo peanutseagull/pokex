@@ -28,16 +28,13 @@ SantalunePokecenter1FGameboyKidText:
 	done
 
 SantalunePokecenter1FGentlemanText:
-	text "It was around"
-	line "three years ago."
-
-	para "TEAM ROCKET was up"
-	line "to no good with"
-	cont "#MON."
-
-	para "But justice pre-"
-	line "vailed--a young"
-	cont "kid broke 'em up."
+	text "#MON are easier"
+	line "to catch if they"
+	cont "are asleep!"
+	
+	para "Try carrying a"
+	line "#MON with"
+	cont "status moves!"
 	done
 
 SantalunePokecenter1FYoungsterText:

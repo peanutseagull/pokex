@@ -27,7 +27,7 @@ CeladonEusine:
 	opentext
 	writetext CeladonEusineText1
 	promptbutton
-	setval SUICUNE
+	setval MEWTWO
 	special MonCheck
 	iffalse .NoSuicune
 	special BeastsCheck

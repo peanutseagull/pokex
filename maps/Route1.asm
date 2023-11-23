@@ -29,13 +29,13 @@ Route1ShaunaRight:
 	writetext Route1ShaunaText_Seen
 	waitbutton
 	closetext
-	checkevent EVENT_GOT_TOTODILE_FROM_ELM
-	iftrue .Totodile
-	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
-	iftrue .Chikorita
+	checkevent EVENT_CHOSE_FROAKIE
+	iftrue .Froakie
+	checkevent EVENT_CHOSE_CHESPIN
+	iftrue .Chespin
 	winlosstext Route1ShaunaWinText, Route1ShaunaLossText
 	setlasttalked ROUTE1_KAREN
-	loadtrainer SHAUNA, SHAUNA_1_CHIKORITA
+	loadtrainer SHAUNA, SHAUNA_1_CHESPIN
 	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
 	dontrestartmapmusic
@@ -43,10 +43,10 @@ Route1ShaunaRight:
 	iftrue .AfterVictorious
 	sjump .AfterYourDefeat
 
-.Totodile:
+.Froakie:
 	winlosstext Route1ShaunaWinText, Route1ShaunaLossText
 	setlasttalked ROUTE1_KAREN
-	loadtrainer SHAUNA, SHAUNA_1_CYNDAQUIL
+	loadtrainer SHAUNA, SHAUNA_1_FENNEKIN
 	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
 	dontrestartmapmusic
@@ -54,10 +54,10 @@ Route1ShaunaRight:
 	iftrue .AfterVictorious
 	sjump .AfterYourDefeat
 
-.Chikorita:
+.Chespin:
 	winlosstext Route1ShaunaWinText, Route1ShaunaLossText
 	setlasttalked ROUTE1_KAREN
-	loadtrainer SHAUNA, SHAUNA_1_TOTODILE
+	loadtrainer SHAUNA, SHAUNA_1_FROAKIE
 	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
 	dontrestartmapmusic

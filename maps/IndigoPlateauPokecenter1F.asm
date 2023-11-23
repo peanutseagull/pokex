@@ -33,11 +33,11 @@ IndigoPlateauPokecenter1FPrepareElite4Callback:
 	clearevent EVENT_KARENS_ROOM_EXIT_OPEN
 	clearevent EVENT_LANCES_ROOM_ENTRANCE_CLOSED
 	clearevent EVENT_LANCES_ROOM_EXIT_OPEN
-	clearevent EVENT_BEAT_ELITE_4_WILL
-	clearevent EVENT_BEAT_ELITE_4_KOGA
-	clearevent EVENT_BEAT_ELITE_4_BRUNO
-	clearevent EVENT_BEAT_ELITE_4_KAREN
-	clearevent EVENT_BEAT_CHAMPION_LANCE
+	; clearevent EVENT_BEAT_ELITE_4_WILL
+	; clearevent EVENT_BEAT_ELITE_4_KOGA
+	; clearevent EVENT_BEAT_ELITE_4_BRUNO
+	; clearevent EVENT_BEAT_ELITE_4_KAREN
+	; clearevent EVENT_BEAT_CHAMPION_LANCE
 	setevent EVENT_LANCES_ROOM_OAK_AND_MARY
 	endcallback
 
@@ -88,9 +88,9 @@ PlateauRivalBattleCommon:
 	waitbutton
 	closetext
 	setevent EVENT_INDIGO_PLATEAU_POKECENTER_RIVAL
-	checkevent EVENT_GOT_TOTODILE_FROM_ELM
+;	checkevent EVENT_GOT_TOTODILE_FROM_ELM
 	iftrue .Totodile
-	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
+;	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
 	iftrue .Chikorita
 	; Cyndaquil
 	winlosstext PlateauRivalWinText, PlateauRivalLoseText

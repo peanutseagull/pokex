@@ -290,7 +290,7 @@ TrainerSchoolboyChad1:
 	end
 
 TrainerBeautyValerie:
-	trainer BEAUTY, VALERIE, EVENT_BEAT_BEAUTY_VALERIE, BeautyValerieSeenText, BeautyValerieBeatenText, 0, .Script
+	trainer BEAUTY, VALERIA, EVENT_BEAT_BEAUTY_VALERIA, BeautyValerieSeenText, BeautyValerieBeatenText, 0, .Script
 
 .Script
 	endifjustbattled

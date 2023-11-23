@@ -21,23 +21,22 @@ GoldenrodGymNoop2Scene:
 
 GoldenrodGymWhitneyScript:
 	faceplayer
-	checkevent EVENT_BEAT_WHITNEY
+;	checkevent EVENT_BEAT_WHITNEY
 	iftrue .FightDone
 	opentext
 	writetext WhitneyBeforeText
 	waitbutton
 	closetext
 	winlosstext WhitneyShouldntBeSoSeriousText, 0
-	loadtrainer WHITNEY, WHITNEY1
+	loadtrainer KORRINA, KORRINA1
 	startbattle
 	reloadmapafterbattle
-	setevent EVENT_BEAT_WHITNEY
+;	setevent EVENT_BEAT_WHITNEY
 	setevent EVENT_MADE_WHITNEY_CRY
 	setscene SCENE_GOLDENRODGYM_WHITNEY_STOPS_CRYING
 	setevent EVENT_BEAT_BEAUTY_VICTORIA
 	setevent EVENT_BEAT_BEAUTY_SAMANTHA
 	setevent EVENT_BEAT_LASS_CARRIE
-	setevent EVENT_BEAT_LASS_BRIDGET
 .FightDone:
 	opentext
 	checkevent EVENT_MADE_WHITNEY_CRY
@@ -115,7 +114,7 @@ WhitneyCriesScript:
 	end
 
 TrainerLassBridget:
-	trainer LASS, BRIDGET, EVENT_BEAT_LASS_BRIDGET, LassBridgetSeenText, LassBridgetBeatenText, 0, .Script
+	trainer LASS, CARRIE, EVENT_BEAT_LASS_CARRIE, LassBridgetSeenText, LassBridgetBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -149,7 +148,7 @@ TrainerBeautySamantha:
 
 GoldenrodGymGuideScript:
 	faceplayer
-	checkevent EVENT_BEAT_WHITNEY
+;	checkevent EVENT_BEAT_WHITNEY
 	iftrue .GoldenrodGymGuideWinScript
 	opentext
 	writetext GoldenrodGymGuideText
@@ -169,7 +168,7 @@ GoldenrodGymStatue:
 	iftrue .Beaten
 	jumpstd GymStatue1Script
 .Beaten:
-	gettrainername STRING_BUFFER_4, WHITNEY, WHITNEY1
+	gettrainername STRING_BUFFER_4, KORRINA, KORRINA1
 	jumpstd GymStatue2Script
 
 BridgetWalksUpMovement:

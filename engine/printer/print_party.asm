@@ -216,7 +216,7 @@ PrintPartyMonPage1:
 	xor a
 	ld [hl], a
 	ld a, [wCurPartySpecies]
-	cp UNOWN
+	; cp UNOWN
 	jr z, .got_alignment
 	inc [hl]
 .got_alignment

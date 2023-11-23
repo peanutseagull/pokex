@@ -19,7 +19,7 @@ CorrectPartyErrors: ; unreferenced
 	jr z, .invalid_species
 	cp NUM_POKEMON + 1
 	jr z, .invalid_species
-	cp EGG + 1
+	cp EGG
 	jr c, .next_species
 
 .invalid_species
