@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "SCALE@" ; species name
+	dw 311, 375 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "The patterns on"
+	next "its wings depend"
+	next "on the climate"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "and topography"
+	next "of its natural"
+	next "habitat.@"

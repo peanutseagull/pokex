@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "DIGGING@" ; species name
+	dw 104, 110 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "They use their"
+	next "large ears to"
+	next "dig burrows."
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "They will dig"
+	next "the whole night"
+	next "through.@"

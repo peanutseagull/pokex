@@ -2552,66 +2552,111 @@ GreninjaEvosAttacks:
 	
 BunnelbyEvosAttacks:
 	db EVOLVE_LEVEL, 20, DIGGERSBY
-	db 0
+	db 0 ; no more evolutions
 	db 1, MUD_SLAP
 	db 1, LEER
 	db 3, TACKLE
 	db 9, QUICK_ATTACK
+	db 15, FLAIL
+	db 18, DOUBLE_KICK
+	db 24, DIG
+	db 30, TAKE_DOWN
+	db 33, SWORDS_DANCE
 	db 36, EARTHQUAKE
-	db 0
+	db 39, SUPER_FANG
+	db 0 ; no more level up moves
 	
 DiggersbyEvosAttacks:
-	db 0
-	db 1, TACKLE
+	db 0 ; no more evolutions
+	db 1, MUD_SLAP
 	db 1, LEER
-	db 30, EARTHQUAKE
-	db 0
+	db 1, TACKLE
+	db 9, QUICK_ATTACK
+	db 15, FLAIL
+	db 18, DOUBLE_KICK
+	db 28, DIG
+	db 38, TAKE_DOWN
+	db 43, SWORDS_DANCE
+	db 48, EARTHQUAKE
+	db 53, SUPER_FANG
+	db 0 ; no more level up moves
 
 FletchlingEvosAttacks:
 	db EVOLVE_LEVEL, 17, FLETCHINDR
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, LEER
-	db 30, FLAMETHROWER
-	db 0
+	db 1, GROWL
+	db 6, QUICK_ATTACK
+	db 10, PECK
+	db 13, EMBER
+	db 15, AGILITY
+	db 20, FLAIL
+	db 25, WING_ATTACK
+	db 30, STEEL_WING
+	db 35, FLAMETHROWER
+	db 0 ; no more level up moves
 	
 FletchindrEvosAttacks:
 	db EVOLVE_LEVEL, 35, TALONFLAME
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, LEER
-	db 30, FLAMETHROWER
-	db 0
+	db 1, GROWL
+	db 6, QUICK_ATTACK
+	db 10, PECK
+	db 17, EMBER
+	db 25, AGILITY
+	db 30, FIRE_SPIN
+	db 35, WING_ATTACK
+	db 40, STEEL_WING
+	db 45, FLAMETHROWER
+	db 0 ; no more level up moves
 	
 TalonflameEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, LEER
-	db 30, FLAMETHROWER
-	db 0
+	db 1, GROWL
+	db 6, QUICK_ATTACK
+	db 10, PECK
+	db 17, EMBER
+	db 30, AGILITY
+	db 36, FIRE_SPIN
+	db 40, WING_ATTACK
+	db 45, STEEL_WING
+	db 50, FLAMETHROWER
+	db 0 ; no more level up moves
 	
 ScatterbugEvosAttacks:
 	db EVOLVE_LEVEL, 9, SPEWPA
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, LEER
-	db 30, TWINEEDLE
-	db 0
+	db 1, STRING_SHOT
+	db 6, STUN_SPORE
+	db 15, PIN_MISSILE
+	db 0 ; no more level up moves
 	
 SpewpaEvosAttacks:
 	db EVOLVE_LEVEL, 12, VIVILLON
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, LEER
-	db 30, TWINEEDLE
-	db 0
+	db 9, PROTECT
+	db 13, POISONPOWDER
+	db 0 ; no more level up moves
 	
 VivillonEvosAttacks:
-	db 0
-	db 1, TACKLE
-	db 1, LEER
-	db 30, TWINEEDLE
-	db 0
+	db 0 ; no more evolutions
+	db 1, POISONPOWDER
+	db 1, STUN_SPORE
+	db 1, GUST
+	db 1, LIGHT_SCREEN
+	db 1, SLEEP_POWDER
+	db 10, CONFUSION
+	db 12, PIN_MISSILE
+	db 17, PSYBEAM
+	db 21, SUPERSONIC
+	db 27, TWINEEDLE
+	db 35, SAFEGUARD
+	db 41, WING_ATTACK
+	db 0 ; no more level up moves
 	
 LitleoEvosAttacks:
 	db EVOLVE_LEVEL, 35, PYROAR

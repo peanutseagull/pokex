@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "TINY ROBIN@" ; species name
+	dw 100, 037 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "These friendly"
+	next "#MON send"
+	next "signals to one"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "another with"
+	next "chirps and tail-"
+	next "feather movements.@"

@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "LARVA@" ; species name
+	dw 100, 055 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "When under attack,"
+	next "it spews a black"
+	next "poisonous powder"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "that causes"
+	next "paralysis upon"
+	next "contact.@"

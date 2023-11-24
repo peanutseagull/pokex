@@ -58,6 +58,34 @@ JohtoGrassWildMons:
 	db 4, VULPIX
 	end_grass_wildmons
 	
+	def_grass_wildmons SANTALUNE_FOREST
+	db 5 percent, 5 percent, 5 percent
+	; morn
+	db 4, CATERPIE
+	db 4, WEEDLE
+	db 3, FLETCHLING
+	db 3, SCATTERBUG
+	db 3, PIKACHU
+	db 4, SPEWPA
+	db 4, PIKACHU
+	; day
+	db 4, CATERPIE
+	db 4, WEEDLE
+	db 3, FLETCHLING
+	db 3, SCATTERBUG
+	db 3, PIKACHU
+	db 4, SPEWPA
+	db 4, PIKACHU
+	; nite
+	db 4, CATERPIE
+	db 4, WEEDLE
+	db 3, FLETCHLING
+	db 3, SCATTERBUG
+	db 3, PIKACHU
+	db 4, SPEWPA
+	db 4, PIKACHU
+	end_grass_wildmons
+	
 	def_grass_wildmons ROUTE_3
 	db 5 percent, 5 percent, 5 percent
 	; morn

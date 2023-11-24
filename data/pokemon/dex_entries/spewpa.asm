@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "COCOON@" ; species name
+	dw 100, 185 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "Beaks of bird"
+	next "#MON cannot"
+	next "scratch its body."
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "To defend itself,"
+	next "it spews a"
+	next "poisonous powder.@"

@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "SCORCHING@" ; species name
+	dw 311, 540 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
-	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	db   "When attacking its"
+	next "prey, it can reach"
+	next "speeds up to 310"
+
+	page "mph. It finishes"
+	next "it off with a"
+	next "colossal kick.@"

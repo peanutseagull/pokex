@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "EMBER@" ; species name
+	dw 204, 353 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "From its beak, it"
+	next "expels embers that"
+	next "set the grass on"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "fire. Then it"
+	next "pounces on its"
+	next "bewildered prey.@"

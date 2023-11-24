@@ -13,9 +13,8 @@ Trainers:
 ViolaGroup:
 	; VIOLA (1)
 	db "VIOLA@", TRAINERTYPE_NORMAL
-	db  7, ODDISH
 	db 10, BEEDRILL
-	db 10, BUTTERFREE
+	db 12, VIVILLON
 	db -1 ; end
 
 KorrinaGroup:
