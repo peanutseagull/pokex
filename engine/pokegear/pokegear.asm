@@ -130,8 +130,8 @@ Pokegear_LoadGFX:
 	ld a, [wMapNumber]
 	ld c, a
 	call GetWorldMapLocation
-	cp LANDMARK_FAST_SHIP
-	jr z, .ssaqua
+	; cp LANDMARK_FAST_SHIP
+	; jr z, .ssaqua
 	farcall GetPlayerIcon
 	push de
 	ld h, d
@@ -728,13 +728,13 @@ TownMap_GetKantoLandmarkLimits:
 	ld a, [wStatusFlags]
 	bit STATUSFLAGS_HALL_OF_FAME_F, a
 	jr z, .not_hof
-	ld d, LANDMARK_ROUTE_28
-	ld e, LANDMARK_PALLET_TOWN
+	; ld d, LANDMARK_ROUTE_28
+	; ld e, LANDMARK_PALLET_TOWN
 	ret
 
 .not_hof
-	ld d, LANDMARK_ROUTE_28
-	ld e, LANDMARK_VICTORY_ROAD
+	; ld d, LANDMARK_ROUTE_28
+	; ld e, LANDMARK_VICTORY_ROAD
 	ret
 
 PokegearRadio_Init:
@@ -1455,7 +1455,7 @@ RadioChannels:
 	dbw 28, .PokemonMusic           ; 07.5
 	dbw 32, .LuckyChannel           ; 08.5
 	dbw 40, .BuenasPassword         ; 10.5
-	dbw 52, .RuinsOfAlphRadio       ; 13.5
+	; dbw 52, .RuinsOfAlphRadio       ; 13.5
 	dbw 64, .PlacesAndPeople        ; 16.5
 	dbw 72, .LetsAllSing            ; 18.5
 	dbw 78, .PokeFluteRadio         ; 20.0
@@ -1487,11 +1487,11 @@ RadioChannels:
 	jr nc, .NoSignal
 	jp LoadStation_BuenasPassword
 
-.RuinsOfAlphRadio:
-	ld a, [wPokegearMapPlayerIconLandmark]
-	cp LANDMARK_RUINS_OF_ALPH
-	jr nz, .NoSignal
-	jp LoadStation_UnownRadio
+; .RuinsOfAlphRadio:
+	; ld a, [wPokegearMapPlayerIconLandmark]
+	; cp LANDMARK_RUINS_OF_ALPH
+	; jr nz, .NoSignal
+	; jp LoadStation_UnownRadio
 
 .PlacesAndPeople:
 	call .InJohto
@@ -1523,11 +1523,11 @@ RadioChannels:
 	bit STATUSFLAGS_ROCKET_SIGNAL_F, a
 	jr z, .NoSignal
 	ld a, [wPokegearMapPlayerIconLandmark]
-	cp LANDMARK_MAHOGANY_TOWN
-	jr z, .ok
-	cp LANDMARK_ROUTE_43
-	jr z, .ok
-	cp LANDMARK_LAKE_OF_RAGE
+	; cp LANDMARK_MAHOGANY_TOWN
+	; jr z, .ok
+	; cp LANDMARK_ROUTE_43
+	; jr z, .ok
+	; cp LANDMARK_LAKE_OF_RAGE
 	jr nz, .NoSignal
 .ok
 	jp LoadStation_EvolutionRadio
@@ -1814,7 +1814,7 @@ _TownMap:
 	jr .resume
 
 .kanto
-	call TownMap_GetKantoLandmarkLimits
+	; call TownMap_GetKantoLandmarkLimits
 	call .loop
 
 .resume
@@ -2291,7 +2291,7 @@ FlyMap:
 ; enters Kanto, fly access is restricted until Indigo Plateau is
 ; visited and its flypoint enabled.
 	push af
-	ld c, SPAWN_INDIGO
+	; ld c, SPAWN_INDIGO
 	call HasVisitedSpawn
 	and a
 	jr z, .NoKanto
@@ -2566,8 +2566,8 @@ Pokedex_GetArea:
 ; not in the same region as what's currently
 ; on the screen.
 	ld a, [wTownMapPlayerIconLandmark]
-	cp LANDMARK_FAST_SHIP
-	jr z, .johto
+	; cp LANDMARK_FAST_SHIP
+	; jr z, .johto
 	cp KANTO_LANDMARK
 	jr c, .johto
 ; kanto
@@ -2594,8 +2594,8 @@ Pokedex_GetArea:
 
 .GetPlayerOrFastShipIcon:
 	ld a, [wTownMapPlayerIconLandmark]
-	cp LANDMARK_FAST_SHIP
-	jr z, .FastShip
+	; cp LANDMARK_FAST_SHIP
+	; jr z, .FastShip
 	farcall GetPlayerIcon
 	ret
 

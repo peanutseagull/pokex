@@ -759,7 +759,7 @@ _CGB_TrainerCard:
 
 _CGB_MoveList:
 	ld de, wBGPals1
-	ld a, PREDEFPAL_GOLDENROD
+	ld a, PREDEFPAL_LUMIOSE
 	call GetPredefPal
 	call LoadHLPaletteIntoDE
 	ld a, [wPlayerHPPal]

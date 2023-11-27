@@ -1,11 +1,13 @@
 _CardKey:
 ; Are we even in the right map to use this?
 	ld a, [wMapGroup]
-	cp GROUP_RADIO_TOWER_3F
+	cp GROUP_NONE
+	; cp GROUP_RADIO_TOWER_3F
 	jr nz, .nope
 
 	ld a, [wMapNumber]
-	cp MAP_RADIO_TOWER_3F
+	cp MAP_NONE
+	; cp MAP_RADIO_TOWER_3F
 	jr nz, .nope
 ; Are we facing the slot?
 	ld a, [wPlayerDirection]
@@ -34,4 +36,4 @@ _CardKey:
 
 .CardKeyScript:
 	closetext
-	farsjump CardKeySlotScript
+	; farsjump CardKeySlotScript

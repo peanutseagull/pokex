@@ -557,11 +557,11 @@ endr
 	ret
 
 .env5
-	ld a, PREDEFPAL_VERMILION
+	ld a, PREDEFPAL_AQUACORDE
 	ret
 
 .gate
-	ld a, PREDEFPAL_PEWTER
+	ld a, PREDEFPAL_AQUACORDE
 	ret
 
 INCLUDE "data/maps/sgb_roof_pal_inds.asm"

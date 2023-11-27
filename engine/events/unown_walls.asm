@@ -55,12 +55,13 @@ SpecialAerodactylChamber:
 	push de
 	push bc
 
+; TODO: Replace VanivilleTown_MapAttributes with the appropriate label for the Aerodactyl chamber.
 	call GetMapAttributesPointer
 	ld a, h
-	cp HIGH(RuinsOfAlphAerodactylChamber_MapAttributes)
+	cp HIGH(VanivilleTown_MapAttributes)
 	jr nz, .nope
 	ld a, l
-	cp LOW(RuinsOfAlphAerodactylChamber_MapAttributes)
+	cp LOW(VanivilleTown_MapAttributes)
 	jr nz, .nope
 
 	ld de, EVENT_WALL_OPENED_IN_AERODACTYL_CHAMBER
@@ -82,12 +83,13 @@ SpecialKabutoChamber:
 	push hl
 	push de
 
+; TODO: Replace VanivilleTown_MapAttributes with the appropriate label for the Kabuto chamber.
 	call GetMapAttributesPointer
 	ld a, h
-	cp HIGH(RuinsOfAlphKabutoChamber_MapAttributes)
+	cp HIGH(VanivilleTown_MapAttributes)
 	jr nz, .done
 	ld a, l
-	cp LOW(RuinsOfAlphKabutoChamber_MapAttributes)
+	cp LOW(VanivilleTown_MapAttributes)
 	jr nz, .done
 
 	ld de, EVENT_WALL_OPENED_IN_KABUTO_CHAMBER
@@ -98,6 +100,55 @@ SpecialKabutoChamber:
 	pop de
 	pop hl
 	ret
+	
+
+; SpecialAerodactylChamber:
+	; push de
+	; push bc
+
+	; call GetMapAttributesPointer
+	; ld a, h
+	; cp HIGH(RuinsOfAlphAerodactylChamber_MapAttributes)
+	; jr nz, .nope
+	; ld a, l
+	; cp LOW(RuinsOfAlphAerodactylChamber_MapAttributes)
+	; jr nz, .nope
+
+	; ld de, EVENT_WALL_OPENED_IN_AERODACTYL_CHAMBER
+	; ld b, SET_FLAG
+	; call EventFlagAction
+
+	; scf
+	; jr .done
+
+; .nope
+	; and a
+
+; .done
+	; pop bc
+	; pop de
+	; ret
+
+; SpecialKabutoChamber:
+	; push hl
+	; push de
+
+	; call GetMapAttributesPointer
+	; ld a, h
+	; cp HIGH(RuinsOfAlphKabutoChamber_MapAttributes)
+	; jr nz, .done
+	; ld a, l
+	; cp LOW(RuinsOfAlphKabutoChamber_MapAttributes)
+	; jr nz, .done
+
+	; ld de, EVENT_WALL_OPENED_IN_KABUTO_CHAMBER
+	; ld b, SET_FLAG
+	; call EventFlagAction
+
+; .done
+	; pop de
+	; pop hl
+	; ret
 
 DisplayUnownWords:
 	ld a, [wScriptVar]

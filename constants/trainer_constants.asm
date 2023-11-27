@@ -115,6 +115,7 @@ DEF KRIS EQU __trainer_class__
 	const JOEY
 	const DAVID
 	const ZACHARY
+	const LOIC
 	const SAMUEL
 	const IAN
 	const WARREN
@@ -124,6 +125,7 @@ DEF KRIS EQU __trainer_class__
 	
 	trainerclass SCHOOLBOY ; 17
 	const BRIGHTON
+	const RABBIE
 	const JACK1
 	const KIPP
 	const JOHNNY
@@ -163,6 +165,8 @@ DEF KRIS EQU __trainer_class__
 	const ANNA
 	const LISE
 	const CHARLOTTE
+	const ELIN
+	const ELSA
 	const CARRIE
 ;	const BRIDGET
 	const ALICE
@@ -459,6 +463,7 @@ DEF KRIS EQU __trainer_class__
 	trainerclass PICNICKER ; 35
 	const ELLA
 	const BRIDGET
+	const LOUISE
 	const GINA1
 	const CINDY
 	const HOPE

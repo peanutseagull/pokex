@@ -29,9 +29,9 @@ MomPhoneInTown:
 	readvar VAR_MAPGROUP
 	ifequal GROUP_VANIVILLE_TOWN, .newbark
 	ifequal GROUP_AQUACORDE_TOWN, .cherrygrove
-	ifequal GROUP_SANTALUNE_CITY, .violet
-	ifequal GROUP_AZALEA_TOWN, .azalea
-	ifequal GROUP_GOLDENROD_CITY, .goldenrod
+	; ifequal GROUP_SANTALUNE_CITY, .violet
+	; ifequal GROUP_AZALEA_TOWN, .azalea
+	; ifequal GROUP_GOLDENROD_CITY, .goldenrod
 	farwritetext MomPhoneGenericAreaText
 	promptbutton
 	sjump MomSavingMoney
@@ -46,15 +46,15 @@ MomPhoneInTown:
 	promptbutton
 	sjump MomSavingMoney
 
-.violet
-	getlandmarkname STRING_BUFFER_4, LANDMARK_SPROUT_TOWER
-	sjump MomPhoneLandmark
-.azalea
-	getlandmarkname STRING_BUFFER_4, LANDMARK_SLOWPOKE_WELL
-	sjump MomPhoneLandmark
-.goldenrod
-	getlandmarkname STRING_BUFFER_4, LANDMARK_RADIO_TOWER
-	sjump MomPhoneLandmark
+; .violet
+	; getlandmarkname STRING_BUFFER_4, LANDMARK_SPROUT_TOWER
+	; sjump MomPhoneLandmark
+; .azalea
+	; getlandmarkname STRING_BUFFER_4, LANDMARK_SLOWPOKE_WELL
+	; sjump MomPhoneLandmark
+; .goldenrod
+	; getlandmarkname STRING_BUFFER_4, LANDMARK_RADIO_TOWER
+	; sjump MomPhoneLandmark
 
 MomPhoneOnRoute:
 	farwritetext MomOtherAreaText

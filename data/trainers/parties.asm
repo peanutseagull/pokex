@@ -358,6 +358,11 @@ YoungsterGroup:
 	db -1 ; end
 	
 	; YOUNGSTER (5)
+	db "LOIC@", TRAINERTYPE_NORMAL
+	db 9, MACHOP
+	db -1 ; end
+	
+	; YOUNGSTER (5)
 	db "SAMUEL@", TRAINERTYPE_NORMAL
 	; db  7, SENTRET
 	db 10, SANDSHREW
@@ -399,6 +404,12 @@ SchoolboyGroup:
 	db 4, VULPIX
 	db 4, POLIWAG
 	db 4, ODDISH
+	db -1 ; end
+	
+	; SCHOOLBOY (2)
+	db "RABBIE@", TRAINERTYPE_NORMAL
+	db 7, PIDGEY
+	db 7, METAPOD
 	db -1 ; end
 	
 	; SCHOOLBOY (1)
@@ -621,6 +632,17 @@ LassGroup:
 	db "CHARLOTTE@", TRAINERTYPE_NORMAL
 	db 7, SPINARAK
 	db 9, METAPOD
+	db -1 ; end
+	
+	; LASS (4)
+	db "ELIN@", TRAINERTYPE_NORMAL
+	db 6, GOLDEEN
+	db 6, MARILL
+	db -1 ; end
+	
+	; LASS (5)
+	db "ELSA@", TRAINERTYPE_NORMAL
+	db 8, FLABEBE
 	db -1 ; end
 	
 	; LASS (1)
@@ -2449,10 +2471,16 @@ PicnickerGroup:
 	db  5, PICHU
 	db -1 ; end
 	
-	; PICNICKER (1)
+	; PICNICKER (2)
 	db "BRIDGET@", TRAINERTYPE_NORMAL
 	db 6, SENTRET
 	db -1, ; end
+	
+	; PICNICKER (3)
+	db "LOUISE@", TRAINERTYPE_NORMAL
+	db 6, PSYDUCK
+	db 7, LITLEO
+	db -1 ; end
 	
 	; PICNICKER (2)
 	db "GINA@", TRAINERTYPE_NORMAL

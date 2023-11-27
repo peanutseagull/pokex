@@ -114,4 +114,60 @@ JohtoGrassWildMons:
 	db 5, DUNSPARCE
 	end_grass_wildmons
 	
+	def_grass_wildmons ROUTE_22
+	db 5 percent, 5 percent, 5 percent
+	; morn
+	db 6, LITLEO
+	db 6, BUNNELBY
+	db 6, PSYDUCK
+	db 6, FARFETCH_D
+	db 6, MARILL
+	db 6, DUNSPARCE
+	db 6, DUNSPARCE
+	; day
+	db 6, LITLEO
+	db 6, BUNNELBY
+	db 6, PSYDUCK
+	db 6, FARFETCH_D
+	db 6, MARILL
+	db 6, DUNSPARCE
+	db 6, DUNSPARCE
+	; nite
+	db 6, LITLEO
+	db 6, BUNNELBY
+	db 6, PSYDUCK
+	db 6, FARFETCH_D
+	db 6, MARILL
+	db 6, DUNSPARCE
+	db 6, DUNSPARCE
+	end_grass_wildmons
+	
+	def_grass_wildmons ROUTE_4
+	db 5 percent, 5 percent, 5 percent
+	; morn
+	db 8, HOPPIP
+	db 8, FLABEBE
+	db 8, LEDYBA
+	db 8, BELLSPROUT
+	db 8, ODDISH
+	db 8, ODDISH
+	db 8, CLEFFA
+	; day
+	db 8, HOPPIP
+	db 8, FLABEBE
+	db 8, LEDYBA
+	db 8, BELLSPROUT
+	db 8, ODDISH
+	db 8, ODDISH
+	db 8, CLEFFA
+	; nite
+	db 8, HOPPIP
+	db 8, FLABEBE
+	db 8, SPINARAK
+	db 8, BELLSPROUT
+	db 8, ODDISH
+	db 8, ODDISH
+	db 8, CLEFFA
+	end_grass_wildmons
+	
 	db -1 ; end
