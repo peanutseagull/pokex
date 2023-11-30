@@ -3171,8 +3171,9 @@ wMobileBattleRoomSceneID::                        db
 wVanivilleTownSceneID::						      db
 wSerenasHouseSceneID::							  db
 wRoute1SceneID::								  db
+wRoute22SceneID::								  db
 
-	ds 50
+	ds 49
 
 ; fight counts
 wJackFightCount::    db

@@ -5,6 +5,7 @@ Marts:
 ;	dw MartCherrygroveDex
 	dw MartAquacorde
 	dw MartSantalune
+	dw MartStoneEmporium
 	; dw MartAzalea
 	; dw MartCianwood
 	; dw MartGoldenrod2F1
@@ -78,6 +79,18 @@ MartSantalune:
 	db FLOWER_MAIL
 	db -1 ; end
 
+MartStoneEmporium:
+	db 8 ; # items
+	db WATER_STONE
+	db THUNDERSTONE
+	db FIRE_STONE
+	db LEAF_STONE
+	db MOON_STONE
+	db SHINY_STONE
+	db DUSK_STONE
+	db LINK_CABLE
+	db -1 ; end
+	
 ; MartAzalea:
 	; db 9 ; # items
 	; db CHARCOAL

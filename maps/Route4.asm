@@ -9,7 +9,7 @@ Route4_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-
+	warp_event 15,  3, ROUTE_4_LUMIOSE_GATE, 1
 	def_coord_events
 
 	def_bg_events

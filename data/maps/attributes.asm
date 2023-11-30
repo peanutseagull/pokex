@@ -124,7 +124,24 @@ ENDM
 	map_attributes Route22, ROUTE_22, $05, WEST
 	connection west, SantaluneCity, SANTALUNE_CITY, 5
 	
-	map_attributes LumioseSouth, LUMIOSE_SOUTH, $00, 0
+	map_attributes LumioseSouth, LUMIOSE_SOUTH, $71, NORTH
+	connection north, LumioseNorth, LUMIOSE_NORTH, 0
+	
+	map_attributes LumioseNorth, LUMIOSE_NORTH, $71, SOUTH
+	connection south, LumioseSouth, LUMIOSE_SOUTH, 0
+	
+	map_attributes VernalAvenue, VERNAL_AVENUE, $71, 0
+	map_attributes EstivalAvenue, ESTIVAL_AVENUE, $71, 0
+	map_attributes AutumnalAvenue, AUTUMNAL_AVENUE, $71, 0
+	map_attributes HibernalAvenue, HIBERNAL_AVENUE, $71, 0
+	map_attributes RougePlaza, ROUGE_PLAZA, $71, 0
+	map_attributes JaunePlaza, JAUNE_PLAZA, $71, 0
+	map_attributes MagentaPlaza, MAGENTA_PLAZA, $71, 0
+	map_attributes BleuPlaza, BLEU_PLAZA, $71, 0
+	map_attributes VertPlaza, VERT_PLAZA, $71, 0
+	map_attributes CentricoPlaza, CENTRICO_PLAZA, $71, 0
+	map_attributes StoneEmporium, STONE_EMPORIUM, $00, 0
+	
 	map_attributes CamphrierTown, CAMPHRIER_TOWN, $00, 0
 	map_attributes CyllageCity, CYLLAGE_CITY, $00, 0
 	map_attributes AmbretteTown, AMBRETTE_TOWN, $00, 0
@@ -160,6 +177,7 @@ ENDM
 	map_attributes TimeCapsule, TIME_CAPSULE, $00, 0
 	map_attributes MobileTradeRoom, MOBILE_TRADE_ROOM, $00, 0
 	map_attributes MobileBattleRoom, MOBILE_BATTLE_ROOM, $00, 0
+	map_attributes Route4LumioseGate, ROUTE_4_LUMIOSE_GATE, $00, 0
 	; map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
 	; connection west, Route29, ROUTE_29, 0
 	; connection east, Route27, ROUTE_27, 0

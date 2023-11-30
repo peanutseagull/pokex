@@ -18,6 +18,16 @@ Landmarks:
 	landmark  84,  70, Route4Name
 	landmark  94,  60, Route22Name
 	landmark   0,   0, LumioseCityName
+	landmark   0,   0, VernalAvenueName
+	landmark   0,   0, EstivalAvenueName
+	landmark   0,   0, AutumnalAvenueName
+	landmark   0,   0, HibernalAvenueName
+	landmark   0,   0, BleuPlazaName
+	landmark   0,   0, VertPlazaName
+	landmark   0,   0, MagentaPlazaName
+	landmark   0,   0, RougePlazaName
+	landmark   0,   0, JaunePlazaName
+	landmark   0,   0, CentricoPlazaName
 	landmark   0,   0, CamphrierTownName
 	landmark   0,   0, CyllageCityName
 	landmark   0,   0, AmbretteTownName
@@ -146,6 +156,16 @@ AquacordeTownName:   db "AQUACORDE¯TOWN@"
 SantaluneForestName: db "SANTALUNE¯FOREST@"
 SantaluneCityName:   db "SANTALUNE¯CITY@"
 LumioseCityName:	 db "LUMIOSE¯CITY@"
+VernalAvenueName:	 db "VERNAL¯AVENUE@"
+EstivalAvenueName:	 db "ESTIVAL¯AVENUE@"
+AutumnalAvenueName:  db "AUTUMNAL¯AVENUE@"
+HibernalAvenueName:  db "HIBERNAL¯AVENUE@"
+BleuPlazaName:		 db "BLEU¯PLAZA@"
+VertPlazaName:		 db "VERT¯PLAZA@"
+MagentaPlazaName:	 db "MAGENTA¯PLAZA@"
+RougePlazaName:		 db "ROUGE¯PLAZA@"
+JaunePlazaName:		 db "JAUNE¯PLAZA@"
+CentricoPlazaName:   db "CENTRICO¯PLAZA@"
 CamphrierTownName:	 db "CAMPHRIER¯TOWN@"
 CyllageCityName:	 db "CYLLAGE¯CITY@"
 AmbretteTownName:	 db "AMBRETTE¯TOWN@"

@@ -1,9 +1,176 @@
 	object_const_def
+	const ROUTE22_LASS1
+	const ROUTE22_LASS2
+	const ROUTE22_YOUNGSTER
+	const ROUTE22_BUG_CATCHER
+	const ROUTE22_LASS3
+	const ROUTE22_COOLTRAINER_F
 	
 Route22_MapScripts:
 	def_scene_scripts
-
+	scene_script Route22Noop1Scene, SCENE_ROUTE22_SERENA
+	scene_script Route22Noop2Scene, SCENE_ROUTE22_NOOP
+	
 	def_callbacks
+	
+Route22Noop1Scene:
+	end
+
+Route22Noop2Scene:
+	end
+	
+Route22SerenaLeft:
+	moveobject ROUTE22_COOLTRAINER_F, 2, 10
+Route22SerenaRight:
+	turnobject PLAYER, UP
+	showemote EMOTE_SHOCK, PLAYER, 15
+	special FadeOutMusic
+	pause 15
+	appear ROUTE22_COOLTRAINER_F
+	applymovement ROUTE22_COOLTRAINER_F, Route22_SerenaWalksToYou
+	playmusic MUSIC_RIVAL_ENCOUNTER
+	opentext
+	writetext Route22SerenaText_Seen
+	waitbutton
+	closetext
+	checkevent EVENT_CHOSE_FROAKIE
+	iftrue .Froakie
+	checkevent EVENT_CHOSE_CHESPIN
+	iftrue .Chespin
+	winlosstext Route22SerenaWinText, Route22SerenaLossText
+	setlasttalked ROUTE22_COOLTRAINER_F
+	loadtrainer SERENA, SERENA_1_FROAKIE
+	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
+	startbattle
+	dontrestartmapmusic
+	reloadmap
+	iftrue .AfterVictorious
+	sjump .AfterYourDefeat
+	
+.Froakie:
+	winlosstext Route22SerenaWinText, Route22SerenaLossText
+	setlasttalked ROUTE22_COOLTRAINER_F
+	loadtrainer SERENA, SERENA_1_CHESPIN
+	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
+	startbattle
+	dontrestartmapmusic
+	reloadmap
+	iftrue .AfterVictorious
+	sjump .AfterYourDefeat
+
+.Chespin:
+	winlosstext Route22SerenaWinText, Route22SerenaLossText
+	setlasttalked ROUTE22_COOLTRAINER_F
+	loadtrainer SERENA, SERENA_1_FENNEKIN
+	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
+	startbattle
+	dontrestartmapmusic
+	reloadmap
+	iftrue .AfterVictorious
+	sjump .AfterYourDefeat
+
+.AfterVictorious:
+	playmusic MUSIC_RIVAL_AFTER
+	opentext
+	writetext Route22SerenaText_YouWon
+	waitbutton
+	closetext
+	sjump .FinishRival
+
+.AfterYourDefeat:
+	playmusic MUSIC_RIVAL_AFTER
+	opentext
+	writetext Route22SerenaText_YouLost
+	waitbutton
+	closetext
+.FinishRival:
+	applymovement ROUTE22_COOLTRAINER_F, Route22_SerenaExits
+	disappear ROUTE22_COOLTRAINER_F
+	setscene SCENE_ROUTE22_NOOP
+	special HealParty
+	playmapmusic
+	end
+	
+Route22SerenaText_Seen:
+	text "Oh, <PLAYER>!"
+	
+	para "Fancy seeing you"
+	line "here..."
+	
+	para "So you finally"
+	line "caught up, huh?"
+	
+	para "Have you caught"
+	line "any #MON yet?"
+	
+	para "I've been catching"
+	line "tons! Wanna see?"
+	
+	para "Let's have a"
+	line "battle!"
+	done
+	
+Route22SerenaWinText:
+	text "Huh, you're better"
+	line "than I thought!"
+	done
+
+Route22SerenaText_YouWon:
+	text "That was a great"
+	line "battle!"
+	
+	para "Don't worry,"
+	line "I'm sure you'll"
+	cont "win next time!"
+	
+	para "Well, I've gotta"
+	line "go - I'm gonna"
+	cont "go see SHAUNA."
+	
+	para "Let's battle"
+	line "again soon!"
+	
+	para "Catch you later!"
+	done
+
+Route22SerenaLossText:
+	text "So? What did you"
+	line "think?"
+	done
+
+Route22SerenaText_YouLost:
+	text "So you beat me..."
+	
+	para "I was so sure"
+	line "I would win!"
+	
+	para "Oh well..."
+	
+	para "I guess I'll just"
+	line "have to train"
+	cont "harder then!"
+	
+	para "I'm gonna go"
+	line "catch up with"
+	cont "SHAUNA."
+	
+	para "Catch you later!"
+	done
+	
+Route22_SerenaWalksToYou:
+	step DOWN
+	step DOWN
+	step DOWN
+	step DOWN
+	step_end
+	
+Route22_SerenaExits:
+	step UP
+	step UP
+	step UP
+	step UP
+	step UP
+	step_end
 	
 Route22Sign:
 	jumptext Route22SignText
@@ -188,6 +355,8 @@ Route22_MapEvents:
 	def_warp_events
 
 	def_coord_events
+	coord_event  2, 16, SCENE_ROUTE22_SERENA, Route22SerenaLeft
+	coord_event  3, 16, SCENE_ROUTE22_SERENA, Route22SerenaRight
 
 	def_bg_events
 	bg_event  3,  9, BGEVENT_READ, Route22Sign
@@ -198,3 +367,4 @@ Route22_MapEvents:
 	object_event 29,  6, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerYoungsterLoic, -1
 	object_event 29, 13, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerSchoolboyRabbie, -1
 	object_event 35, 18, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerLassElsa, -1
+	object_event  3, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_22_SERENA

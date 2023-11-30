@@ -219,40 +219,40 @@ MonMenuIconPals:
 	icon_pals BLUE,   GRAY   ; HONEDGE
 	icon_pals PURPLE, BROWN  ; DOUBLADE
 	icon_pals PURPLE, PURPLE ; AEGISLASH
-	icon_pals PINK,   BLUE   ; 
-	icon_pals PURPLE, BROWN  ; 
-	icon_pals BLUE,   PURPLE ; 
-	icon_pals BLUE,   PURPLE ; 
-	icon_pals PURPLE, GRAY   ; 
-	icon_pals GRAY,   BROWN  ; 
-	icon_pals PINK,   BLUE   ; 
-	icon_pals PURPLE, GRAY   ; 
-	icon_pals BLUE,   PURPLE ; 
-	icon_pals RED,    GREEN  ; 
-	icon_pals RED,    BLUE   ; 
-	icon_pals BLUE,   PURPLE ; 
-	icon_pals RED,    PURPLE ; 
-	icon_pals BROWN,  GREEN  ; 
-	icon_pals BROWN,  GREEN  ; 
-	icon_pals RED,    GRAY   ; 
-	icon_pals RED,    BLUE   ; 
-	icon_pals BROWN,  BLUE   ; 
-	icon_pals BROWN,  BROWN  ; 
-	icon_pals PINK,   TEAL   ; 
-	icon_pals BLUE,   GRAY   ;
-	icon_pals RED,    BROWN  ; 
-	icon_pals RED,    PURPLE ; 
-	icon_pals RED,    BLUE   ; 
-	icon_pals BLUE,   PURPLE ; 
-	icon_pals RED,    PURPLE ; 
-	icon_pals BROWN,  GREEN  ; 
-	icon_pals BROWN,  GREEN  ; 
-	icon_pals RED,    GRAY   ; 
-	icon_pals RED,    BLUE   ; 
-	icon_pals BROWN,  BLUE   ; 
-	icon_pals BROWN,  BROWN  ; 
-	icon_pals PINK,   TEAL   ; 
-	icon_pals BLUE,   GRAY   ; 
+	icon_pals PINK,   BLUE   ; SPRITZEE
+	icon_pals PINK,   BROWN  ; AROMATISSE
+	icon_pals PINK,   PURPLE ; SWIRLIX
+	icon_pals PINK,   PURPLE ; SLURPUFF
+	icon_pals PINK,   GRAY   ; INKAY
+	icon_pals PURPLE, BROWN  ; MALAMAR
+	icon_pals BROWN,  BLUE   ; BINACLE
+	icon_pals BROWN,  GRAY   ; BARBARACLE
+	icon_pals PINK,   PURPLE ; SKRELP
+	icon_pals PURPLE, GREEN  ; DRAGALGE
+	icon_pals BLUE,   BLUE   ; CLAUNCHER
+	icon_pals BLUE,   PURPLE ; CLAWITZER
+	icon_pals BROWN,  PURPLE ; HELIOPTILE
+	icon_pals RED,    GREEN  ; HELIOLISK
+	icon_pals BROWN,  GREEN  ; TYRUNT
+	icon_pals RED,    GRAY   ; TYRANTRUM
+	icon_pals BLUE,   BLUE   ; AMAURA
+	icon_pals BLUE,   BLUE   ; AURORUS
+	icon_pals PINK,   BROWN  ; SYLVEON
+	icon_pals GREEN,  TEAL   ; HAWLUCHA
+	icon_pals RED,    GRAY   ; DEDENNE
+	icon_pals RED,    BROWN  ; CARBINK
+	icon_pals PURPLE, PURPLE ; GOOMY
+	icon_pals PURPLE, BLUE   ; SLIGGOO
+	icon_pals PURPLE, PURPLE ; GOODRA
+	icon_pals GRAY,   PURPLE ; KLEFKI
+	icon_pals GREEN,  GREEN  ; PHANTUMP
+	icon_pals GREEN,  GREEN  ; TREVENANT
+	icon_pals PINK,   GRAY   ; PUMPKABOO
+	icon_pals RED,    BLUE   ; GOURGEIST
+	icon_pals BLUE,   TEAL   ; BERGMITE
+	icon_pals BLUE,   GRAY   ; AVALUGG
+	icon_pals PURPLE, GRAY   ; NOIBAT
+	icon_pals PURPLE, GRAY   ; NOIVERN
 	icon_pals BLUE,   BROWN  ; XERNEAS
 	icon_pals RED,    BROWN  ; YVELTAL
 	icon_pals GREEN,  BROWN  ; ZYGARDE

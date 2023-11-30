@@ -141,11 +141,11 @@ ItemDescriptions:
 	dw CharcoalDesc
 	dw BerryJuiceDesc
 	dw ScopeLensDesc
-	dw TeruSama12Desc
-	dw TeruSama13Desc
+	dw ShinyStoneDesc
+	dw DuskStoneDesc
 	dw MetalCoatDesc
 	dw DragonFangDesc
-	dw TeruSama14Desc
+	dw LinkCableDesc
 	dw LeftoversDesc
 	dw TeruSama15Desc
 	dw TeruSama16Desc
@@ -802,11 +802,13 @@ ScopeLensDesc:
 	db   "Raises critical"
 	next "hit ratio. (HOLD)@"
 
-TeruSama12Desc:
-	db   "?@"
+ShinyStoneDesc:
+	db   "Evolves certain"
+	next "kinds of #MON.@"
 
-TeruSama13Desc:
-	db   "?@"
+DuskStoneDesc:
+	db   "Evolves certain"
+	next "kinds of #MON.@"
 
 MetalCoatDesc:
 	db   "Powers up steel-"
@@ -816,8 +818,9 @@ DragonFangDesc:
 	db   "Powers up dragon-"
 	next "type moves. (HOLD)@"
 
-TeruSama14Desc:
-	db   "?@"
+LinkCableDesc:
+	db   "Evolves certain"
+	next "kinds of #MON.@"
 
 LeftoversDesc:
 	db   "Restores HP during"

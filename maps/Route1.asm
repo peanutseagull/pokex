@@ -86,6 +86,7 @@ Route1ShaunaRight:
 	applymovement ROUTE1_KAREN, Route1_ShaunaExits
 	disappear ROUTE1_KAREN
 	setscene SCENE_ROUTE1_NOOP
+	setmapscene ROUTE_22, SCENE_ROUTE22_SERENA
 	special HealParty
 	playmapmusic
 	end

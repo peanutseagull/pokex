@@ -37,6 +37,9 @@ ShaunasHouse_Blocks:
 
 Route2Gate_Blocks:
 	INCBIN "maps/NorthSouthGate.blk"
+	
+Route4LumioseGate_Blocks:
+	INCBIN "maps/Route4LumioseGate.blk"
 
 PlayersHouse1F_Blocks:
 SerenasHouse1F_Blocks:
@@ -49,6 +52,34 @@ SECTION "Map Blocks 2", ROMX
 
 LumioseSouth_Blocks:
 	INCBIN "maps/LumioseSouth.blk"
+	
+LumioseNorth_Blocks:
+	INCBIN "maps/LumioseNorth.blk"
+	
+VernalAvenue_Blocks:
+	INCBIN "maps/VernalAvenue.blk"
+	
+EstivalAvenue_Blocks:
+	INCBIN "maps/EstivalAvenue.blk"
+	
+AutumnalAvenue_Blocks:
+	INCBIN "maps/AutumnalAvenue.blk"
+	
+HibernalAvenue_Blocks:
+	INCBIN "maps/HibernalAvenue.blk"
+	
+StoneEmporium_Blocks:
+	INCBIN "maps/LumioseMart.blk"
+	
+RougePlaza_Blocks:
+JaunePlaza_Blocks:
+MagentaPlaza_Blocks:
+BleuPlaza_Blocks:
+VertPlaza_Blocks:
+	INCBIN "maps/LumiosePlaza.blk"
+	
+CentricoPlaza_Blocks:
+	INCBIN "maps/CentricoPlaza.blk"
 	
 CamphrierTown_Blocks:
 	INCBIN "maps/CamphrierTown.blk"

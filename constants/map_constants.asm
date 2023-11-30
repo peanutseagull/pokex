@@ -71,7 +71,20 @@ ENDM
 	endgroup
 	
 	newgroup LUMIOSE											  ;  5
-	map_const LUMIOSE_SOUTH,							    1,  1 ;  1
+	map_const ROUTE_4_LUMIOSE_GATE,						    5,  4 ;  1
+	map_const LUMIOSE_SOUTH,							   33, 17 ;  2
+	map_const LUMIOSE_NORTH,							   33, 17 ;  3
+	map_const VERNAL_AVENUE,							    8, 30 ;  4
+	map_const ESTIVAL_AVENUE,							    8, 30 ;  5
+	map_const AUTUMNAL_AVENUE,								8, 30 ;  6
+	map_const HIBERNAL_AVENUE,								8, 30 ;  7
+	map_const ROUGE_PLAZA,								   10, 11 ;  8
+	map_const JAUNE_PLAZA,								   10, 11 ;  9
+	map_const MAGENTA_PLAZA,							   10, 11 ; 10
+	map_const BLEU_PLAZA,								   10, 11 ; 11
+	map_const VERT_PLAZA,								   10, 11 ; 12
+	map_const CENTRICO_PLAZA,							   20, 20 ; 13
+	map_const STONE_EMPORIUM,								6,  4 ; 14
 	endgroup
 	
 	newgroup CAMPHRIER											  ;  6

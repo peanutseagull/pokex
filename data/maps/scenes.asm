@@ -87,4 +87,5 @@ MapScenes::
 	scene_var VANIVILLE_TOWN,							   wVanivilleTownSceneID
 	scene_var SERENAS_HOUSE_2F,							   wSerenasHouseSceneID
 	scene_var ROUTE_1,									   wRoute1SceneID
+	scene_var ROUTE_22,									   wRoute22SceneID
 	db -1 ; end

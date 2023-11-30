@@ -639,7 +639,7 @@ PoliwagEvosAttacks:
 
 PoliwhirlEvosAttacks:
 	db EVOLVE_ITEM, WATER_STONE, POLIWRATH
-	db EVOLVE_TRADE, KINGS_ROCK, POLITOED
+	db EVOLVE_ITEM, LINK_CABLE, POLITOED
 	db 0 ; no more evolutions
 	db 1, BUBBLE
 	db 1, HYPNOSIS
@@ -670,7 +670,7 @@ AbraEvosAttacks:
 	db 0 ; no more level-up moves
 
 KadabraEvosAttacks:
-	db EVOLVE_TRADE, -1, ALAKAZAM
+	db EVOLVE_ITEM, LINK_CABLE, ALAKAZAM
 	db 0 ; no more evolutions
 	db 1, TELEPORT
 	db 1, KINESIS
@@ -714,7 +714,7 @@ MachopEvosAttacks:
 	db 0 ; no more level-up moves
 
 MachokeEvosAttacks:
-	db EVOLVE_TRADE, -1, MACHAMP
+	db EVOLVE_ITEM, LINK_CABLE, MACHAMP
 	db 0 ; no more evolutions
 	db 1, LOW_KICK
 	db 1, LEER
@@ -828,7 +828,7 @@ GeodudeEvosAttacks:
 	db 0 ; no more level-up moves
 
 GravelerEvosAttacks:
-	db EVOLVE_TRADE, -1, GOLEM
+	db EVOLVE_ITEM, LINK_CABLE, GOLEM
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, DEFENSE_CURL
@@ -861,7 +861,7 @@ GolemEvosAttacks:
 
 SlowpokeEvosAttacks:
 	db EVOLVE_LEVEL, 37, SLOWBRO
-	db EVOLVE_TRADE, KINGS_ROCK, SLOWKING
+	db EVOLVE_ITEM, LINK_CABLE, SLOWKING
 	db 0 ; no more evolutions
 	db 1, CURSE
 	db 1, TACKLE
@@ -997,7 +997,7 @@ GastlyEvosAttacks:
 	db 0 ; no more level-up moves
 
 HaunterEvosAttacks:
-	db EVOLVE_TRADE, -1, GENGAR
+	db EVOLVE_ITEM, LINK_CABLE, GENGAR
 	db 0 ; no more evolutions
 	db 1, HYPNOSIS
 	db 1, LICK
@@ -1026,7 +1026,7 @@ GengarEvosAttacks:
 	db 0 ; no more level-up moves
 
 OnixEvosAttacks:
-	db EVOLVE_TRADE, METAL_COAT, STEELIX
+	db EVOLVE_ITEM, LINK_CABLE, STEELIX
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, SCREECH
@@ -1178,7 +1178,7 @@ HorseaEvosAttacks:
 	db 0 ; no more level-up moves
 
 SeadraEvosAttacks:
-	db EVOLVE_TRADE, DRAGON_SCALE, KINGDRA
+	db EVOLVE_ITEM, LINK_CABLE, KINGDRA
 	db 0 ; no more evolutions
 	db 1, BUBBLE
 	db 1, SMOKESCREEN
@@ -1260,7 +1260,7 @@ MrMimeEvosAttacks:
 	db 0 ; no more level-up moves
 
 ScytherEvosAttacks:
-	db EVOLVE_TRADE, METAL_COAT, SCIZOR
+	db EVOLVE_ITEM, LINK_CABLE, SCIZOR
 	db 0 ; no more evolutions
 	db 1, QUICK_ATTACK
 	db 1, LEER
@@ -1361,7 +1361,7 @@ EeveeEvosAttacks:
 	db EVOLVE_ITEM, FIRE_STONE, FLAREON
 	db EVOLVE_HAPPINESS, TR_MORNDAY, ESPEON
 	db EVOLVE_HAPPINESS, TR_NITE, UMBREON
-	db EVOLVE_ITEM, MOON_STONE, SYLVEON
+	db EVOLVE_ITEM, SHINY_STONE, SYLVEON
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, TAIL_WHIP
@@ -1416,7 +1416,7 @@ FlareonEvosAttacks:
 	db 0 ; no more level-up moves
 
 PorygonEvosAttacks:
-	db EVOLVE_TRADE, UP_GRADE, PORYGON2
+	db EVOLVE_ITEM, LINK_CABLE, PORYGON2
 	db 0 ; no more evolutions
 	db 1, CONVERSION2
 	db 1, TACKLE
@@ -2730,7 +2730,7 @@ FlabebeEvosAttacks:
 	db 0 ; no more level up moves
 	
 FloetteEvosAttacks:
-	db EVOLVE_ITEM, MOON_STONE, FLORGES
+	db EVOLVE_ITEM, SHINY_STONE, FLORGES
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, VINE_WHIP
@@ -2764,14 +2764,14 @@ FlorgesEvosAttacks:
 	
 SkiddoEvosAttacks:
 	db EVOLVE_LEVEL, 32, GOGOAT
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, RAZOR_LEAF
 	db 0
 	
 GogoatEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, RAZOR_LEAF
@@ -2779,21 +2779,21 @@ GogoatEvosAttacks:
 
 PanchamEvosAttacks:
 	db EVOLVE_LEVEL, 32, PANGORO
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, CROSS_CHOP
 	db 0
 	
 PangoroEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, CROSS_CHOP
 	db 0
 	
 FurfrouEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, BODY_SLAM
@@ -2801,14 +2801,14 @@ FurfrouEvosAttacks:
 	
 EspurrEvosAttacks:
 	db EVOLVE_LEVEL, 25, MEOWSTIC
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, PSYCHIC_M
 	db 0
 	
 MeowsticEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, PSYCHIC_M
@@ -2816,67 +2816,67 @@ MeowsticEvosAttacks:
 	
 HonedgeEvosAttacks:
 	db EVOLVE_LEVEL, 35, DOUBLADE
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, NIGHT_SHADE
 	db 0
 	
 DoubladeEvosAttacks:
-	db EVOLVE_ITEM, MOON_STONE, AEGISLASH
-	db 0
+	db EVOLVE_ITEM, DUSK_STONE, AEGISLASH
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, NIGHT_SHADE
 	db 0
 	
 AegislashEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, NIGHT_SHADE
 	db 0
 	
 SpritzeeEvosAttacks:
-	db EVOLVE_TRADE, AROMATISSE
-	db 0
+	db EVOLVE_ITEM, SHINY_STONE, AROMATISSE
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, PSYCHIC_M
 	db 0
 	
 AromatisseEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, PSYCHIC_M
 	db 0
 	
 SwirlixEvosAttacks:
-	db EVOLVE_TRADE, SLURPUFF
-	db 0
+	db EVOLVE_ITEM, SHINY_STONE, SLURPUFF
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, PSYCHIC_M
 	db 0
 	
 SlurpuffEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, PSYCHIC_M
 	db 0
 	
 InkayEvosAttacks:
-	db EVOLVE_ITEM, MOON_STONE, MALAMAR
-	db 0
+	db EVOLVE_ITEM, DUSK_STONE, MALAMAR
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, PSYCHIC_M
 	db 0
 	
 MalamarEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, PSYCHIC_M
@@ -2884,207 +2884,218 @@ MalamarEvosAttacks:
 	
 BinacleEvosAttacks:
 	db EVOLVE_LEVEL, 39, BARBARACLE
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, ROCK_SLIDE
 	db 0
 	
 BarbaracleEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 30, ROCK_SLIDE
 	db 0
 	
 SkrelpEvosAttacks:
-	db 0
+	db EVOLVE_LEVEL, 48, DRAGALGE
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 DragalgeEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 ClauncherEvosAttacks:
-	db 0
+	db EVOLVE_LEVEL, 37, CLAWITZER
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 ClawitzerEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 
 HelioptileEvosAttacks:
-	db 0
+	db EVOLVE_ITEM, SUN_STONE, HELIOLISK
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 HelioliskEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 TyruntEvosAttacks:
-	db 0
+	db EVOLVE_LEVEL, 39, TYRANTRUM
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 TyrantrumEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 AmauraEvosAttacks:
-	db 0
+	db EVOLVE_LEVEL, 39, AURORUS
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 AurorusEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 SylveonEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 HawluchaEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 DedenneEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 CarbinkEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 GoomyEvosAttacks:
-	db 0
+	db EVOLVE_LEVEL, 40, SLIGGOO
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 SliggooEvosAttacks:
-	db 0
+	db EVOLVE_LEVEL, 50, GOODRA
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 GoodraEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 KlefkiEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 PhantumpEvosAttacks:
-	db 0
+	db EVOLVE_ITEM, DUSK_STONE, TREVENANT
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 TrevenantEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 PumpkabooEvosAttacks:
-	db 0
+	db EVOLVE_ITEM, DUSK_STONE, GOURGEIST
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 GourgeistEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 BergmiteEvosAttacks:
-	db 0
+	db EVOLVE_LEVEL, 37, AVALUGG
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 AvaluggEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 NoibatEvosAttacks:
-	db 0
+	db EVOLVE_LEVEL, 48, NOIVERN
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 NoivernEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 XerneasEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 YveltalEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 ZygardeEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 DiancieEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 HoopaEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0
 	
 VolcanionEvosAttacks:
-	db 0
+	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
 	db 0

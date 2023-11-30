@@ -129,11 +129,10 @@ YoungsterZacharyBeatenText:
 	
 YoungsterZacharyAfterBattleText:
 	text "BUG-type #MON"
-	line "evolve so"
-	cont "quickly,"
+	line "evolve so quickly,"
 	
-	para "I just can't"
-	line "keep up!"
+	para "I just can't keep"
+	line "up!"
 	done
 	
 YoungsterDavidSeenText:
