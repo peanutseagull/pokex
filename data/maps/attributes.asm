@@ -171,6 +171,11 @@ ENDM
 	map_attributes SantaluneMart, SANTALUNE_MART, $00, 0
 	map_attributes SantaluneGym, SANTALUNE_GYM, $00, 0
 	map_attributes SantaluneGymB1F, SANTALUNE_GYM_B1F, $00, 0
+	map_attributes SantaluneHouse1, SANTALUNE_HOUSE_1, $00, 0
+	map_attributes SantaluneHouse2, SANTALUNE_HOUSE_2, $00, 0
+	map_attributes SantaluneHouse3, SANTALUNE_HOUSE_3, $00, 0
+	map_attributes SantaluneHouse4, SANTALUNE_HOUSE_4, $00, 0
+	map_attributes EarlsPokemonAcademy, EARLS_POKEMON_ACADEMY, $00, 0
 	map_attributes Pokecenter2F, POKECENTER_2F, $00, 0
 	map_attributes TradeCenter, TRADE_CENTER, $00, 0
 	map_attributes Colosseum, COLOSSEUM, $00, 0
@@ -178,6 +183,8 @@ ENDM
 	map_attributes MobileTradeRoom, MOBILE_TRADE_ROOM, $00, 0
 	map_attributes MobileBattleRoom, MOBILE_BATTLE_ROOM, $00, 0
 	map_attributes Route4LumioseGate, ROUTE_4_LUMIOSE_GATE, $00, 0
+	map_attributes CyllageHotel, CYLLAGE_HOTEL, $00, 0
+
 	; map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
 	; connection west, Route29, ROUTE_29, 0
 	; connection east, Route27, ROUTE_27, 0
@@ -596,7 +603,6 @@ ENDM
 	; map_attributes Route43Gate, ROUTE_43_GATE, $00, 0
 	; map_attributes VioletMart, VIOLET_MART, $00, 0
 	; map_attributes VioletGym, VIOLET_GYM, $00, 0
-	; map_attributes EarlsPokemonAcademy, EARLS_POKEMON_ACADEMY, $00, 0
 	; map_attributes VioletNicknameSpeechHouse, VIOLET_NICKNAME_SPEECH_HOUSE, $00, 0
 	; map_attributes VioletPokecenter1F, VIOLET_POKECENTER_1F, $00, 0
 	; map_attributes VioletKylesHouse, VIOLET_KYLES_HOUSE, $00, 0

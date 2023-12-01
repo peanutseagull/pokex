@@ -68,6 +68,11 @@ ENDM
 	map_const SANTALUNE_GYM_B1F,						   15, 15 ;  6
 	map_const ROUTE_4,									   16, 30 ;  7				
 	map_const ROUTE_22,									   20, 12 ;  8
+	map_const SANTALUNE_HOUSE_1,							4,  4 ;  9
+	map_const SANTALUNE_HOUSE_2,							4,  4 ; 10
+	map_const SANTALUNE_HOUSE_3,							4,  4 ; 11
+	map_const SANTALUNE_HOUSE_4,							4,  4 ; 12
+	map_const EARLS_POKEMON_ACADEMY,                        4,  8 ; 13
 	endgroup
 	
 	newgroup LUMIOSE											  ;  5
@@ -93,6 +98,7 @@ ENDM
 	
 	newgroup CYLLAGE											  ;  7
 	map_const CYLLAGE_CITY,								    1,  1 ;  1
+	map_const CYLLAGE_HOTEL,							   14, 10 ;  9
 	endgroup
 	
 	newgroup AMBRETTE											  ;  8
@@ -352,7 +358,6 @@ ENDM
 	; map_const VIOLET_CITY,                                 20, 18 ;  5
 	; map_const VIOLET_MART,                                  6,  4 ;  6
 	; map_const VIOLET_GYM,                                   5,  8 ;  7
-	; map_const EARLS_POKEMON_ACADEMY,                        4,  8 ;  8
 	; map_const VIOLET_NICKNAME_SPEECH_HOUSE,                 4,  4 ;  9
 	; map_const VIOLET_POKECENTER_1F,                         5,  4 ; 10
 	; map_const VIOLET_KYLES_HOUSE,                           4,  4 ; 11

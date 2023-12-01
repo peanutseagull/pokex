@@ -20,7 +20,7 @@ Route22Noop2Scene:
 	end
 	
 Route22SerenaLeft:
-	moveobject ROUTE22_COOLTRAINER_F, 2, 10
+	moveobject ROUTE22_COOLTRAINER_F, 2, 11
 Route22SerenaRight:
 	turnobject PLAYER, UP
 	showemote EMOTE_SHOCK, PLAYER, 15
@@ -177,7 +177,7 @@ Route22Sign:
 	
 Route22SignText:
 	text "ROUTE 22:"
-	line "Detourner Way"
+	line "Détourner Way"
 	done
 	
 TrainerPicnickerLouise:
@@ -349,6 +349,9 @@ LassElsaAfterText:
 	cont "thing ever?"
 	done
 	
+Route22Elixer:
+	itemball ELIXER
+	
 Route22_MapEvents:
 	db 0, 0 ; filler
 
@@ -368,3 +371,4 @@ Route22_MapEvents:
 	object_event 29, 13, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerSchoolboyRabbie, -1
 	object_event 35, 18, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerLassElsa, -1
 	object_event  3, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_22_SERENA
+	object_event  2,  5, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route22Elixer, EVENT_ROUTE_22_ELIXER

@@ -11,7 +11,7 @@ SantaluneForest_Blocks:
 
 SantaluneCity_Blocks:
 	INCBIN "maps/SantaluneCity.blk"
-
+	
 Route1_Blocks:
 	INCBIN "maps/Route1.blk"
 	
@@ -33,7 +33,14 @@ Pokecenter2F_Blocks:
 NeighboursHouse_Blocks:
 TrevorsHouse_Blocks:
 ShaunasHouse_Blocks:
+SantaluneHouse1_Blocks:
+SantaluneHouse2_Blocks:
+SantaluneHouse3_Blocks:
+SantaluneHouse4_Blocks:
 	INCBIN "maps/House1.blk"
+	
+EarlsPokemonAcademy_Blocks:
+	INCBIN "maps/EarlsPokemonAcademy.blk"
 
 Route2Gate_Blocks:
 	INCBIN "maps/NorthSouthGate.blk"
@@ -86,6 +93,9 @@ CamphrierTown_Blocks:
 	
 CyllageCity_Blocks:
 	INCBIN "maps/CyllageCity.blk"
+	
+CyllageHotel_Blocks:
+	INCBIN "maps/Hotel.blk"
 	
 AmbretteTown_Blocks:
 	INCBIN "maps/AmbretteTown.blk"

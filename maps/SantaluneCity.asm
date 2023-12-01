@@ -91,6 +91,58 @@ Text_AlexaGymLeader:
 	cont "face you!"
 	done	
 	
+SantaluneCityPokefanmScript:
+	jumptextfaceplayer SantaluneCityPokefanmText
+	
+SantaluneCityLassScript:
+	jumptextfaceplayer SantaluneCityLassText
+	
+SantaluneCityPokefanfScript:
+	jumptextfaceplayer SantaluneCityPokefanfText
+	
+SantaluneCityLass2Script:
+	jumptextfaceplayer SantaluneCityLass2Text
+	
+SantaluneCityLass2Text:
+	text "If you master"
+	line "type matchups,"
+	
+	para "even strong"
+	line "opponents will be"
+	cont "a breeze!"
+	done
+	
+SantaluneCityPokefanfText:
+	text "SANTALUNE used to"
+	line "have a boutique.."
+	
+	para "But they're so"
+	line "unsustainable!"
+	
+	para "The dyes from the"
+	line "factory leeched"
+	cont "into the river,"
+	
+	para "I'm glad we got"
+	line "rid of that thing!"
+	done
+	
+SantaluneCityLassText:
+	text "#MON love"
+	line "yummy treats just"
+	cont "like you or me!"
+	done
+	
+SantaluneCityPokefanmText:
+	text "Walking through"
+	line "tall grass is"
+	cont "great fun --"
+	
+	para "All kinds of"
+	line "#MON can jump"
+	cont "out at you!"
+	done
+	
 SantaluneCitySign:
 	jumptext SantaluneCitySignText
 	
@@ -99,6 +151,26 @@ SantaluneCitySignText:
 	line "A traditional"
 	cont "city."
 	done
+
+SantaluneCafeSign:
+	jumptext SantaluneCafeSignText
+	
+SantaluneCafeSignText:
+	text "Drinks:"
+	
+	para "Café au lait"
+	line "Chocolat chaud"
+	cont "Limonade"
+	done
+	
+TrainersSchoolSign:
+	jumptext TrainersSchoolSignText
+	
+TrainersSchoolSignText:
+	text "TRAINERS SCHOOL"
+	line "Brush up on the"
+	cont "basics!"
+	done
 	
 SantaluneCity_MapEvents:
 	db 0, 0 ; filler
@@ -106,12 +178,23 @@ SantaluneCity_MapEvents:
 	def_warp_events
 	warp_event 23, 27, SANTALUNE_POKECENTER_1F, 1
 	warp_event 24,  5, SANTALUNE_GYM, 1
-	warp_event  3, 17, SANTALUNE_MART, 2
+	warp_event 27, 17, SANTALUNE_MART, 2
+	warp_event 14,  9, EARLS_POKEMON_ACADEMY, 2
+	warp_event  3, 17, SANTALUNE_HOUSE_1, 2
+	warp_event  7, 17, SANTALUNE_HOUSE_2, 2
+	warp_event  4, 27, SANTALUNE_HOUSE_3, 2
+	warp_event 27, 27, SANTALUNE_HOUSE_4, 2
 	
 	def_coord_events
 
 	def_bg_events
 	bg_event 21, 27, BGEVENT_READ, SantaluneCitySign
+	bg_event 21, 17, BGEVENT_READ, SantaluneCafeSign
+	bg_event 12, 10, BGEVENT_READ, TrainersSchoolSign
 
 	def_object_events
 	object_event  8,  7, SPRITE_CLAIR, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, AlexaSantaluneScript, -1
+	object_event 10, 30, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SantaluneCityPokefanmScript, -1
+	object_event 23, 21, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SantaluneCityLassScript, -1
+	object_event 18, 15, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SantaluneCityPokefanfScript, -1
+	object_event  4, 11, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SantaluneCityLass2Script, -1

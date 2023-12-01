@@ -364,6 +364,10 @@ GruntMGroup:
 GentlemanGroup:
 
 SkierGroup:
+	; SKIER (1)
+	db "CALIDA@", TRAINERTYPE_NORMAL
+	db 10, FLETCHLING
+	db -1 ; end
 
 TeacherGroup:
 
@@ -380,7 +384,7 @@ BugCatcherGroup:
 	db "OLIVER@", TRAINERTYPE_NORMAL
 	db 4, CATERPIE
 	db 5, METAPOD
-	db -1
+	db -1 ; end
 
 FisherGroup:
 
@@ -489,8 +493,17 @@ PicnickerGroup:
 	db 6, PSYDUCK
 	db 7, LITLEO
 	db -1 ; end
+	
+	; PICNICKER (4)
+	db "MIA@", TRAINERTYPE_NORMAL
+	db 9, BELLSPROUT
+	db -1 ; end
 
 CamperGroup:
+	; CAMPER (1)
+	db "ADRIAN@", TRAINERTYPE_NORMAL
+	db 9, MAGIKARP
+	db -1 ; end
 
 ExecutiveFGroup:
 
@@ -499,20 +512,48 @@ SageGroup:
 MediumGroup:
 
 BoarderGroup:
+	; BOARDER (1)
+	db "ROLAND@", TRAINERTYPE_NORMAL
+	db 10, PIDGEY
+	db -1 ; end
 
 PokefanMGroup:
+	; POKEFANM (1)
+	db "GABE@", TRAINERTYPE_NORMAL
+	db 7, PICHU
+	db 9, PIKACHU
+	db -1 ; end
 
 KimonoGirlGroup:
 
 TwinsGroup:
 
 PokefanFGroup:
+	; POKEFANF (2)
+	db "AGNES@", TRAINERTYPE_NORMAL
+	db 7, SKIDDO
+	db 8, FURFROU
+	db -1 ; end
 
 RedGroup:
 
 BlueGroup:
 
 OfficerGroup:
+	; OFFICER (1)
+	db "WHEATON@", TRAINERTYPE_NORMAL
+	db 10, HONEDGE
+	db -1 ; end
+	
+	; OFFICER (2)
+	db "FABIAN@", TRAINERTYPE_NORMAL
+	db 10, CLAUNCHER
+	db -1 ; end
+	
+	; OFFICER (3)
+	db "GROVER@", TRAINERTYPE_NORMAL
+	db 7, SCYTHER
+	db -1 ; end
 
 GruntFGroup:
 

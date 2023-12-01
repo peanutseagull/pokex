@@ -272,6 +272,7 @@ DEF KRIS EQU __trainer_class__
 	; const ALFRED
 
 	trainerclass SKIER ; 21
+	const CALIDA
 	; const ROXANNE
 	; const CLARISSA
 
@@ -464,6 +465,7 @@ DEF KRIS EQU __trainer_class__
 	const ELLA
 	const BRIDGET
 	const LOUISE
+	const MIA
 	; const GINA1
 	; const CINDY
 	; const HOPE
@@ -485,6 +487,7 @@ DEF KRIS EQU __trainer_class__
 	; const TIFFANY4
 
 	trainerclass CAMPER ; 36
+	const ADRIAN
 	; const TODD1
 	; const BARRY
 	; const LLOYD
@@ -524,11 +527,13 @@ DEF KRIS EQU __trainer_class__
 	; const DORIS
 
 	trainerclass BOARDER ; 3a
+	const ROLAND
 	; const RONALD
 	; const BRAD
 	; const DOUGLAS
 
 	trainerclass POKEFANM ; 3b
+	const GABE
 	; const WILLIAM
 	; const DEREK1
 	; const ROBERT
@@ -559,6 +564,7 @@ DEF KRIS EQU __trainer_class__
 	; const LEAANDPIA1
 
 	trainerclass POKEFANF ; 3e
+	const AGNES
 	; const BEVERLY1
 	; const RUTH
 	; const GEORGIA
@@ -571,6 +577,9 @@ DEF KRIS EQU __trainer_class__
 	; const BLUE1
 
 	trainerclass OFFICER ; 41
+	const WHEATON
+	const FABIAN
+	const GROVER
 	; const KEITH
 
 	trainerclass GRUNTF ; 42

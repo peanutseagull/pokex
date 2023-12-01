@@ -15,7 +15,8 @@ DEF NPCTRADE_STRUCT_LENGTH EQU _RS
 ; NPCTrades indexes (see data/events/npc_trades.asm)
 	const_def
 	const NPC_TRADE_MIKE   ; 0
-	const NPC_TRADE_KYLE   ; 1
+	; const NPC_TRADE_KYLE
+	const NPC_TRADE_CLIFF  ; 1
 	const NPC_TRADE_TIM    ; 2
 	const NPC_TRADE_EMY    ; 3
 	const NPC_TRADE_CHRIS  ; 4

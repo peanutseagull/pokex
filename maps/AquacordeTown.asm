@@ -79,7 +79,7 @@ AquacordeTown_MapEvents:
 
 	def_bg_events
 	bg_event  8, 26, BGEVENT_READ, AquacordeTownSign
-	bg_event 16, 20, BGEVENT_READ, TrevorsHouseSign
+	bg_event 15, 18, BGEVENT_READ, TrevorsHouseSign
 	bg_event  4, 20, BGEVENT_READ, ShaunasHouseSign
 	
 	def_object_events
