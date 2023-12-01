@@ -1,10 +1,15 @@
 	object_const_def
 	const VANIVILLETOWN_TEACHER
+	const VANIVILLETOWN_COOLTRAINER_F
+	const VANIVILLETOWN_SUPER_NERD
+	const VANIVILLETOWN_FISHER
+	const VANIVILLETOWN_KAREN
 	
 VanivilleTown_MapScripts:
 	def_scene_scripts
 	scene_script VanivilleTownNoop1Scene, SCENE_VANIVILLETOWN_TEACHER_STOPS_YOU
-	scene_script VanivilleTownNoop2Scene, SCENE_VANIVILLETOWN_NOOP
+	scene_script VanivilleTownNoop2Scene, SCENE_VANIVILLETOWN_RIVALS
+	scene_script VanivilleTownNoop3Scene, SCENE_VANIVILLETOWN_NOOP
 	
 	def_callbacks
 
@@ -12,6 +17,9 @@ VanivilleTownNoop1Scene:
 	end
 
 VanivilleTownNoop2Scene:
+	end
+	
+VanivilleTownNoop3Scene:
 	end
 	
 VanivilleTown_TeacherStopsYouScene1:
@@ -107,22 +115,453 @@ VanivilleTown_TeacherStopsYouScene4:
 	end
 
 VanivilleTownTeacherScript:
-	jumptextfaceplayer Text_ElmDiscoveredNewMon
-;	faceplayer
-;	opentext
+	faceplayer
+	opentext
 ;	checkevent EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST
 ;	iftrue .CallMom
 ;	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
 ;	iftrue .TellMomYoureLeaving
-;	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
-;	iftrue .MonIsAdorable
-;	writetext Text_GearIsImpressive
-;	waitbutton
-;	closetext
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iftrue .MonIsAdorable
+	writetext Text_No
+	waitbutton
+	closetext
 	end
 	
+.MonIsAdorable:
+	writetext Text_YourMonIsAdorable
+	waitbutton
+	closetext
+	end
 
-Text_ElmDiscoveredNewMon:
+VanivilleTown_RivalsScene:
+	turnobject PLAYER, LEFT
+	showemote EMOTE_SHOCK, PLAYER, 15
+	opentext
+	writetext Text_WhatTookYouSoLong
+	waitbutton
+	closetext
+	opentext 
+	writetext Text_OverHere
+	waitbutton
+	closetext
+	follow VANIVILLETOWN_COOLTRAINER_F, PLAYER
+	applymovement VANIVILLETOWN_COOLTRAINER_F, VanivilleTown_GoMeetOthers
+	turnobject PLAYER, DOWN
+	turnobject VANIVILLETOWN_COOLTRAINER_F, DOWN
+	stopfollow
+	turnobject VANIVILLETOWN_KAREN, UP
+	opentext
+	writetext Text_MeetShauna
+	waitbutton
+	closetext
+	turnobject VANIVILLETOWN_KAREN, LEFT
+	showemote EMOTE_HAPPY, VANIVILLETOWN_FISHER, 15
+	opentext
+	writetext Text_MeetTierno
+	waitbutton
+	closetext
+	turnobject VANIVILLETOWN_SUPER_NERD, DOWN
+	opentext
+	writetext Text_MeetTrevor
+	waitbutton
+	closetext
+	turnobject VANIVILLETOWN_SUPER_NERD, RIGHT
+	applymovement VANIVILLETOWN_KAREN, VanivilleTown_ShaunaMovement1
+	opentext
+	writetext Text_PickAPokemon
+	loadmenu .MenuHeader
+	verticalmenu
+	closewindow
+	ifequal 1, .fennekin
+	ifequal 2, .froakie
+	ifequal 3, .chespin
+
+.fennekin
+	writetext Text_ThisPokemon
+	yesorno
+	iffalse .loop
+	pokenamemem FENNEKIN, MEM_BUFFER_0
+	givepoke FENNEKIN, 5
+	setevent EVENT_CHOSE_FENNEKIN
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	setevent EVENT_GOT_A_POKEMON_FROM_ELM
+	closetext
+	jump .SerenaFroakie
+
+.froakie
+	writetext Text_ThisPokemon
+	yesorno
+	iffalse .loop
+	pokenamemem FROAKIE, MEM_BUFFER_0
+	givepoke FROAKIE, 5
+	setevent EVENT_CHOSE_FROAKIE
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	setevent EVENT_GOT_A_POKEMON_FROM_ELM
+	closetext
+	jump .SerenaChespin
+	
+.chespin
+	writetext Text_ThisPokemon
+	yesorno
+	iffalse .loop
+	pokenamemem CHESPIN, MEM_BUFFER_0
+	givepoke CHESPIN, 5
+	setevent EVENT_CHOSE_CHESPIN
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	setevent EVENT_GOT_A_POKEMON_FROM_ELM
+	closetext
+	jump .SerenaFennekin
+
+.MenuHeader:
+	db MENU_BACKUP_TILES ; flags
+	menu_coords 0, 2, 17, TEXTBOX_Y - 1
+	dw .MenuData
+	db 1 ; default option
+
+.MenuData:
+	db STATICMENU_CURSOR ; flags
+	db 3 ; items
+	db "FENNEKIN@"
+	db "FROAKIE@"
+	db "CHESPIN@"
+
+.loop
+	writetext Text_WhichOne
+	loadmenu .MenuHeader
+	verticalmenu
+	closewindow
+	ifequal 1, .fennekin
+	ifequal 2, .froakie
+	ifequal 3, .chespin
+	
+.SerenaFroakie
+	applymovement VANIVILLETOWN_KAREN, VanivilleTown_ShaunaMovement2
+	opentext
+	writetext Text_NowSerena
+	waitbutton
+	closetext
+	opentext 
+	writetext Text_SerenaFroakie
+	waitbutton
+	closetext
+	showemote EMOTE_HAPPY, VANIVILLETOWN_KAREN, 15
+	opentext
+	writetext Text_ShaunaChespin
+	waitbutton
+	closetext
+	jump .SceneEnd
+	
+.SerenaChespin
+	applymovement VANIVILLETOWN_KAREN, VanivilleTown_ShaunaMovement2
+	opentext
+	writetext Text_NowSerena
+	waitbutton
+	closetext
+	opentext 
+	writetext Text_SerenaChespin
+	waitbutton
+	closetext
+	showemote EMOTE_HAPPY, VANIVILLETOWN_KAREN, 15
+	opentext
+	writetext Text_ShaunaFennekin
+	waitbutton
+	closetext
+	jump .SceneEnd
+	
+.SerenaFennekin
+	applymovement VANIVILLETOWN_KAREN, VanivilleTown_ShaunaMovement2
+	opentext
+	writetext Text_NowSerena
+	waitbutton
+	closetext
+	opentext 
+	writetext Text_SerenaFennekin
+	waitbutton
+	closetext
+	showemote EMOTE_HAPPY, VANIVILLETOWN_KAREN, 15
+	opentext
+	writetext Text_ShaunaFroakie
+	waitbutton
+	closetext
+	jump .SceneEnd
+
+.SceneEnd
+	applymovement VANIVILLETOWN_KAREN, VanivilleTown_ShaunaMovement3
+	applymovement VANIVILLETOWN_SUPER_NERD, VanivilleTown_Trevor1
+	turnobject VANIVILLETOWN_SUPER_NERD, UP
+	opentext
+	writetext Text_UmmAkshually
+	promptbutton
+	waitsfx
+	writetext Text_GotPokedex
+	playsound SFX_ITEM
+	waitsfx
+	setflag ENGINE_POKEDEX
+	waitbutton
+	closetext
+	applymovement VANIVILLETOWN_SUPER_NERD, VanivilleTown_Trevor2
+	opentext
+	writetext Text_PokedexIsCool
+	waitbutton
+	closetext
+	showemote EMOTE_HAPPY, VANIVILLETOWN_KAREN, 15
+	opentext
+	writetext Text_ShaunaFinal
+	waitbutton
+	closetext
+	applymovement VANIVILLETOWN_KAREN, VanivilleTown_ShaunaLeaves
+	showemote EMOTE_SHOCK, VANIVILLETOWN_COOLTRAINER_F, 10
+	showemote EMOTE_SHOCK, VANIVILLETOWN_FISHER, 10
+	showemote EMOTE_SHOCK, PLAYER, 10
+	showemote EMOTE_SHOCK, VANIVILLETOWN_SUPER_NERD, 10
+	opentext
+	writetext Text_WaitUp
+	waitbutton
+	closetext
+	applymovement VANIVILLETOWN_COOLTRAINER_F, VanivilleTown_SerenaLeaves
+	opentext
+	writetext Text_LetsGoTrevor
+	waitbutton
+	closetext
+	follow VANIVILLETOWN_FISHER, VANIVILLETOWN_SUPER_NERD
+	applymovement VANIVILLETOWN_FISHER, VanivilleTown_TiernoLeaves
+	setmapscene ROUTE_1, SCENE_ROUTE1_SHAUNA
+	disappear VANIVILLETOWN_KAREN
+	disappear VANIVILLETOWN_COOLTRAINER_F
+	disappear VANIVILLETOWN_FISHER
+	disappear VANIVILLETOWN_SUPER_NERD 
+	setscene SCENE_VANIVILLETOWN_NOOP
+	end
+	
+VanivilleTownSign:
+	jumptext VanivilleTownSignText
+
+VanivilleTownPlayersHouseSign:
+	jumptext VanivilleTownPlayersHouseSignText
+
+VanivilleTownSerenasHouseSign:
+	jumptext VanivilleTownSerenasHouseSignText
+	
+Text_LetsGoTrevor:
+	text "TIERNO: Let's go "
+	line "catch some"
+	cont "#MON, Trevs!"
+	
+	para "TREVOR: Bye..."
+	done
+
+Text_UmmAkshually:
+	text "TREVOR: Umm pardon"
+	line "me, but.."
+	
+	para "I have something"
+	line "for you guys too."
+	done
+	
+Text_GotPokedex:
+	text "<PLAYER> received"
+	line "#Dex!"
+	done
+	
+Text_PokedexIsCool:
+	text "The #Dex I just"
+	line "gave you is a"
+	cont "high-tech device."
+	
+	para "It's the latest"
+	line "version of the"
+	cont "#Dex."
+
+	para "It automatically"
+	line "records data on"
+
+	para "#MON you've"
+	line "seen or caught."
+	done
+
+
+Text_WaitUp:
+	text "SERENA: SHAUNA,"
+	line "wait up!!!"
+	done
+	
+Text_NowSerena:
+	text "SHAUNA: Now your"
+	line "turn, SERENA!"
+	done
+	
+Text_SerenaFroakie:
+	text "SERENA: Hmmmm..."
+	
+	para "I'll take FROAKIE."
+	
+	para "It clearly looks"
+	line "the strongest!"
+	done
+	
+Text_SerenaFennekin:
+	text "SERENA: Hmmmm..."
+	
+	para "I'll take FENNEKIN."
+	
+	para "It clearly looks"
+	line "the strongest!"
+	done
+	
+Text_SerenaChespin:
+	text "SERENA: Hmmm..."
+	
+	para "I'll take CHESPIN."
+	
+	para "It clearly looks"
+	line "the strongest!"
+	done
+
+Text_ShaunaChespin:
+	text "SHAUNA: YAY!"
+	
+	para "That means I"
+	line "get CHESPIN!"
+	
+	para "Isn't it just"
+	line "the cutest?"
+	done
+	
+Text_ShaunaFennekin:
+	text "SHAUNA: YAY!"
+	
+	para "That means I"
+	line "get FENNEKIN!"
+	
+	para "Isn't it just"
+	line "the cutest?"
+	done
+	
+Text_ShaunaFroakie:
+	text "SHAUNA: YAY!"
+	
+	para "That means I"
+	line "get FROAKIE!"
+	
+	para "Isn't it just"
+	line "the cutest?"
+	done
+	
+Text_ShaunaFinal:
+	text "SHAUNA: Isn't that"
+	line "just amazing?"
+	
+	para "This is gonna be"
+	line "the best adventure"
+	cont "ever!"
+	
+	para "I'm so excited!"
+	
+	para "I think Route 1"
+	line "is just up ahead."
+	
+	para "I'm sure I can"
+	line "beat you guys"
+	cont "there!"
+	
+	para "See ya!"
+	done
+	
+Text_ThisPokemon:
+	text "You want this"
+	line "#MON?"
+	done 
+	
+Text_WhichOne:
+	text "Which one do"
+	line "you want?"
+	done
+	
+Text_WhatTookYouSoLong:
+	text "SERENA: Jeez..."
+	line "What took you"
+	cont "so long?"
+	done
+	
+Text_OverHere:
+	text "Guys! Over here!"
+	done
+
+Text_MeetShauna:
+	text "GIRL: It took you"
+	line "two long enough!"
+
+	para "It's <PLAYER>" 
+	line "right?"
+	
+	para "Serena told me"
+	line "so much about you!"
+	
+	para "My name's Shauna!"
+	line "I live over in"
+	cont "AQUACORDE."
+	
+	para "It's so nice"
+	line "to finally meet"
+	cont "you!"
+	
+	para "Let me introduce"
+	line "you two to my"
+	cont "friends,"
+	
+	para "TIERNO and"
+	line "TREVOR."
+	done
+	
+Text_MeetTierno:
+	text "TIERNO: Hia,"
+	line "<PLAYER>!"
+	
+	para "Can't wait to"
+	line "get to know you!"
+	done
+	
+Text_MeetTrevor:
+	text "TREVOR: Hey..."
+	done
+	
+Text_PickAPokemon:
+	text "SHAUNA: Now that"
+	line "that's done..."
+	
+	para "We can finally"
+	line "pick our #MON!"
+	
+	para "PROF SYCAMORE"
+	line "entrusted me"
+	cont "with 3 #MON."
+	
+	para "Those two already"
+	line "have a #MON,"
+	
+	para "so that just"
+	line "leaves us three!"
+	
+	para "Why don't you"
+	line "pick first,"
+	cont "<PLAYER>?"
+	
+	para "Which #MON"
+	line "do you want?"
+	done
+	
+
+Text_YourMonIsAdorable:
+	text "Oh! Your #MON"
+	line "is adorable!"
+	cont "I wish I had one!"
+	done
+	
+Text_No:
 	text "No."
 	done
 	
@@ -188,6 +627,80 @@ VanivilleTown_TeacherBringsYouBackMovement4:
 	turn_head UP
 	step_end
 
+VanivilleTown_GoMeetOthers:
+	step DOWN
+	step DOWN
+	step DOWN
+	step DOWN
+	step DOWN
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step_end
+
+VanivilleTown_ShaunaMovement1:
+	step LEFT
+	turn_head UP
+	step_end
+
+VanivilleTown_ShaunaMovement2:
+	step LEFT
+	turn_head UP
+	step_end
+	
+VanivilleTown_ShaunaMovement3:
+	turn_step RIGHT
+	step RIGHT
+	step RIGHT
+	turn_head LEFT
+	step_end
+	
+VanivilleTown_Trevor1:
+	step RIGHT
+	step RIGHT
+	turn_head UP
+	step_end
+	
+VanivilleTown_Trevor2:
+	step LEFT
+	turn_head UP
+	step LEFT
+	turn_head RIGHT
+	step_end
+	
+VanivilleTown_TiernoLeaves:
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step UP
+	step UP
+	step_end
+
+VanivilleTown_ShaunaLeaves:
+	step UP
+	step UP
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step_end
+	
+VanivilleTown_SerenaLeaves:
+	step UP
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step_end
+
 Text_WaitPlayer:
 	text "Wait, <PLAY_G>!"
 	done
@@ -209,21 +722,80 @@ Text_ItsDangerousToGoAlone:
 	line "to the next town."
 	done
 	
+VanivilleTownSignText:
+	text "VANIVILLE TOWN"
+
+	para "A town whose"
+	line "flower is about"
+	cont "to bloom."
+	done
+
+VanivilleTownPlayersHouseSignText:
+	text "<PLAYER>'s House"
+	done
+
+VanivilleTownSerenasHouseSignText:
+	text "SERENA'S HOUSE"
+	done
+	
+VanivilleTownGrampsScript:
+	jumptextfaceplayer Text_TechnologyGuy
+	
+VanivilleTownYoungsterScript:
+	jumptextfaceplayer Text_VanivilleYoungster
+	
+Text_VanivilleYoungster:
+	text "VANIVILLE TOWN is"
+	line "pretty nice,"
+	cont "right?"
+	
+	para "Kalos has so many"
+	line "cool towns -"
+	
+	para "I wanna see them"
+	line "all when I get"
+	cont "big!"
+	done
+	
+Text_TechnologyGuy:
+	text "Oh, <PLAYER>!"
+
+	para "Is that a"
+	line "#gear?"
+	
+	para "You can call"
+	line "people from"
+	cont "anywhere in Kalos!"
+	
+	para "Isn't technology"
+	line "incredible?"
+	done
+
 VanivilleTown_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 24,  5, ELMS_LAB, 1
-	warp_event 18,  5, PLAYERS_HOUSE_1F, 1
-	warp_event  4,  5, SERENAS_HOUSE_1F, 1
+	warp_event 17,  5, PLAYERS_HOUSE_1F, 1
+	warp_event 23,  5, SERENAS_HOUSE_1F, 1
+	warp_event  5,  5, NEIGHBOURS_HOUSE, 1
 
 	def_coord_events
 	coord_event 10,  7, SCENE_VANIVILLETOWN_TEACHER_STOPS_YOU, VanivilleTown_TeacherStopsYouScene1
 	coord_event 11,  7, SCENE_VANIVILLETOWN_TEACHER_STOPS_YOU, VanivilleTown_TeacherStopsYouScene2
 	coord_event 12,  7, SCENE_VANIVILLETOWN_TEACHER_STOPS_YOU, VanivilleTown_TeacherStopsYouScene3
 	coord_event 13,  7, SCENE_VANIVILLETOWN_TEACHER_STOPS_YOU, VanivilleTown_TeacherStopsYouScene4
+	coord_event 23,  6, SCENE_VANIVILLETOWN_RIVALS, VanivilleTown_RivalsScene
 	
 	def_bg_events
-
+	bg_event  8, 10, BGEVENT_READ, VanivilleTownSign
+	bg_event 16,  6, BGEVENT_READ, VanivilleTownPlayersHouseSign
+	bg_event 24,  6, BGEVENT_READ, VanivilleTownSerenasHouseSign
+	
 	def_object_events
 	object_event 11, 11, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, VanivilleTownTeacherScript, -1
+	object_event 22,  6, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_VANIVILLE_TOWN_RIVALS
+	object_event 16, 12, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_VANIVILLE_TOWN_RIVALS
+	object_event 16, 11, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_VANIVILLE_TOWN_RIVALS
+	object_event 19, 12, SPRITE_KAREN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_VANIVILLE_TOWN_RIVALS
+	object_event  6, 14, SPRITE_GRAMPS, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, VanivilleTownGrampsScript, -1
+	object_event  3,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, VanivilleTownYoungsterScript, -1

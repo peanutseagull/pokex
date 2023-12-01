@@ -1997,61 +1997,61 @@ LinkTrade:
 ; illicit trade machines, but it doesn't seem like a very effective one.
 ; Removing this code breaks link compatibility with the vanilla gen2 games, but
 ; has otherwise no consequence.
-	ld b, 1
-	pop af
-	ld c, a
-	cp MEW
-	jr z, .send_checkbyte
-	ld a, [wCurPartySpecies]
-	cp MEW
-	jr z, .send_checkbyte
-	ld b, 2
-	ld a, c
-	cp CELEBI
-	jr z, .send_checkbyte
-	ld a, [wCurPartySpecies]
-	cp CELEBI
-	jr z, .send_checkbyte
+	; ld b, 1
+	; pop af
+	; ld c, a
+	; cp MEW
+	; jr z, .send_checkbyte
+	; ld a, [wCurPartySpecies]
+	; cp MEW
+	; jr z, .send_checkbyte
+	; ld b, 2
+	; ld a, c
+	; cp CELEBI
+	; jr z, .send_checkbyte
+	; ld a, [wCurPartySpecies]
+	; cp CELEBI
+	; jr z, .send_checkbyte
 
 ; Send the byte in a loop until the desired byte has been received.
-	ld b, 0
-.send_checkbyte
-	ld a, b
-	ld [wPlayerLinkAction], a
-	push bc
-	call Serial_PrintWaitingTextAndSyncAndExchangeNybble
-	pop bc
-	ld a, [wLinkMode]
-	cp LINK_TIMECAPSULE
-	jr z, .save
-	ld a, b
-	and a
-	jr z, .save
-	ld a, [wOtherPlayerLinkAction]
-	cp b
-	jr nz, .send_checkbyte
+	; ld b, 0
+; .send_checkbyte
+	; ld a, b
+	; ld [wPlayerLinkAction], a
+	; push bc
+	; call Serial_PrintWaitingTextAndSyncAndExchangeNybble
+	; pop bc
+	; ld a, [wLinkMode]
+	; cp LINK_TIMECAPSULE
+	; jr z, .save
+	; ld a, b
+	; and a
+	; jr z, .save
+	; ld a, [wOtherPlayerLinkAction]
+	; cp b
+	; jr nz, .send_checkbyte
 
-.save
-	farcall SaveAfterLinkTrade
-	farcall StubbedTrainerRankings_Trades
-	farcall BackupGSBallFlag
-	ld c, 40
-	call DelayFrames
-	hlcoord 0, 12
-	ld b, 4
-	ld c, 18
-	call LinkTextboxAtHL
-	hlcoord 1, 14
-	ld de, String_TradeCompleted
-	call PlaceString
-	farcall Link_WaitBGMap
-	vc_hook Trade_save_game_end
-	ld c, 50
-	call DelayFrames
-	ld a, [wLinkMode]
-	cp LINK_TIMECAPSULE
-	jp z, Gen2ToGen1LinkComms
-	jp Gen2ToGen2LinkComms
+; .save
+	; farcall SaveAfterLinkTrade
+	; farcall StubbedTrainerRankings_Trades
+	; farcall BackupGSBallFlag
+	; ld c, 40
+	; call DelayFrames
+	; hlcoord 0, 12
+	; ld b, 4
+	; ld c, 18
+	; call LinkTextboxAtHL
+	; hlcoord 1, 14
+	; ld de, String_TradeCompleted
+	; call PlaceString
+	; farcall Link_WaitBGMap
+	; vc_hook Trade_save_game_end
+	; ld c, 50
+	; call DelayFrames
+	; ld a, [wLinkMode]
+	; cp LINK_TIMECAPSULE
+	; jp z, Gen2ToGen1LinkComms
+	; jp Gen2ToGen2LinkComms
 
 InitTradeMenuDisplay_Delay:
 	ld c, 100

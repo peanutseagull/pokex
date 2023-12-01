@@ -1,137 +1,367 @@
 	object_const_def
-	const ROUTE4_YOUNGSTER
-	const ROUTE4_LASS1
-	const ROUTE4_LASS2
-	const ROUTE4_POKE_BALL
 
 Route4_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
-
-TrainerBirdKeeperHank:
-	trainer BIRD_KEEPER, HANK, EVENT_BEAT_BIRD_KEEPER_HANK, BirdKeeperHankSeenText, BirdKeeperHankBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext BirdKeeperHankAfterBattleText
-	waitbutton
-	closetext
-	end
-
-TrainerPicnickerHope:
-	trainer PICNICKER, HOPE, EVENT_BEAT_PICNICKER_HOPE, PicnickerHopeSeenText, PicnickerHopeBeatenText, 0, .Script
+	
+TrainerOfficerWheaton:
+	trainer OFFICER, WHEATON, EVENT_BEAT_OFFICER_WHEATON, OfficerWheatonSeenText, OfficerWheatonBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PicnickerHopeAfterBattleText
+	writetext OfficerWheatonAfterText
 	waitbutton
 	closetext
 	end
-
-TrainerPicnickerSharon:
-	trainer PICNICKER, SHARON, EVENT_BEAT_PICNICKER_SHARON, PicnickerSharonSeenText, PicnickerSharonBeatenText, 0, .Script
-
+	
+TrainerSkierCalida:
+	trainer SKIER, CALIDA, EVENT_BEAT_SKIER_CALIDA, SkierCalidaSeenText, SkierCalidaBeatenText, 0, .Script
+	
 .Script:
 	endifjustbattled
 	opentext
-	writetext PicnickerSharonAfterBattleText
+	writetext SkierCalidaAfterText
 	waitbutton
 	closetext
 	end
-
-MtMoonSquareSign:
-	jumptext MtMoonSquareSignText
-
-Route4HPUp:
-	itemball HP_UP
-
-Route4HiddenUltraBall:
-	hiddenitem ULTRA_BALL, EVENT_ROUTE_4_HIDDEN_ULTRA_BALL
-
-BirdKeeperHankSeenText:
-	text "I'm raising my"
-	line "#MON. Want to"
-	cont "battle with me?"
+	
+TrainerBoarderRoland:
+	trainer BOARDER, ROLAND, EVENT_BEAT_BOARDER_ROLAND, BoarderRolandSeenText, BoarderRolandBeatenText, 0, .Script
+	
+.Script:
+	endifjustbattled
+	opentext
+	writetext BoarderRolandAfterText
+	waitbutton
+	closetext
+	end
+	
+TrainerPokefanAgnes:
+	trainer POKEFANF, AGNES, EVENT_BEAT_POKEFANF_AGNES, PokefanAgnesSeenText, PokefanAgnesBeatenText, 0, .Script
+	
+.Script:
+	endifjustbattled
+	opentext
+	writetext PokefanAgnesAfterText
+	waitbutton
+	closetext
+	end
+	
+TrainerCamperAdrian:
+	trainer CAMPER, ADRIAN, EVENT_BEAT_CAMPER_ADRIAN, CamperAdrianSeenText, CamperAdrianBeatenText, 0, .Script
+	
+.Script:
+	endifjustbattled
+	opentext
+	writetext CamperAdrianAfterText
+	waitbutton
+	closetext
+	end
+	
+TrainerPicnickerMia:
+	trainer PICNICKER, MIA, EVENT_BEAT_PICNICKER_MIA, PicnickerMiaSeenText, PicnickerMiaBeatenText, 0, .Script
+	
+.Script:
+	endifjustbattled
+	opentext
+	writetext PicnickerMiaAfterText
+	waitbutton
+	closetext
+	end
+	
+TrainerPokefanGabe:
+	trainer POKEFANM, GABE, EVENT_BEAT_POKEFANM_GABE, PokefanGabeSeenText, PokefanGabeBeatenText, 0, .Script
+	
+.Script:
+	endifjustbattled
+	opentext
+	writetext PokefanGabeAfterText
+	waitbutton
+	closetext
+	end
+	
+TrainerOfficerFabian:
+	trainer OFFICER, FABIAN, EVENT_BEAT_OFFICER_FABIAN, OfficerFabianSeenText, OfficerFabianBeatenText, 0, .Script
+	
+.Script:
+	endifjustbattled
+	opentext
+	writetext OfficerFabianAfterText
+	waitbutton
+	closetext
+	end
+	
+TrainerOfficerGrover:
+	trainer OFFICER, GROVER, EVENT_BEAT_OFFICER_GROVER, OfficerGroverSeenText, OfficerGroverBeatenText, 0, .Script
+	
+.Script
+	endifjustbattled
+	opentext
+	writetext OfficerGroverAfterText
+	waitbutton
+	closetext
+	end
+	
+OfficerGroverSeenText:
+	text "Parterre Way is"
+	line "famous for its"
+	cont "hedge mazes!"
+	
+	para "If you can beat"
+	line "me, I'll tell you"
+	cont "the official name!"
+	done
+	
+OfficerGroverBeatenText:
+	text "I'm a garden pro."
+	line "You're a #MON"
+	cont "pro!"
+	done
+	
+OfficerGroverAfterText:
+	text "As promised, the"
+	line "hedge mazes are"
+	cont "called the"
+	
+	para "Geometric Gardens!"
+	done
+	
+OfficerFabianSeenText:
+	text "Behold the moves"
+	line "perfected in this"
+	cont "garden!"
+	done
+	
+OfficerFabianBeatenText:
+	text "Looks like your"
+	line "skills are more"
+	cont "honed than me!"
+	done
+	
+OfficerFabianAfterText:
+	text "If you run into"
+	line "RAMOS from"
+	cont "COUMARINE CITY,"
+	
+	para "give him my best,"
+	line "will ya?"
+	done
+	
+PokefanGabeSeenText:
+	text "I can tell by"
+	line "your face that"
+	cont "you love #MON!"
+	done
+	
+PokefanGabeBeatenText:
+	text "This battle made"
+	line "it even more clear"
+	
+	para "You really love"
+	line "#MON!"
+	done
+	
+PokefanGabeAfterText:
+	text "#MON can be"
+	line "difficult at times"
+	
+	para "But everything is"
+	line "easier if you show"
+	cont "you love them!"
+	done
+	
+PicnickerMiaSeenText:
+	text "Hey! Hey! Listen!"
+	line "I'm gonna win this"
+	cont "battle!"
+	done
+	
+PicnickerMiaBeatenText:
+	text "Come on! No fair!"
+	done 
+	
+PicnickerMiaAfterText:
+	text "No, I'm not mad!"
+	line "I'm just gonna"
+	cont "train more!"
+	done
+CamperAdrianSeenText:
+	text "Check it out!"
+	line "I just traded for"
+	cont "a cool #MON!"
+	done
+	
+CamperAdrianBeatenText:
+	text "Splish, splash..."
+	line "Splish, splash..."
+	done
+	
+CamperAdrianAfterText:
+	text "I only just got"
+	line "MAGIKARP in a"
+	cont "trade, so we're"
+	
+	para "not used to each"
+	line "other yet!"
+	done 
+PokefanAgnesSeenText:
+	text "I love my #MON!"
+	done
+	
+PokefanAgnesBeatenText:
+	text "You must love your"
+	line "#MON too to be"
+	cont "so strong!"
+	done 
+	
+PokefanAgnesAfterText:
+	text "#MON and humans"
+	line "can have a great"
+	cont "bond!"
+	done
+	
+BoarderRolandSeenText:
+	text "I battle just like"
+	line "I skate! Nonstop"
+	cont "victory!"
+	done
+	
+BoarderRolandBeatenText:
+	text "Wow! You've got"
+	line "some crazy #MON"
+	cont "there!"
+	done
+	
+BoarderRolandAfterText:
+	text "LUMIOSE is the"
+	line "best spot for us"
+	cont "skaters!"
+	done
+	
+SkierCalidaSeenText:
+	text "I love #MON"
+	line "battles, but"
+	cont "they'd be better"
+	
+	para "if I didn't have"
+	line "to stop skating!"
+	done
+	
+SkierCalidaBeatenText:
+	text "The moment I stop"
+	line "down flutters the"
+	cont "FLETCHLING!"
+	done
+	
+SkierCalidaAfterText:
+	text "I took up skating"
+	line "to chase #MON!"
 	done
 
-BirdKeeperHankBeatenText:
-	text "Ack! I lost that"
-	line "one…"
+OfficerWheatonSeenText:
+	text "I'm warnin' ya,"
+	line "youngster -- my"
+	cont "HONEDGE is sharp!"
 	done
-
-BirdKeeperHankAfterBattleText:
-	text "If you have a"
-	line "specific #MON"
-
-	para "that you want to"
-	line "raise, put it out"
-
-	para "first, then switch"
-	line "it right away."
-
-	para "That's how to do"
-	line "it."
+	
+OfficerWheatonBeatenText:
+	text "Ohhh! You cut us"
+	line "down to size!"
 	done
-
-PicnickerHopeSeenText:
-	text "I have a feeling"
-	line "that I can win."
-
-	para "Let's see if I'm"
-	line "right!"
+	
+OfficerWheatonAfterText:
+	text "To keep this"
+	line "garden lookin'"
+	cont "proper,"
+	
+	para "It's important"
+	line "to have the right"
+	cont "kinds of #MON"
 	done
+	
+Route4Repel:
+	itemball REPEL
 
-PicnickerHopeBeatenText:
-	text "Aww, you are too"
-	line "strong."
+Route4SuperPotion:
+	itemball SUPER_POTION
+	
+Route4GreatBall:
+	itemball GREAT_BALL
+
+Route4Antidote:
+	itemball ANTIDOTE
+	
+Route4Ether:
+	itemball ETHER
+	
+Route4PoisonBarb:
+	itemball POISON_BARB
+	
+Route4Sign:
+	jumptext Route4SignText
+	
+Route4SignText:
+	text "ROUTE 4:"
+	line "Parterre Way"
 	done
-
-PicnickerHopeAfterBattleText:
-	text "I heard CLEFAIRY"
-	line "appear at MT.MOON."
-
-	para "But where could"
-	line "they be?"
+	
+FountainSign:
+	jumptext FountainSignText
+	
+FountainSignText:
+	text "Perle Fountain"
+	
+	para "Acceptance creates"
+	line "harmony."
 	done
-
-PicnickerSharonSeenText:
-	text "Um…"
-	line "I…"
+	
+Route4DemoOverScript:
+	jumptextfaceplayer Route4DemoOverText
+	
+Route4DemoOverText:
+	text "You have reached"
+	line "the current end"
+	cont "of #X."
+	
+	para "The dev is working"
+	line "hard to add more"
+	cont "to the game!"
+	
+	para "Thank you so much"
+	line "for playing!"
+	
+	para "Please leave your"
+	line "feedback on Github"
 	done
-
-PicnickerSharonBeatenText:
-	text "…"
-	done
-
-PicnickerSharonAfterBattleText:
-	text "……I'll go train"
-	line "some more…"
-	done
-
-MtMoonSquareSignText:
-	text "MT.MOON SQUARE"
-
-	para "Just go up the"
-	line "stairs."
-	done
-
+	
 Route4_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  2,  5, MOUNT_MOON, 2
-
+	warp_event 15,  3, ROUTE_4_LUMIOSE_GATE, 1
+	
 	def_coord_events
 
 	def_bg_events
-	bg_event  3,  7, BGEVENT_READ, MtMoonSquareSign
-	bg_event 10,  3, BGEVENT_ITEM, Route4HiddenUltraBall
-
+	bg_event 14, 46, BGEVENT_READ, Route4Sign
+	bg_event 13, 33, BGEVENT_READ, FountainSign
+	
 	def_object_events
-	object_event 17,  9, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBirdKeeperHank, -1
-	object_event  9,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerPicnickerHope, -1
-	object_event 21,  6, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 4, TrainerPicnickerSharon, -1
-	object_event 26,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4HPUp, EVENT_ROUTE_4_HP_UP
+	object_event  3, 43, SPRITE_OFFICER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 2, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerOfficerWheaton, -1
+	object_event 15, 36, SPRITE_BEAUTY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerSkierCalida, -1
+	object_event 15, 22, SPRITE_ROCKER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerBoarderRoland, -1
+	object_event 23, 20, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerPokefanAgnes, -1
+	object_event 11, 17, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerPicnickerMia, -1
+	object_event 20, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerCamperAdrian, -1
+	object_event 15, 10, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerPokefanGabe, -1
+	object_event 12,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerOfficerGrover, -1
+	object_event 26,  6, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerOfficerFabian, -1
+	object_event 15,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route4DemoOverScript, -1
+	object_event 12, 52, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4Repel, EVENT_ROUTE_4_REPEL
+	object_event 19, 52, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4SuperPotion, EVENT_ROUTE_4_SUPER_POTION
+	object_event 23, 42, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4GreatBall, EVENT_ROUTE_4_GREAT_BALL
+	object_event  8, 42, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4Antidote, EVENT_ROUTE_4_ANTIDOTE
+	object_event 19,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4Ether, EVENT_ROUTE_4_ETHER
+	object_event 16, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4PoisonBarb, EVENT_ROUTE_4_POISON_BARB

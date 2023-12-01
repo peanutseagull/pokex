@@ -3,21 +3,21 @@
 TrainerGroups:
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
 	table_width 2, TrainerGroups
-	dw FalknerGroup
-	dw WhitneyGroup
-	dw BugsyGroup
-	dw MortyGroup
-	dw PryceGroup
-	dw JasmineGroup
-	dw ChuckGroup
-	dw ClairGroup
+	dw ViolaGroup
+	dw KorrinaGroup
+	dw GrantGroup
+	dw RamosGroup
+	dw OlympiaGroup
+	dw ValerieGroup
+	dw ClemontGroup
+	dw WulfricGroup
 	dw Rival1Group
 	dw PokemonProfGroup
-	dw WillGroup
+	dw WikstromGroup
 	dw PKMNTrainerGroup
-	dw BrunoGroup
-	dw KarenGroup
-	dw KogaGroup
+	dw MalvaGroup
+	dw DrasnaGroup
+	dw SieboldGroup
 	dw ChampionGroup
 	dw BrockGroup
 	dw MistyGroup
@@ -70,4 +70,6 @@ TrainerGroups:
 	dw OfficerGroup
 	dw GruntFGroup
 	dw MysticalmanGroup
+	dw ShaunaGroup
+	dw SerenaGroup
 	assert_table_length NUM_TRAINER_CLASSES

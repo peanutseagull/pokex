@@ -657,25 +657,25 @@ _CGB_TrainerCard:
 	xor a ; CHRIS
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
-	ld a, FALKNER ; KRIS
+	ld a, VIOLA ; KRIS
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
-	ld a, BUGSY
+	ld a, GRANT
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
-	ld a, WHITNEY
+	ld a, KORRINA
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
-	ld a, MORTY
+	ld a, RAMOS
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
-	ld a, CHUCK
+	ld a, CLEMONT
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
-	ld a, JASMINE
+	ld a, VALERIE
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
-	ld a, PRYCE
+	ld a, OLYMPIA
 	call GetTrainerPalettePointer
 	call LoadPalette_White_Col1_Col2_Black
 	ld a, PREDEFPAL_CGB_BADGE
@@ -759,7 +759,7 @@ _CGB_TrainerCard:
 
 _CGB_MoveList:
 	ld de, wBGPals1
-	ld a, PREDEFPAL_GOLDENROD
+	ld a, PREDEFPAL_LUMIOSE
 	call GetPredefPal
 	call LoadHLPaletteIntoDE
 	ld a, [wPlayerHPPal]

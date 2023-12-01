@@ -12,32 +12,25 @@ MapGroupRoofs:
 ; values are indexes for Roofs (see below)
 	table_width 1, MapGroupRoofs
 	db -1             ;  0
-	db ROOF_OLIVINE   ;  1 (Olivine)
-	db ROOF_AZALEA    ;  2 (Mahogany)
+	db ROOF_OLIVINE   ;  1 (Vaniville)
+	db ROOF_AZALEA    ;  2 (Aquacorde)
 	db -1             ;  3
-	db ROOF_VIOLET    ;  4 (Ecruteak)
-	db ROOF_AZALEA    ;  5 (Blackthorn)
-	db -1             ;  6
-	db -1             ;  7
-	db ROOF_AZALEA    ;  8 (Azalea)
-	db ROOF_AZALEA    ;  9 (Lake of Rage)
-	db ROOF_VIOLET    ; 10 (Violet)
-	db ROOF_GOLDENROD ; 11 (Goldenrod)
-	db -1             ; 12
-	db -1             ; 13
-	db -1             ; 14
-	db -1             ; 15
-	db -1             ; 16
-	db -1             ; 17
-	db -1             ; 18
-	db ROOF_NEW_BARK  ; 19 (Silver Cave)
-	db -1             ; 20
-	db -1             ; 21
-	db ROOF_OLIVINE   ; 22 (Cianwood)
-	db -1             ; 23
-	db ROOF_NEW_BARK  ; 24 (Vaniville)
-	db -1             ; 25
-	db ROOF_NEW_BARK  ; 26 (Aquacorde)
+	db ROOF_VIOLET    ;  4 (Santalune)
+	db ROOF_AZALEA    ;  5 (Lumiose)
+	db ROOF_AZALEA    ;  6 (Camphrier)
+	db ROOF_AZALEA    ;  7 (Cyllage)
+	db ROOF_VIOLET    ;  8 (Ambrette)
+	db ROOF_GOLDENROD ;  9 (Geosenge)
+	db ROOF_NEW_BARK  ; 10 (Shalour)
+	db ROOF_OLIVINE   ; 11 (Coumarine)
+	db ROOF_NEW_BARK  ; 12 (Laverre)
+	db ROOF_NEW_BARK  ; 13 (Dendemille)
+	db ROOF_OLIVINE	  ; 14 (Anistar)
+	db ROOF_OLIVINE	  ; 15 (Couriway)
+	db ROOF_OLIVINE	  ; 16 (Snowbelle)
+	db ROOF_OLIVINE	  ; 17 (League)
+	db ROOF_OLIVINE   ; 18 (Kiloude)
+	db ROOF_OLIVINE	  ; 19
 	assert_table_length NUM_MAP_GROUPS + 1
 
 Roofs:

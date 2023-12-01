@@ -15,21 +15,21 @@ ENDM
 RoamMaps:
 	list_start RoamMaps
 	; start map, ...other maps
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
-	roam_map ROUTE_42, ROUTE_44, ROUTE_46
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
+	roam_map ROUTE_3,  ROUTE_4,  ROUTE_22
 	assert_list_length NUM_ROAMMON_MAPS
 	db -1 ; end

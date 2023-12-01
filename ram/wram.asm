@@ -579,13 +579,7 @@ wLastEnemyMove:: db
 
 wPlayerFutureSightCount:: db
 wEnemyFutureSightCount:: db
-
-wGivingExperienceToExpShareHolders:: db
-
-wBackupEnemyMonBaseStats:: ds NUM_EXP_STATS
-wBackupEnemyMonCatchRate:: db
-wBackupEnemyMonBaseExp:: db
-
+	ds 8
 wPlayerFutureSightDamage:: dw
 wEnemyFutureSightDamage:: dw
 wPlayerRageCounter:: db
@@ -3085,7 +3079,7 @@ wRegisteredItem:: db
 wPlayerState:: db
 
 wHallOfFameCount:: db
-	ds 1
+wExpShareToggle:: db
 wTradeFlags:: flag_array NUM_NPC_TRADES
 	ds 1
 wMooMooBerries:: db
@@ -3176,8 +3170,10 @@ wMobileTradeRoomSceneID::                         db
 wMobileBattleRoomSceneID::                        db
 wVanivilleTownSceneID::						      db
 wSerenasHouseSceneID::							  db
+wRoute1SceneID::								  db
+wRoute22SceneID::								  db
 
-	ds 50
+	ds 49
 
 ; fight counts
 wJackFightCount::    db
@@ -3453,40 +3449,6 @@ SECTION "Pic Animations", WRAMX
 wTempTilemap::
 ; 20x18 grid of 8x8 tiles
 	ds SCREEN_WIDTH * SCREEN_HEIGHT
-
-; PokeAnim data
-wPokeAnimStruct::
-wPokeAnimSceneIndex:: db
-wPokeAnimPointer:: dw
-wPokeAnimSpecies:: db
-wPokeAnimUnownLetter:: db
-wPokeAnimSpeciesOrUnown:: db
-wPokeAnimGraphicStartTile:: db
-wPokeAnimCoord:: dw
-wPokeAnimFrontpicHeight:: db
-wPokeAnimIdleFlag:: db
-wPokeAnimSpeed:: db
-wPokeAnimPointerBank:: db
-wPokeAnimPointerAddr:: dw
-wPokeAnimFramesBank:: db
-wPokeAnimFramesAddr:: dw
-wPokeAnimBitmaskBank:: db
-wPokeAnimBitmaskAddr:: dw
-wPokeAnimFrame:: db
-wPokeAnimJumptableIndex:: db
-wPokeAnimRepeatTimer:: db
-wPokeAnimCurBitmask:: db
-wPokeAnimWaitCounter:: db
-wPokeAnimCommand:: db
-wPokeAnimParameter:: db
-	ds 1
-wPokeAnimBitmaskCurCol:: db
-wPokeAnimBitmaskCurRow:: db
-wPokeAnimBitmaskCurBit:: db
-wPokeAnimBitmaskBuffer:: ds 7
-	ds 2
-wPokeAnimStructEnd::
-
 
 SECTION "Battle Tower RAM", WRAMX
 

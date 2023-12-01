@@ -321,7 +321,7 @@ ChooseWildEncounter:
 	jr c, .nowildbattle
 
 	ld a, b
-	cp UNOWN
+	; cp UNOWN
 	jr nz, .done
 
 	ld a, [wUnlockedUnowns]
@@ -490,38 +490,38 @@ LookUpWildmonsForMapDE:
 	scf
 	ret
 
-InitRoamMons:
-; initialize wRoamMon structs
+; InitRoamMons:
+; ; initialize wRoamMon structs
 
-; species
-	ld a, RAIKOU
-	ld [wRoamMon1Species], a
-	ld a, ENTEI
-	ld [wRoamMon2Species], a
+; ; species
+	; ld a, RAIKOU
+	; ld [wRoamMon1Species], a
+	; ld a, ENTEI
+	; ld [wRoamMon2Species], a
 
-; level
-	ld a, 40
-	ld [wRoamMon1Level], a
-	ld [wRoamMon2Level], a
+; ; level
+	; ld a, 40
+	; ld [wRoamMon1Level], a
+	; ld [wRoamMon2Level], a
 
-; raikou starting map
-	ld a, GROUP_ROUTE_42
-	ld [wRoamMon1MapGroup], a
-	ld a, MAP_ROUTE_42
-	ld [wRoamMon1MapNumber], a
+; ; raikou starting map
+	; ld a, GROUP_ROUTE_42
+	; ld [wRoamMon1MapGroup], a
+	; ld a, MAP_ROUTE_42
+	; ld [wRoamMon1MapNumber], a
 
-; entei starting map
-	ld a, GROUP_ROUTE_37
-	ld [wRoamMon2MapGroup], a
-	ld a, MAP_ROUTE_37
-	ld [wRoamMon2MapNumber], a
+; ; entei starting map
+	; ld a, GROUP_ROUTE_37
+	; ld [wRoamMon2MapGroup], a
+	; ld a, MAP_ROUTE_37
+	; ld [wRoamMon2MapNumber], a
 
-; hp
-	xor a ; generate new stats
-	ld [wRoamMon1HP], a
-	ld [wRoamMon2HP], a
+; ; hp
+	; xor a ; generate new stats
+	; ld [wRoamMon1HP], a
+	; ld [wRoamMon2HP], a
 
-	ret
+	; ret
 
 CheckEncounterRoamMon:
 	push hl

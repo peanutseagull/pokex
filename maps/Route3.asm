@@ -1,148 +1,151 @@
 	object_const_def
-	const ROUTE3_FISHER1
-	const ROUTE3_YOUNGSTER1
-	const ROUTE3_YOUNGSTER2
-	const ROUTE3_FISHER2
 
 Route3_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 
-TrainerFirebreatherOtis:
-	trainer FIREBREATHER, OTIS, EVENT_BEAT_FIREBREATHER_OTIS, FirebreatherOtisSeenText, FirebreatherOtisBeatenText, 0, .Script
+Route3Sign:
+	jumptext Route3SignText
+	
+Route3SignText:
+	text "ROUTE 3:"
+	line "Ouvert Way"
+	done
+	
+Route3SuperPotion:
+	itemball SUPER_POTION
+	
+TrainerBugCatcherOliver:
+	trainer BUG_CATCHER, OLIVER, EVENT_BEAT_BUG_CATCHER_OLIVER, BugCatcherOliverSeenText, BugCatcherOliverBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext FirebreatherOtisAfterBattleText
+	writetext BugCatcherOliverAfterText
 	waitbutton
 	closetext
 	end
-
-TrainerYoungsterWarren:
-	trainer YOUNGSTER, WARREN, EVENT_BEAT_YOUNGSTER_WARREN, YoungsterWarrenSeenText, YoungsterWarrenBeatenText, 0, .Script
+	
+TrainerPicnickerElla:
+	trainer PICNICKER, ELLA, EVENT_BEAT_PICNICKER_ELLA, PicnickerEllaSeenText, PicnickerEllaBeatenText, 0, .Script
+	
+.Script:
+	endifjustbattled
+	opentext
+	writetext PicnickerEllaAfterText
+	waitbutton
+	closetext
+	end
+	
+TrainerPicnickerBridget:
+	trainer PICNICKER, BRIDGET, EVENT_BEAT_PICNICKER_BRIDGET, PicnickerBridgetSeenText, PicnickerBridgetBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext YoungsterWarrenAfterBattleText
+	writetext PicnickerBridgetAfterText
 	waitbutton
 	closetext
 	end
-
-TrainerYoungsterJimmy:
-	trainer YOUNGSTER, JIMMY, EVENT_BEAT_YOUNGSTER_JIMMY, YoungsterJimmySeenText, YoungsterJimmyBeatenText, 0, .Script
-
+	
+TrainerSchoolboyBrighton:
+	trainer SCHOOLBOY, BRIGHTON, EVENT_BEAT_SCHOOLBOY_BRIGHTON, SchoolboyBrightonSeenText, SchoolboyBrightonBeatenText, 0, .Script
+	
 .Script:
 	endifjustbattled
 	opentext
-	writetext YoungsterJimmyAfterBattleText
+	writetext SchoolboyBrightonAfterText
 	waitbutton
 	closetext
 	end
-
-TrainerFirebreatherBurt:
-	trainer FIREBREATHER, BURT, EVENT_BEAT_FIREBREATHER_BURT, FirebreatherBurtSeenText, FirebreatherBurtBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext FirebreatherBurtAfterBattleText
-	waitbutton
-	closetext
-	end
-
-Route3MtMoonSquareSign:
-	jumptext Route3MtMoonSquareSignText
-
-FirebreatherOtisSeenText:
-	text "Ah! The weather's"
-	line "as fine as ever."
+	
+PicnickerBridgetSeenText:
+	text "My #MON and"
+	line "I are studying."
+	
+	para "Wanna join us?"
 	done
-
-FirebreatherOtisBeatenText:
-	text "It's sunny, but"
-	line "I'm all wet…"
+	
+PicnickerBridgetBeatenText:
+	text "Just studying is"
+	line "not enough!"
 	done
-
-FirebreatherOtisAfterBattleText:
-	text "When it rains,"
-	line "it's hard to get"
-	cont "ignition…"
+	
+PicnickerBridgetAfterText:
+	text "I need more"
+	line "practice in real"
+	cont "#MON battles!"
 	done
-
-YoungsterWarrenSeenText:
-	text "Hmmm… I don't know"
-	line "what to do…"
+	
+SchoolboyBrightonSeenText:
+	text "The best way to"
+	line "learn about a"
+	cont "move is to use it!"
 	done
-
-YoungsterWarrenBeatenText:
-	text "I knew I'd lose…"
+	
+SchoolboyBrightonBeatenText:
+	text "Wow! Your #MON"
+	line "are strong!"
 	done
-
-YoungsterWarrenAfterBattleText:
-	text "You looked strong."
-
-	para "I was afraid to"
-	line "take you on…"
+	
+SchoolboyBrightonAfterText:
+	text "A move's power"
+	line "can change!"
 	done
-
-YoungsterJimmySeenText:
-	text "I can run like the"
-	line "wind!"
+	
+PicnickerEllaSeenText:
+	text "#MON battles"
+	line "are really hard!"
+	
+	para "I just let"
+	line "PICHU do what"
+	cont "it wants!"
 	done
-
-YoungsterJimmyBeatenText:
-	text "Blown away!"
+	
+PicnickerEllaBeatenText:
+	text "PICHU, did we"
+	line "lose?"
 	done
-
-YoungsterJimmyAfterBattleText:
-	text "I wear shorts the"
-	line "whole year round."
-
-	para "That's my fashion"
-	line "policy."
+	
+PicnickerEllaAfterText:
+	text "I'm gonna ask my"
+	line "big bro to teach"
+	cont "me battling!"
 	done
-
-FirebreatherBurtSeenText:
-	text "Step right up and"
-	line "take a look!"
+	
+BugCatcherOliverSeenText:
+	text "My mom told me"
+	line "to challenge"
+	cont "everyone I see!"
 	done
-
-FirebreatherBurtBeatenText:
-	text "Yow! That's hot!"
+	
+BugCatcherOliverBeatenText:
+	text "My mom told me"
+	line "to be polite,"
+	cont "even if I lose!"
 	done
-
-FirebreatherBurtAfterBattleText:
-	text "The greatest fire-"
-	line "breather in KANTO,"
-	cont "that's me."
-
-	para "But not the best"
-	line "trainer…"
-	done
-
-Route3MtMoonSquareSignText:
-	text "MT.MOON SQUARE"
-
-	para "Just go up the"
-	line "stairs."
+	
+BugCatcherOliverAfterText:
+	text "I'm gonna go play"
+	line "with my #MON!"
 	done
 
 Route3_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event 52,  1, MOUNT_MOON, 1
-
+	warp_event 21, 29, SANTALUNE_FOREST, 1
+	warp_event 22, 29, SANTALUNE_FOREST, 1
+	
 	def_coord_events
 
 	def_bg_events
-	bg_event 49, 13, BGEVENT_READ, Route3MtMoonSquareSign
+	bg_event 19, 19, BGEVENT_READ, Route3Sign
 
 	def_object_events
-	object_event 26, 12, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerFirebreatherOtis, -1
-	object_event 10,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterWarren, -1
-	object_event 16,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerYoungsterJimmy, -1
-	object_event 49,  5, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerFirebreatherBurt, -1
+	object_event 19, 15, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerBugCatcherOliver, -1
+	object_event 23,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerPicnickerElla, -1
+	object_event 13, 12, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerPicnickerBridget, -1
+	object_event  4, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerSchoolboyBrighton, -1
+	object_event 13, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route3SuperPotion, EVENT_ROUTE_3_SUPER_POTION

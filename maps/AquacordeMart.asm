@@ -15,36 +15,19 @@ CherrygroveMartClerkScript:
 	end
 
 CherrygroveMartCooltrainerMScript:
-	faceplayer
-	opentext
-	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
-	iftrue .PokeBallsInStock
-	writetext CherrygroveMartCooltrainerMText
-	waitbutton
-	closetext
-	end
-
-.PokeBallsInStock:
-	writetext CherrygroveMartCooltrainerMText_PokeBallsInStock
-	waitbutton
-	closetext
-	end
-
+	jumptextfaceplayer CherrygroveMartCooltrainerMText
+	
 CherrygroveMartYoungsterScript:
 	jumptextfaceplayer CherrygroveMartYoungsterText
 
 CherrygroveMartCooltrainerMText:
-	text "They're fresh out"
-	line "of # BALLS!"
-
-	para "When will they get"
-	line "more of them?"
-	done
-
-CherrygroveMartCooltrainerMText_PokeBallsInStock:
-	text "# BALLS are in"
-	line "stock! Now I can"
-	cont "catch #MON!"
+	text "Bags are cool!"
+	line "Bags are"
+	cont "mysterious!"
+	
+	para "They automatically"
+	line "sort items by the"
+	cont "type of item!"
 	done
 
 CherrygroveMartYoungsterText:
@@ -72,7 +55,7 @@ AquacordeMart_MapEvents:
 	def_coord_events
 
 	def_bg_events
-
+	
 	def_object_events
 	object_event  1,  3, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CherrygroveMartClerkScript, -1
 	object_event  7,  6, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CherrygroveMartCooltrainerMScript, -1

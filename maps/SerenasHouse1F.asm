@@ -7,12 +7,17 @@ SerenasHouse1F_MapScripts:
 	def_callbacks
 
 SerenasMotherScript:
-	jumptextfaceplayer SerenasMotherText
+	checkevent EVENT_VANIVILLE_TOWN_RIVALS
+	iftrue .AlreadyMetSerena
+	jumptextfaceplayer SerenasMotherText2
+
+.AlreadyMetSerena:
+	jumptextfaceplayer SerenasMotherText1
 
 PlayersNeighborsHouseBookshelfScript:
 	jumpstd MagazineBookshelfScript
 
-SerenasMotherText:
+SerenasMotherText1:
 	text "Oh hi, <PLAY_G>!"
 
 	para "My daughter is so"
@@ -26,13 +31,31 @@ SerenasMotherText:
 	line "upstairs and say"
 	cont "hi?"
 	done
+	
+SerenasMotherText2:
+	text "She's grown up"
+	line "so fast..."
+	
+	para "To think she's"
+	line "already going on"
+	cont "a #MON journey."
+	
+	para "As a mother, I'm"
+	line "worried for her."
+	
+	para "But as an ex-"
+	line "#MON trainer,"
+	
+	para "I couldn't be"
+	line "prouder!"
+	done
 
 SerenasHouse1F_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-	warp_event  6,  7, VANIVILLE_TOWN, 3
-	warp_event  7,  7, VANIVILLE_TOWN, 3
+	warp_event  6,  7, VANIVILLE_TOWN, 2
+	warp_event  7,  7, VANIVILLE_TOWN, 2
 	warp_event  9,  0, SERENAS_HOUSE_2F, 1
 
 	def_coord_events

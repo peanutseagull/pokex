@@ -21,7 +21,7 @@
 	tilecoll WALL, WALL, WALL, WALL ; 14
 	tilecoll WALL, WALL, FLOOR, FLOOR ; 15
 	tilecoll LADDER, LADDER, FLOOR, FLOOR ; 16
-	tilecoll WALL, WALL, WALL, WALL ; 17
+	tilecoll WALL, WALL, PIT, PIT ; 17
 	tilecoll FLOOR, FLOOR, WALL, WALL ; 18
 	tilecoll FLOOR, FLOOR, WALL, WALL ; 19
 	tilecoll FLOOR, WALL, FLOOR, WALL ; 1a

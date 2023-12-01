@@ -1,13 +1,5 @@
 	object_const_def
-	const ROUTE2_BUG_CATCHER1
-	const ROUTE2_BUG_CATCHER2
-	const ROUTE2_BUG_CATCHER3
-	const ROUTE2_POKE_BALL1
-	const ROUTE2_POKE_BALL2
-	const ROUTE2_POKE_BALL3
-	const ROUTE2_POKE_BALL4
-	const ROUTE2_FRUIT_TREE
-
+	
 Route2_MapScripts:
 	def_scene_scripts
 
@@ -15,57 +7,88 @@ Route2_MapScripts:
 
 Route2Sign:
 	jumptext Route2SignText
-
-Route2DireHit:
-	itemball DIRE_HIT
-
-Route2MaxPotion:
-	itemball MAX_POTION
-
-Route2Carbos:
-	itemball CARBOS
-
-Route2Elixer:
-	itemball ELIXER
-
-Route2FruitTree:
-	fruittree FRUITTREE_ROUTE_2
-
-Route2HiddenMaxEther:
-	hiddenitem MAX_ETHER, EVENT_ROUTE_2_HIDDEN_MAX_ETHER
-
-Route2HiddenFullHeal:
-	hiddenitem FULL_HEAL, EVENT_ROUTE_2_HIDDEN_FULL_HEAL
-
-Route2HiddenFullRestore:
-	hiddenitem FULL_RESTORE, EVENT_ROUTE_2_HIDDEN_FULL_RESTORE
-
-Route2HiddenRevive:
-	hiddenitem REVIVE, EVENT_ROUTE_2_HIDDEN_REVIVE
-
+	
 Route2SignText:
 	text "ROUTE 2:"
 	line "Avance Trail"
 	done
+	
+TrainerYoungsterMikey:
+	trainer YOUNGSTER, MIKEY, EVENT_BEAT_YOUNGSTER_MIKEY, YoungsterMikeySeenText, YoungsterMikeyBeatenText, 0, .Script
 
+.Script:
+	endifjustbattled
+	opentext
+	writetext YoungsterMikeyAfterText
+	waitbutton
+	closetext
+	end
+
+TrainerBugCatcherDon:
+	trainer BUG_CATCHER, DON, EVENT_BEAT_BUG_CATCHER_DON, BugCatcherDonSeenText, BugCatcherDonBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext BugCatcherDonAfterText
+	waitbutton
+	closetext
+	end
+
+YoungsterMikeySeenText:
+	text "You're a #MON"
+	line "trainer, right?"
+
+	para "Then you have to"
+	line "battle!"
+	done
+
+YoungsterMikeyBeatenText:
+	text "That's strange."
+	line "I won before."
+	done
+
+YoungsterMikeyAfterText:
+	text "Becoming a good"
+	line "trainer is really"
+	cont "tough."
+
+	para "I'm going to bat-"
+	line "tle other people"
+	cont "to get better."
+	done
+
+BugCatcherDonSeenText:
+	text "Instead of a bug"
+	line "#MON, I found"
+	cont "a trainer!"
+	done
+
+BugCatcherDonBeatenText:
+	text "Argh! You're too"
+	line "strong!"
+	done
+
+BugCatcherDonAfterText:
+	text "I ran out of #"
+	line "BALLS while I was"
+	cont "catching #MON."
+
+	para "I should've bought"
+	line "some more…"
+	done
 
 Route2_MapEvents:
 	db 0, 0 ; filler
 
 	def_warp_events
-
+	warp_event  9,  3, ROUTE_2_GATE, 1
+	
 	def_coord_events
 
 	def_bg_events
-	bg_event  7, 45, BGEVENT_READ, Route2Sign
-	bg_event  7, 17, BGEVENT_ITEM, Route2HiddenMaxEther
-	bg_event  4,  8, BGEVENT_ITEM, Route2HiddenFullHeal
-	bg_event  4, 21, BGEVENT_ITEM, Route2HiddenFullRestore
-	bg_event 11, 24, BGEVENT_ITEM, Route2HiddenRevive
+	bg_event 11, 35, BGEVENT_READ, Route2Sign
 
 	def_object_events
-	object_event  0, 23, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2DireHit, EVENT_ROUTE_2_DIRE_HIT
-	object_event  2, 17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2MaxPotion, EVENT_ROUTE_2_MAX_POTION
-	object_event 19, -4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2Carbos, EVENT_ROUTE_2_CARBOS
-	object_event 14, 44, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route2Elixer, EVENT_ROUTE_2_ELIXER
-	object_event 10,  8, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route2FruitTree, -1
+	object_event 13, 16, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 6, TrainerBugCatcherDon, -1
+	object_event  7, 27, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerYoungsterMikey, -1

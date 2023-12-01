@@ -2,21 +2,21 @@ TrainerClassDVs:
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
 	table_width 2, TrainerClassDVs
 	;  atk,def,spd,spc
-	dn  9, 10,  7,  7 ; FALKNER
-	dn  8,  8,  8,  8 ; WHITNEY
-	dn  9,  8,  8,  8 ; BUGSY
-	dn  9,  8,  8,  8 ; MORTY
-	dn  9,  8,  8,  8 ; PRYCE
-	dn  9,  8,  8,  8 ; JASMINE
-	dn  9,  8,  8,  8 ; CHUCK
-	dn  7, 12, 13, 13 ; CLAIR
-	dn 13, 13, 13, 13 ; RIVAL1
+	dn  9, 10,  7,  7 ; VIOLA
+	dn  8,  8,  8,  8 ; KORRINA
+	dn  9,  8,  8,  8 ; GRANT
+	dn  9,  8,  8,  8 ; RAMOS
+	dn  9,  8,  8,  8 ; OLYMPIA
+	dn  9,  8,  8,  8 ; VALERIE
+	dn  9,  8,  8,  8 ; CLEMONT
+	dn  7, 12, 13, 13 ; WULFRIC
+	dn 10, 10, 10, 10 ; RIVAL1
 	dn  9,  8,  8,  8 ; POKEMON_PROF
-	dn 13, 12, 13, 13 ; WILL
+	dn 13, 12, 13, 13 ; WIKSTROM
 	dn 13, 12, 13, 13 ; CAL
-	dn 13, 12, 13, 13 ; BRUNO
-	dn  7, 15, 13, 15 ; KAREN
-	dn 13, 12, 13, 13 ; KOGA
+	dn 13, 12, 13, 13 ; MALVA
+	dn  7, 15, 13, 15 ; DRASNA
+	dn 13, 12, 13, 13 ; SIEBOLD
 	dn 13, 12, 13, 13 ; CHAMPION
 	dn  9,  8,  8,  8 ; BROCK
 	dn  7,  8,  8,  8 ; MISTY
@@ -43,8 +43,7 @@ TrainerClassDVs:
 	dn  7,  8,  8,  8 ; SWIMMERF
 	dn  9,  8,  8,  8 ; SAILOR
 	dn  9,  8,  8,  8 ; SUPER_NERD
-; BUG: RIVAL2 has lower DVs than RIVAL1 (see docs/bugs_and_glitches.md)
-	dn  9,  8,  8,  8 ; RIVAL2
+	dn 13, 13, 13, 13 ; RIVAL2
 	dn  9,  8,  8,  8 ; GUITARIST
 	dn 10,  8,  8,  8 ; HIKER
 	dn  9,  8,  8,  8 ; BIKER
@@ -70,4 +69,6 @@ TrainerClassDVs:
 	dn  9,  8,  8,  8 ; OFFICER
 	dn  7, 14, 10,  8 ; GRUNTF
 	dn  9,  8,  8,  8 ; MYSTICALMAN
+	dn  6, 10, 10, 10 ; SHAUNA
+	dn 13, 13, 13, 13 ; SERENA
 	assert_table_length NUM_TRAINER_CLASSES
