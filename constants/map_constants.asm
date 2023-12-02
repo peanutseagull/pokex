@@ -78,6 +78,20 @@ ENDM
 	newgroup LUMIOSE											  ;  5
 	map_const ROUTE_4_LUMIOSE_GATE,						    5,  4 ;  1
 	map_const LUMIOSE_SOUTH,							   33, 17 ;  2
+	map_const LUMIOSE_SOUTH_POKECENTER_1F,					5,  4 ;  3
+	map_const LUMIOSE_SOUTH_MART,							6,  4 ;  4
+	map_const SHUTTERBUG_CAFE,								6,  4 ;  5
+	map_const CAFE_SOLEIL,									6,  4 ;  6
+	map_const CAFE_INTROVERSION,							6,  4 ;  7
+	map_const LUMIOSE_SOUTH_OFFICE_GROUND_1,				4,  3 ;  8
+	map_const LUMIOSE_SOUTH_OFFICE_GROUND_2,				4,  3 ;  9
+	map_const LUMIOSE_SOUTH_OFFICE_GROUND_3,				4,  3 ; 10
+	map_const LUMIOSE_SOUTH_OFFICE_UPSTAIRS_1,				4,  4 ; 11
+	map_const LUMIOSE_SOUTH_OFFICE_UPSTAIRS_2,				4,  4 ; 12
+	map_const LUMIOSE_SOUTH_OFFICE_UPSTAIRS_3,				4,  4 ; 13
+	map_const SYCAMORE_LAB_1F,								4,  3 ; 14
+	map_const SYCAMORE_LAB_2F,								4,  4 ; 15
+	map_const SYCAMORE_LAB_3F,								4,  4 ; 16
 	map_const LUMIOSE_NORTH,							   33, 17 ;  3
 	map_const VERNAL_AVENUE,							    8, 30 ;  4
 	map_const ESTIVAL_AVENUE,							    8, 30 ;  5

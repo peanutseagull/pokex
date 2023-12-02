@@ -103,6 +103,12 @@ SantaluneCityPokefanfScript:
 SantaluneCityLass2Script:
 	jumptextfaceplayer SantaluneCityLass2Text
 	
+SantaluneCityPokecenterSign:
+	jumpstd PokecenterSignScript
+
+SantaluneCityMartSign:
+	jumpstd MartSignScript
+	
 SantaluneCityLass2Text:
 	text "If you master"
 	line "type matchups,"
@@ -191,6 +197,8 @@ SantaluneCity_MapEvents:
 	bg_event 21, 27, BGEVENT_READ, SantaluneCitySign
 	bg_event 21, 17, BGEVENT_READ, SantaluneCafeSign
 	bg_event 12, 10, BGEVENT_READ, TrainersSchoolSign
+	bg_event 28, 17, BGEVENT_READ, SantaluneCityMartSign
+	bg_event 24, 27, BGEVENT_READ, SantaluneCityPokecenterSign
 
 	def_object_events
 	object_event  8,  7, SPRITE_CLAIR, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, AlexaSantaluneScript, -1

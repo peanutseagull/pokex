@@ -11,11 +11,12 @@ SantaluneHouse4YoungsterScript:
 	checkevent EVENT_SANTALUNE_CITY_GREAT_BALL
 	iftrue .AlreadyGotItem
 	writetext YoungsterGreatBallText
-	giveitem GREAT_BALL
 	promptbutton
+	verbosegiveitem GREAT_BALL
 	writetext YoungsterGotText
 	waitbutton
 	closetext
+	setevent EVENT_SANTALUNE_CITY_GREAT_BALL
 	end
 	
 .AlreadyGotItem:

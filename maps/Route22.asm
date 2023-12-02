@@ -17,6 +17,7 @@ Route22Noop1Scene:
 	end
 
 Route22Noop2Scene:
+	disappear ROUTE22_COOLTRAINER_F 
 	end
 	
 Route22SerenaLeft:

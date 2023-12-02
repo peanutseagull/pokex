@@ -8,9 +8,64 @@ SantaluneMart_MapScripts:
 
 	def_callbacks
 
-SantaluneMartClerkScript:
+SantaluneMartGeneralClerkScript:
 	opentext
-	pokemart MARTTYPE_STANDARD, MART_SANTALUNE
+	checkflag ENGINE_STORMBADGE
+	iftrue .FiveBadges
+	checkflag ENGINE_FOGBADGE
+	iftrue .FourBadges
+	checkflag ENGINE_PLAINBADGE
+	iftrue .ThreeBadges
+	checkflag ENGINE_HIVEBADGE
+	iftrue .TwoBadges
+	checkflag ENGINE_ZEPHYRBADGE
+	iftrue .OneBadge
+	pokemart MARTTYPE_STANDARD, MART_DEFAULT
+	closetext
+	end
+	
+.FiveBadges:
+	pokemart MARTTYPE_STANDARD, MART_FIVE_BADGES
+	closetext
+	end
+	
+.FourBadges:
+	pokemart MARTTYPE_STANDARD, MART_FOUR_BADGES
+	closetext
+	end
+	
+.ThreeBadges:
+	pokemart MARTTYPE_STANDARD, MART_THREE_BADGES
+	closetext
+	end
+	
+.TwoBadges:
+	pokemart MARTTYPE_STANDARD, MART_TWO_BADGES
+	closetext
+	end
+	
+.OneBadge:
+	pokemart MARTTYPE_STANDARD, MART_ONE_BADGE
+	closetext
+	end
+	
+SantaluneMartSecondClerkScript:
+	opentext
+	checkflag ENGINE_PLAINBADGE
+	iftrue .StatusThreeBadges
+	checkflag ENGINE_ZEPHYRBADGE
+	iftrue .StatusOneBadge
+	pokemart MARTTYPE_STANDARD, MART_STATUS_DEFAULT
+	closetext
+	end
+	
+.StatusThreeBadges:
+	pokemart MARTTYPE_STANDARD, MART_STATUS_THREE
+	closetext
+	end
+	
+.StatusOneBadge:
+	pokemart MARTTYPE_STANDARD, MART_STATUS_ONE
 	closetext
 	end
 
@@ -58,6 +113,7 @@ SantaluneMart_MapEvents:
 	def_bg_events
 
 	def_object_events
-	object_event  1,  3, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SantaluneMartClerkScript, -1
+	object_event  1,  3, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SantaluneMartGeneralClerkScript, -1
+	object_event  1,  2, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SantaluneMartSecondClerkScript, -1
 	object_event  7,  6, SPRITE_GRANNY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SantaluneMartGrannyScript, -1
 	object_event  5,  2, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, SantaluneMartCooltrainerMScript, -1

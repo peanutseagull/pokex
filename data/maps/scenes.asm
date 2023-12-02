@@ -88,4 +88,5 @@ MapScenes::
 	scene_var SERENAS_HOUSE_2F,							   wSerenasHouseSceneID
 	scene_var ROUTE_1,									   wRoute1SceneID
 	scene_var ROUTE_22,									   wRoute22SceneID
+	scene_var ROUTE_4_LUMIOSE_GATE,						   wRoute4LumioseGateSceneID
 	db -1 ; end

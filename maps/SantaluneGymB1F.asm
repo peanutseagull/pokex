@@ -40,6 +40,7 @@ SantaluneGymViolaScript:
 	writetext ViolaTMMudSlapText
 	waitbutton
 	closetext
+	setmapscene ROUTE_22, SCENE_ROUTE22_NOOP
 	end
 
 .SpeechAfterTM:

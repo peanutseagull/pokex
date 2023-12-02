@@ -130,17 +130,36 @@ ENDM
 	map_attributes LumioseNorth, LUMIOSE_NORTH, $71, SOUTH
 	connection south, LumioseSouth, LUMIOSE_SOUTH, 0
 	
+	map_attributes LumioseSouthPokecenter1F, LUMIOSE_SOUTH_POKECENTER_1F, $00, 0
+	map_attributes LumioseSouthMart, LUMIOSE_SOUTH_MART, $00, 0
+	map_attributes ShutterbugCafe, SHUTTERBUG_CAFE, $00, 0
+	map_attributes CafeSoleil, CAFE_SOLEIL, $00, 0
+	map_attributes CafeIntroversion, CAFE_INTROVERSION, $00, 0
+	map_attributes LumioseSouthOfficeGround1, LUMIOSE_SOUTH_OFFICE_GROUND_1, $00, 0
+	map_attributes LumioseSouthOfficeGround2, LUMIOSE_SOUTH_OFFICE_GROUND_2, $00, 0
+	map_attributes LumioseSouthOfficeGround3, LUMIOSE_SOUTH_OFFICE_GROUND_3, $00, 0
+	map_attributes LumioseSouthOfficeUpstairs1, LUMIOSE_SOUTH_OFFICE_UPSTAIRS_1, $00, 0
+	map_attributes LumioseSouthOfficeUpstairs2, LUMIOSE_SOUTH_OFFICE_UPSTAIRS_2, $00, 0
+	map_attributes LumioseSouthOfficeUpstairs3, LUMIOSE_SOUTH_OFFICE_UPSTAIRS_3, $00, 0
+	map_attributes SycamoreLab1F, SYCAMORE_LAB_1F, $00, 0
+	map_attributes SycamoreLab2F, SYCAMORE_LAB_2F, $00, 0
+	map_attributes SycamoreLab3F, SYCAMORE_LAB_3F, $00, 0
+	
 	map_attributes VernalAvenue, VERNAL_AVENUE, $71, 0
+	map_attributes StoneEmporium, STONE_EMPORIUM, $00, 0
+
 	map_attributes EstivalAvenue, ESTIVAL_AVENUE, $71, 0
+	
 	map_attributes AutumnalAvenue, AUTUMNAL_AVENUE, $71, 0
+	
 	map_attributes HibernalAvenue, HIBERNAL_AVENUE, $71, 0
+	
 	map_attributes RougePlaza, ROUGE_PLAZA, $71, 0
 	map_attributes JaunePlaza, JAUNE_PLAZA, $71, 0
 	map_attributes MagentaPlaza, MAGENTA_PLAZA, $71, 0
 	map_attributes BleuPlaza, BLEU_PLAZA, $71, 0
 	map_attributes VertPlaza, VERT_PLAZA, $71, 0
 	map_attributes CentricoPlaza, CENTRICO_PLAZA, $71, 0
-	map_attributes StoneEmporium, STONE_EMPORIUM, $00, 0
 	
 	map_attributes CamphrierTown, CAMPHRIER_TOWN, $00, 0
 	map_attributes CyllageCity, CYLLAGE_CITY, $00, 0

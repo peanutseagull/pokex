@@ -1,10 +1,10 @@
 	object_const_def
-
+	
 Route4_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
-	
+
 TrainerOfficerWheaton:
 	trainer OFFICER, WHEATON, EVENT_BEAT_OFFICER_WHEATON, OfficerWheatonSeenText, OfficerWheatonBeatenText, 0, .Script
 
@@ -317,24 +317,24 @@ FountainSignText:
 	line "harmony."
 	done
 	
-Route4DemoOverScript:
-	jumptextfaceplayer Route4DemoOverText
+; Route4DemoOverScript:
+	; jumptextfaceplayer Route4DemoOverText
 	
-Route4DemoOverText:
-	text "You have reached"
-	line "the current end"
-	cont "of #X."
+; Route4DemoOverText:
+	; text "You have reached"
+	; line "the current end"
+	; cont "of #X."
 	
-	para "The dev is working"
-	line "hard to add more"
-	cont "to the game!"
+	; para "The dev is working"
+	; line "hard to add more"
+	; cont "to the game!"
 	
-	para "Thank you so much"
-	line "for playing!"
+	; para "Thank you so much"
+	; line "for playing!"
 	
-	para "Please leave your"
-	line "feedback on Github"
-	done
+	; para "Please leave your"
+	; line "feedback on Github"
+	; done
 	
 Route4_MapEvents:
 	db 0, 0 ; filler
@@ -358,7 +358,7 @@ Route4_MapEvents:
 	object_event 15, 10, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerPokefanGabe, -1
 	object_event 12,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerOfficerGrover, -1
 	object_event 26,  6, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerOfficerFabian, -1
-	object_event 15,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route4DemoOverScript, -1
+	; object_event 15,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route4DemoOverScript, -1
 	object_event 12, 52, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4Repel, EVENT_ROUTE_4_REPEL
 	object_event 19, 52, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4SuperPotion, EVENT_ROUTE_4_SUPER_POTION
 	object_event 23, 42, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4GreatBall, EVENT_ROUTE_4_GREAT_BALL

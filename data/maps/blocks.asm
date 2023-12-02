@@ -88,6 +88,28 @@ VertPlaza_Blocks:
 CentricoPlaza_Blocks:
 	INCBIN "maps/CentricoPlaza.blk"
 	
+ShutterbugCafe_Blocks:
+CafeSoleil_Blocks:
+CafeIntroversion_Blocks:
+	INCBIN "maps/LumioseCafe.blk"
+	
+LumioseSouthOfficeGround1_Blocks:
+LumioseSouthOfficeGround2_Blocks:
+LumioseSouthOfficeGround3_Blocks:
+SycamoreLab1F_Blocks:
+	INCBIN "maps/LumioseSouthOfficeGround.blk"
+	
+LumioseSouthOfficeUpstairs1_Blocks:
+LumioseSouthOfficeUpstairs2_Blocks:
+LumioseSouthOfficeUpstairs3_Blocks:
+	INCBIN "maps/LumioseSouthOfficeUpstairs.blk"
+	
+SycamoreLab2F_Blocks:
+	INCBIN "maps/SycamoreLab2F.blk"
+
+SycamoreLab3F_Blocks:
+	INCBIN "maps/SycamoreLab3F.blk"
+	
 CamphrierTown_Blocks:
 	INCBIN "maps/CamphrierTown.blk"
 	
@@ -132,10 +154,12 @@ KiloudeCity_Blocks:
 
 AquacordeMart_Blocks:
 SantaluneMart_Blocks:
+LumioseSouthMart_Blocks:
 	INCBIN "maps/Mart.blk"
 
 AquacordePokecenter1F_Blocks:
 SantalunePokecenter1F_Blocks:
+LumioseSouthPokecenter1F_Blocks:
 	INCBIN "maps/Pokecenter1F.blk"
 
 ; GoldenrodDeptStore1F_Blocks:

@@ -3172,8 +3172,9 @@ wVanivilleTownSceneID::						      db
 wSerenasHouseSceneID::							  db
 wRoute1SceneID::								  db
 wRoute22SceneID::								  db
+wRoute4LumioseGateSceneID::						  db
 
-	ds 49
+	ds 48
 
 ; fight counts
 wJackFightCount::    db

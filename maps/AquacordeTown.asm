@@ -22,6 +22,12 @@ TrevorsHouseSign:
 ShaunasHouseSign:
 	jumptext ShaunasHouseSignText
 	
+AquacordeTownPokecenterSign:
+	jumpstd PokecenterSignScript
+
+AquacordeTownMartSign:
+	jumpstd MartSignScript
+	
 AquacordeTownFisherText:
 	text "AQUACORDE is well-"
 	line "known for fishing!"
@@ -81,6 +87,8 @@ AquacordeTown_MapEvents:
 	bg_event  8, 26, BGEVENT_READ, AquacordeTownSign
 	bg_event 15, 18, BGEVENT_READ, TrevorsHouseSign
 	bg_event  4, 20, BGEVENT_READ, ShaunasHouseSign
+	bg_event  4, 29, BGEVENT_READ, AquacordeTownMartSign
+	bg_event 16, 29, BGEVENT_READ, AquacordeTownPokecenterSign
 	
 	def_object_events
 	object_event  9, 21, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, AquacordeTownGrampsScript, -1
