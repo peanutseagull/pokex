@@ -2422,7 +2422,7 @@ ChespinEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, GROWL
-	db 6, VINE_WHIP
+	db 5, VINE_WHIP
 	db 8, ROLLOUT
 	db 11, BITE
 	db 15, LEECH_SEED
@@ -2476,7 +2476,7 @@ FennekinEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, TAIL_WHIP
-	db 6, EMBER
+	db 5, EMBER
 	db 11, QUICK_ATTACK
 	db 17, PSYBEAM
 	db 20, FIRE_SPIN
@@ -2525,7 +2525,7 @@ FroakieEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POUND
 	db 1, GROWL
-	db 6, BUBBLE
+	db 5, BUBBLE
 	db 8, QUICK_ATTACK
 	db 10, LICK
 	db 14, WATER_GUN

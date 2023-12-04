@@ -192,7 +192,13 @@ Rival1Group:
 	db -1 ; end
 
 PokemonProfGroup:
-
+	; SYCAMORE (1)
+	db "SYCAMORE@", TRAINERTYPE_NORMAL
+	db 12, BULBASAUR
+	db 12, CHARMANDER
+	db 12, SQUIRTLE
+	db -1 ; end
+	
 WikstromGroup:
 	; WIKSTROM (1)
 	db "WIKSTROM@", TRAINERTYPE_MOVES

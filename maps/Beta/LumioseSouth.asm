@@ -7,23 +7,34 @@ LumioseSouth_MapScripts:
 	callback MAPCALLBACK_TILES, LumioseSouthBlackoutCallback
 
 LumioseSouthBlackoutCallback:
-	checkevent EVENT_BLACKOUT_OVER
+	checkevent EVENT_BLACKOUT_OVER_2
 	iffalse .skip1
-	changeblock 16, 7, $06
-	changeblock 16, 8, $06
-	changeblock 16, 9, $06
-	changeblock 16, 10, $06
-	changeblock 16, 11, $06
-	changeblock 16, 12, $06
-	changeblock 16, 13, $06
-	changeblock 16, 14, $06
-	changeblock 17, 14, $06
-	changeblock 18, 14, $06
-	changeblock 26, 0, $06
-	changeblock 27, 0, $06
-	changeblock 28, 0, $06
-	changeblock 29, 0, $06	
+	changeblock 52, 0, $06
+	changeblock 54, 0, $06
+	changeblock 56, 0, $06
+	changeblock 58, 0, $06	
+	changeblock 6, 12, $06
+	changeblock 8, 12, $06
+	changeblock 10, 12, $06
+	changeblock 12, 12, $06
+	changeblock 14, 12, $06
+	changeblock 14, 10, $06
+	changeblock 14, 8, $06
+	changeblock 14, 6, $06
 .skip1
+	checkevent EVENT_BLACKOUT_OVER_1
+	iffalse .skip2
+	changeblock 32, 14, $06
+	changeblock 32, 16, $06
+	changeblock 32, 18, $06
+	changeblock 32, 20, $06
+	changeblock 32, 22, $06
+	changeblock 32, 24, $06
+	changeblock 32, 26, $06
+	changeblock 32, 28, $06
+	changeblock 34, 28, $06
+	changeblock 36, 28, $06
+.skip2
 	endcallback
 	
 LumioseSouthBeautyScript:
@@ -102,6 +113,15 @@ LumioseSouthBlackoutGuyText:
 	para "You can't go any"
 	line "further until"
 	cont "it's fixed."
+	done
+	
+LumioseSouthTrevorScript:
+	jumptextfaceplayer LumioseSouthTrevorText
+	
+LumioseSouthTrevorText:
+	text "Huh? You've"
+	line "already been"
+	cont "to the café?"
 	done
 	
 LumioseSouthPokecenterSign:
@@ -225,8 +245,14 @@ LumioseSouth_MapEvents:
 	object_event 39, 25, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthOverheardScript2, -1
 	object_event 40, 25, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthOverheardScript2, -1
 	object_event 53, 19, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthGentlemanScript, -1
-	object_event 33, 28, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthBlackoutGuyScript, EVENT_BLACKOUT_OVER
-	object_event 56,  1, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthBlackoutGuyScript, EVENT_BLACKOUT_OVER
-	object_event 44,  7, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthBlackoutGuyScript, EVENT_BLACKOUT_OVER
-	object_event 38, 11, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthBlackoutGuyScript, EVENT_BLACKOUT_OVER
-	object_event 37, 11, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthBlackoutGuyScript, EVENT_BLACKOUT_OVER
+	object_event 33, 28, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthBlackoutGuyScript, EVENT_BLACKOUT_OVER_1
+	object_event 56,  1, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthBlackoutGuyScript, EVENT_BLACKOUT_OVER_2
+	object_event 44,  7, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthBlackoutGuyScript, EVENT_BLACKOUT_OVER_2
+	object_event 38, 11, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthBlackoutGuyScript, EVENT_BLACKOUT_OVER_1
+	object_event 37, 11, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthBlackoutGuyScript, EVENT_BLACKOUT_OVER_1
+	object_event 15, 13, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthBlackoutGuyScript, EVENT_BLACKOUT_OVER_2
+	object_event 20,  7, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthBlackoutGuyScript, EVENT_BLACKOUT_OVER_2
+	object_event 19,  7, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthBlackoutGuyScript, EVENT_BLACKOUT_OVER_2
+	object_event 29, 11, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthBlackoutGuyScript, EVENT_BLACKOUT_OVER_2
+	; object_event 32, 31, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthTrevorScript, EVENT_TREVOR_LUMIOSE_SOUTH
+	; object_event 33, 31, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthTrevorScript, EVENT_TREVOR_LUMIOSE_SOUTH

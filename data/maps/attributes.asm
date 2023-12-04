@@ -124,11 +124,27 @@ ENDM
 	map_attributes Route22, ROUTE_22, $05, WEST
 	connection west, SantaluneCity, SANTALUNE_CITY, 5
 	
-	map_attributes LumioseSouth, LUMIOSE_SOUTH, $71, NORTH
-	connection north, LumioseNorth, LUMIOSE_NORTH, 0
+	; map_attributes LumioseSouth, LUMIOSE_SOUTH, $71, NORTH
+	; connection north, LumioseNorth, LUMIOSE_NORTH, 0	
 	
-	map_attributes LumioseNorth, LUMIOSE_NORTH, $71, SOUTH
-	connection south, LumioseSouth, LUMIOSE_SOUTH, 0
+	map_attributes LumioseSouthwest, LUMIOSE_SOUTHWEST, $71, NORTH | EAST
+	connection north, LumioseNorthwest, LUMIOSE_NORTHWEST, 0	
+	connection east, LumioseSoutheast, LUMIOSE_SOUTHEAST, 0
+	
+	map_attributes LumioseSoutheast, LUMIOSE_SOUTHEAST, $71, NORTH | WEST
+	connection north, LumioseNortheast, LUMIOSE_NORTHEAST, 0
+	connection west, LumioseSouthwest, LUMIOSE_SOUTHWEST, 0
+	
+	; map_attributes LumioseNorth, LUMIOSE_NORTH, $71, SOUTH
+	; connection south, LumioseSouth, LUMIOSE_SOUTH, 0	
+	
+	map_attributes LumioseNorthwest, LUMIOSE_NORTHWEST, $71, SOUTH | EAST
+	connection south, LumioseSouthwest, LUMIOSE_SOUTHWEST, 0
+	connection east, LumioseNortheast, LUMIOSE_NORTHEAST, 0
+	
+	map_attributes LumioseNortheast, LUMIOSE_NORTHEAST, $71, SOUTH | WEST
+	connection south, LumioseSoutheast, LUMIOSE_SOUTHEAST, 0
+	connection west, LumioseNorthwest, LUMIOSE_NORTHWEST, 0
 	
 	map_attributes LumioseSouthPokecenter1F, LUMIOSE_SOUTH_POKECENTER_1F, $00, 0
 	map_attributes LumioseSouthMart, LUMIOSE_SOUTH_MART, $00, 0

@@ -1,6 +1,7 @@
 SECTION "Map Scripts 1", ROMX
 
-INCLUDE "maps/LumioseSouth.asm"
+INCLUDE "maps/LumioseSouthwest.asm"
+INCLUDE "maps/LumioseSoutheast.asm"
 INCLUDE "maps/LumioseSouthPokecenter1F.asm"
 INCLUDE "maps/LumioseSouthMart.asm"
 INCLUDE "maps/ShutterbugCafe.asm"
@@ -15,7 +16,8 @@ INCLUDE "maps/LumioseSouthOfficeUpstairs3.asm"
 INCLUDE "maps/SycamoreLab1F.asm"
 INCLUDE "maps/SycamoreLab2F.asm"
 INCLUDE "maps/SycamoreLab3F.asm"
-INCLUDE "maps/LumioseNorth.asm"
+INCLUDE "maps/LumioseNorthwest.asm"
+INCLUDE "maps/LumioseNortheast.asm"
 INCLUDE "maps/Route4LumioseGate.asm"
 INCLUDE "maps/VernalAvenue.asm"
 INCLUDE "maps/StoneEmporium.asm"

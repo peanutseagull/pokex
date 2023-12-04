@@ -70,6 +70,7 @@ DEF KRIS EQU __trainer_class__
 	const RIVAL1_5_TOTODILE
 
 	trainerclass POKEMON_PROF ; a
+	const SYCAMORE1
 	
 	trainerclass WIKSTROM ; b
 	const WIKSTROM1

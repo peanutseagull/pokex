@@ -29,8 +29,8 @@ LumioseSouthOfficeGround1_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events
-	warp_event  3,  0, LUMIOSE_SOUTH, 12
-	warp_event  4,  0, LUMIOSE_SOUTH, 13
+	warp_event  3,  0, LUMIOSE_SOUTHEAST, 7
+	warp_event  4,  0, LUMIOSE_SOUTHEAST, 8
 	warp_event  7,  0, LUMIOSE_SOUTH_OFFICE_UPSTAIRS_1, 1
 	
 	def_coord_events

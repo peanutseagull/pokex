@@ -9,8 +9,8 @@ AutumnalAvenue_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events
-	warp_event  7,  2, LUMIOSE_NORTH, 1
-	warp_event  8,  2, LUMIOSE_NORTH, 1
+	warp_event  7,  2, LUMIOSE_NORTHWEST, 1
+	warp_event  8,  2, LUMIOSE_NORTHWEST, 1
 	warp_event  0, 49, MAGENTA_PLAZA, 2
 	warp_event 15, 49, ROUGE_PLAZA, 1
 	warp_event  7, 59, CENTRICO_PLAZA, 4

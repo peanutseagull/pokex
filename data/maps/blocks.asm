@@ -57,11 +57,23 @@ SerenasHouse1F_Blocks:
 
 SECTION "Map Blocks 2", ROMX
 
-LumioseSouth_Blocks:
-	INCBIN "maps/LumioseSouth.blk"
+; LumioseSouth_Blocks:
+	; INCBIN "maps/LumioseSouth.blk"
 	
-LumioseNorth_Blocks:
-	INCBIN "maps/LumioseNorth.blk"
+; LumioseNorth_Blocks:
+	; INCBIN "maps/LumioseNorth.blk"
+	
+LumioseSouthwest_Blocks:
+	INCBIN "maps/LumioseSouthwest.blk"
+	
+LumioseSoutheast_Blocks:
+	INCBIN "maps/LumioseSoutheast.blk"
+	
+LumioseNorthwest_Blocks:
+	INCBIN "maps/LumioseNorthwest.blk"
+	
+LumioseNortheast_Blocks:
+	INCBIN "maps/LumioseNortheast.blk"
 	
 VernalAvenue_Blocks:
 	INCBIN "maps/VernalAvenue.blk"

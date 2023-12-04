@@ -3173,8 +3173,11 @@ wSerenasHouseSceneID::							  db
 wRoute1SceneID::								  db
 wRoute22SceneID::								  db
 wRoute4LumioseGateSceneID::						  db
+wSycamoreLab3FSceneID::							  db
+wSycamoreLab1FSceneID::							  db
+wCafeSoleilSceneID::							  db
 
-	ds 48
+	ds 45
 
 ; fight counts
 wJackFightCount::    db

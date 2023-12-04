@@ -9,8 +9,8 @@ EstivalAvenue_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events
-	warp_event  7, 59, LUMIOSE_SOUTH, 5
-	warp_event  8, 59, LUMIOSE_SOUTH, 6
+	warp_event  7, 59, LUMIOSE_SOUTHWEST, 1
+	warp_event  8, 59, LUMIOSE_SOUTHWEST, 2
 	warp_event  0,  9, MAGENTA_PLAZA, 4
 	warp_event 15,  9, BLEU_PLAZA, 1
 	warp_event  7,  2, CENTRICO_PLAZA, 3

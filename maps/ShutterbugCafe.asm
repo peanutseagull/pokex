@@ -9,8 +9,8 @@ ShutterbugCafe_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events
-	warp_event  6,  7, LUMIOSE_SOUTH, 8
-	warp_event  7,  7, LUMIOSE_SOUTH, 8
+	warp_event  6,  7, LUMIOSE_SOUTHWEST, 3
+	warp_event  7,  7, LUMIOSE_SOUTHWEST, 3
 	
 	def_coord_events
 	
