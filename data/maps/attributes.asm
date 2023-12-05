@@ -218,6 +218,7 @@ ENDM
 	map_attributes MobileTradeRoom, MOBILE_TRADE_ROOM, $00, 0
 	map_attributes MobileBattleRoom, MOBILE_BATTLE_ROOM, $00, 0
 	map_attributes Route4LumioseGate, ROUTE_4_LUMIOSE_GATE, $00, 0
+	map_attributes Route5LumioseGate, ROUTE_5_LUMIOSE_GATE, $00, 0
 	map_attributes CyllageHotel, CYLLAGE_HOTEL, $00, 0
 
 	; map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST

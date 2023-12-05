@@ -1,6 +1,6 @@
 	object_const_def
 	const ROUTE4LUMIOSEGATE_COOLTRAINER_M
-	const ROUTE4LUMIOSEGATE_BEAUTY1
+	const ROUTE4LUMIOSEGATE_BEAUTY
 	
 Route4LumioseGate_MapScripts:
 	def_scene_scripts
@@ -19,9 +19,9 @@ DexioSinaScene:
 	special FadeOutMusic
 	playmusic MUSIC_PROF_ELM
 	showemote EMOTE_SHOCK, ROUTE4LUMIOSEGATE_COOLTRAINER_M, 15
-	showemote EMOTE_SHOCK, ROUTE4LUMIOSEGATE_BEAUTY1, 15
+	showemote EMOTE_SHOCK, ROUTE4LUMIOSEGATE_BEAUTY, 15
 	turnobject ROUTE4LUMIOSEGATE_COOLTRAINER_M, DOWN
-	turnobject ROUTE4LUMIOSEGATE_BEAUTY1, DOWN
+	turnobject ROUTE4LUMIOSEGATE_BEAUTY, DOWN
 	opentext
 	writetext DexioSinaText1
 	promptbutton
@@ -31,8 +31,8 @@ DexioSinaScene:
 	closetext
 	applymovement ROUTE4LUMIOSEGATE_COOLTRAINER_M, ExitMovement
 	disappear ROUTE4LUMIOSEGATE_COOLTRAINER_M
-	applymovement ROUTE4LUMIOSEGATE_BEAUTY1, ExitMovement
-	disappear ROUTE4LUMIOSEGATE_BEAUTY1
+	applymovement ROUTE4LUMIOSEGATE_BEAUTY, ExitMovement
+	disappear ROUTE4LUMIOSEGATE_BEAUTY
 	setscene SCENE_ROUTE4LUMIOSEGATE_NOOP
 	playmapmusic
 	setevent EVENT_DEXIO_GATE
@@ -130,8 +130,8 @@ DexioSinaText2:
 	line "you!"
 	done	
 	
-Route4LumioseGateClerkScript:
-	jumptext Route4LumioseGateClerkText
+Route4LumioseGateReceptionistScript:
+	jumptext Route4LumioseGateReceptionistText
 	
 Route4LumioseGateFisherScript:
 	jumptextfaceplayer Route4LumioseGateFisherText
@@ -146,7 +146,7 @@ Route4LumioseGateFisherText:
 	cont "seen."
 	done
 	
-Route4LumioseGateClerkText:
+Route4LumioseGateReceptionistText:
 	text "Welcome to LUMIOSE"
 	line "CITY -- the City"
 	cont "of Light!"
@@ -170,5 +170,5 @@ Route4LumioseGate_MapEvents:
 	def_object_events
 	object_event  6,  5, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_DEXIO_GATE
 	object_event  7,  5, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_SINA_GATE
-	object_event  4,  6, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route4LumioseGateClerkScript, -1
+	object_event  4,  6, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route4LumioseGateReceptionistScript, -1
 	object_event  5,  2, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route4LumioseGateFisherScript, -1

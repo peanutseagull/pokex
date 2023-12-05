@@ -236,6 +236,74 @@ CafeSoleilStepForward:
 	step UP
 	step_end
 	
+CafeSoleilGrannyScript:
+	jumptextfaceplayer CafeSoleilGrannyText
+	
+CafeSoleilGrannyText:
+	text "The only thing"
+	line "important about"
+	cont "espresso is"
+	
+	para "whether it's"
+	line "delicious or not."
+	done
+	
+CafeSoleilGrampsScript:
+	jumptextfaceplayer CafeSoleilGrampsText
+	
+CafeSoleilGrampsText:
+	text "I drink two cups"
+	line "of coffee a day."
+	
+	para "The type of cake"
+	line "doesn't really"
+	cont "matter..."
+	done
+
+CafeSoleilBeautyScript:
+	jumptextfaceplayer CafeSoleilBeautyText
+	
+CafeSoleilBeautyText:
+	text "This café is"
+	line "DIANTHA's"
+	cont "favourite."
+	
+	para "I come here every"
+	line "every day hoping"
+	cont "she'll come."
+	done
+	
+CafeSoleilLassScript:
+	jumptextfaceplayer CafeSoleilLassText
+	
+CafeSoleilLassText:
+	text "I heard LYSANDRE"
+	line "is gathering young"
+	cont "people..."
+	
+	para "Something about"
+	line "society's sake."
+	done
+	
+CafeSoleilFisherScript:
+	jumptextfaceplayer CafeSoleilFisherText
+	
+CafeSoleilFisherText:
+	text "If you're like"
+	line "a cheerful sun,"
+	
+	para "everyone will"
+	line "be grateful."
+	
+	para "If you're like"
+	line "the #MON"
+	cont "SOLROCK..."
+	
+	para "Well, some things"
+	line "are best left"
+	cont "unsaid..."
+	done
+	
 CafeSoleil_MapEvents:
 	db 0, 0 ; filler
 	
@@ -252,3 +320,8 @@ CafeSoleil_MapEvents:
 	object_event  6,  7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_CAFE_SOLEIL_LYSANDRE
 	object_event  6,  4, SPRITE_CLAIR, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_CAFE_SOLEIL_LYSANDRE
 	object_event  7,  4, SPRITE_LANCE, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_CAFE_SOLEIL_LYSANDRE
+	object_event 10,  3, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CafeSoleilGrannyScript, -1
+	object_event 11,  6, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CafeSoleilGrampsScript, -1
+	object_event  2,  6, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CafeSoleilBeautyScript, -1
+	object_event  4,  2, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CafeSoleilLassScript, -1
+	object_event  2,  4, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CafeSoleilFisherScript, -1

@@ -32,6 +32,42 @@ LumioseSouthwestBlackoutGuyText:
 	cont "it's fixed."
 	done
 	
+LumioseSouthwestOverheardScript1:
+	jumptext LumioseSouthwestOverheardText1
+	
+LumioseSouthwestOverheardText1:
+	text "MAN: Hey! Did you"
+	line "know that a"
+	cont "super-famous movie"
+	
+	para "star sometimes"
+	line "visits LUMIOSE's"
+	cont "cafés?"
+	
+	para "WOMAN: I know!"
+	line "I've seen her too!"
+	cont "I love her movies!"
+	done
+	
+LumioseSouthwestOverheardScript2:
+	jumptext LumioseSouthwestOverheardText2
+	
+LumioseSouthwestOverheardText2:
+	text "MAN: What's that"
+	line "woman's name again?"
+	
+	para "She sure is a"
+	line "popular movie"
+	cont "star..."
+	
+	para "WOMAN: She is a"
+	line "beautiful lady,"
+	cont "for sure."
+	
+	para "No wonder she's"
+	line "so famous!"
+	done
+	
 LumioseSouthMartSign:
 	jumpstd MartSignScript
 	
@@ -97,6 +133,10 @@ LumioseSouthwest_MapEvents:
 	bg_event 26, 12, BGEVENT_READ, CoiffureClipsSign
 	
 	def_object_events
+	object_event 16, 11, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthwestOverheardScript1, -1
+	object_event 17, 11, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthwestOverheardScript1, -1
+	object_event 25, 25, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthwestOverheardScript2, -1
+	object_event 26, 25, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthwestOverheardScript2, -1
 	object_event 15, 13, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthwestBlackoutGuyScript, EVENT_BLACKOUT_OVER_2
 	object_event 20,  7, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthwestBlackoutGuyScript, EVENT_BLACKOUT_OVER_2
 	object_event 19,  7, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthwestBlackoutGuyScript, EVENT_BLACKOUT_OVER_2

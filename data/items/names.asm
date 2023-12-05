@@ -24,7 +24,7 @@ ItemNames::
 	li "FIRE STONE"
 	li "THUNDERSTONE"
 	li "WATER STONE"
-	li "TERU-SAMA"
+	li "QUICK BALL"
 	li "HP UP"
 	li "PROTEIN"
 	li "IRON"

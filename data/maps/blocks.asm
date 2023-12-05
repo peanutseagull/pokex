@@ -47,6 +47,9 @@ Route2Gate_Blocks:
 	
 Route4LumioseGate_Blocks:
 	INCBIN "maps/Route4LumioseGate.blk"
+	
+Route5LumioseGate_Blocks:
+	INCBIN "maps/Route5LumioseGate.blk"
 
 PlayersHouse1F_Blocks:
 SerenasHouse1F_Blocks:

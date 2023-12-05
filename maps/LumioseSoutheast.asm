@@ -161,15 +161,17 @@ LumioseSoutheast_MapEvents:
 	warp_event 27, 15, LUMIOSE_SOUTH_OFFICE_GROUND_1, 2
 	warp_event 16, 23, SYCAMORE_LAB_1F, 1
 	warp_event 17, 23, SYCAMORE_LAB_1F, 2
+	warp_event  0, 31, ROUTE_5_LUMIOSE_GATE, 1
+	warp_event  1, 31, ROUTE_5_LUMIOSE_GATE, 2
 	
 	def_coord_events
 	
 	def_bg_events
 	bg_event  2, 13, BGEVENT_READ, LumioseSoutheastPokecenterSign
-	bg_event 41, 12, BGEVENT_READ, CafeIntroversionSign
-	bg_event 51,  4, BGEVENT_READ, RestaurantLeNahSign
-	bg_event 47, 23, BGEVENT_READ, SycamoreLabSign
-	bg_event 63,  5, BGEVENT_READ, Route4GateSign
+	bg_event  9, 12, BGEVENT_READ, CafeIntroversionSign
+	bg_event 19,  4, BGEVENT_READ, RestaurantLeNahSign
+	bg_event 15, 23, BGEVENT_READ, SycamoreLabSign
+	bg_event 31,  5, BGEVENT_READ, Route4GateSign
 	
 	def_object_events
 	object_event 18,  6, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSoutheastBeautyScript, -1

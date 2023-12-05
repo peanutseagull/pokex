@@ -38,7 +38,7 @@ ItemEffects:
 	dw EvoStoneEffect      ; FIRE_STONE
 	dw EvoStoneEffect      ; THUNDERSTONE
 	dw EvoStoneEffect      ; WATER_STONE
-	dw NoEffect            ; ITEM_19
+	dw PokeBallEffect      ; QUICK_BALL
 	dw VitaminEffect       ; HP_UP
 	dw VitaminEffect       ; PROTEIN
 	dw VitaminEffect       ; IRON
@@ -740,6 +740,7 @@ BallMultiplierFunctionTable:
 	dbw MOON_BALL,   MoonBallMultiplier
 	dbw LOVE_BALL,   LoveBallMultiplier
 	dbw PARK_BALL,   ParkBallMultiplier
+	dbw QUICK_BALL,  QuickBallMultiplier
 	db -1 ; end
 
 UltraBallMultiplier:
@@ -1059,6 +1060,27 @@ LevelBallMultiplier:
 	cp c
 	ret nc ; if player/4 is lower level, we're done here
 	sla b
+	ret nc
+
+.max
+	ld b, $ff
+	ret
+	
+QuickBallMultiplier:
+; multiply catch rate by 5 on first turn
+	ld a, [wPlayerTurnsTaken]
+	and a
+	ret nz
+
+	ld a, b
+
+	sla b
+	jr c, .max
+
+	sla b
+	jr c, .max
+
+	add a
 	ret nc
 
 .max

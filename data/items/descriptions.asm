@@ -25,7 +25,7 @@ ItemDescriptions:
 	dw FireStoneDesc
 	dw ThunderStoneDesc
 	dw WaterStoneDesc
-	dw TeruSama2Desc
+	dw QuickBallDesc
 	dw HPUpDesc
 	dw ProteinDesc
 	dw IronDesc
@@ -354,8 +354,9 @@ WaterStoneDesc:
 	db   "Evolves certain"
 	next "kinds of #MON.@"
 
-TeruSama2Desc:
-	db   "?@"
+QuickBallDesc:
+	db   "For catching on"
+	next "the first turn.@"
 
 HPUpDesc:
 	db   "Raises the HP of"

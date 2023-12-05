@@ -94,13 +94,14 @@ ENDM
 	map_const SYCAMORE_LAB_1F,								4,  3 ; 14
 	map_const SYCAMORE_LAB_2F,								6,  4 ; 15
 	map_const SYCAMORE_LAB_3F,								6,  4 ; 16
+	map_const ROUTE_5_LUMIOSE_GATE,							5,  4 ; 17
 	; map_const LUMIOSE_NORTH,							   33, 17 ;  3
 	map_const LUMIOSE_NORTHWEST,						   16, 17
 	map_const LUMIOSE_NORTHEAST,						   17, 17
-	map_const VERNAL_AVENUE,							    8, 30 ;  4
-	map_const ESTIVAL_AVENUE,							    8, 30 ;  5
-	map_const AUTUMNAL_AVENUE,								8, 30 ;  6
-	map_const HIBERNAL_AVENUE,								8, 30 ;  7
+	map_const VERNAL_AVENUE,							    8, 21 ;  4
+	map_const ESTIVAL_AVENUE,							    8, 21 ;  5
+	map_const AUTUMNAL_AVENUE,								8, 21 ;  6
+	map_const HIBERNAL_AVENUE,								8, 21 ;  7
 	map_const ROUGE_PLAZA,								   10, 11 ;  8
 	map_const JAUNE_PLAZA,								   10, 11 ;  9
 	map_const MAGENTA_PLAZA,							   10, 11 ; 10
@@ -111,6 +112,7 @@ ENDM
 	endgroup
 	
 	newgroup CAMPHRIER											  ;  6
+	; map_const ROUTE_5,
 	map_const CAMPHRIER_TOWN,							    1,  1 ;  1
 	endgroup
 	
