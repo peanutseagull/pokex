@@ -27,6 +27,12 @@ Route4_Blocks:
 Route22_Blocks:
 	INCBIN "maps/Route22.blk"
 	
+Route5West_Blocks:
+	INCBIN "maps/Route5West.blk"
+	
+Route5East_Blocks:
+	INCBIN "maps/Route5East.blk"
+	
 Pokecenter2F_Blocks:
 	INCBIN "maps/Pokecenter2F.blk"
 

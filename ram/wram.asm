@@ -3176,8 +3176,9 @@ wRoute4LumioseGateSceneID::						  db
 wSycamoreLab3FSceneID::							  db
 wSycamoreLab1FSceneID::							  db
 wCafeSoleilSceneID::							  db
+wRoute5EastSceneID::							  db
 
-	ds 45
+	ds 44
 
 ; fight counts
 wJackFightCount::    db

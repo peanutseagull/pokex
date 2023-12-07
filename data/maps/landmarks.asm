@@ -28,19 +28,6 @@ Landmarks:
 	landmark   0,   0, RougePlazaName
 	landmark   0,   0, JaunePlazaName
 	landmark   0,   0, CentricoPlazaName
-	landmark   0,   0, CamphrierTownName
-	landmark   0,   0, CyllageCityName
-	landmark   0,   0, AmbretteTownName
-	landmark   0,   0, GeosengeTownName
-	landmark   0,   0, ShalourCityName
-	landmark   0,   0, CoumarineCityName
-	landmark   0,   0, LaverreCityName
-	landmark   0,   0, DendemilleTownName
-	landmark   0,   0, AnistarCityName
-	landmark   0,   0, CouriwayTownName
-	landmark   0,   0, SnowbelleCityName
-	landmark   0,   0, PokemonLeagueName
-	landmark   0,   0, KiloudeCityName
 	landmark   0,   0, Route5Name
 	landmark   0,   0, Route6Name
 	landmark   0,   0, Route7Name
@@ -58,6 +45,19 @@ Landmarks:
 	landmark   0,   0, Route19Name
 	landmark   0,   0, Route20Name
 	landmark   0,   0, Route21Name
+	landmark   0,   0, CamphrierTownName
+	landmark   0,   0, CyllageCityName
+	landmark   0,   0, AmbretteTownName
+	landmark   0,   0, GeosengeTownName
+	landmark   0,   0, ShalourCityName
+	landmark   0,   0, CoumarineCityName
+	landmark   0,   0, LaverreCityName
+	landmark   0,   0, DendemilleTownName
+	landmark   0,   0, AnistarCityName
+	landmark   0,   0, CouriwayTownName
+	landmark   0,   0, SnowbelleCityName
+	landmark   0,   0, PokemonLeagueName
+	landmark   0,   0, KiloudeCityName
 	; landmark  85,  58, SproutTowerName
 	; landmark  84,  92, Route32Name
 	; landmark  76,  76, RuinsOfAlphName

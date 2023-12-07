@@ -48,8 +48,8 @@ Route5LumioseGate_MapEvents:
 	def_warp_events
 	warp_event  6,  0, LUMIOSE_SOUTHEAST, 11
 	warp_event  7,  0, LUMIOSE_SOUTHEAST, 12
-	; warp_event  0,  4, ROUTE_5, 1
-	; warp_event  0,  5, ROUTE_5, 2
+	warp_event  0,  4, ROUTE_5_EAST, 1
+	warp_event  0,  5, ROUTE_5_EAST, 2
 	
 	def_coord_events
 	

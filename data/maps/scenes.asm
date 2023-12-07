@@ -92,4 +92,5 @@ MapScenes::
 	scene_var SYCAMORE_LAB_3F,							   wSycamoreLab3FSceneID
 	scene_var SYCAMORE_LAB_1F,							   wSycamoreLab1FSceneID
 	scene_var CAFE_SOLEIL,								   wCafeSoleilSceneID
+	scene_var ROUTE_5_EAST,								   wRoute5EastSceneID
 	db -1 ; end

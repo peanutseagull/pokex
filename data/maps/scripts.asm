@@ -140,6 +140,8 @@ SECTION "Map Scripts 6", ROMX
 SECTION "Map Scripts 7", ROMX
 
 INCLUDE "maps/CamphrierTown.asm"
+INCLUDE "maps/Route5East.asm"
+INCLUDE "maps/Route5West.asm"
 ; INCLUDE "maps/LakeOfRage.asm"
 ; INCLUDE "maps/CeladonDeptStore1F.asm"
 ; INCLUDE "maps/CeladonDeptStore2F.asm"

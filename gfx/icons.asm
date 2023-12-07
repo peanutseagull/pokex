@@ -206,8 +206,6 @@ PyroarIcon::     INCBIN "gfx/icons/pyroar.2bpp"
 FlabebeIcon::    INCBIN "gfx/icons/flabebe.2bpp"
 FloetteIcon::    INCBIN "gfx/icons/floette.2bpp"
 FlorgesIcon::    INCBIN "gfx/icons/florges.2bpp"
-
-SECTION "Mon Icons 3", ROMX
 SkiddoIcon::     INCBIN "gfx/icons/skiddo.2bpp"
 GogoatIcon::     INCBIN "gfx/icons/gogoat.2bpp"
 PanchamIcon::    INCBIN "gfx/icons/pancham.2bpp"
@@ -224,6 +222,8 @@ SwirlixIcon::    INCBIN "gfx/icons/swirlix.2bpp"
 SlurpuffIcon::   INCBIN "gfx/icons/slurpuff.2bpp"
 InkayIcon::      INCBIN "gfx/icons/inkay.2bpp"
 MalamarIcon::    INCBIN "gfx/icons/malamar.2bpp"
+
+SECTION "Mon Icons 3", ROMX
 BinacleIcon::    INCBIN "gfx/icons/binacle.2bpp"
 BarbaracleIcon:: INCBIN "gfx/icons/barbaracle.2bpp"
 SkrelpIcon::     INCBIN "gfx/icons/skrelp.2bpp"

@@ -3,72 +3,89 @@ TrainerPicPointers::
 ; entries correspond to trainer classes (see constants/trainer_constants.asm)
 	table_width 3, TrainerPicPointers
 	dba FalknerPic
-	dba WhitneyPic
 	dba BugsyPic
+	dba WhitneyPic
 	dba MortyPic
-	dba PrycePic
-	dba JasminePic
 	dba ChuckPic
+	dba JasminePic
+	dba PrycePic
 	dba ClairPic
-	dba Rival1Pic
 	dba PokemonProfPic
 	dba WillPic
-	dba CalPic
-	dba BrunoPic
-	dba KarenPic
+	dba SabrinaPic
+	dba ClairPic
 	dba KogaPic
 	dba ChampionPic
-	dba BrockPic
-	dba MistyPic
-	dba LtSurgePic
-	dba ScientistPic
-	dba ErikaPic
+	dba KarenPic
+	dba CooltrainerfPic
+	dba HikerPic
+	dba SuperNerdPic
+	dba ExecutivemPic
+	dba ExecutivefPic
+	dba ExecutivefPic
+	dba ExecutivefPic
+	dba ExecutivefPic
+	dba ChampionPic
+	dba BugCatcherPic
 	dba YoungsterPic
-	dba SchoolboyPic
-	dba BirdKeeperPic
 	dba LassPic
-	dba JaninePic
+	dba PicnickerPic
+	dba CamperPic
+	dba SchoolboyPic
+	dba PicnickerPic
+	dba YoungsterPic
+	dba PicnickerPic
+	dba TwinsPic
+	dba BoarderPic
+	dba SkierPic
+	dba HikerPic
+	dba HikerPic
+	dba OfficerPic
+	dba PokefanmPic
+	dba PokefanfPic
+	dba YoungsterPic
+	dba LassPic
+	dba PicnickerPic
+	dba MediumPic
+	dba PsychicTPic
+	dba BlackbeltTPic
+	dba CooltrainerfPic
 	dba CooltrainermPic
 	dba CooltrainerfPic
+	dba BirdKeeperPic
+	dba BeautyPic
+	dba SailorPic 
+	dba BirdKeeperPic
+	dba BeautyPic
+	dba MysticalmanPic
+	dba GruntmPic
+	dba GruntfPic
+	dba ExecutivemPic
+	dba ExecutivefPic
 	dba BeautyPic
 	dba PokemaniacPic
-	dba GruntmPic
-	dba GentlemanPic
-	dba SkierPic
 	dba TeacherPic
-	dba SabrinaPic
-	dba BugCatcherPic
+	dba TeacherPic
+	dba CooltrainermPic
+	dba CooltrainerfPic
+	dba CooltrainermPic
+	dba CooltrainerfPic
 	dba FisherPic
 	dba SwimmermPic
 	dba SwimmerfPic
-	dba SailorPic
-	dba SuperNerdPic
-	dba Rival2Pic
-	dba GuitaristPic
-	dba HikerPic
-	dba BikerPic
-	dba BlainePic
-	dba BurglarPic
-	dba FirebreatherPic
-	dba JugglerPic
-	dba BlackbeltTPic
-	dba ExecutivemPic
-	dba PsychicTPic
-	dba PicnickerPic
-	dba CamperPic
-	dba ExecutivefPic
-	dba SagePic
-	dba MediumPic
-	dba BoarderPic
-	dba PokefanmPic
-	dba KimonoGirlPic
-	dba TwinsPic
-	dba PokefanfPic
-	dba RedPic
-	dba BluePic
-	dba OfficerPic
-	dba GruntfPic
-	dba MysticalmanPic
-	dba KarenPic
+	dba CooltrainermPic
 	dba CooltrainerfPic
+	dba GentlemanPic
+	dba ErikaPic
+	dba BikerPic
+	dba BeautyPic
+	dba SailorPic
+	dba GentlemanPic
+	dba ErikaPic
+	dba KimonoGirlPic
+	dba ScientistPic
+	dba CooltrainerfPic
+	dba Rival1Pic
+	dba Rival2Pic
+	dba CalPic
 	assert_table_length NUM_TRAINER_CLASSES

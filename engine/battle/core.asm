@@ -8020,8 +8020,8 @@ InitEnemyTrainer:
 
 	; RIVAL1's first mon has no held item
 	ld a, [wTrainerClass]
-	cp RIVAL1
-	jr nz, .ok
+	; cp RIVAL1
+	; jr nz, .ok
 	xor a
 	ld [wOTPartyMon1Item], a
 

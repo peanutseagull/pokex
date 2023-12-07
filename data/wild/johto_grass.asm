@@ -1,4 +1,5 @@
 ; Johto Pokémon in grass
+; chances - 30, 30, 20, 10, 5, 4, 1
 
 JohtoGrassWildMons:
 
@@ -168,6 +169,62 @@ JohtoGrassWildMons:
 	db 8, ODDISH
 	db 8, ODDISH
 	db 8, CLEFFA
+	end_grass_wildmons
+
+	def_grass_wildmons ROUTE_5_EAST
+	db 5 percent, 5 percent, 5 percent
+	; morn
+	db 9, BUNNELBY
+	db 9, FURFROU
+	db 9, DODUO
+	db 9, PANCHAM
+	db 10, SKIDDO
+	db 10, ABRA
+	db 10, ABRA
+	; day
+	db 9, BUNNELBY
+	db 9, FURFROU
+	db 9, DODUO
+	db 9, PANCHAM
+	db 10, SKIDDO
+	db 10, ABRA
+	db 10, ABRA
+	; nite
+	db 9, BUNNELBY
+	db 9, FURFROU
+	db 9, DODUO
+	db 9, PANCHAM
+	db 10, SKIDDO
+	db 10, ABRA
+	db 10, ABRA
+	end_grass_wildmons
+	
+	def_grass_wildmons ROUTE_5_WEST
+	db 5 percent, 5 percent, 5 percent
+	; morn
+	db 9, SKIDDO
+	db 9, FURFROU
+	db 9, PANCHAM
+	db 9, DODUO
+	db 10, BUNNELBY
+	db 10, ABRA
+	db 10, ABRA
+	; day
+	db 9, SKIDDO
+	db 9, FURFROU
+	db 9, PANCHAM
+	db 9, DODUO
+	db 10, BUNNELBY
+	db 10, ABRA
+	db 10, ABRA
+	; nite
+	db 9, SKIDDO
+	db 9, FURFROU
+	db 9, PANCHAM
+	db 9, DODUO
+	db 10, BUNNELBY
+	db 10, ABRA
+	db 10, ABRA
 	end_grass_wildmons
 	
 	db -1 ; end

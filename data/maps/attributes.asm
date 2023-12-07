@@ -177,7 +177,16 @@ ENDM
 	map_attributes VertPlaza, VERT_PLAZA, $71, 0
 	map_attributes CentricoPlaza, CENTRICO_PLAZA, $71, 0
 	
-	map_attributes CamphrierTown, CAMPHRIER_TOWN, $00, 0
+	map_attributes Route5East, ROUTE_5_EAST, $05, WEST
+	connection west, Route5West, ROUTE_5_WEST, 0
+	
+	map_attributes Route5West, ROUTE_5_WEST, $05, WEST | EAST
+	connection west, CamphrierTown, CAMPHRIER_TOWN, 16
+	connection east, Route5East, ROUTE_5_EAST, 0
+	
+	map_attributes CamphrierTown, CAMPHRIER_TOWN, $05, EAST
+	connection east, Route5West, ROUTE_5_WEST, -16
+	
 	map_attributes CyllageCity, CYLLAGE_CITY, $00, 0
 	map_attributes AmbretteTown, AMBRETTE_TOWN, $00, 0
 	map_attributes GeosengeTown, GEOSENGE_TOWN, $00, 0

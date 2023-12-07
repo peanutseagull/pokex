@@ -181,24 +181,24 @@ Route22SignText:
 	line "Détourner Way"
 	done
 	
-TrainerPicnickerLouise:
-	trainer PICNICKER, LOUISE, EVENT_BEAT_PICNICKER_LOUISE, PicnickerLouiseSeenText, PicnickerLouiseBeatenText, 0, .Script
+TrainerRisingStarLouise:
+	trainer RISINGSTARF, LOUISE, EVENT_BEAT_RISING_STAR_LOUISE, RisingStarLouiseSeenText, RisingStarLouiseBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PinickerLouiseAfterText
+	writetext RisingStarLouiseAfterText
 	waitbutton
 	closetext
 	end
 	
-TrainerYoungsterLoic:
-	trainer YOUNGSTER, LOIC, EVENT_BEAT_YOUNGSTER_LOIC, YoungsterLoicSeenText, YoungsterLoicBeatenText, 0, .Script
+TrainerRisingStarLoic:
+	trainer RISINGSTARM, LOIC, EVENT_BEAT_RISING_STAR_LOIC, RisingStarLoicSeenText, RisingStarLoicBeatenText, 0, .Script
 	
 .Script
 	endifjustbattled
 	opentext
-	writetext YoungsterLoicAfterText
+	writetext RisingStarLoicAfterText
 	waitbutton
 	closetext
 	end
@@ -236,7 +236,7 @@ TrainerLassElsa:
 	closetext
 	end
 
-PicnickerLouiseSeenText:
+RisingStarLouiseSeenText:
 	text "I learnt all of my"
 	line "#MON battling"
 	cont "techniques from"
@@ -245,13 +245,13 @@ PicnickerLouiseSeenText:
 	line "leader!"
 	done
 	
-PicnickerLouiseBeatenText:
+RisingStarLouiseBeatenText:
 	text "Whoa! You might be"
 	line "even stronger than"
 	cont "VIOLA!"
 	done
 	
-PinickerLouiseAfterText:
+RisingStarLouiseAfterText:
 	text "VIOLA only raises"
 	line "the types of"
 	cont "#MON she likes."
@@ -288,7 +288,7 @@ LassElinAfterText:
 	cont "cute, too!"
 	done	
 	
-YoungsterLoicSeenText:
+RisingStarLoicSeenText:
 	text "Is #MON"
 	line "battling just a"
 	cont "hobby to you?"
@@ -297,13 +297,13 @@ YoungsterLoicSeenText:
 	line "become a pro?"
 	done
 	
-YoungsterLoicBeatenText:
+RisingStarLoicBeatenText:
 	text "I'll be sure to"
 	line "learn from this"
 	cont "and improve!"
 	done
 	
-YoungsterLoicAfterText:
+RisingStarLoicAfterText:
 	text "The #MON League"
 	line "is close, yet"
 	cont "so far away!"
@@ -366,9 +366,9 @@ Route22_MapEvents:
 	bg_event  3,  9, BGEVENT_READ, Route22Sign
 	
 	def_object_events
-	object_event  6,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerPicnickerLouise, -1
+	object_event  6,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerRisingStarLouise, -1
 	object_event 11,  9, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerLassElin, -1
-	object_event 29,  6, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerYoungsterLoic, -1
+	object_event 29,  6, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerRisingStarLoic, -1
 	object_event 29, 13, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerSchoolboyRabbie, -1
 	object_event 35, 18, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerLassElsa, -1
 	object_event  3, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_22_SERENA

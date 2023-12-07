@@ -5,35 +5,35 @@ Route4_MapScripts:
 
 	def_callbacks
 
-TrainerOfficerWheaton:
-	trainer OFFICER, WHEATON, EVENT_BEAT_OFFICER_WHEATON, OfficerWheatonSeenText, OfficerWheatonBeatenText, 0, .Script
+TrainerGardenerWheaton:
+	trainer GARDENER, WHEATON, EVENT_BEAT_GARDENER_WHEATON, GardenerWheatonSeenText, GardenerWheatonBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext OfficerWheatonAfterText
+	writetext GardenerWheatonAfterText
 	waitbutton
 	closetext
 	end
 	
-TrainerSkierCalida:
-	trainer SKIER, CALIDA, EVENT_BEAT_SKIER_CALIDA, SkierCalidaSeenText, SkierCalidaBeatenText, 0, .Script
+TrainerSkaterCalida:
+	trainer SKATERF, CALIDA, EVENT_BEAT_SKATER_CALIDA, SkaterCalidaSeenText, SkaterCalidaBeatenText, 0, .Script
 	
 .Script:
 	endifjustbattled
 	opentext
-	writetext SkierCalidaAfterText
+	writetext SkaterCalidaAfterText
 	waitbutton
 	closetext
 	end
 	
-TrainerBoarderRoland:
-	trainer BOARDER, ROLAND, EVENT_BEAT_BOARDER_ROLAND, BoarderRolandSeenText, BoarderRolandBeatenText, 0, .Script
+TrainerSkaterRoland:
+	trainer SKATERM, ROLAND, EVENT_BEAT_SKATER_ROLAND, SkaterRolandSeenText, SkaterRolandBeatenText, 0, .Script
 	
 .Script:
 	endifjustbattled
 	opentext
-	writetext BoarderRolandAfterText
+	writetext SkaterRolandAfterText
 	waitbutton
 	closetext
 	end
@@ -82,29 +82,29 @@ TrainerPokefanGabe:
 	closetext
 	end
 	
-TrainerOfficerFabian:
-	trainer OFFICER, FABIAN, EVENT_BEAT_OFFICER_FABIAN, OfficerFabianSeenText, OfficerFabianBeatenText, 0, .Script
+TrainerGardenerFabian:
+	trainer GARDENER, FABIAN, EVENT_BEAT_GARDENER_FABIAN, GardenerFabianSeenText, GardenerFabianBeatenText, 0, .Script
 	
 .Script:
 	endifjustbattled
 	opentext
-	writetext OfficerFabianAfterText
+	writetext GardenerFabianAfterText
 	waitbutton
 	closetext
 	end
 	
-TrainerOfficerGrover:
-	trainer OFFICER, GROVER, EVENT_BEAT_OFFICER_GROVER, OfficerGroverSeenText, OfficerGroverBeatenText, 0, .Script
+TrainerGardenerGrover:
+	trainer GARDENER, GROVER, EVENT_BEAT_GARDENER_GROVER, GardenerGroverSeenText, GardenerGroverBeatenText, 0, .Script
 	
 .Script
 	endifjustbattled
 	opentext
-	writetext OfficerGroverAfterText
+	writetext GardenerGroverAfterText
 	waitbutton
 	closetext
 	end
 	
-OfficerGroverSeenText:
+GardenerGroverSeenText:
 	text "Parterre Way is"
 	line "famous for its"
 	cont "hedge mazes!"
@@ -114,13 +114,13 @@ OfficerGroverSeenText:
 	cont "the official name!"
 	done
 	
-OfficerGroverBeatenText:
+GardenerGroverBeatenText:
 	text "I'm a garden pro."
 	line "You're a #MON"
 	cont "pro!"
 	done
 	
-OfficerGroverAfterText:
+GardenerGroverAfterText:
 	text "As promised, the"
 	line "hedge mazes are"
 	cont "called the"
@@ -128,19 +128,19 @@ OfficerGroverAfterText:
 	para "Geometric Gardens!"
 	done
 	
-OfficerFabianSeenText:
+GardenerFabianSeenText:
 	text "Behold the moves"
 	line "perfected in this"
 	cont "garden!"
 	done
 	
-OfficerFabianBeatenText:
+GardenerFabianBeatenText:
 	text "Looks like your"
 	line "skills are more"
 	cont "honed than me!"
 	done
 	
-OfficerFabianAfterText:
+GardenerFabianAfterText:
 	text "If you run into"
 	line "RAMOS from"
 	cont "COUMARINE CITY,"
@@ -222,25 +222,25 @@ PokefanAgnesAfterText:
 	cont "bond!"
 	done
 	
-BoarderRolandSeenText:
+SkaterRolandSeenText:
 	text "I battle just like"
 	line "I skate! Nonstop"
 	cont "victory!"
 	done
 	
-BoarderRolandBeatenText:
+SkaterRolandBeatenText:
 	text "Wow! You've got"
 	line "some crazy #MON"
 	cont "there!"
 	done
 	
-BoarderRolandAfterText:
+SkaterRolandAfterText:
 	text "LUMIOSE is the"
 	line "best spot for us"
 	cont "skaters!"
 	done
 	
-SkierCalidaSeenText:
+SkaterCalidaSeenText:
 	text "I love #MON"
 	line "battles, but"
 	cont "they'd be better"
@@ -249,29 +249,29 @@ SkierCalidaSeenText:
 	line "to stop skating!"
 	done
 	
-SkierCalidaBeatenText:
+SkaterCalidaBeatenText:
 	text "The moment I stop"
 	line "down flutters the"
 	cont "FLETCHLING!"
 	done
 	
-SkierCalidaAfterText:
+SkaterCalidaAfterText:
 	text "I took up skating"
 	line "to chase #MON!"
 	done
 
-OfficerWheatonSeenText:
+GardenerWheatonSeenText:
 	text "I'm warnin' ya,"
 	line "youngster -- my"
 	cont "HONEDGE is sharp!"
 	done
 	
-OfficerWheatonBeatenText:
+GardenerWheatonBeatenText:
 	text "Ohhh! You cut us"
 	line "down to size!"
 	done
 	
-OfficerWheatonAfterText:
+GardenerWheatonAfterText:
 	text "To keep this"
 	line "garden lookin'"
 	cont "proper,"
@@ -349,15 +349,15 @@ Route4_MapEvents:
 	bg_event 13, 33, BGEVENT_READ, FountainSign
 	
 	def_object_events
-	object_event  3, 43, SPRITE_OFFICER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 2, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerOfficerWheaton, -1
-	object_event 15, 36, SPRITE_BEAUTY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerSkierCalida, -1
-	object_event 15, 22, SPRITE_ROCKER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerBoarderRoland, -1
+	object_event  3, 43, SPRITE_OFFICER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 2, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerGardenerWheaton, -1
+	object_event 15, 36, SPRITE_BEAUTY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerSkaterCalida, -1
+	object_event 15, 22, SPRITE_ROCKER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 4, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerSkaterRoland, -1
 	object_event 23, 20, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerPokefanAgnes, -1
 	object_event 11, 17, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerPicnickerMia, -1
 	object_event 20, 13, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerCamperAdrian, -1
 	object_event 15, 10, SPRITE_POKEFAN_M, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerPokefanGabe, -1
-	object_event 12,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerOfficerGrover, -1
-	object_event 26,  6, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerOfficerFabian, -1
+	object_event 12,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerGardenerGrover, -1
+	object_event 26,  6, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerGardenerFabian, -1
 	; object_event 15,  4, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route4DemoOverScript, -1
 	object_event 12, 52, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4Repel, EVENT_ROUTE_4_REPEL
 	object_event 19, 52, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route4SuperPotion, EVENT_ROUTE_4_SUPER_POTION
