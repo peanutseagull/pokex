@@ -1,11 +1,11 @@
 	object_const_def
 	
-AnistarCity_MapScripts:
+ShabboneauCastle_MapScripts:
 	def_scene_scripts
 	
 	def_callbacks
 	
-AnistarCity_MapEvents:
+ShabboneauCastle_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events

@@ -47,8 +47,8 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; pokefanm
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; richboy
 	db MUSIC_LASS_ENCOUNTER        ; lady
-	db MUSIC_LASS_ENCOUNTER        ; fairygirl
-	db MUSIC_SAGE_ENCOUNTER        ; hexmaniac
+	db MUSIC_POKEMANIAC_ENCOUNTER  ; fairygirl
+	db MUSIC_POKEMANIAC_ENCOUNTER  ; hexmaniac
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; psychic_t
 	db MUSIC_HIKER_ENCOUNTER       ; blackbelt_t
 	db MUSIC_HIKER_ENCOUNTER       ; battlegirl

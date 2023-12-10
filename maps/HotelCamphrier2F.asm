@@ -1,14 +1,15 @@
 	object_const_def
 	
-AnistarCity_MapScripts:
+HotelCamphrier2F_MapScripts:
 	def_scene_scripts
 	
 	def_callbacks
 	
-AnistarCity_MapEvents:
+HotelCamphrier2F_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events
+	warp_event  1,  0, HOTEL_CAMPHRIER_1F, 3
 	
 	def_coord_events
 	

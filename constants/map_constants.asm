@@ -115,11 +115,21 @@ ENDM
 	map_const ROUTE_5_EAST,								   26, 12 ;  1
 	map_const ROUTE_5_WEST,								   13, 25 ;  2
 	map_const CAMPHRIER_TOWN,							   15, 18 ;  3
+	map_const CAMPHRIER_POKECENTER_1F,						5,  4 ;  4
+	map_const CAMPHRIER_MART,								6,  4 ;  5
+	map_const CAMPHRIER_HOUSE_1,							4,  4 ;  6
+	map_const CAMPHRIER_HOUSE_2,							4,  4 ;  7
+	map_const HOTEL_CAMPHRIER_1F,  						   10,  6 ;  8
+	map_const HOTEL_CAMPHRIER_2F,						    9,  6 ;  9
+	map_const SHABBONEAU_CASTLE, 						   20, 20 ; 10
+	; map_const ROUTE_6,									   30, 24
+	map_const ROUTE_7_EAST,								   40, 10
+	map_const ROUTE_7_WEST,								   13, 25
 	endgroup
 	
 	newgroup CYLLAGE											  ;  7
 	map_const CYLLAGE_CITY,								    1,  1 ;  1
-	map_const CYLLAGE_HOTEL,							   14, 10 ;  9
+	map_const CYLLAGE_HOTEL,							   14,  6 ;  9
 	endgroup
 	
 	newgroup AMBRETTE											  ;  8

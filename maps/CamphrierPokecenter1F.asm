@@ -1,14 +1,16 @@
 	object_const_def
 	
-AnistarCity_MapScripts:
+CamphrierPokecenter1F_MapScripts:
 	def_scene_scripts
 	
 	def_callbacks
 	
-AnistarCity_MapEvents:
+CamphrierPokecenter1F_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events
+	warp_event  3,  7, CAMPHRIER_TOWN, 1
+	warp_event  4,  7, CAMPHRIER_TOWN, 1
 	
 	def_coord_events
 	

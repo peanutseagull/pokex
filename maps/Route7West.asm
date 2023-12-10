@@ -1,11 +1,11 @@
 	object_const_def
 	
-AnistarCity_MapScripts:
+Route7West_MapScripts:
 	def_scene_scripts
 	
 	def_callbacks
 	
-AnistarCity_MapEvents:
+Route7West_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events

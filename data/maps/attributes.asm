@@ -184,8 +184,17 @@ ENDM
 	connection west, CamphrierTown, CAMPHRIER_TOWN, 16
 	connection east, Route5East, ROUTE_5_EAST, 0
 	
-	map_attributes CamphrierTown, CAMPHRIER_TOWN, $05, EAST
+	map_attributes CamphrierTown, CAMPHRIER_TOWN, $05, WEST | EAST
+	connection west, Route7East, ROUTE_7_EAST, 1
 	connection east, Route5West, ROUTE_5_WEST, -16
+	
+	map_attributes Route7East, ROUTE_7_EAST, $05, WEST | EAST
+	; connection north, Route6, ROUTE_6, 
+	connection west, Route7West, ROUTE_7_WEST, 0
+	connection east, CamphrierTown, CAMPHRIER_TOWN, -1
+	
+	map_attributes Route7West, ROUTE_7_WEST, $05, EAST
+	connection east, Route7East, ROUTE_7_EAST, 0
 	
 	map_attributes CyllageCity, CYLLAGE_CITY, $00, 0
 	map_attributes AmbretteTown, AMBRETTE_TOWN, $00, 0
@@ -228,6 +237,13 @@ ENDM
 	map_attributes MobileBattleRoom, MOBILE_BATTLE_ROOM, $00, 0
 	map_attributes Route4LumioseGate, ROUTE_4_LUMIOSE_GATE, $00, 0
 	map_attributes Route5LumioseGate, ROUTE_5_LUMIOSE_GATE, $00, 0
+	map_attributes CamphrierPokecenter1F, CAMPHRIER_POKECENTER_1F, $00, 0
+	map_attributes CamphrierMart, CAMPHRIER_MART, $00, 0
+	map_attributes CamphrierHouse1, CAMPHRIER_HOUSE_1, $00, 0
+	map_attributes CamphrierHouse2, CAMPHRIER_HOUSE_2, $00, 0
+	map_attributes HotelCamphrier1F, HOTEL_CAMPHRIER_1F, $00, 0
+	map_attributes HotelCamphrier2F, HOTEL_CAMPHRIER_2F, $00, 0
+	map_attributes ShabboneauCastle, SHABBONEAU_CASTLE, $00, 0
 	map_attributes CyllageHotel, CYLLAGE_HOTEL, $00, 0
 
 	; map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST

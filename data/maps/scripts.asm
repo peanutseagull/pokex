@@ -140,8 +140,18 @@ SECTION "Map Scripts 6", ROMX
 SECTION "Map Scripts 7", ROMX
 
 INCLUDE "maps/CamphrierTown.asm"
+INCLUDE "maps/CamphrierPokecenter1F.asm"
+INCLUDE "maps/CamphrierMart.asm"
+INCLUDE "maps/CamphrierHouse1.asm"
+INCLUDE "maps/CamphrierHouse2.asm"
+INCLUDE "maps/HotelCamphrier1F.asm"
+INCLUDE "maps/HotelCamphrier2F.asm"
+INCLUDE "maps/ShabboneauCastle.asm"
 INCLUDE "maps/Route5East.asm"
 INCLUDE "maps/Route5West.asm"
+; INCLUDE "maps/Route6.asm"
+INCLUDE "maps/Route7East.asm"
+INCLUDE "maps/Route7West.asm"
 ; INCLUDE "maps/LakeOfRage.asm"
 ; INCLUDE "maps/CeladonDeptStore1F.asm"
 ; INCLUDE "maps/CeladonDeptStore2F.asm"
