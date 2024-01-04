@@ -76,12 +76,12 @@ InitMapNameSign::
 	ret z
 	cp LANDMARK_RADIO_TOWER
 	ret z
-	cp LANDMARK_LAV_RADIO_TOWER
-	ret z
-	cp LANDMARK_UNDERGROUND_PATH
-	ret z
-	cp LANDMARK_INDIGO_PLATEAU
-	ret z
+	; cp LANDMARK_LAV_RADIO_TOWER
+	; ret z
+	; cp LANDMARK_UNDERGROUND_PATH
+	; ret z
+	; cp LANDMARK_INDIGO_PLATEAU
+	; ret z
 	cp LANDMARK_POWER_PLANT
 	ret z
 	ld a, 1

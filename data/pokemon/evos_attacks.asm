@@ -3215,7 +3215,7 @@ SylveonEvosAttacks:
 	db 29, SLAM
 	db 33, LIGHT_SCREEN
 	db 37, MOONBLAST
-	dn 43, MOONLIGHT
+	db 43, MOONLIGHT
 	db 0 ; no more level up moves
 	
 HawluchaEvosAttacks:

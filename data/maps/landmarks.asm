@@ -145,11 +145,11 @@ Landmarks:
 	; landmark  20, 100, Route27Name
 	; landmark  12, 100, TohjoFallsName
 	; landmark  20,  68, Route28Name
-	landmark   0,   0, UndergroundName
-	landmark   0,   0, LavRadioTowerName
-	landmark   0,   0, IndigoPlateauName
+	; landmark   0,   0, UndergroundName
+	; landmark   0,   0, LavRadioTowerName
+	; landmark   0,   0, IndigoPlateauName
 	landmark   0,   0, FastShipName
-	landmark   0,   0, SilverCaveName
+	; landmark   0,   0, SilverCaveName
 	landmark   0,   0, NationalParkName
 	landmark   0,   0, RadioTowerName
 	landmark   0,   0, VernalAvenueName
@@ -201,7 +201,7 @@ KiloudeCityName:	 db "KILOUDE¯CITY@"
 ; MahoganyTownName:    db "MAHOGANY¯TOWN@"
 ; BlackthornCityName:  db "BLACKTHORN¯CITY@"
 ; LakeOfRageName:      db "LAKE OF¯RAGE@"
-SilverCaveName:      db "SILVER CAVE@"
+; SilverCaveName:      db "SILVER CAVE@"
 ; SproutTowerName:     db "SPROUT¯TOWER@"
 ; RuinsOfAlphName:     db "RUINS¯OF ALPH@"
 ; UnionCaveName:       db "UNION CAVE@"
@@ -214,11 +214,11 @@ NationalParkName:    db "NATIONAL¯PARK@"
 ; MtMortarName:        db "MT.MORTAR@"
 ; DragonsDenName:      db "DRAGON'S¯DEN@"
 ; IcePathName:         db "ICE PATH@"
-IndigoPlateauName:   db "INDIGO¯PLATEAU@"
+; IndigoPlateauName:   db "INDIGO¯PLATEAU@"
 VictoryRoadName:     db "VICTORY¯ROAD@"
 ; MtMoonName:          db "MT.MOON@"
 ; RockTunnelName:      db "ROCK TUNNEL@"
-LavRadioTowerName:   db "LAV¯RADIO TOWER@"
+; LavRadioTowerName:   db "LAV¯RADIO TOWER@"
 ; SeafoamIslandsName:  db "SEAFOAM¯ISLANDS@"
 Route1Name:          db "ROUTE 1@"
 Route2Name:          db "ROUTE 2@"
@@ -249,7 +249,7 @@ FastShipName:        db "FAST SHIP@"
 ; ViridianForestName:  db "VIRIDIAN¯FOREST@" ; unreferenced
 ; DiglettsCaveName:    db "DIGLETT'S¯CAVE@"
 ; TohjoFallsName:      db "TOHJO FALLS@"
-UndergroundName:     db "UNDERGROUND@"
+; UndergroundName:     db "UNDERGROUND@"
 ; BattleTowerName:     db "BATTLE¯TOWER@"
 ParfumPalaceName:	 db "PARFUM¯PALACE@"
 BattleChateauName:   db "BATTLE¯CHATEAU@"
