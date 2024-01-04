@@ -8,56 +8,62 @@ Landmarks:
 ; entries correspond to constants/landmark_constants.asm
 	table_width 4, Landmarks
 	landmark  -8, -16, SpecialMapName
-	landmark 140, 100, VanivilleTownName
-	landmark 128, 100, Route1Name
-	landmark 100, 100, AquacordeTownName
-	landmark 100,  80, Route2Name
-	landmark 100,  70, SantaluneForestName
-	landmark 100,  60, Route3Name
-	landmark  84,  60, SantaluneCityName
-	landmark  84,  70, Route4Name
-	landmark  94,  60, Route22Name
-	landmark   0,   0, LumioseCityName
-	landmark   0,   0, VernalAvenueName
-	landmark   0,   0, EstivalAvenueName
-	landmark   0,   0, AutumnalAvenueName
-	landmark   0,   0, HibernalAvenueName
-	landmark   0,   0, BleuPlazaName
-	landmark   0,   0, VertPlazaName
-	landmark   0,   0, MagentaPlazaName
-	landmark   0,   0, RougePlazaName
-	landmark   0,   0, JaunePlazaName
-	landmark   0,   0, CentricoPlazaName
-	landmark   0,   0, Route5Name
-	landmark   0,   0, Route6Name
-	landmark   0,   0, Route7Name
-	landmark   0,   0, Route8Name
-	landmark   0,   0, Route9Name
-	landmark   0,   0, Route10Name
-	landmark   0,   0, Route11Name
-	landmark   0,   0, Route12Name
-	landmark   0,   0, Route13Name
-	landmark   0,   0, Route14Name
-	landmark   0,   0, Route15Name
-	landmark   0,   0, Route16Name
-	landmark   0,   0, Route17Name
-	landmark   0,   0, Route18Name
-	landmark   0,   0, Route19Name
-	landmark   0,   0, Route20Name
-	landmark   0,   0, Route21Name
-	landmark   0,   0, CamphrierTownName
-	landmark   0,   0, CyllageCityName
-	landmark   0,   0, AmbretteTownName
-	landmark   0,   0, GeosengeTownName
-	landmark   0,   0, ShalourCityName
-	landmark   0,   0, CoumarineCityName
-	landmark   0,   0, LaverreCityName
-	landmark   0,   0, DendemilleTownName
-	landmark   0,   0, AnistarCityName
-	landmark   0,   0, CouriwayTownName
-	landmark   0,   0, SnowbelleCityName
-	landmark   0,   0, PokemonLeagueName
-	landmark   0,   0, KiloudeCityName
+	landmark 108, 132, VanivilleTownName
+	landmark 108, 124, Route1Name
+	landmark 108, 116, AquacordeTownName
+	landmark 100, 116, Route2Name
+	landmark 100, 108, SantaluneForestName
+	landmark 100, 100, Route3Name
+	landmark 100,  92, SantaluneCityName
+	landmark 100,  84, Route4Name
+	landmark 108,  92, Route22Name
+	landmark  92,  76, LumioseCityName
+	landmark  84,  92, Route5Name
+	landmark  76, 100, CamphrierTownName
+	landmark  68,  92, Route6Name
+	landmark  68,  84, ParfumPalaceName
+	landmark  64, 100, Route7Name
+	landmark  68, 108, BerryFieldsName
+	landmark  60,  92, BattleChateauName
+	landmark  52, 100, ConnectingCaveName
+	landmark  44, 112, Route8Name
+	landmark  52, 124, AmbretteTownName
+	landmark  64, 124, Route9Name
+	landmark  76, 124, GlitteringCaveName
+	landmark  36, 100, CyllageCityName
+	landmark  36,  88, Route10Name
+	landmark  28,  84, GeosengeTownName
+	landmark  28,  72, Route11Name
+	landmark  36,  68, ReflectionCaveName
+	landmark  36,  60, ShalourCityName
+	landmark  36,  52, TowerOfMasteryName
+	landmark  52,  60, Route12Name	
+	landmark  68,  44, AzureBayName
+	landmark  52,  44, SeaSpiritsDenName
+	landmark  68,  60, CoumarineCityName
+	landmark  76,  64, Route13Name
+	landmark  68,  68, PowerPlantName
+	landmark  92,  52, Route14Name	
+	landmark  92,  36, LaverreCityName
+	landmark  92,  28, PokeballFactoryName
+	landmark 116,  36, Route15Name
+	landmark 108,  44, LostHotelName
+	landmark 108,  64, Route16Name
+	landmark 116,  60, DendemilleTownName
+	landmark 124,  52, FrostCavernName
+	landmark 132,  60, Route17Name
+	landmark 140,  68, AnistarCityName
+	landmark 148,  72, Route18Name
+	landmark 148,  60, TerminusCaveName
+	landmark 148,  84, CouriwayTownName
+	landmark 148,  92, Route19Name
+	landmark 140,  92, SnowbelleCityName
+	landmark 140, 104, Route20Name
+	landmark 140, 116, PokemonVillageName
+	landmark 132,  92, Route21Name
+	landmark 124,  92, VictoryRoadName
+	landmark 124,  84, PokemonLeagueName
+	landmark 124, 124, KiloudeCityName
 	; landmark  85,  58, SproutTowerName
 	; landmark  84,  92, Route32Name
 	; landmark  76,  76, RuinsOfAlphName
@@ -108,7 +114,6 @@ Landmarks:
 	; landmark 100,  44, Route24Name
 	; landmark 108,  36, Route25Name
 	; landmark 100,  60, Route5Name
-	landmark 108,  76, UndergroundName
 	; landmark 100,  76, Route6Name
 	; landmark 100,  84, VermilionCityName
 	; landmark  88,  60, DiglettsCaveName
@@ -117,9 +122,7 @@ Landmarks:
 	; landmark 116,  52, Route9Name
 	; landmark 132,  52, RockTunnelName
 	; landmark 132,  56, Route10Name
-	landmark 132,  60, PowerPlantName
 	; landmark 132,  68, LavenderTownName
-	landmark 140,  68, LavRadioTowerName
 	; landmark  76,  68, CeladonCityName
 	; landmark 100,  68, SaffronCityName
 	; landmark 116,  84, Route11Name
@@ -137,20 +140,30 @@ Landmarks:
 	; landmark  52, 132, CinnabarIslandName
 	; landmark  52, 120, Route21Name
 	; landmark  36,  68, Route22Name
-	landmark  28,  52, VictoryRoadName
 	; landmark  28,  44, Route23Name
-	landmark  28,  36, IndigoPlateauName
 	; landmark  28,  92, Route26Name
 	; landmark  20, 100, Route27Name
 	; landmark  12, 100, TohjoFallsName
 	; landmark  20,  68, Route28Name
-	landmark 140, 116, FastShipName
-	landmark 148,  68, SilverCaveName
-	landmark  52,  60, NationalParkName
-	landmark  50,  92, RadioTowerName
+	landmark   0,   0, UndergroundName
+	landmark   0,   0, LavRadioTowerName
+	landmark   0,   0, IndigoPlateauName
+	landmark   0,   0, FastShipName
+	landmark   0,   0, SilverCaveName
+	landmark   0,   0, NationalParkName
+	landmark   0,   0, RadioTowerName
+	landmark   0,   0, VernalAvenueName
+	landmark   0,   0, EstivalAvenueName
+	landmark   0,   0, AutumnalAvenueName
+	landmark   0,   0, HibernalAvenueName
+	landmark   0,   0, BleuPlazaName
+	landmark   0,   0, VertPlazaName
+	landmark   0,   0, MagentaPlazaName
+	landmark   0,   0, RougePlazaName
+	landmark   0,   0, JaunePlazaName
+	landmark   0,   0, CentricoPlazaName
 	assert_table_length NUM_LANDMARKS
 
-;NewBarkTownName:     db "NEW BARK¯TOWN@"
 VanivilleTownName:	 db "VANIVILLE¯TOWN@"
 AquacordeTownName:   db "AQUACORDE¯TOWN@"
 SantaluneForestName: db "SANTALUNE¯FOREST@"
@@ -194,7 +207,6 @@ SilverCaveName:      db "SILVER CAVE@"
 ; UnionCaveName:       db "UNION CAVE@"
 ; SlowpokeWellName:    db "SLOWPOKE¯WELL@"
 RadioTowerName:      db "RADIO TOWER@"
-PowerPlantName:      db "POWER PLANT@"
 NationalParkName:    db "NATIONAL¯PARK@"
 ; TinTowerName:        db "TIN TOWER@"
 ; LighthouseName:      db "LIGHTHOUSE@"
@@ -202,27 +214,12 @@ NationalParkName:    db "NATIONAL¯PARK@"
 ; MtMortarName:        db "MT.MORTAR@"
 ; DragonsDenName:      db "DRAGON'S¯DEN@"
 ; IcePathName:         db "ICE PATH@"
-; NotApplicableName:   db "N/A@" ; unreferenced ; "オバケやしき" ("HAUNTED HOUSE") in Japanese
-; PalletTownName:      db "PALLET TOWN@"
-; ViridianCityName:    db "VIRIDIAN¯CITY@"
-; PewterCityName:      db "PEWTER CITY@"
-; CeruleanCityName:    db "CERULEAN¯CITY@"
-; LavenderTownName:    db "LAVENDER¯TOWN@"
-; VermilionCityName:   db "VERMILION¯CITY@"
-; CeladonCityName:     db "CELADON¯CITY@"
-; SaffronCityName:     db "SAFFRON¯CITY@"
-; FuchsiaCityName:     db "FUCHSIA¯CITY@"
-; CinnabarIslandName:  db "CINNABAR¯ISLAND@"
 IndigoPlateauName:   db "INDIGO¯PLATEAU@"
 VictoryRoadName:     db "VICTORY¯ROAD@"
 ; MtMoonName:          db "MT.MOON@"
 ; RockTunnelName:      db "ROCK TUNNEL@"
 LavRadioTowerName:   db "LAV¯RADIO TOWER@"
-; SilphCoName:         db "SILPH CO.@" ; unreferenced
-; SafariZoneName:      db "SAFARI ZONE@" ; unreferenced
 ; SeafoamIslandsName:  db "SEAFOAM¯ISLANDS@"
-; PokemonMansionName:  db "#MON¯MANSION@" ; unreferenced
-; CeruleanCaveName:    db "CERULEAN¯CAVE@" ; unreferenced
 Route1Name:          db "ROUTE 1@"
 Route2Name:          db "ROUTE 2@"
 Route3Name:          db "ROUTE 3@"
@@ -245,30 +242,6 @@ Route19Name:         db "ROUTE 19@"
 Route20Name:         db "ROUTE 20@"
 Route21Name:         db "ROUTE 21@"
 Route22Name:         db "ROUTE 22@"
-; Route23Name:         db "ROUTE 23@"
-; Route24Name:         db "ROUTE 24@"
-; Route25Name:         db "ROUTE 25@"
-;Route26Name:         db "ROUTE 26@"
-;Route27Name:         db "ROUTE 27@"
-; Route28Name:         db "ROUTE 28@"
-;Route29Name:         db "ROUTE 29@"
-;Route30Name:         db "ROUTE 30@"
-;Route31Name:         db "ROUTE 31@"
-; Route32Name:         db "ROUTE 32@"
-; Route33Name:         db "ROUTE 33@"
-; Route34Name:         db "ROUTE 34@"
-; Route35Name:         db "ROUTE 35@"
-; Route36Name:         db "ROUTE 36@"
-; Route37Name:         db "ROUTE 37@"
-; Route38Name:         db "ROUTE 38@"
-; Route39Name:         db "ROUTE 39@"
-; Route40Name:         db "ROUTE 40@"
-; Route41Name:         db "ROUTE 41@"
-; Route42Name:         db "ROUTE 42@"
-; Route43Name:         db "ROUTE 43@"
-; Route44Name:         db "ROUTE 44@"
-; Route45Name:         db "ROUTE 45@"
-; Route46Name:         db "ROUTE 46@"
 ; DarkCaveName:        db "DARK CAVE@"
 ; IlexForestName:      db "ILEX¯FOREST@"
 ; BurnedTowerName:     db "BURNED¯TOWER@"
@@ -278,4 +251,19 @@ FastShipName:        db "FAST SHIP@"
 ; TohjoFallsName:      db "TOHJO FALLS@"
 UndergroundName:     db "UNDERGROUND@"
 ; BattleTowerName:     db "BATTLE¯TOWER@"
+ParfumPalaceName:	 db "PARFUM¯PALACE@"
+BattleChateauName:   db "BATTLE¯CHATEAU@"
+ConnectingCaveName:	 db "CONNECTING¯CAVE@"
+BerryFieldsName:	 db "BERRY¯FIELDS@"
+GlitteringCaveName:  db "GLITTERING¯CAVE@"
+ReflectionCaveName:  db "REFLECTION¯CAVE@"
+TowerOfMasteryName:  db "TOWER¯OF¯MASTERY@"
+AzureBayName:		 db "AZURE¯BAY@"
+SeaSpiritsDenName:   db "SEA¯SPIRITS¯DEN@"
+PowerPlantName:      db "POWER PLANT@"
+PokeballFactoryName: db "#BALL¯FACTORY@"
+LostHotelName:		 db "LOST¯HOTEL@"
+FrostCavernName:	 db "FROST¯CAVERN@"
+TerminusCaveName:	 db "TERMINUS¯CAVE@"
+PokemonVillageName:  db "POKEMON¯VILLAGE@"
 SpecialMapName:      db "SPECIAL@"
