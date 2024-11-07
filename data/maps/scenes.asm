@@ -89,8 +89,11 @@ MapScenes::
 	scene_var ROUTE_1,									   wRoute1SceneID
 	scene_var ROUTE_22,									   wRoute22SceneID
 	scene_var ROUTE_4_LUMIOSE_GATE,						   wRoute4LumioseGateSceneID
+	scene_var SANTALUNE_CITY,							   wSantaluneCitySceneID
 	scene_var SYCAMORE_LAB_3F,							   wSycamoreLab3FSceneID
 	scene_var SYCAMORE_LAB_1F,							   wSycamoreLab1FSceneID
 	scene_var CAFE_SOLEIL,								   wCafeSoleilSceneID
 	scene_var ROUTE_5_EAST,								   wRoute5EastSceneID
+	scene_var CAMPHRIER_TOWN,							   wCamphrierTownSceneID
+	scene_var SHABBONEAU_CASTLE,						   wShabboneauCastleSceneID
 	db -1 ; end

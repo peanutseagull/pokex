@@ -3,29 +3,175 @@
 
 SantaluneCity_MapScripts:
 	def_scene_scripts
+	scene_script SantaluneCityNoop1Scene, SCENE_SANTALUNECITY_ALEXA_STOPS_YOU
+	scene_script SantaluneCityNoop2Scene, SCENE_SANTALUNECITY_EXPSHARE
+	scene_script SantaluneCityNoop3Scene, SCENE_SANTALUNECITY_NOOP
 
 	def_callbacks
-
-AlexaSantaluneScript:
-	faceplayer
-	opentext
-	checkevent EVENT_BEAT_VIOLA
-	iftrue .ExpShare
-	writetext Text_AlexaGymLeader
-	waitbutton
-	closetext
+	
+SantaluneCityNoop1Scene:
 	end
 	
-.ExpShare
+SantaluneCityNoop2Scene:
+	end
+	
+SantaluneCityNoop3Scene:
+	end
+	
+SantaluneCity_AlexaStopsYouScene1:
+	showemote EMOTE_SHOCK, SANTALUNECITY_CLAIR, 15
+	turnobject SANTALUNECITY_CLAIR, LEFT
+	turnobject PLAYER, RIGHT
+	opentext
+	writetext Text_SantaluneDontLeave
+	waitbutton
+	closetext
+	applymovement PLAYER, SantaluneCity_CantLeaveMovement
+	turnobject SANTALUNECITY_CLAIR, DOWN
+	end
+	
+SantaluneCity_AlexaStopsYouScene2:
+	showemote EMOTE_SHOCK, SANTALUNECITY_CLAIR, 15
+	turnobject SANTALUNECITY_CLAIR, RIGHT
+	turnobject PLAYER, LEFT
+	opentext
+	writetext Text_SantaluneDontLeave
+	waitbutton
+	closetext
+	applymovement PLAYER, SantaluneCity_CantLeaveMovement
+	turnobject SANTALUNECITY_CLAIR, DOWN
+	end
+	
+SantaluneCity_AlexaStopsYouScene3:
+	showemote EMOTE_SHOCK, SANTALUNECITY_CLAIR, 15
+	applymovement SANTALUNECITY_CLAIR, SantaluneCity_AlexaStopsYou
+	turnobject PLAYER, LEFT
+	opentext
+	writetext Text_SantaluneDontLeave
+	waitbutton
+	closetext
+	applymovement SANTALUNECITY_CLAIR, SantaluneCity_AlexaGoesBack
+	applymovement PLAYER, SantaluneCity_CantLeaveMovement
+	turnobject SANTALUNECITY_CLAIR, DOWN
+	end	
+	
+SantaluneCity_AlexaExpShare1:
+	showemote EMOTE_SHOCK, SANTALUNECITY_CLAIR, 15
+	turnobject SANTALUNECITY_CLAIR, LEFT
+	turnobject PLAYER, RIGHT
+	opentext
 	writetext Text_ExpShare
 	promptbutton
 	verbosegiveitem EXP_SHARE
-	writetext Text_SeeYou
+	writetext Text_AlexaSeeYou
 	waitbutton
 	closetext
-	disappear SANTALUNECITY_CLAIR
+	applymovement SANTALUNECITY_CLAIR, SantaluneCity_AlexaLeaves
+	setscene SCENE_SANTALUNECITY_NOOP
+	setevent EVENT_GOT_EXP_SHARE
 	reloadmap
-	end
+	end	
+	
+SantaluneCity_AlexaExpShare2:
+	showemote EMOTE_SHOCK, SANTALUNECITY_CLAIR, 15
+	turnobject SANTALUNECITY_CLAIR, RIGHT
+	turnobject PLAYER, LEFT
+	opentext
+	writetext Text_ExpShare
+	promptbutton
+	verbosegiveitem EXP_SHARE
+	writetext Text_AlexaSeeYou
+	waitbutton
+	closetext
+	applymovement SANTALUNECITY_CLAIR, SantaluneCity_AlexaLeaves
+	setscene SCENE_SANTALUNECITY_NOOP
+	setevent EVENT_GOT_EXP_SHARE	
+	reloadmap
+	end	
+	
+SantaluneCity_AlexaExpShare3:
+	showemote EMOTE_SHOCK, SANTALUNECITY_CLAIR, 15
+	applymovement SANTALUNECITY_CLAIR, SantaluneCity_AlexaStopsYou
+	turnobject PLAYER, LEFT
+	opentext
+	writetext Text_ExpShare
+	promptbutton
+	verbosegiveitem EXP_SHARE
+	writetext Text_AlexaSeeYou
+	waitbutton
+	closetext
+	applymovement SANTALUNECITY_CLAIR, SantaluneCity_AlexaLeaves
+	setscene SCENE_SANTALUNECITY_NOOP
+	setevent EVENT_GOT_EXP_SHARE
+	reloadmap
+	end	
+	
+SantaluneCity_AlexaStopsYou:
+	turn_head RIGHT
+	step RIGHT
+	step_end
+
+SantaluneCity_AlexaGoesBack:
+	turn_head LEFT
+	step LEFT
+	step_end
+	
+SantaluneCity_CantLeaveMovement:
+	turn_head DOWN
+	step DOWN
+	step_end
+	
+SantaluneCity_AlexaLeaves:
+	turn_head UP
+	step UP
+	step UP
+	step UP
+	step UP
+	step UP
+	step UP
+	step UP
+	step UP
+	step_end
+	
+Text_SantaluneDontLeave:
+	text "You must be..."
+	
+	para "Ah! One of the"
+	line "kids who got a"
+	cont "#MON, right?"
+	
+	para "From PROF."
+	line "SYCAMORE?"
+	
+	para "In that case,"
+	line "you should head"
+	cont "over to the GYM."
+	
+	para "I'm sure my sister"
+	line "would be glad to"
+	cont "face you!"
+	done
+
+AlexaSantaluneScript:
+	opentext
+	checkevent EVENT_BEAT_VIOLA
+	iftrue .ExpShare
+	writetext Text_SantaluneDontLeave
+	waitbutton
+	closetext
+	
+.ExpShare:
+	writetext Text_ExpShare
+	promptbutton
+	verbosegiveitem EXP_SHARE
+	writetext Text_AlexaSeeYou
+	waitbutton
+	closetext
+	applymovement SANTALUNECITY_CLAIR, SantaluneCity_AlexaLeaves
+	setscene SCENE_SANTALUNECITY_NOOP
+	setevent EVENT_GOT_EXP_SHARE
+	reloadmap
+	end	
 	
 Text_ExpShare:
 	text "Would you look at"
@@ -52,7 +198,7 @@ Text_ExpShare:
 	line "you take this?"
 	done
 	
-Text_SeeYou:
+Text_AlexaSeeYou:
 	text "If you have an"
 	line "EXP.SHARE and you"
 	cont "turn it on,"
@@ -71,25 +217,7 @@ Text_SeeYou:
 	line "by my office any"
 	cont "time! See you!"
 	done
-	
-Text_AlexaGymLeader:
-	text "You must be..."
-	
-	para "Ah! One of the"
-	line "kids who got a"
-	cont "#MON, right?"
-	
-	para "From PROF."
-	line "SYCAMORE?"
-	
-	para "In that case,"
-	line "you should head"
-	cont "over to the GYM."
-	
-	para "I'm sure my sister"
-	line "would be glad to"
-	cont "face you!"
-	done	
+
 	
 SantaluneCityPokefanmScript:
 	jumptextfaceplayer SantaluneCityPokefanmText
@@ -192,6 +320,12 @@ SantaluneCity_MapEvents:
 	warp_event 27, 27, SANTALUNE_HOUSE_4, 2
 	
 	def_coord_events
+	coord_event  4,  1, SCENE_SANTALUNECITY_ALEXA_STOPS_YOU, SantaluneCity_AlexaStopsYouScene1
+	coord_event  6,  1, SCENE_SANTALUNECITY_ALEXA_STOPS_YOU, SantaluneCity_AlexaStopsYouScene2
+	coord_event  7,  1, SCENE_SANTALUNECITY_ALEXA_STOPS_YOU, SantaluneCity_AlexaStopsYouScene3	
+	coord_event  4,  1, SCENE_SANTALUNECITY_EXPSHARE, SantaluneCity_AlexaExpShare1
+	coord_event  6,  1, SCENE_SANTALUNECITY_EXPSHARE, SantaluneCity_AlexaExpShare2
+	coord_event  7,  1, SCENE_SANTALUNECITY_EXPSHARE, SantaluneCity_AlexaExpShare3
 
 	def_bg_events
 	bg_event 21, 27, BGEVENT_READ, SantaluneCitySign
@@ -201,7 +335,7 @@ SantaluneCity_MapEvents:
 	bg_event 24, 27, BGEVENT_READ, SantaluneCityPokecenterSign
 
 	def_object_events
-	object_event  8,  7, SPRITE_CLAIR, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, AlexaSantaluneScript, -1
+	object_event  5,  1, SPRITE_CLAIR, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, AlexaSantaluneScript, EVENT_GOT_EXP_SHARE
 	object_event 10, 30, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 2, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SantaluneCityPokefanmScript, -1
 	object_event 23, 21, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SantaluneCityLassScript, -1
 	object_event 18, 15, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SantaluneCityPokefanfScript, -1

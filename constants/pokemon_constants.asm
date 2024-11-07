@@ -37,6 +37,8 @@
 	const PIDGEY
 	const PIDGEOTTO
 	const PIDGEOT
+	; const RATTATA
+	; const RATICATE
 	const SPEAROW
 	const FEAROW
 	const EKANS
@@ -62,10 +64,20 @@
 	const ODDISH
 	const GLOOM
 	const VILEPLUME	
+	; const PARAS
+	; const PARASECT
+	; const VENONAT
+	; const VENOMOTH
 	const DIGLETT
 	const DUGTRIO
+	; const MEOWTH
+	; const PERSIAN
 	const PSYDUCK
-	const GOLDUCK	
+	const GOLDUCK
+	; const MANKEY
+	; const PRIMEAPE
+	; const GROWLITHE
+	; const ARCANINE
 	const POLIWAG
 	const POLIWHIRL
 	const POLIWRATH	
@@ -83,27 +95,44 @@
 	const GEODUDE
 	const GRAVELER
 	const GOLEM	
+	; const PONYTA
+	; const RAPIDASH
 	const SLOWPOKE
 	const SLOWBRO	
 	const MAGNEMITE
 	const MAGNETON
 	const FARFETCH_D	
 	const DODUO
-	const DODRIO	
+	const DODRIO
+	; const SEEL
+	; const DEWGONG
+	; const GRIMER
+	; const MUK
 	const SHELLDER
 	const CLOYSTER	
 	const GASTLY
 	const HAUNTER
 	const GENGAR	
-	const ONIX	
+	const ONIX
+	; const DROWZEE
+	; const HYPNO
+	; const KRABBY
+	; const KINGLER
 	const VOLTORB
-	const ELECTRODE	
+	const ELECTRODE
 	const EXEGGCUTE
 	const EXEGGUTOR	
 	const CUBONE
-	const MAROWAK	
+	const MAROWAK
+	; const HITMONLEE
+	; const HITMONCHAN
+	; const LICKITUNG
+	; const KOFFING
+	; const WEEZING
 	const RHYHORN
-	const RHYDON	
+	const RHYDON
+	; const CHANSEY
+	; const TANGELA
 	const KANGASKHAN	
 	const HORSEA
 	const SEADRA	
@@ -114,6 +143,8 @@
 	const MR__MIME
 	const SCYTHER
 	const JYNX
+	; const ELECTABUZZ
+	; const MAGMAR
 	const PINSIR
 	const TAUROS
 	const MAGIKARP
@@ -125,6 +156,10 @@
 	const JOLTEON
 	const FLAREON
 	const PORYGON
+	; const OMANYTE
+	; const OMASTAR
+	; const KABUTO
+	; const KABUTOPS
 	const AERODACTYL
 	const SNORLAX	
 	const ARTICUNO
@@ -134,6 +169,16 @@
 	const DRAGONAIR
 	const DRAGONITE
 	const MEWTWO
+	; const MEW
+	; const CHIKORITA
+	; const BAYLEEF
+	; const MEGANIUM
+	; const CYNDAQUIL
+	; const QUILAVA
+	; const TYPHLOSION
+	; const TOTODILE
+	; const CROCONAW
+	; const FERALIGATR
 	const SENTRET
 	const FURRET
 	const HOOTHOOT
@@ -148,6 +193,10 @@
 	const PICHU	
 	const CLEFFA	
 	const IGGLYBUFF
+	; const TOGEPI
+	; const TOGETIC
+	; const NATU
+	; const XATU
 	const MAREEP
 	const FLAAFFY
 	const AMPHAROS	
@@ -158,7 +207,10 @@
 	const POLITOED
 	const HOPPIP
 	const SKIPLOOM
-	const JUMPLUFF	
+	const JUMPLUFF
+	; const AIPOM
+	; const SUNKERN
+	; const SUNFLORA
 	const YANMA	
 	const WOOPER
 	const QUAGSIRE	
@@ -167,7 +219,11 @@
 	const MURKROW
 	const SLOWKING
 	const MISDREAVUS
+	; const UNOWN
 	const WOBBUFFET
+	; const GIRAFARIG
+	; const PINECO
+	; const FORRETRESS
 	const DUNSPARCE
 	const GLIGAR
 	const STEELIX
@@ -175,8 +231,8 @@
 	const GRANBULL	
 	const QWILFISH
 	const SCIZOR
-	const HERACROSS
 	const SHUCKLE
+	const HERACROSS
 	const SNEASEL
 	const TEDDIURSA
 	const URSARING
@@ -193,13 +249,27 @@
 	const HOUNDOUR
 	const HOUNDOOM	
 	const KINGDRA	
-	const PORYGON2	
+	; const PHANPY
+	; const DONPHAN
+	const PORYGON2
+	; const STANTLER
 	const SMEARGLE
-	const SMOOCHUM	
-	const MILTANK		
+	; const TYROGUE
+	; const HITMONTOP
+	const SMOOCHUM
+	; const ELEKID
+	; const MAGBY	
+	const MILTANK
+	; const BLISSEY
+	; const RAIKOU
+	; const ENTEI
+	; const SUICUNE
 	const LARVITAR
 	const PUPITAR
 	const TYRANITAR
+	; const LUGIA
+	; const HO-OH
+	; const CELEBI
 DEF JOHTO_POKEMON EQU const_value
 	const CHESPIN
 	const QUILLADIN

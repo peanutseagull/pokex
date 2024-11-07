@@ -185,16 +185,47 @@ ENDM
 	connection east, Route5East, ROUTE_5_EAST, 0
 	
 	map_attributes CamphrierTown, CAMPHRIER_TOWN, $05, WEST | EAST
-	connection west, Route7East, ROUTE_7_EAST, 1
+	connection west, Route7East, ROUTE_7_EAST, -2
 	connection east, Route5West, ROUTE_5_WEST, -16
 	
-	map_attributes Route7East, ROUTE_7_EAST, $05, WEST | EAST
-	; connection north, Route6, ROUTE_6, 
-	connection west, Route7West, ROUTE_7_WEST, 0
-	connection east, CamphrierTown, CAMPHRIER_TOWN, -1
+	map_attributes Route6, ROUTE_6, $05, SOUTH | NORTH
+	connection north, ParfumPalaceOutside, PARFUM_PALACE_OUTSIDE, -1
+	connection south, Route7East, ROUTE_7_EAST, -22
+
+	map_attributes ParfumPalaceOutside, PARFUM_PALACE_OUTSIDE, $05, SOUTH
+	connection south, Route6, ROUTE_6, 1
+	
+	map_attributes ParfumPalace1FAtrium, PARFUM_PALACE_1F_ATRIUM, $00, WEST | EAST
+	connection west, ParfumPalace1FWest, PARFUM_PALACE_1F_WEST, 0
+	connection east, ParfumPalace1FEast, PARFUM_PALACE_1F_EAST, 0
+	
+	map_attributes ParfumPalace1FWest, PARFUM_PALACE_1F_WEST, $00, EAST
+	connection east, ParfumPalace1FAtrium, PARFUM_PALACE_1F_ATRIUM, 0
+	
+	map_attributes ParfumPalace1FEast, PARFUM_PALACE_1F_EAST, $00, WEST
+	connection west, ParfumPalace1FAtrium, PARFUM_PALACE_1F_ATRIUM, 0
+	
+	map_attributes ParfumPalace2FCorridor, PARFUM_PALACE_2F_CORRIDOR, $00, WEST | EAST
+	connection west, ParfumPalace2FWest, PARFUM_PALACE_2F_WEST, 0
+	connection east, ParfumPalace2FEast, PARFUM_PALACE_2F_EAST, 0
+	
+	map_attributes ParfumPalace2FWest, PARFUM_PALACE_2F_WEST, $00, EAST
+	connection east, ParfumPalace2FCorridor, PARFUM_PALACE_2F_CORRIDOR, 0
+
+	map_attributes ParfumPalace2FEast, PARFUM_PALACE_2F_EAST, $00, WEST
+	connection west, ParfumPalace2FCorridor, PARFUM_PALACE_2F_CORRIDOR, 0
+
+	map_attributes Route7East, ROUTE_7_EAST, $05, NORTH | SOUTH | WEST | EAST
+	connection north, Route6, ROUTE_6, 22
+	connection south, BerryFields, BERRY_FIELDS, 25
+	connection west, Route7West, ROUTE_7_WEST, 3
+	connection east, CamphrierTown, CAMPHRIER_TOWN, 2
+	
+	map_attributes BerryFields, BERRY_FIELDS, $05, NORTH
+	connection north, Route7East, ROUTE_7_EAST, -25
 	
 	map_attributes Route7West, ROUTE_7_WEST, $05, EAST
-	connection east, Route7East, ROUTE_7_EAST, 0
+	connection east, Route7East, ROUTE_7_EAST, -3
 	
 	map_attributes CyllageCity, CYLLAGE_CITY, $00, 0
 	map_attributes AmbretteTown, AMBRETTE_TOWN, $00, 0
@@ -244,7 +275,20 @@ ENDM
 	map_attributes HotelCamphrier1F, HOTEL_CAMPHRIER_1F, $00, 0
 	map_attributes HotelCamphrier2F, HOTEL_CAMPHRIER_2F, $00, 0
 	map_attributes ShabboneauCastle, SHABBONEAU_CASTLE, $00, 0
+	map_attributes ShabboneauCastle2F, SHABBONEAU_CASTLE_2F, $00, 0
+	map_attributes ShabboneauCastleBedroom, SHABBONEAU_CASTLE_BEDROOM, $00, 0
 	map_attributes CyllageHotel, CYLLAGE_HOTEL, $00, 0
+	map_attributes DayCare, DAY_CARE, $00, 0
+	map_attributes ParfumPalace1FRoom1, PARFUM_PALACE_1F_ROOM_1, $00, 0	
+	map_attributes ParfumPalace1FRoom2, PARFUM_PALACE_1F_ROOM_2, $00, 0
+	map_attributes ParfumPalace1FRoom3, PARFUM_PALACE_1F_ROOM_3, $00, 0
+	map_attributes ParfumPalace1FRoom4, PARFUM_PALACE_1F_ROOM_4, $00, 0
+	map_attributes ParfumPalace2FRoom1, PARFUM_PALACE_2F_ROOM_1, $00, 0	
+	map_attributes ParfumPalace2FRoom2, PARFUM_PALACE_2F_ROOM_2, $00, 0
+	map_attributes ParfumPalace2FRoom3, PARFUM_PALACE_2F_ROOM_3, $00, 0
+	map_attributes ParfumPalace2FRoom4, PARFUM_PALACE_2F_ROOM_4, $00, 0	
+	map_attributes ParfumPalace2FBalcony, PARFUM_PALACE_2F_BALCONY, $00, 0
+	map_attributes ParfumPalaceGardenBridge, PARFUM_PALACE_GARDEN_BRIDGE, $00, 0
 
 	; map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
 	; connection west, Route29, ROUTE_29, 0

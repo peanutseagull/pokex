@@ -3172,13 +3172,16 @@ wVanivilleTownSceneID::						      db
 wSerenasHouseSceneID::							  db
 wRoute1SceneID::								  db
 wRoute22SceneID::								  db
+wSantaluneCitySceneID::							  db
 wRoute4LumioseGateSceneID::						  db
 wSycamoreLab3FSceneID::							  db
 wSycamoreLab1FSceneID::							  db
 wCafeSoleilSceneID::							  db
 wRoute5EastSceneID::							  db
+wCamphrierTownSceneID::							  db
+wShabboneauCastleSceneID::						  db
 
-	ds 44
+	ds 43
 
 ; fight counts
 wJackFightCount::    db

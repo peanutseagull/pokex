@@ -41,6 +41,7 @@ SantaluneGymViolaScript:
 	waitbutton
 	closetext
 	setmapscene ROUTE_22, SCENE_ROUTE22_NOOP
+	setmapscene SANTALUNE_CITY, SCENE_SANTALUNECITY_EXPSHARE
 	end
 
 .SpeechAfterTM:

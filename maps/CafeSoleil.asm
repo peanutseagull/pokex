@@ -11,14 +11,9 @@ CafeSoleil_MapScripts:
 	def_callbacks
 	
 CafeSoleilNoop1Scene:
-	end
-	
-CafeSoleilNoop2Scene:
-	end
-	
-CafeSoleilLysandreScene:
 	showemote EMOTE_SHOCK, CAFESOLEIL_COOLTRAINER_F, 15
 	showemote EMOTE_SHOCK, PLAYER, 15
+	applymovement PLAYER, CafeSoleilStepForward
 	applymovement CAFESOLEIL_COOLTRAINER_F, CafeSoleilStepForward
 	opentext
 	writetext CafeSoleilText1
@@ -50,6 +45,44 @@ CafeSoleilLysandreScene:
 	setevent EVENT_CAFE_SOLEIL_LYSANDRE
 	setevent EVENT_TREVOR_LUMIOSE_SOUTH
 	end
+	
+CafeSoleilNoop2Scene:
+	end
+	
+; CafeSoleilLysandreScene:
+	; showemote EMOTE_SHOCK, CAFESOLEIL_COOLTRAINER_F, 15
+	; showemote EMOTE_SHOCK, PLAYER, 15
+	; applymovement CAFESOLEIL_COOLTRAINER_F, CafeSoleilStepForward
+	; opentext
+	; writetext CafeSoleilText1
+	; waitbutton
+	; closetext
+	; turnobject CAFESOLEIL_CLAIR, DOWN
+	; turnobject CAFESOLEIL_LANCE, DOWN
+	; opentext
+	; writetext CafeSoleilText2
+	; waitbutton
+	; closetext
+	; applymovement CAFESOLEIL_LANCE, CafeSoleilLysandreExits
+	; disappear CAFESOLEIL_LANCE
+	; opentext
+	; writetext CafeSoleilText3
+	; waitbutton
+	; closetext
+	; applymovement CAFESOLEIL_CLAIR, CafeSoleilDianthaExits
+	; disappear CAFESOLEIL_CLAIR
+	; turnobject CAFESOLEIL_COOLTRAINER_F, RIGHT
+	; turnobject PLAYER, LEFT
+	; opentext
+	; writetext CafeSoleilText4
+	; waitbutton
+	; closetext
+	; applymovement CAFESOLEIL_COOLTRAINER_F, CafeSoleilSerenaExits
+	; disappear CAFESOLEIL_COOLTRAINER_F
+	; setscene SCENE_CAFESOLEIL_NOOP
+	; setevent EVENT_CAFE_SOLEIL_LYSANDRE
+	; setevent EVENT_TREVOR_LUMIOSE_SOUTH
+	; end
 	
 CafeSoleilText1:
 	text "SERENA: Oh, it's"
@@ -303,7 +336,7 @@ CafeSoleilFisherText:
 	line "are best left"
 	cont "unsaid..."
 	done
-	
+
 CafeSoleil_MapEvents:
 	db 0, 0 ; filler
 	
@@ -312,7 +345,7 @@ CafeSoleil_MapEvents:
 	warp_event  7,  7, LUMIOSE_SOUTHWEST, 4
 	
 	def_coord_events
-	coord_event  7,  6, SCENE_CAFESOLEIL_LYSANDRE, CafeSoleilLysandreScene
+	; coord_event  7,  6, SCENE_CAFESOLEIL_LYSANDRE, CafeSoleilLysandreScene
 	
 	def_bg_events
 	

@@ -38,8 +38,10 @@ SantaluneHouse2_Blocks:
 SantaluneHouse3_Blocks:
 SantaluneHouse4_Blocks:
 CamphrierHouse1_Blocks:
-CamphrierHouse2_Blocks:
 	INCBIN "maps/House1.blk"
+	
+CamphrierHouse2_Blocks:
+	INCBIN "maps/CamphrierHouse2.blk"
 	
 EarlsPokemonAcademy_Blocks:
 	INCBIN "maps/EarlsPokemonAcademy.blk"
@@ -65,9 +67,56 @@ CamphrierTown_Blocks:
 ShabboneauCastle_Blocks:
 	INCBIN "maps/ShabboneauCastle.blk"
 	
-; Route6_Blocks:
-	; INCBIN "maps/Route6.blk"
+ShabboneauCastle2F_Blocks:
+	INCBIN "maps/ShabboneauCastle2F.blk"
 	
+ShabboneauCastleBedroom_Blocks:
+	INCBIN "maps/ShabboneauCastleBedroom.blk"
+	
+Route6_Blocks:
+	INCBIN "maps/Route6.blk"
+	
+BerryFields_Blocks:
+	INCBIN "maps/BerryFields.blk"
+	
+DayCare_Blocks:
+	INCBIN "maps/DayCare.blk"
+	
+ParfumPalaceOutside_Blocks:
+	INCBIN "maps/ParfumPalaceOutside.blk"
+ParfumPalace1FAtrium_Blocks:
+	INCBIN "maps/ParfumPalace1FAtrium.blk"
+ParfumPalace1FWest_Blocks:
+	INCBIN "maps/ParfumPalace1FWest.blk"
+ParfumPalace1FEast_Blocks:
+	INCBIN "maps/ParfumPalace1FEast.blk"
+ParfumPalace1FRoom1_Blocks:
+	INCBIN "maps/ParfumPalace1FRoom1.blk"
+ParfumPalace1FRoom2_Blocks:
+	INCBIN "maps/ParfumPalace1FRoom2.blk"
+ParfumPalace1FRoom3_Blocks:
+	INCBIN "maps/ParfumPalace1FRoom3.blk"
+ParfumPalace1FRoom4_Blocks:
+	INCBIN "maps/ParfumPalace1FRoom4.blk"
+ParfumPalace2FWest_Blocks:
+	INCBIN "maps/ParfumPalace2FWest.blk"
+ParfumPalace2FEast_Blocks:
+	INCBIN "maps/ParfumPalace2FEast.blk"
+ParfumPalace2FRoom1_Blocks:
+	INCBIN "maps/ParfumPalace2FRoom1.blk"
+ParfumPalace2FRoom2_Blocks:
+	INCBIN "maps/ParfumPalace2FRoom2.blk"
+ParfumPalace2FRoom3_Blocks:
+	INCBIN "maps/ParfumPalace2FRoom3.blk"
+ParfumPalace2FRoom4_Blocks:
+	INCBIN "maps/ParfumPalace2FRoom4.blk"
+ParfumPalace2FCorridor_Blocks:
+	INCBIN "maps/ParfumPalace2FCorridor.blk"
+ParfumPalace2FBalcony_Blocks:
+	INCBIN "maps/ParfumPalace2FBalcony.blk"
+ParfumPalaceGardenBridge_Blocks:
+	INCBIN "maps/ParfumPalaceGardenBridge.blk"
+
 Route7East_Blocks:
 	INCBIN "maps/Route7East.blk"
 	

@@ -118,13 +118,34 @@ ENDM
 	map_const CAMPHRIER_POKECENTER_1F,						5,  4 ;  4
 	map_const CAMPHRIER_MART,								6,  4 ;  5
 	map_const CAMPHRIER_HOUSE_1,							4,  4 ;  6
-	map_const CAMPHRIER_HOUSE_2,							4,  4 ;  7
+	map_const CAMPHRIER_HOUSE_2,							5,  4 ;  7
 	map_const HOTEL_CAMPHRIER_1F,  						   10,  6 ;  8
 	map_const HOTEL_CAMPHRIER_2F,						    9,  6 ;  9
-	map_const SHABBONEAU_CASTLE, 						   20, 20 ; 10
-	; map_const ROUTE_6,									   30, 24
-	map_const ROUTE_7_EAST,								   40, 10
-	map_const ROUTE_7_WEST,								   13, 25
+	map_const SHABBONEAU_CASTLE,						   13,  9 ; 10
+	map_const SHABBONEAU_CASTLE_2F,							5,  9 ; 11
+	map_const SHABBONEAU_CASTLE_BEDROOM,					5,  5 ; 12
+	map_const ROUTE_6,									   30, 24 ; 13
+	map_const BERRY_FIELDS,								   10,  7 ; 14
+	map_const DAY_CARE,                                     5,  4 ; 15
+	map_const ROUTE_7_EAST,								   40, 13 ; 16
+	map_const ROUTE_7_WEST,								   13, 25 ; 17
+	map_const PARFUM_PALACE_OUTSIDE,					   32, 10 ; 18
+	map_const PARFUM_PALACE_1F_ATRIUM,						5,  6 ; 19
+	map_const PARFUM_PALACE_1F_WEST,					   10,  7 ; 20 
+	map_const PARFUM_PALACE_1F_EAST,					   10,  7 ; 21
+	map_const PARFUM_PALACE_1F_ROOM_1,						5,  6 ; 22
+	map_const PARFUM_PALACE_1F_ROOM_2,						5,  6 ; 23
+	map_const PARFUM_PALACE_1F_ROOM_3,						5,  6 ; 24
+	map_const PARFUM_PALACE_1F_ROOM_4,						5,  6 ; 25
+	map_const PARFUM_PALACE_2F_WEST,					   10,  7 ; 26
+	map_const PARFUM_PALACE_2F_EAST,					   10,  7 ; 27
+	map_const PARFUM_PALACE_2F_ROOM_1,                      5,  6 ; 28
+	map_const PARFUM_PALACE_2F_ROOM_2,                      5,  6 ; 29
+	map_const PARFUM_PALACE_2F_ROOM_3,                      5,  6 ; 30
+	map_const PARFUM_PALACE_2F_ROOM_4,                      5,  6 ; 31
+	map_const PARFUM_PALACE_2F_CORRIDOR,					5,  2 ; 32
+	map_const PARFUM_PALACE_2F_BALCONY,						8,  6 ; 33
+	map_const PARFUM_PALACE_GARDEN_BRIDGE,					1,  1 ; 34
 	endgroup
 	
 	newgroup CYLLAGE											  ;  7
