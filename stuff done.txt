@@ -1,106 +1,112 @@
-STUFF DONE:
+GOALS FOR AMBRETTE BRANCH:
+	Complete game up until Glittering Cave:
+	Day Care
+	Berry Fields
+	Battle Maison
+	Parfum Palace
+	Connecting Cave
+	Route 8 Top
+	Ambrette Town
+	Route 9
+	
+Non-urgent:
+	Rename PC to Cassius' PC after meeting him
+	Surf pokemon Data for Route 4, 7, Aquacorde Town
+	Headbutt trees
+	Modern berry system?
+	Sprites
+	Music
+	Fix/remove footprints?
+	Pokedex Entries
+	See if i can expand to 16 bit??????
+	Remove unnecessary data
+	Redo opening intro
+	Sky battles????
+	Reorganise items sensibly
+	Fix Flypoints
+	Fishing Data
 
-
-DONE    Expand tilesets from 192 to 255 tiles
-    Allow map tiles to appear above sprites (so NPCs can walk behind tiles) with PRIORITY colors
-    Allow tiles to have different attributes in different blocks (including X and Y flip)
-    Allow more than 15 object_events per map
+Known Bugs:
+	Snorlax not showing
+	Skater/Officer hitbox? but only sometimes
+	Can accidentally lock yourself out of getting starter
+	Karen has no walking animation
     Improve the outdoor sprite system
-    Improve the event initialization system
-    Expand the Town Map tileset (Alternate)
-    Increase Pokémon sprite animation size
+
+STUFF DONE:
+	Expand tilesets from 192 to 255 tiles
+	Generation 6 Experience System (also reworks Exp. Share)
+	Infinitely reusable TMs
     Color party menu icons by species
-    Color Pokémon pictures shown in the overworld
-    Allow more trainer parties, with individual DVs, stat experience, nicknames, variable teams, etc.
-    Colored trainer card badges
-    Show the tops of leaders' heads on the trainer card
-    Add a third trainer card page for Kanto badges
-    Print text when you lose a trainer battle
+
+Tutorials to Follow:
+    Running Shoes
     Correct grammar for plural trainers like Twins
-    Make evening the fourth time of day
-    Custom order for the Old Pokédex mode
-    Short beeping noise for low HP
-    Remove the artificial save delay
-    Option to show shiny colors in Pokédex
-    Restore the GS Ball Celebi Event
-    Improve the trainer rematch system
+    Automatically reuse Repel
     Make wild encounters vary
-    Make the Lottery Corner generate a lucky number daily instead of weekly
-    Modify existing gender formula
-    Force Set battle style or forbid item usage in battle
-    Make new battle text to distinguish status move misses and fails
-    Restore and localize the Japanese move grammar table
-    Kurt finishes Apricorn Poké Balls instantly
-    Harvest multiple items from fruit trees
-    Make the field move Headbutt work with Kanto trees
-    Prevent Steel types from being poisoned by Twineedle
+    Allow more trainer parties, with individual DVs, stat experience, nicknames, variable teams, etc.
     Evolve while holding an item
-    Display more information on the move screen
-
-
-    Remove Pokémon sprite animations
-    Remove the 25% failure chance for AI status moves
-    Remove the redundant move grammar table
-    Remove the opening intro
-    Remove stat experience
-    Reduce the command queue system to just stone tables
-    Remove the gym badges boosts
-
-
     Physical/Special split
+    Restore/Remove the redundant move grammar table
+    Harvest multiple items from fruit trees
+    Modify existing gender formula
+    Remove the gym badges boosts
+    Allow fishing while surfing
+    Reviving Pokémon from Fossils (Gen I)
+    Adding a "Tradeback" NPC
+    Show move names for TMs and HMs when receiving or buying
     Replace stat experience with EVs
-    Generation 6 Experience System (also reworks Exp. Share)
     Don't gain experience at level 100
     Erratic and Fluctuating experience growth rates
     Gain experience from catching Pokémon
     Lose money proportional to badges and level
-    Survive poisoning with 1 HP
-    Don't lose HP from poisoning in the overworld
-    Show move names for TMs and HMs when receiving or buying
-    Infinitely reusable TMs
-    Automatically reuse Repel
-    Evolution moves
-    Running Shoes
-    Rock Climb
-    Dive
+    Add Hail as a new weather condition
+    Smashing rocks has a chance to contain items
     Automatic battle weather on certain maps
-    Make Sandstorm raise the Special Defense of Rock type Pokémon by 50%
+    Use unique colors for each thrown Poké Ball
+    Move Reminder
+    Print text when you lose a trainer battle
+    Prevent Steel types from being poisoned by Twineedle
+    Make new battle text to distinguish status move misses and fails
+	Make Sandstorm raise the Special Defense of Rock type Pokémon by 50%
+    Puddles that splash when you walk
+    Inverse Battles
+    Grant Grass-type Pokémon immunity to Powder/Spore-based moves
+
+Stuff to do if i feel like it:
+    Allow more than 15 object_events per map
+    Improve the event initialization system
+    Improve the trainer rematch system
+    Remove the artificial save delay
+    Improving the Swarm System
+    Create Battle Palettes for Different Times of Day and Environments
+    Remove Pokémon sprite animations
+    Remove the 25% failure chance for AI status moves
+    Reduce the command queue system to just stone tables
+    Expand the Town Map tileset (Alternate)
+    Battle Autoprompts
+    Display more information on the move screen
+    Add more music that changes at night
+
+Other tutorials:
+    Allow map tiles to appear above sprites (so NPCs can walk behind tiles) with PRIORITY colors
+    Allow tiles to have different attributes in different blocks (including X and Y flip)
+    Increase Pokémon sprite animation size
+    Color Pokémon pictures shown in the overworld
+    Colored trainer card badges
+    Show the tops of leaders' heads on the trainer card
+    Make evening the fourth time of day
+    Option to show shiny colors in Pokédex
+
     Show an icon for the current weather
     Show an icon for the current Time of Day
-    Puddles that splash when you walk
-    Use G/S SGB palettes for maps
-    Use unique colors for each thrown Poké Ball
-    Smashing rocks has a chance to contain items
-    How To Add a Pocket PC
     Add spinner tiles from Generation I Rocket Hideout
-    Grant Grass-type Pokémon immunity to Powder/Spore-based moves
-    Add Hail as a new weather condition
     Allow tall grass in forests
-    Battle Autoprompts
-    SWSH Friendship Endure
-    Replace the Freeze status with Frostbite
-    Regional forms
-    Name the rival during the intro
     Trashcan puzzle in Vermilion Gym
     Splash a Pokédex Entry from an Overworld Event (Generation I)
-    Reviving Pokémon from Fossils (Gen I)
-    Inverse Battles
-    Move Reminder (Variant 2)
-    Allow fishing while surfing
 
-
-    Adding a "Tradeback" NPC
-    Items that act like HM field moves
-    Level cap
     Customizable Pokédex Color
     Wall-to-wall carpeting in your room
     Disable jumping over ledges onto obstacle tiles or NPCs
-    Add more music that changes at night
-    Tweak ReadNoiseSample so Generation I music sounds properly
-    Create Battle Palettes for Different Times of Day and Environments
-    Improving the Swarm System
-    Allow using a field move if the Pokémon can learn it
-    Togglable Infinite Repel
-    Password system
     Replace Menu Account with a small clock in the corner of the screen
     Fight a copy of your own party in the Trainer House

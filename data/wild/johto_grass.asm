@@ -4,7 +4,7 @@
 JohtoGrassWildMons:
 
 	def_grass_wildmons ROUTE_1
-	db 5 percent, 5 percent, 5 percent
+	db 10 percent, 10 percent, 10 percent
 	; morn
 	db 2, SCATTERBUG
 	db 2, BUNNELBY
@@ -32,7 +32,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_2
-	db 5 percent, 5 percent, 5 percent
+	db 10 percent, 10 percent, 10 percent
 	; morn
 	db 4, CATERPIE
 	db 4, WEEDLE
@@ -60,7 +60,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 	
 	def_grass_wildmons SANTALUNE_FOREST
-	db 5 percent, 5 percent, 5 percent
+	db 10 percent, 10 percent, 10 percent
 	; morn
 	db 4, CATERPIE
 	db 4, WEEDLE
@@ -88,7 +88,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_3
-	db 5 percent, 5 percent, 5 percent
+	db 10 percent, 10 percent, 10 percent
 	; morn
 	db 4, PIDGEY
 	db 4, FLETCHLING
@@ -116,7 +116,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_22
-	db 5 percent, 5 percent, 5 percent
+	db 10 percent, 10 percent, 10 percent
 	; morn
 	db 6, LITLEO
 	db 6, BUNNELBY
@@ -144,7 +144,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_4
-	db 5 percent, 5 percent, 5 percent
+	db 10 percent, 10 percent, 10 percent
 	; morn
 	db 8, HOPPIP
 	db 8, FLABEBE
@@ -172,7 +172,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_5_EAST
-	db 5 percent, 5 percent, 5 percent
+	db 10 percent, 10 percent, 10 percent
 	; morn
 	db 9, BUNNELBY
 	db 9, FURFROU
@@ -200,7 +200,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_5_WEST
-	db 5 percent, 5 percent, 5 percent
+	db 10 percent, 10 percent, 10 percent
 	; morn
 	db 9, SKIDDO
 	db 9, FURFROU
@@ -225,6 +225,90 @@ JohtoGrassWildMons:
 	db 10, BUNNELBY
 	db 10, ABRA
 	db 10, ABRA
+	end_grass_wildmons
+	
+	def_grass_wildmons ROUTE_6
+	db 10 percent, 10 percent, 10 percent
+	; morn
+	db 10, ODDISH
+	db 10, SENTRET
+	db 10, ESPURR
+	db 11, HONEDGE
+	db 11, ODDISH
+	db 11, SENTRET
+	db 11, YANMA
+	; day
+	db 10, ODDISH
+	db 10, SENTRET
+	db 10, ESPURR
+	db 11, HONEDGE
+	db 11, ODDISH
+	db 11, SENTRET
+	db 11, YANMA
+	; nite
+	db 10, ODDISH
+	db 10, SENTRET
+	db 10, ESPURR
+	db 11, HONEDGE
+	db 11, ODDISH
+	db 11, SENTRET
+	db 11, YANMA
+	end_grass_wildmons
+	
+	def_grass_wildmons ROUTE_7_EAST
+	db 10 percent, 10 percent, 10 percent
+	; morn
+	db 10, WOOPER
+	db 10, FLABEBE
+	db 11, PSYDUCK
+	db 13, SMEARGLE
+	db 12, SPRITZEE
+	db 12, SWIRLIX
+	db 12, SWIRLIX	
+	; day
+	db 10, WOOPER
+	db 10, FLABEBE
+	db 11, PSYDUCK
+	db 13, SMEARGLE
+	db 12, SPRITZEE
+	db 12, SWIRLIX
+	db 12, SWIRLIX	
+	; nite
+	db 10, WOOPER
+	db 10, FLABEBE
+	db 11, PSYDUCK
+	db 13, SMEARGLE
+	db 12, SPRITZEE
+	db 12, SWIRLIX
+	db 12, SWIRLIX
+	end_grass_wildmons
+	
+	def_grass_wildmons ROUTE_7_WEST
+	db 10 percent, 10 percent, 10 percent
+	; morn
+	db 10, WOOPER
+	db 10, FLABEBE
+	db 10, PSYDUCK
+	db 11, SMEARGLE
+	db 11, SPRITZEE
+	db 11, SWIRLIX
+	db 11, SWIRLIX	
+	; day
+	db 10, WOOPER
+	db 10, FLABEBE
+	db 10, PSYDUCK
+	db 11, SMEARGLE
+	db 11, SPRITZEE
+	db 11, SWIRLIX
+	db 11, SWIRLIX	
+	; nite
+	db 10, WOOPER
+	db 10, FLABEBE
+	db 10, PSYDUCK
+	db 11, SMEARGLE
+	db 11, SPRITZEE
+	db 11, SWIRLIX
+	db 11, SWIRLIX
 	end_grass_wildmons
 	
 	db -1 ; end

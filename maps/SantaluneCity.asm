@@ -159,6 +159,7 @@ AlexaSantaluneScript:
 	writetext Text_SantaluneDontLeave
 	waitbutton
 	closetext
+	end
 	
 .ExpShare:
 	writetext Text_ExpShare

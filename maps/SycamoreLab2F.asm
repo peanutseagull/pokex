@@ -16,6 +16,7 @@ SycamoreLabScientist4Script:
 	writetext Scientist4AfterText
 	waitbutton
 	closetext
+	setevent EVENT_SYCAMORE_LAB_FRIEND_BALLS
 	end
 
 .AlreadyGotItem:

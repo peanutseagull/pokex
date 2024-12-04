@@ -87,7 +87,7 @@ DEF NUM_FISHGROUPS EQU const_value - 1
 	; const SPAWN_FUCHSIA
 	; const SPAWN_CINNABAR
 	; const SPAWN_INDIGO
-; johto
+; kalos
 ;	const SPAWN_NEW_BARK
 	const SPAWN_VANIVILLE
 	const SPAWN_AQUACORDE
@@ -144,5 +144,3 @@ DEF KANTO_FLYPOINT EQU const_value
 	const FLY_CINNABAR
 	const FLY_INDIGO
 DEF NUM_FLYPOINTS EQU const_value
-
-DEF MAX_OUTDOOR_SPRITES EQU 23 ; see engine/overworld/overworld.asm
