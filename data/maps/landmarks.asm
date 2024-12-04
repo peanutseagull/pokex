@@ -43,7 +43,7 @@ Landmarks:
 	landmark  68,  60, CoumarineCityName
 	landmark  76,  64, Route13Name
 	landmark  68,  68, PowerPlantName
-	landmark  92,  52, Route14Name	
+	landmark  92,  52, Route14Name
 	landmark  92,  36, LaverreCityName
 	landmark  92,  28, PokeballFactoryName
 	landmark 116,  36, Route15Name

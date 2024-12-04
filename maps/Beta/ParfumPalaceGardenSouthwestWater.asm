@@ -1,11 +1,11 @@
 	object_const_def
 	
-ParfumPalaceGardenBridge_MapScripts:
+ParfumPalaceGardenSouthwestWater_MapScripts:
 	def_scene_scripts
 	
 	def_callbacks
 	
-ParfumPalaceGardenBridge_MapEvents:
+ParfumPalaceGardenSouthwestWater_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events

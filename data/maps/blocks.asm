@@ -114,8 +114,20 @@ ParfumPalace2FCorridor_Blocks:
 	INCBIN "maps/ParfumPalace2FCorridor.blk"
 ParfumPalace2FBalcony_Blocks:
 	INCBIN "maps/ParfumPalace2FBalcony.blk"
-ParfumPalaceGardenBridge_Blocks:
-	INCBIN "maps/ParfumPalaceGardenBridge.blk"
+ParfumPalaceGarden1_Blocks:
+	INCBIN "maps/ParfumPalaceGarden1.blk"
+ParfumPalaceGarden2_Blocks:
+	INCBIN "maps/ParfumPalaceGarden2.blk"
+ParfumPalaceGarden3_Blocks:
+	INCBIN "maps/ParfumPalaceGarden3.blk"
+ParfumPalaceGarden4_Blocks:
+	INCBIN "maps/ParfumPalaceGarden4.blk"
+ParfumPalaceGarden5_Blocks:
+	INCBIN "maps/ParfumPalaceGarden5.blk"
+ParfumPalaceGarden6_Blocks:
+	INCBIN "maps/ParfumPalaceGarden6.blk"
+ParfumPalaceGarden7_Blocks:
+	INCBIN "maps/ParfumPalaceGarden7.blk"
 
 Route7East_Blocks:
 	INCBIN "maps/Route7East.blk"

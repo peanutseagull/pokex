@@ -214,6 +214,32 @@ ENDM
 
 	map_attributes ParfumPalace2FEast, PARFUM_PALACE_2F_EAST, $00, WEST
 	connection west, ParfumPalace2FCorridor, PARFUM_PALACE_2F_CORRIDOR, 0
+	
+	map_attributes ParfumPalaceGarden1, PARFUM_PALACE_GARDEN_1, $05, NORTH
+	connection north, ParfumPalaceGarden2, PARFUM_PALACE_GARDEN_2, 0
+	
+	map_attributes ParfumPalaceGarden2, PARFUM_PALACE_GARDEN_2, $05, NORTH | SOUTH
+	connection north, ParfumPalaceGarden3, PARFUM_PALACE_GARDEN_3, 0
+	connection south, ParfumPalaceGarden1, PARFUM_PALACE_GARDEN_1, 0
+	
+	map_attributes ParfumPalaceGarden3, PARFUM_PALACE_GARDEN_3, $05, NORTH | SOUTH
+	connection north, ParfumPalaceGarden4, PARFUM_PALACE_GARDEN_4, 0
+	connection south, ParfumPalaceGarden2, PARFUM_PALACE_GARDEN_2, 0
+	
+	map_attributes ParfumPalaceGarden4, PARFUM_PALACE_GARDEN_4, $05, NORTH | SOUTH
+	connection north, ParfumPalaceGarden5, PARFUM_PALACE_GARDEN_5, 0
+	connection south, ParfumPalaceGarden3, PARFUM_PALACE_GARDEN_3, 0
+	
+	map_attributes ParfumPalaceGarden5, PARFUM_PALACE_GARDEN_5, $05, NORTH | SOUTH
+	connection north, ParfumPalaceGarden6, PARFUM_PALACE_GARDEN_6, 0
+	connection south, ParfumPalaceGarden4, PARFUM_PALACE_GARDEN_4, 0
+	
+	map_attributes ParfumPalaceGarden6, PARFUM_PALACE_GARDEN_6, $05, NORTH | SOUTH
+	connection north, ParfumPalaceGarden7, PARFUM_PALACE_GARDEN_7, 0
+	connection south, ParfumPalaceGarden5, PARFUM_PALACE_GARDEN_5, 0
+	
+	map_attributes ParfumPalaceGarden7, PARFUM_PALACE_GARDEN_7, $05, SOUTH
+	connection south, ParfumPalaceGarden6, PARFUM_PALACE_GARDEN_6, 0
 
 	map_attributes Route7East, ROUTE_7_EAST, $05, NORTH | SOUTH | WEST | EAST
 	connection north, Route6, ROUTE_6, 22
@@ -287,8 +313,7 @@ ENDM
 	map_attributes ParfumPalace2FRoom2, PARFUM_PALACE_2F_ROOM_2, $00, 0
 	map_attributes ParfumPalace2FRoom3, PARFUM_PALACE_2F_ROOM_3, $00, 0
 	map_attributes ParfumPalace2FRoom4, PARFUM_PALACE_2F_ROOM_4, $00, 0	
-	map_attributes ParfumPalace2FBalcony, PARFUM_PALACE_2F_BALCONY, $00, 0
-	map_attributes ParfumPalaceGardenBridge, PARFUM_PALACE_GARDEN_BRIDGE, $00, 0
+	map_attributes ParfumPalace2FBalcony, PARFUM_PALACE_2F_BALCONY, $05, 0
 
 	; map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
 	; connection west, Route29, ROUTE_29, 0

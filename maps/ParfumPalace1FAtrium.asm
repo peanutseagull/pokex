@@ -11,8 +11,8 @@ ParfumPalace1FAtrium_MapEvents:
 	def_warp_events
 	warp_event  4, 11, PARFUM_PALACE_OUTSIDE, 1
 	warp_event  5, 11, PARFUM_PALACE_OUTSIDE, 1
-	; warp_event  4,  0, PARFUM_PALACE_GARDEN_BRIDGE, 1
-	; warp_event  4,  0, PARFUM_PALACE_GARDEN_BRIDGE, 2
+	warp_event  4,  0, PARFUM_PALACE_GARDEN_1, 1
+	warp_event  5,  0, PARFUM_PALACE_GARDEN_1, 2
 	
 	def_coord_events
 	

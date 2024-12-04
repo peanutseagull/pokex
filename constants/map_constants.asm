@@ -145,7 +145,26 @@ ENDM
 	map_const PARFUM_PALACE_2F_ROOM_4,                      5,  6 ; 31
 	map_const PARFUM_PALACE_2F_CORRIDOR,					5,  2 ; 32
 	map_const PARFUM_PALACE_2F_BALCONY,						8,  6 ; 33
-	map_const PARFUM_PALACE_GARDEN_BRIDGE,					1,  1 ; 34
+	; map_const PARFUM_PALACE_GARDEN_BRIDGE,				   20,  9 ; 34
+	; map_const PARFUM_PALACE_GARDEN_CENTRE,				    1,  1 ; 35
+	; map_const PARFUM_PALACE_GARDEN_CENTRE_SOUTH,		   12, 30 ; 36
+	; map_const PARFUM_PALACE_GARDEN_CENTRE_NORTH,		    1,  1 ; 37
+	; map_const PARFUM_PALACE_GARDEN_TOP,						1,  1 ; 38
+	; map_const PARFUM_PALACE_GARDEN_SOUTHWEST, 			   29, 26 ; 39
+	; map_const PARFUM_PALACE_GARDEN_SOUTHWEST_WATER,		   22,  9 ; 40
+	; map_const PARFUM_PALACE_GARDEN_SOUTHEAST, 			   35, 30 ; 41
+	; map_const PARFUM_PALACE_GARDEN_SOUTHEAST_WATER,		   22,  9 ; 42
+	; map_const PARFUM_PALACE_GARDEN_NORTHWEST, 			   30, 30 ; 43
+	; map_const PARFUM_PALACE_GARDEN_NORTHWEST_PATH,		    1,  1 ; 43
+	; map_const PARFUM_PALACE_GARDEN_NORTHEAST, 			   30, 30 ; 44
+	; map_const PARFUM_PALACE_GARDEN_NORTHEAST_PATH,		    1,  1 ; 44
+	map_const PARFUM_PALACE_GARDEN_1,					   69,  9 ; 34
+	map_const PARFUM_PALACE_GARDEN_2,					   69, 11 ; 35
+	map_const PARFUM_PALACE_GARDEN_3,					   69, 11 ; 36
+	map_const PARFUM_PALACE_GARDEN_4,					   69, 11 ; 37
+	map_const PARFUM_PALACE_GARDEN_5,					   69, 11 ; 37
+	map_const PARFUM_PALACE_GARDEN_6,					   69, 11 ; 37
+	map_const PARFUM_PALACE_GARDEN_7,					   69,  7 ; 37
 	endgroup
 	
 	newgroup CYLLAGE											  ;  7

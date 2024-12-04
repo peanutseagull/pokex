@@ -8,7 +8,7 @@
 	tilecoll WHIRLPOOL, BUOY, WATER, BUOY ; 07
 	tilecoll WALL, WALL, WALL, WALL ; 08
 	tilecoll WALL, WALL, WALL, WALL ; 09
-	tilecoll WALL, WALL, WALL, WALL ; 0a
+	tilecoll WARP_CARPET_LEFT, WALL, WARP_CARPET_LEFT, WALL ; 0a
 	tilecoll WALL, WALL, WALL, WALL ; 0b
 	tilecoll FLOOR, FLOOR, WALL, WARP_CARPET_DOWN ; 0c
 	tilecoll FLOOR, FLOOR, WARP_CARPET_DOWN, WALL ; 0d
@@ -124,5 +124,5 @@
 	tilecoll WALL, WALL, WALL, WALL ; 7b
 	tilecoll WALL, WALL, WALL, WALL ; 7c
 	tilecoll WALL, WALL, WALL, WALL ; 7d
-	tilecoll WALL, WALL, WALL, WALL ; 7e
-	tilecoll WALL, WALL, WALL, WALL ; 7f
+	tilecoll WARP_CARPET_UP, WARP_CARPET_UP, FLOOR, FLOOR ; 7e
+	tilecoll WALL, WALL, WARP_CARPET_DOWN, WARP_CARPET_DOWN ; 7f
