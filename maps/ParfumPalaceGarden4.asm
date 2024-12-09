@@ -40,6 +40,8 @@ ParfumPalaceGarden4_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events
+	warp_event 34,  0, PARFUM_PALACE_GARDEN_MAZE, 1
+	warp_event 35,  0, PARFUM_PALACE_GARDEN_MAZE, 2
 	
 	def_coord_events
 	

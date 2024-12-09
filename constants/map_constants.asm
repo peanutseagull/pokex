@@ -157,7 +157,7 @@ ENDM
 	map_const PARFUM_PALACE_GARDEN_5,					   69, 11 ; 5
 	map_const PARFUM_PALACE_GARDEN_6,					   69, 11 ; 6
 	map_const PARFUM_PALACE_GARDEN_7,					   69,  7 ; 7
-	map_const PARFUM_PALACE_GARDEN_MAZE,				   30, 30 ; 8
+	map_const PARFUM_PALACE_GARDEN_MAZE,				   15, 15 ; 8
 	endgroup
 	
 	newgroup CYLLAGE											  ; 10

@@ -109,7 +109,10 @@ CamphrierGroupSprites:
 ParfumGardenGroupSprites:
 	db SPRITE_LINK_RECEPTIONIST
 	db SPRITE_CLERK
-	; 2 of max 9 walking sprites
+	db SPRITE_MONSTER
+	db SPRITE_KAREN
+	db SPRITE_POKEFAN_M
+	; 5 of max 9 walking sprites
 	db SPRITE_ERIKA
 	db SPRITE_COOLTRAINER_M
 	db SPRITE_OFFICER

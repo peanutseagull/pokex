@@ -74,6 +74,9 @@ DEF KRIS EQU __trainer_class__
 	const SHAUNA_1_CHESPIN
 	const SHAUNA_1_FENNEKIN
 	const SHAUNA_1_FROAKIE
+	const SHAUNA_2_CHESPIN
+	const SHAUNA_2_FENNEKIN
+	const SHAUNA_2_FROAKIE
 	
 	trainerclass SERENA ; 10
 	const SERENA_1_CHESPIN

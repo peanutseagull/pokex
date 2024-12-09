@@ -148,6 +148,27 @@ ShaunaGroup:
 	db  5, FROAKIE
 	db -1 ; end
 
+	; SHAUNA (4)
+	db "SHAUNA@", TRAINERTYPE_NORMAL
+	db 20, CLAUNCHER
+	db 20, FLOETTE
+	db 22, QUILLADIN
+	db -1 ; end
+	
+	; SHAUNA (5)
+	db "SHAUNA@", TRAINERTYPE_NORMAL
+	db 20, SKIDDO
+	db 20, FLOETTE
+	db 22, BRAIXEN
+	db -1 ; end
+	
+	; SHAUNA (6)
+	db "SHAUNA@", TRAINERTYPE_NORMAL
+	db 20, LITLEO
+	db 20, FLOETTE
+	db 22, FROGADIER
+	db -1 ; end
+
 SerenaGroup:
 	; SERENA (1)
 	db "SERENA@", TRAINERTYPE_NORMAL

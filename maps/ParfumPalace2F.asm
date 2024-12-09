@@ -128,7 +128,7 @@ ParfumPalace2F_MapEvents:
 	warp_event  1,  3, PARFUM_PALACE_1F, 5
 	warp_event 49,  3, PARFUM_PALACE_1F, 6
 	warp_event 24,  0, PARFUM_PALACE_2F_BALCONY, 1
-	warp_event 25,  0, PARFUM_PALACE_2F_BALCONY, 2
+	warp_event 25,  0, PARFUM_PALACE_2F_BALCONY, 1
 	warp_event 10, 0, PARFUM_PALACE_2F_ROOM_1, 1
 	warp_event 11, 0, PARFUM_PALACE_2F_ROOM_1, 2
 	warp_event 14, 0, PARFUM_PALACE_2F_ROOM_2, 1
