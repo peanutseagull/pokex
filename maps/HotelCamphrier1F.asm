@@ -28,7 +28,7 @@ HotelCamphrier1FYoungsterScript:
 HotelCamphrier1FYoungsterFullHealText:
 	text "Since you came all"
 	line "the way to"
-	cont "CAMPHRIER TOWN..."
+	cont "CAMPHRIER TOWN…"
 	
 	para "Take this with"
 	line "you."

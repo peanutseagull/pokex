@@ -130,7 +130,7 @@ SycamoreLabLysandreText1:
 	
 	para "MAN: The children"
 	line "chosen by the"
-	cont "professor..."
+	cont "professor…"
 	
 	para "I wonder what"
 	line "potential they"
@@ -146,7 +146,7 @@ SycamoreLabLysandreText2:
 	
 	para "MAN: Oh! You"
 	line "received a"
-	cont "#dex then..."
+	cont "#dex then…"
 	
 	para "How wonderful!"
 	
@@ -182,17 +182,17 @@ SycamoreLabLysandreText2:
 	line "Give the PROF my"
 	cont "best."
 	
-	para "My desire... it is"
+	para "My desire… it is"
 	line "for a more"
 	cont "beautiful world!"
 	done
 	
 SycamoreLabSinaFinalText:
-	text "Still..."
+	text "Still…"
 	
 	para "I wonder what kind"
 	line "of beautiful world"
-	cont "he desires..."
+	cont "he desires…"
 	
 	para "There are many"
 	line "#MON in this"

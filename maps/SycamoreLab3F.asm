@@ -110,7 +110,7 @@ SycamoreRivalsScene:
 	db 1 ; default option
 
 .MenuData:
-	db STATICMENU_CURSOR ; flags
+	db STATICMENU_CURSOR | STATICMENU_DISABLE_B ; flags
 	db 3 ; items
 	db "BULBASAUR@"
 	db "CHARMANDER@"
@@ -194,7 +194,7 @@ Text_SycamoreWhichOne:
 
 SycamoreLabText1:
 	text "So, we finally"
-	line "meet..."
+	line "meet…"
 	
 	para "Fantastic! You're"
 	line "here! Come this"
@@ -242,10 +242,10 @@ SycamoreLabText2:
 	
 	para "You're far from"
 	line "everything you"
-	cont "used to know..."
+	cont "used to know…"
 	
 	para "That really hit"
-	line "me right here..."
+	line "me right here…"
 	
 	para "Then it hit me!"
 	line "I should give"
@@ -315,11 +315,11 @@ SycamoreLabText6:
 	text "TIERNO: Hi PROF"
 	line "SYCAMORE."
 	
-	para "TREVOR: Oh..."
+	para "TREVOR: Oh…"
 	line "We didn't know"
 	cont "everyone was here."
 	
-	para "Sorry..."
+	para "Sorry…"
 	
 	para "PROF: No worries!"
 	line "Wonderful!"

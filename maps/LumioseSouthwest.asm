@@ -58,7 +58,7 @@ LumioseSouthwestOverheardText2:
 	
 	para "She sure is a"
 	line "popular movie"
-	cont "star..."
+	cont "star…"
 	
 	para "WOMAN: She is a"
 	line "beautiful lady,"
@@ -107,6 +107,20 @@ CoiffureClipsSign:
 CoiffureClipsSignText:
 	text "Coiffure Clips"
 	done
+
+LumioseSouthwestBrockScript:
+	jumptextfaceplayer LumioseSouthwestBrockText
+	
+LumioseSouthwestBrockText:
+	text "This is SOUTH"
+	line "BOULEVARD."
+	
+	para "The #MON lab,"
+	line "the PR Studio,"
+	cont "and the stylist,"
+	cont "Coiffure Clips,"
+	cont "are here."
+	done
 	
 LumioseSouthwest_MapEvents:
 	db 0, 0 ; filler
@@ -121,6 +135,7 @@ LumioseSouthwest_MapEvents:
 	warp_event 17, 23, LUMIOSE_SOUTH_OFFICE_GROUND_2, 2
 	warp_event  6, 15, LUMIOSE_SOUTH_OFFICE_GROUND_3, 1
 	warp_event  7, 15, LUMIOSE_SOUTH_OFFICE_GROUND_3, 2
+	; warp_event 27, 11, COIFFURE_CLIPS, 1
 	
 	def_coord_events
 	
@@ -141,3 +156,4 @@ LumioseSouthwest_MapEvents:
 	object_event 20,  7, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthwestBlackoutGuyScript, EVENT_BLACKOUT_OVER_2
 	object_event 19,  7, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthwestBlackoutGuyScript, EVENT_BLACKOUT_OVER_2
 	object_event 29, 11, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthwestBlackoutGuyScript, EVENT_BLACKOUT_OVER_2
+	object_event 21,  9, SPRITE_BROCK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSouthwestBrockScript, -1

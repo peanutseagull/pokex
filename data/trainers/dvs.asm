@@ -43,15 +43,19 @@ TrainerClassDVs:
 	dn  8,  9,  9,  8 ; GARDENER
 	dn  9,  8,  8,  8 ; POKEFANM
 	dn  6, 13,  8,  8 ; POKEFANF
+	dn  9,  8,  8,  8 ; POKEFAN FAMILY
 	dn  5,  7,  9,  7 ; RICH_BOY
 	dn  9,  5,  7,  7 ; LADY
 	dn  4,  6,  8, 11 ; FAIRY_GIRL
 	dn  9,  8,  7,  9 ; HEX_MANIAC
+	dn  9,  8,  4,  9 ; MYSTERY_SISTERS
 	dn  9,  8,  8,  8 ; PSYCHIC_T
 	dn  9,  8,  8,  8 ; BLACKBELT_T
+	dn  9,  8,  8,  8 ; BRAINS_BRAWN
 	dn  8,  9,  8,  8 ; BATTLE_GIRL
 	dn 13,  8, 12,  8 ; COOLTRAINERM
-	dn  7, 12, 12,  8 ; COOLTRAINERF	
+	dn  7, 12, 12,  8 ; COOLTRAINERF
+	dn 10, 12, 12, 12 ; COOL_DUO
 	dn  8,  8,  8,  8 ; GARCON
 	dn  8,  8,  8,  8 ; WAITRESS
 	dn  9, 10,  8,  7 ; CHEF
@@ -64,8 +68,13 @@ TrainerClassDVs:
 	dn  7, 14, 10,  8 ; ADMINF		
 	dn  6,  9, 12,  8 ; BEAUTY
 	dn  9,  8,  8,  8 ; POKEMANIAC
-	dn  7,  7,  7,  7 ; TOURIST
-	dn  7,  7,  7,  7 ; ARTIST
+	dn  7,  7,  7,  7 ; TOURISTM
+	dn  7,  7,  7,  7 ; TOURISTF
+	dn  7,  7,  7,  7 ; TOURIST_LADY
+	dn  7,  7,  7,  7 ; HONEYMOONERS
+	dn  7,  7,  7,  7 ; ARTISTM
+	dn  7,  7,  7,  7 ; ARTISTF
+	dn  7,  7,  7,  7 ; ARTIST_FAMILY
 	dn  6,  6,  6,  6 ; BREEDERM
 	dn  6,  6,  6,  6 ; BREEDERF
 	dn  7,  7, 11,  7 ; SKYTRAINERM
@@ -75,16 +84,19 @@ TrainerClassDVs:
 	dn  7,  8,  8,  8 ; SWIMMERF
 	dn  9,  9,  9,  9 ; RANGERM
 	dn  9,  9,  9,  9 ; RANGERF
+	dn  9,  9,  9,  9 ; RANGERS
 	dn  9,  8,  8,  8 ; MONSIEUR
 	dn  8,  9,  8,  8 ; MADAME
 	dn  7,  9,  8,  8 ; PUNK_GUY
 	dn  9,  7,  8,  8 ; PUNK_GIRL
+	dn  7,  9,  8,  8 ; PUNK_COUPLE
 	dn 10,  8,  6,  6 ; WORKER
 	dn 12, 10, 10, 12 ; VETERANM
 	dn 10, 12, 12, 10 ; VETERANF
 	dn  6,  8,  8, 10 ; FURISODEGIRL
 	dn  9,  8,  8,  8 ; SCIENTISTM
 	dn  9,  8,  8,  8 ; SCIENTISTF
+	dn 10,  8,  6,  6 ; DRIVER
 	; dn 13, 13, 13, 13 ; NITA
 	; dn 13, 13, 13, 13 ; EVELYN
 	; dn 13, 13, 13, 13 ; DANA

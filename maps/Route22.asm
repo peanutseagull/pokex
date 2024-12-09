@@ -96,7 +96,7 @@ Route22SerenaText_Seen:
 	text "Oh, <PLAYER>!"
 	
 	para "Fancy seeing you"
-	line "here..."
+	line "here…"
 	
 	para "So you finally"
 	line "caught up, huh?"
@@ -140,12 +140,12 @@ Route22SerenaLossText:
 	done
 
 Route22SerenaText_YouLost:
-	text "So you beat me..."
+	text "So you beat me…"
 	
 	para "I was so sure"
 	line "I would win!"
 	
-	para "Oh well..."
+	para "Oh well…"
 	
 	para "I guess I'll just"
 	line "have to train"
@@ -327,7 +327,7 @@ SchoolboyRabbieBeatenText:
 SchoolboyRabbieAfterText:
 	text "Maybe I should"
 	line "work on evolving"
-	cont "my #MON..."
+	cont "my #MON…"
 	done
 	
 LassElsaSeenText:

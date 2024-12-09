@@ -163,6 +163,11 @@ ENDM
 	
 	map_attributes VernalAvenue, VERNAL_AVENUE, $71, 0
 	map_attributes StoneEmporium, STONE_EMPORIUM, $00, 0
+	map_attributes Herboriste, HERBORISTE, $00, 0
+	map_attributes FriseurFurfrou, FRISEUR_FURFROU, $00, 0
+	map_attributes CafeWoof, CAFE_WOOF, $00, 0
+	map_attributes CafeClasse, CAFE_CLASSE, $00, 0
+	map_attributes BoutiqueCouture, BOUTIQUE_COUTURE, $00, 0
 
 	map_attributes EstivalAvenue, ESTIVAL_AVENUE, $71, 0
 	
@@ -195,26 +200,6 @@ ENDM
 	map_attributes ParfumPalaceOutside, PARFUM_PALACE_OUTSIDE, $05, SOUTH
 	connection south, Route6, ROUTE_6, 1
 	
-	map_attributes ParfumPalace1FAtrium, PARFUM_PALACE_1F_ATRIUM, $00, WEST | EAST
-	connection west, ParfumPalace1FWest, PARFUM_PALACE_1F_WEST, 0
-	connection east, ParfumPalace1FEast, PARFUM_PALACE_1F_EAST, 0
-	
-	map_attributes ParfumPalace1FWest, PARFUM_PALACE_1F_WEST, $00, EAST
-	connection east, ParfumPalace1FAtrium, PARFUM_PALACE_1F_ATRIUM, 0
-	
-	map_attributes ParfumPalace1FEast, PARFUM_PALACE_1F_EAST, $00, WEST
-	connection west, ParfumPalace1FAtrium, PARFUM_PALACE_1F_ATRIUM, 0
-	
-	map_attributes ParfumPalace2FCorridor, PARFUM_PALACE_2F_CORRIDOR, $00, WEST | EAST
-	connection west, ParfumPalace2FWest, PARFUM_PALACE_2F_WEST, 0
-	connection east, ParfumPalace2FEast, PARFUM_PALACE_2F_EAST, 0
-	
-	map_attributes ParfumPalace2FWest, PARFUM_PALACE_2F_WEST, $00, EAST
-	connection east, ParfumPalace2FCorridor, PARFUM_PALACE_2F_CORRIDOR, 0
-
-	map_attributes ParfumPalace2FEast, PARFUM_PALACE_2F_EAST, $00, WEST
-	connection west, ParfumPalace2FCorridor, PARFUM_PALACE_2F_CORRIDOR, 0
-	
 	map_attributes ParfumPalaceGarden1, PARFUM_PALACE_GARDEN_1, $05, NORTH
 	connection north, ParfumPalaceGarden2, PARFUM_PALACE_GARDEN_2, 0
 	
@@ -240,15 +225,17 @@ ENDM
 	
 	map_attributes ParfumPalaceGarden7, PARFUM_PALACE_GARDEN_7, $05, SOUTH
 	connection south, ParfumPalaceGarden6, PARFUM_PALACE_GARDEN_6, 0
+	
+	map_attributes ParfumPalaceGardenMaze, PARFUM_PALACE_GARDEN_MAZE, $05, 0
 
 	map_attributes Route7East, ROUTE_7_EAST, $05, NORTH | SOUTH | WEST | EAST
 	connection north, Route6, ROUTE_6, 22
-	connection south, BerryFields, BERRY_FIELDS, 25
+	connection south, BerryFields, BERRY_FIELDS, 23
 	connection west, Route7West, ROUTE_7_WEST, 3
 	connection east, CamphrierTown, CAMPHRIER_TOWN, 2
 	
 	map_attributes BerryFields, BERRY_FIELDS, $05, NORTH
-	connection north, Route7East, ROUTE_7_EAST, -25
+	connection north, Route7East, ROUTE_7_EAST, -23
 	
 	map_attributes Route7West, ROUTE_7_WEST, $05, EAST
 	connection east, Route7East, ROUTE_7_EAST, -3
@@ -305,6 +292,9 @@ ENDM
 	map_attributes ShabboneauCastleBedroom, SHABBONEAU_CASTLE_BEDROOM, $00, 0
 	map_attributes CyllageHotel, CYLLAGE_HOTEL, $00, 0
 	map_attributes DayCare, DAY_CARE, $00, 0
+	map_attributes BerryFieldsHouse, BERRY_FIELDS_HOUSE, $00, 0
+	map_attributes ParfumPalace1F, PARFUM_PALACE_1F, $00, 0
+	map_attributes ParfumPalace2F, PARFUM_PALACE_2F, $00, 0
 	map_attributes ParfumPalace1FRoom1, PARFUM_PALACE_1F_ROOM_1, $00, 0	
 	map_attributes ParfumPalace1FRoom2, PARFUM_PALACE_1F_ROOM_2, $00, 0
 	map_attributes ParfumPalace1FRoom3, PARFUM_PALACE_1F_ROOM_3, $00, 0

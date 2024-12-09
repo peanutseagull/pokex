@@ -27,7 +27,7 @@ LumioseSouthOffice3LassText:
 	cont "day,"
 	
 	para "we sometimes feel"
-	line "so empty..."
+	line "so empty…"
 	
 	para "that we can't even"
 	line "stand the colour"

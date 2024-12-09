@@ -72,7 +72,7 @@ CamphrierMartPokefanmScript:
 CamphrierMartPokefanmText:
 	text "Every new day is"
 	line "just like the day"
-	cont "before..."
+	cont "before…"
 	
 	para "Don't you get"
 	line "nervous being so"

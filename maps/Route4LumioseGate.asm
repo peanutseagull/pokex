@@ -139,7 +139,7 @@ Route4LumioseGateFisherScript:
 Route4LumioseGateFisherText:
 	text "LUMIOSE CITY is"
 	line "the biggest city"
-	cont "in all of KALOS..."
+	cont "in all of KALOS…"
 	
 	para "There's still"
 	line "plenty I haven't"

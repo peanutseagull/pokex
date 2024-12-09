@@ -10,6 +10,7 @@ OutdoorSprites:
 	dw SantaluneGroupSprites
 	dw LumioseGroupSprites
 	dw CamphrierGroupSprites
+	dw ParfumGardenGroupSprites
 	dw CyllageGroupSprites
 	dw AmbretteGroupSprites
 	dw GeosengeGroupSprites
@@ -26,22 +27,8 @@ OutdoorSprites:
 	assert_table_length NUM_MAP_GROUPS
 
 VanivilleGroupSprites:
-; Vaniville, Route 1 - must be same as Aquacorde
-	db SPRITE_TEACHER
-	db SPRITE_FISHER
-	db SPRITE_COOLTRAINER_F
-	db SPRITE_KAREN
-	db SPRITE_SUPER_NERD
-	db SPRITE_YOUNGSTER
-	db SPRITE_BUG_CATCHER
-	; 7 of max 9 walking sprites
-	db SPRITE_GRAMPS
-	db SPRITE_POKE_BALL
-	db SPRITE_FRUIT_TREE
-	db 0
-
 AquacordeGroupSprites:
-; Aquacorde, Route 2 - must be same as Vaniville
+; Vaniville, Route 1, Aquacorde, Route 2
 	db SPRITE_TEACHER
 	db SPRITE_FISHER
 	db SPRITE_COOLTRAINER_F
@@ -75,9 +62,9 @@ SantaluneGroupSprites:
 	db SPRITE_ROCKER
 	db SPRITE_BUG_CATCHER
 	db SPRITE_CLAIR
-	; 8 of max 9 walking sprites
-	db SPRITE_POKEFAN_F
 	db SPRITE_POKEFAN_M
+	; 9 of max 9 walking sprites
+	db SPRITE_POKEFAN_F
 	db SPRITE_FRUIT_TREE
 	db SPRITE_POKE_BALL
 	db 0
@@ -93,6 +80,7 @@ LumioseGroupSprites:
 	db SPRITE_GENTLEMAN
 	db SPRITE_SUPER_NERD
 	db SPRITE_COOLTRAINER_M
+	db SPRITE_BROCK
 	db SPRITE_POKE_BALL
 	db 0
 	
@@ -104,11 +92,30 @@ CamphrierGroupSprites:
 	db SPRITE_ROCKER
 	db SPRITE_BEAUTY
 	db SPRITE_POKEFAN_M
-	; 6 of max 9 walking sprites
+	db SPRITE_TEACHER
+	db SPRITE_KAREN
+	db SPRITE_GENTLEMAN
+	; 9 of max 9 walking sprites
+	db SPRITE_COOLTRAINER_M
+	db SPRITE_BLACK_BELT
+	db SPRITE_POKEFAN_F
 	db SPRITE_TWIN
+	db SPRITE_BIKER
 	db SPRITE_BIG_SNORLAX
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db 0
+	
+ParfumGardenGroupSprites:
+	db SPRITE_LINK_RECEPTIONIST
+	db SPRITE_CLERK
+	; 2 of max 9 walking sprites
+	db SPRITE_ERIKA
+	db SPRITE_COOLTRAINER_M
+	db SPRITE_OFFICER
+	db SPRITE_BEAUTY
+	db SPRITE_YOUNGSTER
+	db SPRITE_POKE_BALL
 	db 0
 	
 CyllageGroupSprites:

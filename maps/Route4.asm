@@ -194,8 +194,8 @@ CamperAdrianSeenText:
 	done
 	
 CamperAdrianBeatenText:
-	text "Splish, splash..."
-	line "Splish, splash..."
+	text "Splish, splash…"
+	line "Splish, splash…"
 	done
 	
 CamperAdrianAfterText:

@@ -235,7 +235,20 @@ YoungsterGroup:
 	
 	; YOUNGSTER (6)
 	db "ANTHONY@", TRAINERTYPE_NORMAL
-	db 16, FURFROU
+	db 17, MAGIKARP
+	db 17, PANCHAM
+	db -1 ; end
+	
+	; YOUNGSTER (7)
+	db "TYLER@", TRAINERTYPE_NORMAL
+	db 15, SPINARAK
+	db 15, TEDDIURSA
+	db -1 ; end
+	
+	; YOUNGSTER (8)
+	db "JACOB@", TRAINERTYPE_NORMAL
+	db 14, ZUBAT
+	db 16, BEEDRILL
 	db -1 ; end
 	
 LassGroup:
@@ -378,6 +391,16 @@ BackpackerGroup:
 	db 12, SENTRET
 	db -1 ; end
 	
+	; BACKPACKER (2)
+	db "RODRICK@", TRAINERTYPE_NORMAL
+	db 16, BUNNELBY
+	db -1 ; end
+	
+	; BACKPACKER (3)
+	db "JEROME@", TRAINERTYPE_NORMAL
+	db 17, FLETCHLING
+	db -1 ; end
+	
 GardenerGroup:
 	; GARDENER (1)
 	db "WHEATON@", TRAINERTYPE_NORMAL
@@ -402,10 +425,23 @@ PokefanMGroup:
 	db -1 ; end
 
 PokefanFGroup:
-	; POKEFANF (2)
+	; POKEFANF (1)
 	db "AGNES@", TRAINERTYPE_NORMAL
 	db 7, SKIDDO
 	db 8, FURFROU
+	db -1 ; end
+	
+PokefanFamilyGroup:
+	; POKEFAN_FAMILY (1)
+	db " @", TRAINERTYPE_NORMAL
+	db 16, FURFROU
+	db 16, FURFROU
+	db -1 ; end
+	
+	; POKEFAN_FAMILY (2)
+	db " @", TRAINERTYPE_NORMAL
+	db 16, FURFROU
+	db 16, FURFROU
 	db -1 ; end
 	
 RichBoyGroup:
@@ -416,15 +452,21 @@ FairyGirlGroup:
 
 HexManiacGroup:
 
+MysterySistersGroup:
+
 PsychicGroup:
 
 BlackbeltGroup:
+
+BrainsBrawnGroup:
 
 BattleGirLGroup:
 
 CooltrainerMGroup:
 
 CooltrainerFGroup:
+
+CoolDuoGroup:
 
 GarconGroup:
 
@@ -447,12 +489,48 @@ AdminMGroup:
 AdminFGroup:
 
 BeautyGroup:
+	; BEAUTY (1)
+	db "BRIGITTE@", TRAINERTYPE_NORMAL
+	db 14, ESPURR
+	db 16, BUTTERFREE
+	db -1 ; end
 
 PokemaniacGroup:
 
-TouristGroup:
+TouristMGroup:
+	; TOURISTM (1)
+	db "TAKEMI@", TRAINERTYPE_NORMAL
+	db 18, HERACROSS
+	db -1 ; end
+	
+TouristFGroup:
+	; TOURISTF (1)
+	db "MARI@", TRAINERTYPE_NORMAL
+	db 18, LEDIAN
+	db -1 ; end
 
-ArtistGroup:
+TouristLadyGroup:
+	; TOURIST_LADY (1)
+	db "HIROKO@", TRAINERTYPE_NORMAL
+	db 14, PIKACHU
+	db 12, PIDGEY
+	db 13, PSYDUCK
+	db -1 ; end
+	
+	; TOURIST_LADY (2)
+	db "ERIKO@", TRAINERTYPE_NORMAL
+	db 13, SENTRET
+	db 13, ABRA
+	db 13, EKANS
+	db -1 ; end
+	
+HoneymoonersGroup:
+	
+ArtistMGroup:
+
+ArtistFGroup:
+
+ArtistFamilyGroup:
 
 BreederMGroup:
 
@@ -472,6 +550,8 @@ RangerMGroup:
 
 RangerFGroup:
 
+RangersGroup:
+
 MonsieurGroup:
 
 MadameGroup:
@@ -479,6 +559,8 @@ MadameGroup:
 PunkGuyGroup:
 
 PunkGirlGroup:
+
+PunkCoupleGroup:
 
 WorkerGroup:
 
@@ -491,6 +573,8 @@ FurisodeGirlGroup:
 ScientistMGroup:
 
 ScientistFGroup:
+
+DriverGroup:
 
 Rival1Group:
 

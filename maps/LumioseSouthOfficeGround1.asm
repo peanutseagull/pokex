@@ -22,7 +22,7 @@ LumioseSouthOffice1GentlemanText:
 
 	para "I'm on my break,"
 	line "so I'm just"
-	cont "relaxing..."
+	cont "relaxing…"
 	done
 	
 LumioseSouthOfficeGround1_MapEvents:

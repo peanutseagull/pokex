@@ -60,7 +60,7 @@ SycamoreLabScientist2Script:
 SycamoreLabScientist2Text:
 	text "There are male"
 	line "#MON, female"
-	cont "#MON..."
+	cont "#MON…"
 	
 	para "Even #MON with"
 	line "unknown genders."

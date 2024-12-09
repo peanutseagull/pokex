@@ -65,7 +65,7 @@ LumioseSoutheastPokefanfText:
 	cont "design everywhere,"
 	
 	para "but LUMIOSE's look"
-	line "so fashionable..."
+	line "so fashionable…"
 	done
 	
 LumioseSoutheastOverheardScript2:

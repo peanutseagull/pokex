@@ -1,24 +1,36 @@
 GOALS FOR AMBRETTE BRANCH:
 	Complete game up until Glittering Cave:
+	
+	Lumiose Shops: Coiffure Clips, Restaurant Le Nah, Trainer PR Studio
+	
 	Day Care
-	Berry Fields
 	Battle Maison
-	Parfum Palace
+	Parfum Palace Furfrou Puzzle
+	
 	Connecting Cave
 	Route 8 Top
 	Ambrette Town
 	Route 9
+	Glittering Cave
+	
+Stuff to come back to:
+	spawn points
+	Route 22 - area behind surf
+	Mom banking call
+	Shutterbug Cafe Long/Short Dialogue
+	Coiffure Clips?
 	
 Non-urgent:
+	Redo intro
 	Rename PC to Cassius' PC after meeting him
 	Surf pokemon Data for Route 4, 7, Aquacorde Town
+	Fishing Pokemon Data
 	Headbutt trees
 	Modern berry system?
 	Sprites
 	Music
 	Fix/remove footprints?
 	Pokedex Entries
-	See if i can expand to 16 bit??????
 	Remove unnecessary data
 	Redo opening intro
 	Sky battles????
@@ -27,17 +39,31 @@ Non-urgent:
 	Fishing Data
 
 Known Bugs:
-	Snorlax not showing
-	Skater/Officer hitbox? but only sometimes
-	Can accidentally lock yourself out of getting starter
-	Karen has no walking animation
-    Improve the outdoor sprite system
+	Broken hitbox????? but only sometimes, observed on Route 4 and 5, Beauty, Rocker and Officer Sprites
+	talking to black belt makes Snorlax disappear briefly
+	no walking animation for karen and twin
+	ivysaur shows front sprite when battling???
+	Broken pokemon sprites occasionally (displaying tiles 01 and 02 in random spots)
+	
+Inconsequential Stuff:
+	Add accents: À bientôt!, Rivière Walk
+	Tipping mechanic
+	
+Long-term goals (pipe dreams):
+	Aegislash stance change?
+	Unique tilesets
+	Double battles
+	horde encounters??? (almost definitely won't happen)
+	Mega Evolution
+	Expand to 16 bit?
 
 STUFF DONE:
 	Expand tilesets from 192 to 255 tiles
 	Generation 6 Experience System (also reworks Exp. Share)
 	Infinitely reusable TMs
     Color party menu icons by species
+    Improve the outdoor sprite system
+    Allow more than 15 object_events per map
 
 Tutorials to Follow:
     Running Shoes
@@ -74,7 +100,6 @@ Tutorials to Follow:
     Grant Grass-type Pokémon immunity to Powder/Spore-based moves
 
 Stuff to do if i feel like it:
-    Allow more than 15 object_events per map
     Improve the event initialization system
     Improve the trainer rematch system
     Remove the artificial save delay
@@ -88,7 +113,7 @@ Stuff to do if i feel like it:
     Display more information on the move screen
     Add more music that changes at night
 
-Other tutorials:
+Other tutorials (may or may not do):
     Allow map tiles to appear above sprites (so NPCs can walk behind tiles) with PRIORITY colors
     Allow tiles to have different attributes in different blocks (including X and Y flip)
     Increase Pokémon sprite animation size

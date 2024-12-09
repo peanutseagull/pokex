@@ -44,15 +44,19 @@ TrainerGroups:
 	dw GardenerGroup
 	dw PokefanMGroup
 	dw PokefanFGroup
+	dw PokefanFamilyGroup
 	dw RichBoyGroup
 	dw LadyGroup 
 	dw FairyGirlGroup 
-	dw HexManiacGroup 
+	dw HexManiacGroup
+	dw MysterySistersGroup
 	dw PsychicGroup 
-	dw BlackbeltGroup 
+	dw BlackbeltGroup
+	dw BrainsBrawnGroup
 	dw BattleGirLGroup 
 	dw CooltrainerMGroup 
-	dw CooltrainerFGroup 
+	dw CooltrainerFGroup
+	dw CoolDuoGroup
 	dw GarconGroup 
 	dw WaitressGroup 
 	dw ChefGroup 
@@ -65,8 +69,13 @@ TrainerGroups:
 	dw AdminFGroup 
 	dw BeautyGroup 
 	dw PokemaniacGroup 
-	dw TouristGroup 
-	dw ArtistGroup 
+	dw TouristMGroup 
+	dw TouristFGroup 
+	dw TouristLadyGroup
+	dw HoneymoonersGroup
+	dw ArtistMGroup 
+	dw ArtistFGroup 
+	dw ArtistFamilyGroup 
 	dw BreederMGroup 
 	dw BreederFGroup 
 	dw SkytrainerMGroup 
@@ -75,17 +84,20 @@ TrainerGroups:
 	dw SwimmerMGroup 
 	dw SwimmerFGroup 
 	dw RangerMGroup 
-	dw RangerFGroup 
+	dw RangerFGroup
+	dw RangersGroup
 	dw MonsieurGroup 
 	dw MadameGroup 
 	dw PunkGuyGroup 
-	dw PunkGirlGroup 
+	dw PunkGirlGroup
+	dw PunkCoupleGroup
 	dw WorkerGroup 
 	dw VeteranMGroup 
 	dw VeteranFGroup 
 	dw FurisodeGirlGroup 
 	dw ScientistMGroup 
-	dw ScientistFGroup 
+	dw ScientistFGroup
+	dw DriverGroup
 	dw Rival1Group
 	dw Rival2Group
 	dw CalGroup

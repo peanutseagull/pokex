@@ -139,7 +139,7 @@ Route5TiernoSceneUp:
 	end
 	
 Route5TiernoText1:
-	text "TIERNO: Wow..."
+	text "TIERNO: Wow…"
 	line "a #MON horde,"
 	cont "you say?"
 	done
@@ -165,18 +165,18 @@ Route5TiernoText3:
 	cont "<PLAYER> too!"
 	
 	para "TREVOR: W..what?"
-	line "I'm not sure..."
+	line "I'm not sure…"
 	
 	para "TIERNO: Come on,"
 	line "it's a blast!"
 	
-	para "TREVOR: Okay..."
+	para "TREVOR: Okay…"
 	done
 	
 Route5TiernoText4:
 	text "You're right,"
 	line "that was kinda"
-	cont "fun..."
+	cont "fun…"
 	
 	para "TIERNO: What did"
 	line "I say? I knew"
@@ -200,10 +200,10 @@ Route5TiernoText4:
 	cont "us before!"
 	
 	para "I don't know"
-	line "how it happened..."
+	line "how it happened…"
 	
 	para "TREVOR: Yeah it"
-	line "was strange..."
+	line "was strange…"
 	
 	para "TIERNO: Luckily I"
 	line "was able to dance"
@@ -213,7 +213,7 @@ Route5TiernoText4:
 	
 	para "Maybe we should"
 	line "let <PLAYER> get"
-	cont "going..."
+	cont "going…"
 	
 	para "TIERNO: You're"
 	line "right, Trevs!"
@@ -227,7 +227,7 @@ Route5TiernoText4:
 Route5TiernoText5:
 	text "Hey, wait up!"
 	
-	para "Bye..."
+	para "Bye…"
 	done
 	
 Route5TiernoWinText:
@@ -241,7 +241,7 @@ Route5TiernoLossText:
 	done
 	
 Route5TrevorWinText:
-	text "Saw that coming..."
+	text "Saw that coming…"
 	done
 	
 Route5TrevorLossText:
@@ -286,7 +286,7 @@ TrainerTwinsMayandjoy1:
 .Script:
 	endifjustbattled
 	opentext
-	writetext TwinsMayandjoyBattleText
+	writetext TwinsMayandjoyAfterText
 	waitbutton
 	closetext
 	end
@@ -297,7 +297,7 @@ TrainerTwinsMayandjoy2:
 .Script:
 	endifjustbattled
 	opentext
-	writetext TwinsMayandjoyBattleText
+	writetext TwinsMayandjoyAfterText
 	waitbutton
 	closetext
 	end
@@ -308,7 +308,7 @@ TrainerRisingStarHamish:
 .Script:
 	endifjustbattled
 	opentext
-	writetext RisingStarHamishBattleText
+	writetext RisingStarHamishAfterText
 	waitbutton
 	closetext
 	end
@@ -319,16 +319,16 @@ RisingStarHamishSeenText:
 	
 	para "I don't know if"
 	line "I'm up for a"
-	cont "battle..."
+	cont "battle…"
 	done
 	
 RisingStarHamishBeatenText:
-	text "I knew it..."
+	text "I knew it…"
 	line "I really gotta"
 	cont "get some sleep!"
 	done
 	
-RisingStarHamishBattleText:
+RisingStarHamishAfterText:
 	text "Sleep is super"
 	line "important!"
 	done
@@ -344,11 +344,11 @@ TwinsMayandjoySeenText:
 	done
 	
 TwinsMayandjoyBeatenText:
-	text "MAY: Ahh..."
-	line "JOY: Umm..."
+	text "MAY: Ahh…"
+	line "JOY: Umm…"
 	done
 	
-TwinsMayandjoyBattleText:
+TwinsMayandjoyAfterText:
 	text "What's a"
 	line "'dubbel-battel'?"
 	

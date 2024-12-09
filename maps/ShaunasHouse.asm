@@ -15,7 +15,7 @@ ShaunasMomText:
 	
 	para "She's so excited"
 	line "to be a #MON"
-	cont "trainer..."
+	cont "trainer…"
 	done
 	
 ShaunasHouse_MapEvents:

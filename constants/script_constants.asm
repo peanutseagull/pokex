@@ -208,20 +208,20 @@ DEF EMOTE_LENGTH EQU 6
 ; fruittree arguments
 ; FruitTreeItems indexes (see data/items/fruit_trees.asm)
 	const_def 1
-	const FRUITTREE_ROUTE_29      ; 01
-	const FRUITTREE_ROUTE_30_1    ; 02
-	const FRUITTREE_ROUTE_38      ; 03
-	const FRUITTREE_ROUTE_46_1    ; 04
-	const FRUITTREE_ROUTE_30_2    ; 05
-	const FRUITTREE_ROUTE_33      ; 06
-	const FRUITTREE_ROUTE_31      ; 07
-	const FRUITTREE_ROUTE_43      ; 08
-	const FRUITTREE_VIOLET_CITY   ; 09
-	const FRUITTREE_ROUTE_46_2    ; 0a
-	const FRUITTREE_ROUTE_35      ; 0b
-	const FRUITTREE_ROUTE_45      ; 0c
-	const FRUITTREE_ROUTE_36      ; 0d
-	const FRUITTREE_ROUTE_26      ; 0e
+	const FRUITTREE_ROUTE_5         ; 01
+	const FRUITTREE_BERRY_FIELDS_1	; 02
+	const FRUITTREE_BERRY_FIELDS_2	; 03
+	const FRUITTREE_BERRY_FIELDS_3	; 04
+	const FRUITTREE_BERRY_FIELDS_4	; 05
+	const FRUITTREE_BERRY_FIELDS_5	; 06
+	const FRUITTREE_BERRY_FIELDS_6	; 07
+	const FRUITTREE_BERRY_FIELDS_7	; 08
+	const FRUITTREE_BERRY_FIELDS_8	; 09
+	const FRUITTREE_BERRY_FIELDS_9	; 0a
+	const FRUITTREE_BERRY_FIELDS_10	; 0b
+	const FRUITTREE_BERRY_FIELDS_11	; 0c
+	const FRUITTREE_BERRY_FIELDS_12	; 0d
+	const FRUITTREE_ROUTE_6	    	; 0e
 	const FRUITTREE_ROUTE_39      ; 0f
 	const FRUITTREE_ROUTE_44      ; 10
 	const FRUITTREE_ROUTE_37_1    ; 11
@@ -238,7 +238,6 @@ DEF EMOTE_LENGTH EQU 6
 	const FRUITTREE_PEWTER_CITY_1 ; 1c
 	const FRUITTREE_PEWTER_CITY_2 ; 1d
 	const FRUITTREE_FUCHSIA_CITY  ; 1e
-	const FRUITTREE_ROUTE_5	
 DEF NUM_FRUIT_TREES EQU const_value - 1
 
 ; describedecoration arguments

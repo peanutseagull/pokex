@@ -77,7 +77,6 @@ ENDM
 	
 	newgroup LUMIOSE											  ;  5
 	map_const ROUTE_4_LUMIOSE_GATE,						    5,  4 ;  1
-	; map_const LUMIOSE_SOUTH,							   33, 17 ;  2
 	map_const LUMIOSE_SOUTHWEST,						   16, 17 ;  2
 	map_const LUMIOSE_SOUTHEAST,						   17, 17 ;  3
 	map_const LUMIOSE_SOUTH_POKECENTER_1F,					5,  4 ;  4
@@ -95,10 +94,17 @@ ENDM
 	map_const SYCAMORE_LAB_2F,								6,  4 ; 16
 	map_const SYCAMORE_LAB_3F,								6,  4 ; 17
 	map_const ROUTE_5_LUMIOSE_GATE,							5,  4 ; 18
-	; map_const LUMIOSE_NORTH,							   33, 17 ;  3
 	map_const LUMIOSE_NORTHWEST,						   16, 17
 	map_const LUMIOSE_NORTHEAST,						   17, 17
-	map_const VERNAL_AVENUE,							    8, 21 ;  4
+	; VERNAL AVENUE
+	map_const VERNAL_AVENUE,							    8, 21 ;  
+	map_const STONE_EMPORIUM,								6,  4 ; 
+	map_const HERBORISTE,									6,  4
+	map_const FRISEUR_FURFROU,  							6,  4
+	map_const CAFE_WOOF,									6,  4
+	map_const CAFE_CLASSE,									6,  4
+	map_const BOUTIQUE_COUTURE,								6,  4
+	; ESTIVAL AVENUE
 	map_const ESTIVAL_AVENUE,							    8, 21 ;  5
 	map_const AUTUMNAL_AVENUE,								8, 21 ;  6
 	map_const HIBERNAL_AVENUE,								8, 21 ;  7
@@ -108,7 +114,6 @@ ENDM
 	map_const BLEU_PLAZA,								   10, 11 ; 11
 	map_const VERT_PLAZA,								   10, 11 ; 12
 	map_const CENTRICO_PLAZA,							   20, 20 ; 13
-	map_const STONE_EMPORIUM,								6,  4 ; 14
 	endgroup
 	
 	newgroup CAMPHRIER											  ;  6
@@ -125,98 +130,86 @@ ENDM
 	map_const SHABBONEAU_CASTLE_2F,							5,  9 ; 11
 	map_const SHABBONEAU_CASTLE_BEDROOM,					5,  5 ; 12
 	map_const ROUTE_6,									   30, 24 ; 13
-	map_const BERRY_FIELDS,								   10,  7 ; 14
+	map_const BERRY_FIELDS,								   12,  8 ; 14
+	map_const BERRY_FIELDS_HOUSE,							4,  4
 	map_const DAY_CARE,                                     5,  4 ; 15
 	map_const ROUTE_7_EAST,								   40, 13 ; 16
 	map_const ROUTE_7_WEST,								   13, 25 ; 17
 	map_const PARFUM_PALACE_OUTSIDE,					   32, 10 ; 18
-	map_const PARFUM_PALACE_1F_ATRIUM,						5,  6 ; 19
-	map_const PARFUM_PALACE_1F_WEST,					   10,  7 ; 20 
-	map_const PARFUM_PALACE_1F_EAST,					   10,  7 ; 21
-	map_const PARFUM_PALACE_1F_ROOM_1,						5,  6 ; 22
-	map_const PARFUM_PALACE_1F_ROOM_2,						5,  6 ; 23
-	map_const PARFUM_PALACE_1F_ROOM_3,						5,  6 ; 24
-	map_const PARFUM_PALACE_1F_ROOM_4,						5,  6 ; 25
-	map_const PARFUM_PALACE_2F_WEST,					   10,  7 ; 26
-	map_const PARFUM_PALACE_2F_EAST,					   10,  7 ; 27
-	map_const PARFUM_PALACE_2F_ROOM_1,                      5,  6 ; 28
-	map_const PARFUM_PALACE_2F_ROOM_2,                      5,  6 ; 29
-	map_const PARFUM_PALACE_2F_ROOM_3,                      5,  6 ; 30
-	map_const PARFUM_PALACE_2F_ROOM_4,                      5,  6 ; 31
-	map_const PARFUM_PALACE_2F_CORRIDOR,					5,  2 ; 32
-	map_const PARFUM_PALACE_2F_BALCONY,						8,  6 ; 33
-	; map_const PARFUM_PALACE_GARDEN_BRIDGE,				   20,  9 ; 34
-	; map_const PARFUM_PALACE_GARDEN_CENTRE,				    1,  1 ; 35
-	; map_const PARFUM_PALACE_GARDEN_CENTRE_SOUTH,		   12, 30 ; 36
-	; map_const PARFUM_PALACE_GARDEN_CENTRE_NORTH,		    1,  1 ; 37
-	; map_const PARFUM_PALACE_GARDEN_TOP,						1,  1 ; 38
-	; map_const PARFUM_PALACE_GARDEN_SOUTHWEST, 			   29, 26 ; 39
-	; map_const PARFUM_PALACE_GARDEN_SOUTHWEST_WATER,		   22,  9 ; 40
-	; map_const PARFUM_PALACE_GARDEN_SOUTHEAST, 			   35, 30 ; 41
-	; map_const PARFUM_PALACE_GARDEN_SOUTHEAST_WATER,		   22,  9 ; 42
-	; map_const PARFUM_PALACE_GARDEN_NORTHWEST, 			   30, 30 ; 43
-	; map_const PARFUM_PALACE_GARDEN_NORTHWEST_PATH,		    1,  1 ; 43
-	; map_const PARFUM_PALACE_GARDEN_NORTHEAST, 			   30, 30 ; 44
-	; map_const PARFUM_PALACE_GARDEN_NORTHEAST_PATH,		    1,  1 ; 44
-	map_const PARFUM_PALACE_GARDEN_1,					   69,  9 ; 34
-	map_const PARFUM_PALACE_GARDEN_2,					   69, 11 ; 35
-	map_const PARFUM_PALACE_GARDEN_3,					   69, 11 ; 36
-	map_const PARFUM_PALACE_GARDEN_4,					   69, 11 ; 37
-	map_const PARFUM_PALACE_GARDEN_5,					   69, 11 ; 37
-	map_const PARFUM_PALACE_GARDEN_6,					   69, 11 ; 37
-	map_const PARFUM_PALACE_GARDEN_7,					   69,  7 ; 37
+	map_const PARFUM_PALACE_1F,							   25,  7 ; 19
+	map_const PARFUM_PALACE_2F,							   25,  7 ; 20
+	map_const PARFUM_PALACE_1F_ROOM_1,						5,  6 ; 21
+	map_const PARFUM_PALACE_1F_ROOM_2,						5,  6 ; 22
+	map_const PARFUM_PALACE_1F_ROOM_3,						5,  6 ; 23
+	map_const PARFUM_PALACE_1F_ROOM_4,						5,  6 ; 24
+	map_const PARFUM_PALACE_2F_ROOM_1,                      5,  6 ; 25
+	map_const PARFUM_PALACE_2F_ROOM_2,                      5,  6 ; 26
+	map_const PARFUM_PALACE_2F_ROOM_3,                      5,  6 ; 27
+	map_const PARFUM_PALACE_2F_ROOM_4,                      5,  6 ; 28
+	map_const PARFUM_PALACE_2F_BALCONY,						8,  6 ; 29
 	endgroup
 	
-	newgroup CYLLAGE											  ;  7
+	newgroup PARFUMGARDEN										  ; 9
+	map_const PARFUM_PALACE_GARDEN_1,					   69,  9 ; 1
+	map_const PARFUM_PALACE_GARDEN_2,					   69, 11 ; 2
+	map_const PARFUM_PALACE_GARDEN_3,					   69, 11 ; 3
+	map_const PARFUM_PALACE_GARDEN_4,					   69, 11 ; 4
+	map_const PARFUM_PALACE_GARDEN_5,					   69, 11 ; 5
+	map_const PARFUM_PALACE_GARDEN_6,					   69, 11 ; 6
+	map_const PARFUM_PALACE_GARDEN_7,					   69,  7 ; 7
+	map_const PARFUM_PALACE_GARDEN_MAZE,				   30, 30 ; 8
+	endgroup
+	
+	newgroup CYLLAGE											  ; 10
 	map_const CYLLAGE_CITY,								    1,  1 ;  1
 	map_const CYLLAGE_HOTEL,							   14,  6 ;  9
 	endgroup
 	
-	newgroup AMBRETTE											  ;  8
+	newgroup AMBRETTE											  ; 11
 	map_const AMBRETTE_TOWN,							    1,  1 ;  1
 	endgroup
 	
-	newgroup GEOSENGE											  ;  9
+	newgroup GEOSENGE											  ; 12
 	map_const GEOSENGE_TOWN,							    1,  1 ;  1
 	endgroup
 	
-	newgroup SHALOUR											  ; 10
+	newgroup SHALOUR											  ; 13
 	map_const SHALOUR_CITY, 							    1,  1 ;  1
 	endgroup
 	
-	newgroup COUMARINE											  ; 11
+	newgroup COUMARINE											  ; 14
 	map_const COUMARINE_CITY,							    1,  1 ;  1
 	endgroup
 	
-	newgroup LAVERRE											  ; 12
+	newgroup LAVERRE											  ; 15
 	map_const LAVERRE_CITY,								    1,  1 ;  1
 	endgroup
 	
-	newgroup DENDEMILLE											  ; 13
+	newgroup DENDEMILLE											  ; 16
 	map_const DENDEMILLE_TOWN,							    1,  1 ;  1
 	endgroup
 	
-	newgroup ANISTAR											  ; 14
+	newgroup ANISTAR											  ; 17
 	map_const ANISTAR_CITY,								    1,  1 ;  1
 	endgroup
 	
-	newgroup COURIWAY											  ; 15
+	newgroup COURIWAY											  ; 18
 	map_const COURIWAY_TOWN,							    1,  1 ;  1
 	endgroup
 	
-	newgroup SNOWBELLE											  ; 16
+	newgroup SNOWBELLE											  ; 19
 	map_const SNOWBELLE_CITY,							    1,  1 ;  1
 	endgroup
 	
-	newgroup LEAGUE												  ; 17
+	newgroup LEAGUE												  ; 20
 	map_const POKEMON_LEAGUE,							    1,  1 ;  1
 	endgroup
 	
-	newgroup KILOUDE											  ; 18
+	newgroup KILOUDE											  ; 21
 	map_const KILOUDE_CITY,								    1,  1 ;  1
 	endgroup
 	
-	newgroup CABLE_CLUB                                           ; 19
+	newgroup CABLE_CLUB                                           ; 22
 	map_const POKECENTER_2F,                                8,  4 ;  1
 	map_const TRADE_CENTER,                                 5,  4 ;  2
 	map_const COLOSSEUM,                                    5,  4 ;  3
@@ -679,4 +672,4 @@ ENDM
 ;	map_const ROUTE_31_VIOLET_GATE,                         5,  4 ; 11
 ;	endgroup
 
-DEF NUM_MAP_GROUPS EQU const_value ; 26
+DEF NUM_MAP_GROUPS EQU const_value ; 22

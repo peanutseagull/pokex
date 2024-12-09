@@ -13,6 +13,7 @@ Marts:
 	dw MartStatusOne
 	dw MartStatusThree
 	dw MartStoneEmporium
+	dw MartHerboriste
 	; dw MartAzalea
 	; dw MartCianwood
 	; dw MartGoldenrod2F1
@@ -164,6 +165,14 @@ MartStoneEmporium:
 	db SHINY_STONE
 	db DUSK_STONE
 	db LINK_CABLE
+	db -1 ; end
+	
+MartHerboriste:
+	db 4 ; # items
+	db HEAL_POWDER
+	db ENERGYPOWDER
+	db ENERGY_ROOT
+	db REVIVAL_HERB
 	db -1 ; end
 	
 ; MartAzalea:

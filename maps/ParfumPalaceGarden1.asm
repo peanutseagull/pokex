@@ -9,8 +9,8 @@ ParfumPalaceGarden1_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events
-	warp_event 69, 13, PARFUM_PALACE_1F_ATRIUM, 3
-	warp_event 70, 13, PARFUM_PALACE_1F_ATRIUM, 4
+	warp_event 69, 13, PARFUM_PALACE_1F, 3
+	warp_event 70, 13, PARFUM_PALACE_1F, 4
 	
 	def_coord_events
 	

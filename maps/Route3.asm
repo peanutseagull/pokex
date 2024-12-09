@@ -16,6 +16,12 @@ Route3SignText:
 Route3SuperPotion:
 	itemball SUPER_POTION
 	
+Route3ShinyStone:
+	itemball SHINY_STONE
+	
+Route3Revive:
+	itemball REVIVE
+	
 TrainerCamperOliver:
 	trainer CAMPER, OLIVER, EVENT_BEAT_CAMPER_OLIVER, CamperOliverSeenText, CamperOliverBeatenText, 0, .Script
 
@@ -149,3 +155,5 @@ Route3_MapEvents:
 	object_event 13, 12, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerPicnickerBridget, -1
 	object_event  4, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerSchoolboyBrighton, -1
 	object_event 13, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route3SuperPotion, EVENT_ROUTE_3_SUPER_POTION
+	object_event  4, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route3ShinyStone, EVENT_ROUTE_3_SHINY_STONE
+	object_event 25,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route3Revive, EVENT_ROUTE_3_REVIVE

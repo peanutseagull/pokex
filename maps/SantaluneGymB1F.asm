@@ -105,7 +105,7 @@ LassCharlotteSeenText:
 	done
 	
 LassCharlotteBeatenText:
-	text "Ahh... No fair!"
+	text "Ahh… No fair!"
 	line "My web wasn't"
 	cont "strong enough!"
 	done
@@ -154,7 +154,7 @@ YoungsterDavidBeatenText:
 YoungsterDavidAfterBattleText:
 	text "Up, down, left"
 	line "right, criss-"
-	cont "cross..."
+	cont "cross…"
 	
 	para "Spider webs go"
 	line "in all directions!"
@@ -163,7 +163,7 @@ YoungsterDavidAfterBattleText:
 ViolaIntroText:
 	text "That expression.."
 	line "That glint in your"
-	cont "eye..."
+	cont "eye…"
 	
 	para "It says you're up"
 	line "to the challenge.."

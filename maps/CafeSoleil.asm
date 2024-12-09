@@ -86,7 +86,7 @@ CafeSoleilNoop2Scene:
 	
 CafeSoleilText1:
 	text "SERENA: Oh, it's"
-	line "LYSANDRE and..."
+	line "LYSANDRE and…"
 	
 	para "Is that DIANTHA?"
 	
@@ -103,11 +103,11 @@ CafeSoleilText1:
 	
 	para "I wonder what"
 	line "they're doing"
-	cont "here together..."
+	cont "here together…"
 	
 	para "LYSANDRE: Beauty"
 	line "is such a fragile"
-	cont "thing..."
+	cont "thing…"
 	
 	para "You always played"
 	line "youthful roles."
@@ -120,7 +120,7 @@ CafeSoleilText1:
 	line "play those roles?"
 	
 	para "DIANTHA: What a"
-	line "strange question.."
+	line "strange question…"
 	
 	para "Why would I want"
 	line "to play the same"
@@ -152,7 +152,7 @@ CafeSoleilText1:
 	line "last forever."
 	
 	para "I can't stand the"
-	line "thought..."
+	line "thought…"
 	
 	para "of the world"
 	line "deteriorating."
@@ -164,20 +164,20 @@ CafeSoleilText2:
 	
 	para "DIANTHA here is"
 	line "an accomplished"
-	cont "actress..."
+	cont "actress…"
 
 	para "That is, she"
 	line "strives to make"
 	cont "others happier."
 	
 	para "If others were"
-	line "more like her..."
+	line "more like her…"
 	
 	para "What a beautiful"
 	line "world it would be."
 	
 	para "If you'll excuse"
-	line "me..."
+	line "me…"
 	done
 	
 CafeSoleilText3:
@@ -186,7 +186,7 @@ CafeSoleilText3:
 	
 	para "SERENA: My name"
 	line "is SERENA, and"
-	line "this is..."
+	line "this is…"
 	
 	para "DIANTHA: <PLAYER>,"
 	line "right?"
@@ -209,7 +209,7 @@ CafeSoleilText3:
 	done
 	
 CafeSoleilText4:
-	text "SERENA: Hmm..."
+	text "SERENA: Hmm…"
 	
 	para "I guess #MON"
 	line "trainers battle"
@@ -290,7 +290,7 @@ CafeSoleilGrampsText:
 	
 	para "The type of cake"
 	line "doesn't really"
-	cont "matter..."
+	cont "matter…"
 	done
 
 CafeSoleilBeautyScript:
@@ -312,7 +312,7 @@ CafeSoleilLassScript:
 CafeSoleilLassText:
 	text "I heard LYSANDRE"
 	line "is gathering young"
-	cont "people..."
+	cont "people…"
 	
 	para "Something about"
 	line "society's sake."
@@ -330,11 +330,11 @@ CafeSoleilFisherText:
 	
 	para "If you're like"
 	line "the #MON"
-	cont "SOLROCK..."
+	cont "SOLROCK…"
 	
 	para "Well, some things"
 	line "are best left"
-	cont "unsaid..."
+	cont "unsaid…"
 	done
 
 CafeSoleil_MapEvents:

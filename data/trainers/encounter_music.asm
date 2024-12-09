@@ -44,16 +44,20 @@ TrainerEncounterMusic::
 	db MUSIC_HIKER_ENCOUNTER       ; backpacker
 	db MUSIC_HIKER_ENCOUNTER       ; gardener
 	db MUSIC_HIKER_ENCOUNTER       ; pokefanm
-	db MUSIC_HIKER_ENCOUNTER       ; pokefanm
+	db MUSIC_BEAUTY_ENCOUNTER      ; pokefanf
+	db MUSIC_BEAUTY_ENCOUNTER      ; pokefanfamily
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; richboy
 	db MUSIC_LASS_ENCOUNTER        ; lady
 	db MUSIC_POKEMANIAC_ENCOUNTER  ; fairygirl
 	db MUSIC_POKEMANIAC_ENCOUNTER  ; hexmaniac
+	db MUSIC_POKEMANIAC_ENCOUNTER  ; mystery sisters
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; psychic_t
 	db MUSIC_HIKER_ENCOUNTER       ; blackbelt_t
+	db MUSIC_HIKER_ENCOUNTER       ; brains_brawn
 	db MUSIC_HIKER_ENCOUNTER       ; battlegirl
 	db MUSIC_HIKER_ENCOUNTER       ; cooltrainerm
 	db MUSIC_BEAUTY_ENCOUNTER      ; cooltrainerf
+	db MUSIC_HIKER_ENCOUNTER       ; cool_duo
 	db MUSIC_HIKER_ENCOUNTER       ; garcon
 	db MUSIC_BEAUTY_ENCOUNTER      ; waitress
 	db MUSIC_OFFICER_ENCOUNTER     ; chef
@@ -66,8 +70,13 @@ TrainerEncounterMusic::
 	db MUSIC_ROCKET_ENCOUNTER      ; adminf
 	db MUSIC_BEAUTY_ENCOUNTER      ; beauty
 	db MUSIC_POKEMANIAC_ENCOUNTER  ; pokemaniac
-	db MUSIC_BEAUTY_ENCOUNTER      ; tourist
-	db MUSIC_BEAUTY_ENCOUNTER      ; artist
+	db MUSIC_YOUNGSTER_ENCOUNTER   ; touristm
+	db MUSIC_BEAUTY_ENCOUNTER      ; touristf
+	db MUSIC_BEAUTY_ENCOUNTER      ; touristlady
+	db MUSIC_BEAUTY_ENCOUNTER      ; honeymooners
+	db MUSIC_HIKER_ENCOUNTER       ; artistm
+	db MUSIC_BEAUTY_ENCOUNTER      ; artistf
+	db MUSIC_HIKER_ENCOUNTER       ; artistfamily
 	db MUSIC_HIKER_ENCOUNTER       ; breederm
 	db MUSIC_BEAUTY_ENCOUNTER      ; breederf
 	db MUSIC_HIKER_ENCOUNTER       ; skytrainerm
@@ -77,16 +86,19 @@ TrainerEncounterMusic::
 	db MUSIC_BEAUTY_ENCOUNTER      ; swimmerf
 	db MUSIC_HIKER_ENCOUNTER       ; rangerm
 	db MUSIC_BEAUTY_ENCOUNTER      ; rangerf
+	db MUSIC_HIKER_ENCOUNTER	   ; rangers
 	db MUSIC_HIKER_ENCOUNTER       ; monsieur
 	db MUSIC_BEAUTY_ENCOUNTER      ; madame
 	db MUSIC_POKEMANIAC_ENCOUNTER  ; punkguy
 	db MUSIC_POKEMANIAC_ENCOUNTER  ; punkgirl
+	db MUSIC_POKEMANIAC_ENCOUNTER  ; punkcouple
 	db MUSIC_HIKER_ENCOUNTER       ; worker
 	db MUSIC_HIKER_ENCOUNTER       ; veteranm
 	db MUSIC_BEAUTY_ENCOUNTER      ; veteranf
 	db MUSIC_KIMONO_ENCOUNTER      ; furisodegirl
 	db MUSIC_POKEMANIAC_ENCOUNTER  ; scientistm
 	db MUSIC_POKEMANIAC_ENCOUNTER  ; scientistf
+	db MUSIC_HIKER_ENCOUNTER       ; driver
 	db MUSIC_RIVAL_ENCOUNTER	   ; rival1
 	db MUSIC_RIVAL_ENCOUNTER	   ; rival2
 	db MUSIC_YOUNGSTER_ENCOUNTER   ; cal

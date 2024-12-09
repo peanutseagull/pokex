@@ -38,6 +38,7 @@ SantaluneHouse2_Blocks:
 SantaluneHouse3_Blocks:
 SantaluneHouse4_Blocks:
 CamphrierHouse1_Blocks:
+BerryFieldsHouse_Blocks:
 	INCBIN "maps/House1.blk"
 	
 CamphrierHouse2_Blocks:
@@ -84,12 +85,8 @@ DayCare_Blocks:
 	
 ParfumPalaceOutside_Blocks:
 	INCBIN "maps/ParfumPalaceOutside.blk"
-ParfumPalace1FAtrium_Blocks:
-	INCBIN "maps/ParfumPalace1FAtrium.blk"
-ParfumPalace1FWest_Blocks:
-	INCBIN "maps/ParfumPalace1FWest.blk"
-ParfumPalace1FEast_Blocks:
-	INCBIN "maps/ParfumPalace1FEast.blk"
+ParfumPalace1F_Blocks:
+	INCBIN "maps/ParfumPalace1F.blk"
 ParfumPalace1FRoom1_Blocks:
 	INCBIN "maps/ParfumPalace1FRoom1.blk"
 ParfumPalace1FRoom2_Blocks:
@@ -98,10 +95,8 @@ ParfumPalace1FRoom3_Blocks:
 	INCBIN "maps/ParfumPalace1FRoom3.blk"
 ParfumPalace1FRoom4_Blocks:
 	INCBIN "maps/ParfumPalace1FRoom4.blk"
-ParfumPalace2FWest_Blocks:
-	INCBIN "maps/ParfumPalace2FWest.blk"
-ParfumPalace2FEast_Blocks:
-	INCBIN "maps/ParfumPalace2FEast.blk"
+ParfumPalace2F_Blocks:
+	INCBIN "maps/ParfumPalace2F.blk"
 ParfumPalace2FRoom1_Blocks:
 	INCBIN "maps/ParfumPalace2FRoom1.blk"
 ParfumPalace2FRoom2_Blocks:
@@ -110,8 +105,6 @@ ParfumPalace2FRoom3_Blocks:
 	INCBIN "maps/ParfumPalace2FRoom3.blk"
 ParfumPalace2FRoom4_Blocks:
 	INCBIN "maps/ParfumPalace2FRoom4.blk"
-ParfumPalace2FCorridor_Blocks:
-	INCBIN "maps/ParfumPalace2FCorridor.blk"
 ParfumPalace2FBalcony_Blocks:
 	INCBIN "maps/ParfumPalace2FBalcony.blk"
 ParfumPalaceGarden1_Blocks:
@@ -128,6 +121,8 @@ ParfumPalaceGarden6_Blocks:
 	INCBIN "maps/ParfumPalaceGarden6.blk"
 ParfumPalaceGarden7_Blocks:
 	INCBIN "maps/ParfumPalaceGarden7.blk"
+ParfumPalaceGardenMaze_Blocks:
+	INCBIN "maps/ParfumPalaceGardenMaze.blk"
 
 Route7East_Blocks:
 	INCBIN "maps/Route7East.blk"
@@ -175,7 +170,14 @@ HibernalAvenue_Blocks:
 	INCBIN "maps/HibernalAvenue.blk"
 	
 StoneEmporium_Blocks:
+Herboriste_Blocks:
 	INCBIN "maps/LumioseMart.blk"
+	
+FriseurFurfrou_Blocks:
+	INCBIN "maps/FriseurFurfrou.blk"
+	
+BoutiqueCouture_Blocks:
+	INCBIN "maps/BoutiqueCouture.blk"
 	
 RougePlaza_Blocks:
 JaunePlaza_Blocks:
@@ -190,6 +192,8 @@ CentricoPlaza_Blocks:
 ShutterbugCafe_Blocks:
 CafeSoleil_Blocks:
 CafeIntroversion_Blocks:
+CafeWoof_Blocks:
+CafeClasse_Blocks:
 	INCBIN "maps/LumioseCafe.blk"
 	
 LumioseSouthOfficeGround1_Blocks:

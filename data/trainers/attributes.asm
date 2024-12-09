@@ -247,6 +247,12 @@ TrainerClassAttributes:
 	db 20 ; base reward
 	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
+
+; PokefanFamily	
+	db NO_ITEM, NO_ITEM ; items
+	db 23 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_SMART | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
 	
 ; Richboy
 	db NO_ITEM, NO_ITEM ; items
@@ -272,6 +278,12 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 	
+; Mystery Sisters
+	db NO_ITEM, NO_ITEM ; items
+	db 15 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+	
 ; Psychic T
 	db NO_ITEM, NO_ITEM ; items
 	db 8 ; base reward
@@ -281,6 +293,12 @@ TrainerClassAttributes:
 ; Blackbelt T
 	db NO_ITEM, NO_ITEM ; items
 	db 6 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+	
+; Brains and Brawn
+	db NO_ITEM, NO_ITEM ; items
+	db 15 ; base reward
 	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 	
@@ -299,6 +317,12 @@ TrainerClassAttributes:
 ; Cooltrainerf
 	db NO_ITEM, NO_ITEM ; items
 	db 12 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+	
+; Cool Duo
+	db NO_ITEM, NO_ITEM ; items
+	db 18 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_SMART | AI_AGGRESSIVE | AI_CAUTIOUS | AI_STATUS | AI_RISKY
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 	
@@ -374,15 +398,45 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_SETUP | AI_OFFENSIVE | AI_AGGRESSIVE | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Tourist
+; Touristm
 	db NO_ITEM, NO_ITEM ; items
 	db 17 ; base reward
 	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
+	
+; Touristf
+	db NO_ITEM, NO_ITEM ; items
+	db 17 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+	
+; TouristLady
+	db NO_ITEM, NO_ITEM ; items
+	db 17 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+	
+; Honeymooners
+	db NO_ITEM, NO_ITEM ; items
+	db 20 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
 
-; Artist
+; Artistm
 	db NO_ITEM, NO_ITEM ; items
 	db 2 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+	
+; Artistf
+	db NO_ITEM, NO_ITEM ; items
+	db 2 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+	
+; Artist Family
+	db NO_ITEM, NO_ITEM ; items
+	db 4 ; base reward
 	dw AI_BASIC | AI_OFFENSIVE | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 	
@@ -440,6 +494,12 @@ TrainerClassAttributes:
 	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 	
+; Rangers
+	db NO_ITEM, NO_ITEM ; items
+	db 15 ; base reward
+	dw AI_BASIC | AI_TYPES | AI_OPPORTUNIST | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+	
 ; Monsieur
 	db NO_ITEM, NO_ITEM ; items
 	db 23 ; base reward
@@ -461,6 +521,12 @@ TrainerClassAttributes:
 ; Punkgirl
 	db NO_ITEM, NO_ITEM ; items
 	db 8 ; base reward
+	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+	
+; Punk Couple
+	db NO_ITEM, NO_ITEM ; items
+	db 14 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_CAUTIOUS | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
@@ -498,6 +564,12 @@ TrainerClassAttributes:
 	db NO_ITEM, NO_ITEM ; items
 	db 25 ; base reward
 	dw AI_BASIC | AI_SETUP | AI_TYPES | AI_STATUS | AI_RISKY
+	dw CONTEXT_USE | SWITCH_SOMETIMES
+	
+; Driver
+	db NO_ITEM, NO_ITEM ; items
+	db 10 ; base reward
+	dw AI_BASIC | AI_OFFENSIVE | AI_OPPORTUNIST | AI_STATUS
 	dw CONTEXT_USE | SWITCH_SOMETIMES
 
 ; Rival1

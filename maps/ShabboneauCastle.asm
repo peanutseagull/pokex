@@ -172,7 +172,7 @@ ShabboneauCastleSceneText2:
 	line "the owners of the"
 	cont "castle gave away"
 	cont "a lot of their"
-	cont "stuff..."
+	cont "stuff…"
 	
 	para "So that's why it"
 	line "feels so empty."
@@ -194,7 +194,7 @@ ShabboneauCastleSceneText4:
 	line "What the heck is"
 	cont "MEGA EVOLUTION?"
 
-	para "SHAUNA: ..."
+	para "SHAUNA: …"
 	done
 	
 ShabboneauCastleSceneText5:
@@ -207,7 +207,7 @@ ShabboneauCastleSceneText5:
 	
 	para "Well there's"
 	line "nothing I can do"
-	cont "about that now..."
+	cont "about that now…"
 	done
 	
 ShabboneauCastleSceneText6:
@@ -222,7 +222,7 @@ ShabboneauCastleSceneText6:
 ShabboneauCastleSceneText7:
 	text "SHAUNA: I wonder"
 	line "what that's all"
-	cont "about..."
+	cont "about…"
 	done
 	
 ShabboneauCastleSceneText8:

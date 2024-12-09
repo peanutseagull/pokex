@@ -91,13 +91,13 @@ Text_CamphrierDontLeave:
 	line "on half the joy"
 	cont "in life!"
 	
-	para "Or... well..."
-	line "maybe not half..."
+	para "Or… well…"
+	line "maybe not half…"
 	cont "A quarter?"
 	
 	para "Hmm, maybe I'm"
 	line "still overblowing"
-	cont "it..."
+	cont "it…"
 	
 	para "One percent!"
 	line "You're missing at"
@@ -182,10 +182,10 @@ CamphrierTownPokefanmScript:
 	
 CamphrierTownPokefanmText:
 	text "It's about that"
-	line "time again, huh..."
+	line "time again, huh…"
 	
 	para "That lazy lug'll"
-	line "be back soon..."
+	line "be back soon…"
 	done
 	
 CamphrierTownBlocksYou:

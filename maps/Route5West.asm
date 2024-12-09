@@ -60,16 +60,42 @@ TrainerYoungsterKeita:
 	closetext
 	end
 	
-; TrainerYoungsterAnthony:
-	; trainer YOUNGSTER, ANTHONY, EVENT_BEAT_YOUNGSTER_ANTHONY, YoungsterAnthonySeenText, YoungsterAnthonyBeatenText, 0, .Script
+TrainerYoungsterAnthony:
+	trainer YOUNGSTER, ANTHONY, EVENT_BEAT_YOUNGSTER_ANTHONY, YoungsterAnthonySeenText, YoungsterAnthonyBeatenText, 0, .Script
 	
-; .Script:
-	; endifjustbattled
-	; opentext
-	; writetext YoungsterAnthonyAfterText
-	; waitbutton
-	; closetext
-	; end
+.Script:
+	endifjustbattled
+	opentext
+	writetext YoungsterAnthonyAfterText
+	waitbutton
+	closetext
+	end
+	
+YoungsterAnthonyAfterText:
+	text "I couldn't think"
+	line "of wearing"
+	cont "anything but"
+	cont "shorts."
+	
+	para "How do other"
+	line "people do it?"
+	done
+	
+YoungsterAnthonyBeatenText:
+	text "Whenever I feel"
+	line "down after losing"
+	cont "a battle,"
+	
+	para "I think, at least"
+	line "I've still got my"
+	cont "shorts!"
+	done
+	
+YoungsterAnthonySeenText:
+	text "Shorts are the"
+	line "coolest!"
+	cont "And the comfiest!"
+	done
 	
 YoungsterKeitaSeenText:
 	text "Wanna know why I"
@@ -198,7 +224,7 @@ Route5West_MapEvents:
 	object_event 11, 20, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerRisingStarTyson, -1
 	object_event  5, 30, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerBackpackerHeike, -1
 	object_event  4, 38, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerYoungsterKeita, -1
-	; object_event 21, 48, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerYoungsterAnthony, -1
+	object_event 21, 48, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerYoungsterAnthony, -1
 	object_event 11, 33, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route5XAttack, EVENT_ROUTE_5_X_ATTACK
 	object_event 21, 42, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route5SharpBeak, EVENT_ROUTE_5_SHARP_BEAK
 	object_event 10, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route5TM01, EVENT_GOT_TM01_DYNAMICPUNCH

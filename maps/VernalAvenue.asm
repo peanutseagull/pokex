@@ -46,7 +46,7 @@ VernalAvenueOverheardText2:
 	cont "It's a salon!"
 	
 	para "BOY 2: Another day"
-	line "to while away..."
+	line "to while away…"
 	cont "trimming Furfrou!"
 	done
 	
@@ -144,6 +144,16 @@ VernalAvenue_MapEvents:
 	warp_event  8,  2, CENTRICO_PLAZA, 2
 	warp_event  2, 33, STONE_EMPORIUM, 1
 	warp_event  2, 32, STONE_EMPORIUM, 2
+	warp_event  2, 27, HERBORISTE, 1
+	warp_event  2, 26, HERBORISTE, 2
+	warp_event  2, 21, FRISEUR_FURFROU, 1
+	warp_event  2, 20, FRISEUR_FURFROU, 2
+	warp_event  2, 15, CAFE_WOOF, 1
+	warp_event  2, 14, CAFE_WOOF, 2
+	warp_event 13, 16, CAFE_CLASSE, 1
+	warp_event 13, 17, CAFE_CLASSE, 2
+	warp_event 13, 28, BOUTIQUE_COUTURE, 1
+	warp_event 13, 29, BOUTIQUE_COUTURE, 2
 	
 	def_coord_events
 	

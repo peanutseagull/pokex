@@ -108,6 +108,8 @@ DEF KRIS EQU __trainer_class__
 	const ZACHARY
 	const KEITA
 	const ANTHONY
+	const TYLER
+	const JACOB
 	
 	trainerclass LASS ; 1b
 	const ANNA
@@ -155,6 +157,8 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass BACKPACKER ; 26
 	const HEIKE
+	const RODERICK
+	const JEROME
 
 	trainerclass GARDENER ; 27
 	const WHEATON
@@ -167,89 +171,120 @@ DEF KRIS EQU __trainer_class__
 	trainerclass POKEFANF ; 29
 	const AGNES
 	
-	trainerclass RICH_BOY ; 2a
+	trainerclass POKEFAN_FAMILY ; 2a
+	const JANANDERIN1
+	const JANANDERIN2
 	
-	trainerclass LADY ; 2b
+	trainerclass RICH_BOY ; 2b
 	
-	trainerclass FAIRY_GIRL ; 2c
+	trainerclass LADY ; 2c
 	
-	trainerclass HEX_MANIAC ; 2d
+	trainerclass FAIRY_GIRL ; 2d
 	
-	trainerclass PSYCHIC_T ; 2e
+	trainerclass HEX_MANIAC ; 2e
 	
-	trainerclass BLACKBELT_T ; 2f
+	trainerclass MYSTERY_SISTERS ; 2f
+	
+	trainerclass PSYCHIC_T ; 30
+	
+	trainerclass BLACKBELT_T ; 31
+	
+	trainerclass BRAINS_BRAWN ; 32
 
-	trainerclass BATTLE_GIRL ; 30
+	trainerclass BATTLE_GIRL ; 33
 	
-	trainerclass COOLTRAINERM ; 31
+	trainerclass COOLTRAINERM ; 34 (ACETRAINERM)
 
-	trainerclass COOLTRAINERF ; 32
+	trainerclass COOLTRAINERF ; 35 (ACETRAINERF)
 	
-	trainerclass GARCON ; 33
+	trainerclass COOL_DUO ; 36 (ACE DUO)
 	
-	trainerclass WAITRESS ; 34
+	trainerclass GARCON ; 37
 	
-	trainerclass CHEF ; 35
+	trainerclass WAITRESS ; 38
 	
-	trainerclass BUTLER ; 36
+	trainerclass CHEF ; 39
 	
-	trainerclass MAID ; 37
+	trainerclass BUTLER ; 3a
 	
-	trainerclass OWNER ; 38
+	trainerclass MAID ; 3b
 	
-	trainerclass GRUNTM ; 39
+	trainerclass OWNER ; 3c
 	
-	trainerclass GRUNTF ; 3a
+	trainerclass GRUNTM ; 3d
 	
-	trainerclass ADMINM ; 3b
+	trainerclass GRUNTF ; 3e
 	
-	trainerclass ADMINF ; 3c
+	trainerclass ADMINM ; 3f
+	
+	trainerclass ADMINF ; 40
 
-	trainerclass BEAUTY ; 3d
+	trainerclass BEAUTY ; 41
+	const BRIGITTE
 
-	trainerclass POKEMANIAC ; 3e
+	trainerclass POKEMANIAC ; 42
 
-	trainerclass TOURIST ; 3f
+	trainerclass TOURISTM ; 43
+	const TAKEMI
 	
-	trainerclass ARTIST ; 40
+	trainerclass TOURISTF ; 44
+	const MARI
 	
-	trainerclass BREEDERM ; 41
+	trainerclass TOURIST_LADY ; 45
+	const HIROKO
+	const ERIKO
 	
-	trainerclass BREEDERF ; 42
+	trainerclass HONEYMOONERS ; 46
+	
+	trainerclass ARTISTM ; 47
+	
+	trainerclass ARTISTF ; 48
+	
+	trainerclass ARTIST_FAMILY ; 49
+	
+	trainerclass BREEDERM ; 4a
+	
+	trainerclass BREEDERF ; 4b
 
-	trainerclass SKYTRAINERM ; 43
+	trainerclass SKYTRAINERM ; 4c
 	
-	trainerclass SKYTRAINERF ; 44
+	trainerclass SKYTRAINERF ; 4d
 	
-	trainerclass FISHER ; 45
+	trainerclass FISHER ; 4e
 	
-	trainerclass SWIMMERM ; 46
+	trainerclass SWIMMERM ; 4f
 
-	trainerclass SWIMMERF ; 47
+	trainerclass SWIMMERF ; 50
 	
-	trainerclass RANGERM ; 48
+	trainerclass RANGERM ; 51
 	
-	trainerclass RANGERF ; 49
+	trainerclass RANGERF ; 52
 	
-	trainerclass MONSIEUR ; 4a
+	trainerclass RANGERS ; 53
 	
-	trainerclass MADAME ; 4b
-		
-	trainerclass PUNK_GUY ; 4c
+	trainerclass MONSIEUR ; 54
 	
-	trainerclass PUNK_GIRL ; 4d
-	
-	trainerclass WORKER ; 4e
-	
-	trainerclass VETERANM ; 4f
-	
-	trainerclass VETERANF ; 50
-	
-	trainerclass FURISODEGIRL ; 51
-	
-	trainerclass SCIENTISTM ; 52
+	trainerclass MADAME ; 55
 
-	trainerclass SCIENTISTF ; 53
+	trainerclass PUNK_GUY ; 56
+	
+	trainerclass PUNK_GIRL ; 57
+	
+	trainerclass PUNK_COUPLE ; 58
+	
+	trainerclass WORKER ; 59
+	
+	trainerclass VETERANM ; 5a
+	
+	trainerclass VETERANF ; 5b
+	
+	trainerclass FURISODEGIRL ; 5c
+	
+	trainerclass SCIENTISTM ; 5d
+
+	trainerclass SCIENTISTF ; 5e
+	
+	trainerclass DRIVER ; 5f
 	
 	; trainerclass NITA
 	

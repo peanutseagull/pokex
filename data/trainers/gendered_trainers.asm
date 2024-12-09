@@ -20,6 +20,8 @@ MaleTrainers:
 	db BUTLER
 	db OWNER
 	db POKEMANIAC
+	db TOURISTM
+	db ARTISTM
 	db BREEDERM
 	db SKYTRAINERM
 	db FISHER
@@ -46,8 +48,9 @@ FemaleTrainers:
 	db WAITRESS
 	db MAID
 	db BEAUTY
-	db TOURIST
-	db ARTIST
+	db TOURISTF
+	db TOURIST_LADY
+	db ARTISTF
 	db BREEDERF
 	db SKYTRAINERF
 	db SWIMMERF
@@ -57,4 +60,5 @@ FemaleTrainers:
 	db VETERANF
 	db FURISODEGIRL
 	db SCIENTISTF
+	db DRIVER
 .End

@@ -96,4 +96,9 @@ MapScenes::
 	scene_var ROUTE_5_EAST,								   wRoute5EastSceneID
 	scene_var CAMPHRIER_TOWN,							   wCamphrierTownSceneID
 	scene_var SHABBONEAU_CASTLE,						   wShabboneauCastleSceneID
+	scene_var ROUTE_7_EAST,								   wRoute7EastSceneID
+	scene_var BERRY_FIELDS,                                wBerryFieldsSceneID
+	scene_var PARFUM_PALACE_1F,                            wParfumPalace1FSceneID
+	scene_var PARFUM_PALACE_GARDEN_MAZE,                   wParfumPalaceGardenMazeSceneID
+	scene_var PARFUM_PALACE_2F_BALCONY,					   wParfumPalace2FBalconySceneID
 	db -1 ; end

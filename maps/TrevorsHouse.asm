@@ -14,7 +14,7 @@ TrevorsDadText:
 	line "gone off on a"
 	cont "#MON journey."
 	
-	para "He's so shy..."
+	para "He's so shy…"
 	
 	para "I hope going away"
 	line "might help him"

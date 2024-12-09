@@ -134,7 +134,7 @@ SantaluneCity_AlexaLeaves:
 	step_end
 	
 Text_SantaluneDontLeave:
-	text "You must be..."
+	text "You must be…"
 	
 	para "Ah! One of the"
 	line "kids who got a"
@@ -183,7 +183,7 @@ Text_ExpShare:
 	line "a new scoop! To"
 	cont "beat VIOLA at your"
 	
-	para "young age... You"
+	para "young age… You"
 	line "really are"
 	cont "something!"
 	
