@@ -5,7 +5,6 @@ GOALS FOR AMBRETTE BRANCH:
 	
 	Day Care
 	Battle Maison
-	Waking Up Snorlax
 	
 	Connecting Cave
 	Route 8 Top
@@ -41,9 +40,10 @@ Non-urgent:
 Known Bugs:
 	Broken hitbox????? but only sometimes, observed on Route 4 and 5, Beauty, Rocker and Officer Sprites
 	talking to black belt makes Snorlax disappear briefly
-	no walking animation for karen and twin
+	no walking animation for karen twin and black belt
 	ivysaur shows front sprite when battling???
 	Broken pokemon sprites occasionally (displaying tiles 01 and 02 in random spots)
+	Snorlax has no party icon
 	
 Inconsequential Stuff:
 	Add accents: À bientôt!, Rivière Walk

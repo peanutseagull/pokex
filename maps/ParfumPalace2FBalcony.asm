@@ -83,8 +83,8 @@ ParfumPalace2FBalconyShaunaScene:
 	writetext ParfumPalace2FBalconyManText1
 	waitbutton
 	closetext
-	; show_emote EMOTE_SHOCK, PLAYER, 15
-	; show_emote EMOTE_SHOCK, PARFUMPALACE2FBALCONY_SHAUNA, 15
+	showemote EMOTE_SHOCK, PLAYER, 15
+	showemote EMOTE_SHOCK, PARFUMPALACE2FBALCONY_SHAUNA, 15
 	turnobject PLAYER, RIGHT
 	turnobject PARFUMPALACE2FBALCONY_SHAUNA, RIGHT
 	opentext
@@ -138,6 +138,7 @@ ParfumPalace2FBalconyShaunaScene:
 	disappear PARFUMPALACE2FBALCONY_SHAUNA
 	setevent EVENT_PARFUM_PALACE_2F_BALCONY_SHAUNA
 	setscene SCENE_PARFUMPALACE2FBALCONY_NOOP
+	setmapscene ROUTE_7_EAST, SCENE_ROUTE7EAST_POKEFLUTE
 	end
 	
 ParfumPalace2FBalconyShaunaText1:

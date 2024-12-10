@@ -178,9 +178,24 @@ CamphrierYoungsterGotText:
 	done
 	
 CamphrierTownPokefanmScript:
-	jumptextfaceplayer CamphrierTownPokefanmText
+	checkevent EVENT_ROUTE_7_SNORLAX
+	iftrue .FoughtSnorlax
+	faceplayer
+	opentext
+	writetext CamphrierTownPokefanmText1
+	waitbutton
+	closetext
+	end
 	
-CamphrierTownPokefanmText:
+.FoughtSnorlax:
+	faceplayer
+	opentext
+	writetext CamphrierTownPokefanmText2
+	waitbutton
+	closetext
+	end
+	
+CamphrierTownPokefanmText1:
 	text "It's about that"
 	line "time again, huh…"
 	
@@ -188,10 +203,18 @@ CamphrierTownPokefanmText:
 	line "be back soon…"
 	done
 	
+CamphrierTownPokefanmText2:
+	text "No one wishes"
+	line "more than us that"
+	cont "we could give"
+	cont "SNORLAX gobs of"
+	cont "berries like we"
+	cont "used to."
+	done
+	
 CamphrierTownBlocksYou:
 	faceplayer
 	opentext
-	; setevent EVENT_SHABBONEAU_CASTLE_GUY
 	checkevent EVENT_SHABBONEAU_CASTLE_SHAUNA
 	iftrue .MetShauna
 	writetext Text_CamphrierDontLeave

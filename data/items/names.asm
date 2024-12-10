@@ -55,7 +55,7 @@ ItemNames::
 	li "X SPECIAL"
 	li "COIN CASE"
 	li "ITEMFINDER"
-	li "TERU-SAMA"
+	li "POKé FLUTE"
 	li "EXP.SHARE"
 	li "OLD ROD"
 	li "GOOD ROD"
