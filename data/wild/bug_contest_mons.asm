@@ -9,5 +9,5 @@ ContestMons:
 	db 10, ODDISH,    10, 16
 	db 10, ODDISH,      10, 17
 	db  5, SCYTHER,    13, 14
-	db  5, PINSIR,     13, 14
+	db  5, PINSIR,    13, 14
 	db -1, GLOOM,   30, 40

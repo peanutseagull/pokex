@@ -98,6 +98,7 @@ CamphrierGroupSprites:
 	; 9 of max 9 walking sprites
 	db SPRITE_BLACK_BELT
 	db SPRITE_MONSTER
+	db SPRITE_GRAMPS
 	db SPRITE_COOLTRAINER_M
 	db SPRITE_POKEFAN_F
 	db SPRITE_TWIN

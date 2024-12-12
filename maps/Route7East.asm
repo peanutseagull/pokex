@@ -1,4 +1,7 @@
 	object_const_def
+	const ROUTE7EAST_GRAMPS
+	const ROUTE7EAST_DAY_CARE_MON_1
+	const ROUTE7EAST_DAY_CARE_MON_2
 	const ROUTE7EAST_BIGSNORLAX
 	const ROUTE7EAST_BLACK_BELT
 	const ROUTE7EAST_YOUNGSTER
@@ -13,6 +16,7 @@ Route7East_MapScripts:
 	scene_script Route7EastNoop2Scene, SCENE_ROUTE7EAST_NOOP
 	
 	def_callbacks
+	callback MAPCALLBACK_OBJECTS, Route7EggCheckCallback
 	
 Route7EastNoop1Scene:
 	end
@@ -22,6 +26,38 @@ Route7EastNoop2Scene:
 	
 ; Route7EastNoop3Scene:
 	; end
+	
+Route7EggCheckCallback:
+	checkflag ENGINE_DAY_CARE_MAN_HAS_EGG
+	iftrue .PutDayCareManOutside
+	clearevent EVENT_DAY_CARE_MAN_IN_DAY_CARE
+	setevent EVENT_DAY_CARE_MAN_ON_ROUTE_7
+	sjump .CheckMon1
+
+.PutDayCareManOutside:
+	setevent EVENT_DAY_CARE_MAN_IN_DAY_CARE
+	clearevent EVENT_DAY_CARE_MAN_ON_ROUTE_7
+	sjump .CheckMon1
+
+.CheckMon1:
+	checkflag ENGINE_DAY_CARE_MAN_HAS_MON
+	iffalse .HideMon1
+	clearevent EVENT_DAY_CARE_MON_1
+	sjump .CheckMon2
+
+.HideMon1:
+	setevent EVENT_DAY_CARE_MON_1
+	sjump .CheckMon2
+
+.CheckMon2:
+	checkflag ENGINE_DAY_CARE_LADY_HAS_MON
+	iffalse .HideMon2
+	clearevent EVENT_DAY_CARE_MON_2
+	endcallback
+
+.HideMon2:
+	setevent EVENT_DAY_CARE_MON_2
+	endcallback
 	
 Route7East_SnorlaxScene1:
 	opentext
@@ -287,6 +323,8 @@ Route7East_PokeFluteScene2:
 	closetext
 	applymovement ROUTE7EAST_SHAUNA, Route7EastEntersMovement
 	disappear ROUTE7EAST_SHAUNA
+	setevent EVENT_ROUTE_7_SHAUNA
+	setevent EVENT_ROUTE_7_FURFROU
 	turnobject PLAYER, LEFT
 	setscene SCENE_ROUTE7EAST_NOOP
 	end
@@ -613,6 +651,42 @@ Route7SnorlaxScript:
 	; reloadmapafterbattle
 	; end
 	
+DayCareManScript_Outside:
+	faceplayer
+	opentext
+	special DayCareManOutside
+	waitbutton
+	closetext
+	ifequal TRUE, .end_fail
+	clearflag ENGINE_DAY_CARE_MAN_HAS_EGG
+	readvar VAR_FACING
+	ifequal RIGHT, .walk_around_player
+	applymovement ROUTE7EAST_GRAMPS, Route7EastMovementData_DayCareManWalksBackInside
+	playsound SFX_ENTER_DOOR
+	disappear ROUTE7EAST_GRAMPS
+.end_fail
+	end
+
+.walk_around_player
+	applymovement ROUTE7EAST_GRAMPS, Route7EastMovementData_DayCareManWalksBackInside_WalkAroundPlayer
+	playsound SFX_ENTER_DOOR
+	disappear ROUTE7EAST_GRAMPS
+	end
+	
+Route7EastMovementData_DayCareManWalksBackInside:
+	step RIGHT
+	step RIGHT
+	step UP
+	step_end
+	
+Route7EastMovementData_DayCareManWalksBackInside_WalkAroundPlayer:
+	step DOWN
+	step RIGHT
+	step RIGHT
+	step UP	
+	step UP
+	step_end
+	
 Route7SnorlaxSleepingText:
 	text "SNORLAX is snoring"
 	line "peacefully…"
@@ -628,6 +702,7 @@ Route7East_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events
+	warp_event 39, 15, DAY_CARE, 1
 	
 	def_coord_events
 	coord_event 77, 18, SCENE_ROUTE7EAST_SNORLAX, Route7East_SnorlaxScene1
@@ -641,6 +716,9 @@ Route7East_MapEvents:
 	bg_event 71, 17, BGEVENT_READ, Route7Sign
 	
 	def_object_events
+	object_event 37, 16, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DayCareManScript_Outside, EVENT_DAY_CARE_MAN_ON_ROUTE_7
+	object_event 34, 14, SPRITE_DAY_CARE_MON_1, SPRITEMOVEDATA_POKEMON, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_DAY_CARE_MON_1
+	object_event 36, 14, SPRITE_DAY_CARE_MON_2, SPRITEMOVEDATA_POKEMON, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_DAY_CARE_MON_2 
 	object_event 47, 19, SPRITE_BIG_SNORLAX, SPRITEMOVEDATA_BIGDOLLSYM, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route7SnorlaxScript, EVENT_ROUTE_7_SNORLAX
 	object_event 48, 18, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route7BlackBeltScript, EVENT_ROUTE_7_BLACK_BELT
 	object_event 48, 21, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route7YoungsterScript, EVENT_ROUTE_7_YOUNGSTER

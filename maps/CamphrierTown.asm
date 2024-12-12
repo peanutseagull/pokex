@@ -215,6 +215,8 @@ CamphrierTownPokefanmText2:
 CamphrierTownBlocksYou:
 	faceplayer
 	opentext
+	; setevent EVENT_ROUTE_7_SHAUNA
+	; setevent EVENT_ROUTE_7_FURFROU
 	checkevent EVENT_SHABBONEAU_CASTLE_SHAUNA
 	iftrue .MetShauna
 	writetext Text_CamphrierDontLeave

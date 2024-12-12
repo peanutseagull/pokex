@@ -3,8 +3,9 @@ GOALS FOR AMBRETTE BRANCH:
 	
 	Lumiose Shops: Coiffure Clips, Restaurant Le Nah, Trainer PR Studio
 	
+	Route 7 past Bridge
 	Day Care
-	Battle Maison
+	Battle Chateau
 	
 	Connecting Cave
 	Route 8 Top
@@ -18,6 +19,7 @@ Stuff to come back to:
 	Mom banking call
 	Shutterbug Cafe Long/Short Dialogue
 	Coiffure Clips?
+	Walking animation for karen twin and black belt
 	
 Non-urgent:
 	Redo intro
@@ -38,16 +40,19 @@ Non-urgent:
 	Fishing Data
 
 Known Bugs:
-	Broken hitbox????? but only sometimes, observed on Route 4 and 5, Beauty, Rocker and Officer Sprites
-	talking to black belt makes Snorlax disappear briefly
-	no walking animation for karen twin and black belt
+	Broken hitbox for NPCs with WALK_UP_DOWN and WALK_LEFT_RIGHT spritemovedata
 	ivysaur shows front sprite when battling???
 	Broken pokemon sprites occasionally (displaying tiles 01 and 02 in random spots)
-	Snorlax has no party icon
+	egg party icon broken - probably something to do with gfx/icons.asm and engine/gfx/mon_icons.asm
+	Egg front sprite is Shiny Charmander???
+	Eggs corrupted?, dont hatch
+	Daycare pokemon sprites broken
+	Skiddo Honedge loading wrong colours
 	
 Inconsequential Stuff:
 	Add accents: À bientôt!, Rivière Walk
 	Tipping mechanic
+	Route 7 East - talking to black belt makes Snorlax disappear briefly
 	
 Long-term goals (pipe dreams):
 	Aegislash stance change?

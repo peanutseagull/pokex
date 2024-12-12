@@ -132,9 +132,14 @@ ENDM
 	map_const ROUTE_6,									   30, 24 ; 13
 	map_const BERRY_FIELDS,								   12,  8 ; 14
 	map_const BERRY_FIELDS_HOUSE,							4,  4
-	map_const DAY_CARE,                                     5,  4 ; 15
 	map_const ROUTE_7_EAST,								   40, 13 ; 16
 	map_const ROUTE_7_WEST,								   13, 25 ; 17
+	map_const DAY_CARE,                                     5,  4 ; 15
+	; map_const BATTLE_CHATEAU_ENTRANCE,
+	; map_const BATTLE_CHATEAU_CORRIDOR,
+	; map_const BATTLE_CHATEAU_ROOM_1,
+	; map_const BATTLE_CHATEAU_ROOM_2,
+	; map_const BATTLE_CHATEAU_ROOM_3,
 	map_const PARFUM_PALACE_OUTSIDE,					   32, 10 ; 18
 	map_const PARFUM_PALACE_1F,							   25,  7 ; 19
 	map_const PARFUM_PALACE_2F,							   25,  7 ; 20
