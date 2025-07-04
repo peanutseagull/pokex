@@ -16,21 +16,17 @@ Route5EastNoop2Scene:
 	end
 	
 Route5TiernoSceneDown:
-	appear ROUTE5EAST_FISHER
-	appear ROUTE5EAST_SUPER_NERD
 	showemote EMOTE_SHOCK, PLAYER, 15
 	special FadeOutMusic
 	pause 15
 	playmusic MUSIC_RIVAL_ENCOUNTER
-	applymovement PLAYER, Route5AlignMovement
-	; sjump .ContinueScene
 	opentext
 	writetext Route5TiernoText1
 	waitbutton
 	closetext
 	showemote EMOTE_SHOCK, ROUTE5EAST_FISHER, 15
 	showemote EMOTE_SHOCK, ROUTE5EAST_SUPER_NERD, 15
-	applymovement PLAYER, Route5StepForward
+	applymovement PLAYER, Route5StepForwardAlt
 	opentext
 	writetext Route5TiernoText2
 	waitbutton
@@ -82,7 +78,6 @@ Route5TiernoSceneUp:
 	special FadeOutMusic
 	pause 15
 	playmusic MUSIC_RIVAL_ENCOUNTER
-; .ContinueScene:
 	opentext
 	writetext Route5TiernoText1
 	waitbutton
@@ -252,7 +247,13 @@ Route5TrevorLossText:
 Route5StepForward:
 	step LEFT
 	step LEFT
+	step_end
+	
+Route5StepForwardAlt:
 	step LEFT
+	step LEFT
+	step UP
+	turn_head LEFT
 	step_end
 	
 Route5AlignMovement:
@@ -387,8 +388,8 @@ Route5East_MapEvents:
 	warp_event 47, 11, ROUTE_5_LUMIOSE_GATE, 4
 	
 	def_coord_events
-	coord_event 25, 18, SCENE_ROUTE5EAST_TIERNO, Route5TiernoSceneUp
-	coord_event 25, 19, SCENE_ROUTE5EAST_TIERNO, Route5TiernoSceneDown
+	coord_event 24, 18, SCENE_ROUTE5EAST_TIERNO, Route5TiernoSceneUp
+	coord_event 24, 19, SCENE_ROUTE5EAST_TIERNO, Route5TiernoSceneDown
 	
 	def_bg_events
 	bg_event 31,  9, BGEVENT_READ, Route5Sign

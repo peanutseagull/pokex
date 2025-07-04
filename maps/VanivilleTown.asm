@@ -31,6 +31,7 @@ VanivilleTown_TeacherStopsYouScene1:
 	closetext
 	turnobject PLAYER, DOWN
 	applymovement VANIVILLETOWN_TEACHER, VanivilleTown_TeacherRunsToYouMovement1
+	turnobject PLAYER, RIGHT
 	opentext
 	writetext Text_WhatDoYouThinkYoureDoing
 	waitbutton
@@ -77,6 +78,7 @@ VanivilleTown_TeacherStopsYouScene3:
 	closetext
 	turnobject PLAYER, DOWN
 	applymovement VANIVILLETOWN_TEACHER, VanivilleTown_TeacherRunsToYouMovement3
+	turnobject PLAYER, LEFT
 	opentext
 	writetext Text_WhatDoYouThinkYoureDoing
 	waitbutton
@@ -100,6 +102,7 @@ VanivilleTown_TeacherStopsYouScene4:
 	closetext
 	turnobject PLAYER, DOWN
 	applymovement VANIVILLETOWN_TEACHER, VanivilleTown_TeacherRunsToYouMovement4
+	turnobject PLAYER, LEFT
 	opentext
 	writetext Text_WhatDoYouThinkYoureDoing
 	waitbutton
@@ -749,7 +752,7 @@ Text_VanivilleYoungster:
 	line "pretty nice,"
 	cont "right?"
 	
-	para "Kalos has so many"
+	para "KALOS has so many"
 	line "cool towns -"
 	
 	para "I wanna see them"
@@ -765,7 +768,7 @@ Text_TechnologyGuy:
 	
 	para "You can call"
 	line "people from"
-	cont "anywhere in Kalos!"
+	cont "anywhere in KALOS!"
 	
 	para "Isn't technology"
 	line "incredible?"

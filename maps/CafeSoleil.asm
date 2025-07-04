@@ -186,7 +186,7 @@ CafeSoleilText3:
 	
 	para "SERENA: My name"
 	line "is SERENA, and"
-	line "this is…"
+	cont "this is…"
 	
 	para "DIANTHA: <PLAYER>,"
 	line "right?"

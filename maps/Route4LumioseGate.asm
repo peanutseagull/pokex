@@ -78,7 +78,7 @@ DexioSinaText1:
 	line "request."
 	
 	para "GIRL: My name's"
-	line "Sina!"
+	line "SINA!"
 	
 	para "A beautiful name"
 	line "for a beautiful"

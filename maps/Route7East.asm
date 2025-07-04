@@ -660,7 +660,7 @@ DayCareManScript_Outside:
 	ifequal TRUE, .end_fail
 	clearflag ENGINE_DAY_CARE_MAN_HAS_EGG
 	readvar VAR_FACING
-	ifequal RIGHT, .walk_around_player
+	ifequal LEFT, .walk_around_player
 	applymovement ROUTE7EAST_GRAMPS, Route7EastMovementData_DayCareManWalksBackInside
 	playsound SFX_ENTER_DOOR
 	disappear ROUTE7EAST_GRAMPS
@@ -698,6 +698,158 @@ Route7BlackBeltScript:
 Route7YoungsterScript:
 	jumptext Route7EastYoungsterText
 	
+TrainerArtistGeorgia:
+	trainer ARTISTF, GEORGIA, EVENT_BEAT_ARTIST_GEORGIA, ArtistGeorgiaSeenText, ArtistGeorgiaBeatenText, 0, .Script
+	
+.Script:
+	endifjustbattled
+	opentext
+	writetext ArtistGeorgiaAfterText
+	waitbutton
+	closetext
+	end
+	
+ArtistGeorgiaSeenText:
+	text "A heated battle"
+	line "will provide me"
+	cont "with just the"
+	cont "inspiration that"
+	cont "I need!"
+	done
+
+ArtistGeorgiaBeatenText:
+	text "Excellent! Thank"
+	line "you! It's been"
+	cont "ages since I've"
+	cont "had such a good"
+	cont "battle!"
+	done
+	
+ArtistGeorgiaAfterText:
+	text "The passion of"
+	line "our battle will"
+	cont "inspire me to"
+	cont "paint something"
+	cont "astonishing!"
+	done
+	
+TrainerArtistPierre:
+	trainer ARTISTM, PIERRE, EVENT_BEAT_ARTIST_PIERRE, ArtistPierreSeenText, ArtistPierreBeatenText, 0, .Script
+	
+.Script:
+	endifjustbattled
+	opentext
+	writetext ArtistPierreAfterText
+	waitbutton
+	closetext
+	end
+	
+ArtistPierreSeenText:
+	text "A blank canvas"
+	line "before me and"
+	cont "no inspiration"
+	cont "from which to"
+	cont "paint!"
+	done	
+	
+ArtistPierreBeatenText:
+	text "I've got it!"
+	done
+	
+ArtistPierreAfterText:
+	text "A blank canvas"
+	line "means that the"
+	cont "possibilities are"
+	cont "endless!"
+	
+	para "I believe I'll"
+	line "paint the comings"
+	cont "and goings of"
+	cont "Trainers like you"
+	cont "along this fine"
+	cont "Riviere Walk!"
+	done
+	
+TrainerArtistFamilyMonaPaolo1:
+	trainer ARTIST_FAMILY, MONAANDPAOLO, EVENT_BEAT_ARTIST_FAMILY_MONA_PAOLO, ArtistFamilyMonaPaoloSeenText, ArtistFamilyMonaPaoloBeatenText, 0, .Script
+	
+.Script:
+	endifjustbattled
+	opentext
+	writetext ArtistFamilyPaoloAfterText
+	waitbutton
+	closetext
+	end
+	
+TrainerArtistFamilyMonaPaolo2:
+	trainer ARTIST_FAMILY, MONAANDPAOLO, EVENT_BEAT_ARTIST_FAMILY_MONA_PAOLO, ArtistFamilyMonaPaoloSeenText, ArtistFamilyMonaPaoloBeatenText, 0, .Script
+	
+.Script:
+	endifjustbattled
+	opentext
+	writetext ArtistFamilyMonaAfterText
+	waitbutton
+	closetext
+	end
+	
+ArtistFamilyMonaPaoloSeenText:
+	text "You there! You're"
+	line "the perfect model"
+	cont "for our next"
+	cont "painting!"
+
+	para "Time for a magni-"
+	line "ficent battle!"
+	done
+	
+ArtistFamilyMonaPaoloBeatenText:
+	text "MONA: Yahoo! This"
+	line "is gonna be our"
+	cont "best work yet!"
+	
+	para "PAOLO: I'll never"
+	line "forget our battle"
+	cont "together!"
+	done
+	
+ArtistFamilyMonaAfterText:
+	text "When a battle"
+	line "inspires me, it's"
+	cont "like the brush"
+	cont "moves on its own!"
+	done
+	
+ArtistFamilyPaoloAfterText:
+	text "This canvas will"
+	line "come alive with"
+	cont "the excitement"
+	cont "of our battle!"
+	done
+	
+Route7ChateauManScript:
+	jumptextfaceplayer Route7ChateauManText
+	
+Route7ChateauManText:
+	text "Our precious"
+	line "BATTLE CHATEAU"
+	cont "is currently"
+	cont "undergoing some"
+	cont "renovations."
+	
+	para "Please be patient"
+	line "and enjoy the"
+	cont "rest of the demo!"
+	done
+	
+Route7PPUp:
+	itemball PP_UP
+
+Route7XSpecial:
+	itemball X_SPECIAL
+	
+Route7FriendBall:
+	itemball FRIEND_BALL ; Heal ball?
+	
 Route7East_MapEvents:
 	db 0, 0 ; filler
 	
@@ -725,3 +877,11 @@ Route7East_MapEvents:
 	object_event 50, 19, SPRITE_KAREN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_7_SHAUNA
 	object_event 55, 18, SPRITE_POKEFAN_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_7_MAN
 	object_event 55, 19, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_7_FURFROU
+	object_event 33, 22, SPRITE_TEACHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerArtistGeorgia, -1
+	object_event  4, 22, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerArtistPierre, -1
+	object_event 20, 22, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerArtistFamilyMonaPaolo1, -1
+	object_event 21, 22, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerArtistFamilyMonaPaolo2, -1
+	object_event  6, 16, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route7ChateauManScript, -1
+	object_event  2, 25, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route7PPUp, EVENT_ROUTE_7_PP_UP
+	object_event 26, 25, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route7XSpecial, EVENT_ROUTE_7_X_SPECIAL
+	object_event 48,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route7FriendBall, EVENT_ROUTE_7_FRIEND_BALL

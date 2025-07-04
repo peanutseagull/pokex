@@ -175,8 +175,7 @@ DEF KRIS EQU __trainer_class__
 	const AGNES
 	
 	trainerclass POKEFAN_FAMILY ; 2a
-	const JANANDERIN1
-	const JANANDERIN2
+	const JANANDERIN
 	
 	trainerclass RICH_BOY ; 2b
 	
@@ -240,10 +239,13 @@ DEF KRIS EQU __trainer_class__
 	trainerclass HONEYMOONERS ; 46
 	
 	trainerclass ARTISTM ; 47
+	const PIERRE
 	
 	trainerclass ARTISTF ; 48
+	const GEORGIA
 	
 	trainerclass ARTIST_FAMILY ; 49
+	const MONAANDPAOLO
 	
 	trainerclass BREEDERM ; 4a
 	

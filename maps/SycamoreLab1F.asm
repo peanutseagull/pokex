@@ -146,7 +146,7 @@ SycamoreLabLysandreText2:
 	
 	para "MAN: Oh! You"
 	line "received a"
-	cont "#dex then…"
+	cont "#DEX then…"
 	
 	para "How wonderful!"
 	
@@ -164,7 +164,7 @@ SycamoreLabLysandreText2:
 	line "taught me so much."
 	
 	para "Aahh, I see you"
-	line "have a #gear!"
+	line "have a <POKE>GEAR!"
 	
 	para "Knowledge is power"
 	line "after all. Put it"
@@ -199,7 +199,7 @@ SycamoreLabSinaFinalText:
 	cont "great region."
 	
 	para "I hope getting a"
-	line "#dex gives you"
+	line "#DEX gives you"
 	cont "the chance to"
 	
 	para "learn about them."

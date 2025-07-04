@@ -36,7 +36,7 @@ TrainerTouristEriko:
 	end
 	
 TrainerPokefanFamilyJanErin1:
-	trainer POKEFAN_FAMILY, JANANDERIN1, EVENT_BEAT_POKEFAN_FAMILY_JAN_ERIN, PokefanFamilyJanErinSeenText, PokefanFamilyJanErinBeatenText, 0, .Script
+	trainer POKEFAN_FAMILY, JANANDERIN, EVENT_BEAT_POKEFAN_FAMILY_JAN_ERIN, PokefanFamilyJanErinSeenText, PokefanFamilyJanErinBeatenText, 0, .Script
 	
 .Script:
 	endifjustbattled
@@ -47,7 +47,7 @@ TrainerPokefanFamilyJanErin1:
 	end
 	
 TrainerPokefanFamilyJanErin2:
-	trainer POKEFAN_FAMILY, JANANDERIN2, EVENT_BEAT_POKEFAN_FAMILY_JAN_ERIN, PokefanFamilyJanErinSeenText, PokefanFamilyJanErinBeatenText, 0, .Script
+	trainer POKEFAN_FAMILY, JANANDERIN, EVENT_BEAT_POKEFAN_FAMILY_JAN_ERIN, PokefanFamilyJanErinSeenText, PokefanFamilyJanErinBeatenText, 0, .Script
 	
 .Script:
 	endifjustbattled

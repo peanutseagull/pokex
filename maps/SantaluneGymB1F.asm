@@ -161,12 +161,12 @@ YoungsterDavidAfterBattleText:
 	done
 	
 ViolaIntroText:
-	text "That expression.."
+	text "That expression…"
 	line "That glint in your"
 	cont "eye…"
 	
 	para "It says you're up"
-	line "to the challenge.."
+	line "to the challenge…"
 	
 	para "It's fantastic!"
 	line "Just fantastic!"

@@ -1,6 +1,7 @@
 GOALS FOR AMBRETTE BRANCH:
 	Complete game up until Glittering Cave:
 	
+	Santalune Boutique
 	Lumiose Shops: Coiffure Clips, Restaurant Le Nah, Trainer PR Studio
 	
 	Route 7 past Bridge
@@ -40,14 +41,16 @@ Non-urgent:
 	Fishing Data
 
 Known Bugs:
+	Too many walking sprites in Camphrier Group
 	Broken hitbox for NPCs with WALK_UP_DOWN and WALK_LEFT_RIGHT spritemovedata
 	ivysaur shows front sprite when battling???
 	Broken pokemon sprites occasionally (displaying tiles 01 and 02 in random spots)
 	egg party icon broken - probably something to do with gfx/icons.asm and engine/gfx/mon_icons.asm
 	Egg front sprite is Shiny Charmander???
-	Eggs corrupted?, dont hatch
 	Daycare pokemon sprites broken
-	Skiddo Honedge loading wrong colours
+	RISING STAR HAMISH WTFF??????? fixed?
+	
+	Wrong sprites: 
 	
 Inconsequential Stuff:
 	Add accents: À bientôt!, Rivière Walk
@@ -56,6 +59,7 @@ Inconsequential Stuff:
 	
 Long-term goals (pipe dreams):
 	Aegislash stance change?
+	Alternate forms: Furfrou, Flabebe, Meowstic
 	Unique tilesets
 	Double battles
 	horde encounters??? (almost definitely won't happen)

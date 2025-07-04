@@ -234,9 +234,9 @@ SycamoreLabText2:
 	
 	para "About then, I"
 	line "learnt that the"
-	cont "Rhyhorn racer,"
+	cont "RHYHORN racer,"
 	
-	para "Grace and her"
+	para "GRACE and her"
 	line "child were moving"
 	cont "here."
 	
