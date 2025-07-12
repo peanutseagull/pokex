@@ -35,7 +35,7 @@
 	const PROTEIN      ; 1b
 	const IRON         ; 1c
 	const CARBOS       ; 1d
-	const LUCKY_PUNCH  ; 1e UNNECESSARY
+	const DIVE_BALL    ; 1e 
 	const CALCIUM      ; 1f
 	const RARE_CANDY   ; 20
 	const X_ACCURACY   ; 21
@@ -76,7 +76,7 @@
 	const S_S_TICKET   ; 44 UNNECESSARY
 	const MYSTERY_EGG  ; 45 UNNECESSARY
 	const CLEAR_BELL   ; 46 UNNECESSARY
-	const SILVER_WING  ; 47 UNNECESSARY
+	const LENS_CASE    ; 47 
 	const MOOMOO_MILK  ; 48
 	const QUICK_CLAW   ; 49
 	const PSNCUREBERRY ; 4a
@@ -140,7 +140,7 @@
 	const STAR_PIECE   ; 84
 	const BASEMENT_KEY ; 85 UNNECESSARY
 	const PASS         ; 86 UNNECESSARY
-	const ITEM_87      ; 87 UNUSED
+	const LUCKY_PUNCH  ; 87 UNNECESSARY
 	const ITEM_88      ; 88 UNUSED
 	const ITEM_89      ; 89 UNUSED
 	const CHARCOAL     ; 8a
@@ -217,31 +217,31 @@ ENDM
 
 ; see data/moves/tmhm_moves.asm for moves
 DEF TM01 EQU const_value
-	add_tm DYNAMICPUNCH ; bf
-	add_tm HEADBUTT     ; c0
-	add_tm CURSE        ; c1
-	add_tm ROLLOUT      ; c2
+	add_tm DYNAMICPUNCH ; bf HONE CLAWS
+	add_tm HEADBUTT     ; c0 DRAGON_CLAW
+	add_tm CURSE        ; c1 PSYSHOCK
+	add_tm ROLLOUT      ; c2 CALM_MIND
 	const ITEM_C3       ; c3
-	add_tm ROAR         ; c4
+	add_tm ROAR         ; c4 
 	add_tm TOXIC        ; c5
-	add_tm ZAP_CANNON   ; c6
-	add_tm ROCK_SMASH   ; c7
-	add_tm PSYCH_UP     ; c8
+	add_tm ZAP_CANNON   ; c6 HAIL
+	add_tm ROCK_SMASH   ; c7 BULK_UP
+	add_tm PSYCH_UP     ; c8 VENOSHOCK
 	add_tm HIDDEN_POWER ; c9
 	add_tm SUNNY_DAY    ; ca
-	add_tm SWEET_SCENT  ; cb
-	add_tm SNORE        ; cc
+	add_tm SWEET_SCENT  ; cb TAUNT
+	add_tm SNORE        ; cc ICE_BEAM
 	add_tm BLIZZARD     ; cd
 	add_tm HYPER_BEAM   ; ce
-	add_tm ICY_WIND     ; cf
+	add_tm ICY_WIND     ; cf LIGHT_SCREEN
 	add_tm PROTECT      ; d0
 	add_tm RAIN_DANCE   ; d1
-	add_tm GIGA_DRAIN   ; d2
-	add_tm ENDURE       ; d3
+	add_tm GIGA_DRAIN   ; d2 ROOST
+	add_tm ENDURE       ; d3 SAFEGUARD
 	add_tm FRUSTRATION  ; d4
 	add_tm SOLARBEAM    ; d5
-	add_tm IRON_TAIL    ; d6
-	add_tm DRAGONBREATH ; d7
+	add_tm IRON_TAIL    ; d6 SMACK_DOWN
+	add_tm DRAGONBREATH ; d7 THUNDERBOLT
 	add_tm THUNDER      ; d8
 	add_tm EARTHQUAKE   ; d9
 	add_tm RETURN       ; da
@@ -249,26 +249,26 @@ DEF TM01 EQU const_value
 	const ITEM_DC       ; dc
 	add_tm PSYCHIC_M    ; dd
 	add_tm SHADOW_BALL  ; de
-	add_tm MUD_SLAP     ; df
+	add_tm MUD_SLAP     ; df BRICK_BREAK
 	add_tm DOUBLE_TEAM  ; e0
-	add_tm ICE_PUNCH    ; e1
-	add_tm SWAGGER      ; e2
-	add_tm SLEEP_TALK   ; e3
-	add_tm SLUDGE_BOMB  ; e4
+	add_tm ICE_PUNCH    ; e1 REFLECT
+	add_tm SWAGGER      ; e2 SLUDGE_WAVE
+	add_tm SLEEP_TALK   ; e3 FLAMETHROWER
+	add_tm SLUDGE_BOMB  ; e4 SLUDGE_BOMB
 	add_tm SANDSTORM    ; e5
 	add_tm FIRE_BLAST   ; e6
-	add_tm SWIFT        ; e7
-	add_tm DEFENSE_CURL ; e8
-	add_tm THUNDERPUNCH ; e9
-	add_tm DREAM_EATER  ; ea
-	add_tm DETECT       ; eb
+	add_tm SWIFT        ; e7 ROCK_TOMB
+	add_tm DEFENSE_CURL ; e8 AERIAL_ACE
+	add_tm THUNDERPUNCH ; e9 TORMENT
+	add_tm DREAM_EATER  ; ea FACADE
+	add_tm DETECT       ; eb FLAME_CHARGE
 	add_tm REST         ; ec
 	add_tm ATTRACT      ; ed
 	add_tm THIEF        ; ee
-	add_tm STEEL_WING   ; ef
-	add_tm FIRE_PUNCH   ; f0
-	add_tm FURY_CUTTER  ; f1
-	add_tm NIGHTMARE    ; f2
+	add_tm STEEL_WING   ; ef LOW_SWEEP
+	add_tm FIRE_PUNCH   ; f0 ROUND
+	add_tm FURY_CUTTER  ; f1 ECHOED_VOICE
+	add_tm NIGHTMARE    ; f2 OVERHEAT
 DEF NUM_TMS EQU __tmhm_value__ - 1
 
 MACRO add_hm

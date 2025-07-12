@@ -30,7 +30,7 @@ ItemDescriptions:
 	dw ProteinDesc
 	dw IronDesc
 	dw CarbosDesc
-	dw LuckyPunchDesc
+	dw DiveBallDesc
 	dw CalciumDesc
 	dw RareCandyDesc
 	dw XAccuracyDesc
@@ -71,7 +71,7 @@ ItemDescriptions:
 	dw SSTicketDesc
 	dw MysteryEggDesc
 	dw ClearBellDesc
-	dw SilverWingDesc
+	dw LensCaseDesc
 	dw MoomooMilkDesc
 	dw QuickClawDesc
 	dw PsnCureBerryDesc
@@ -374,9 +374,9 @@ CarbosDesc:
 	db   "Raises SPEED of"
 	next "one #MON.@"
 
-LuckyPunchDesc:
-	db   "Ups critical hit"
-	next "ratio of CHANSEY.@"
+DiveBallDesc:
+	db   "A BALL for #MON"
+	next "found in water.@"
 
 CalciumDesc:
 	db   "Ups SPECIAL stats"
@@ -536,9 +536,9 @@ ClearBellDesc:
 	db   "Makes a gentle"
 	next "ringing.@"
 
-SilverWingDesc:
-	db   "A strange, silver-"
-	next "colored feather.@"
+LensCaseDesc:
+	db   "A chic case for"
+	next "contact lenses.@"
 
 MoomooMilkDesc:
 	db   "Restores #MON"
