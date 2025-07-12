@@ -307,6 +307,14 @@ TrainersSchoolSignText:
 	cont "basics!"
 	done
 	
+SantaluneBoutiqueSign:
+	jumptext SantaluneBoutiqueSignText
+	
+SantaluneBoutiqueSignText:
+	text "SANTALUNE"
+	line "BOUTIQUE"
+	done
+	
 SantaluneCity_MapEvents:
 	db 0, 0 ; filler
 
@@ -318,12 +326,13 @@ SantaluneCity_MapEvents:
 	warp_event  3, 17, SANTALUNE_HOUSE_1, 2
 	warp_event  7, 17, SANTALUNE_HOUSE_2, 2
 	warp_event  4, 27, SANTALUNE_HOUSE_3, 2
-	warp_event 27, 27, SANTALUNE_HOUSE_4, 2
+	warp_event  9, 27, SANTALUNE_HOUSE_4, 2
+	warp_event 27, 27, SANTALUNE_BOUTIQUE, 1
 	
 	def_coord_events
 	coord_event  4,  1, SCENE_SANTALUNECITY_ALEXA_STOPS_YOU, SantaluneCity_AlexaStopsYouScene1
 	coord_event  6,  1, SCENE_SANTALUNECITY_ALEXA_STOPS_YOU, SantaluneCity_AlexaStopsYouScene2
-	coord_event  7,  1, SCENE_SANTALUNECITY_ALEXA_STOPS_YOU, SantaluneCity_AlexaStopsYouScene3	
+	coord_event  7,  1, SCENE_SANTALUNECITY_ALEXA_STOPS_YOU, SantaluneCity_AlexaStopsYouScene3
 	coord_event  4,  1, SCENE_SANTALUNECITY_EXPSHARE, SantaluneCity_AlexaExpShare1
 	coord_event  6,  1, SCENE_SANTALUNECITY_EXPSHARE, SantaluneCity_AlexaExpShare2
 	coord_event  7,  1, SCENE_SANTALUNECITY_EXPSHARE, SantaluneCity_AlexaExpShare3
@@ -334,6 +343,7 @@ SantaluneCity_MapEvents:
 	bg_event 12, 10, BGEVENT_READ, TrainersSchoolSign
 	bg_event 28, 17, BGEVENT_READ, SantaluneCityMartSign
 	bg_event 24, 27, BGEVENT_READ, SantaluneCityPokecenterSign
+	bg_event 28, 28, BGEVENT_READ, SantaluneBoutiqueSign
 
 	def_object_events
 	object_event  5,  1, SPRITE_CLAIR, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, AlexaSantaluneScript, EVENT_GOT_EXP_SHARE

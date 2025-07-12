@@ -22,6 +22,8 @@ Route7EastNoop1Scene:
 	end
 	
 Route7EastNoop2Scene:
+	disappear ROUTE7EAST_MAN
+	disappear ROUTE7EAST_FURFROU	
 	end
 	
 ; Route7EastNoop3Scene:
@@ -238,6 +240,8 @@ Route7East_PokeFluteScene1:
 	closetext
 	applymovement ROUTE7EAST_SHAUNA, Route7EastEntersMovement
 	disappear ROUTE7EAST_SHAUNA
+	setevent EVENT_ROUTE_7_FURFROU
+	setevent EVENT_ROUTE_7_MAN
 	turnobject PLAYER, LEFT
 	setscene SCENE_ROUTE7EAST_NOOP
 	end
@@ -325,6 +329,7 @@ Route7East_PokeFluteScene2:
 	disappear ROUTE7EAST_SHAUNA
 	setevent EVENT_ROUTE_7_SHAUNA
 	setevent EVENT_ROUTE_7_FURFROU
+	setevent EVENT_ROUTE_7_MAN
 	turnobject PLAYER, LEFT
 	setscene SCENE_ROUTE7EAST_NOOP
 	end

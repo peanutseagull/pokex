@@ -147,6 +147,13 @@ SycamoreLabSignText:
 	line "Lab"
 	done
 	
+TrainerPrStudioSign:
+	jumptext TrainerPrStudioSignText
+	
+TrainerPrStudioSignText:
+	text "PR VIDEO STUDIO"
+	done
+	
 LumioseSoutheast_MapEvents:
 	db 0, 0 ; filler
 	
@@ -163,6 +170,9 @@ LumioseSoutheast_MapEvents:
 	warp_event 17, 23, SYCAMORE_LAB_1F, 2
 	warp_event  0, 31, ROUTE_5_LUMIOSE_GATE, 1
 	warp_event  1, 31, ROUTE_5_LUMIOSE_GATE, 2
+	warp_event  8, 27, TRAINER_PR_STUDIO, 1
+	warp_event  9, 27, TRAINER_PR_STUDIO, 2
+	; warp_event 18,  3, RESTAURANT_LE_NAH, 1
 	
 	def_coord_events
 	
@@ -172,6 +182,7 @@ LumioseSoutheast_MapEvents:
 	bg_event 19,  4, BGEVENT_READ, RestaurantLeNahSign
 	bg_event 15, 23, BGEVENT_READ, SycamoreLabSign
 	bg_event 31,  5, BGEVENT_READ, Route4GateSign
+	bg_event  7, 27, BGEVENT_READ, TrainerPrStudioSign
 	
 	def_object_events
 	object_event 18,  6, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LumioseSoutheastBeautyScript, -1

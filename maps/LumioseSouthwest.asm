@@ -135,7 +135,7 @@ LumioseSouthwest_MapEvents:
 	warp_event 17, 23, LUMIOSE_SOUTH_OFFICE_GROUND_2, 2
 	warp_event  6, 15, LUMIOSE_SOUTH_OFFICE_GROUND_3, 1
 	warp_event  7, 15, LUMIOSE_SOUTH_OFFICE_GROUND_3, 2
-	; warp_event 27, 11, COIFFURE_CLIPS, 1
+	warp_event 27, 11, COIFFURE_CLIPS, 1
 	
 	def_coord_events
 	
