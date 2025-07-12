@@ -260,6 +260,6 @@ PokemonCries::
 	mon_cry CRY_CHARMANDER,   96,  192 ; 
 	mon_cry CRY_CHARMANDER,   96,  192 ;
 	assert_table_length NUM_POKEMON
-	mon_cry CRY_NIDORAN_M,      0,     0 ; 254
- 	mon_cry CRY_NIDORAN_M,      0,     0 ; 255
-	assert_table_length $ff
+	; mon_cry CRY_NIDORAN_M,      0,     0 ; 
+ 	mon_cry CRY_NIDORAN_M,      0,     0 ; 
+	assert_table_length EGG

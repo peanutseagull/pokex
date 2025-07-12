@@ -1,7 +1,9 @@
 SpriteMons:
 ; entries correspond to SPRITE_* constants past SPRITE_POKEMON
 	table_width 1, SpriteMons
+	db HONEDGE  ; UNOWN
 	db GEODUDE
+	db SPRITZEE	; GROWLITHE
 	db WEEDLE
 	db SHELLDER
 	db ODDISH
@@ -9,6 +11,7 @@ SpriteMons:
 	db ZUBAT
 	db MAGIKARP
 	db SQUIRTLE
+	db HONEDGE	; TOGEPI
 	db BUTTERFREE
 	db DIGLETT
 	db POLIWAG
@@ -19,7 +22,9 @@ SpriteMons:
 	db STARMIE
 	db BULBASAUR
 	db JIGGLYPUFF
+	db INKAY	; GRIMER
 	db EKANS
+	db CHESPIN	; PARAS
 	db TENTACOOL
 	db TAUROS
 	db MACHOP
@@ -29,11 +34,6 @@ SpriteMons:
 	db MOLTRES
 	db SNORLAX
 	db GYARADOS
-	db CHESPIN
-	db FENNEKIN
-	db FROAKIE
-	db QUILLADIN
-	db BRAIXEN
-	db FROGADIER
-	db MEWTWO
+	db ESPURR	; HO-OH
+	db FURFROU	; LUGIA
 	assert_table_length NUM_POKEMON_SPRITES

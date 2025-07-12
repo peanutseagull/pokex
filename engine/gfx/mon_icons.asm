@@ -105,7 +105,7 @@ _FinishMenuMonIconColor:
 	pop de
 	pop hl
 	ret
-
+	
 GetMonPalInBCDE:
 ; Sets BCDE to mon icon palette.
 ; Input: c = species, b = shininess (1=true, 0=false)
@@ -140,8 +140,8 @@ GetMonPalInBCDE:
 	ld d, h
 	ld e, l
 	ret
-
-GetMenuMonIconPalette:
+	
+GetMenuMonIconPalette::
 	ld c, l
 	ld b, h
 	farcall CheckShininess
@@ -160,6 +160,7 @@ GetMenuMonIconPalette_PredeterminedShininess:
 	swap a
 .shiny
 	and $f
+	ld e, a
 	ret
 
 LoadMenuMonIcon:
@@ -425,6 +426,8 @@ FlyFunction_GetMonIcon:
 	call GetIcon_a
 
 	; Edit the OBJ 0 palette so that the cursor Pokémon has the right colors.
+	ld a, [wTempIconSpecies]
+	ld [wCurPartySpecies], a
 	ld a, MON_DVS
 	call GetPartyParamLocation
 	call GetMenuMonIconPalette
@@ -504,7 +507,7 @@ endr
 
 GetIconBank:
 	ld a, [wCurIcon]
-	cp MAGIKARP ; first species in "Mon Icons 2"
+	cp MAREEP ; first species in "Mon Icons 2"
 	lb bc, BANK("Mon Icons 1"), 8
 	ret c
 	ld b, BANK("Mon Icons 2")
@@ -619,7 +622,7 @@ HoldSwitchmonIcon:
 	dec e
 	jr nz, .loop
 	ret
-
+	
 INCLUDE "data/pokemon/menu_icon_pals.asm"
 
 INCLUDE "data/pokemon/icon_pointers.asm"

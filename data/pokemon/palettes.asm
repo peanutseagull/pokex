@@ -525,15 +525,23 @@ INCLUDE "gfx/pokemon/volcanion/shiny.pal"
 	assert_table_length NUM_POKEMON + 1
 	
 ; 252
-	RGB 30, 26, 11
-	RGB 23, 16, 00
+	; RGB 30, 26, 11
+	; RGB 23, 16, 00
 ; 252 shiny
-	RGB 30, 26, 11
-	RGB 23, 16, 00
+	; RGB 30, 26, 11
+	; RGB 23, 16, 00
 
 
 INCBIN "gfx/pokemon/egg/front.gbcpal", middle_colors
 INCLUDE "gfx/pokemon/egg/shiny.pal"
 
 	assert_table_length EGG + 1
+	
+; 255
+ 	RGB 23, 23, 23
+ 	RGB 17, 17, 17
+ ; 255 shiny
+ 	RGB 23, 23, 23
+ 	RGB 17, 17, 17
+	
 	assert_table_length $100

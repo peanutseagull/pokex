@@ -260,6 +260,6 @@ MonMenuIconPals:
 	icon_pals PURPLE, BROWN  ; HOOPA
 	icon_pals RED,    BROWN  ; VOLCANION
 	assert_table_length NUM_POKEMON
-	icon_pals RED,    RED    ; unused
+	; icon_pals RED,    RED    ; unused
 	icon_pals RED,    BLUE   ; EGG
 	assert_table_length EGG
