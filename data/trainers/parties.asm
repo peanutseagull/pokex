@@ -361,11 +361,23 @@ RisingStarMGroup:
 	db 14, HOOTHOOT
 	db -1 ; end
 	
-RisingStarFGruop:
+	; RISING STAR (4)
+	db "RHYS@", TRAINERTYPE_NORMAL
+	db 17, PANCHAM
+	db 18, SKIDDO
+	db 19, GOLDEEN
+	db -1 ; end
+	
+RisingStarFGroup:
 	; RISING STAR (1)
 	db "LOUISE@", TRAINERTYPE_NORMAL
 	db 6, PSYDUCK
 	db 7, LITLEO
+	db -1 ; end
+	
+	; RISING STAR (2)
+	db "PAULETTE@", TRAINERTYPE_NORMAL
+	db 21, LARVITAR
 	db -1 ; end
 	
 TwinsGroup:
@@ -460,10 +472,10 @@ PokefanFamilyGroup:
 	db -1 ; end
 	
 	; POKEFAN_FAMILY (2)
-	db " @", TRAINERTYPE_NORMAL
-	db 16, FURFROU
-	db 16, FURFROU
-	db -1 ; end
+	; db " @", TRAINERTYPE_NORMAL
+	; db 16, FURFROU
+	; db 16, FURFROU
+	; db -1 ; end
 	
 RichBoyGroup:
 
@@ -478,6 +490,10 @@ MysterySistersGroup:
 PsychicGroup:
 
 BlackbeltGroup:
+	; BLACK_BELT_T (1)
+	db "CADOC@", TRAINERTYPE_NORMAL
+	db 22, MACHOP
+	db -1 ; end
 
 BrainsBrawnGroup:
 
@@ -548,25 +564,93 @@ TouristLadyGroup:
 HoneymoonersGroup:
 	
 ArtistMGroup:
+	; ARTISTM (1)
+	db "PIERRE@", TRAINERTYPE_MOVES
+	db 18, SMEARGLE,	THUNDERSHOCK, POWDER_SNOW, ROCK_THROW, ROCK_SMASH
+	db -1 ; end
 
 ArtistFGroup:
+	; ARTISTF (1)
+	db "GEORGIA@", TRAINERTYPE_MOVES
+	db 18, SMEARGLE,	EMBER, VINE_WHIP, WATER_GUN, NO_MOVE
+	db -1 ; end
 
 ArtistFamilyGroup:
+	; ARTIST_FAMILY (1)
+	db " @", TRAINERTYPE_MOVES
+	db 18, SMEARGLE,	PURSUIT, CONFUSION, TWISTER, NO_MOVE
+	db 18, SMEARGLE,	GUST, METAL_CLAW, SLUDGE, NO_MOVE
+	db -1 ; end
 
 BreederMGroup:
 
 BreederFGroup:
+	; BREEDER_F (1)
+	db "MERCY@", TRAINERTYPE_NORMAL
+	db 15, PSYDUCK 
+	db 15, PIKACHU
+	db 15, LITLEO
+	db 15, ODDISH
+	db -1 ; end
 
 SkytrainerMGroup:
+	; SKYTRAINERM (1)
+	db "HOWE@", TRAINERTYPE_NORMAL
+	db 17, MISDREAVUS
+	db 20, PIDGEOTTO
+	db -1 ; end
+	
+	; SKYTRAINERF (2)
+	db "COLM@", TRAINERTYPE_NORMAL
+	db 30, MANTINE
+	db 31, JUMPLUFF
+	db -1 ; end
 
 SkytrainerFGroup:
+	; SKYTRAINERF (1)
+	db "AVEZA@", TRAINERTYPE_NORMAL
+	db 21, SKIPLOOM
+	db 22, FLETCHINDR
+	db -1 ; end
 
 FisherGroup:
+	; FISHER (1)
+	db "WHARTON@", TRAINERTYPE_NORMAL
+	db 20, TENTACOOL
+	db 20, TENTACOOL
+	db 20, TENTACOOL
+	db -1 ; end
+	
+	; FISHER (2)
+	db "SHAD@", TRAINERTYPE_NORMAL
+	db 22, SHELLDER
+	db 22, STARYU
+	db -1 ; end
 
 SwimmerMGroup:
+	; SWIMMER_M (1)
+	db "ESTABAN@", TRAINERTYPE_NORMAL
+	db 33, SKRELP
+	db 33, HORSEA
+	db -1 ; end
+	
+	; SWIMMER_M (2)
+	db "RAMSES@", TRAINERTYPE_NORMAL
+	db 35, TENTACOOL
+	db -1 ; end
 
 SwimmerFGroup:
-
+	; SWIMMER_F (1)
+	db "GENEVIEVE@", TRAINERTYPE_NORMAL
+	db 21, CHINCHOU
+	db 23, PSYDUCK
+	db -1 ; end
+	
+	; SWIMMER_F (2)
+	db "MARISSA@", TRAINERTYPE_NORMAL
+	db 20, GYARADOS
+	db -1 ; end
+	
 RangerMGroup:
 
 RangerFGroup:

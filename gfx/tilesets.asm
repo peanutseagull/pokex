@@ -269,6 +269,14 @@ INCLUDE "data/tilesets/lighthouse_collision.asm"
 TilesetForestColl::
 INCLUDE "data/tilesets/forest_collision.asm"
 
+TilesetBattleTowerOutsideMeta::
+INCBIN "data/tilesets/battle_tower_outside_metatiles.bin"
+
+TilesetBattleTowerOutsideColl::
+INCLUDE "data/tilesets/battle_tower_outside_collision.asm"
+
+SECTION "Tileset Data 7", ROMX
+
 TilesetFacilityGFX::
 INCBIN "gfx/tilesets/facility.2bpp.lz"
 
@@ -278,53 +286,7 @@ INCBIN "data/tilesets/facility_metatiles.bin"
 TilesetFacilityColl::
 INCLUDE "data/tilesets/facility_collision.asm"
 
-TilesetBattleTowerOutsideMeta::
-INCBIN "data/tilesets/battle_tower_outside_metatiles.bin"
-
-TilesetBattleTowerOutsideColl::
-INCLUDE "data/tilesets/battle_tower_outside_collision.asm"
-
-TilesetBetaWordRoomMeta::
-INCBIN "data/tilesets/beta_word_room_metatiles.bin"
-
-TilesetBetaWordRoomColl::
-TilesetHoOhWordRoomColl::
-TilesetKabutoWordRoomColl::
-TilesetOmanyteWordRoomColl::
-TilesetAerodactylWordRoomColl::
-INCLUDE "data/tilesets/beta_word_room_collision.asm"
-
-
-SECTION "Tileset Data 7", ROMX
-
-TilesetRuinsOfAlphGFX::
-TilesetBetaWordRoomGFX::
-TilesetHoOhWordRoomGFX::
-TilesetKabutoWordRoomGFX::
-TilesetOmanyteWordRoomGFX::
-TilesetAerodactylWordRoomGFX::
-INCBIN "gfx/tilesets/ruins_of_alph.2bpp.lz"
-
-TilesetRuinsOfAlphMeta::
-INCBIN "data/tilesets/ruins_of_alph_metatiles.bin"
-
-TilesetRuinsOfAlphColl::
-INCLUDE "data/tilesets/ruins_of_alph_collision.asm"
-
-
 SECTION "Tileset Data 8", ROMX
-
-TilesetHoOhWordRoomMeta::
-INCBIN "data/tilesets/ho_oh_word_room_metatiles.bin"
-
-TilesetKabutoWordRoomMeta::
-INCBIN "data/tilesets/kabuto_word_room_metatiles.bin"
-
-TilesetOmanyteWordRoomMeta::
-INCBIN "data/tilesets/omanyte_word_room_metatiles.bin"
-
-TilesetAerodactylWordRoomMeta::
-INCBIN "data/tilesets/aerodactyl_word_room_metatiles.bin"
 
 TilesetTraditionalHouseGFX::
 INCBIN "gfx/tilesets/traditional_house.2bpp.lz"
@@ -334,3 +296,12 @@ INCBIN "data/tilesets/traditional_house_metatiles.bin"
 
 TilesetTraditionalHouseColl::
 INCLUDE "data/tilesets/traditional_house_collision.asm"
+
+TilesetKalosCoastalGFX::
+INCBIN "gfx/tilesets/kalos_coastal.2bpp.lz"
+
+TilesetKalosCoastalMeta::
+INCBIN "data/tilesets/kalos_coastal_metatiles.bin"
+
+TilesetKalosCoastalColl::
+INCLUDE "data/tilesets/kalos_coastal_collision.asm"

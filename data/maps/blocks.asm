@@ -39,7 +39,11 @@ SantaluneHouse3_Blocks:
 SantaluneHouse4_Blocks:
 CamphrierHouse1_Blocks:
 BerryFieldsHouse_Blocks:
+AmbretteHouse_Blocks:
 	INCBIN "maps/House1.blk"
+	
+SantaluneBoutique_Blocks:
+	INCBIN "maps/Boutique.blk"
 	
 CamphrierHouse2_Blocks:
 	INCBIN "maps/CamphrierHouse2.blk"
@@ -134,8 +138,23 @@ PlayersHouse1F_Blocks:
 SerenasHouse1F_Blocks:
 	INCBIN "maps/PlayersHouse1F.blk"
 
-;Route31VioletGate_Blocks:
-	;INCBIN "maps/EastWestGate.blk"
+ConnectingCave_Blocks:
+	INCBIN "maps/ConnectingCave.blk"
+	
+Route8Upper_Blocks:
+	INCBIN "maps/Route8Upper.blk"
+	
+AmbretteTown_Blocks:
+	INCBIN "maps/AmbretteTown.blk"
+	
+Route9Gate_Blocks:
+	INCBIN "maps/EastWestGate.blk"
+	
+Route9_Blocks:
+	INCBIN "maps/Route9.blk"
+	
+AmbretteAquarium_Blocks:
+	INCBIN "maps/AmbretteAquarium.blk"
 
 SECTION "Map Blocks 2", ROMX
 
@@ -213,18 +232,26 @@ SycamoreLab2F_Blocks:
 SycamoreLab3F_Blocks:
 	INCBIN "maps/SycamoreLab3F.blk"
 	
+CoiffureClips_Blocks:
+	INCBIN "maps/CoiffureClips.blk"
+	
+TrainerPrStudio_Blocks:
+	INCBIN "maps/TrainerPrStudio.blk"
+	
+; RestaurantLeNah_Blocks:
+	; INCBIN "maps/RestaurantLeNah.blk"
+	
 CyllageCity_Blocks:
 	INCBIN "maps/CyllageCity.blk"
 	
 HotelCamphrier1F_Blocks:
+HotelAmbrette1F_Blocks:
 CyllageHotel_Blocks:
 	INCBIN "maps/Hotel1F.blk"
 	
 HotelCamphrier2F_Blocks:
+HotelAmbrette2F_Blocks:
 	INCBIN "maps/Hotel2F.blk"
-	
-AmbretteTown_Blocks:
-	INCBIN "maps/AmbretteTown.blk"
 	
 GeosengeTown_Blocks:
 	INCBIN "maps/GeosengeTown.blk"
@@ -260,12 +287,14 @@ AquacordeMart_Blocks:
 SantaluneMart_Blocks:
 LumioseSouthMart_Blocks:
 CamphrierMart_Blocks:
+AmbretteMart_Blocks:
 	INCBIN "maps/Mart.blk"
 
 AquacordePokecenter1F_Blocks:
 SantalunePokecenter1F_Blocks:
 LumioseSouthPokecenter1F_Blocks:
 CamphrierPokecenter1F_Blocks:
+AmbrettePokecenter1F_Blocks:
 	INCBIN "maps/Pokecenter1F.blk"
 
 ; GoldenrodDeptStore1F_Blocks:

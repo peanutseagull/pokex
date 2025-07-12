@@ -64,14 +64,6 @@ INCLUDE "gfx/tilesets/cave_palette_map.asm"
 TilesetParkPalMap:
 INCLUDE "gfx/tilesets/park_palette_map.asm"
 
-TilesetRuinsOfAlphPalMap:
-TilesetBetaWordRoomPalMap:
-TilesetHoOhWordRoomPalMap:
-TilesetKabutoWordRoomPalMap:
-TilesetOmanyteWordRoomPalMap:
-TilesetAerodactylWordRoomPalMap:
-INCLUDE "gfx/tilesets/ruins_of_alph_palette_map.asm"
-
 TilesetRadioTowerPalMap:
 INCLUDE "gfx/tilesets/radio_tower_palette_map.asm"
 
@@ -107,6 +99,9 @@ INCLUDE "gfx/tilesets/battle_tower_inside_palette_map.asm"
 
 TilesetBattleTowerOutsidePalMap:
 INCLUDE "gfx/tilesets/battle_tower_outside_palette_map.asm"
+
+TilesetKalosCoastalPalMap:
+INCLUDE "gfx/tilesets/kalos_coastal_palette_map.asm"
 
 MapGroupPalettes: ; unreferenced
 ; entries correspond to MAPGROUP_* constants

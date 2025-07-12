@@ -11,8 +11,8 @@ OutdoorSprites:
 	dw LumioseGroupSprites
 	dw CamphrierGroupSprites
 	dw ParfumGardenGroupSprites
-	dw CyllageGroupSprites
 	dw AmbretteGroupSprites
+	dw CyllageGroupSprites
 	dw GeosengeGroupSprites
 	dw ShalourGroupSprites
 	dw CoumarineGroupSprites
@@ -109,6 +109,7 @@ CamphrierGroupSprites:
 	db 0
 	
 ParfumGardenGroupSprites:
+; Parfum Palace Gardens
 	db SPRITE_LINK_RECEPTIONIST
 	db SPRITE_CLERK
 	db SPRITE_MONSTER
@@ -123,31 +124,24 @@ ParfumGardenGroupSprites:
 	db SPRITE_POKE_BALL
 	db 0
 	
-CyllageGroupSprites:
-	db SPRITE_SUPER_NERD
-	db SPRITE_FISHER
-	db SPRITE_YOUNGSTER
-	db SPRITE_ROCKER
-	db SPRITE_BEAUTY
-	; 5 of max 9 walking sprites
-	db SPRITE_TWIN
-	db SPRITE_POKE_BALL
-	db SPRITE_FRUIT_TREE
-	db 0
-	
 AmbretteGroupSprites:
-	db SPRITE_SUPER_NERD
-	db SPRITE_FISHER
+; Route 8 Upper, Ambrette, Route 9
+	db SPRITE_LASS
 	db SPRITE_YOUNGSTER
+	db SPRITE_BLACK_BELT
+	db SPRITE_COOLTRAINER_M
 	db SPRITE_ROCKER
-	db SPRITE_BEAUTY
 	; 5 of max 9 walking sprites
-	db SPRITE_TWIN
+	db SPRITE_BEAUTY
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_BOULDER
+	db SPRITE_ROCK
 	db 0
 	
+CyllageGroupSprites:
 GeosengeGroupSprites:
+; Route 8 Lower, Cyllage, Route 10, Geosenge, Route 11
 	db SPRITE_SUPER_NERD
 	db SPRITE_FISHER
 	db SPRITE_YOUNGSTER
@@ -157,8 +151,9 @@ GeosengeGroupSprites:
 	db SPRITE_TWIN
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
+	db SPRITE_ROCK
 	db 0
-	
+
 ShalourGroupSprites:
 	db SPRITE_SUPER_NERD
 	db SPRITE_FISHER

@@ -57,6 +57,9 @@ ENDM
 	
 	newgroup DUNGEONS											  ;  3
 	map_const SANTALUNE_FOREST,							   20, 24 ;  1
+	map_const CONNECTING_CAVE,							   25, 15 ;  2
+	; map_const GLITTERING_CAVE_							1,  1 ;  3
+	; map_const GLITTERING_CAVE_							1,  1 ;  4
 	endgroup
 	
 	newgroup SANTALUNE											  ;  4
@@ -73,6 +76,7 @@ ENDM
 	map_const SANTALUNE_HOUSE_3,							4,  4 ; 11
 	map_const SANTALUNE_HOUSE_4,							4,  4 ; 12
 	map_const EARLS_POKEMON_ACADEMY,                        4,  8 ; 13
+	map_const SANTALUNE_BOUTIQUE,						    8,  3 ; 14
 	endgroup
 	
 	newgroup LUMIOSE											  ;  5
@@ -93,7 +97,10 @@ ENDM
 	map_const SYCAMORE_LAB_1F,								4,  3 ; 15
 	map_const SYCAMORE_LAB_2F,								6,  4 ; 16
 	map_const SYCAMORE_LAB_3F,								6,  4 ; 17
-	map_const ROUTE_5_LUMIOSE_GATE,							5,  4 ; 18
+	map_const COIFFURE_CLIPS,							    7,  4 ; 18
+	; map_const RESTAURANT_LE_NAH,							
+	map_const TRAINER_PR_STUDIO,						   10, 10 ; 20
+	map_const ROUTE_5_LUMIOSE_GATE,							5,  4 ;
 	map_const LUMIOSE_NORTHWEST,						   16, 17
 	map_const LUMIOSE_NORTHEAST,						   17, 17
 	; VERNAL AVENUE
@@ -105,15 +112,15 @@ ENDM
 	map_const CAFE_CLASSE,									6,  4
 	map_const BOUTIQUE_COUTURE,								6,  4
 	; ESTIVAL AVENUE
-	map_const ESTIVAL_AVENUE,							    8, 21 ;  5
-	map_const AUTUMNAL_AVENUE,								8, 21 ;  6
-	map_const HIBERNAL_AVENUE,								8, 21 ;  7
-	map_const ROUGE_PLAZA,								   10, 11 ;  8
-	map_const JAUNE_PLAZA,								   10, 11 ;  9
-	map_const MAGENTA_PLAZA,							   10, 11 ; 10
-	map_const BLEU_PLAZA,								   10, 11 ; 11
-	map_const VERT_PLAZA,								   10, 11 ; 12
-	map_const CENTRICO_PLAZA,							   20, 20 ; 13
+	map_const ESTIVAL_AVENUE,							    8, 21 ;
+	map_const AUTUMNAL_AVENUE,								8, 21 ;
+	map_const HIBERNAL_AVENUE,								8, 21 ;
+	map_const ROUGE_PLAZA,								   10, 11 ;
+	map_const JAUNE_PLAZA,								   10, 11 ;
+	map_const MAGENTA_PLAZA,							   10, 11 ;
+	map_const BLEU_PLAZA,								   10, 11 ;
+	map_const VERT_PLAZA,								   10, 11 ;
+	map_const CENTRICO_PLAZA,							   20, 20 ;
 	endgroup
 	
 	newgroup CAMPHRIER											  ;  6
@@ -165,13 +172,23 @@ ENDM
 	map_const PARFUM_PALACE_GARDEN_MAZE,				   15, 15 ; 8
 	endgroup
 	
-	newgroup CYLLAGE											  ; 10
-	map_const CYLLAGE_CITY,								    1,  1 ;  1
-	map_const CYLLAGE_HOTEL,							   14,  6 ;  9
+	newgroup AMBRETTE											  ; 10
+	map_const ROUTE_8_UPPER,							   16, 36 ;  1
+	map_const AMBRETTE_TOWN,							   19, 14 ;  2
+	map_const AMBRETTE_POKECENTER_1F,						5,  4 ;  3
+	map_const AMBRETTE_MART,								6,  4 ;  4
+	map_const AMBRETTE_HOUSE,								4,  4 ;  5
+	map_const HOTEL_AMBRETTE_1F,						   10,  6 ;  6
+	map_const HOTEL_AMBRETTE_2F,							9,  6 ;  7
+	; map_const FOSSIL_LAB								   xx, xx ;  8
+	map_const AMBRETTE_AQUARIUM,						    9,  9 ;  9
+	map_const ROUTE_9_GATE,									5,  4 ; 10
+	map_const ROUTE_9,									   38, 15 ; 11
 	endgroup
 	
-	newgroup AMBRETTE											  ; 11
-	map_const AMBRETTE_TOWN,							    1,  1 ;  1
+	newgroup CYLLAGE											  ; 11
+	map_const CYLLAGE_CITY,								    1,  1 ;  1
+	map_const CYLLAGE_HOTEL,							   14,  6 ;  9
 	endgroup
 	
 	newgroup GEOSENGE											  ; 12
@@ -490,7 +507,7 @@ ENDM
 	; endgroup
 
 	; newgroup PEWTER                                               ; 14
-;	map_const ROUTE_3,                                     30,  9 ;  1
+	; map_const ROUTE_3,                                     30,  9 ;  1
 	; map_const PEWTER_CITY,                                 20, 18 ;  2
 	; map_const PEWTER_NIDORAN_SPEECH_HOUSE,                  4,  4 ;  3
 	; map_const PEWTER_GYM,                                   5,  7 ;  4
@@ -615,8 +632,8 @@ ENDM
 	; endgroup
 
 	; newgroup VIRIDIAN                                             ; 23
-;	map_const ROUTE_2,                                     10, 27 ;  1
-;	map_const ROUTE_22,                                    20,  9 ;  2
+	; map_const ROUTE_2,                                     10, 27 ;  1
+	; map_const ROUTE_22,                                    20,  9 ;  2
 	; map_const VIRIDIAN_CITY,                               20, 18 ;  3
 	; map_const VIRIDIAN_GYM,                                 5,  9 ;  4
 	; map_const VIRIDIAN_NICKNAME_SPEECH_HOUSE,               4,  4 ;  5
@@ -625,25 +642,25 @@ ENDM
 	; map_const VIRIDIAN_MART,                                6,  4 ;  8
 	; map_const VIRIDIAN_POKECENTER_1F,                       5,  4 ;  9
 	; map_const VIRIDIAN_POKECENTER_2F_BETA,                  8,  4 ; 10
-;	map_const ROUTE_2_NUGGET_HOUSE,                         4,  4 ; 11
+	; map_const ROUTE_2_NUGGET_HOUSE,                         4,  4 ; 11
 	; map_const VICTORY_ROAD_GATE,                           10,  9 ; 13
 	; endgroup
 	
-;	newgroup NEW_BARK                                             ; 24
-;	map_const ROUTE_26,                                    10, 54 ;  1
-;	map_const ROUTE_27,                                    40,  9 ;  2
-;	map_const ROUTE_29,                                    30,  9 ;  3
-;	map_const NEW_BARK_TOWN,                               10,  9 ;  4
-;	map_const ELMS_LAB,                                     5,  6 ;  5
-;	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  6
-;	map_const PLAYERS_HOUSE_2F,                             4,  3 ;  7
-;	map_const PLAYERS_NEIGHBORS_HOUSE,                      4,  4 ;  8
-;	map_const ELMS_HOUSE,                                   4,  4 ;  9
-;	map_const ROUTE_26_HEAL_HOUSE,                          4,  4 ; 10
-;	map_const DAY_OF_WEEK_SIBLINGS_HOUSE,                   4,  4 ; 11
-;	map_const ROUTE_27_SANDSTORM_HOUSE,                     4,  4 ; 12
-;	map_const ROUTE_29_ROUTE_46_GATE,                       5,  4 ; 13
-;	endgroup
+	; newgroup NEW_BARK                                             ; 24
+	; map_const ROUTE_26,                                    10, 54 ;  1
+	; map_const ROUTE_27,                                    40,  9 ;  2
+	; map_const ROUTE_29,                                    30,  9 ;  3
+	; map_const NEW_BARK_TOWN,                               10,  9 ;  4
+	; map_const ELMS_LAB,                                     5,  6 ;  5
+	; map_const PLAYERS_HOUSE_1F,                             5,  4 ;  6
+	; map_const PLAYERS_HOUSE_2F,                             4,  3 ;  7
+	; map_const PLAYERS_NEIGHBORS_HOUSE,                      4,  4 ;  8
+	; map_const ELMS_HOUSE,                                   4,  4 ;  9
+	; map_const ROUTE_26_HEAL_HOUSE,                          4,  4 ; 10
+	; map_const DAY_OF_WEEK_SIBLINGS_HOUSE,                   4,  4 ; 11
+	; map_const ROUTE_27_SANDSTORM_HOUSE,                     4,  4 ; 12
+	; map_const ROUTE_29_ROUTE_46_GATE,                       5,  4 ; 13
+	; endgroup
 
 	; newgroup SAFFRON                                              ; 25
 	; map_const ROUTE_5,                                     10,  9 ;  1
@@ -663,18 +680,18 @@ ENDM
 	; map_const ROUTE_5_CLEANSE_TAG_HOUSE,                    4,  4 ; 15
 	; endgroup
 	
-;	newgroup CHERRYGROVE                                          ;
-;	map_const ROUTE_30,                                    10, 27 ;  1
-;	map_const ROUTE_31,                                    20,  9 ;  2
-;	map_const CHERRYGROVE_CITY,                            20,  9 ;  3
-;	map_const CHERRYGROVE_MART,                             6,  4 ;  4
-;	map_const CHERRYGROVE_POKECENTER_1F,                    5,  4 ;  5
-;	map_const CHERRYGROVE_GYM_SPEECH_HOUSE,                 4,  4 ;  6
-;	map_const GUIDE_GENTS_HOUSE,                            4,  4 ;  7
-;	map_const CHERRYGROVE_EVOLUTION_SPEECH_HOUSE,           4,  4 ;  8
-;	map_const ROUTE_30_BERRY_HOUSE,                         4,  4 ;  9
-;	map_const MR_POKEMONS_HOUSE,                            4,  4 ; 10
-;	map_const ROUTE_31_VIOLET_GATE,                         5,  4 ; 11
-;	endgroup
+	; newgroup CHERRYGROVE                                          ;
+	; map_const ROUTE_30,                                    10, 27 ;  1
+	; map_const ROUTE_31,                                    20,  9 ;  2
+	; map_const CHERRYGROVE_CITY,                            20,  9 ;  3
+	; map_const CHERRYGROVE_MART,                             6,  4 ;  4
+	; map_const CHERRYGROVE_POKECENTER_1F,                    5,  4 ;  5
+	; map_const CHERRYGROVE_GYM_SPEECH_HOUSE,                 4,  4 ;  6
+	; map_const GUIDE_GENTS_HOUSE,                            4,  4 ;  7
+	; map_const CHERRYGROVE_EVOLUTION_SPEECH_HOUSE,           4,  4 ;  8
+	; map_const ROUTE_30_BERRY_HOUSE,                         4,  4 ;  9
+	; map_const MR_POKEMONS_HOUSE,                            4,  4 ; 10
+	; map_const ROUTE_31_VIOLET_GATE,                         5,  4 ; 11
+	; endgroup
 
 DEF NUM_MAP_GROUPS EQU const_value ; 22

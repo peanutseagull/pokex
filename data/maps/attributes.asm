@@ -160,6 +160,9 @@ ENDM
 	map_attributes SycamoreLab1F, SYCAMORE_LAB_1F, $00, 0
 	map_attributes SycamoreLab2F, SYCAMORE_LAB_2F, $00, 0
 	map_attributes SycamoreLab3F, SYCAMORE_LAB_3F, $00, 0
+	map_attributes CoiffureClips, COIFFURE_CLIPS, $00, 0
+	; map_attributes RestaurantLeNah, RESTAURANT_LE_NAH, $00, 0
+	map_attributes TrainerPrStudio, TRAINER_PR_STUDIO, $00, 0
 	
 	map_attributes VernalAvenue, VERNAL_AVENUE, $71, 0
 	map_attributes StoneEmporium, STONE_EMPORIUM, $00, 0
@@ -241,7 +244,13 @@ ENDM
 	connection east, Route7East, ROUTE_7_EAST, -3
 	
 	map_attributes CyllageCity, CYLLAGE_CITY, $00, 0
-	map_attributes AmbretteTown, AMBRETTE_TOWN, $00, 0
+	
+	map_attributes AmbretteTown, AMBRETTE_TOWN, $35, NORTH
+	connection north, Route8Upper, ROUTE_8_UPPER, 1
+	
+	map_attributes Route8Upper, ROUTE_8_UPPER, $75, SOUTH
+	connection south, AmbretteTown, AMBRETTE_TOWN, -1 
+	
 	map_attributes GeosengeTown, GEOSENGE_TOWN, $00, 0
 	map_attributes ShalourCity, SHALOUR_CITY, $00, 0
 	map_attributes CoumarineCity, COUMARINE_CITY, $00, 0
@@ -273,6 +282,7 @@ ENDM
 	map_attributes SantaluneHouse3, SANTALUNE_HOUSE_3, $00, 0
 	map_attributes SantaluneHouse4, SANTALUNE_HOUSE_4, $00, 0
 	map_attributes EarlsPokemonAcademy, EARLS_POKEMON_ACADEMY, $00, 0
+	map_attributes SantaluneBoutique, SANTALUNE_BOUTIQUE, $00, 0
 	map_attributes Pokecenter2F, POKECENTER_2F, $00, 0
 	map_attributes TradeCenter, TRADE_CENTER, $00, 0
 	map_attributes Colosseum, COLOSSEUM, $00, 0
@@ -304,6 +314,16 @@ ENDM
 	map_attributes ParfumPalace2FRoom3, PARFUM_PALACE_2F_ROOM_3, $00, 0
 	map_attributes ParfumPalace2FRoom4, PARFUM_PALACE_2F_ROOM_4, $00, 0	
 	map_attributes ParfumPalace2FBalcony, PARFUM_PALACE_2F_BALCONY, $05, 0
+	map_attributes ConnectingCave, CONNECTING_CAVE, $09, 0
+	map_attributes AmbrettePokecenter1F, AMBRETTE_POKECENTER_1F, $00, 0
+	map_attributes AmbretteMart, AMBRETTE_MART, $00, 0
+	map_attributes AmbretteHouse, AMBRETTE_HOUSE, $00, 0
+	map_attributes HotelAmbrette1F, HOTEL_AMBRETTE_1F, $00, 0
+	map_attributes HotelAmbrette2F, HOTEL_AMBRETTE_2F, $00, 0
+	; map_attributes FossilLab
+	map_attributes AmbretteAquarium, AMBRETTE_AQUARIUM, $00, 0
+	map_attributes Route9Gate, ROUTE_9_GATE, $00, 0
+	map_attributes Route9, ROUTE_9, $00, 0
 
 	; map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
 	; connection west, Route29, ROUTE_29, 0

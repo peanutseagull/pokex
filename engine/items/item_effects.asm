@@ -43,7 +43,7 @@ ItemEffects:
 	dw VitaminEffect       ; PROTEIN
 	dw VitaminEffect       ; IRON
 	dw VitaminEffect       ; CARBOS
-	dw NoEffect            ; LUCKY_PUNCH
+	dw PokeBallEffect      ; DIVE_BALL
 	dw VitaminEffect       ; CALCIUM
 	dw RareCandyEffect     ; RARE_CANDY
 	dw XAccuracyEffect     ; X_ACCURACY
@@ -741,6 +741,7 @@ BallMultiplierFunctionTable:
 	dbw LOVE_BALL,   LoveBallMultiplier
 	dbw PARK_BALL,   ParkBallMultiplier
 	dbw QUICK_BALL,  QuickBallMultiplier
+	dbw DIVE_BALL,	 DiveBallMultiplier
 	db -1 ; end
 
 UltraBallMultiplier:
@@ -1086,6 +1087,31 @@ QuickBallMultiplier:
 .max
 	ld b, $ff
 	ret
+	
+DiveBallMultiplier:
+; multiply catch rate by 3.5 if surfing or fishing
+	ld a, [wPlayerState]
+	cp PLAYER_SURF
+	jr z, .water
+
+	ld a, [wBattleType]
+	cp BATTLETYPE_FISH
+	jr z, .water
+
+	ret
+
+.water
+	ld a, b
+	srl a
+rept 3
+	add b
+	jr c, .max
+endr
+	ret
+
+.max
+	ld b, $ff
+	ret	
 
 ; BallDodgedText and BallMissedText were used in Gen 1.
 

@@ -140,9 +140,11 @@ DEF KRIS EQU __trainer_class__
 	const LOIC
 	const HAMISH
 	const TYSON
+	const RHYS
 	
 	trainerclass RISINGSTARF ; 21
 	const LOUISE
+	const PAULETTE
 	
 	trainerclass TWINS ; 22
 	const MAYANDJOY1
@@ -190,6 +192,7 @@ DEF KRIS EQU __trainer_class__
 	trainerclass PSYCHIC_T ; 30
 	
 	trainerclass BLACKBELT_T ; 31
+	const CADOC
 	
 	trainerclass BRAINS_BRAWN ; 32
 
@@ -250,16 +253,26 @@ DEF KRIS EQU __trainer_class__
 	trainerclass BREEDERM ; 4a
 	
 	trainerclass BREEDERF ; 4b
+	const MERCY
 
 	trainerclass SKYTRAINERM ; 4c
+	const HOWE
+	const COLM
 	
 	trainerclass SKYTRAINERF ; 4d
+	const AVEZA
 	
 	trainerclass FISHER ; 4e
+	const WHARTON
+	const SHAD
 	
 	trainerclass SWIMMERM ; 4f
+	const ESTABAN
+	const RAMSES
 
 	trainerclass SWIMMERF ; 50
+	const GENEVIEVE
+	const MARISSA
 	
 	trainerclass RANGERM ; 51
 	

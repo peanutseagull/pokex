@@ -35,7 +35,7 @@ TrainerGroups:
 	dw SchoolboyGroup
 	dw SchoolgirlGroup
 	dw RisingStarMGroup
-	dw RisingStarFGruop
+	dw RisingStarFGroup
 	dw TwinsGroup
 	dw SkaterMGroup
 	dw SkaterFGroup
