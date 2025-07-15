@@ -175,7 +175,7 @@ ItemEffects:
 	dw PokeBallEffect      ; LEVEL_BALL
 	dw PokeBallEffect      ; LURE_BALL
 	dw PokeBallEffect      ; FAST_BALL
-	dw NoEffect            ; ITEM_A2
+	dw PokeBallEffect      ; DUSK_BALL
 	dw NoEffect            ; LIGHT_BALL
 	dw PokeBallEffect      ; FRIEND_BALL
 	dw PokeBallEffect      ; MOON_BALL
@@ -742,6 +742,7 @@ BallMultiplierFunctionTable:
 	dbw PARK_BALL,   ParkBallMultiplier
 	dbw QUICK_BALL,  QuickBallMultiplier
 	dbw DIVE_BALL,	 DiveBallMultiplier
+	dbw DUSK_BALL,	 DuskBallMultiplier
 	db -1 ; end
 
 UltraBallMultiplier:
@@ -1112,6 +1113,33 @@ endr
 .max
 	ld b, $ff
 	ret	
+	
+DuskBallMultiplier:
+; is it night?
+	ld a, [wTimeOfDay]
+	cp NITE
+	jr z, .night_or_cave
+; or are we in a cave?
+	ld a, [wEnvironment]
+	cp CAVE
+	ret nz ; neither night nor cave
+
+.night_or_cave
+; b is the catch rate
+; a := b + b + b == b × 3
+	ld a, b
+	add a
+	jr c, .max
+
+	add b
+	jr c, .max
+
+	ld b, a
+	ret
+
+.max
+	ld b, $ff
+	ret
 
 ; BallDodgedText and BallMissedText were used in Gen 1.
 
