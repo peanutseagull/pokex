@@ -1765,7 +1765,7 @@ TryCutOW::
 	call CheckPartyMove
 	jr c, .cant_cut
 
-	ld de, ENGINE_HIVEBADGE
+	ld de, ENGINE_ZEPHYRBADGE
 	call CheckEngineFlag
 	jr c, .cant_cut
 
