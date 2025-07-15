@@ -58,8 +58,8 @@ ENDM
 	newgroup DUNGEONS											  ;  3
 	map_const SANTALUNE_FOREST,							   20, 24 ;  1
 	map_const CONNECTING_CAVE,							   25, 15 ;  2
-	; map_const GLITTERING_CAVE_							1,  1 ;  3
-	; map_const GLITTERING_CAVE_							1,  1 ;  4
+	map_const GLITTERING_CAVE_ENTRANCE,					   12, 30 ;  3
+	map_const GLITTERING_CAVE_DEEP,							1,  1 ;  4
 	endgroup
 	
 	newgroup SANTALUNE											  ;  4
@@ -173,22 +173,23 @@ ENDM
 	endgroup
 	
 	newgroup AMBRETTE											  ; 10
-	map_const ROUTE_8_UPPER,							   16, 36 ;  1
-	map_const AMBRETTE_TOWN,							   19, 14 ;  2
+	map_const ROUTE_8_UPPER,							   16, 39 ;  1
+	map_const AMBRETTE_TOWN,							   19, 15 ;  2
 	map_const AMBRETTE_POKECENTER_1F,						5,  4 ;  3
 	map_const AMBRETTE_MART,								6,  4 ;  4
 	map_const AMBRETTE_HOUSE,								4,  4 ;  5
 	map_const HOTEL_AMBRETTE_1F,						   10,  6 ;  6
 	map_const HOTEL_AMBRETTE_2F,							9,  6 ;  7
-	; map_const FOSSIL_LAB								   xx, xx ;  8
+	map_const FOSSIL_LAB,								   10,  5 ;  8
 	map_const AMBRETTE_AQUARIUM,						    9,  9 ;  9
 	map_const ROUTE_9_GATE,									5,  4 ; 10
 	map_const ROUTE_9,									   38, 15 ; 11
 	endgroup
 	
 	newgroup CYLLAGE											  ; 11
-	map_const CYLLAGE_CITY,								    1,  1 ;  1
-	map_const CYLLAGE_HOTEL,							   14,  6 ;  9
+	map_const ROUTE_8_LOWER,							   19, 18 ;  1
+	map_const CYLLAGE_CITY,								    1,  1 ;  2
+	map_const CYLLAGE_HOTEL,							   14,  6 ;  
 	endgroup
 	
 	newgroup GEOSENGE											  ; 12

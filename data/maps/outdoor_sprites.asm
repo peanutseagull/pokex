@@ -125,7 +125,9 @@ ParfumGardenGroupSprites:
 	db 0
 	
 AmbretteGroupSprites:
-; Route 8 Upper, Ambrette, Route 9
+CyllageGroupSprites:
+GeosengeGroupSprites:
+; Route 8 Upper, Ambrette, Route 9, Route 8 Lower, Cyllage, Route 10, Geosenge, Route 11
 	db SPRITE_LASS
 	db SPRITE_YOUNGSTER
 	db SPRITE_BLACK_BELT
@@ -136,21 +138,6 @@ AmbretteGroupSprites:
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db SPRITE_BOULDER
-	db SPRITE_ROCK
-	db 0
-	
-CyllageGroupSprites:
-GeosengeGroupSprites:
-; Route 8 Lower, Cyllage, Route 10, Geosenge, Route 11
-	db SPRITE_SUPER_NERD
-	db SPRITE_FISHER
-	db SPRITE_YOUNGSTER
-	db SPRITE_ROCKER
-	db SPRITE_BEAUTY
-	; 5 of max 9 walking sprites
-	db SPRITE_TWIN
-	db SPRITE_POKE_BALL
-	db SPRITE_FRUIT_TREE
 	db SPRITE_ROCK
 	db 0
 

@@ -243,13 +243,19 @@ ENDM
 	map_attributes Route7West, ROUTE_7_WEST, $05, EAST
 	connection east, Route7East, ROUTE_7_EAST, -3
 	
-	map_attributes CyllageCity, CYLLAGE_CITY, $00, 0
+	map_attributes AmbretteTown, AMBRETTE_TOWN, $35, NORTH | EAST
+	connection north, Route8Lower, ROUTE_8_LOWER, 0
+	connection east, Route8Upper, ROUTE_8_UPPER, -33
 	
-	map_attributes AmbretteTown, AMBRETTE_TOWN, $35, NORTH
-	connection north, Route8Upper, ROUTE_8_UPPER, 1
+	map_attributes Route8Upper, ROUTE_8_UPPER, $75, WEST
+	connection west, AmbretteTown, AMBRETTE_TOWN, 33
 	
-	map_attributes Route8Upper, ROUTE_8_UPPER, $75, SOUTH
-	connection south, AmbretteTown, AMBRETTE_TOWN, -1 
+	map_attributes Route8Lower, ROUTE_8_LOWER, $35, NORTH | SOUTH
+	connection north, CyllageCity, CYLLAGE_CITY, 0
+	connection south, AmbretteTown, AMBRETTE_TOWN, 0
+	
+	map_attributes CyllageCity, CYLLAGE_CITY, $00, SOUTH
+	connection south, Route8Lower, ROUTE_8_LOWER, 0
 	
 	map_attributes GeosengeTown, GEOSENGE_TOWN, $00, 0
 	map_attributes ShalourCity, SHALOUR_CITY, $00, 0
@@ -320,11 +326,13 @@ ENDM
 	map_attributes AmbretteHouse, AMBRETTE_HOUSE, $00, 0
 	map_attributes HotelAmbrette1F, HOTEL_AMBRETTE_1F, $00, 0
 	map_attributes HotelAmbrette2F, HOTEL_AMBRETTE_2F, $00, 0
-	; map_attributes FossilLab
+	map_attributes FossilLab, FOSSIL_LAB, $00, 0
 	map_attributes AmbretteAquarium, AMBRETTE_AQUARIUM, $00, 0
 	map_attributes Route9Gate, ROUTE_9_GATE, $00, 0
 	map_attributes Route9, ROUTE_9, $00, 0
-
+	map_attributes GlitteringCaveEntrance, GLITTERING_CAVE_ENTRANCE, $09, 0
+	map_attributes GlitteringCaveDeep, GLITTERING_CAVE_DEEP, $09, 0
+	
 	; map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
 	; connection west, Route29, ROUTE_29, 0
 	; connection east, Route27, ROUTE_27, 0

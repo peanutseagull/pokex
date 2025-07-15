@@ -155,6 +155,15 @@ Route9_Blocks:
 	
 AmbretteAquarium_Blocks:
 	INCBIN "maps/AmbretteAquarium.blk"
+	
+GlitteringCaveEntrance_Blocks:
+	INCBIN "maps/GlitteringCaveEntrance.blk"
+	
+GlitteringCaveDeep_Blocks:
+	INCBIN "maps/GlitteringCaveDeep.blk"
+	
+FossilLab_Blocks:
+	INCBIN "maps/FossilLab.blk"
 
 SECTION "Map Blocks 2", ROMX
 
@@ -240,6 +249,9 @@ TrainerPrStudio_Blocks:
 	
 ; RestaurantLeNah_Blocks:
 	; INCBIN "maps/RestaurantLeNah.blk"
+	
+Route8Lower_Blocks:
+	INCBIN "maps/Route8Lower.blk"
 	
 CyllageCity_Blocks:
 	INCBIN "maps/CyllageCity.blk"

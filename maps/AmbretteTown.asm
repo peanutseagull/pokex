@@ -174,30 +174,30 @@ AmbretteTown_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events
-	warp_event 19,  3, AMBRETTE_POKECENTER_1F, 1
-	warp_event 29,  5, AMBRETTE_MART, 2
-	warp_event 13,  9, AMBRETTE_HOUSE, 1
-	warp_event 13, 15, HOTEL_AMBRETTE_1F, 1
-	warp_event 27, 12, ROUTE_9_GATE, 1
-	warp_event 27, 13, ROUTE_9_GATE, 2
-	warp_event 14,  3, AMBRETTE_AQUARIUM, 1
-	; warp_event 25, 11, FOSSIL_LAB, 1
+	warp_event 19,  5, AMBRETTE_POKECENTER_1F, 1
+	warp_event 27,  5, AMBRETTE_MART, 2
+	warp_event 13, 11, AMBRETTE_HOUSE, 1
+	warp_event 13, 17, HOTEL_AMBRETTE_1F, 1
+	warp_event 27, 14, ROUTE_9_GATE, 1
+	warp_event 27, 15, ROUTE_9_GATE, 2
+	warp_event 14,  5, AMBRETTE_AQUARIUM, 1
+	warp_event 25, 13, FOSSIL_LAB, 1
 	
 	def_coord_events
 	
 	def_bg_events
-	bg_event 13,  4, BGEVENT_READ, AmbretteAquariumSign
-	bg_event 16,  8, BGEVENT_READ, AmbretteTownSign
-	bg_event 23, 11, BGEVENT_READ, FossilLabSign
-	bg_event 13, 18, BGEVENT_ITEM, AmbretteTownHiddenXAttack
-	bg_event  9, 12, BGEVENT_ITEM, AmbretteTownHiddenRareCandy
+	bg_event 13,  6, BGEVENT_READ, AmbretteAquariumSign
+	bg_event 16, 10, BGEVENT_READ, AmbretteTownSign
+	bg_event 23, 13, BGEVENT_READ, FossilLabSign
+	bg_event 13, 20, BGEVENT_ITEM, AmbretteTownHiddenXAttack
+	bg_event  9, 14, BGEVENT_ITEM, AmbretteTownHiddenRareCandy
 	
 	def_object_events
-	object_event 17,  6, SPRITE_BEAUTY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmbretteTownRockSmashGirlScript, -1
-	object_event 20, 12, SPRITE_ROCKER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmbretteTownPunkGuyScript, -1
-	object_event 16, 18, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmbretteTownBeautyScript, -1
-	object_event 15, 20, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, AmbretteTownPearl, EVENT_AMBRETTE_TOWN_PEARL
-	object_event 11, 10, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmbretteTownRock, -1
-	object_event 10,  8, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmbretteTownRock, -1
-	object_event  9,  6, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmbretteTownRock, -1
-	object_event 12, 20, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmbretteTownRock, -1
+	object_event 17,  8, SPRITE_BEAUTY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmbretteTownRockSmashGirlScript, -1
+	object_event 20, 14, SPRITE_ROCKER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmbretteTownPunkGuyScript, -1
+	object_event 16, 20, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmbretteTownBeautyScript, -1
+	object_event 15, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, AmbretteTownPearl, EVENT_AMBRETTE_TOWN_PEARL
+	object_event 11, 12, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmbretteTownRock, -1
+	object_event 10, 10, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmbretteTownRock, -1
+	object_event  9,  8, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmbretteTownRock, -1
+	object_event 12, 22, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmbretteTownRock, -1

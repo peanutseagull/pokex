@@ -101,4 +101,5 @@ MapScenes::
 	scene_var PARFUM_PALACE_1F,                            wParfumPalace1FSceneID
 	scene_var PARFUM_PALACE_GARDEN_MAZE,                   wParfumPalaceGardenMazeSceneID
 	scene_var PARFUM_PALACE_2F_BALCONY,					   wParfumPalace2FBalconySceneID
+	scene_var FOSSIL_LAB,								   wFossilLabSceneID
 	db -1 ; end

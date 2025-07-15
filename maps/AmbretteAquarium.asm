@@ -210,8 +210,8 @@ AmbretteAquarium_MapEvents:
 	def_warp_events
 	warp_event 14, 17, AMBRETTE_TOWN, 7
 	warp_event 15, 17, AMBRETTE_TOWN, 7
-	; warp_event  0,  6, ROUTE_8_LOWER, 1
-	; warp_event  0,  7, ROUTE_8_LOWER, 1
+	warp_event  0,  6, ROUTE_8_LOWER, 1
+	warp_event  0,  7, ROUTE_8_LOWER, 2
 	
 	def_coord_events
 	
