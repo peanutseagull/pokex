@@ -144,7 +144,7 @@ DEF KRIS EQU __trainer_class__
 	
 	trainerclass RISINGSTARF ; 21
 	const LOUISE
-	const PAULETTE
+	const PAULA
 	
 	trainerclass TWINS ; 22
 	const MAYANDJOY1

@@ -7,6 +7,7 @@ Route8Lower_MapScripts:
 	
 Route8DemoOverScript:
 	opentext
+	faceplayer
 	checkevent EVENT_FOUND_ASSISTANT
 	iftrue .DemoOver
 	writetext Route8CantFindFossilText

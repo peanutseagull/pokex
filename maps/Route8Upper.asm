@@ -5,18 +5,18 @@ Route8Upper_MapScripts:
 	
 	def_callbacks
 	
-TrainerRisingStarPaulette:
-	trainer RISINGSTARF, PAULETTE, EVENT_BEAT_RISING_STAR_PAULETTE, RisingStarPauletteSeenText, RisingStarPauletteBeatenText, 0, .Script
+TrainerRisingStarPaula:
+	trainer RISINGSTARF, PAULA, EVENT_BEAT_RISING_STAR_PAULA, RisingStarPaulaSeenText, RisingStarPaulaBeatenText, 0, .Script
 	
 .Script:
 	endifjustbattled
 	opentext
-	writetext RisingStarPauletteAfterText
+	writetext RisingStarPaulaAfterText
 	waitbutton
 	closetext
 	end
 
-RisingStarPauletteSeenText:
+RisingStarPaulaSeenText:
 	text "DREAM BIG is what"
 	line "I say!"
 	
@@ -26,7 +26,7 @@ RisingStarPauletteSeenText:
 	cont "it on!!!"
 	done
 	
-RisingStarPauletteBeatenText:
+RisingStarPaulaBeatenText:
 	text "Wha-wha-what?!"
 	line "Is that CHAMPION"
 	cont "stuff all just a"
@@ -34,7 +34,7 @@ RisingStarPauletteBeatenText:
 	done
 ; Perhaps that future Champion stuff is all just a dream in the end…
 
-RisingStarPauletteAfterText:
+RisingStarPaulaAfterText:
 	text "OK. I'll settle"
 	line "for being part of"
 	cont "the ELITE FOUR!"
@@ -190,9 +190,9 @@ Route8Upper_MapEvents:
 	bg_event  9, 40, BGEVENT_ITEM, Route8HiddenEscapeRope
 	
 	def_object_events
-	object_event 16, 26, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 0, TrainerRisingStarPaulette, -1
-	object_event 24, 31, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 0, TrainerRisingStarRhys, -1
-	object_event 13, 39, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 0, TrainerBlackBeltCadoc, -1
+	object_event 16, 26, SPRITE_LASS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 2, TrainerRisingStarPaula, -1
+	object_event 24, 31, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerRisingStarRhys, -1
+	object_event 13, 39, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerBlackBeltCadoc, -1
 	object_event 27, 54, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 0, TrainerSkyTrainerHowe, -1
 	object_event 12, 18, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route8UpperHpUp, EVENT_ROUTE_8_UPPER_HP_UP
 	object_event 24, 56, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route8UpperLeafStone, EVENT_ROUTE_8_UPPER_LEAF_STONE

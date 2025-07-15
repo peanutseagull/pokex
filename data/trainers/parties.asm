@@ -376,7 +376,7 @@ RisingStarFGroup:
 	db -1 ; end
 	
 	; RISING STAR (2)
-	db "PAULETTE@", TRAINERTYPE_NORMAL
+	db "PAULA@", TRAINERTYPE_NORMAL
 	db 21, LARVITAR
 	db -1 ; end
 	
