@@ -600,10 +600,15 @@ SkytrainerMGroup:
 	db 20, PIDGEOTTO
 	db -1 ; end
 	
-	; SKYTRAINERF (2)
+	; SKYTRAINERM (2)
 	db "COLM@", TRAINERTYPE_NORMAL
 	db 30, MANTINE
 	db 31, JUMPLUFF
+	db -1 ; end
+	
+	; SKYTRAINER (3)
+	db "ORION@", TRAINERTYPE_NORMAL
+	db 25, LEDIAN
 	db -1 ; end
 
 SkytrainerFGroup:

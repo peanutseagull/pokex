@@ -133,8 +133,10 @@ GeosengeGroupSprites:
 	db SPRITE_BLACK_BELT
 	db SPRITE_COOLTRAINER_M
 	db SPRITE_ROCKER
-	; 5 of max 9 walking sprites
+	db SPRITE_FISHER
+	; 6 of max 9 walking sprites
 	db SPRITE_BEAUTY
+	db SPRITE_COOLTRAINER_F
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db SPRITE_BOULDER

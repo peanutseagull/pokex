@@ -258,6 +258,7 @@ DEF KRIS EQU __trainer_class__
 	trainerclass SKYTRAINERM ; 4c
 	const HOWE
 	const COLM
+	const ORION
 	
 	trainerclass SKYTRAINERF ; 4d
 	const AVEZA
