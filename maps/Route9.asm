@@ -228,7 +228,7 @@ Route9_MapEvents:
 	bg_event 59,  6, BGEVENT_ITEM, Route9HiddenSuperRepel
 	
 	def_object_events
-	object_event 64, 23, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TrainerSkyTrainerOrion, -1
+	object_event 64, 23, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 0, TrainerSkyTrainerOrion, -1
 	object_event 57,  6, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route9CooltrainerfScript, -1
 	object_event 66,  9, SPRITE_FISHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route9HikerScript, -1
 	object_event 33, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route9XDefend, EVENT_ROUTE_9_X_DEFEND
