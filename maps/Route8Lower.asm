@@ -54,7 +54,7 @@ Route8DemoOverText:
 	done
 	
 Route8LowerHeartScale:
-	itemball PEARL ; HEART_SCALE
+	itemball HEART_SCALE
 	
 Route8LowerFruitTree:
 	fruittree FRUITTREE_ROUTE_8_LOWER
@@ -69,7 +69,7 @@ Route8HiddenPearl:
 	hiddenitem PEARL, EVENT_ROUTE_8_LOWER_HIDDEN_PEARL ; can reappear?
 	
 Route8HiddenHeartScale:
-	hiddenitem PEARL, EVENT_ROUTE_8_LOWER_HIDDEN_HEART_SCALE ; HEART_SCALE, can reappear?
+	hiddenitem HEART_SCALE, EVENT_ROUTE_8_LOWER_HIDDEN_HEART_SCALE ; can reappear?
 	
 Route8LowerRock:
 	jumpstd SmashRockScript

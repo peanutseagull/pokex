@@ -45,7 +45,7 @@ ItemDescriptions:
 	dw SuperRepelDesc
 	dw MaxRepelDesc
 	dw DireHitDesc
-	dw TeruSama3Desc
+	dw HeartScaleDesc
 	dw FreshWaterDesc
 	dw SodaPopDesc
 	dw LemonadeDesc
@@ -434,8 +434,9 @@ DireHitDesc:
 	db   "Ups critical hit"
 	next "ratio. (1 BTL)@"
 
-TeruSama3Desc:
-	db   "?@"
+HeartScaleDesc:
+	db   "A lovely scale."
+	next "Highly coveted.@"
 
 FreshWaterDesc:
 	db   "Restores #MON"
