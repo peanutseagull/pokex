@@ -9,7 +9,7 @@ SpawnPoints:
 	table_width 4, SpawnPoints
 
 	spawn PLAYERS_HOUSE_2F,            3,  3
-	spawn SANTALUNE_POKECENTER_1F,      5,  3
+	spawn SANTALUNE_POKECENTER_1F,     5,  3
 
 	; spawn PALLET_TOWN,                 5,  6
 	; spawn VIRIDIAN_CITY,              23, 26
@@ -24,23 +24,23 @@ SpawnPoints:
 	; spawn CINNABAR_ISLAND,            11, 12
 	; spawn ROUTE_23,                    9,  6
 
-	; spawn NEW_BARK_TOWN,              13,  6
-	spawn VANIVILLE_TOWN,			  18,  5
-	; spawn CHERRYGROVE_CITY,           29,  4
-	spawn AQUACORDE_TOWN,			  15, 29
-	; spawn VIOLET_CITY,                31, 26
+	spawn VANIVILLE_TOWN,			  17,  6
+	spawn AQUACORDE_TOWN,			  15, 30
 	spawn SANTALUNE_CITY,			  23, 28
-	; spawn ROUTE_1,                 	 5,  5
-	; spawn AZALEA_TOWN,                15, 10
-	; spawn CIANWOOD_CITY,              23, 44
-	; spawn GOLDENROD_CITY,             15, 28
-	; spawn OLIVINE_CITY,               13, 22
-	; spawn ECRUTEAK_CITY,              23, 28
-	; spawn MAHOGANY_TOWN,              15, 14
-	; spawn LAKE_OF_RAGE,               21, 29
-	; spawn BLACKTHORN_CITY,            21, 30
-	; spawn SILVER_CAVE_OUTSIDE,        23, 20
-	; spawn FAST_SHIP_CABINS_SW_SSW_NW,  6,  2
+	spawn LUMIOSE_SOUTHEAST,		   1, 14
+	spawn CAMPHRIER_TOWN,			  21, 24
+	; spawn CYLLAGE_CITY,
+	spawn AMBRETTE_TOWN,			  19,  6
+	; spawn GEOSENGE_TOWN,
+	; spawn SHALOUR_CITY,
+	; spawn COUMARINE_CITY,
+	; spawn LAVERRE_CITY,
+	; spawn DENDEMILLE_TOWN,
+	; spawn ANISTAR_CITY,
+	; spawn COURIWAY_TOWN,
+	; spawn SNOWBELLE_CITY,
+	; spawn POKEMON_LEAGUE,
+	; spawn KILOUDE_CITY,
 
 	spawn N_A,                        -1, -1
 

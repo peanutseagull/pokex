@@ -91,17 +91,13 @@ DEF NUM_FISHGROUPS EQU const_value - 1
 	; const SPAWN_CINNABAR
 	; const SPAWN_INDIGO
 ; kalos
-;	const SPAWN_NEW_BARK
 	const SPAWN_VANIVILLE
 	const SPAWN_AQUACORDE
 	const SPAWN_SANTALUNE
-	; const SPAWN_LUMIOSE
-	; const SPAWN_LUMIOSE_NORTH
-	; const SPAWN_LUMIOSE_SOUTH
-	; const SPAWN_LUMIOSE_CENTRE
-	; const SPAWN_CAMPHRIER
+	const SPAWN_LUMIOSE
+	const SPAWN_CAMPHRIER
 	; const SPAWN_CYLLAGE
-	; const SPAWN_AMBRETTE
+	const SPAWN_AMBRETTE
 	; const SPAWN_GEOSENGE
 	; const SPAWN_SHALOUR
 	; const SPAWN_COUMARINE
@@ -120,30 +116,35 @@ DEF SPAWN_N_A EQU -1
 	const_def
 ; johto
 DEF JOHTO_FLYPOINT EQU const_value
-	const FLY_NEW_BARK
-	const FLY_CHERRYGROVE
-	const FLY_VIOLET
-	const FLY_AZALEA
-	const FLY_GOLDENROD
-	const FLY_ECRUTEAK
-	const FLY_OLIVINE
-	const FLY_CIANWOOD
-	const FLY_MAHOGANY
-	const FLY_LAKE_OF_RAGE
-	const FLY_BLACKTHORN
-	const FLY_MT_SILVER
+	const FLY_VANIVILLE
+	const FLY_AQUACORDE
+	const FLY_SANTALUNE
+	const FLY_LUMIOSE
+	const FLY_CAMPHRIER
+	; const FLY_CYLLAGE
+	const FLY_AMBRETTE
+	; const FLY_GEOSENGE
+	; const FLY_SHALOUR
+	; const FLY_COUMARINE
+	; const FLY_LAVERRE
+	; const FLY_DENDEMILLE
+	; const FLY_ANISTAR
+	; const FLY_COURIWAY
+	; const FLY_SNOWBELLE
+	; const FLY_LEAGUE
+	; const FLY_KILOUDE
 ; kanto
 DEF KANTO_FLYPOINT EQU const_value
-	const FLY_PALLET
-	const FLY_VIRIDIAN
-	const FLY_PEWTER
-	const FLY_CERULEAN
-	const FLY_VERMILION
-	const FLY_ROCK_TUNNEL
-	const FLY_LAVENDER
-	const FLY_CELADON
-	const FLY_SAFFRON
-	const FLY_FUCHSIA
-	const FLY_CINNABAR
-	const FLY_INDIGO
+	; const FLY_PALLET
+	; const FLY_VIRIDIAN
+	; const FLY_PEWTER
+	; const FLY_CERULEAN
+	; const FLY_VERMILION
+	; const FLY_ROCK_TUNNEL
+	; const FLY_LAVENDER
+	; const FLY_CELADON
+	; const FLY_SAFFRON
+	; const FLY_FUCHSIA
+	; const FLY_CINNABAR
+	; const FLY_INDIGO
 DEF NUM_FLYPOINTS EQU const_value
