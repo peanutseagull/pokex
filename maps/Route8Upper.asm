@@ -88,7 +88,7 @@ RisingStarRhysAfterText:
 	done
 	
 TrainerBlackBeltCadoc:
-	trainer BLACKBELT_T, CADOC, EVENT_BEAT_BLACK_BELT_CADOC, BlackBeltCadocSeenText, BlackBeltCadocBeatenText, BlackBeltCadocAfterText, 0, .Script
+	trainer BLACKBELT_T, CADOC, EVENT_BEAT_BLACK_BELT_CADOC, BlackBeltCadocSeenText, BlackBeltCadocBeatenText, 0, .Script
 	
 .Script:
 	endifjustbattled

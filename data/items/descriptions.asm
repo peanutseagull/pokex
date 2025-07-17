@@ -883,8 +883,8 @@ FastBallDesc:
 	next "ing fast #MON.@"
 
 DuskBallDesc:
-	db   "A BALL for night-@"
-	next "time or caves."
+	db   "A BALL for night-"
+	next "time or caves.@"
 
 LightBallDesc:
 	db   "An odd, electrical"
