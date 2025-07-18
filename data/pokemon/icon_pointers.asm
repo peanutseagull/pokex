@@ -294,6 +294,7 @@ IconPointers:
 	dw BinacleIcon
 	dw BarbaracleIcon
 	dw SkrelpIcon
+	dw DragalgeIcon
 	dw ClauncherIcon
 	dw ClawitzerIcon
 	dw HelioptileIcon
@@ -324,7 +325,6 @@ IconPointers:
 	dw DiancieIcon
 	dw HoopaIcon
 	dw VolcanionIcon
-	assert_table_length NUM_POKEMON
-	; dw NullIcon ; unused
+	assert_table_length NUM_POKEMON + 1
 	dw EggIcon
-	assert_table_length EGG
+	assert_table_length EGG + 1
