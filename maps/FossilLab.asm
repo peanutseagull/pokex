@@ -246,7 +246,31 @@ FossilLabSerenaText2:
 	done
 	
 FossilLabScientist1Script:
-	jumptextfaceplayer FossilLabScientist1Text
+	faceplayer
+	opentext 
+	checkevent EVENT_FOUND_ASSISTANT
+	iffalse .NotFound
+	checkevent EVENT_GOT_AERODACTYLITE
+	iffalse .GiveAerodactylite
+	writetext FossilLabScientist1AfterText
+	waitbutton
+	closetext
+	end
+	
+.NotFound:
+	writetext FossilLabScientist1Text
+	waitbutton
+	closetext
+	end
+	
+.GiveAerodactylite:
+	writetext FossilLabScientist1GiveText
+	; verbosegiveitem AERODACYLITE
+	writetext FossilLabScientist1GiveAfterText
+	waitbutton
+	closetext
+	setevent EVENT_GOT_AERODACTYLITE
+	end
 	
 FossilLabScientist1Text:
 	text "My assistant loves"
@@ -259,10 +283,70 @@ FossilLabScientist1Text:
 	cont "else."
 	done
 	
-FossilLabScientist2Script:
-	jumptextfaceplayer FossilLabScientist2Text
+FossilLabScientist1GiveText:
+	text "I hear I have"
+	line "you to thank for"
+	cont "my assistant's"
+	cont "return."
 	
-FossilLabScientist2Text:
+	para "Thank you very"
+	line "much! Take this as"
+	cont "my thanks!"
+	done
+	
+FossilLabScientist1GiveAfterText:
+	text "I had completely"
+	line "forgotten that we"
+	cont "found this when"
+	cont "we were digging up"
+	cont "Fossils."
+	
+	para "By the way, did"
+	line "you know that the"
+	cont "#MON AERODACTYL"
+	cont "can be restored"
+	cont "from OLD AMBER?"
+	
+	para "Sometimes you can"
+	line "find it when you"
+	cont "break a rock."
+	done
+	
+FossilLabScientist1AfterText:
+	text "Now, if you bring"
+	line "us any Fossils,"
+	
+	para "we will be happy"
+	line "to restore them"
+	cont "for you!"
+	
+	para "Sometimes you will"
+	line "find them in rocks"
+	cont "you break with"
+	cont "ROCK SMASH!"
+	
+	para "Do your best out"
+	line "there, and make"
+	cont "SYCAMORE proud!"
+	done
+	
+FossilLabScientist2Script:
+	faceplayer
+	opentext
+	checkevent EVENT_FOUND_ASSISTANT
+	iffalse .NotFound
+	writetext FossilLabScientist2Text2
+	waitbutton
+	closetext
+	end
+	
+.NotFound:
+	writetext FossilLabScientist2Text1
+	waitbutton
+	closetext
+	end
+	
+FossilLabScientist2Text1:
 	text "We have a machine"
 	line "that restores"
 	cont "Fossils and turns"
@@ -274,6 +358,14 @@ FossilLabScientist2Text:
 	cont "GLITTERING CAVE"
 	cont "knows how to use"
 	cont "it."
+	done
+	
+FossilLabScientist2Text2:
+	text "If you show the"
+	line "assistant a"
+	cont "Fossil, he will"
+	cont "turn it back into"
+	cont "a #MON."
 	done
 	
 FossilLabHikerScript:
@@ -289,13 +381,245 @@ FossilLabHikerText:
 	
 FossilLabScientist3Script:
 	jumptextfaceplayer FossilLabScientist3Text
-	end
 	
 FossilLabScientist3Text:
 	text "You must have come"
 	line "to the FOSSIL LAB"
 	cont "because you like"
 	cont "Fossils."
+	done
+	
+FossilLabAssistantScript:
+	faceplayer
+	opentext
+	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1 ; remove the next two lines to immediately receive the fossil
+	iftrue .GaveScientistFossil
+	checkevent EVENT_GAVE_SCIENTIST_OLD_AMBER
+	iftrue .GiveAerodactyl
+	checkevent EVENT_GAVE_SCIENTIST_JAW_FOSSIL
+	iftrue .GiveTyrunt
+	checkevent EVENT_GAVE_SCIENTIST_SAIL_FOSSIL
+	iftrue .GiveAmaura
+	writetext FossilLabAssistantIntroText
+	yesorno
+	iffalse .No
+	checkitem OLD_AMBER
+	iffalse .CheckJawFossil
+	getmonname STRING_BUFFER_3, AERODACTYL
+	writetext FossilLabAssistantOldAmberText
+	promptbutton
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1 ; remove this to immediately receive the fossil
+	setevent EVENT_GAVE_SCIENTIST_OLD_AMBER
+	takeitem OLD_AMBER
+	writetext FossilLabAssistantGiveText
+	waitbutton
+	sjump .GaveScientistFossil
+	
+.CheckJawFossil
+	checkitem JAW_FOSSIL
+	iffalse .CheckSailFossil
+	getmonname STRING_BUFFER_3, TYRUNT
+	writetext FossilLabAssistantJawFossilText
+	promptbutton
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1 ; remove this to immediately receive the fossil
+	setevent EVENT_GAVE_SCIENTIST_JAW_FOSSIL
+	takeitem JAW_FOSSIL
+	opentext
+	writetext FossilLabAssistantGiveText
+	waitbutton
+	sjump .GaveScientistFossil
+	
+.CheckSailFossil
+	checkitem SAIL_FOSSIL
+	iffalse .NoFossils
+	getmonname STRING_BUFFER_3, AMAURA
+	writetext FossilLabAssistantSailFossilText
+	promptbutton
+	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1 ; remove this to immediately receive the fossil
+	setevent EVENT_GAVE_SCIENTIST_SAIL_FOSSIL
+	takeitem SAIL_FOSSIL
+	writetext FossilLabAssistantGiveText
+	waitbutton
+	sjump .GaveScientistFossil
+	
+.NoFossils
+	writetext FossilLabAssistantNoFossilsText
+	waitbutton
+	closetext
+	end
+
+.No
+	writetext FossilLabAssistantNoText
+	waitbutton
+	closetext
+	end
+
+.GaveScientistFossil:
+	writetext FossilLabAssistantTimeText
+	waitbutton
+	closetext
+       ; older versions will use FadeBlackQuickly below instead
+	; special FadeOutToBlack ; uncomment the next five lines to immediately receive the fossil
+	; special ReloadSpritesNoPalettes
+	; playsound SFX_WARP_TO
+	; waitsfx
+	; pause 35
+	end ; replace this with "sjump FossilScientist" to immediately receive the fossil
+
+.GiveAerodactyl:
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .NoRoom
+	clearevent EVENT_GAVE_SCIENTIST_OLD_AMBER
+	writetext FossilLabAssistantDoneText
+	promptbutton
+	getmonname STRING_BUFFER_3, AERODACTYL
+	writetext FossilScientistReceiveText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	; waitbutton
+	; writetext FossilScientistMonText
+	givepoke AERODACTYL, 20
+	closetext
+	end
+
+.GiveTyrunt:
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .NoRoom
+	clearevent EVENT_GAVE_SCIENTIST_JAW_FOSSIL
+	writetext FossilLabAssistantDoneText
+	promptbutton
+	getmonname STRING_BUFFER_3, TYRUNT
+	writetext FossilScientistReceiveText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	; waitbutton
+	; writetext FossilScientistMonText
+	givepoke TYRUNT, 20
+	closetext
+	end
+
+.GiveAmaura:
+	readvar VAR_PARTYCOUNT
+	ifequal PARTY_LENGTH, .NoRoom
+	clearevent EVENT_GAVE_SCIENTIST_SAIL_FOSSIL
+	writetext FossilLabAssistantDoneText
+	promptbutton
+	getmonname STRING_BUFFER_3, AMAURA
+	writetext FossilScientistReceiveText
+	playsound SFX_CAUGHT_MON
+	waitsfx
+	; waitbutton
+	; writetext FossilScientistMonText
+	givepoke AMAURA, 20
+	closetext
+	end
+
+.NoRoom:
+	writetext FossilLabAssistantPartyFullText
+	waitbutton
+	closetext
+	end
+
+FossilLabAssistantIntroText:
+	text "I am researching"
+	line "#MON Fossils"
+	cont "here."
+	
+	para "You have a Fossil,"
+	line "don't you?"
+	
+	para "Shall I restore"
+	line "it for you?"
+	done
+	
+FossilLabAssistantNoText:
+	text "Oh, you'd like to"
+	line "keep it as a"
+	cont "Fossil? OK!"
+	done
+	
+FossilLabAssistantOldAmberText:
+	text "OK, then!"
+	
+	para "I'll turn that"
+	line "OLD AMBER back"
+	cont "into a #MON"
+	cont "for you!"
+	done
+	
+FossilLabAssistantJawFossilText:
+	text "OK, then!"
+	
+	para "I'll turn that"
+	line "JAW FOSSIL back"
+	cont "into a #MON"
+	cont "for you!"
+	done
+	
+FossilLabAssistantSailFossilText:
+	text "OK, then!"
+	
+	para "I'll turn that"
+	line "SAIL FOSSIL back"
+	cont "into a #MON"
+	cont "for you!"
+	done
+	
+FossilLabAssistantNoFossilsText:
+	text "You don't have a"
+	line "Fossil? That's too"
+	cont "bad."
+	
+	para "If you find one,"
+	line "bring it to me!"
+	done
+
+FossilLabAssistantPartyFullText:
+	text "Where were you?"
+
+	para "Your Fossil has"
+	line "been restored"
+	cont "back into a"
+	cont "#MON!"
+
+	para "Oh no! Your party"
+	line "is full!"
+	done
+
+FossilLabAssistantTimeText:
+	text "The machine could"
+	line "take a bit of"
+	cont "time,"
+	
+	para "why don't you go"
+	line "for a short walk?"
+	done
+
+FossilLabAssistantDoneText:
+	text "Where were you?"
+
+	para "Your Fossil has"
+	line "been restored"
+	cont "back into a"
+	cont "#MON!"
+	
+	para "Please take good"
+	line "care of it."
+	done
+
+FossilLabAssistantGiveText:
+	text "So! You hurry and"
+	line "give me that!"
+
+	para "<PLAYER> handed"
+	line "over the fossil."
+	done
+
+FossilScientistReceiveText:
+	text "<PLAYER> received"
+	line "@"
+	text_ram wStringBuffer3
+	text "!"
 	done
 	
 FossilLab_MapEvents:
@@ -313,7 +637,8 @@ FossilLab_MapEvents:
 	
 	def_object_events
 	object_event 11,  1, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_MET_FOSSIL_SCIENTIST
-	object_event 16,  4, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FossilLabScientist1Script, EVENT_FOUND_ASSISTANT
-	object_event 17,  5, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FossilLabScientist2Script, EVENT_FOUND_ASSISTANT
+	object_event 16,  4, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FossilLabScientist1Script, -1
+	object_event 17,  5, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FossilLabScientist2Script, -1
 	object_event  1,  3, SPRITE_FISHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FossilLabHikerScript, -1
 	object_event  2,  7, SPRITE_SCIENTIST, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FossilLabScientist3Script, -1
+	object_event  6,  1, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, FossilLabAssistantScript, EVENT_ASSISTANT_IN_FOSSIL_LAB
