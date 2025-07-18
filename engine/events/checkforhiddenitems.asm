@@ -103,7 +103,9 @@ RockItemEncounter:
 	
 .RockItems:
 	db 1, MAX_REVIVE
+	db 1, OLD_AMBER
 	db 2, THICK_CLUB
+	db 2, KINGS_ROCK
 	db 4, NUGGET
 	db 6, STAR_PIECE
 	db 12, BIG_PEARL
