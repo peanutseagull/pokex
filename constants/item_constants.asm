@@ -152,9 +152,9 @@
 	const DRAGON_FANG  ; 90
 	const LINK_CABLE   ; 91
 	const LEFTOVERS    ; 92
-	const ITEM_93      ; 93 UNUSED
-	const ITEM_94      ; 94 UNUSED
-	const ITEM_95      ; 95 UNUSED
+	const JAW_FOSSIL   ; 93
+	const SAIL_FOSSIL  ; 94
+	const OLD_AMBER    ; 95
 	const MYSTERYBERRY ; 96
 	const DRAGON_SCALE ; 97
 	const BERSERK_GENE ; 98 UNNECESSARY
