@@ -395,4 +395,32 @@ JohtoGrassWildMons:
 	db 17, RHYHORN
 	end_grass_wildmons
 	
+	def_grass_wildmons GLITTERING_CAVE_ENTRANCE
+	db 6 percent, 6 percent, 6 percent
+	; morn
+	db 16, MACHOP
+	db 16, CUBONE
+	db 17, RHYHORN
+	db 18, ONIX
+	db 18, KANGASKHAN
+	db 16, GLIGAR
+	db 16, GLIGAR
+	; day
+	db 16, MACHOP
+	db 16, CUBONE
+	db 17, RHYHORN
+	db 18, ONIX
+	db 18, KANGASKHAN
+	db 16, GLIGAR
+	db 16, GLIGAR
+	; nite
+	db 16, MACHOP
+	db 16, CUBONE
+	db 17, RHYHORN
+	db 18, ONIX
+	db 18, KANGASKHAN
+	db 16, GLIGAR
+	db 16, GLIGAR
+	end_grass_wildmons
+	
 	db -1 ; end
