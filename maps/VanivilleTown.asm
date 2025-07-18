@@ -359,7 +359,7 @@ Text_LetsGoTrevor:
 
 Text_UmmAkshually:
 	text "TREVOR: Umm pardon"
-	line "me, but.."
+	line "me, but…"
 	
 	para "I have something"
 	line "for you guys too."
