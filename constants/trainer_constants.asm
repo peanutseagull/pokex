@@ -217,8 +217,12 @@ DEF KRIS EQU __trainer_class__
 	trainerclass OWNER ; 3c
 	
 	trainerclass GRUNTM ; 3d
+	const GRUNTM_1
+	const GRUNTM_2
 	
 	trainerclass GRUNTF ; 3e
+	const GRUNTF_1
+	const GRUNTF_2
 	
 	trainerclass ADMINM ; 3f
 	

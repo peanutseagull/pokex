@@ -102,4 +102,5 @@ MapScenes::
 	scene_var PARFUM_PALACE_GARDEN_MAZE,                   wParfumPalaceGardenMazeSceneID
 	scene_var PARFUM_PALACE_2F_BALCONY,					   wParfumPalace2FBalconySceneID
 	scene_var FOSSIL_LAB,								   wFossilLabSceneID
+	scene_var GLITTERING_CAVE_DEEP,						   wGlitteringCaveDeepSceneID
 	db -1 ; end

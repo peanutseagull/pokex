@@ -59,7 +59,7 @@ ENDM
 	map_const SANTALUNE_FOREST,							   20, 24 ;  1
 	map_const CONNECTING_CAVE,							   25, 15 ;  2
 	map_const GLITTERING_CAVE_ENTRANCE,					   12, 30 ;  3
-	map_const GLITTERING_CAVE_DEEP,							1,  1 ;  4
+	map_const GLITTERING_CAVE_DEEP,						   15, 14 ;  4
 	endgroup
 	
 	newgroup SANTALUNE											  ;  4

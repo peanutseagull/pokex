@@ -3186,8 +3186,9 @@ wParfumPalace1FSceneID::						  db
 wParfumPalaceGardenMazeSceneID::				  db
 wParfumPalace2FBalconySceneID::					  db
 wFossilLabSceneID::								  db
+wGlitteringCaveDeepSceneID::					  db
 
-	ds 38
+	ds 37
 
 ; fight counts
 wJackFightCount::    db

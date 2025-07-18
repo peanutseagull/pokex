@@ -518,9 +518,33 @@ MaidGroup:
 OwnerGroup:
 
 GruntMGroup:
+	; GRUNTM (1)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 20, HOUNDOUR
+	db 20, ZUBAT
+	db -1 ; end
+	
+	; GRUNTM (2)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 23, PANCHAM
+	db 23, NIDORINO
+	db 23, GRANBULL
+	db -1 ; end
 
 GruntFGroup:
-
+	; GRUNTF (1)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 21, EKANS
+	db 21, RAICHU
+	db -1 ; end
+	
+	; GRUNTF (2)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 23, PANCHAM
+	db 23, NIDORINO
+	db 23, GRANBULL
+	db -1 ; end
+	
 AdminMGroup:
 
 AdminFGroup:
