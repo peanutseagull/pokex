@@ -6,7 +6,7 @@ PokemonPicPointers::
 	dba BulbasaurFrontpic
 	dba BulbasaurBackpic
 	dba IvysaurFrontpic
-	dba IvysaurFrontpic
+	dba IvysaurBackpic
 	dba VenusaurFrontpic
 	dba VenusaurBackpic
 	dba CharmanderFrontpic

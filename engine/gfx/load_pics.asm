@@ -117,14 +117,9 @@ _GetFrontpic:
 
 GetFrontpicPointer:
 	ld a, [wCurPartySpecies]
-	cp EGG
-	jr z, .unown
 	ld a, [wCurPartySpecies]
 	ld d, BANK(PokemonPicPointers)
 	jr .ok
-.unown
-	ld a, [wUnownLetter]
-	ld d, BANK(UnownPicPointers)
 .ok
 	; These are assumed to be at the same address in their respective banks.
 	assert PokemonPicPointers == UnownPicPointers
