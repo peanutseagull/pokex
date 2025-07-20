@@ -17,5 +17,5 @@
 	dn EGG_WATER_3, EGG_WATER_3 ; egg groups
 
 	; tm/hm learnset
-	tmhm HEADBUTT
+	tmhm HEADBUTT, ROCK_SMASH
 	; end

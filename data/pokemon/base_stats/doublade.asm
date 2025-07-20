@@ -17,5 +17,5 @@
 	dn EGG_MINERAL, EGG_MINERAL ; egg groups
 
 	; tm/hm learnset
-	tmhm HEADBUTT
+	tmhm HEADBUTT, ROCK_SMASH
 	; end
