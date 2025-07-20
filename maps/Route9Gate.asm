@@ -76,7 +76,7 @@ Route9GateBeautyScript:
 	iftrue .AlreadyReceivedItem
 	writetext Route9GateBeautyHelmetText
 	promptbutton
-	verbosegiveitem HARD_STONE ; ROCKY_HELMET
+	verbosegiveitem ROCKY_HELMET
 	setevent EVENT_RECEIVED_ROCKY_HELMET
 .AlreadyReceivedItem:
 	writetext Route9GateBeautyText
