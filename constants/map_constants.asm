@@ -98,7 +98,7 @@ ENDM
 	map_const SYCAMORE_LAB_2F,								6,  4 ; 16
 	map_const SYCAMORE_LAB_3F,								6,  4 ; 17
 	map_const COIFFURE_CLIPS,							    7,  4 ; 18
-	; map_const RESTAURANT_LE_NAH,							
+	map_const RESTAURANT_LE_NAH,							9, 10 ; 19
 	map_const TRAINER_PR_STUDIO,						   10, 10 ; 20
 	map_const ROUTE_5_LUMIOSE_GATE,							5,  4 ;
 	map_const LUMIOSE_NORTHWEST,						   16, 17

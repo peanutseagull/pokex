@@ -3083,10 +3083,11 @@ wExpShareToggle:: db
 wTradeFlags:: flag_array NUM_NPC_TRADES
 	ds 1
 wMooMooBerries:: db
+wRestaurantLeNahVictories:: db
 wUndergroundSwitchPositions:: db
 wFurfrouPosition:: db
 
-	ds 13
+	ds 12
 
 ; map scene ids
 wPokecenter2FSceneID::                            db

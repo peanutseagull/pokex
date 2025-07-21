@@ -247,8 +247,8 @@ CoiffureClips_Blocks:
 TrainerPrStudio_Blocks:
 	INCBIN "maps/TrainerPrStudio.blk"
 	
-; RestaurantLeNah_Blocks:
-	; INCBIN "maps/RestaurantLeNah.blk"
+RestaurantLeNah_Blocks:
+	INCBIN "maps/Restaurant.blk"
 	
 Route8Lower_Blocks:
 	INCBIN "maps/Route8Lower.blk"

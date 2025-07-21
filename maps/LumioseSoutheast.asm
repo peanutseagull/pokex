@@ -172,7 +172,7 @@ LumioseSoutheast_MapEvents:
 	warp_event  1, 31, ROUTE_5_LUMIOSE_GATE, 2
 	warp_event  8, 27, TRAINER_PR_STUDIO, 1
 	warp_event  9, 27, TRAINER_PR_STUDIO, 2
-	; warp_event 18,  3, RESTAURANT_LE_NAH, 1
+	warp_event 18,  3, RESTAURANT_LE_NAH, 1
 	
 	def_coord_events
 	

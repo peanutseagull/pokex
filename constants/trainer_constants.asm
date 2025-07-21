@@ -209,6 +209,9 @@ DEF KRIS EQU __trainer_class__
 	trainerclass WAITRESS ; 38
 	
 	trainerclass CHEF ; 39
+	const ROGER_1
+	const ROGER_2
+	const ROGER_3
 	
 	trainerclass BUTLER ; 3a
 	

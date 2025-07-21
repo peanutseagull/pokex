@@ -161,7 +161,7 @@ ENDM
 	map_attributes SycamoreLab2F, SYCAMORE_LAB_2F, $00, 0
 	map_attributes SycamoreLab3F, SYCAMORE_LAB_3F, $00, 0
 	map_attributes CoiffureClips, COIFFURE_CLIPS, $00, 0
-	; map_attributes RestaurantLeNah, RESTAURANT_LE_NAH, $00, 0
+	map_attributes RestaurantLeNah, RESTAURANT_LE_NAH, $00, 0
 	map_attributes TrainerPrStudio, TRAINER_PR_STUDIO, $00, 0
 	
 	map_attributes VernalAvenue, VERNAL_AVENUE, $71, 0
