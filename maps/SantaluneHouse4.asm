@@ -10,21 +10,22 @@ SantaluneHouse4YoungsterScript:
 	opentext
 	checkevent EVENT_SANTALUNE_CITY_GREAT_BALL
 	iftrue .AlreadyGotItem
-	writetext YoungsterGreatBallText
-	giveitem GREAT_BALL
+	writetext SantaluneYoungsterGreatBallText
 	promptbutton
-	writetext YoungsterGotText
+	verbosegiveitem GREAT_BALL
+	writetext SantaluneYoungsterGotText
 	waitbutton
 	closetext
+	setevent EVENT_SANTALUNE_CITY_GREAT_BALL
 	end
 	
 .AlreadyGotItem:
-	writetext YoungsterGotText
+	writetext SantaluneYoungsterGotText
 	waitbutton
 	closetext
 	end
 	
-YoungsterGreatBallText:
+SantaluneYoungsterGreatBallText:
 	text "I'm a real grown-"
 	line "up, you see, so"
 	cont "I got GREAT BALLs!"
@@ -34,7 +35,7 @@ YoungsterGreatBallText:
 	cont "so I'll share one!"
 	done
 	
-YoungsterGotText:
+SantaluneYoungsterGotText:
 	text "A GREAT BALL is"
 	line "a really great"
 	cont "#BALL! Get it?"

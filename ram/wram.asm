@@ -2842,7 +2842,8 @@ wDudeNumBalls:: db
 wDudeBalls:: ds 2 * 4 + 1
 ENDU
 
-	ds 4
+wOtherTrainerType:: db
+	ds 3
 
 wd430:: ; mobile
 wBattleAction:: db
@@ -2987,11 +2988,11 @@ endr
 
 wCmdQueue:: ds CMDQUEUE_CAPACITY * CMDQUEUE_ENTRY_SIZE
 
-	ds 40
+	ds 6
 
 wMapObjects::
 wPlayerObject:: map_object wPlayer ; player is map object 0
-; wMap1Object - wMap15Object
+; wMap1Object - wMap17Object
 for n, 1, NUM_OBJECTS
 wMap{d:n}Object:: map_object wMap{d:n}
 endr
@@ -3083,10 +3084,11 @@ wExpShareToggle:: db
 wTradeFlags:: flag_array NUM_NPC_TRADES
 	ds 1
 wMooMooBerries:: db
+wRestaurantLeNahVictories:: db
 wUndergroundSwitchPositions:: db
-wFarfetchdPosition:: db
+wFurfrouPosition:: db
 
-	ds 13
+	ds 12
 
 ; map scene ids
 wPokecenter2FSceneID::                            db
@@ -3172,8 +3174,23 @@ wVanivilleTownSceneID::						      db
 wSerenasHouseSceneID::							  db
 wRoute1SceneID::								  db
 wRoute22SceneID::								  db
+wSantaluneCitySceneID::							  db
+wRoute4LumioseGateSceneID::						  db
+wSycamoreLab3FSceneID::							  db
+wSycamoreLab1FSceneID::							  db
+wCafeSoleilSceneID::							  db
+wRoute5EastSceneID::							  db
+wCamphrierTownSceneID::							  db
+wRoute7EastSceneID::							  db
+wShabboneauCastleSceneID::						  db
+wBerryFieldsSceneID::							  db
+wParfumPalace1FSceneID::						  db
+wParfumPalaceGardenMazeSceneID::				  db
+wParfumPalace2FBalconySceneID::					  db
+wFossilLabSceneID::								  db
+wGlitteringCaveDeepSceneID::					  db
 
-	ds 49
+	ds 37
 
 ; fight counts
 wJackFightCount::    db

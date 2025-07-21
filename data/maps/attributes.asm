@@ -124,27 +124,139 @@ ENDM
 	map_attributes Route22, ROUTE_22, $05, WEST
 	connection west, SantaluneCity, SANTALUNE_CITY, 5
 	
-	map_attributes LumioseSouth, LUMIOSE_SOUTH, $71, NORTH
-	connection north, LumioseNorth, LUMIOSE_NORTH, 0
+	; map_attributes LumioseSouth, LUMIOSE_SOUTH, $71, NORTH
+	; connection north, LumioseNorth, LUMIOSE_NORTH, 0	
 	
-	map_attributes LumioseNorth, LUMIOSE_NORTH, $71, SOUTH
-	connection south, LumioseSouth, LUMIOSE_SOUTH, 0
+	map_attributes LumioseSouthwest, LUMIOSE_SOUTHWEST, $71, NORTH | EAST
+	connection north, LumioseNorthwest, LUMIOSE_NORTHWEST, 0	
+	connection east, LumioseSoutheast, LUMIOSE_SOUTHEAST, 0
+	
+	map_attributes LumioseSoutheast, LUMIOSE_SOUTHEAST, $71, NORTH | WEST
+	connection north, LumioseNortheast, LUMIOSE_NORTHEAST, 0
+	connection west, LumioseSouthwest, LUMIOSE_SOUTHWEST, 0
+	
+	; map_attributes LumioseNorth, LUMIOSE_NORTH, $71, SOUTH
+	; connection south, LumioseSouth, LUMIOSE_SOUTH, 0	
+	
+	map_attributes LumioseNorthwest, LUMIOSE_NORTHWEST, $71, SOUTH | EAST
+	connection south, LumioseSouthwest, LUMIOSE_SOUTHWEST, 0
+	connection east, LumioseNortheast, LUMIOSE_NORTHEAST, 0
+	
+	map_attributes LumioseNortheast, LUMIOSE_NORTHEAST, $71, SOUTH | WEST
+	connection south, LumioseSoutheast, LUMIOSE_SOUTHEAST, 0
+	connection west, LumioseNorthwest, LUMIOSE_NORTHWEST, 0
+	
+	map_attributes LumioseSouthPokecenter1F, LUMIOSE_SOUTH_POKECENTER_1F, $00, 0
+	map_attributes LumioseSouthMart, LUMIOSE_SOUTH_MART, $00, 0
+	map_attributes ShutterbugCafe, SHUTTERBUG_CAFE, $00, 0
+	map_attributes CafeSoleil, CAFE_SOLEIL, $00, 0
+	map_attributes CafeIntroversion, CAFE_INTROVERSION, $00, 0
+	map_attributes LumioseSouthOfficeGround1, LUMIOSE_SOUTH_OFFICE_GROUND_1, $00, 0
+	map_attributes LumioseSouthOfficeGround2, LUMIOSE_SOUTH_OFFICE_GROUND_2, $00, 0
+	map_attributes LumioseSouthOfficeGround3, LUMIOSE_SOUTH_OFFICE_GROUND_3, $00, 0
+	map_attributes LumioseSouthOfficeUpstairs1, LUMIOSE_SOUTH_OFFICE_UPSTAIRS_1, $00, 0
+	map_attributes LumioseSouthOfficeUpstairs2, LUMIOSE_SOUTH_OFFICE_UPSTAIRS_2, $00, 0
+	map_attributes LumioseSouthOfficeUpstairs3, LUMIOSE_SOUTH_OFFICE_UPSTAIRS_3, $00, 0
+	map_attributes SycamoreLab1F, SYCAMORE_LAB_1F, $00, 0
+	map_attributes SycamoreLab2F, SYCAMORE_LAB_2F, $00, 0
+	map_attributes SycamoreLab3F, SYCAMORE_LAB_3F, $00, 0
+	map_attributes CoiffureClips, COIFFURE_CLIPS, $00, 0
+	map_attributes RestaurantLeNah, RESTAURANT_LE_NAH, $00, 0
+	map_attributes TrainerPrStudio, TRAINER_PR_STUDIO, $00, 0
 	
 	map_attributes VernalAvenue, VERNAL_AVENUE, $71, 0
+	map_attributes StoneEmporium, STONE_EMPORIUM, $00, 0
+	map_attributes Herboriste, HERBORISTE, $00, 0
+	map_attributes FriseurFurfrou, FRISEUR_FURFROU, $00, 0
+	map_attributes CafeWoof, CAFE_WOOF, $00, 0
+	map_attributes CafeClasse, CAFE_CLASSE, $00, 0
+	map_attributes BoutiqueCouture, BOUTIQUE_COUTURE, $00, 0
+
 	map_attributes EstivalAvenue, ESTIVAL_AVENUE, $71, 0
+	
 	map_attributes AutumnalAvenue, AUTUMNAL_AVENUE, $71, 0
+	
 	map_attributes HibernalAvenue, HIBERNAL_AVENUE, $71, 0
+	
 	map_attributes RougePlaza, ROUGE_PLAZA, $71, 0
 	map_attributes JaunePlaza, JAUNE_PLAZA, $71, 0
 	map_attributes MagentaPlaza, MAGENTA_PLAZA, $71, 0
 	map_attributes BleuPlaza, BLEU_PLAZA, $71, 0
 	map_attributes VertPlaza, VERT_PLAZA, $71, 0
 	map_attributes CentricoPlaza, CENTRICO_PLAZA, $71, 0
-	map_attributes StoneEmporium, STONE_EMPORIUM, $00, 0
 	
-	map_attributes CamphrierTown, CAMPHRIER_TOWN, $00, 0
-	map_attributes CyllageCity, CYLLAGE_CITY, $00, 0
-	map_attributes AmbretteTown, AMBRETTE_TOWN, $00, 0
+	map_attributes Route5East, ROUTE_5_EAST, $05, WEST
+	connection west, Route5West, ROUTE_5_WEST, 0
+	
+	map_attributes Route5West, ROUTE_5_WEST, $05, WEST | EAST
+	connection west, CamphrierTown, CAMPHRIER_TOWN, 16
+	connection east, Route5East, ROUTE_5_EAST, 0
+	
+	map_attributes CamphrierTown, CAMPHRIER_TOWN, $05, WEST | EAST
+	connection west, Route7East, ROUTE_7_EAST, -2
+	connection east, Route5West, ROUTE_5_WEST, -16
+	
+	map_attributes Route6, ROUTE_6, $05, SOUTH | NORTH
+	connection north, ParfumPalaceOutside, PARFUM_PALACE_OUTSIDE, -1
+	connection south, Route7East, ROUTE_7_EAST, -22
+
+	map_attributes ParfumPalaceOutside, PARFUM_PALACE_OUTSIDE, $05, SOUTH
+	connection south, Route6, ROUTE_6, 1
+	
+	map_attributes ParfumPalaceGarden1, PARFUM_PALACE_GARDEN_1, $05, NORTH
+	connection north, ParfumPalaceGarden2, PARFUM_PALACE_GARDEN_2, 0
+	
+	map_attributes ParfumPalaceGarden2, PARFUM_PALACE_GARDEN_2, $05, NORTH | SOUTH
+	connection north, ParfumPalaceGarden3, PARFUM_PALACE_GARDEN_3, 0
+	connection south, ParfumPalaceGarden1, PARFUM_PALACE_GARDEN_1, 0
+	
+	map_attributes ParfumPalaceGarden3, PARFUM_PALACE_GARDEN_3, $05, NORTH | SOUTH
+	connection north, ParfumPalaceGarden4, PARFUM_PALACE_GARDEN_4, 0
+	connection south, ParfumPalaceGarden2, PARFUM_PALACE_GARDEN_2, 0
+	
+	map_attributes ParfumPalaceGarden4, PARFUM_PALACE_GARDEN_4, $05, NORTH | SOUTH
+	connection north, ParfumPalaceGarden5, PARFUM_PALACE_GARDEN_5, 0
+	connection south, ParfumPalaceGarden3, PARFUM_PALACE_GARDEN_3, 0
+	
+	map_attributes ParfumPalaceGarden5, PARFUM_PALACE_GARDEN_5, $05, NORTH | SOUTH
+	connection north, ParfumPalaceGarden6, PARFUM_PALACE_GARDEN_6, 0
+	connection south, ParfumPalaceGarden4, PARFUM_PALACE_GARDEN_4, 0
+	
+	map_attributes ParfumPalaceGarden6, PARFUM_PALACE_GARDEN_6, $05, NORTH | SOUTH
+	connection north, ParfumPalaceGarden7, PARFUM_PALACE_GARDEN_7, 0
+	connection south, ParfumPalaceGarden5, PARFUM_PALACE_GARDEN_5, 0
+	
+	map_attributes ParfumPalaceGarden7, PARFUM_PALACE_GARDEN_7, $05, SOUTH
+	connection south, ParfumPalaceGarden6, PARFUM_PALACE_GARDEN_6, 0
+	
+	map_attributes ParfumPalaceGardenMaze, PARFUM_PALACE_GARDEN_MAZE, $05, 0
+
+	map_attributes Route7East, ROUTE_7_EAST, $05, NORTH | SOUTH | WEST | EAST
+	connection north, Route6, ROUTE_6, 22
+	connection south, BerryFields, BERRY_FIELDS, 23
+	connection west, Route7West, ROUTE_7_WEST, 3
+	connection east, CamphrierTown, CAMPHRIER_TOWN, 2
+	
+	map_attributes BerryFields, BERRY_FIELDS, $05, NORTH
+	connection north, Route7East, ROUTE_7_EAST, -23
+	
+	map_attributes Route7West, ROUTE_7_WEST, $05, EAST
+	connection east, Route7East, ROUTE_7_EAST, -3
+	
+	map_attributes AmbretteTown, AMBRETTE_TOWN, $35, NORTH | EAST
+	connection north, Route8Lower, ROUTE_8_LOWER, 0
+	connection east, Route8Upper, ROUTE_8_UPPER, -33
+	
+	map_attributes Route8Upper, ROUTE_8_UPPER, $75, WEST
+	connection west, AmbretteTown, AMBRETTE_TOWN, 33
+	
+	map_attributes Route8Lower, ROUTE_8_LOWER, $35, NORTH | SOUTH
+	connection north, CyllageCity, CYLLAGE_CITY, 0
+	connection south, AmbretteTown, AMBRETTE_TOWN, 0
+	
+	map_attributes CyllageCity, CYLLAGE_CITY, $00, SOUTH
+	connection south, Route8Lower, ROUTE_8_LOWER, 0
+	
 	map_attributes GeosengeTown, GEOSENGE_TOWN, $00, 0
 	map_attributes ShalourCity, SHALOUR_CITY, $00, 0
 	map_attributes CoumarineCity, COUMARINE_CITY, $00, 0
@@ -176,6 +288,7 @@ ENDM
 	map_attributes SantaluneHouse3, SANTALUNE_HOUSE_3, $00, 0
 	map_attributes SantaluneHouse4, SANTALUNE_HOUSE_4, $00, 0
 	map_attributes EarlsPokemonAcademy, EARLS_POKEMON_ACADEMY, $00, 0
+	map_attributes SantaluneBoutique, SANTALUNE_BOUTIQUE, $00, 0
 	map_attributes Pokecenter2F, POKECENTER_2F, $00, 0
 	map_attributes TradeCenter, TRADE_CENTER, $00, 0
 	map_attributes Colosseum, COLOSSEUM, $00, 0
@@ -183,8 +296,43 @@ ENDM
 	map_attributes MobileTradeRoom, MOBILE_TRADE_ROOM, $00, 0
 	map_attributes MobileBattleRoom, MOBILE_BATTLE_ROOM, $00, 0
 	map_attributes Route4LumioseGate, ROUTE_4_LUMIOSE_GATE, $00, 0
+	map_attributes Route5LumioseGate, ROUTE_5_LUMIOSE_GATE, $00, 0
+	map_attributes CamphrierPokecenter1F, CAMPHRIER_POKECENTER_1F, $00, 0
+	map_attributes CamphrierMart, CAMPHRIER_MART, $00, 0
+	map_attributes CamphrierHouse1, CAMPHRIER_HOUSE_1, $00, 0
+	map_attributes CamphrierHouse2, CAMPHRIER_HOUSE_2, $00, 0
+	map_attributes HotelCamphrier1F, HOTEL_CAMPHRIER_1F, $00, 0
+	map_attributes HotelCamphrier2F, HOTEL_CAMPHRIER_2F, $00, 0
+	map_attributes ShabboneauCastle, SHABBONEAU_CASTLE, $00, 0
+	map_attributes ShabboneauCastle2F, SHABBONEAU_CASTLE_2F, $00, 0
+	map_attributes ShabboneauCastleBedroom, SHABBONEAU_CASTLE_BEDROOM, $00, 0
 	map_attributes CyllageHotel, CYLLAGE_HOTEL, $00, 0
-
+	map_attributes DayCare, DAY_CARE, $00, 0
+	map_attributes BerryFieldsHouse, BERRY_FIELDS_HOUSE, $00, 0
+	map_attributes ParfumPalace1F, PARFUM_PALACE_1F, $00, 0
+	map_attributes ParfumPalace2F, PARFUM_PALACE_2F, $00, 0
+	map_attributes ParfumPalace1FRoom1, PARFUM_PALACE_1F_ROOM_1, $00, 0	
+	map_attributes ParfumPalace1FRoom2, PARFUM_PALACE_1F_ROOM_2, $00, 0
+	map_attributes ParfumPalace1FRoom3, PARFUM_PALACE_1F_ROOM_3, $00, 0
+	map_attributes ParfumPalace1FRoom4, PARFUM_PALACE_1F_ROOM_4, $00, 0
+	map_attributes ParfumPalace2FRoom1, PARFUM_PALACE_2F_ROOM_1, $00, 0	
+	map_attributes ParfumPalace2FRoom2, PARFUM_PALACE_2F_ROOM_2, $00, 0
+	map_attributes ParfumPalace2FRoom3, PARFUM_PALACE_2F_ROOM_3, $00, 0
+	map_attributes ParfumPalace2FRoom4, PARFUM_PALACE_2F_ROOM_4, $00, 0	
+	map_attributes ParfumPalace2FBalcony, PARFUM_PALACE_2F_BALCONY, $05, 0
+	map_attributes ConnectingCave, CONNECTING_CAVE, $09, 0
+	map_attributes AmbrettePokecenter1F, AMBRETTE_POKECENTER_1F, $00, 0
+	map_attributes AmbretteMart, AMBRETTE_MART, $00, 0
+	map_attributes AmbretteHouse, AMBRETTE_HOUSE, $00, 0
+	map_attributes HotelAmbrette1F, HOTEL_AMBRETTE_1F, $00, 0
+	map_attributes HotelAmbrette2F, HOTEL_AMBRETTE_2F, $00, 0
+	map_attributes FossilLab, FOSSIL_LAB, $00, 0
+	map_attributes AmbretteAquarium, AMBRETTE_AQUARIUM, $00, 0
+	map_attributes Route9Gate, ROUTE_9_GATE, $00, 0
+	map_attributes Route9, ROUTE_9, $00, 0
+	map_attributes GlitteringCaveEntrance, GLITTERING_CAVE_ENTRANCE, $09, 0
+	map_attributes GlitteringCaveDeep, GLITTERING_CAVE_DEEP, $09, 0
+	
 	; map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
 	; connection west, Route29, ROUTE_29, 0
 	; connection east, Route27, ROUTE_27, 0

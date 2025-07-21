@@ -41,8 +41,14 @@ TreeMonMaps:
 	db -1
 
 RockMonMaps:
-	; treemon_map CIANWOOD_CITY,             TREEMON_SET_ROCK
-	; treemon_map ROUTE_40,                  TREEMON_SET_ROCK
-	; treemon_map DARK_CAVE_VIOLET_ENTRANCE, TREEMON_SET_ROCK
-	; treemon_map SLOWPOKE_WELL_B1F,         TREEMON_SET_ROCK
+	treemon_map AMBRETTE_TOWN,			   TREEMON_SET_ROCK1
+	treemon_map ROUTE_8_LOWER,			   TREEMON_SET_ROCK1
+	; treemon_map ROUTE_12,				   TREEMON_SET_ROCK1
+	; treemon_map AZURE_BAY,				   TREEMON_SET_ROCK1
+	treemon_map CYLLAGE_CITY,			   TREEMON_SET_ROCK2
+	; treemon_map ROUTE_13,				   TREEMON_SET_ROCK3
+	; treemon_map ROUTE_18,				   TREEMON_SET_ROCK4
+	; treemon_map TERMINUS_CAVE,			   TREEMON_SET_ROCK4
+	; treemon_map VICTORY_ROAD,			   TREEMON_SET_ROCK4
+	treemon_map GLITTERING_CAVE_DEEP,	   TREEMON_SET_ROCK5
 	db -1

@@ -17,5 +17,5 @@
 	dn EGG_PLANT, EGG_INDETERMINATE ; egg groups
 
 	; tm/hm learnset
-	tmhm HEADBUTT
+	tmhm HEADBUTT, ROCK_SMASH
 	; end

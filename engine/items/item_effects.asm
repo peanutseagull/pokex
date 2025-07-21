@@ -38,12 +38,12 @@ ItemEffects:
 	dw EvoStoneEffect      ; FIRE_STONE
 	dw EvoStoneEffect      ; THUNDERSTONE
 	dw EvoStoneEffect      ; WATER_STONE
-	dw NoEffect            ; ITEM_19
+	dw PokeBallEffect      ; QUICK_BALL
 	dw VitaminEffect       ; HP_UP
 	dw VitaminEffect       ; PROTEIN
 	dw VitaminEffect       ; IRON
 	dw VitaminEffect       ; CARBOS
-	dw NoEffect            ; LUCKY_PUNCH
+	dw PokeBallEffect      ; DIVE_BALL
 	dw VitaminEffect       ; CALCIUM
 	dw RareCandyEffect     ; RARE_CANDY
 	dw XAccuracyEffect     ; X_ACCURACY
@@ -58,7 +58,7 @@ ItemEffects:
 	dw SuperRepelEffect    ; SUPER_REPEL
 	dw MaxRepelEffect      ; MAX_REPEL
 	dw DireHitEffect       ; DIRE_HIT
-	dw NoEffect            ; ITEM_2D
+	dw NoEffect            ; HEART_SCALE
 	dw RestoreHPEffect     ; FRESH_WATER
 	dw RestoreHPEffect     ; SODA_POP
 	dw RestoreHPEffect     ; LEMONADE
@@ -103,7 +103,7 @@ ItemEffects:
 	dw NoEffect            ; BIG_MUSHROOM
 	dw NoEffect            ; SILVERPOWDER
 	dw NoEffect            ; BLU_APRICORN
-	dw NoEffect            ; ITEM_5A
+	dw NoEffect            ; ROCKY_HELMET
 	dw NoEffect            ; AMULET_COIN
 	dw NoEffect            ; YLW_APRICORN
 	dw NoEffect            ; GRN_APRICORN
@@ -154,15 +154,15 @@ ItemEffects:
 	dw NoEffect            ; CHARCOAL
 	dw RestoreHPEffect     ; BERRY_JUICE
 	dw NoEffect            ; SCOPE_LENS
-	dw NoEffect            ; ITEM_8D
-	dw NoEffect            ; ITEM_8E
+	dw EvoStoneEffect      ; SHINY_STONE
+	dw EvoStoneEffect      ; DUSK_STONE
 	dw NoEffect            ; METAL_COAT
 	dw NoEffect            ; DRAGON_FANG
-	dw NoEffect            ; ITEM_91
+	dw EvoStoneEffect      ; LINK_CABLE
 	dw NoEffect            ; LEFTOVERS
-	dw NoEffect            ; ITEM_93
-	dw NoEffect            ; ITEM_94
-	dw NoEffect            ; ITEM_95
+	dw NoEffect            ; JAW_FOSSIL
+	dw NoEffect            ; SAIL_FOSSIL
+	dw NoEffect            ; OLD_AMBER
 	dw RestorePPEffect     ; MYSTERYBERRY
 	dw NoEffect            ; DRAGON_SCALE
 	dw NoEffect            ; BERSERK_GENE
@@ -175,7 +175,7 @@ ItemEffects:
 	dw PokeBallEffect      ; LEVEL_BALL
 	dw PokeBallEffect      ; LURE_BALL
 	dw PokeBallEffect      ; FAST_BALL
-	dw NoEffect            ; ITEM_A2
+	dw PokeBallEffect      ; DUSK_BALL
 	dw NoEffect            ; LIGHT_BALL
 	dw PokeBallEffect      ; FRIEND_BALL
 	dw PokeBallEffect      ; MOON_BALL
@@ -740,6 +740,9 @@ BallMultiplierFunctionTable:
 	dbw MOON_BALL,   MoonBallMultiplier
 	dbw LOVE_BALL,   LoveBallMultiplier
 	dbw PARK_BALL,   ParkBallMultiplier
+	dbw QUICK_BALL,  QuickBallMultiplier
+	dbw DIVE_BALL,	 DiveBallMultiplier
+	dbw DUSK_BALL,	 DuskBallMultiplier
 	db -1 ; end
 
 UltraBallMultiplier:
@@ -1060,6 +1063,79 @@ LevelBallMultiplier:
 	ret nc ; if player/4 is lower level, we're done here
 	sla b
 	ret nc
+
+.max
+	ld b, $ff
+	ret
+	
+QuickBallMultiplier:
+; multiply catch rate by 5 on first turn
+	ld a, [wPlayerTurnsTaken]
+	and a
+	ret nz
+
+	ld a, b
+
+	sla b
+	jr c, .max
+
+	sla b
+	jr c, .max
+
+	add a
+	ret nc
+
+.max
+	ld b, $ff
+	ret
+	
+DiveBallMultiplier:
+; multiply catch rate by 3.5 if surfing or fishing
+	ld a, [wPlayerState]
+	cp PLAYER_SURF
+	jr z, .water
+
+	ld a, [wBattleType]
+	cp BATTLETYPE_FISH
+	jr z, .water
+
+	ret
+
+.water
+	ld a, b
+	srl a
+rept 3
+	add b
+	jr c, .max
+endr
+	ret
+
+.max
+	ld b, $ff
+	ret	
+	
+DuskBallMultiplier:
+; is it night?
+	ld a, [wTimeOfDay]
+	cp NITE
+	jr z, .night_or_cave
+; or are we in a cave?
+	ld a, [wEnvironment]
+	cp CAVE
+	ret nz ; neither night nor cave
+
+.night_or_cave
+; b is the catch rate
+; a := b + b + b == b × 3
+	ld a, b
+	add a
+	jr c, .max
+
+	add b
+	jr c, .max
+
+	ld b, a
+	ret
 
 .max
 	ld b, $ff

@@ -6,7 +6,7 @@ PokemonPicPointers::
 	dba BulbasaurFrontpic
 	dba BulbasaurBackpic
 	dba IvysaurFrontpic
-	dba IvysaurFrontpic
+	dba IvysaurBackpic
 	dba VenusaurFrontpic
 	dba VenusaurBackpic
 	dba CharmanderFrontpic
@@ -18,10 +18,10 @@ PokemonPicPointers::
 	dba SquirtleFrontpic
 	dba SquirtleBackpic	
 	dba WartortleFrontpic	
-	dba WartortleBackpic	
-	dba BlastoiseFrontpic	
-	dba BlastoiseBackpic	
-	dba CaterpieFrontpic	
+	dba WartortleBackpic
+	dba BlastoiseFrontpic
+	dba BlastoiseBackpic
+	dba CaterpieFrontpic
 	dba CaterpieBackpic	
 	dba MetapodFrontpic	
 	dba MetapodBackpic		
@@ -510,8 +510,8 @@ PokemonPicPointers::
 	dba VolcanionFrontpic	
 	dba VolcanionBackpic	
 	assert_table_length NUM_POKEMON
-	dbw -1, -1 ; unused
-	dbw -1, -1 ; unused
+	; dbw -1, -1 ; unused
+	; dbw -1, -1 ; unused
 	dba EggPic
 	dbw -1, -1 ; unused
 	assert_table_length EGG

@@ -8,7 +8,20 @@ AquacordeTown_MapScripts:
 	def_callbacks
 
 AquacordeTownFisherScript:
-	jumptextfaceplayer AquacordeTownFisherText
+	faceplayer
+	opentext
+	checkevent EVENT_GOT_OLD_ROD
+	iftrue .Fish
+	writetext AquacordeTownFisherText
+	waitbutton
+	closetext
+	end
+	
+.Fish
+	writetext AquacordeTownFisherQwilfishText
+	waitbutton
+	closetext
+	end
 	
 AquacordeTownGrampsScript:
 	jumptextfaceplayer AquacordeTownGrampsText
@@ -22,6 +35,12 @@ TrevorsHouseSign:
 ShaunasHouseSign:
 	jumptext ShaunasHouseSignText
 	
+AquacordeTownPokecenterSign:
+	jumpstd PokecenterSignScript
+
+AquacordeTownMartSign:
+	jumpstd MartSignScript
+	
 AquacordeTownFisherText:
 	text "AQUACORDE is well-"
 	line "known for fishing!"
@@ -33,6 +52,28 @@ AquacordeTownFisherText:
 	para "If you get a"
 	line "fishing rod, you"
 	cont "should stop by!"
+	done
+	
+AquacordeTownFisherQwilfishText:
+	text "Is that an OLD"
+	line "ROD?"
+	
+	para "I see you're a"
+	line "budding fisher!"
+	
+	para "Here's a tip -"
+	line "QWILFISH can be"
+	cont "found in this here"
+	cont "river!"
+	
+	para "It's a pretty rare"
+	line "#MON!"
+	
+	para "But sometimes they"
+	line "are found in large"
+	cont "numbers!"
+	
+	para "Keep a look out!"
 	done
 	
 AquacordeTownGrampsText:
@@ -81,6 +122,8 @@ AquacordeTown_MapEvents:
 	bg_event  8, 26, BGEVENT_READ, AquacordeTownSign
 	bg_event 15, 18, BGEVENT_READ, TrevorsHouseSign
 	bg_event  4, 20, BGEVENT_READ, ShaunasHouseSign
+	bg_event  4, 29, BGEVENT_READ, AquacordeTownMartSign
+	bg_event 16, 29, BGEVENT_READ, AquacordeTownPokecenterSign
 	
 	def_object_events
 	object_event  9, 21, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, AquacordeTownGrampsScript, -1

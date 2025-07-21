@@ -31,6 +31,7 @@ VanivilleTown_TeacherStopsYouScene1:
 	closetext
 	turnobject PLAYER, DOWN
 	applymovement VANIVILLETOWN_TEACHER, VanivilleTown_TeacherRunsToYouMovement1
+	turnobject PLAYER, RIGHT
 	opentext
 	writetext Text_WhatDoYouThinkYoureDoing
 	waitbutton
@@ -77,6 +78,7 @@ VanivilleTown_TeacherStopsYouScene3:
 	closetext
 	turnobject PLAYER, DOWN
 	applymovement VANIVILLETOWN_TEACHER, VanivilleTown_TeacherRunsToYouMovement3
+	turnobject PLAYER, LEFT
 	opentext
 	writetext Text_WhatDoYouThinkYoureDoing
 	waitbutton
@@ -100,6 +102,7 @@ VanivilleTown_TeacherStopsYouScene4:
 	closetext
 	turnobject PLAYER, DOWN
 	applymovement VANIVILLETOWN_TEACHER, VanivilleTown_TeacherRunsToYouMovement4
+	turnobject PLAYER, LEFT
 	opentext
 	writetext Text_WhatDoYouThinkYoureDoing
 	waitbutton
@@ -218,12 +221,12 @@ VanivilleTown_RivalsScene:
 
 .MenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 2, 17, TEXTBOX_Y - 1
+	menu_coords 0, 2, 17, TEXTBOX_Y - 2
 	dw .MenuData
 	db 1 ; default option
 
 .MenuData:
-	db STATICMENU_CURSOR ; flags
+	db STATICMENU_CURSOR | STATICMENU_DISABLE_B ; flags
 	db 3 ; items
 	db "FENNEKIN@"
 	db "FROAKIE@"
@@ -351,12 +354,12 @@ Text_LetsGoTrevor:
 	line "catch some"
 	cont "#MON, Trevs!"
 	
-	para "TREVOR: Bye..."
+	para "TREVOR: Bye…"
 	done
 
 Text_UmmAkshually:
 	text "TREVOR: Umm pardon"
-	line "me, but.."
+	line "me, but…"
 	
 	para "I have something"
 	line "for you guys too."
@@ -395,7 +398,7 @@ Text_NowSerena:
 	done
 	
 Text_SerenaFroakie:
-	text "SERENA: Hmmmm..."
+	text "SERENA: Hmmmm…"
 	
 	para "I'll take FROAKIE."
 	
@@ -404,7 +407,7 @@ Text_SerenaFroakie:
 	done
 	
 Text_SerenaFennekin:
-	text "SERENA: Hmmmm..."
+	text "SERENA: Hmmmm…"
 	
 	para "I'll take FENNEKIN."
 	
@@ -413,7 +416,7 @@ Text_SerenaFennekin:
 	done
 	
 Text_SerenaChespin:
-	text "SERENA: Hmmm..."
+	text "SERENA: Hmmm…"
 	
 	para "I'll take CHESPIN."
 	
@@ -482,7 +485,7 @@ Text_WhichOne:
 	done
 	
 Text_WhatTookYouSoLong:
-	text "SERENA: Jeez..."
+	text "SERENA: Jeez…"
 	line "What took you"
 	cont "so long?"
 	done
@@ -498,10 +501,10 @@ Text_MeetShauna:
 	para "It's <PLAYER>" 
 	line "right?"
 	
-	para "Serena told me"
+	para "SERENA told me"
 	line "so much about you!"
 	
-	para "My name's Shauna!"
+	para "My name's SHAUNA!"
 	line "I live over in"
 	cont "AQUACORDE."
 	
@@ -526,12 +529,12 @@ Text_MeetTierno:
 	done
 	
 Text_MeetTrevor:
-	text "TREVOR: Hey..."
+	text "TREVOR: Hey…"
 	done
 	
 Text_PickAPokemon:
 	text "SHAUNA: Now that"
-	line "that's done..."
+	line "that's done…"
 	
 	para "We can finally"
 	line "pick our #MON!"
@@ -749,7 +752,7 @@ Text_VanivilleYoungster:
 	line "pretty nice,"
 	cont "right?"
 	
-	para "Kalos has so many"
+	para "KALOS has so many"
 	line "cool towns -"
 	
 	para "I wanna see them"
@@ -765,7 +768,7 @@ Text_TechnologyGuy:
 	
 	para "You can call"
 	line "people from"
-	cont "anywhere in Kalos!"
+	cont "anywhere in KALOS!"
 	
 	para "Isn't technology"
 	line "incredible?"

@@ -17,5 +17,5 @@
 	dn EGG_FLYING, EGG_HUMANSHAPE ; egg groups
 
 	; tm/hm learnset
-	tmhm HEADBUTT
+	tmhm HEADBUTT, ROCK_SMASH
 	; end

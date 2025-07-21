@@ -8,19 +8,19 @@ PnP_HiddenPeople:
 	db CHAMPION
 	; fallthrough
 PnP_HiddenPeople_BeatE4:
-	db BROCK
-	db MISTY
-	db LT_SURGE
-	db ERIKA
-	db JANINE
-	db SABRINA
-	db BLAINE
-	db BLUE
+	; db BROCK
+	; db MISTY
+	; db LT_SURGE
+	; db ERIKA
+	; db JANINE
+	; db SABRINA
+	; db BLAINE
+	; db BLUE
 	; fallthrough
 PnP_HiddenPeople_BeatKanto:
-	db RIVAL1
-	db POKEMON_PROF
-	db CAL
-	db RIVAL2
-	db RED
+	; db RIVAL1
+	; db POKEMON_PROF
+	; db CAL
+	; db RIVAL2
+	; db RED
 	db -1

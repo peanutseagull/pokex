@@ -348,7 +348,7 @@ GotMapCardText:
 
 MomPokegearMapText:
 	text "It's a map of"
-	line "the Kalos region!"
+	line "the KALOS region!"
 	
 	para "It'll definitely"
 	line "come in handy!"

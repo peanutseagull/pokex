@@ -18,15 +18,15 @@ GymLeaders:
 	db DRASNA
 	db SIEBOLD
 	db CHAMPION
-	db RED
+	; db RED
 ; fallthrough
 KantoGymLeaders:
-	db BROCK
-	db MISTY
-	db LT_SURGE
-	db ERIKA
-	db JANINE
-	db SABRINA
-	db BLAINE
-	db BLUE
+	; db BROCK
+	; db MISTY
+	; db LT_SURGE
+	; db ERIKA
+	; db JANINE
+	; db SABRINA
+	; db BLAINE
+	; db BLUE
 	db -1

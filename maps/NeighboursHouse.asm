@@ -18,7 +18,7 @@ NeighboursHouseText:
 	line "journey really"
 	cont "helps a young man"
 	
-	para "to mature..."
+	para "to mature…"
 	done
 	
 NeighboursHouse_MapEvents:

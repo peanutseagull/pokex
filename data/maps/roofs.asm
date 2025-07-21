@@ -17,20 +17,21 @@ MapGroupRoofs:
 	db -1             ;  3
 	db ROOF_VIOLET    ;  4 (Santalune)
 	db ROOF_AZALEA    ;  5 (Lumiose)
-	db ROOF_AZALEA    ;  6 (Camphrier)
-	db ROOF_AZALEA    ;  7 (Cyllage)
-	db ROOF_VIOLET    ;  8 (Ambrette)
-	db ROOF_GOLDENROD ;  9 (Geosenge)
-	db ROOF_NEW_BARK  ; 10 (Shalour)
-	db ROOF_OLIVINE   ; 11 (Coumarine)
-	db ROOF_NEW_BARK  ; 12 (Laverre)
-	db ROOF_NEW_BARK  ; 13 (Dendemille)
-	db ROOF_OLIVINE	  ; 14 (Anistar)
-	db ROOF_OLIVINE	  ; 15 (Couriway)
-	db ROOF_OLIVINE	  ; 16 (Snowbelle)
-	db ROOF_OLIVINE	  ; 17 (League)
-	db ROOF_OLIVINE   ; 18 (Kiloude)
-	db ROOF_OLIVINE	  ; 19
+	db ROOF_VIOLET    ;  6 (Camphrier)
+	db ROOF_AZALEA    ;  7 (ParfumGarden)
+	db ROOF_AZALEA    ;  8 (Cyllage)
+	db ROOF_AZALEA    ;  9 (Ambrette)
+	db ROOF_GOLDENROD ; 10 (Geosenge)
+	db ROOF_NEW_BARK  ; 11 (Shalour)
+	db ROOF_OLIVINE   ; 12 (Coumarine)
+	db ROOF_NEW_BARK  ; 13 (Laverre)
+	db ROOF_NEW_BARK  ; 14 (Dendemille)
+	db ROOF_OLIVINE	  ; 15 (Anistar)
+	db ROOF_OLIVINE	  ; 16 (Couriway)
+	db ROOF_OLIVINE	  ; 17 (Snowbelle)
+	db ROOF_OLIVINE	  ; 18 (League)
+	db ROOF_OLIVINE   ; 19 (Kiloude)
+	db ROOF_OLIVINE	  ; 20
 	assert_table_length NUM_MAP_GROUPS + 1
 
 Roofs:

@@ -45,7 +45,7 @@ OddishIcon::     INCBIN "gfx/icons/oddish.2bpp"
 GloomIcon::      INCBIN "gfx/icons/gloom.2bpp"
 VileplumeIcon::  INCBIN "gfx/icons/vileplume.2bpp"
 DiglettIcon::    INCBIN "gfx/icons/diglett.2bpp"
-DugtrioIcon::    INCBIN "gfx/icons/dugtrio.2bpp"
+; DugtrioIcon::    INCBIN "gfx/icons/dugtrio.2bpp"
 PsyduckIcon::    INCBIN "gfx/icons/psyduck.2bpp"
 GolduckIcon::    INCBIN "gfx/icons/golduck.2bpp"
 PoliwagIcon::    INCBIN "gfx/icons/poliwag.2bpp"
@@ -116,8 +116,6 @@ DratiniIcon::    INCBIN "gfx/icons/dratini.2bpp"
 DragonairIcon::  INCBIN "gfx/icons/dragonair.2bpp"
 DragoniteIcon::  INCBIN "gfx/icons/dragonite.2bpp"
 MewtwoIcon::     INCBIN "gfx/icons/mewtwo.2bpp"
-
-SECTION "Mon Icons 2", ROMX
 SentretIcon::    INCBIN "gfx/icons/sentret.2bpp"
 FurretIcon::     INCBIN "gfx/icons/furret.2bpp"
 HoothootIcon::   INCBIN "gfx/icons/hoothoot.2bpp"
@@ -132,6 +130,9 @@ LanturnIcon::    INCBIN "gfx/icons/lanturn.2bpp"
 PichuIcon::      INCBIN "gfx/icons/pichu.2bpp"
 CleffaIcon::     INCBIN "gfx/icons/cleffa.2bpp"
 IgglybuffIcon::  INCBIN "gfx/icons/igglybuff.2bpp"
+
+SECTION "Mon Icons 2", ROMX
+
 MareepIcon::     INCBIN "gfx/icons/mareep.2bpp"
 FlaaffyIcon::    INCBIN "gfx/icons/flaaffy.2bpp"
 AmpharosIcon::   INCBIN "gfx/icons/ampharos.2bpp"
@@ -206,8 +207,6 @@ PyroarIcon::     INCBIN "gfx/icons/pyroar.2bpp"
 FlabebeIcon::    INCBIN "gfx/icons/flabebe.2bpp"
 FloetteIcon::    INCBIN "gfx/icons/floette.2bpp"
 FlorgesIcon::    INCBIN "gfx/icons/florges.2bpp"
-
-SECTION "Mon Icons 3", ROMX
 SkiddoIcon::     INCBIN "gfx/icons/skiddo.2bpp"
 GogoatIcon::     INCBIN "gfx/icons/gogoat.2bpp"
 PanchamIcon::    INCBIN "gfx/icons/pancham.2bpp"
@@ -260,3 +259,4 @@ HoopaIcon::      INCBIN "gfx/icons/hoopa.2bpp"
 VolcanionIcon::  INCBIN "gfx/icons/volcanion.2bpp"
 EggIcon::        INCBIN "gfx/icons/egg.2bpp"
 
+; SECTION "Mon Icons 3", ROMX

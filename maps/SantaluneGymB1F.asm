@@ -40,6 +40,8 @@ SantaluneGymViolaScript:
 	writetext ViolaTMMudSlapText
 	waitbutton
 	closetext
+	setmapscene ROUTE_22, SCENE_ROUTE22_NOOP
+	setmapscene SANTALUNE_CITY, SCENE_SANTALUNECITY_EXPSHARE
 	end
 
 .SpeechAfterTM:
@@ -103,7 +105,7 @@ LassCharlotteSeenText:
 	done
 	
 LassCharlotteBeatenText:
-	text "Ahh... No fair!"
+	text "Ahh… No fair!"
 	line "My web wasn't"
 	cont "strong enough!"
 	done
@@ -152,19 +154,19 @@ YoungsterDavidBeatenText:
 YoungsterDavidAfterBattleText:
 	text "Up, down, left"
 	line "right, criss-"
-	cont "cross..."
+	cont "cross…"
 	
 	para "Spider webs go"
 	line "in all directions!"
 	done
 	
 ViolaIntroText:
-	text "That expression.."
+	text "That expression…"
 	line "That glint in your"
-	cont "eye..."
+	cont "eye…"
 	
 	para "It says you're up"
-	line "to the challenge.."
+	line "to the challenge…"
 	
 	para "It's fantastic!"
 	line "Just fantastic!"

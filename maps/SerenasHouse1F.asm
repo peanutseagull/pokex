@@ -34,7 +34,7 @@ SerenasMotherText1:
 	
 SerenasMotherText2:
 	text "She's grown up"
-	line "so fast..."
+	line "so fast…"
 	
 	para "To think she's"
 	line "already going on"

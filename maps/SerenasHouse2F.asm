@@ -87,13 +87,13 @@ Text_SerenasHouseSerena2:
 	text "Welcome to"
 	line "VANIVILLE TOWN!"
 	
-	para "My name's Serena!"
+	para "My name's SERENA!"
 	
 	para "Are you excited"
 	line "to start our"
 	cont "#MON journeys?"
 	
-	para "My friend Shauna"
+	para "My friend SHAUNA"
 	line "told me that"
 	cont "5 of us will"
 	
@@ -104,7 +104,7 @@ Text_SerenasHouseSerena2:
 	
 	para "Surely the others"
 	line "must be here by"
-	cont "now..."
+	cont "now…"
 	
 	para "Come on! I'll"
 	line "race you outside!"

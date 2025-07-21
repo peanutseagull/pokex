@@ -90,10 +90,10 @@ EngineFlags:
 	engine_flag wVisitedSpawns, SPAWN_VANIVILLE
 	engine_flag wVisitedSpawns, SPAWN_AQUACORDE
 	engine_flag wVisitedSpawns, SPAWN_SANTALUNE
-	; engine_flag wVisitedSpawns, SPAWN_LUMIOSE
-	; engine_flag wVisitedSpawns, SPAWN_CAMPHRIER
+	engine_flag wVisitedSpawns, SPAWN_LUMIOSE
+	engine_flag wVisitedSpawns, SPAWN_CAMPHRIER
 	; engine_flag wVisitedSpawns, SPAWN_CYLLAGE
-	; engine_flag wVisitedSpawns, SPAWN_AMBRETTE
+	engine_flag wVisitedSpawns, SPAWN_AMBRETTE
 	; engine_flag wVisitedSpawns, SPAWN_GEOSENGE
 	; engine_flag wVisitedSpawns, SPAWN_SHALOUR
 	; engine_flag wVisitedSpawns, SPAWN_COUMARINE
@@ -118,6 +118,7 @@ EngineFlags:
 	engine_flag wDailyFlags1, DAILYFLAGS1_GOT_SHUCKIE_TODAY_F
 	engine_flag wDailyFlags1, DAILYFLAGS1_GOLDENROD_UNDERGROUND_BARGAIN_F
 	engine_flag wDailyFlags1, DAILYFLAGS1_TRAINER_HOUSE_F
+	engine_flag wDailyFlags1, DAILYFLAGS1_DIVE_BALL_F
 
 	engine_flag wDailyFlags2, DAILYFLAGS2_MT_MOON_SQUARE_CLEFAIRY_F
 	engine_flag wDailyFlags2, DAILYFLAGS2_UNION_CAVE_LAPRAS_F

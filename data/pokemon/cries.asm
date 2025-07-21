@@ -135,8 +135,6 @@ PokemonCries::
 	mon_cry CRY_PICHU,         0,  320 ; PICHU
 	mon_cry CRY_CLEFFA,       97,  145 ; CLEFFA
 	mon_cry CRY_CHIKORITA,   232,  232 ; IGGLYBUFF
-	mon_cry CRY_NATU,       -103,  256 ; NATU
-	mon_cry CRY_NATU,       -167,  360 ; XATU
 	mon_cry CRY_MAREEP,       34,  216 ; MAREEP
 	mon_cry CRY_MAREEP,       -7,  384 ; FLAAFFY
 	mon_cry CRY_AMPHAROS,   -124,  232 ; AMPHAROS
@@ -198,68 +196,70 @@ PokemonCries::
 	mon_cry CRY_TOTODILE,   1132,  232 ; FROAKIE
 	mon_cry CRY_TOTODILE,   1088,  272 ; FROGADIER
 	mon_cry CRY_TOTODILE,   1020,  384 ; GRENINJA
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ; 
-	mon_cry CRY_CHARMANDER,   96,  192 ;
+	mon_cry CRY_CHARMANDER,   96,  192 ; BUNNELBY	
+	mon_cry CRY_CHARMANDER,   96,  192 ; DIGGERSBY	
+	mon_cry CRY_CHARMANDER,   96,  192 ; FLETCHLING
+	mon_cry CRY_CHARMANDER,   96,  192 ; FLETCHINDR
+	mon_cry CRY_CHARMANDER,   96,  192 ; TALONFLAME
+	mon_cry CRY_CHARMANDER,   96,  192 ; SCATTERBUG
+	mon_cry CRY_CHARMANDER,   96,  192 ; SPEWPA	
+	mon_cry CRY_CHARMANDER,   96,  192 ; VIVILLON	
+	mon_cry CRY_CHARMANDER,   96,  192 ; LITLEO	
+	mon_cry CRY_CHARMANDER,   96,  192 ; PYROAR	
+	mon_cry CRY_CHARMANDER,   96,  192 ; FLABEBE	
+	mon_cry CRY_CHARMANDER,   96,  192 ; FLOETTE	
+	mon_cry CRY_CHARMANDER,   96,  192 ; FLORGES	
+	mon_cry CRY_CHARMANDER,   96,  192 ; SKIDDO	
+	mon_cry CRY_CHARMANDER,   96,  192 ; GOGOAT	
+	mon_cry CRY_CHARMANDER,   96,  192 ; PANCHAM	
+	mon_cry CRY_CHARMANDER,   96,  192 ; PANGORO	
+	mon_cry CRY_CHARMANDER,   96,  192 ; FURFROU	
+	mon_cry CRY_CHARMANDER,   96,  192 ; ESPURR	
+	mon_cry CRY_CHARMANDER,   96,  192 ; MEOWSTIC	
+	mon_cry CRY_CHARMANDER,   96,  192 ; HONEDGE	
+	mon_cry CRY_CHARMANDER,   96,  192 ; DOUBLADE	
+	mon_cry CRY_CHARMANDER,   96,  192 ; AEGISLASH	
+	mon_cry CRY_CHARMANDER,   96,  192 ; SPRITZEE	
+	mon_cry CRY_CHARMANDER,   96,  192 ; AROMATISSE
+	mon_cry CRY_CHARMANDER,   96,  192 ; SWIRLIX	
+	mon_cry CRY_CHARMANDER,   96,  192 ; SLURPUFF	
+	mon_cry CRY_CHARMANDER,   96,  192 ; INKAY		
+	mon_cry CRY_CHARMANDER,   96,  192 ; MALAMAR	
+	mon_cry CRY_CHARMANDER,   96,  192 ; BINACLE	
+	mon_cry CRY_CHARMANDER,   96,  192 ; BARBARACLE
+	mon_cry CRY_CHARMANDER,   96,  192 ; SKRELP	
+	mon_cry CRY_CHARMANDER,   96,  192 ; DRAGALGE	
+	mon_cry CRY_CHARMANDER,   96,  192 ; CLAUNCHER	
+	mon_cry CRY_CHARMANDER,   96,  192 ; CLAWITZER	
+	mon_cry CRY_CHARMANDER,   96,  192 ; HELIOPTILE
+	mon_cry CRY_CHARMANDER,   96,  192 ; HELIOLISK	
+	mon_cry CRY_CHARMANDER,   96,  192 ; TYRUNT	
+	mon_cry CRY_CHARMANDER,   96,  192 ; TYRANTRUM	
+	mon_cry CRY_CHARMANDER,   96,  192 ; AMAURA	
+	mon_cry CRY_CHARMANDER,   96,  192 ; AURORUS	
+	mon_cry CRY_CHARMANDER,   96,  192 ; SYLVEON	
+	mon_cry CRY_CHARMANDER,   96,  192 ; HAWLUCHA	
+	mon_cry CRY_CHARMANDER,   96,  192 ; DEDENNE	
+	mon_cry CRY_CHARMANDER,   96,  192 ; CARBINK	
+	mon_cry CRY_CHARMANDER,   96,  192 ; GOOMY		
+	mon_cry CRY_CHARMANDER,   96,  192 ; SLIGGOO	
+	mon_cry CRY_CHARMANDER,   96,  192 ; GOODRA	
+	mon_cry CRY_CHARMANDER,   96,  192 ; KLEFKI	
+	mon_cry CRY_CHARMANDER,   96,  192 ; PHANTUMP	
+	mon_cry CRY_CHARMANDER,   96,  192 ; TREVENANT	
+	mon_cry CRY_CHARMANDER,   96,  192 ; PUMPKABOO	
+	mon_cry CRY_CHARMANDER,   96,  192 ; GOURGEIST	
+	mon_cry CRY_CHARMANDER,   96,  192 ; BERGMITE	
+	mon_cry CRY_CHARMANDER,   96,  192 ; AVALUGG	
+	mon_cry CRY_CHARMANDER,   96,  192 ; NOIBAT	
+	mon_cry CRY_CHARMANDER,   96,  192 ; NOIVERN	
+	mon_cry CRY_CHARMANDER,   96,  192 ; XERNEAS	
+	mon_cry CRY_CHARMANDER,   96,  192 ; YVELTAL	
+	mon_cry CRY_CHARMANDER,   96,  192 ; ZYGARDE	
+	mon_cry CRY_CHARMANDER,   96,  192 ; DIANCIE	
+	mon_cry CRY_CHARMANDER,   96,  192 ; HOOPA		
+	mon_cry CRY_CHARMANDER,   96,  192 ; VOLCANION	
 	assert_table_length NUM_POKEMON
-	mon_cry CRY_NIDORAN_M,      0,     0 ; 254
- 	mon_cry CRY_NIDORAN_M,      0,     0 ; 255
+ 	mon_cry CRY_NIDORAN_M,      0,     0 ; 
+ 	mon_cry CRY_NIDORAN_M,      0,     0 ; 
 	assert_table_length $ff

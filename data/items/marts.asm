@@ -3,9 +3,17 @@ Marts:
 	table_width 2, Marts
 ;	dw MartCherrygrove
 ;	dw MartCherrygroveDex
-	dw MartAquacorde
-	dw MartSantalune
+	dw MartDefault
+	dw MartOneBadge
+	dw MartTwoBadges
+	dw MartThreeBadges
+	dw MartFourBadges
+	dw MartFiveBadges
+	dw MartStatusDefault
+	dw MartStatusOne
+	dw MartStatusThree
 	dw MartStoneEmporium
+	dw MartHerboriste
 	; dw MartAzalea
 	; dw MartCianwood
 	; dw MartGoldenrod2F1
@@ -56,29 +64,97 @@ Marts:
 	; db AWAKENING
 	; db -1 ; end
 
-MartAquacorde:
-	db 5 ; # items
+MartDefault:
+	db 2 ; # items
 	db POKE_BALL
 	db POTION
-	db ANTIDOTE
-	db PARLYZ_HEAL
-	db AWAKENING
 	db -1 ; end
-
-MartSantalune:
-	db 10 ; # items
+	
+MartOneBadge:
+	db 4 ; # items
 	db POKE_BALL
+	db GREAT_BALL
 	db POTION
 	db ESCAPE_ROPE
+	db -1 ; end
+	
+MartTwoBadges:
+	db 5 ; # items
+	db POKE_BALL
+	db GREAT_BALL
+	db POTION
+	db SUPER_POTION
+	db ESCAPE_ROPE
+	db -1 ; end
+	
+MartThreeBadges:
+	db 8 ; # items
+	db POKE_BALL
+	db GREAT_BALL
+	db POTION
+	db SUPER_POTION
+	db HYPER_POTION
+	db REVIVE
+	db SUPER_REPEL
+	db ESCAPE_ROPE
+	db -1 ; end
+	
+MartFourBadges:
+	db 17 ; # items
+	db POKE_BALL
+	db GREAT_BALL
+	db ULTRA_BALL
+	db POTION
+	db SUPER_POTION
+	db HYPER_POTION
+	db MAX_POTION
+	db REVIVE
+	db ESCAPE_ROPE
+	db -1 ; end
+	
+MartFiveBadges:
+	db 10 ; # items
+	db POKE_BALL
+	db GREAT_BALL
+	db ULTRA_BALL
+	db POTION
+	db SUPER_POTION
+	db HYPER_POTION
+	db MAX_POTION
+	db FULL_RESTORE
+	db REVIVE
+	db ESCAPE_ROPE
+	db -1 ; end
+	
+MartStatusDefault:
+	db 2 ; # items
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db -1 ; end
+	
+MartStatusOne:
+	db 6 ; # items
 	db ANTIDOTE
 	db PARLYZ_HEAL
 	db AWAKENING
-	db X_DEFEND
-	db X_ATTACK
-	db X_SPEED
-	db FLOWER_MAIL
+	db BURN_HEAL
+	db ICE_HEAL
+	db REPEL
 	db -1 ; end
-
+	
+MartStatusThree:
+	db 9 ; # items
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db AWAKENING
+	db BURN_HEAL
+	db ICE_HEAL
+	db FULL_HEAL
+	db REPEL
+	db SUPER_REPEL
+	db MAX_REPEL
+	db -1 ; end
+	
 MartStoneEmporium:
 	db 8 ; # items
 	db WATER_STONE
@@ -89,6 +165,14 @@ MartStoneEmporium:
 	db SHINY_STONE
 	db DUSK_STONE
 	db LINK_CABLE
+	db -1 ; end
+	
+MartHerboriste:
+	db 4 ; # items
+	db HEAL_POWDER
+	db ENERGYPOWDER
+	db ENERGY_ROOT
+	db REVIVAL_HERB
 	db -1 ; end
 	
 ; MartAzalea:

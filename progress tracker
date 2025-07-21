@@ -1,0 +1,170 @@
+AMBRETTE BRANCH: COMPLETE
+
+SHALOUR BRANCH:
+Maps:
+	Route 8 Lower
+	Connecting Cave Cyllage Side
+	Cyllage City + Gym
+	Route 10
+	Geosenge Town
+	Route 11
+	Reflection Cave
+	Shalour City + Gym
+	Tower of Mastery
+
+Stuff to come back to:
+	Route 22 - area behind surf
+	Mom banking call
+	Shutterbug Cafe Long/Short Dialogue
+	Coiffure Clips? what did i mean by this
+	Walking animation for karen twin and black belt
+	Should Trainer PR studio be the other way around?
+	Route 8 Upper Strength Area
+	Route 8 Lower Surf Area
+	Boutique Couture + Style Mechanic
+	Add Rocks to Break with Rhyhorn?
+	route 8 sky trainer?
+	does guy go back to Shabboneau castle?
+	Hotel NPCs
+	Spawn points for rest of Kalos
+	Glittering Cave Unique Tileset?
+	Fix Bugs+Glitches and Design Flaws
+	remove excess scenes
+	ROCKY HELMET EFFECT
+	Qwilfish Swarm Aquacorde
+	Aerodactylite
+	Fix TMs!!!!
+	glittering cave unique rock smash items
+	replace mud-slap tm?
+	Animate Aquarium Tiles
+	Battle Chateau
+	Restaurant Le Nah reward doesn't work as intended
+	heal ball?
+	
+Non-urgent:
+	Redo intro
+	Rename PC to Cassius' PC after meeting him
+	Surf pokemon Data
+	Headbutt trees
+	Modern berry system?
+	Sprites
+	Music
+	Fix/remove footprints?
+	Pokedex Entries
+	Remove unnecessary data
+	Sky battles????
+	Reorganise items sensibly
+	Fly Callbacks
+	Redo Parfum Palace Interior
+	Different Genders for different Rivals - Variable Sprite?
+	reduce size of gen I starter selection box
+
+Known Bugs:
+	Too many walking sprites in Camphrier Group
+	Daycare pokemon sprites broken
+	Shauna's starter isn't shiny
+	Trainer's pokemon's health is overflowing?
+	
+	Wrong sprites: pyroar back
+	shiny palettes: braixen?
+	
+	Haven't seen in a while:
+	Broken hitbox for NPCs with WALK_UP_DOWN and WALK_LEFT_RIGHT spritemovedata, only sometimes
+	Broken pokemon sprites occasionally (displaying tiles 01 and 02 in random spots)?
+	Occasional PC glitch - perhaps was related to fixed egg party icon
+	talking to restaurant le nah chef can crash the game
+	
+Inconsequential Stuff:
+	Add accents: À bientôt!, Rivière Walk
+	Tipping mechanic
+	Route 7 East - talking to black belt makes Snorlax disappear briefly
+	
+Long-term goals (pipe dreams):
+	Aegislash stance change?
+	evolution methods - pancham inkay etc
+	Alternate forms: Furfrou, Flabebe line, Meowstic
+	Unique tilesets
+	Double battles
+	horde encounters??? (almost definitely won't happen)
+	Mega Evolution
+	Expand to 16 bit?
+
+STUFF DONE:
+	Expand tilesets from 192 to 255 tiles
+	Generation 6 Experience System (also reworks Exp. Share)
+	Infinitely reusable TMs
+    Color party menu icons by species
+    Improve the outdoor sprite system
+    Allow more than 15 object_events per map
+    Disable jumping over ledges onto obstacle tiles or NPCs
+	Smashing rocks has a chance to contain items
+    Reviving Pokémon from Fossils (Gen I)
+	(ONLY UP TO STEP 3) Allow more trainer parties, with individual DVs, stat experience, nicknames, variable teams, etc.
+
+
+Tutorials to Follow:
+    Running Shoes
+    Correct grammar for plural trainers like Twins
+    Automatically reuse Repel
+    Make wild encounters vary
+    Evolve while holding an item
+    Physical/Special split
+    Restore/Remove the redundant move grammar table
+    Harvest multiple items from fruit trees
+    Modify existing gender formula
+    Remove the gym badges boosts
+    Allow fishing while surfing
+    Adding a "Tradeback" NPC
+    Show move names for TMs and HMs when receiving or buying
+    Replace stat experience with EVs
+    Don't gain experience at level 100
+    Erratic and Fluctuating experience growth rates
+    Gain experience from catching Pokémon
+    Lose money proportional to badges and level
+    Add Hail as a new weather condition
+    Automatic battle weather on certain maps
+    Use unique colors for each thrown Poké Ball
+    Move Reminder
+    Print text when you lose a trainer battle
+    Prevent Steel types from being poisoned by Twineedle
+    Make new battle text to distinguish status move misses and fails
+	Make Sandstorm raise the Special Defense of Rock type Pokémon by 50%
+    Puddles that splash when you walk
+    Inverse Battles
+    Grant Grass-type Pokémon immunity to Powder/Spore-based moves
+
+Stuff to do if i feel like it:
+    Improve the event initialization system
+    Improve the trainer rematch system
+    Remove the artificial save delay
+    Improving the Swarm System
+    Create Battle Palettes for Different Times of Day and Environments
+    Remove Pokémon sprite animations
+    Remove the 25% failure chance for AI status moves
+    Reduce the command queue system to just stone tables
+    Expand the Town Map tileset (Alternate)
+    Battle Autoprompts
+    Display more information on the move screen
+    Add more music that changes at night
+
+Other tutorials (may or may not do):
+    Allow map tiles to appear above sprites (so NPCs can walk behind tiles) with PRIORITY colors
+    Allow tiles to have different attributes in different blocks (including X and Y flip)
+    Increase Pokémon sprite animation size
+    Color Pokémon pictures shown in the overworld
+    Colored trainer card badges
+    Show the tops of leaders' heads on the trainer card
+    Make evening the fourth time of day
+    Option to show shiny colors in Pokédex
+
+    Show an icon for the current weather
+    Show an icon for the current Time of Day
+    Add spinner tiles from Generation I Rocket Hideout
+    Allow tall grass in forests
+    Trashcan puzzle in Vermilion Gym
+    Splash a Pokédex Entry from an Overworld Event (Generation I)
+
+    Customizable Pokédex Color
+    Wall-to-wall carpeting in your room
+    Replace Menu Account with a small clock in the corner of the screen
+    Fight a copy of your own party in the Trainer House

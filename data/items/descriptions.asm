@@ -25,12 +25,12 @@ ItemDescriptions:
 	dw FireStoneDesc
 	dw ThunderStoneDesc
 	dw WaterStoneDesc
-	dw TeruSama2Desc
+	dw QuickBallDesc
 	dw HPUpDesc
 	dw ProteinDesc
 	dw IronDesc
 	dw CarbosDesc
-	dw LuckyPunchDesc
+	dw DiveBallDesc
 	dw CalciumDesc
 	dw RareCandyDesc
 	dw XAccuracyDesc
@@ -45,7 +45,7 @@ ItemDescriptions:
 	dw SuperRepelDesc
 	dw MaxRepelDesc
 	dw DireHitDesc
-	dw TeruSama3Desc
+	dw HeartScaleDesc
 	dw FreshWaterDesc
 	dw SodaPopDesc
 	dw LemonadeDesc
@@ -56,7 +56,7 @@ ItemDescriptions:
 	dw XSpecialDesc
 	dw CoinCaseDesc
 	dw ItemfinderDesc
-	dw TeruSama5Desc
+	dw PokeFluteDesc
 	dw ExpShareDesc
 	dw OldRodDesc
 	dw GoodRodDesc
@@ -71,7 +71,7 @@ ItemDescriptions:
 	dw SSTicketDesc
 	dw MysteryEggDesc
 	dw ClearBellDesc
-	dw SilverWingDesc
+	dw LensCaseDesc
 	dw MoomooMilkDesc
 	dw QuickClawDesc
 	dw PsnCureBerryDesc
@@ -90,7 +90,7 @@ ItemDescriptions:
 	dw BigMushroomDesc
 	dw SilverPowderDesc
 	dw BluApricornDesc
-	dw TeruSama6Desc
+	dw RockyHelmetDesc
 	dw AmuletCoinDesc
 	dw YlwApricornDesc
 	dw GrnApricornDesc
@@ -147,9 +147,9 @@ ItemDescriptions:
 	dw DragonFangDesc
 	dw LinkCableDesc
 	dw LeftoversDesc
-	dw TeruSama15Desc
-	dw TeruSama16Desc
-	dw TeruSama17Desc
+	dw JawFossilDesc
+	dw SailFossilDesc
+	dw OldAmberDesc
 	dw MysteryBerryDesc
 	dw DragonScaleDesc
 	dw BerserkGeneDesc
@@ -162,7 +162,7 @@ ItemDescriptions:
 	dw LevelBallDesc
 	dw LureBallDesc
 	dw FastBallDesc
-	dw TeruSama21Desc
+	dw DuskBallDesc
 	dw LightBallDesc
 	dw FriendBallDesc
 	dw MoonBallDesc
@@ -354,8 +354,9 @@ WaterStoneDesc:
 	db   "Evolves certain"
 	next "kinds of #MON.@"
 
-TeruSama2Desc:
-	db   "?@"
+QuickBallDesc:
+	db   "For catching on"
+	next "the first turn.@"
 
 HPUpDesc:
 	db   "Raises the HP of"
@@ -373,9 +374,9 @@ CarbosDesc:
 	db   "Raises SPEED of"
 	next "one #MON.@"
 
-LuckyPunchDesc:
-	db   "Ups critical hit"
-	next "ratio of CHANSEY.@"
+DiveBallDesc:
+	db   "A BALL for #MON"
+	next "found in water.@"
 
 CalciumDesc:
 	db   "Ups SPECIAL stats"
@@ -433,8 +434,9 @@ DireHitDesc:
 	db   "Ups critical hit"
 	next "ratio. (1 BTL)@"
 
-TeruSama3Desc:
-	db   "?@"
+HeartScaleDesc:
+	db   "A lovely scale."
+	next "Highly coveted.@"
 
 FreshWaterDesc:
 	db   "Restores #MON"
@@ -475,8 +477,9 @@ ItemfinderDesc:
 	db   "Checks for unseen"
 	next "items in the area.@"
 
-TeruSama5Desc:
-	db   "?@"
+PokeFluteDesc:
+	db   "Plays a pleasant"
+	next "melody.@"
 
 ExpShareDesc:
 	db   "Shares battle EXP."
@@ -534,9 +537,9 @@ ClearBellDesc:
 	db   "Makes a gentle"
 	next "ringing.@"
 
-SilverWingDesc:
-	db   "A strange, silver-"
-	next "colored feather.@"
+LensCaseDesc:
+	db   "A chic case for"
+	next "contact lenses.@"
 
 MoomooMilkDesc:
 	db   "Restores #MON"
@@ -608,8 +611,9 @@ SilverPowderDesc:
 BluApricornDesc:
 	db   "A blue APRICORN.@"
 
-TeruSama6Desc:
-	db   "?@"
+RockyHelmetDesc:
+	db   "Damages attacker"
+	next "on contact.@"
 
 AmuletCoinDesc:
 	db   "Doubles monetary"
@@ -826,14 +830,17 @@ LeftoversDesc:
 	db   "Restores HP during"
 	next "battle. (HOLD)@"
 
-TeruSama15Desc:
-	db   "?@"
+JawFossilDesc:
+	db   "Contains genes of"
+	next "an ancient #MON@"
 
-TeruSama16Desc:
-	db   "?@"
+SailFossilDesc:
+	db   "Contains genes of"
+	next "an ancient #MON@"
 
-TeruSama17Desc:
-	db   "?@"
+OldAmberDesc:
+	db   "Contains genes of"
+	next "an ancient #MON@"
 
 MysteryBerryDesc:
 	db   "A self-restore"
@@ -880,8 +887,9 @@ FastBallDesc:
 	db   "A BALL for catch-"
 	next "ing fast #MON.@"
 
-TeruSama21Desc:
-	db   "?@"
+DuskBallDesc:
+	db   "A BALL for night-"
+	next "time or caves.@"
 
 LightBallDesc:
 	db   "An odd, electrical"

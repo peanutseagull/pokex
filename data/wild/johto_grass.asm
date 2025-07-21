@@ -1,9 +1,10 @@
 ; Johto Pokémon in grass
+; chances - 30, 30, 20, 10, 5, 4, 1
 
 JohtoGrassWildMons:
 
 	def_grass_wildmons ROUTE_1
-	db 5 percent, 5 percent, 5 percent
+	db 10 percent, 10 percent, 10 percent
 	; morn
 	db 2, SCATTERBUG
 	db 2, BUNNELBY
@@ -31,7 +32,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_2
-	db 5 percent, 5 percent, 5 percent
+	db 10 percent, 10 percent, 10 percent
 	; morn
 	db 4, CATERPIE
 	db 4, WEEDLE
@@ -59,7 +60,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 	
 	def_grass_wildmons SANTALUNE_FOREST
-	db 5 percent, 5 percent, 5 percent
+	db 10 percent, 10 percent, 10 percent
 	; morn
 	db 4, CATERPIE
 	db 4, WEEDLE
@@ -87,7 +88,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_3
-	db 5 percent, 5 percent, 5 percent
+	db 10 percent, 10 percent, 10 percent
 	; morn
 	db 4, PIDGEY
 	db 4, FLETCHLING
@@ -115,7 +116,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_22
-	db 5 percent, 5 percent, 5 percent
+	db 10 percent, 10 percent, 10 percent
 	; morn
 	db 6, LITLEO
 	db 6, BUNNELBY
@@ -143,7 +144,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_4
-	db 5 percent, 5 percent, 5 percent
+	db 10 percent, 10 percent, 10 percent
 	; morn
 	db 8, HOPPIP
 	db 8, FLABEBE
@@ -168,6 +169,258 @@ JohtoGrassWildMons:
 	db 8, ODDISH
 	db 8, ODDISH
 	db 8, CLEFFA
+	end_grass_wildmons
+
+	def_grass_wildmons ROUTE_5_EAST
+	db 10 percent, 10 percent, 10 percent
+	; morn
+	db 9, BUNNELBY
+	db 9, FURFROU
+	db 9, DODUO
+	db 9, PANCHAM
+	db 10, SKIDDO
+	db 10, ABRA
+	db 10, ABRA
+	; day
+	db 9, BUNNELBY
+	db 9, FURFROU
+	db 9, DODUO
+	db 9, PANCHAM
+	db 10, SKIDDO
+	db 10, ABRA
+	db 10, ABRA
+	; nite
+	db 9, BUNNELBY
+	db 9, FURFROU
+	db 9, DODUO
+	db 9, PANCHAM
+	db 10, SKIDDO
+	db 10, ABRA
+	db 10, ABRA
+	end_grass_wildmons
+	
+	def_grass_wildmons ROUTE_5_WEST
+	db 10 percent, 10 percent, 10 percent
+	; morn
+	db 9, SKIDDO
+	db 9, FURFROU
+	db 9, PANCHAM
+	db 9, DODUO
+	db 10, BUNNELBY
+	db 10, ABRA
+	db 10, ABRA
+	; day
+	db 9, SKIDDO
+	db 9, FURFROU
+	db 9, PANCHAM
+	db 9, DODUO
+	db 10, BUNNELBY
+	db 10, ABRA
+	db 10, ABRA
+	; nite
+	db 9, SKIDDO
+	db 9, FURFROU
+	db 9, PANCHAM
+	db 9, DODUO
+	db 10, BUNNELBY
+	db 10, ABRA
+	db 10, ABRA
+	end_grass_wildmons
+	
+	def_grass_wildmons ROUTE_6
+	db 10 percent, 10 percent, 10 percent
+	; morn
+	db 10, ODDISH
+	db 10, SENTRET
+	db 10, ESPURR
+	db 11, HONEDGE
+	db 11, ODDISH
+	db 11, SENTRET
+	db 12, YANMA
+	; day
+	db 10, ODDISH
+	db 10, SENTRET
+	db 10, ESPURR
+	db 11, HONEDGE
+	db 11, ODDISH
+	db 11, SENTRET
+	db 12, YANMA
+	; nite
+	db 10, ODDISH
+	db 10, SENTRET
+	db 10, ESPURR
+	db 11, HONEDGE
+	db 11, ODDISH
+	db 11, SENTRET
+	db 12, YANMA
+	end_grass_wildmons
+	
+	def_grass_wildmons ROUTE_7_EAST
+	db 10 percent, 10 percent, 10 percent
+	; morn
+	db 12, WOOPER
+	db 12, FLABEBE
+	db 12, PSYDUCK
+	db 14, SMEARGLE
+	db 13, SPRITZEE
+	db 13, SWIRLIX
+	db 13, SWIRLIX	
+	; day
+	db 12, WOOPER
+	db 12, FLABEBE
+	db 12, PSYDUCK
+	db 14, SMEARGLE
+	db 13, SPRITZEE
+	db 13, SWIRLIX
+	db 13, SWIRLIX	
+	; nite
+	db 12, WOOPER
+	db 12, FLABEBE
+	db 12, PSYDUCK
+	db 14, SMEARGLE
+	db 13, SPRITZEE
+	db 13, SWIRLIX
+	db 13, SWIRLIX
+	end_grass_wildmons
+	
+	def_grass_wildmons ROUTE_7_WEST
+	db 10 percent, 10 percent, 10 percent
+	; morn
+	db 12, WOOPER
+	db 12, FLABEBE
+	db 12, PSYDUCK
+	db 14, SMEARGLE
+	db 13, SPRITZEE
+	db 13, SWIRLIX
+	db 13, SWIRLIX	
+	; day
+	db 12, WOOPER
+	db 12, FLABEBE
+	db 12, PSYDUCK
+	db 14, SMEARGLE
+	db 13, SPRITZEE
+	db 13, SWIRLIX
+	db 13, SWIRLIX	
+	; nite
+	db 12, WOOPER
+	db 12, FLABEBE
+	db 12, PSYDUCK
+	db 14, SMEARGLE
+	db 13, SPRITZEE
+	db 13, SWIRLIX
+	db 13, SWIRLIX
+	end_grass_wildmons
+	
+	def_grass_wildmons CONNECTING_CAVE
+	db 6 percent, 6 percent, 6 percent
+	; morn
+	db 13, ZUBAT
+	db 13, ZUBAT
+	db 14, ZUBAT
+	db 14, ZUBAT
+	db 14, CUBONE
+	db 14, CUBONE
+	db 15, GOLBAT
+	; day
+	db 13, ZUBAT
+	db 13, ZUBAT
+	db 14, ZUBAT
+	db 14, ZUBAT
+	db 14, CUBONE
+	db 14, CUBONE
+	db 15, GOLBAT	
+	; nite
+	db 13, ZUBAT
+	db 13, ZUBAT
+	db 14, ZUBAT
+	db 14, ZUBAT
+	db 14, CUBONE
+	db 14, CUBONE
+	db 15, GOLBAT	
+	end_grass_wildmons
+	
+	def_grass_wildmons ROUTE_8_UPPER
+	db 10 percent, 10 percent, 10 percent
+	; morn
+	db 14, EKANS
+	db 13, EKANS
+	db 14, INKAY
+	db 14, INKAY
+	db 15, INKAY
+	db 15, LARVITAR
+	db 15, LARVITAR
+	; day
+	db 14, EKANS
+	db 13, EKANS
+	db 14, INKAY
+	db 14, INKAY
+	db 15, INKAY
+	db 15, LARVITAR
+	db 15, LARVITAR	
+	; nite
+	db 14, EKANS
+	db 13, HOOTHOOT
+	db 14, INKAY
+	db 14, INKAY 
+	db 15, INKAY 
+	db 15, LARVITAR
+	db 15, LARVITAR
+	end_grass_wildmons
+	
+	def_grass_wildmons ROUTE_9
+	db 10 percent, 10 percent, 10 percent
+	; morn
+	db 15, SANDSHREW
+	db 15, HELIOPTILE
+	db 15, SANDSHREW
+	db 16, SANDSHREW
+	db 15, RHYHORN
+	db 16, RHYHORN
+	db 17, RHYHORN
+	; day
+	db 15, SANDSHREW
+	db 15, HELIOPTILE
+	db 15, SANDSHREW
+	db 16, SANDSHREW
+	db 15, RHYHORN
+	db 16, RHYHORN
+	db 17, RHYHORN
+	; nite
+	db 15, SANDSHREW
+	db 15, HELIOPTILE
+	db 15, SANDSHREW
+	db 16, SANDSHREW
+	db 15, RHYHORN
+	db 16, RHYHORN
+	db 17, RHYHORN
+	end_grass_wildmons
+	
+	def_grass_wildmons GLITTERING_CAVE_ENTRANCE
+	db 6 percent, 6 percent, 6 percent
+	; morn
+	db 16, MACHOP
+	db 16, CUBONE
+	db 17, RHYHORN
+	db 18, ONIX
+	db 18, KANGASKHAN
+	db 16, GLIGAR
+	db 16, GLIGAR
+	; day
+	db 16, MACHOP
+	db 16, CUBONE
+	db 17, RHYHORN
+	db 18, ONIX
+	db 18, KANGASKHAN
+	db 16, GLIGAR
+	db 16, GLIGAR
+	; nite
+	db 16, MACHOP
+	db 16, CUBONE
+	db 17, RHYHORN
+	db 18, ONIX
+	db 18, KANGASKHAN
+	db 16, GLIGAR
+	db 16, GLIGAR
 	end_grass_wildmons
 	
 	db -1 ; end

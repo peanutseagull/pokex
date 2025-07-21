@@ -16,13 +16,19 @@ Route3SignText:
 Route3SuperPotion:
 	itemball SUPER_POTION
 	
-TrainerBugCatcherOliver:
-	trainer BUG_CATCHER, OLIVER, EVENT_BEAT_BUG_CATCHER_OLIVER, BugCatcherOliverSeenText, BugCatcherOliverBeatenText, 0, .Script
+Route3ShinyStone:
+	itemball SHINY_STONE
+	
+Route3Revive:
+	itemball REVIVE
+	
+TrainerCamperOliver:
+	trainer CAMPER, OLIVER, EVENT_BEAT_CAMPER_OLIVER, CamperOliverSeenText, CamperOliverBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext BugCatcherOliverAfterText
+	writetext CamperOliverAfterText
 	waitbutton
 	closetext
 	end
@@ -39,12 +45,12 @@ TrainerPicnickerElla:
 	end
 	
 TrainerPicnickerBridget:
-	trainer PICNICKER, BRIDGET, EVENT_BEAT_PICNICKER_BRIDGET, PicnickerBridgetSeenText, PicnickerBridgetBeatenText, 0, .Script
+	trainer SCHOOLGIRL, BRIDGET, EVENT_BEAT_SCHOOLGIRL_BRIDGET, SchoolgirlBridgetSeenText, SchoolgirlBridgetBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
 	opentext
-	writetext PicnickerBridgetAfterText
+	writetext SchoolgirlBridgetAfterText
 	waitbutton
 	closetext
 	end
@@ -60,19 +66,19 @@ TrainerSchoolboyBrighton:
 	closetext
 	end
 	
-PicnickerBridgetSeenText:
+SchoolgirlBridgetSeenText:
 	text "My #MON and"
 	line "I are studying."
 	
 	para "Wanna join us?"
 	done
 	
-PicnickerBridgetBeatenText:
+SchoolgirlBridgetBeatenText:
 	text "Just studying is"
 	line "not enough!"
 	done
 	
-PicnickerBridgetAfterText:
+SchoolgirlBridgetAfterText:
 	text "I need more"
 	line "practice in real"
 	cont "#MON battles!"
@@ -114,19 +120,19 @@ PicnickerEllaAfterText:
 	cont "me battling!"
 	done
 	
-BugCatcherOliverSeenText:
+CamperOliverSeenText:
 	text "My mom told me"
 	line "to challenge"
 	cont "everyone I see!"
 	done
 	
-BugCatcherOliverBeatenText:
+CamperOliverBeatenText:
 	text "My mom told me"
 	line "to be polite,"
 	cont "even if I lose!"
 	done
 	
-BugCatcherOliverAfterText:
+CamperOliverAfterText:
 	text "I'm gonna go play"
 	line "with my #MON!"
 	done
@@ -144,8 +150,10 @@ Route3_MapEvents:
 	bg_event 19, 19, BGEVENT_READ, Route3Sign
 
 	def_object_events
-	object_event 19, 15, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerBugCatcherOliver, -1
+	object_event 19, 15, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 4, TrainerCamperOliver, -1
 	object_event 23,  8, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerPicnickerElla, -1
 	object_event 13, 12, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerPicnickerBridget, -1
 	object_event  4, 16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_TRAINER, 3, TrainerSchoolboyBrighton, -1
 	object_event 13, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route3SuperPotion, EVENT_ROUTE_3_SUPER_POTION
+	object_event  4, 22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route3ShinyStone, EVENT_ROUTE_3_SHINY_STONE
+	object_event 25,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route3Revive, EVENT_ROUTE_3_REVIVE
