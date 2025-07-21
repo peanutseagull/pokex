@@ -160,9 +160,9 @@ ItemEffects:
 	dw NoEffect            ; DRAGON_FANG
 	dw EvoStoneEffect      ; LINK_CABLE
 	dw NoEffect            ; LEFTOVERS
-	dw NoEffect            ; ITEM_93
-	dw NoEffect            ; ITEM_94
-	dw NoEffect            ; ITEM_95
+	dw NoEffect            ; JAW_FOSSIL
+	dw NoEffect            ; SAIL_FOSSIL
+	dw NoEffect            ; OLD_AMBER
 	dw RestorePPEffect     ; MYSTERYBERRY
 	dw NoEffect            ; DRAGON_SCALE
 	dw NoEffect            ; BERSERK_GENE

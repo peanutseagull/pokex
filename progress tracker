@@ -1,32 +1,50 @@
-GOALS FOR AMBRETTE BRANCH:
-	Complete game up until Glittering Cave:
-	
-	Santalune Boutique
-	Lumiose Shops: Coiffure Clips, Restaurant Le Nah, Trainer PR Studio
-	
-	Route 7 past Bridge
-	Day Care
-	Battle Chateau
-	
-	Connecting Cave
-	Route 8 Top
-	Ambrette Town
-	Route 9
-	Glittering Cave
-	
+AMBRETTE BRANCH: COMPLETE
+
+SHALOUR BRANCH:
+Maps:
+	Route 8 Lower
+	Connecting Cave Cyllage Side
+	Cyllage City + Gym
+	Route 10
+	Geosenge Town
+	Route 11
+	Reflection Cave
+	Shalour City + Gym
+	Tower of Mastery
+
 Stuff to come back to:
-	spawn points
 	Route 22 - area behind surf
 	Mom banking call
 	Shutterbug Cafe Long/Short Dialogue
-	Coiffure Clips?
+	Coiffure Clips? what did i mean by this
 	Walking animation for karen twin and black belt
+	Should Trainer PR studio be the other way around?
+	Route 8 Upper Strength Area
+	Route 8 Lower Surf Area
+	Boutique Couture + Style Mechanic
+	Add Rocks to Break with Rhyhorn?
+	route 8 sky trainer?
+	does guy go back to Shabboneau castle?
+	Hotel NPCs
+	Spawn points for rest of Kalos
+	Glittering Cave Unique Tileset?
+	Fix Bugs+Glitches and Design Flaws
+	remove excess scenes
+	ROCKY HELMET EFFECT
+	Qwilfish Swarm Aquacorde
+	Aerodactylite
+	Fix TMs!!!!
+	glittering cave unique rock smash items
+	replace mud-slap tm?
+	Animate Aquarium Tiles
+	Battle Chateau
+	Restaurant Le Nah reward doesn't work as intended
+	heal ball?
 	
 Non-urgent:
 	Redo intro
 	Rename PC to Cassius' PC after meeting him
-	Surf pokemon Data for Route 4, 7, Aquacorde Town
-	Fishing Pokemon Data
+	Surf pokemon Data
 	Headbutt trees
 	Modern berry system?
 	Sprites
@@ -34,23 +52,27 @@ Non-urgent:
 	Fix/remove footprints?
 	Pokedex Entries
 	Remove unnecessary data
-	Redo opening intro
 	Sky battles????
 	Reorganise items sensibly
-	Fix Flypoints
-	Fishing Data
+	Fly Callbacks
+	Redo Parfum Palace Interior
+	Different Genders for different Rivals - Variable Sprite?
+	reduce size of gen I starter selection box
 
 Known Bugs:
 	Too many walking sprites in Camphrier Group
-	Broken hitbox for NPCs with WALK_UP_DOWN and WALK_LEFT_RIGHT spritemovedata
-	ivysaur shows front sprite when battling???
-	Broken pokemon sprites occasionally (displaying tiles 01 and 02 in random spots)
-	egg party icon broken - probably something to do with gfx/icons.asm and engine/gfx/mon_icons.asm
-	Egg front sprite is Shiny Charmander???
 	Daycare pokemon sprites broken
-	RISING STAR HAMISH WTFF??????? fixed?
+	Shauna's starter isn't shiny
+	Trainer's pokemon's health is overflowing?
 	
-	Wrong sprites: 
+	Wrong sprites: pyroar back
+	shiny palettes: braixen?
+	
+	Haven't seen in a while:
+	Broken hitbox for NPCs with WALK_UP_DOWN and WALK_LEFT_RIGHT spritemovedata, only sometimes
+	Broken pokemon sprites occasionally (displaying tiles 01 and 02 in random spots)?
+	Occasional PC glitch - perhaps was related to fixed egg party icon
+	talking to restaurant le nah chef can crash the game
 	
 Inconsequential Stuff:
 	Add accents: À bientôt!, Rivière Walk
@@ -59,7 +81,8 @@ Inconsequential Stuff:
 	
 Long-term goals (pipe dreams):
 	Aegislash stance change?
-	Alternate forms: Furfrou, Flabebe, Meowstic
+	evolution methods - pancham inkay etc
+	Alternate forms: Furfrou, Flabebe line, Meowstic
 	Unique tilesets
 	Double battles
 	horde encounters??? (almost definitely won't happen)
@@ -73,13 +96,17 @@ STUFF DONE:
     Color party menu icons by species
     Improve the outdoor sprite system
     Allow more than 15 object_events per map
+    Disable jumping over ledges onto obstacle tiles or NPCs
+	Smashing rocks has a chance to contain items
+    Reviving Pokémon from Fossils (Gen I)
+	(ONLY UP TO STEP 3) Allow more trainer parties, with individual DVs, stat experience, nicknames, variable teams, etc.
+
 
 Tutorials to Follow:
     Running Shoes
     Correct grammar for plural trainers like Twins
     Automatically reuse Repel
     Make wild encounters vary
-    Allow more trainer parties, with individual DVs, stat experience, nicknames, variable teams, etc.
     Evolve while holding an item
     Physical/Special split
     Restore/Remove the redundant move grammar table
@@ -87,7 +114,6 @@ Tutorials to Follow:
     Modify existing gender formula
     Remove the gym badges boosts
     Allow fishing while surfing
-    Reviving Pokémon from Fossils (Gen I)
     Adding a "Tradeback" NPC
     Show move names for TMs and HMs when receiving or buying
     Replace stat experience with EVs
@@ -96,7 +122,6 @@ Tutorials to Follow:
     Gain experience from catching Pokémon
     Lose money proportional to badges and level
     Add Hail as a new weather condition
-    Smashing rocks has a chance to contain items
     Automatic battle weather on certain maps
     Use unique colors for each thrown Poké Ball
     Move Reminder
@@ -141,6 +166,5 @@ Other tutorials (may or may not do):
 
     Customizable Pokédex Color
     Wall-to-wall carpeting in your room
-    Disable jumping over ledges onto obstacle tiles or NPCs
     Replace Menu Account with a small clock in the corner of the screen
     Fight a copy of your own party in the Trainer House
