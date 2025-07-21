@@ -8,7 +8,20 @@ AquacordeTown_MapScripts:
 	def_callbacks
 
 AquacordeTownFisherScript:
-	jumptextfaceplayer AquacordeTownFisherText
+	faceplayer
+	opentext
+	checkevent EVENT_GOT_OLD_ROD
+	iftrue .Fish
+	writetext AquacordeTownFisherText
+	waitbutton
+	closetext
+	end
+	
+.Fish
+	writetext AquacordeTownFisherQwilfishText
+	waitbutton
+	closetext
+	end
 	
 AquacordeTownGrampsScript:
 	jumptextfaceplayer AquacordeTownGrampsText
@@ -39,6 +52,28 @@ AquacordeTownFisherText:
 	para "If you get a"
 	line "fishing rod, you"
 	cont "should stop by!"
+	done
+	
+AquacordeTownFisherQwilfishText:
+	text "Is that an OLD"
+	line "ROD?"
+	
+	para "I see you're a"
+	line "budding fisher!"
+	
+	para "Here's a tip -"
+	line "QWILFISH can be"
+	cont "found in this here"
+	cont "river!"
+	
+	para "It's a pretty rare"
+	line "#MON!"
+	
+	para "But sometimes they"
+	line "are found in large"
+	cont "numbers!"
+	
+	para "Keep a look out!"
 	done
 	
 AquacordeTownGrampsText:
