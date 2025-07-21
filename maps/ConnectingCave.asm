@@ -53,17 +53,25 @@ ConnectingCaveHikerText:
 ConnectingCaveScientistScript:
 	faceplayer
 	opentext
+	checkevent EVENT_CONNECTING_CAVE_HEALED_YOU
+	iffalse .Heal
+	writetext ConnectingCaveScientistAfterText
+	waitbutton
+	closetext
+	end
+	
+.Heal
 	writetext ConnectingCaveScientistText
 	waitbutton
 	closetext
 	special FadeBlackQuickly
 	special ReloadSpritesNoPalettes
-	; special StubbedTrainerRankings_Healings
 	playmusic MUSIC_HEAL
 	special HealParty
 	pause 60
 	special FadeInQuickly
 	special RestartMapMusic
+	setevent EVENT_CONNECTING_CAVE_HEALED_YOU
 	opentext
 	writetext ConnectingCaveScientistAfterText
 	waitbutton
