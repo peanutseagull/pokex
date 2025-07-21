@@ -5,6 +5,8 @@ Trainers:
 ; - db "NAME@", TRAINERTYPE_* constant
 ; - 1 to 6 Pokémon:
 ;    * for TRAINERTYPE_NORMAL:     db level, species
+;	 * for TRAINERTYPE_NICKMAME:   db "NICKNAME@"
+;	 * for TRAINERTYPE_DVS:		   db atk|def dv, spd|spc dv
 ;    * for TRAINERTYPE_MOVES:      db level, species, 4 moves
 ;    * for TRAINERTYPE_ITEM:       db level, species, item
 ;    * for TRAINERTYPE_ITEM_MOVES: db level, species, item, 4 moves
@@ -134,39 +136,39 @@ ChampionGroup:
 
 ShaunaGroup:
 	; SHAUNA (1)
-	db "SHAUNA@", TRAINERTYPE_NORMAL
-	db  5, CHESPIN
+	db "SHAUNA@", TRAINERTYPE_NICKNAME | TRAINERTYPE_DVS
+	db  5, CHESPIN,		"CHESTER@",		ATKDEFDV_SHINY, SPDSPCDV_SHINY
 	db -1 ; end
 
 	; SHAUNA (2)
-	db "SHAUNA@", TRAINERTYPE_NORMAL
-	db  5, FENNEKIN
+	db "SHAUNA@", TRAINERTYPE_NICKNAME | TRAINERTYPE_DVS
+	db  5, FENNEKIN,	"KINKINS@",		ATKDEFDV_SHINY, SPDSPCDV_SHINY
 	db -1 ; end
 
 	; SHAUNA (3)
-	db "SHAUNA@", TRAINERTYPE_NORMAL
-	db  5, FROAKIE
+	db "SHAUNA@", TRAINERTYPE_NICKNAME | TRAINERTYPE_DVS
+	db  5, FROAKIE,		"FROABBLE@",	ATKDEFDV_SHINY, SPDSPCDV_SHINY
 	db -1 ; end
 
 	; SHAUNA (4)
-	db "SHAUNA@", TRAINERTYPE_NORMAL
-	db 20, CLAUNCHER
-	db 20, FLOETTE
-	db 22, QUILLADIN
+	db "SHAUNA@", TRAINERTYPE_NICKNAME | TRAINERTYPE_DVS
+	db 20, CLAUNCHER,	"@",			$bb, $bb
+	db 20, FLOETTE,		"@",			$bb, $bb
+	db 22, QUILLADIN,	"CHESTER@",		ATKDEFDV_SHINY, SPDSPCDV_SHINY
 	db -1 ; end
 	
 	; SHAUNA (5)
-	db "SHAUNA@", TRAINERTYPE_NORMAL
-	db 20, SKIDDO
-	db 20, FLOETTE
-	db 22, BRAIXEN
+	db "SHAUNA@", TRAINERTYPE_NICKNAME | TRAINERTYPE_DVS
+	db 20, SKIDDO,		"@",			$bb, $bb
+	db 20, FLOETTE,		"@",			$bb, $bb
+	db 22, BRAIXEN,		"KINKINS@",		ATKDEFDV_SHINY, SPDSPCDV_SHINY
 	db -1 ; end
 	
 	; SHAUNA (6)
-	db "SHAUNA@", TRAINERTYPE_NORMAL
-	db 20, LITLEO
-	db 20, FLOETTE
-	db 22, FROGADIER
+	db "SHAUNA@", TRAINERTYPE_NICKNAME | TRAINERTYPE_DVS
+	db 20, LITLEO,		"@",			$bb, $bb
+	db 20, FLOETTE,     "@",			$bb, $bb
+	db 22, FROGADIER,   "FROABBLE@",	ATKDEFDV_SHINY, SPDSPCDV_SHINY
 	db -1 ; end
 
 SerenaGroup:
