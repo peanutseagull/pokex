@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "MISCHIEF@" ; species name
+	dw 108, 198 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "It gathers things"
+	next "it likes and"
+	next "passes them"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "through its loop"
+	next "to teleport them"
+	next "to a secret place.@"

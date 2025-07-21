@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "REVOLVING@" ; species name
+	dw 104, 077 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "It flashes the"
+	next "light-emitting"
+	next "spots on its body,"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "draining the"
+	next "opponent's will to"
+	next "fight.@"

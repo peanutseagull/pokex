@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "ANTENNA@" ; species name
+	dw 008, 049 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "Its whiskers serve"
+	next "as antennas. By"
+	next "sending electrical"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "waves, it can"
+	next "communicate over"
+	next "vast distances.@"

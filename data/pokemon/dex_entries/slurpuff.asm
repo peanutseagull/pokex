@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "MERINGUE@" ; species name
+	dw 207, 110 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "Its sense of smell"
+	next "is 100 million"
+	next "times better than"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "a human's. It's"
+	next "like it can see"
+	next "with its nose!@"

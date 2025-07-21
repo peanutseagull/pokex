@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "ROYAL SWORD@" ; species name
+	dw 507, 1168 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "It can detect the"
+	next "innate qualities"
+	next "of leadership."
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "Whomever it recog-"
+	next "nizes is destined"
+	next "to become king.@"

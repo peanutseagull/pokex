@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "SWORD@" ; species name
+	dw 207, 099 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "HONEDGE divides"
+	next "into two swords,"
+	next "which cooperate"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "via telepathy to"
+	next "coordinate attacks"
+	next "and slash enemies.@"

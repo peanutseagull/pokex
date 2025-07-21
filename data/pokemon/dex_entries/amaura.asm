@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "TUNDRA@" ; species name
+	dw 403, 556 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "This ancient"
+	next "#MON was"
+	next "restored from a"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "part of its body"
+	next "frozen in ice for"
+	next "100 million years.@"

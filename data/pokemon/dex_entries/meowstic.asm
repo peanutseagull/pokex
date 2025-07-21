@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "CONSTRAINT@" ; species name
+	dw 200, 187 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "When in danger,"
+	next "it raises its ears"
+	next "and releases"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "enough psychic"
+	next "power to grind a"
+	next "truck into dust.@"

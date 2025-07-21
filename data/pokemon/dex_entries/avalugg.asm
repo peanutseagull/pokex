@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "ICEBERG@" ; species name
+	dw 607, 11133 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "Its ice-covered"
+	next "body is as hard"
+	next "as steel."
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "It crushes any-"
+	next "thing that stands"
+	next "in its way.@"

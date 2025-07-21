@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "COLLECTIVE@" ; species name
+	dw 403, 2116 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "When they evolve,"
+	next "two BINACLE become"
+	next "seven."
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "They fight with"
+	next "the power of seven"
+	next "BINACLE.@"

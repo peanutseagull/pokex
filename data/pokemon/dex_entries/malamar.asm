@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "OVERTURNING@" ; species name
+	dw 411, 1036 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "It lures its prey"
+	next "close with its"
+	next "hypnotic motions,"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "and it forces"
+	next "others to do what-"
+	next "ever it wants.@"

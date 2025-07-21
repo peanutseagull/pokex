@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "DESTRUCTION@" ; species name
+	dw 1900, 4475 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "When its wings and"
+	next "tail spread wide"
+	next "and glow red,"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "it absorbs the"
+	next "life force of"
+	next "living creatures.@"

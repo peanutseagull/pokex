@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "SINGLEBLOOM@" ; species name
+	dw 004, 002 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "It draws out and"
+	next "controls the power"
+	next "of flowers."
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "The flower it"
+	next "holds is likely"
+	next "part of its body.@"

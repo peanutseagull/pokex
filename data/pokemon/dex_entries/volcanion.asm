@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "STEAM@" ; species name
+	dw 507, 4299 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "It expels its"
+	next "internal steam"
+	next "from its arms."
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "It has enough"
+	next "power to blow away"
+	next "a mountain.@"

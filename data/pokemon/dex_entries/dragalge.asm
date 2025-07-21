@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "MOCK KELP@" ; species name
+	dw 511, 1797 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "Tales are told of"
+	next "ships that wander"
+	next "into seas where"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "DRAGALGE live,"
+	next "never to be seen"
+	next "again.@"

@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "COTTONCANDY@" ; species name
+	dw 104, 077 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "To entangle its"
+	next "opponents in"
+	next "battle,"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "it extrudes white"
+	next "threads sticky as"
+	next "cotton candy.@"

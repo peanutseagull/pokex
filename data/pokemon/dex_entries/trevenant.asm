@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "ELDER TREE@" ; species name
+	dw 411, 1565 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "It can control"
+	next "trees at will. It"
+	next "will trap people"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "who harm the"
+	next "forest, so they"
+	next "can never leave.@"

@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "LION CUB@" ; species name
+	dw 200, 298 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "They set off on"
+	next "their own and live"
+	next "by themselves."
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "These hot-blooded"
+	next "#MON are"
+	next "quick to fight.@"

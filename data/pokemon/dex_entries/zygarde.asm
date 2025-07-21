@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "ORDER@" ; species name
+	dw 1605, 6724 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "When KALOS' eco-"
+	next "system falls into"
+	next "disarray,"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "it appears and"
+	next "reveals its secret"
+	next "power.@"

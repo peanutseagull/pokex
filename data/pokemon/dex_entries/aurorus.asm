@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "TUNDRA@" ; species name
+	dw 810, 4960 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "Using its diamond-"
+	next "shaped crystals,"
+	next "it can instantly"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "create a wall of"
+	next "ice to block an"
+	next "opponent's attack.@"

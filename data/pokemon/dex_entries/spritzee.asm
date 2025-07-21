@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "PERFUME@" ; species name
+	dw 008, 011 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "Rather than using"
+	next "perfume, royal"
+	next "ladies used to"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "carry a SPRITZEE"
+	next "that would waft a"
+	next "sweet fragrance.@"

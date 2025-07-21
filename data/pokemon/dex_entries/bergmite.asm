@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "ICE CHUNK@" ; species name
+	dw 303, 2194 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "It blocks attacks"
+	next "with the ice that"
+	next "shields its body."
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "It uses cold air"
+	next "to repair cracks"
+	next "with new ice.@"

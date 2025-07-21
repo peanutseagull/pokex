@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "MOUNT@" ; species name
+	dw 507, 2006 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "They inhabit"
+	next "mountainous areas."
+	next "The leader of the"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "herd is decided"
+	next "by a battle of"
+	next "clashing horns.@"

@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "PUMPKIN@" ; species name
+	dw 507, 860 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "It enwraps its"
+	next "prey in its"
+	next "hairlike arms."
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "It sings joyfully"
+	next "as it observes the"
+	next "prey's suffering.@"

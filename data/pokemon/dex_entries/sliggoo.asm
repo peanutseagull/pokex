@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "SOFT TISSUE@" ; species name
+	dw 207, 386 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "It drives away"
+	next "opponents by"
+	next "excreting a sticky"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "liquid that can"
+	next "dissolve anything."
+	next "@"

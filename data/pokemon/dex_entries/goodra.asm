@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "DRAGON@" ; species name
+	dw 607, 3318 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "This very friendly"
+	next "DRAGON #MON"
+	next "hugs its beloved"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "Trainer, leaving"
+	next "them  covered in"
+	next "sticky slime.@"

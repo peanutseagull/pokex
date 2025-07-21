@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "FRAGRANCE@" ; species name
+	dw 207, 342 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "It devises various"
+	next "scents, pleasant"
+	next "and unpleasant,"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "in order to gain"
+	next "an edge in battle."
+	next "@"

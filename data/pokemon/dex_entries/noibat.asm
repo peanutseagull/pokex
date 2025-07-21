@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "SOUND WAVE@" ; species name
+	dw 108, 176 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "They live in pitch"
+	next "black caves. Their"
+	next "enormous ears can"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "emit ultrasonic"
+	next "waves of 200,000"
+	next "hertz.@"

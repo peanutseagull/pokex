@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "MOCK KELP@" ; species name
+	dw 108, 161 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "It looks just like"
+	next "rotten kelp. It"
+	next "hides from foes"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "while storing up"
+	next "power for its"
+	next "evolution.@"

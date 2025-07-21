@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "RESTRAINT@" ; species name
+	dw 100, 077 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "The organ that"
+	next "emits its psychic"
+	next "power is sheltered"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "by its ears to"
+	next "keep power from"
+	next "leaking out.@"

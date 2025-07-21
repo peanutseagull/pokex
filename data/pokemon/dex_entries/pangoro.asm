@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "DAUNTING@" ; species name
+	dw 611, 2998 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "Although it has a"
+	next "violent temper,"
+	next "it won't put up"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "with bullying. The"
+	next "leaf in its mouth"
+	next "can sense enemies.@"

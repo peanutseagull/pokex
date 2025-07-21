@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "GENERATOR@" ; species name
+	dw 108, 132 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "They make their"
+	next "home in deserts."
+	next "They can generate"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "their energy from"
+	next "basking in the"
+	next "sun.@"

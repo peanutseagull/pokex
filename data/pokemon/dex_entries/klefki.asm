@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "KEY RING@" ; species name
+	dw 008, 066 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "These collectors"
+	next "of keys threaten"
+	next "any attackers"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "by fiercely"
+	next "jingling their"
+	next "keys at them.@"

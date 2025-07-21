@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "ROYAL HEIR@" ; species name
+	dw 207, 573 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "Its immense jaws"
+	next "can chew up an"
+	next "automobile."
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "It lived 100"
+	next "million years ago."
+	next "@"

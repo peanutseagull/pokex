@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "DESPOT@" ; species name
+	dw 802, 5952 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "Thanks to its"
+	next "gargantuan jaws,"
+	next "it was invincible"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "in the ancient"
+	next "world it once"
+	next "inhabited.@"

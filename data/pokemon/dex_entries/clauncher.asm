@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "WATER GUN@" ; species name
+	dw 108, 183 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "They knock down"
+	next "flying prey by"
+	next "firing compressed"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "water from their"
+	next "massive claws like"
+	next "a pistol.@"

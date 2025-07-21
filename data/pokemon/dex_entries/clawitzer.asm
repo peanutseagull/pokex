@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "HOWITZER@" ; species name
+	dw 403, 778 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "Their enormous"
+	next "claws launch"
+	next "cannonballs of"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "of water powerful"
+	next "enough to pierce"
+	next "tanker hulls.@"

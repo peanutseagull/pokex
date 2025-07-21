@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "WRESTLING@" ; species name
+	dw 207, 474 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "With its wings,"
+	next "it controls its"
+	next "position in the"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "air. It likes to"
+	next "attack from above."
+	next "@"

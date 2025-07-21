@@ -1,10 +1,10 @@
-	db "NEW@" ; species name
-	dw 307, 740 ; height, weight
+	db "STUMP@" ; species name
+	dw 104, 154 ; height, weight
 
-	db   "This is a newly-"
-	next "discovered"
-	next "#MON."
+	db   "These #MON are"
+	next "created when"
+	next "spirits possess"
 	
-	page "More research"
-	next "is needed about"
-	next "this species.@"
+	page "rotten stumps. They"
+	next "prefer to live in"
+	next "abandoned forests.@"
