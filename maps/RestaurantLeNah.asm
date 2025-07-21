@@ -290,6 +290,123 @@ RestaurantLeNahFinishText:
 	line "your visit, here"
 	cont "is a small gift."
 	done
+	
+RestaurantLeNahWaitressScript:
+	jumptextfaceplayer RestaurantLeNahWaitressText
+	
+RestaurantLeNahWaitressText:
+	text "May I offer you"
+	line "some water?"
+	
+	para "Or does that just"
+	line "make you think"
+	cont "'Nah'?"
+	done
+	
+RestaurantLeNahBeautyScript:
+	jumptextfaceplayer RestaurantLeNahBeautyText
+	
+RestaurantLeNahBeautyText:
+	text "You've got to eat"
+	line "every last crumb"
+	cont "of food!"
+	
+	para "If you waste food,"
+	line "isn't it way too"
+	cont "'mottainai'?"
+	
+	para "That's what we say"
+	line "where I'm from in"
+	cont "KANTO!"
+	done
+	
+RestaurantLeNahTouristfScript:
+	jumptextfaceplayer RestaurantLeNahTouristfText
+	
+RestaurantLeNahTouristfText:
+	text "Totally averagely"
+	line "good?"
+	
+	para "Is that supposed"
+	line "to be a"
+	cont "compliment?"
+	done
+	
+RestaurantLeNahTouristmScript:
+	jumptextfaceplayer RestaurantLeNahTouristmText
+	
+RestaurantLeNahTouristmText:
+	text "Nah, nah, nah!"
+	line "You just don't get"
+	cont "it!"
+	
+	para "It's like totally"
+	line "averagely good!"
+	done
+	
+RestaurantLeNahCooltrainermScript:
+	jumptextfaceplayer RestaurantLeNahCooltrainermText
+	
+RestaurantLeNahCooltrainermText:
+	text "We eat here very"
+	line "day."
+	
+	para "After all, every"
+	line "day is our"
+	cont "anniversary!"
+	done
+	
+RestaurantLeNahCooltrainerfScript:
+	jumptextfaceplayer RestaurantLeNahCooltrainerfText
+	
+RestaurantLeNahCooltrainerfText:
+	text "The most important"
+	line "thing in a Double"
+	cont "Battle is the"
+	cont "connection between"
+	cont "two #MON."
+	
+	para "Yes, just like the"
+	line "connection between"
+	cont "him and me…"
+	done
+	
+RestaurantLeNahMorty1Script:
+	jumptextfaceplayer RestaurantLeNahMorty1Text
+	
+RestaurantLeNahMorty1Text:
+	text "We're enjoying the"
+	line "flavours and the"
+	cont "atmosphere."
+	
+	para "And we're looking"
+	line "good while we do"
+	cont "it, too."
+	done
+	
+RestaurantLeNahMorty2Script:
+	jumptextfaceplayer RestaurantLeNahMorty2Text
+
+RestaurantLeNahMorty2Text:
+	text "So we're having a"
+	line "meal together as"
+	cont "men."
+	
+	para "Nothing wrong with"
+	line "that."
+	done
+	
+RestaurantLeNahGarconScript:
+	jumptextfaceplayer RestaurantLeNahGarconText
+	
+RestaurantLeNahGarconText:
+	text "So what if we've"
+	line "just got one star?"
+	
+	para "We'll just have to"
+	line "be the best one-"
+	cont "star café, then!"
+	done
 
 RestaurantLeNah_MapEvents:
 	db 0, 0 ; filler
@@ -305,3 +422,12 @@ RestaurantLeNah_MapEvents:
 	def_object_events
 	object_event  9, 14, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RestaurantLeNahChefScript, -1
 	object_event  7,  3, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RestaurantLeNahEntreeScript, EVENT_RESTAURANT_LE_NAH_WAITER
+	object_event  4,  6, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RestaurantLeNahWaitressScript, -1
+	object_event  1,  9, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RestaurantLeNahBeautyScript, -1
+	object_event  1, 14, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RestaurantLeNahTouristfScript, -1
+	object_event  4, 14, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RestaurantLeNahTouristmScript, -1
+	object_event 13,  7, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RestaurantLeNahCooltrainermScript, -1
+	object_event 16,  7, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RestaurantLeNahCooltrainerfScript, -1
+	object_event 13, 12, SPRITE_MORTY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RestaurantLeNahMorty1Script, -1
+	object_event 16, 12, SPRITE_MORTY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RestaurantLeNahMorty2Script, -1
+	object_event 17,  1, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RestaurantLeNahGarconScript, -1
