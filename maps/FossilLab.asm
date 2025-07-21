@@ -265,7 +265,8 @@ FossilLabScientist1Script:
 	
 .GiveAerodactylite:
 	writetext FossilLabScientist1GiveText
-	; verbosegiveitem AERODACYLITE
+	promptbutton
+	verbosegiveitem OLD_AMBER ; AERODACYLITE
 	writetext FossilLabScientist1GiveAfterText
 	waitbutton
 	closetext
