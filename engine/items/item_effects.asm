@@ -154,11 +154,11 @@ ItemEffects:
 	dw NoEffect            ; CHARCOAL
 	dw RestoreHPEffect     ; BERRY_JUICE
 	dw NoEffect            ; SCOPE_LENS
-	dw NoEffect            ; ITEM_8D
-	dw NoEffect            ; ITEM_8E
+	dw EvoStoneEffect      ; SHINY_STONE
+	dw EvoStoneEffect      ; DUSK_STONE
 	dw NoEffect            ; METAL_COAT
 	dw NoEffect            ; DRAGON_FANG
-	dw NoEffect            ; ITEM_91
+	dw EvoStoneEffect      ; LINK_CABLE
 	dw NoEffect            ; LEFTOVERS
 	dw NoEffect            ; ITEM_93
 	dw NoEffect            ; ITEM_94
