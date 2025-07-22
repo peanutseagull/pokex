@@ -425,6 +425,7 @@ GlitteringCaveDeepSerenaScene2:
 	reloadmap
 	setevent EVENT_GLITTERING_CAVE_DEEP_FLARES2
 	setscene SCENE_GLITTERINGCAVEDEEP_NOOP
+	setmapscene ROUTE_8_LOWER, SCENE_ROUTE8LOWER_DOWSING
 	playmapmusic
 	end
 	

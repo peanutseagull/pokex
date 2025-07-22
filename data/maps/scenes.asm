@@ -42,4 +42,5 @@ MapScenes::
 	scene_var PARFUM_PALACE_2F_BALCONY,					   wParfumPalace2FBalconySceneID
 	scene_var FOSSIL_LAB,								   wFossilLabSceneID
 	scene_var GLITTERING_CAVE_DEEP,						   wGlitteringCaveDeepSceneID
+	scene_var ROUTE_8_LOWER,							   wRoute8LowerSceneID
 	db -1 ; end
