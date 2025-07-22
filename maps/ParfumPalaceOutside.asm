@@ -180,6 +180,6 @@ ParfumPalaceOutside_MapEvents:
 	object_event 31,  8, SPRITE_GENTLEMAN, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ParfumPalaceOutsideGentlemanAfterScript, EVENT_HAVENT_PAID_PARFUM_ENTRANCE_FEE
 	object_event  5, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ParfumPalaceOutsideEther, EVENT_PARFUM_PALACE_OUTSIDE_ETHER
 	object_event 29, 16, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ParfumPalaceOutsidePokefanfScript, -1
-	object_event 18, 10, SPRITE_BIKER, SPRITEMOVEDATA_WANDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ParfumPalaceOutsidePunkGuyScript, -1
+	object_event 18, 10, SPRITE_ROCKER, SPRITEMOVEDATA_WANDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ParfumPalaceOutsidePunkGuyScript, -1
 	object_event 39, 11, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ParfumPalaceOutsideTouristfScript, -1
 	object_event 40, 11, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ParfumPalaceOutsideTouristmScript, -1
