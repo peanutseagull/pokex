@@ -138,7 +138,7 @@ FriseurFurfrouMadameFurfrouText:
 	line "trim sometime,"
 	cont "darling, yes?"
 	
-	para "A bientot!" ; À bientôt!
+	para "À bientôt!"
 	done
 	
 FriseurFurfrouMadameIntroText:

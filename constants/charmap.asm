@@ -174,6 +174,10 @@
 	charmap "│",         $bd
 	charmap "└",         $be
 	charmap "┘",         $bf
+	
+	charmap "ô",		 $c0
+	charmap "À",		 $c1
+	charmap "è",		 $c2
 
 	charmap "′",         $ce
 	charmap "″",         $cf

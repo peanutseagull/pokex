@@ -633,7 +633,7 @@ Route7Sign:
 	
 Route7SignText:
 	text "ROUTE 7:"
-	line "Riviere Walk"
+	line "Rivière Walk"
 	done
 	
 Route7SnorlaxScript:
