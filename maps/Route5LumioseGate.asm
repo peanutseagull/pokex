@@ -14,7 +14,7 @@ Route5LumioseGateReceptionistText:
 	cont "Versant Road."
 	
 	para "It leads to both"
-	line "Parfum Palace and"
+	line "PARFUM PALACE and"
 	cont "CAMPHRIER TOWN."
 	done
 	

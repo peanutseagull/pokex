@@ -102,7 +102,7 @@ DexioSinaText1:
 	cont "become."
 	
 	para "Here! This is the"
-	line "TM for Return."
+	line "TM for RETURN."
 	
 	para "This move will"
 	line "get stronger as"

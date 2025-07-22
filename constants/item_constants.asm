@@ -269,6 +269,56 @@ DEF TM01 EQU const_value
 	add_tm FIRE_PUNCH   ; f0 ROUND
 	add_tm FURY_CUTTER  ; f1 ECHOED_VOICE
 	add_tm NIGHTMARE    ; f2 OVERHEAT
+	; add_tm STEEL_WING
+	; add_tm FOCUS_BLAST
+	; add_tm ENERGY_BALL
+	; add_tm FALSE_SWIPE
+	; add_tm SCALD
+	; add_tm FLING
+	; add_tm CHARGE_BEAM
+	; add_tm SKY_DROP
+	; add_tm INCINERATE
+	; add_tm QUASH
+	; add_tm WILL-O-WISP
+	; add_tm ACROBATICS
+	; add_tm EMBARGO
+	; add_tm EXPLOSION
+	; add_tm SHADOW_CLAW
+	; add_tm PAYBACK
+	; add_tm RETALIATE
+	; add_tm GIGA IMPACT
+	; add_tm ROCK_POLISH
+	; add_tm FLASH
+	; add_tm STONE_EDGE
+	; add_tm VOLT_SWITCH
+	; add_tm THUNDER_WAVE
+	; add_tm GYRO_BALL
+	; add_tm SWORDS_DANCE
+	; add_tm STRUGGLE_BUG
+	; add_tm PSYCH_UP
+	; add_tm BULLDOZE
+	; add_tm FROST_BREATH
+	; add_tm ROCK_SLIDE
+	; add_tm x-SCISSOR
+	; add_tm DRAGON_TAIL
+	; add_tm INFESTATION
+	; add_tm POISON_JAB
+	; add_tm DREAM_EATER
+	; add_tm GRASS_KNOT
+	; add_tm SWAGGER
+	; add_tm SLEEP_TALK
+	; add_tm U-TURN
+	; add_tm SUBSTITUTE
+	; add_tm FLASH_CANNON
+	; add_tm TRICK_ROOM
+	; add_tm WILD_CHARGE
+	; add_tm ROCK_SMASH
+	; add_tm SNARL
+	; add_tm NATURE_POWER
+	; add_tm DARK_PULSE
+	; add_tm POWER-UP_PUNCH
+	; add_tm DAZZLING GLEAM
+	; add_tm CONFIDE
 DEF NUM_TMS EQU __tmhm_value__ - 1
 
 MACRO add_hm

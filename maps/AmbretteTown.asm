@@ -8,12 +8,12 @@ AmbretteTown_MapScripts:
 AmbretteTownRockSmashGirlScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_TM08_ROCK_SMASH ; TM_94
+	checkevent EVENT_GOT_ROCK_SMASH ; TM_94
 	iftrue .AlreadyHaveRockSmash
 	writetext GetRockSmashText
 	promptbutton
 	verbosegiveitem TM_ROCK_SMASH
-	setevent EVENT_GOT_TM08_ROCK_SMASH
+	setevent EVENT_GOT_ROCK_SMASH
 .AlreadyHaveRockSmash:
 	writetext GetRockSmashAfterText
 	waitbutton
@@ -170,6 +170,12 @@ AmbretteTownHiddenXAttack:
 AmbretteTownHiddenRareCandy:
 	hiddenitem RARE_CANDY, EVENT_AMBRETTE_TOWN_HIDDEN_RARE_CANDY
 	
+AmbretteTownPokecenterSign:
+	jumpstd PokecenterSignScript
+
+AmbretteTownMartSign:
+	jumpstd MartSignScript
+	
 AmbretteTown_MapEvents:
 	db 0, 0 ; filler
 	
@@ -191,6 +197,8 @@ AmbretteTown_MapEvents:
 	bg_event 23, 13, BGEVENT_READ, FossilLabSign
 	bg_event 13, 20, BGEVENT_ITEM, AmbretteTownHiddenXAttack
 	bg_event  9, 14, BGEVENT_ITEM, AmbretteTownHiddenRareCandy
+	bg_event 28,  5, BGEVENT_READ, AmbretteTownMartSign
+	bg_event 20,  5, BGEVENT_READ, AmbretteTownPokecenterSign
 	
 	def_object_events
 	object_event 17,  8, SPRITE_BEAUTY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, AmbretteTownRockSmashGirlScript, -1

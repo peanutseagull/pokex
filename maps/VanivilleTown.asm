@@ -367,17 +367,17 @@ Text_UmmAkshually:
 	
 Text_GotPokedex:
 	text "<PLAYER> received"
-	line "#Dex!"
+	line "#DEX!"
 	done
 	
 Text_PokedexIsCool:
-	text "The #Dex I just"
+	text "The #DEX I just"
 	line "gave you is a"
 	cont "high-tech device."
 	
 	para "It's the latest"
 	line "version of the"
-	cont "#Dex."
+	cont "#DEX."
 
 	para "It automatically"
 	line "records data on"
@@ -764,7 +764,7 @@ Text_TechnologyGuy:
 	text "Oh, <PLAYER>!"
 
 	para "Is that a"
-	line "#gear?"
+	line "#GEAR?"
 	
 	para "You can call"
 	line "people from"
