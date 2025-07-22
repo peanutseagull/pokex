@@ -105,7 +105,7 @@ SycamoreRivalsScene:
 
 .MenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 2, 17, TEXTBOX_Y - 1
+	menu_coords 0, 2, 17, TEXTBOX_Y - 2
 	dw .MenuData
 	db 1 ; default option
 
