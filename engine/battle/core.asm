@@ -5969,7 +5969,7 @@ LoadEnemyMon:
 .InitDVs:
 	ld a, [wBattleMode]
 	dec a
-	jr nz, .WildDVs
+	jr z, .WildDVs
 	
 ; Trainer DVs
 	ld a, [wCurPartyMon]
