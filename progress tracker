@@ -1,8 +1,5 @@
-AMBRETTE BRANCH: COMPLETE
-
 SHALOUR BRANCH:
 Maps:
-	Route 8 Lower
 	Connecting Cave Cyllage Side
 	Cyllage City + Gym
 	Route 10
@@ -11,37 +8,43 @@ Maps:
 	Reflection Cave
 	Shalour City + Gym
 	Tower of Mastery
+	
+To do:
 
 Stuff to come back to:
-	Route 22 - area behind surf
-	Mom banking call
+	Maps:
 	Shutterbug Cafe Long/Short Dialogue
 	Coiffure Clips? what did i mean by this
-	Walking animation for karen twin and black belt
-	Should Trainer PR studio be the other way around?
 	Route 8 Upper Strength Area
-	Route 8 Lower Surf Area
-	Boutique Couture + Style Mechanic
-	Add Rocks to Break with Rhyhorn?
-	route 8 sky trainer?
 	does guy go back to Shabboneau castle?
 	Hotel NPCs
-	Spawn points for rest of Kalos
-	Glittering Cave Unique Tileset?
-	Fix Bugs+Glitches and Design Flaws
-	remove excess scenes
-	ROCKY HELMET EFFECT
-	Qwilfish Swarm Aquacorde
-	Aerodactylite
-	Fix TMs!!!!
-	glittering cave unique rock smash items
-	replace mud-slap tm?
-	Animate Aquarium Tiles
 	Battle Chateau
-	Restaurant Le Nah reward doesn't work as intended
+	
+	Require surf:
+	Route 8 Lower Surf Area - items, swimmers, sky trainer
+	Route 22 - area behind surf	
+	
+	Features:
 	heal ball?
+	Restaurant Le Nah reward doesn't work as intended
+	Boutique Couture + Style Mechanic
+	Add Rocks to Break with Rhyhorn?
+	Spawn points for rest of Kalos
+	glittering cave unique rock smash items
+	Fix TMs!!!!
+	Aerodactylite
+	Qwilfish Swarm Aquacorde
+	ROCKY HELMET EFFECT
+
+	Graphical:
+	Walking animation for karen twin and black belt
+	Should Trainer PR studio be the other way around?
+	Glittering Cave Unique Tileset?
+	Animate Aquarium Tiles
+	Remove 'm type characters?
 	
 Non-urgent:
+	Pokegear - Mom, serena? shauna? tierno? trevor? fish guy?
 	Redo intro
 	Rename PC to Cassius' PC after meeting him
 	Surf pokemon Data
@@ -50,32 +53,27 @@ Non-urgent:
 	Sprites
 	Music
 	Fix/remove footprints?
-	Pokedex Entries
 	Remove unnecessary data
-	Sky battles????
+	Sky battles???? - subroutine to check list; return array
 	Reorganise items sensibly
 	Fly Callbacks
 	Redo Parfum Palace Interior
+	Fix Bugs+Glitches and Design Flaws
 	Different Genders for different Rivals - Variable Sprite?
-	reduce size of gen I starter selection box
 
 Known Bugs:
 	Too many walking sprites in Camphrier Group
-	Daycare pokemon sprites broken
-	Shauna's starter isn't shiny
-	Trainer's pokemon's health is overflowing?
+	Broken hitbox for NPCs with WALK_UP_DOWN and WALK_LEFT_RIGHT spritemovedata, only sometimes
 	
 	Wrong sprites: pyroar back
 	shiny palettes: braixen?
 	
 	Haven't seen in a while:
-	Broken hitbox for NPCs with WALK_UP_DOWN and WALK_LEFT_RIGHT spritemovedata, only sometimes
 	Broken pokemon sprites occasionally (displaying tiles 01 and 02 in random spots)?
 	Occasional PC glitch - perhaps was related to fixed egg party icon
 	talking to restaurant le nah chef can crash the game
 	
 Inconsequential Stuff:
-	Add accents: À bientôt!, Rivière Walk
 	Tipping mechanic
 	Route 7 East - talking to black belt makes Snorlax disappear briefly
 	
@@ -100,7 +98,6 @@ STUFF DONE:
 	Smashing rocks has a chance to contain items
     Reviving Pokémon from Fossils (Gen I)
 	(ONLY UP TO STEP 3) Allow more trainer parties, with individual DVs, stat experience, nicknames, variable teams, etc.
-
 
 Tutorials to Follow:
     Running Shoes

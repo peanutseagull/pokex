@@ -244,7 +244,7 @@ ENDM
 	connection east, Route7East, ROUTE_7_EAST, -3
 	
 	map_attributes AmbretteTown, AMBRETTE_TOWN, $35, NORTH | EAST
-	connection north, Route8Lower, ROUTE_8_LOWER, 0
+	connection north, Route8Lower, ROUTE_8_LOWER, -5
 	connection east, Route8Upper, ROUTE_8_UPPER, -33
 	
 	map_attributes Route8Upper, ROUTE_8_UPPER, $75, WEST
@@ -252,7 +252,7 @@ ENDM
 	
 	map_attributes Route8Lower, ROUTE_8_LOWER, $35, NORTH | SOUTH
 	connection north, CyllageCity, CYLLAGE_CITY, 0
-	connection south, AmbretteTown, AMBRETTE_TOWN, 0
+	connection south, AmbretteTown, AMBRETTE_TOWN, 5
 	
 	map_attributes CyllageCity, CYLLAGE_CITY, $00, SOUTH
 	connection south, Route8Lower, ROUTE_8_LOWER, 0
@@ -306,7 +306,6 @@ ENDM
 	map_attributes ShabboneauCastle, SHABBONEAU_CASTLE, $00, 0
 	map_attributes ShabboneauCastle2F, SHABBONEAU_CASTLE_2F, $00, 0
 	map_attributes ShabboneauCastleBedroom, SHABBONEAU_CASTLE_BEDROOM, $00, 0
-	map_attributes CyllageHotel, CYLLAGE_HOTEL, $00, 0
 	map_attributes DayCare, DAY_CARE, $00, 0
 	map_attributes BerryFieldsHouse, BERRY_FIELDS_HOUSE, $00, 0
 	map_attributes ParfumPalace1F, PARFUM_PALACE_1F, $00, 0
@@ -333,6 +332,10 @@ ENDM
 	map_attributes GlitteringCaveEntrance, GLITTERING_CAVE_ENTRANCE, $09, 0
 	map_attributes GlitteringCaveDeep, GLITTERING_CAVE_DEEP, $09, 0
 	
+	map_attributes HotelCyllage1F, HOTEL_CYLLAGE_1F, $00, 0
+	map_attributes HotelCyllage2F, HOTEL_CYLLAGE_2F, $00, 0
+	map_attributes HotelMarineSnow1F, HOTEL_MARINE_SNOW_1F, $00, 0
+	map_attributes HotelMarineSnow2F, HOTEL_MARINE_SNOW_2F, $00, 0	
 	; map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
 	; connection west, Route29, ROUTE_29, 0
 	; connection east, Route27, ROUTE_27, 0

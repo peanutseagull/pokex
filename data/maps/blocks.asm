@@ -258,11 +258,14 @@ CyllageCity_Blocks:
 	
 HotelCamphrier1F_Blocks:
 HotelAmbrette1F_Blocks:
-CyllageHotel_Blocks:
+HotelCyllage1F_Blocks:
+HotelMarineSnow1F_Blocks:
 	INCBIN "maps/Hotel1F.blk"
 	
 HotelCamphrier2F_Blocks:
 HotelAmbrette2F_Blocks:
+HotelCyllage2F_Blocks:
+HotelMarineSnow2F_Blocks:
 	INCBIN "maps/Hotel2F.blk"
 	
 GeosengeTown_Blocks:

@@ -636,6 +636,20 @@ Route7SignText:
 	line "Rivière Walk"
 	done
 	
+BattleChateauSign:
+	jumptext BattleChateauSignText
+	
+BattleChateauSignText:
+	text "BATTLE CHATEAU"
+	done
+	
+DayCareSign:
+	jumptext DayCareSignText
+	
+DayCareSignText:
+	text "DAY CARE"
+	done
+	
 Route7SnorlaxScript:
 	opentext
 	writetext Route7SnorlaxSleepingText
@@ -871,6 +885,8 @@ Route7East_MapEvents:
 	
 	def_bg_events
 	bg_event 71, 17, BGEVENT_READ, Route7Sign
+	bg_event  8, 16, BGEVENT_READ, BattleChateauSign
+	bg_event 40, 16, BGEVENT_READ, DayCareSign
 	
 	def_object_events
 	object_event 37, 16, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DayCareManScript_Outside, EVENT_DAY_CARE_MAN_ON_ROUTE_7

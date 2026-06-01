@@ -27,16 +27,16 @@ SantaluneGymViolaScript:
 	; readvar VAR_BADGES
 	; scall SantaluneGymActivateRockets
 .FightDone:
-	checkevent EVENT_GOT_TM31_MUD_SLAP
+	checkevent EVENT_GOT_TM49_FURY_CUTTER
 	iftrue .SpeechAfterTM
 	setevent EVENT_BEAT_YOUNGSTER_DAVID
 	setevent EVENT_BEAT_YOUNGSTER_ZACHARY
 	setevent EVENT_BEAT_LASS_CHARLOTTE
 	writetext ViolaBugBadgeText
 	promptbutton
-	verbosegiveitem TM_MUD_SLAP
-	iffalse .NoRoomForMudSlap
-	setevent EVENT_GOT_TM31_MUD_SLAP
+	verbosegiveitem TM_FURY_CUTTER
+	iffalse .NoRoomForFuryCutter
+	setevent EVENT_GOT_TM49_FURY_CUTTER
 	writetext ViolaTMMudSlapText
 	waitbutton
 	closetext
@@ -47,7 +47,7 @@ SantaluneGymViolaScript:
 .SpeechAfterTM:
 	writetext ViolaFightDoneText
 	waitbutton
-.NoRoomForMudSlap:
+.NoRoomForFuryCutter:
 	closetext
 	end
 	

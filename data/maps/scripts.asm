@@ -284,7 +284,8 @@ INCLUDE "maps/Route22.asm"
 SECTION "Map Scripts 11", ROMX
 
 INCLUDE "maps/CyllageCity.asm"
-INCLUDE "maps/CyllageHotel.asm"
+INCLUDE "maps/HotelCyllage1F.asm"
+INCLUDE "maps/HotelCyllage2F.asm"
 INCLUDE "maps/Route8Lower.asm"
 ; INCLUDE "maps/EcruteakTinTowerEntrance.asm"
 ; INCLUDE "maps/WiseTriosRoom.asm"
@@ -359,6 +360,8 @@ SECTION "Map Scripts 13", ROMX
 SECTION "Map Scripts 14", ROMX
 
 INCLUDE "maps/GeosengeTown.asm"
+INCLUDE "maps/HotelMarineSnow1F.asm"
+INCLUDE "maps/HotelMarineSnow2F.asm"
 ; INCLUDE "maps/CeruleanCity.asm"
 ; INCLUDE "maps/SproutTower1F.asm"
 ; INCLUDE "maps/SproutTower2F.asm"

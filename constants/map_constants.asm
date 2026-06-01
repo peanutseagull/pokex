@@ -187,13 +187,16 @@ ENDM
 	endgroup
 	
 	newgroup CYLLAGE											  ; 11
-	map_const ROUTE_8_LOWER,							   19, 18 ;  1
-	map_const CYLLAGE_CITY,								    1,  1 ;  2
-	map_const CYLLAGE_HOTEL,							   14,  6 ;  
+	map_const ROUTE_8_LOWER,							   24, 37 ;  1
+	map_const CYLLAGE_CITY,								   24, 20 ;  2
+	map_const HOTEL_CYLLAGE_1F,							   10,  6 ;  
+	map_const HOTEL_CYLLAGE_2F,							    9,  6 ;  
 	endgroup
 	
 	newgroup GEOSENGE											  ; 12
 	map_const GEOSENGE_TOWN,							    1,  1 ;  1
+	map_const HOTEL_MARINE_SNOW_1F,						   10,  6 ;  
+	map_const HOTEL_MARINE_SNOW_2F,						    9,  6 ;  
 	endgroup
 	
 	newgroup SHALOUR											  ; 13
