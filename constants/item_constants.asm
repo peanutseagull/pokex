@@ -258,7 +258,7 @@ DEF TM01 EQU const_value
 	add_tm SANDSTORM    ; e5
 	add_tm FIRE_BLAST   ; e6
 	add_tm SWIFT        ; e7 ROCK_TOMB
-	add_tm DEFENSE_CURL ; e8 AERIAL_ACE
+	add_tm WING_ATTACK  ; e8 AERIAL_ACE
 	add_tm THUNDERPUNCH ; e9 TORMENT
 	add_tm DREAM_EATER  ; ea FACADE
 	add_tm DETECT       ; eb FLAME_CHARGE
