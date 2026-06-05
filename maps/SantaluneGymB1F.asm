@@ -37,7 +37,7 @@ SantaluneGymViolaScript:
 	verbosegiveitem TM_FURY_CUTTER
 	iffalse .NoRoomForFuryCutter
 	setevent EVENT_GOT_TM49_FURY_CUTTER
-	writetext ViolaTMMudSlapText
+	writetext ViolaTMFuryCutterText
 	waitbutton
 	closetext
 	setmapscene ROUTE_22, SCENE_ROUTE22_NOOP
@@ -218,7 +218,7 @@ ViolaBugBadgeText:
 	para "And here!"
 	done
 
-ViolaTMMudSlapText:
+ViolaTMFuryCutterText:
 	text "By using a TM, a"
 	line "#MON will"
 
@@ -226,7 +226,7 @@ ViolaTMMudSlapText:
 	line "new move."
 
 	para "TM31 contains"
-	line "MUD-SLAP."
+	line "FURY CUTTER."
 
 	para "It reduces the"
 	line "enemy's accuracy"

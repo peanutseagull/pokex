@@ -37,7 +37,7 @@ Route8BeautyScript:
 	waitbutton
 	closetext
 	setevent EVENT_GOT_ITEMFINDER
-	setscene SCENE_ROUTE8LOWER_DOWSING
+	setscene SCENE_ROUTE8LOWER_NOOP
 	end
 	
 .After:

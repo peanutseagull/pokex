@@ -338,7 +338,7 @@ SycamoreLabText6:
 	
 	para "If you seek out"
 	line "completing your"
-	cont "#dex,"
+	cont "#DEX,"
 	
 	para "You'll probably"
 	line "see people with"
