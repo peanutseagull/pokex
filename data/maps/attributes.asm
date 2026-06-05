@@ -251,11 +251,11 @@ ENDM
 	connection west, AmbretteTown, AMBRETTE_TOWN, 33
 	
 	map_attributes Route8Lower, ROUTE_8_LOWER, $35, NORTH | SOUTH
-	connection north, CyllageCity, CYLLAGE_CITY, 0
+	connection north, CyllageCity, CYLLAGE_CITY, -5
 	connection south, AmbretteTown, AMBRETTE_TOWN, 5
 	
 	map_attributes CyllageCity, CYLLAGE_CITY, $00, SOUTH
-	connection south, Route8Lower, ROUTE_8_LOWER, 0
+	connection south, Route8Lower, ROUTE_8_LOWER, 5
 	
 	map_attributes GeosengeTown, GEOSENGE_TOWN, $00, 0
 	map_attributes ShalourCity, SHALOUR_CITY, $00, 0
@@ -331,9 +331,19 @@ ENDM
 	map_attributes Route9, ROUTE_9, $00, 0
 	map_attributes GlitteringCaveEntrance, GLITTERING_CAVE_ENTRANCE, $09, 0
 	map_attributes GlitteringCaveDeep, GLITTERING_CAVE_DEEP, $09, 0
-	
+	map_attributes CyllagePokecenter1F, CYLLAGE_POKECENTER_1F, $00, 0
+	map_attributes CyllageMart, CYLLAGE_MART, $00, 0
+	map_attributes CyllageHouse1, CYLLAGE_HOUSE_1, $00, 0
+	map_attributes CyllageHouse2, CYLLAGE_HOUSE_2, $00, 0
+	map_attributes CyllageHouse3, CYLLAGE_HOUSE_3, $00, 0
+	map_attributes CyllageHouse4, CYLLAGE_HOUSE_4, $00, 0
+	map_attributes CyllageSurfHouse, CYLLAGE_SURF_HOUSE, $00, 0
 	map_attributes HotelCyllage1F, HOTEL_CYLLAGE_1F, $00, 0
 	map_attributes HotelCyllage2F, HOTEL_CYLLAGE_2F, $00, 0
+	map_attributes CyllageBikeShop, CYLLAGE_BIKE_SHOP, $00, 0
+	map_attributes CyllageBoutique, CYLLAGE_BOUTIQUE, $00, 0
+	map_attributes CyllageCafe, CYLLAGE_CAFE, $00, 0
+	map_attributes CyllageGym, CYLLAGE_GYM, $00, 0
 	map_attributes HotelMarineSnow1F, HOTEL_MARINE_SNOW_1F, $00, 0
 	map_attributes HotelMarineSnow2F, HOTEL_MARINE_SNOW_2F, $00, 0	
 	; map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST

@@ -153,7 +153,7 @@ ItemDescriptions:
 	dw MysteryBerryDesc
 	dw DragonScaleDesc
 	dw BerserkGeneDesc
-	dw TeruSama18Desc
+	dw WhippedDreamDesc
 	dw TeruSama19Desc
 	dw TeruSama20Desc
 	dw SacredAshDesc
@@ -854,8 +854,9 @@ BerserkGeneDesc:
 	db   "Boosts ATTACK but"
 	next "causes confusion.@"
 
-TeruSama18Desc:
-	db   "?@"
+WhippedDreamDesc:
+	db   "Loved by a certain"
+	next "#MON.@"
 
 TeruSama19Desc:
 	db   "?@"

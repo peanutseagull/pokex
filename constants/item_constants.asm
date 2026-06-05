@@ -158,12 +158,12 @@
 	const MYSTERYBERRY ; 96
 	const DRAGON_SCALE ; 97
 	const BERSERK_GENE ; 98 UNNECESSARY
-	const ITEM_99      ; 99 UNUSED
+	const WHIPPED_DREAM; 99 UNUSED
 	const ITEM_9A      ; 9a UNUSED
 	const ITEM_9B      ; 9b UNUSED
 	const SACRED_ASH   ; 9c UNNECESSARY
 	const HEAVY_BALL   ; 9d
-	const FLOWER_MAIL  ; 9e
+	const FLOWER_MAIL  ; 9e MAIL
 	const LEVEL_BALL   ; 9f
 	const LURE_BALL    ; a0
 	const FAST_BALL    ; a1
@@ -186,15 +186,15 @@
 	const RAINBOW_WING ; b2 UNNECESSARY
 	const ITEM_B3      ; b3 UNUSED
 	const BRICK_PIECE  ; b4 UNNECESSARY
-	const SURF_MAIL    ; b5
-	const LITEBLUEMAIL ; b6
-	const PORTRAITMAIL ; b7
-	const LOVELY_MAIL  ; b8
-	const EON_MAIL     ; b9
-	const MORPH_MAIL   ; ba
-	const BLUESKY_MAIL ; bb
-	const MUSIC_MAIL   ; bc
-	const MIRAGE_MAIL  ; bd
+	const SURF_MAIL    ; b5 MAIL
+	const LITEBLUEMAIL ; b6 MAIL
+	const PORTRAITMAIL ; b7 MAIL
+	const LOVELY_MAIL  ; b8 MAIL
+	const EON_MAIL     ; b9 MAIL
+	const MORPH_MAIL   ; ba MAIL
+	const BLUESKY_MAIL ; bb MAIL
+	const MUSIC_MAIL   ; bc MAIL
+	const MIRAGE_MAIL  ; bd MAIL
 	const ITEM_BE      ; be UNUSED
 DEF NUM_ITEMS EQU const_value - 1
 

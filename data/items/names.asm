@@ -152,7 +152,7 @@ ItemNames::
 	li "MYSTERYBERRY"
 	li "DRAGON SCALE"
 	li "BERSERK GENE"
-	li "TERU-SAMA"
+	li "WHIPPEDDREAM"
 	li "TERU-SAMA"
 	li "TERU-SAMA"
 	li "SACRED ASH"
