@@ -1,426 +1,501 @@
 ; Johto Pokémon in grass
-; chances - 30, 30, 20, 10, 5, 4, 1
 
 JohtoGrassWildMons:
 
 	def_grass_wildmons ROUTE_1
 	db 10 percent, 10 percent, 10 percent
 	; morn
-	db 2, SCATTERBUG
-	db 2, BUNNELBY
-	db 3, FLETCHLING
-	db 3, FLETCHLING
-	db 3, SCATTERBUG
-	db 3, BUNNELBY
-	db 3, FLETCHLING
+	;  %, species,		min, max
+	db 20, SCATTERBUG,	 2,  3
+	db 20, BUNNELBY,	 2,  3
+	db 20, FLETCHLING,	 2,  3
+	db 10, SCATTERBUG,	 2,  3
+	db 10, SCATTERBUG,	 2,  3
+	db 10, BUNNELBY,	 2,  3
+	db 10, BUNNELBY,	 2,  3
 	; day
-	db 2, SCATTERBUG
-	db 2, BUNNELBY
-	db 3, FLETCHLING
-	db 3, FLETCHLING
-	db 3, SCATTERBUG
-	db 3, BUNNELBY
-	db 3, FLETCHLING
+	;  %, species,		min, max
+	db 20, SCATTERBUG,	 2,  3
+	db 20, BUNNELBY,	 2,  3
+	db 20, FLETCHLING,	 2,  3
+	db 10, SCATTERBUG,	 2,  3
+	db 10, SCATTERBUG,	 2,  3
+	db 10, BUNNELBY,	 2,  3
+	db 10, BUNNELBY,	 2,  3
 	; nite
-	db 2, SCATTERBUG
-	db 2, BUNNELBY
-	db 3, FLETCHLING
-	db 3, FLETCHLING
-	db 3, SCATTERBUG
-	db 3, BUNNELBY
-	db 3, FLETCHLING
+	;  %, species,		min, max
+	db 20, SCATTERBUG,	 2,  3
+	db 20, BUNNELBY,	 2,  3
+	db 20, FLETCHLING,	 2,  3
+	db 10, SCATTERBUG,	 2,  3
+	db 10, SCATTERBUG,	 2,  3
+	db 10, BUNNELBY,	 2,  3
+	db 10, BUNNELBY,	 2,  3
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_2
 	db 10 percent, 10 percent, 10 percent
 	; morn
-	db 4, CATERPIE
-	db 4, WEEDLE
-	db 3, FLETCHLING
-	db 3, BUNNELBY
-	db 3, SCATTERBUG
-	db 4, PIDGEY
-	db 4, VULPIX
+	;  %, species,		min, max
+	db 20, SCATTERBUG,	 2,  3
+	db 20, BUNNELBY,	 2,  3
+	db 20, FLETCHLING,	 2,  3
+	db 14, PIDGEY,		 3,  4
+	db 10, CATERPIE,	 3,  4
+	db 10, WEEDLE,		 3,  4
+	db  6, VULPIX,		 3,  4
 	; day
-	db 4, CATERPIE
-	db 4, WEEDLE
-	db 3, FLETCHLING
-	db 3, BUNNELBY
-	db 3, SCATTERBUG
-	db 4, PIDGEY
-	db 4, VULPIX
+	;  %, species,		min, max
+	db 20, SCATTERBUG,	 2,  3
+	db 20, BUNNELBY,	 2,  3
+	db 20, FLETCHLING,	 2,  3
+	db 14, PIDGEY,		 3,  4
+	db 10, CATERPIE,	 3,  4
+	db 10, WEEDLE,		 3,  4
+	db  6, VULPIX,		 3,  4
 	; nite
-	db 4, CATERPIE
-	db 4, WEEDLE
-	db 3, FLETCHLING
-	db 3, BUNNELBY
-	db 3, SCATTERBUG
-	db 4, PIDGEY
-	db 4, VULPIX
+	;  %, species,		min, max
+	db 20, SCATTERBUG,	 2,  3
+	db 20, BUNNELBY,	 2,  3
+	db 20, FLETCHLING,	 2,  3
+	db 14, PIDGEY,		 3,  4
+	db 10, CATERPIE,	 3,  4
+	db 10, WEEDLE,		 3,  4
+	db  6, VULPIX,		 3,  4
 	end_grass_wildmons
 	
 	def_grass_wildmons SANTALUNE_FOREST
 	db 10 percent, 10 percent, 10 percent
 	; morn
-	db 4, CATERPIE
-	db 4, WEEDLE
-	db 3, FLETCHLING
-	db 3, SCATTERBUG
-	db 3, PIKACHU
-	db 4, SPEWPA
-	db 4, PIKACHU
+	;  %, species,		min, max
+	db 30, SCATTERBUG,	 2,  3
+	db 20, CATERPIE,  	 2,  3
+	db 20, WEEDLE,    	 2,  3
+	db 10, FLETCHLING,	 4,  4
+	db  6, PIKACHU,   	 3,  4
+	db  4, METAPOD,   	 4,  4
+	db  4, KAKUNA,		 4,  4
 	; day
-	db 4, CATERPIE
-	db 4, WEEDLE
-	db 3, FLETCHLING
-	db 3, SCATTERBUG
-	db 3, PIKACHU
-	db 4, SPEWPA
-	db 4, PIKACHU
+	;  %, species,		min, max
+	db 30, SCATTERBUG,	 2,  3
+	db 20, CATERPIE,  	 2,  3
+	db 20, WEEDLE,    	 2,  3
+	db 10, FLETCHLING,	 4,  4
+	db  6, PIKACHU,   	 3,  4
+	db  4, METAPOD,   	 4,  4
+	db  4, KAKUNA,		 4,  4
 	; nite
-	db 4, CATERPIE
-	db 4, WEEDLE
-	db 3, FLETCHLING
-	db 3, SCATTERBUG
-	db 3, PIKACHU
-	db 4, SPEWPA
-	db 4, PIKACHU
+	;  %, species,		min, max
+	db 30, SCATTERBUG,	 2,  3
+	db 20, CATERPIE,  	 2,  3
+	db 20, WEEDLE,    	 2,  3
+	db 10, FLETCHLING,	 4,  4
+	db  6, PIKACHU,   	 3,  4
+	db  4, METAPOD,   	 4,  4
+	db  4, KAKUNA,		 4,  4
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_3
 	db 10 percent, 10 percent, 10 percent
 	; morn
-	db 4, PIDGEY
-	db 4, FLETCHLING
-	db 4, POLIWAG
-	db 5, MARILL
-	db 4, PIKACHU
-	db 5, DUNSPARCE
-	db 5, DUNSPARCE
+	;  %, species,		min, max
+	db 30, FLETCHLING,	 3,  5
+	db 20, BUNNELBY,  	 3,  4
+	db 20, POLIWAG,		 4,  4
+	db 10, PIDGEY,    	 4,  4
+	db 10, MARILL,   	 5,  5
+	db  5, PIKACHU,   	 4,  4
+	db  5, DUNSPARCE, 	 5,  5
 	; day
-	db 4, PIDGEY
-	db 4, FLETCHLING
-	db 4, POLIWAG
-	db 5, MARILL
-	db 4, PIKACHU
-	db 5, DUNSPARCE
-	db 5, DUNSPARCE
+	;  %, species,		min, max
+	db 30, FLETCHLING,	 3,  5
+	db 20, BUNNELBY,  	 3,  4
+	db 20, POLIWAG,		 4,  4
+	db 10, PIDGEY,    	 4,  4
+	db 10, MARILL,   	 5,  5
+	db  5, PIKACHU,   	 4,  4
+	db  5, DUNSPARCE, 	 5,  5
 	; nite
-	db 4, PIDGEY
-	db 4, FLETCHLING
-	db 4, POLIWAG
-	db 5, MARILL
-	db 4, PIKACHU
-	db 5, DUNSPARCE
-	db 5, DUNSPARCE
+	;  %, species,		min, max
+	db 30, FLETCHLING,	 3,  5
+	db 20, BUNNELBY,  	 3,  4
+	db 20, POLIWAG,		 4,  4
+	db 10, PIDGEY,    	 4,  4
+	db 10, MARILL,   	 5,  5
+	db  5, PIKACHU,   	 4,  4
+	db  5, DUNSPARCE, 	 5,  5
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_22
 	db 10 percent, 10 percent, 10 percent
 	; morn
-	db 6, LITLEO
-	db 6, BUNNELBY
-	db 6, PSYDUCK
-	db 6, FARFETCH_D
-	db 6, MARILL
-	db 6, DUNSPARCE
-	db 6, DUNSPARCE
+	;  %, species,		min, max
+	db 30, LITLEO,		 5,  6
+	db 20, BUNNELBY,  	 5,  6
+	db 20, MARILL,   	 6,  7
+	db 15, PSYDUCK,		 6,  6
+	db 15, FARFETCH_D, 	 7,  7
+	db  4, DUNSPARCE,  	 7,  7
+	db  1, DUNSPARCE,  	 7,  7
 	; day
-	db 6, LITLEO
-	db 6, BUNNELBY
-	db 6, PSYDUCK
-	db 6, FARFETCH_D
-	db 6, MARILL
-	db 6, DUNSPARCE
-	db 6, DUNSPARCE
+	;  %, species,		min, max
+	db 30, LITLEO,		 5,  6
+	db 20, BUNNELBY,  	 5,  6
+	db 20, MARILL,   	 6,  7
+	db 15, PSYDUCK,		 6,  6
+	db 15, FARFETCH_D, 	 7,  7
+	db  4, DUNSPARCE,  	 7,  7
+	db  1, DUNSPARCE,  	 7,  7
 	; nite
-	db 6, LITLEO
-	db 6, BUNNELBY
-	db 6, PSYDUCK
-	db 6, FARFETCH_D
-	db 6, MARILL
-	db 6, DUNSPARCE
-	db 6, DUNSPARCE
+	;  %, species,		min, max
+	db 30, LITLEO,		 5,  6
+	db 20, BUNNELBY,  	 5,  6
+	db 20, MARILL,   	 6,  7
+	db 15, PSYDUCK,		 6,  6
+	db 15, FARFETCH_D, 	 7,  7
+	db  4, DUNSPARCE,  	 7,  7
+	db  1, DUNSPARCE,  	 7,  7
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_4
 	db 10 percent, 10 percent, 10 percent
 	; morn
-	db 8, HOPPIP
-	db 8, FLABEBE
-	db 8, LEDYBA
-	db 8, BELLSPROUT
-	db 8, ODDISH
-	db 8, ODDISH
-	db 8, CLEFFA
+	;  %, species,		min, max
+	db 30, HOPPIP,		 6,  8
+	db 30, FLABEBE,  	 6,  8
+	db 20, LEDYBA,   	 8,  8
+	db 10, BELLSPROUT,	 7,  8
+	db  5, ODDISH,	 	 7,  8
+	db  4, ODDISH,	 	 7,  8
+	db  1, CLEFFA,  	 7,  7
 	; day
-	db 8, HOPPIP
-	db 8, FLABEBE
-	db 8, LEDYBA
-	db 8, BELLSPROUT
-	db 8, ODDISH
-	db 8, ODDISH
-	db 8, CLEFFA
+	;  %, species,		min, max
+	db 30, HOPPIP,		 6,  8
+	db 30, FLABEBE,  	 6,  8
+	db 20, ODDISH,   	 8,  8
+	db 10, BELLSPROUT,	 7,  8
+	db  5, LEDYBA,	 	 7,  8
+	db  4, LEDYBA,	 	 7,  8
+	db  1, CLEFFA,  	 7,  7
 	; nite
-	db 8, HOPPIP
-	db 8, FLABEBE
-	db 8, SPINARAK
-	db 8, BELLSPROUT
-	db 8, ODDISH
-	db 8, ODDISH
-	db 8, CLEFFA
+	;  %, species,		min, max
+	db 30, HOPPIP,		 6,  8
+	db 30, FLABEBE,  	 6,  8
+	db 20, SPINARAK,   	 8,  8
+	db 10, BELLSPROUT,	 7,  8
+	db  5, ODDISH,	 	 7,  8
+	db  4, ODDISH,	 	 7,  8
+	db  1, CLEFFA,  	 7,  7
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_5_EAST
 	db 10 percent, 10 percent, 10 percent
 	; morn
-	db 9, BUNNELBY
-	db 9, FURFROU
-	db 9, DODUO
-	db 9, PANCHAM
-	db 10, SKIDDO
-	db 10, ABRA
-	db 10, ABRA
+	;  %, species,		min, max
+	db 30, BUNNELBY,	 8, 10
+	db 20, FURFROU,  	 8, 10
+	db 15, DODUO,   	 9, 10
+	db 10, FURFROU,  	 8, 10
+	db 10, PANCHAM,		 9, 10
+	db 10, SKIDDO,	 	10, 10
+	db  5, ABRA, 	 	10, 10
 	; day
-	db 9, BUNNELBY
-	db 9, FURFROU
-	db 9, DODUO
-	db 9, PANCHAM
-	db 10, SKIDDO
-	db 10, ABRA
-	db 10, ABRA
+	;  %, species,		min, max
+	db 30, BUNNELBY,	 8, 10
+	db 20, FURFROU,  	 8, 10
+	db 15, DODUO,   	 9, 10
+	db 10, FURFROU,  	 8, 10
+	db 10, PANCHAM,		 9, 10
+	db 10, SKIDDO,	 	10, 10
+	db  5, ABRA, 	 	10, 10
 	; nite
-	db 9, BUNNELBY
-	db 9, FURFROU
-	db 9, DODUO
-	db 9, PANCHAM
-	db 10, SKIDDO
-	db 10, ABRA
-	db 10, ABRA
+	;  %, species,		min, max
+	db 30, BUNNELBY,	 8, 10
+	db 20, FURFROU,  	 8, 10
+	db 15, DODUO,   	 9, 10
+	db 10, FURFROU,  	 8, 10
+	db 10, PANCHAM,		 9, 10
+	db 10, SKIDDO,	 	10, 10
+	db  5, ABRA, 	 	10, 10
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_5_WEST
 	db 10 percent, 10 percent, 10 percent
 	; morn
-	db 9, SKIDDO
-	db 9, FURFROU
-	db 9, PANCHAM
-	db 9, DODUO
-	db 10, BUNNELBY
-	db 10, ABRA
-	db 10, ABRA
+	;  %, species,		min, max
+	db 30, SKIDDO,		 8, 10
+	db 20, FURFROU,  	10, 10
+	db 15, PANCHAM,   	 8,  9
+	db 10, FURFROU,  	10, 10
+	db 10, DODUO,		 9, 10
+	db 10, BUNNELBY, 	10, 10
+	db  5, ABRA, 	 	10, 10
 	; day
-	db 9, SKIDDO
-	db 9, FURFROU
-	db 9, PANCHAM
-	db 9, DODUO
-	db 10, BUNNELBY
-	db 10, ABRA
-	db 10, ABRA
+	;  %, species,		min, max
+	db 30, SKIDDO,		 8, 10
+	db 20, FURFROU,  	10, 10
+	db 15, PANCHAM,   	 8,  9
+	db 10, FURFROU,  	10, 10
+	db 10, DODUO,		 9, 10
+	db 10, BUNNELBY, 	10, 10
+	db  5, ABRA, 	 	10, 10
 	; nite
-	db 9, SKIDDO
-	db 9, FURFROU
-	db 9, PANCHAM
-	db 9, DODUO
-	db 10, BUNNELBY
-	db 10, ABRA
-	db 10, ABRA
+	;  %, species,		min, max
+	db 30, SKIDDO,		 8, 10
+	db 20, FURFROU,  	10, 10
+	db 15, PANCHAM,   	 8,  9
+	db 10, FURFROU,  	10, 10
+	db 10, DODUO,		 9, 10
+	db 10, BUNNELBY, 	10, 10
+	db  5, ABRA, 	 	10, 10
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_6
 	db 10 percent, 10 percent, 10 percent
 	; morn
-	db 10, ODDISH
-	db 10, SENTRET
-	db 10, ESPURR
-	db 11, HONEDGE
-	db 11, ODDISH
-	db 11, SENTRET
-	db 12, YANMA
+	;  %, species,		min, max
+	db 20, ODDISH,		10, 12
+	db 20, ESPURR,   	11, 12
+	db 19, HONEDGE,		11, 12
+	db 15, ODDISH,		10, 12
+	db 15, SENTRET,  	10, 11
+	db 10, SENTRET,  	10, 11
+	db  1, YANMA, 		12, 12
 	; day
-	db 10, ODDISH
-	db 10, SENTRET
-	db 10, ESPURR
-	db 11, HONEDGE
-	db 11, ODDISH
-	db 11, SENTRET
-	db 12, YANMA
+	;  %, species,		min, max
+	db 20, ODDISH,		10, 12
+	db 20, ESPURR,   	11, 12
+	db 19, HONEDGE,		11, 12
+	db 15, ODDISH,		10, 12
+	db 15, SENTRET,  	10, 11
+	db 10, SENTRET,  	10, 11
+	db  1, YANMA, 		12, 12
 	; nite
-	db 10, ODDISH
-	db 10, SENTRET
-	db 10, ESPURR
-	db 11, HONEDGE
-	db 11, ODDISH
-	db 11, SENTRET
-	db 12, YANMA
+	;  %, species,		min, max
+	db 20, ODDISH,		10, 12
+	db 20, ESPURR,   	11, 12
+	db 19, HONEDGE,		11, 12
+	db 15, ODDISH,		10, 12
+	db 15, SENTRET,  	10, 11
+	db 10, SENTRET,  	10, 11
+	db  1, YANMA, 		12, 12
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_7_EAST
 	db 10 percent, 10 percent, 10 percent
 	; morn
-	db 12, WOOPER
-	db 12, FLABEBE
-	db 12, PSYDUCK
-	db 14, SMEARGLE
-	db 13, SPRITZEE
-	db 13, SWIRLIX
-	db 13, SWIRLIX	
+	;  %, species,		min, max
+	db 35, WOOPER,		12, 14
+	db 15, PSYDUCK,   	13, 14
+	db 10, FLABEBE,  	12, 14
+	db 10, FLABEBE,  	12, 14
+	db 10, SMEARGLE,	14, 14
+	db 10, SPRITZEE,	14, 14
+	db 10, SWIRLIX,		14, 14
 	; day
-	db 12, WOOPER
-	db 12, FLABEBE
-	db 12, PSYDUCK
-	db 14, SMEARGLE
-	db 13, SPRITZEE
-	db 13, SWIRLIX
-	db 13, SWIRLIX	
+	;  %, species,		min, max
+	db 35, WOOPER,		12, 14
+	db 15, PSYDUCK,   	13, 14
+	db 10, FLABEBE,  	12, 14
+	db 10, FLABEBE,  	12, 14
+	db 10, SMEARGLE,	14, 14
+	db 10, SPRITZEE,	14, 14
+	db 10, SWIRLIX,		14, 14	
 	; nite
-	db 12, WOOPER
-	db 12, FLABEBE
-	db 12, PSYDUCK
-	db 14, SMEARGLE
-	db 13, SPRITZEE
-	db 13, SWIRLIX
-	db 13, SWIRLIX
+	;  %, species,		min, max
+	db 35, WOOPER,		12, 14
+	db 15, PSYDUCK,   	13, 14
+	db 10, FLABEBE,  	12, 14
+	db 10, FLABEBE,  	12, 14
+	db 10, SMEARGLE,	14, 14
+	db 10, SPRITZEE,	14, 14
+	db 10, SWIRLIX,		14, 14
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_7_WEST
 	db 10 percent, 10 percent, 10 percent
 	; morn
-	db 12, WOOPER
-	db 12, FLABEBE
-	db 12, PSYDUCK
-	db 14, SMEARGLE
-	db 13, SPRITZEE
-	db 13, SWIRLIX
-	db 13, SWIRLIX	
+	;  %, species,		min, max
+	db 35, WOOPER,		12, 14
+	db 15, PSYDUCK,   	13, 14
+	db 10, FLABEBE,  	12, 14
+	db 10, FLABEBE,  	12, 14
+	db 10, SMEARGLE,	14, 14
+	db 10, SPRITZEE,	14, 14
+	db 10, SWIRLIX,		14, 14
 	; day
-	db 12, WOOPER
-	db 12, FLABEBE
-	db 12, PSYDUCK
-	db 14, SMEARGLE
-	db 13, SPRITZEE
-	db 13, SWIRLIX
-	db 13, SWIRLIX	
+	;  %, species,		min, max
+	db 35, WOOPER,		12, 14
+	db 15, PSYDUCK,   	13, 14
+	db 10, FLABEBE,  	12, 14
+	db 10, FLABEBE,  	12, 14
+	db 10, SMEARGLE,	14, 14
+	db 10, SPRITZEE,	14, 14
+	db 10, SWIRLIX,		14, 14
 	; nite
-	db 12, WOOPER
-	db 12, FLABEBE
-	db 12, PSYDUCK
-	db 14, SMEARGLE
-	db 13, SPRITZEE
-	db 13, SWIRLIX
-	db 13, SWIRLIX
+	;  %, species,		min, max
+	db 35, WOOPER,		12, 14
+	db 15, PSYDUCK,   	13, 14
+	db 10, FLABEBE,  	12, 14
+	db 10, FLABEBE,  	12, 14
+	db 10, SMEARGLE,	14, 14
+	db 10, SPRITZEE,	14, 14
+	db 10, SWIRLIX,		14, 14
 	end_grass_wildmons
 	
 	def_grass_wildmons CONNECTING_CAVE
 	db 6 percent, 6 percent, 6 percent
 	; morn
-	db 13, ZUBAT
-	db 13, ZUBAT
-	db 14, ZUBAT
-	db 14, ZUBAT
-	db 14, CUBONE
-	db 14, CUBONE
-	db 15, GOLBAT
+	;  %, species,		min, max
+	db 20, ZUBAT,		13, 15
+	db 20, ZUBAT,		13, 15
+	db 20, ZUBAT,		13, 15
+	db 20, ZUBAT,		13, 15
+	db 14, CUBONE,		13, 15
+	db  5, ZUBAT,		13, 15
+	db  1, GOLBAT,		15, 15
 	; day
-	db 13, ZUBAT
-	db 13, ZUBAT
-	db 14, ZUBAT
-	db 14, ZUBAT
-	db 14, CUBONE
-	db 14, CUBONE
-	db 15, GOLBAT	
+	;  %, species,		min, max
+	db 20, ZUBAT,		13, 15
+	db 20, ZUBAT,		13, 15
+	db 20, ZUBAT,		13, 15
+	db 20, ZUBAT,		13, 15
+	db 14, CUBONE,		13, 15	
+	db  5, ZUBAT,		13, 15
+	db  1, GOLBAT,		15, 15	
 	; nite
-	db 13, ZUBAT
-	db 13, ZUBAT
-	db 14, ZUBAT
-	db 14, ZUBAT
-	db 14, CUBONE
-	db 14, CUBONE
-	db 15, GOLBAT	
+	;  %, species,		min, max
+	db 20, ZUBAT,		13, 15
+	db 20, ZUBAT,		13, 15
+	db 20, ZUBAT,		13, 15
+	db 20, ZUBAT,		13, 15
+	db 14, CUBONE,		13, 15	
+	db  5, ZUBAT,		13, 15
+	db  1, GOLBAT,		15, 15
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_8_UPPER
 	db 10 percent, 10 percent, 10 percent
 	; morn
-	db 14, EKANS
-	db 13, EKANS
-	db 14, INKAY
-	db 14, INKAY
-	db 15, INKAY
-	db 15, LARVITAR
-	db 15, LARVITAR
+	;  %, species,		min, max
+	db 20, EKANS,		13, 15
+	db 20, EKANS,		13, 15
+	db 20, EKANS,		13, 15
+	db 20, INKAY, 	 	14, 15
+	db 15, INKAY, 	 	14, 15
+	db  4, LARVITAR,   	14, 15
+	db  1, LARVITAR,   	14, 15
 	; day
-	db 14, EKANS
-	db 13, EKANS
-	db 14, INKAY
-	db 14, INKAY
-	db 15, INKAY
-	db 15, LARVITAR
-	db 15, LARVITAR	
+	;  %, species,		min, max
+	db 20, EKANS,		13, 15
+	db 20, EKANS,		13, 15
+	db 20, EKANS,		13, 15
+	db 20, INKAY, 	 	14, 15
+	db 15, INKAY, 	 	14, 15
+	db  4, LARVITAR,   	14, 15
+	db  1, LARVITAR,   	14, 15
 	; nite
-	db 14, EKANS
-	db 13, HOOTHOOT
-	db 14, INKAY
-	db 14, INKAY 
-	db 15, INKAY 
-	db 15, LARVITAR
-	db 15, LARVITAR
+	;  %, species,		min, max
+	db 25, INKAY,		13, 15
+	db 20, EKANS,		13, 15
+	db 20, HOOTHOOT, 	14, 15
+	db 10, INKAY,		13, 15
+	db 10, EKANS,		13, 15
+	db 10, HOOTHOOT, 	14, 15
+	db  5, LARVITAR,   	14, 15
 	end_grass_wildmons
 	
 	def_grass_wildmons ROUTE_9
 	db 10 percent, 10 percent, 10 percent
 	; morn
-	db 15, SANDSHREW
-	db 15, HELIOPTILE
-	db 15, SANDSHREW
-	db 16, SANDSHREW
-	db 15, RHYHORN
-	db 16, RHYHORN
-	db 17, RHYHORN
+	;  %, species,		min, max
+	db 20, SANDSHREW,	15, 17
+	db 20, SANDSHREW,	15, 17
+	db 20, SANDSHREW,	15, 17
+	db 10, SANDSHREW,	15, 17
+	db 10, HELIOPTILE,	15, 17
+	db 10, HELIOPTILE,	15, 17
+	db 10, RHYHORN, 	15, 17
 	; day
-	db 15, SANDSHREW
-	db 15, HELIOPTILE
-	db 15, SANDSHREW
-	db 16, SANDSHREW
-	db 15, RHYHORN
-	db 16, RHYHORN
-	db 17, RHYHORN
+	;  %, species,		min, max
+	db 20, SANDSHREW,	15, 17
+	db 20, SANDSHREW,	15, 17
+	db 20, SANDSHREW,	15, 17
+	db 10, SANDSHREW,	15, 17
+	db 10, HELIOPTILE,	15, 17
+	db 10, HELIOPTILE,	15, 17
+	db 10, RHYHORN, 	15, 17
 	; nite
-	db 15, SANDSHREW
-	db 15, HELIOPTILE
-	db 15, SANDSHREW
-	db 16, SANDSHREW
-	db 15, RHYHORN
-	db 16, RHYHORN
-	db 17, RHYHORN
+	;  %, species,		min, max
+	db 20, SANDSHREW,	15, 17
+	db 20, SANDSHREW,	15, 17
+	db 20, SANDSHREW,	15, 17
+	db 10, SANDSHREW,	15, 17
+	db 10, HELIOPTILE,	15, 17
+	db 10, HELIOPTILE,	15, 17
+	db 10, RHYHORN, 	15, 17
 	end_grass_wildmons
 	
 	def_grass_wildmons GLITTERING_CAVE_ENTRANCE
 	db 6 percent, 6 percent, 6 percent
 	; morn
-	db 16, MACHOP
-	db 16, CUBONE
-	db 17, RHYHORN
-	db 18, ONIX
-	db 18, KANGASKHAN
-	db 16, GLIGAR
-	db 16, GLIGAR
+	;  %, species,		min, max
+	db 30, MACHOP,		15, 17
+	db 15, CUBONE,		15, 16
+	db 15, CUBONE,		15, 16
+	db 15, RHYHORN,	 	17, 17
+	db 10, ONIX,	 	17, 17
+	db 10, GLIGAR,		15, 16
+	db  5, KANGASKHAN, 	17, 17
 	; day
-	db 16, MACHOP
-	db 16, CUBONE
-	db 17, RHYHORN
-	db 18, ONIX
-	db 18, KANGASKHAN
-	db 16, GLIGAR
-	db 16, GLIGAR
+	;  %, species,		min, max
+	db 30, MACHOP,		15, 17
+	db 15, CUBONE,		15, 16
+	db 15, CUBONE,		15, 16
+	db 15, RHYHORN,	 	17, 17
+	db 10, ONIX,	 	17, 17
+	db 10, GLIGAR,		15, 16
+	db  5, KANGASKHAN, 	17, 17
 	; nite
-	db 16, MACHOP
-	db 16, CUBONE
-	db 17, RHYHORN
-	db 18, ONIX
-	db 18, KANGASKHAN
-	db 16, GLIGAR
-	db 16, GLIGAR
+	;  %, species,		min, max
+	db 30, MACHOP,		15, 17
+	db 15, CUBONE,		15, 16
+	db 15, CUBONE,		15, 16
+	db 15, RHYHORN,	 	17, 17
+	db 10, ONIX,	 	17, 17
+	db 10, GLIGAR,		15, 16
+	db  5, KANGASKHAN, 	17, 17
+	end_grass_wildmons
+	
+	def_grass_wildmons ROUTE_10
+	db 10 percent, 10 percent, 10 percent
+	; morn
+	;  %, species,		min, max
+	db 20, SNUBBULL,	19, 21
+	db 20, HAWLUCHA,	19, 21
+	db 20, HOUNDOUR, 	21, 21
+	db 15, SNUBBULL,	19, 21
+	db 15, HAWLUCHA,	19, 21
+	db  5, YANMA,	 	20, 21
+	db  5, EEVEE,	 	19, 21	
+	; day
+	;  %, species,		min, max
+	db 20, SNUBBULL,	19, 21
+	db 20, HAWLUCHA,	19, 21
+	db 20, HOUNDOUR, 	21, 21
+	db 15, SNUBBULL,	19, 21
+	db 15, HAWLUCHA,	19, 21
+	db  5, YANMA,	 	20, 21
+	db  5, EEVEE,	 	19, 21
+	; nite
+	;  %, species,		min, max
+	db 20, SNUBBULL,	19, 21
+	db 20, HOUNDOUR,	19, 21
+	db 20, HAWLUCHA, 	21, 21
+	db 15, SNUBBULL,	19, 21
+	db 15, HOUNDOUR,	19, 21
+	db  5, YANMA,	 	20, 21
+	db  5, EEVEE,	 	19, 21	
 	end_grass_wildmons
 	
 	db -1 ; end
