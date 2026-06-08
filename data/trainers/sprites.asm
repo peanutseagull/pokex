@@ -1,8 +1,8 @@
 BTTrainerClassSprites:
 ; entries correspond to trainer classes
 	table_width 1, BTTrainerClassSprites
-	db SPRITE_FALKNER ; Viola
-	db SPRITE_BUGSY ; Grant
+	db SPRITE_CLAIR ; Viola
+	db SPRITE_ROCKER ; Grant
 	db SPRITE_WHITNEY ; Korrina
 	db SPRITE_MORTY ; Ramos
 	db SPRITE_CHUCK ; Clemont

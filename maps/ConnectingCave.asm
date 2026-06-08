@@ -1,4 +1,5 @@
 	object_const_def
+	const CONNECTINGCAVE_POKE_BALL
 	
 ConnectingCave_MapScripts:
 	def_scene_scripts
@@ -91,6 +92,52 @@ ConnectingCaveScientistAfterText:
 	cont "energy!"
 	done
 	
+ConnectingCaveFrustrationManScript:
+	faceplayer
+	opentext
+	checkevent EVENT_GOT_TM21_FRUSTRATION
+	iftrue .AlreadyGotItem
+	writetext ConnectingCaveGiveFrustrationText
+	promptbutton
+	verbosegiveitem TM_FRUSTRATION
+	writetext ConnectingCaveGotFrustrationText
+	waitbutton
+	closetext
+	setevent EVENT_GOT_TM21_FRUSTRATION
+	end
+	
+.AlreadyGotItem:
+	writetext ConnectingCaveGotFrustrationText
+	waitbutton
+	closetext
+	end
+	
+ConnectingCaveGiveFrustrationText:
+	text "I can't get out of"
+	line "here! And it's all"
+	cont "your fault!"
+	
+	para "Sorry. I had some"
+	line "frustration to"
+	cont "vent."
+	
+	para "Here-- have this"
+	line "as my apology."
+	done
+	
+ConnectingCaveGotFrustrationText:
+	text "FRUSTRATION is a"
+	line "move that gets"
+	cont "stronger the less"
+	cont "your #MON likes"
+	cont "you."
+	
+	para "Frustrating, huh?"
+	done
+	
+ConnectingCaveTm40:
+	itemball TM_WING_ATTACK ;(AERIAL_ACE)
+	
 ConnectingCave_MapEvents:
 	db 0, 0 ; filler
 	
@@ -98,15 +145,18 @@ ConnectingCave_MapEvents:
 	warp_event 47, 13, ROUTE_7_WEST, 1
 	warp_event 39, 27, ROUTE_7_WEST, 2
 	warp_event  3, 27, ROUTE_8_UPPER, 1
+	warp_event  3,  5, CYLLAGE_CITY, 13
 	
 	def_coord_events
 	
 	def_bg_events
 	
 	def_object_events
+	object_event 11,  3, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, ConnectingCaveTm40, EVENT_GOT_TM40_WING_ATTACK
 	object_event 17, 11, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ConnectingCaveBoulder, -1
 	object_event 27, 18, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ConnectingCaveBoulder, -1
+	object_event  9,  2, SPRITE_BOULDER, SPRITEMOVEDATA_STRENGTH_BOULDER, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ConnectingCaveBoulder, -1
 	object_event 30, 10, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerBreederMercy, -1
 	object_event 18, 10, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ConnectingCaveHikerScript, -1
-	object_event 16, 12, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event 16, 12, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ConnectingCaveFrustrationManScript, -1
 	object_event 23, 24, SPRITE_SABRINA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ConnectingCaveScientistScript, -1
