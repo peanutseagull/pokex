@@ -31,7 +31,7 @@ HotelAmbretteLassScript:
 	; verbosegiveitem TM_NATURE_POWER
 	; setevent EVENT_GOT_TM96_NATURE_POWER
 ; .AlreadyHaveNaturePower:
-	; writetext GetNaturePowerAfterText
+	; writetext NaturePowerAfterText
 	; waitbutton
 	; closetext
 	; end
@@ -42,7 +42,7 @@ HotelAmbretteLassScript:
 	; cont "this?"
 	; done
 	
-; GetNaturePowerAfterText:
+; NaturePowerAfterText:
 	; text Nature Power becomes a different move depending on the place it's used. I hope it will add fun to your journey!
 	
 HotelAmbretteLassText:

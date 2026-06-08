@@ -138,7 +138,7 @@ ENDM
 	map_const SHABBONEAU_CASTLE_BEDROOM,					5,  5 ; 12
 	map_const ROUTE_6,									   30, 24 ; 13
 	map_const BERRY_FIELDS,								   12,  8 ; 14
-	map_const BERRY_FIELDS_HOUSE,							4,  4
+	map_const BERRY_FIELDS_HOUSE,							4,  4 ; 15
 	map_const ROUTE_7_EAST,								   40, 13 ; 16
 	map_const ROUTE_7_WEST,								   13, 25 ; 17
 	map_const DAY_CARE,                                     5,  4 ; 15

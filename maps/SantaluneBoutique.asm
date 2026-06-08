@@ -8,39 +8,6 @@ SantaluneBoutique_MapScripts:
 SantaluneBoutiqueWorkerScript:
 	jumptextfaceplayer SantaluneBoutiqueWorkerText
 	
-SantaluneBoutiqueManScript:
-	jumptextfaceplayer SantaluneBoutiqueManText
-	
-SantaluneBoutiqueBoyScript:
-	jumptextfaceplayer SantaluneBoutiqueBoyText
-	
-SantaluneBoutiqueMerch:
-	jumptext SantaluneBoutiqueMerchText
-	
-SantaluneBoutiqueMerchText:
-	text "Accessories of"
-	line "every colour line"
-	cont "the shelves!"
-	done
-	
-SantaluneBoutiqueBoyText:
-	text "This shop has tons"
-	line "of hats and"
-	cont "accessories."
-	
-	para "Should I get a"
-	line "hat? I dunno…"
-	done
-	
-SantaluneBoutiqueManText:
-	text "You know, the"
-	line "inventory of shops"
-	cont "like this one can"
-	cont "be completely"
-	cont "different from one"
-	cont "store to another."
-	done
-	
 SantaluneBoutiqueWorkerText:
 	text "Hello! Welcome"
 	line "to the SANTALUNE"
@@ -54,6 +21,39 @@ SantaluneBoutiqueWorkerText:
 	cont "fitting room."
 	done
 	
+SantaluneBoutiqueManScript:
+	jumptextfaceplayer SantaluneBoutiqueManText
+	
+SantaluneBoutiqueManText:
+	text "You know, the"
+	line "inventory of shops"
+	cont "like this one can"
+	cont "be completely"
+	cont "different from one"
+	cont "store to another."
+	done
+	
+SantaluneBoutiqueBoyScript:
+	jumptextfaceplayer SantaluneBoutiqueBoyText
+
+SantaluneBoutiqueBoyText:
+	text "This shop has tons"
+	line "of hats and"
+	cont "accessories."
+	
+	para "Should I get a"
+	line "hat? I dunno…"
+	done
+	
+SantaluneBoutiqueMerch:
+	jumptext SantaluneBoutiqueMerchText
+	
+SantaluneBoutiqueMerchText:
+	text "Accessories of"
+	line "every colour line"
+	cont "the shelves!"
+	done
+
 SantaluneBoutique_MapEvents:
 	db 0, 0 ; filler
 	

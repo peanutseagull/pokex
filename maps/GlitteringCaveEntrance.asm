@@ -9,7 +9,7 @@ GlitteringCaveEntranceHardStone:
 	itemball HARD_STONE
 	
 ; GlitteringCaveEntranceTm65:
-	; itemball TM_65 ; SHADOW_CLAW
+	; itemball TM_SHADOW_CLAW
 	
 GlitteringCaveEntrance_MapEvents:
 	db 0, 0 ; filler
@@ -24,4 +24,4 @@ GlitteringCaveEntrance_MapEvents:
 	
 	def_object_events
 	object_event  6, 49, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GlitteringCaveEntranceHardStone, EVENT_GLITTERING_CAVE_ENTRANCE_HARD_STONE
-	; object_event  4,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GlitteringCaveEntranceTm65, EVENT_GOT_TM_65
+	; object_event  4,  7, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, GlitteringCaveEntranceTm65, EVENT_GOT_TM65_SHADOW_CLAW

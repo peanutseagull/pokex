@@ -282,7 +282,7 @@ SantaluneCitySign:
 	jumptext SantaluneCitySignText
 	
 SantaluneCitySignText:
-	text "SANTALUNE CITY"
+	text "SANTALUNE CITY:"
 	line "A traditional"
 	cont "city."
 	done
