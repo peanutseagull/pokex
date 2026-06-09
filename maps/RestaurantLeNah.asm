@@ -153,11 +153,11 @@ RestaurantLeNahEntreeScript:
 	sjump .Finish
 
 .TwoVictories
-	verbosegiveitem TINYMUSHROOM, $a
+	verbosegiveitem TINYMUSHROOM, $0a
 	sjump .Finish
 
 .ThreeVictories
-	verbosegiveitem TINYMUSHROOM, $f
+	verbosegiveitem TINYMUSHROOM, $0f
 .Finish
 	writetext RestaurantLeNahChefGoodbyeText
 	waitbutton

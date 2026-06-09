@@ -20,5 +20,5 @@ HibernalAvenue_MapEvents:
 	
 	def_bg_events
 	
-	def_warp_events
+	def_object_events
 	
