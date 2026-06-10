@@ -197,6 +197,8 @@
 	const MUSIC_MAIL   ; bc MAIL
 	const MIRAGE_MAIL  ; bd MAIL
 	const ITEM_BE      ; be UNUSED
+	const ITEM_C3      ; bf
+	const ITEM_DC      ; c0
 DEF NUM_ITEMS EQU const_value - 1
 
 DEF __tmhm_value__ = 1
@@ -218,36 +220,34 @@ ENDM
 
 ; see data/moves/tmhm_moves.asm for moves
 DEF TM01 EQU const_value
-	add_tm DYNAMICPUNCH ; bf HONE CLAWS
-	add_tm HEADBUTT     ; c0 DRAGON_CLAW
-	add_tm CURSE        ; c1 PSYSHOCK
-	add_tm ROLLOUT      ; c2 CALM_MIND
-	const ITEM_C3       ; c3
-	add_tm ROAR         ; c4 
-	add_tm TOXIC        ; c5
-	add_tm ZAP_CANNON   ; c6 HAIL
-	add_tm ROCK_SMASH   ; c7 BULK_UP
-	add_tm PSYCH_UP     ; c8 VENOSHOCK
-	add_tm HIDDEN_POWER ; c9
-	add_tm SUNNY_DAY    ; ca
-	add_tm SWEET_SCENT  ; cb TAUNT
-	add_tm SNORE        ; cc ICE_BEAM
-	add_tm BLIZZARD     ; cd
-	add_tm HYPER_BEAM   ; ce
-	add_tm ICY_WIND     ; cf LIGHT_SCREEN
-	add_tm PROTECT      ; d0
-	add_tm RAIN_DANCE   ; d1
-	add_tm GIGA_DRAIN   ; d2 ROOST
-	add_tm ENDURE       ; d3 SAFEGUARD
-	add_tm FRUSTRATION  ; d4
-	add_tm SOLARBEAM    ; d5
-	add_tm IRON_TAIL    ; d6 SMACK_DOWN
-	add_tm DRAGONBREATH ; d7 THUNDERBOLT
-	add_tm THUNDER      ; d8
-	add_tm EARTHQUAKE   ; d9
-	add_tm RETURN       ; da
-	add_tm DIG          ; db
-	const ITEM_DC       ; dc
+	add_tm DYNAMICPUNCH ; c1 HONE CLAWS
+	add_tm HEADBUTT     ; c2 DRAGON_CLAW
+	add_tm CURSE        ; c3 PSYSHOCK
+	add_tm ROLLOUT      ; c4 CALM_MIND
+	add_tm ROAR         ; c5 
+	add_tm TOXIC        ; c6
+	add_tm ZAP_CANNON   ; c7 HAIL
+	add_tm ROCK_SMASH   ; c8 BULK_UP
+	add_tm PSYCH_UP     ; c9 VENOSHOCK
+	add_tm HIDDEN_POWER ; ca
+	add_tm SUNNY_DAY    ; cb
+	add_tm SWEET_SCENT  ; cc TAUNT
+	add_tm SNORE        ; cd ICE_BEAM
+	add_tm BLIZZARD     ; ce
+	add_tm HYPER_BEAM   ; cf
+	add_tm ICY_WIND     ; d0 LIGHT_SCREEN
+	add_tm PROTECT      ; d1
+	add_tm RAIN_DANCE   ; d2
+	add_tm GIGA_DRAIN   ; d3 ROOST
+	add_tm ENDURE       ; d4 SAFEGUARD
+	add_tm FRUSTRATION  ; d5
+	add_tm SOLARBEAM    ; d6
+	add_tm IRON_TAIL    ; d7 SMACK_DOWN
+	add_tm DRAGONBREATH ; d8 THUNDERBOLT
+	add_tm THUNDER      ; d9
+	add_tm EARTHQUAKE   ; da
+	add_tm RETURN       ; db
+	add_tm DIG          ; dc
 	add_tm PSYCHIC_M    ; dd
 	add_tm SHADOW_BALL  ; de
 	add_tm MUD_SLAP     ; df BRICK_BREAK
