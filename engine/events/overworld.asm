@@ -1459,7 +1459,7 @@ FishFunction:
 	cp WATER_TILE
 	jr nz, .fail
 	farcall CheckFacingObject
-	jr nc, .facingwateer
+	jr nc, .facingwater
 .fail
 	ld a, $3
 	ret

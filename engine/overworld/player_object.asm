@@ -593,10 +593,14 @@ SurfStartStep:
 	jp StartAutoInput
 
 .movement_data
-	db PAD_DOWN,  0, -1
-	db PAD_UP,    0, -1
-	db PAD_LEFT,  0, -1
-	db PAD_RIGHT, 0, -1
+	slow_step DOWN
+	slow_step UP
+	slow_step LEFT
+	slow_step RIGHT
+	; db PAD_DOWN,  0, -1 Should be these but they're not defined
+	; db PAD_UP,    0, -1
+	; db PAD_LEFT,  0, -1
+	; db PAD_RIGHT, 0, -1
 
 FollowNotExact::
 	push bc
