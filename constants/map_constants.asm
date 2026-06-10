@@ -208,8 +208,13 @@ ENDM
 	map_const ROUTE_10_GATE,								5,  4 ;  1
 	map_const ROUTE_10,									   17, 41 ;  2
 	map_const GEOSENGE_TOWN,							   16, 21 ;  3
-	map_const HOTEL_MARINE_SNOW_1F,						   10,  6 ;  
-	map_const HOTEL_MARINE_SNOW_2F,						    9,  6 ;  
+	map_const GEOSENGE_POKECENTER_1F,						5,  4 ;  4
+	map_const GEOSENGE_MART,								6,  4 ;  5
+	map_const GEOSENGE_HOUSE_1,								4,  4 ;  6
+	map_const GEOSENGE_HOUSE_2,								4,  4 ;  7
+	map_const HOTEL_MARINE_SNOW_1F,						   10,  6 ;  8
+	map_const HOTEL_MARINE_SNOW_2F,						    9,  6 ;  9
+	; map_const ROUTE_11,
 	endgroup
 	
 	newgroup SHALOUR											  ; 13

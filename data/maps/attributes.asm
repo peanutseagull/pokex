@@ -258,10 +258,10 @@ ENDM
 	connection south, Route8Lower, ROUTE_8_LOWER, 5
 	
 	map_attributes Route10, ROUTE_10, $05, NORTH
-	connection north, GeosengeTown, GEOSENGE_TOWN, 0
+	connection north, GeosengeTown, GEOSENGE_TOWN, -5
 
 	map_attributes GeosengeTown, GEOSENGE_TOWN, $07, SOUTH
-	connection south, Route10, ROUTE_10, 0
+	connection south, Route10, ROUTE_10, 5
 	
 	map_attributes ShalourCity, SHALOUR_CITY, $00, 0
 	map_attributes CoumarineCity, COUMARINE_CITY, $00, 0
@@ -350,8 +350,12 @@ ENDM
 	map_attributes CyllageCafe, CYLLAGE_CAFE, $00, 0
 	map_attributes CyllageGym, CYLLAGE_GYM, $00, 0
 	map_attributes Route10Gate, ROUTE_10_GATE, $00, 0
+	map_attributes GeosengePokecenter1F, GEOSENGE_POKECENTER_1F, $00, 0
+	map_attributes GeosengeMart, GEOSENGE_MART, $00, 0
+	map_attributes GeosengeHouse1, GEOSENGE_HOUSE_1, $00, 0
+	map_attributes GeosengeHouse2, GEOSENGE_HOUSE_2, $00, 0
 	map_attributes HotelMarineSnow1F, HOTEL_MARINE_SNOW_1F, $00, 0
-	map_attributes HotelMarineSnow2F, HOTEL_MARINE_SNOW_2F, $00, 0	
+	map_attributes HotelMarineSnow2F, HOTEL_MARINE_SNOW_2F, $00, 0
 	; map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
 	; connection west, Route29, ROUTE_29, 0
 	; connection east, Route27, ROUTE_27, 0

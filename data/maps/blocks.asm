@@ -45,6 +45,8 @@ CyllageHouse2_Blocks:
 CyllageHouse3_Blocks:
 CyllageHouse4_Blocks:
 CyllageSurfHouse_Blocks:
+GeosengeHouse1_Blocks:
+GeosengeHouse2_Blocks:
 	INCBIN "maps/House1.blk"
 	
 SantaluneBoutique_Blocks:
@@ -324,6 +326,7 @@ LumioseSouthMart_Blocks:
 CamphrierMart_Blocks:
 AmbretteMart_Blocks:
 CyllageMart_Blocks:
+GeosengeMart_Blocks:
 	INCBIN "maps/Mart.blk"
 
 AquacordePokecenter1F_Blocks:
@@ -332,6 +335,7 @@ LumioseSouthPokecenter1F_Blocks:
 CamphrierPokecenter1F_Blocks:
 AmbrettePokecenter1F_Blocks:
 CyllagePokecenter1F_Blocks:
+GeosengePokecenter1F_Blocks:
 	INCBIN "maps/Pokecenter1F.blk"
 
 ; GoldenrodDeptStore1F_Blocks:

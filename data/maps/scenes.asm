@@ -43,4 +43,6 @@ MapScenes::
 	scene_var FOSSIL_LAB,								   wFossilLabSceneID
 	scene_var GLITTERING_CAVE_DEEP,						   wGlitteringCaveDeepSceneID
 	scene_var ROUTE_8_LOWER,							   wRoute8LowerSceneID
+	; scene_var CYLLAGE_CITY,								   wCyllageCitySceneID
+	; scene_var CYLLAGE_BIKE_SHOP,						   wCyllageBikeShopSceneID
 	db -1 ; end
