@@ -151,13 +151,14 @@ GeosengeGroupSprites:
 	db SPRITE_TEACHER
 	db SPRITE_FISHER
 	db SPRITE_BEAUTY
+	db SPRITE_ROCKER
 	db SPRITE_ROCKET
 	db SPRITE_ROCKET_GIRL
-	; 6 of max 9 walking sprites
+	; 7 of max 9 walking sprites
+	db SPRITE_COOLTRAINER_F
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db SPRITE_BOULDER
-	db SPRITE_ROCK
 	db 0
 	
 ShalourGroupSprites:
