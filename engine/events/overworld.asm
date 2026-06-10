@@ -963,7 +963,7 @@ StrengthFunction:
 	ret
 
 .TryStrength:
-	ld de, ENGINE_PLAINBADGE
+	ld de, ENGINE_HIVEBADGE
 	call CheckBadge
 	jr c, .Failed
 	jr .UseStrength
