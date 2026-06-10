@@ -254,10 +254,15 @@ ENDM
 	connection north, CyllageCity, CYLLAGE_CITY, -5
 	connection south, AmbretteTown, AMBRETTE_TOWN, 5
 	
-	map_attributes CyllageCity, CYLLAGE_CITY, $00, SOUTH
+	map_attributes CyllageCity, CYLLAGE_CITY, $35, SOUTH
 	connection south, Route8Lower, ROUTE_8_LOWER, 5
 	
-	map_attributes GeosengeTown, GEOSENGE_TOWN, $00, 0
+	map_attributes Route10, ROUTE_10, $05, NORTH
+	connection north, GeosengeTown, GEOSENGE_TOWN, 0
+
+	map_attributes GeosengeTown, GEOSENGE_TOWN, $07, SOUTH
+	connection south, Route10, ROUTE_10, 0
+	
 	map_attributes ShalourCity, SHALOUR_CITY, $00, 0
 	map_attributes CoumarineCity, COUMARINE_CITY, $00, 0
 	map_attributes LaverreCity, LAVERRE_CITY, $00, 0
@@ -344,6 +349,7 @@ ENDM
 	map_attributes CyllageBoutique, CYLLAGE_BOUTIQUE, $00, 0
 	map_attributes CyllageCafe, CYLLAGE_CAFE, $00, 0
 	map_attributes CyllageGym, CYLLAGE_GYM, $00, 0
+	map_attributes Route10Gate, ROUTE_10_GATE, $00, 0
 	map_attributes HotelMarineSnow1F, HOTEL_MARINE_SNOW_1F, $00, 0
 	map_attributes HotelMarineSnow2F, HOTEL_MARINE_SNOW_2F, $00, 0	
 	; map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST

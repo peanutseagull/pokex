@@ -190,6 +190,8 @@ DEF KRIS EQU __trainer_class__
 	trainerclass MYSTERY_SISTERS ; 2f
 	
 	trainerclass PSYCHIC_T ; 30
+	const ROBERT
+	const SAYID
 	
 	trainerclass BLACKBELT_T ; 31
 	const CADOC
@@ -222,10 +224,13 @@ DEF KRIS EQU __trainer_class__
 	trainerclass GRUNTM ; 3d
 	const GRUNTM_1
 	const GRUNTM_2
+	const GRUNTM_3
 	
 	trainerclass GRUNTF ; 3e
 	const GRUNTF_1
 	const GRUNTF_2
+	const GRUNTF_3
+	const GRUNTF_4
 	
 	trainerclass ADMINM ; 3f
 	
@@ -245,6 +250,8 @@ DEF KRIS EQU __trainer_class__
 	trainerclass TOURIST_LADY ; 45
 	const HIROKO
 	const ERIKO
+	const FUMIKO
+	const TOMOKO
 	
 	trainerclass HONEYMOONERS ; 46
 	

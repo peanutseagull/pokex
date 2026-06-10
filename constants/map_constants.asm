@@ -188,7 +188,7 @@ ENDM
 	
 	newgroup CYLLAGE											  ; 11
 	map_const ROUTE_8_LOWER,							   24, 37 ;  1
-	map_const CYLLAGE_CITY,								   27, 21 ;  2
+	map_const CYLLAGE_CITY,								   27, 23 ;  2
 	map_const CYLLAGE_POKECENTER_1F,						5,  4 ;  3
 	map_const CYLLAGE_MART,									6,  4 ;  4
 	map_const CYLLAGE_HOUSE_1,								4,  4 ;  5
@@ -205,7 +205,9 @@ ENDM
 	endgroup
 	
 	newgroup GEOSENGE											  ; 12
-	map_const GEOSENGE_TOWN,							    1,  1 ;  1
+	map_const ROUTE_10_GATE,								5,  4 ;  1
+	map_const ROUTE_10,									   17, 41 ;  2
+	map_const GEOSENGE_TOWN,							   16, 21 ;  3
 	map_const HOTEL_MARINE_SNOW_1F,						   10,  6 ;  
 	map_const HOTEL_MARINE_SNOW_2F,						    9,  6 ;  
 	endgroup

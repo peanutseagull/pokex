@@ -58,6 +58,7 @@ EarlsPokemonAcademy_Blocks:
 	INCBIN "maps/EarlsPokemonAcademy.blk"
 
 Route2Gate_Blocks:
+Route10Gate_Blocks:
 	INCBIN "maps/NorthSouthGate.blk"
 	
 Route4LumioseGate_Blocks:
@@ -170,6 +171,9 @@ GlitteringCaveDeep_Blocks:
 	
 FossilLab_Blocks:
 	INCBIN "maps/FossilLab.blk"
+	
+Route10_Blocks:
+	INCBIN "maps/Route10.blk"
 	
 
 SECTION "Map Blocks 2", ROMX

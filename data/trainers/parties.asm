@@ -490,6 +490,16 @@ HexManiacGroup:
 MysterySistersGroup:
 
 PsychicGroup:
+	; PSYCHIC_T (1)
+	db "ROBERT@", TRAINERTYPE_NORMAL
+	db 24, ESPEON
+	db -1 ; end
+	
+	; PSYCHIC_T (2)
+	db "SAYID@", TRAINERTYPE_NORMAL
+	db 21, ESPURR
+	db 23, MR__MIME
+	db -1 ; end	
 
 BlackbeltGroup:
 	; BLACK_BELT_T (1)
@@ -549,7 +559,13 @@ GruntMGroup:
 	db 23, NIDORINO
 	db 23, GRANBULL
 	db -1 ; end
-
+	
+	; GRUNTM (3)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 24, HOUNDOUR
+	db 25, GOLBAT
+	db -1 ; end
+	
 GruntFGroup:
 	; GRUNTF (1)
 	db "GRUNT@", TRAINERTYPE_NORMAL
@@ -562,6 +578,17 @@ GruntFGroup:
 	db 23, PANCHAM
 	db 23, NIDORINO
 	db 23, GRANBULL
+	db -1 ; end
+	
+	; GRUNTF (3)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 25, JOLTEON
+	db 23, GOOMY
+	db -1 ; end
+	
+	; GRUNTF (4)
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 26, SKRELP
 	db -1 ; end
 	
 AdminMGroup:
@@ -602,6 +629,20 @@ TouristLadyGroup:
 	db 13, SENTRET
 	db 13, ABRA
 	db 13, EKANS
+	db -1 ; end
+	
+	; TOURIST_LADY (3)
+	db "FUMIKO@", TRAINERTYPE_NORMAL
+	db 23, SKIPLOOM
+	db 23, AZUMARILL
+	db 23, DUNSPARCE
+	db -1 ; end
+	
+	; TOURIST_LADY (4)
+	db "FUMIKO@", TRAINERTYPE_NORMAL
+	db 23, MISDREAVUS
+	db 23, RHYHORN
+	db 23, RAICHU
 	db -1 ; end
 	
 HoneymoonersGroup:

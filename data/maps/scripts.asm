@@ -370,6 +370,8 @@ SECTION "Map Scripts 13", ROMX
 
 SECTION "Map Scripts 14", ROMX
 
+INCLUDE "maps/Route10Gate.asm"
+INCLUDE "maps/Route10.asm"
 INCLUDE "maps/GeosengeTown.asm"
 INCLUDE "maps/HotelMarineSnow1F.asm"
 INCLUDE "maps/HotelMarineSnow2F.asm"

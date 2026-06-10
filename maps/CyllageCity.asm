@@ -363,48 +363,49 @@ CyllageCity_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events
-	warp_event 27, 23, CYLLAGE_POKECENTER_1F, 1
-	warp_event 33, 37, CYLLAGE_MART, 2
-	warp_event 39, 35, CYLLAGE_HOUSE_1, 1
-	warp_event 25, 29, CYLLAGE_HOUSE_2, 1
-	warp_event 23, 23, CYLLAGE_HOUSE_3, 1
-	warp_event 23, 17, CYLLAGE_HOUSE_4, 1
-	warp_event  6, 35, CYLLAGE_SURF_HOUSE, 1
-	warp_event 33, 23, CYLLAGE_BIKE_SHOP, 1
-	warp_event 31, 13, CYLLAGE_BOUTIQUE, 1
-	warp_event 25,  9, HOTEL_CYLLAGE_1F, 1
-	warp_event 21,  7, CYLLAGE_CAFE, 1
-	warp_event 46, 29, CYLLAGE_GYM, 1
-	warp_event 46, 11, CONNECTING_CAVE, 4
+	warp_event 27, 27, CYLLAGE_POKECENTER_1F, 1
+	warp_event 33, 41, CYLLAGE_MART, 2
+	warp_event 39, 39, CYLLAGE_HOUSE_1, 1
+	warp_event 25, 33, CYLLAGE_HOUSE_2, 1
+	warp_event 23, 27, CYLLAGE_HOUSE_3, 1
+	warp_event 23, 21, CYLLAGE_HOUSE_4, 1
+	warp_event  6, 39, CYLLAGE_SURF_HOUSE, 1
+	warp_event 33, 27, CYLLAGE_BIKE_SHOP, 1
+	warp_event 31, 17, CYLLAGE_BOUTIQUE, 1
+	warp_event 25, 13, HOTEL_CYLLAGE_1F, 1
+	warp_event 21, 11, CYLLAGE_CAFE, 1
+	warp_event 46, 33, CYLLAGE_GYM, 1
+	warp_event 46, 15, CONNECTING_CAVE, 4
+	warp_event 17,  5, ROUTE_10_GATE, 1
 	
 	def_coord_events
 	
 	def_bg_events
-	bg_event 33, 29, BGEVENT_READ, CyllageCitySign
-	bg_event 34, 37, BGEVENT_READ, CyllageCityMartSign
-	bg_event 28, 23, BGEVENT_READ, CyllageCityPokecenterSign
-	bg_event 32, 14, BGEVENT_READ, CyllageBoutiqueSign
-	bg_event 23,  9, BGEVENT_READ, CyllageTrainerTipsSign
-	bg_event 36, 30, BGEVENT_ITEM, CyllageCityHiddenEther
-	bg_event 33,  3, BGEVENT_ITEM, CyllageCityHiddenXSpeed
-	bg_event 47, 32, BGEVENT_ITEM, CyllageCityHiddenProtein
-	bg_event  5, 14, BGEVENT_ITEM, CyllageCityHiddenPearl
+	bg_event 33, 33, BGEVENT_READ, CyllageCitySign
+	bg_event 34, 41, BGEVENT_READ, CyllageCityMartSign
+	bg_event 28, 27, BGEVENT_READ, CyllageCityPokecenterSign
+	bg_event 32, 18, BGEVENT_READ, CyllageBoutiqueSign
+	bg_event 23, 13, BGEVENT_READ, CyllageTrainerTipsSign
+	bg_event 36, 34, BGEVENT_ITEM, CyllageCityHiddenEther
+	bg_event 33,  7, BGEVENT_ITEM, CyllageCityHiddenXSpeed
+	bg_event 47, 36, BGEVENT_ITEM, CyllageCityHiddenProtein
+	bg_event  5, 18, BGEVENT_ITEM, CyllageCityHiddenPearl
 	
 	def_object_events
-	object_event 44, 30, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CyllageCityGrantScript, EVENT_CYLLAGE_CITY_GRANT
-	object_event 37,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CyllageCitySuperPotion, EVENT_CYLLAGE_CITY_SUPER_POTION
-	object_event 47, 35, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CyllageCityXDefend, EVENT_CYLLAGE_CITY_X_DEFEND
-	object_event 39,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CyllageCityXSpecial, EVENT_CYLLAGE_CITY_X_SPECIAL
-	object_event  9, 21, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CyllageCityLassScript, -1
-	object_event 21, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CyllageCityCooltrainerfScript, -1
-	object_event 16,  5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CyllageCityYoungster1Script, -1
+	object_event 44, 34, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CyllageCityGrantScript, EVENT_CYLLAGE_CITY_GRANT
+	object_event 37, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CyllageCitySuperPotion, EVENT_CYLLAGE_CITY_SUPER_POTION
+	object_event 47, 39, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CyllageCityXDefend, EVENT_CYLLAGE_CITY_X_DEFEND
+	object_event 39, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CyllageCityXSpecial, EVENT_CYLLAGE_CITY_X_SPECIAL
+	object_event  9, 25, SPRITE_LASS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CyllageCityLassScript, -1
+	object_event 21, 15, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CyllageCityCooltrainerfScript, -1
+	object_event 16,  9, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CyllageCityYoungster1Script, -1
 	; object_event 32, 26, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CyllageCityYoungster2Script, -1
-	object_event 21, 36, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCityBiker1Script, -1
-	object_event 31,  2, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCityBiker2Script, -1
-	object_event 37, 14, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCityBiker3Script, -1
+	object_event 21, 40, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCityBiker1Script, -1
+	object_event 31,  6, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCityBiker2Script, -1
+	object_event 37, 18, SPRITE_BIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCityBiker3Script, -1
 	; object_event 27, 36, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCityBlackBeltScript, -1
-	object_event 33, 17, SPRITE_BEAUTY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCitySodaPopLadyScript, -1
-	object_event 17, 24, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCityRock, -1
-	object_event 15, 17, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCityRock, -1
-	object_event  8,  3, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCityRock, -1
-	object_event  5,  7, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCityRock, -1
+	object_event 33, 21, SPRITE_BEAUTY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCitySodaPopLadyScript, -1
+	object_event 17, 28, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCityRock, -1
+	object_event 15, 21, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCityRock, -1
+	object_event  8,  7, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCityRock, -1
+	object_event  5, 11, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageCityRock, -1
