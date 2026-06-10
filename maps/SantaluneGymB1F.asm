@@ -14,7 +14,7 @@ SantaluneGymViolaScript:
 	writetext ViolaIntroText
 	waitbutton
 	closetext
-	winlosstext ViolaWinLossText, 0
+	winlosstext ViolaWinText, 0
 	loadtrainer VIOLA, VIOLA1
 	startbattle
 	reloadmapafterbattle
@@ -191,7 +191,7 @@ ViolaIntroText:
 	cont "this shot!"
 	done
 
-ViolaWinLossText:
+ViolaWinText:
 	text "You and your"
 	line "#MON have shown"
 	cont "me a whole new"

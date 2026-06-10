@@ -159,6 +159,7 @@
 	const DRAGON_SCALE ; 97
 	const BERSERK_GENE ; 98 UNNECESSARY
 	const WHIPPED_DREAM; 99 UNUSED
+	const WHIPPED_DREAM; 99 
 	const ITEM_9A      ; 9a UNUSED
 	const ITEM_9B      ; 9b UNUSED
 	const SACRED_ASH   ; 9c UNNECESSARY
@@ -258,6 +259,7 @@ DEF TM01 EQU const_value
 	add_tm SANDSTORM    ; e5
 	add_tm FIRE_BLAST   ; e6
 	add_tm SWIFT        ; e7 ROCK_TOMB
+	add_tm ROCK_THROW   ; e7 ROCK_TOMB
 	add_tm WING_ATTACK  ; e8 AERIAL_ACE
 	add_tm THUNDERPUNCH ; e9 TORMENT
 	add_tm DREAM_EATER  ; ea FACADE
