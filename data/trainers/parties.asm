@@ -22,9 +22,8 @@ ViolaGroup:
 GrantGroup:
 	; GRANT (1)
 	db "GRANT@", TRAINERTYPE_MOVES
-	db 14, METAPOD,    TACKLE, STRING_SHOT, HARDEN, NO_MOVE
-	db 14, KAKUNA,     POISON_STING, STRING_SHOT, HARDEN, NO_MOVE
-	db 16, SCYTHER,    QUICK_ATTACK, LEER, FURY_CUTTER, NO_MOVE
+	db 26, AMAURA,    AURORA_BEAM, THUNDER_WAVE, TAKE_DOWN, ROCK_THROW
+	db 26, TYRUNT,    BITE, STOMP, ROCK_SLIDE, DIG
 	db -1 ; end
 
 KorrinaGroup:
@@ -370,6 +369,12 @@ RisingStarMGroup:
 	db 19, GOLDEEN
 	db -1 ; end
 	
+	; RISING STAR (5)
+	db "DIDIER@", TRAINERTYPE_NORMAL
+	db 22, GEODUDE
+	db 24, BINACLE
+	db -1 ; end
+	
 RisingStarFGroup:
 	; RISING STAR (1)
 	db "LOUISE@", TRAINERTYPE_NORMAL
@@ -380,6 +385,11 @@ RisingStarFGroup:
 	; RISING STAR (2)
 	db "PAULA@", TRAINERTYPE_NORMAL
 	db 21, LARVITAR
+	db -1 ; end
+	
+	; RISING STAR (3)
+	db "MANON@", TRAINERTYPE_NORMAL
+	db 21, AERODACTYL
 	db -1 ; end
 	
 TwinsGroup:
@@ -419,6 +429,16 @@ SkaterFGroup:
 	db -1 ; end
 	
 HikerGroup:
+	; HIKER (1)
+	db "CRAIG@", TRAINERTYPE_NORMAL
+	db 24, LARVITAR
+	db -1 ; end
+	
+	; HIKER (2)
+	db "BERNARD@", TRAINERTYPE_NORMAL
+	db 22, RHYHORN
+	db 23, ONIX
+	db -1 ; end
 	
 BackpackerGroup:
 	; BACKPACKER (1)

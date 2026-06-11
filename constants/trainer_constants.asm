@@ -141,10 +141,12 @@ DEF KRIS EQU __trainer_class__
 	const HAMISH
 	const TYSON
 	const RHYS
+	const DIDIER
 	
 	trainerclass RISINGSTARF ; 21
 	const LOUISE
 	const PAULA
+	const MANON
 	
 	trainerclass TWINS ; 22
 	const MAYANDJOY1
@@ -159,6 +161,8 @@ DEF KRIS EQU __trainer_class__
 	const WINNIE
 	
 	trainerclass HIKER ; 25
+	const CRAIG
+	const BERNARD
 
 	trainerclass BACKPACKER ; 26
 	const HEIKE
