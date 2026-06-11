@@ -770,12 +770,12 @@ RandomUnseenWildMon:
 	jr nc, .done
 
 .GetGrassmon:
-	push hl
-	ld bc, 5 + 4 * 4 ; Location of the level of the 5th wild Pokemon in that map
-	add hl, bc
 	ld a, [wTimeOfDay]
 	ld bc, NUM_GRASSMON * 4
 	call AddNTimes
+	push hl
+	ld bc, 5 + 4 * 4 ; Location of the level of the 5th wild Pokemon in that map
+	add hl, bc
 .randloop1
 	call Random
 	and %11
