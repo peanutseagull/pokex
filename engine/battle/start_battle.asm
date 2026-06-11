@@ -77,12 +77,27 @@ PlayBattleMusic:
 	; jr z, .done	; cp RED
 	; jr z, .done
 
-; BUG: Team Rocket battle music is not used for Executives or Scientists (see docs/bugs_and_glitches.md)
 	ld de, MUSIC_ROCKET_BATTLE
 	cp GRUNTM
 	jr z, .done
 	cp GRUNTF
 	jr z, .done
+	cp ADMINM
+	jr z, .done
+	cp ADMINF
+	jr z, .done
+	; cp XELOSIC Too many to compile
+	; jr z, .done
+	; cp ALIANA
+	; jr z, .done
+	; cp BRYONY
+	; jr z, .done
+	; cp CELOSIA
+	; jr z, .done
+	; cp MABLE
+	; jr z, .done
+	; cp LYSANDRE
+	; jr z, .done
 
 	ld de, MUSIC_KANTO_GYM_LEADER_BATTLE
 	farcall IsKantoGymLeader
