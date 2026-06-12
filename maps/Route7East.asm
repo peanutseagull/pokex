@@ -224,6 +224,7 @@ Route7East_PokeFluteScene1:
 	disappear ROUTE7EAST_MAN
 	applymovement ROUTE7EAST_BLACK_BELT, Route7EastExitsMovement
 	disappear ROUTE7EAST_BLACK_BELT
+	clearevent EVENT_SHABBONEAU_CASTLE_BLACK_BELT
 	turnobject PLAYER, RIGHT
 	turnobject ROUTE7EAST_SHAUNA, RIGHT
 	applymovement ROUTE7EAST_YOUNGSTER, Route7EastExitsMovement
