@@ -193,21 +193,20 @@ ItemEffects:
 	dw PokeBallEffect      ; PARK_BALL
 	dw NoEffect            ; RAINBOW_WING
 	dw NoEffect            ; ITEM_B3
-	assert_table_length ITEM_B3
-; The items past ITEM_B3 do not have effect entries:
-;	BRICK_PIECE
-;	SURF_MAIL
-;	LITEBLUEMAIL
-;	PORTRAITMAIL
-;	LOVELY_MAIL
-;	EON_MAIL
-;	MORPH_MAIL
-;	BLUESKY_MAIL
-;	MUSIC_MAIL
-;	MIRAGE_MAIL
-;	ITEM_BE
-; They all have the ITEMMENU_NOUSE attribute so they can't be used anyway.
-; NoEffect would be appropriate, with the table then being NUM_ITEMS long.
+	dw NoEffect 		   ; BRICK_PIECE
+	dw NoEffect 		   ; SURF_MAIL
+	dw NoEffect 		   ; LITEBLUEMAIL
+	dw NoEffect 		   ; PORTRAITMAIL
+	dw NoEffect 		   ; LOVELY_MAIL
+	dw NoEffect 		   ; EON_MAIL
+	dw NoEffect 		   ; MORPH_MAIL
+	dw NoEffect 		   ; BLUESKY_MAIL
+	dw NoEffect 		   ; MUSIC_MAIL
+	dw NoEffect 		   ; MIRAGE_MAIL
+	dw NoEffect 		   ; ITEM_BE
+	dw PokeBallEffect	   ; NET_BALL
+	dw PokeBallEffect	   ; NEST_BALL
+	assert_table_length NUM_ITEMS
 
 PokeBallEffect:
 	ld a, [wBattleMode]
@@ -745,6 +744,8 @@ BallMultiplierFunctionTable:
 	dbw QUICK_BALL,  QuickBallMultiplier
 	dbw DIVE_BALL,	 DiveBallMultiplier
 	dbw DUSK_BALL,	 DuskBallMultiplier
+	dbw NET_BALL,	 NetBallMultiplier
+	dbw NEST_BALL,	 NestBallMultiplier
 	db -1 ; end
 
 UltraBallMultiplier:
@@ -1137,7 +1138,72 @@ DuskBallMultiplier:
 .max
 	ld b, $ff
 	ret
+	
+NetBallMultiplier:
+; multiply catch rate by 3 if mon is water or bug type
+	ld a, [wEnemyMonType1]
+	cp WATER
+	jr z, .ok
+	cp BUG
+	jr z, .ok
+	ld a, [wEnemyMonType2]
+	cp WATER
+	jr z, .ok
+	cp BUG
+	ret nz
 
+.ok
+	ld a, b
+	add a
+	jr c, .max
+
+	add b
+	jr nc, .done
+.max
+	ld a, $ff
+.done
+	ld b, a
+	ret	
+	
+NestBallMultiplier:
+; multiply catch rate by (41 - enemy mon level) / 5, floored at 1
+	ld a, [wEnemyMonLevel]
+	cp 30
+	ret nc
+
+	push bc
+	ld b, a
+	ld a, 41
+	sub b
+	pop bc
+
+	; hMultiplier = 41 - level
+	ldh [hMultiplier], a
+
+	; hMultiplicand = catch rate
+	xor a
+	ldh [hMultiplicand + 0], a
+	ldh [hMultiplicand + 1], a
+	ld a, b
+	ldh [hMultiplicand + 2], a
+
+	; hProduct = catch rate * (41 - level)
+	call Multiply
+
+	; hDivisor = 5
+	ld a, 5
+	ldh [hDivisor], a
+
+	; hQuotient = catch rate * (41 - level) / 5
+	ld b, 4
+	call Divide
+
+	; b = hQuotient = catch rate * (41 - level) / 5
+	ldh a, [hQuotient + 2]
+	ld b, a
+
+	ret	
+	
 ; BallDodgedText and BallMissedText were used in Gen 1.
 
 BallDodgedText: ; unreferenced

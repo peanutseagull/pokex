@@ -7,8 +7,6 @@ TimeCapsule_CatchRateItems:
 	db ITEM_64, BERRY
 	db ITEM_78, BERRY
 	db ITEM_BE, BERRY
-	db ITEM_C3, BERRY
-	db ITEM_DC, BERRY
 	db ITEM_FA, BERRY
 	db -1,      BERRY
 	db 0 ; end

@@ -190,8 +190,8 @@ ItemNames::
 	li "MUSIC MAIL"
 	li "MIRAGE MAIL"
 	li "TERU-SAMA"
-	li "TERU-SAMA"
-	li "TERU-SAMA"
+	li "NET BALL"
+	li "NEST BALL"
 	assert_list_length NUM_ITEMS
 	li "TM01"
 	li "TM02"

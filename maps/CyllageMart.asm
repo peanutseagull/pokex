@@ -66,11 +66,12 @@ CyllageMartSecondClerkScript:
 	closetext
 	end
 	
-; CyllageMartBallClerkScript:
-	; opentext
-	; pokemart MARTTYPE_STANDARD, MART_CYLLAGE_BALLS
-	; closetext
-	; end
+CyllageMartBallClerkScript:
+	faceplayer
+	opentext
+	pokemart MARTTYPE_STANDARD, MART_CYLLAGE_BALLS
+	closetext
+	end
 	
 CyllageMartCooltrainerfScript:
 	jumptextfaceplayer CyllageMartCooltrainerfText
@@ -100,5 +101,5 @@ CyllageMart_MapEvents:
 	def_object_events
 	object_event  1,  3, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageMartGeneralClerkScript, -1
 	object_event  1,  2, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageMartSecondClerkScript, -1
-	; object_event  2,  5, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageMartBallClerkScript, -1
+	object_event  2,  5, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CyllageMartBallClerkScript, -1
 	object_event  6,  2, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CyllageMartCooltrainerfScript, -1

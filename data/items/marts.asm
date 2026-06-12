@@ -14,7 +14,7 @@ Marts:
 	dw MartStatusThree
 	dw MartStoneEmporium
 	dw MartHerboriste
-	; dw MartCyllageBalls	DO NOT DELETE
+	dw MartCyllageBalls
 	; dw MartAzalea
 	; dw MartCianwood
 	; dw MartGoldenrod2F1
@@ -176,12 +176,12 @@ MartHerboriste:
 	db REVIVAL_HERB
 	db -1 ; end
 	
-; MartCyllageBalls:	DO NOT DELETE
-	; db 3 ; # items
-	; db NET_BALL
-	; db NEST_BALL
-	; db DUSK_BALL
-	; db -1 ; end
+MartCyllageBalls:
+	db 3 ; # items
+	db NET_BALL
+	db NEST_BALL
+	db DUSK_BALL
+	db -1 ; end
 	
 
 	

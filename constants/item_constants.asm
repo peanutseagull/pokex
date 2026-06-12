@@ -196,8 +196,8 @@
 	const MUSIC_MAIL   ; bc MAIL
 	const MIRAGE_MAIL  ; bd MAIL
 	const ITEM_BE      ; be UNUSED
-	const ITEM_C3      ; bf
-	const ITEM_DC      ; c0
+	const NET_BALL     ; bf
+	const NEST_BALL    ; c0
 DEF NUM_ITEMS EQU const_value - 1
 
 DEF __tmhm_value__ = 1

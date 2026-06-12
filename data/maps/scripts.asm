@@ -164,6 +164,8 @@ SECTION "Map Scripts 6", ROMX
 ; INCLUDE "maps/TeamRocketBaseB2F.asm"
 ; INCLUDE "maps/TeamRocketBaseB3F.asm"
 ; INCLUDE "maps/IlexForest.asm"
+INCLUDE "maps/BerryFields.asm"
+INCLUDE "maps/BerryFieldsHouse.asm"
 
 
 SECTION "Map Scripts 7", ROMX
@@ -181,8 +183,6 @@ INCLUDE "maps/ShabboneauCastleBedroom.asm"
 INCLUDE "maps/Route5East.asm"
 INCLUDE "maps/Route5West.asm"
 INCLUDE "maps/Route6.asm"
-INCLUDE "maps/BerryFields.asm"
-INCLUDE "maps/BerryFieldsHouse.asm"
 INCLUDE "maps/Route7East.asm"
 INCLUDE "maps/Route7West.asm"
 INCLUDE "maps/ConnectingCave.asm"

@@ -191,8 +191,8 @@ ItemDescriptions:
 	dw MusicMailDesc
 	dw MirageMailDesc
 	dw TeruSama25Desc
-	dw TeruSama26Desc
-	dw TeruSama27Desc
+	dw NetBallDesc
+	dw NestBallDesc
 	assert_table_length NUM_ITEMS
 	dw TeruSama26Desc
 	dw TeruSama26Desc
@@ -996,6 +996,14 @@ MusicMailDesc:
 MirageMailDesc:
 	db   "MEW-print MAIL."
 	next "(HOLD)@"
+	
+NetBallDesc:
+	db   "A BALL for WATER"
+	next "and BUG #MON.@"
+	
+NestBallDesc:
+	db   "A BALL for weaker"
+	next "#MON.@"
 
 TeruSama25Desc:
 	db   "?@"
