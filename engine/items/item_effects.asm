@@ -802,24 +802,17 @@ HeavyBallMultiplier:
 	ld d, 0
 	add hl, de
 	add hl, de
-	add hl, de
-	; d = bank, hl = address
-	ld a, BANK(PokedexDataPointerTable)
-	call GetFarByte
-	push af
-	inc hl
 	ld a, BANK(PokedexDataPointerTable)
 	call GetFarWord
-	pop de
 
 .SkipText:
-	ld a, d
+	call HeavyBall_GetDexEntryBank
 	call GetFarByte
 	inc hl
 	cp "@"
 	jr nz, .SkipText
 
-	ld a, d
+	call HeavyBall_GetDexEntryBank
 	push bc
 	inc hl
 	inc hl
