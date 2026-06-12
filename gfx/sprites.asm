@@ -43,11 +43,10 @@ LassSpriteGFX::                INCBIN "gfx/sprites/lass.2bpp"
 TeacherSpriteGFX::             INCBIN "gfx/sprites/teacher.2bpp"
 BeautySpriteGFX::              INCBIN "gfx/sprites/beauty.2bpp"
 SuperNerdSpriteGFX::           INCBIN "gfx/sprites/super_nerd.2bpp"
-RockerSpriteGFX::              INCBIN "gfx/sprites/rocker.2bpp"
-
 
 SECTION "Sprites 2", ROMX
 
+RockerSpriteGFX::              INCBIN "gfx/sprites/rocker.2bpp"
 PokefanMSpriteGFX::            INCBIN "gfx/sprites/pokefan_m.2bpp"
 PokefanFSpriteGFX::            INCBIN "gfx/sprites/pokefan_f.2bpp"
 GrampsSpriteGFX::              INCBIN "gfx/sprites/gramps.2bpp"
