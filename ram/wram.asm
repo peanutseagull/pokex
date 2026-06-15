@@ -3118,6 +3118,7 @@ wRoute4LumioseGateSceneID::						  db
 wSycamoreLab3FSceneID::							  db
 wSycamoreLab1FSceneID::							  db
 wCafeSoleilSceneID::							  db
+wRoute5LumioseGateSceneID::					      db
 wRoute5EastSceneID::							  db
 wCamphrierTownSceneID::							  db
 wRoute7EastSceneID::							  db
@@ -3130,7 +3131,7 @@ wFossilLabSceneID::								  db
 wGlitteringCaveDeepSceneID::					  db
 wRoute8LowerSceneID::							  db
 
-	ds 92
+	ds 91
 
 ; fight counts
 wJackFightCount::    db

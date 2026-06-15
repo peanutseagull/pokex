@@ -166,6 +166,7 @@ SECTION "Map Scripts 6", ROMX
 ; INCLUDE "maps/IlexForest.asm"
 INCLUDE "maps/BerryFields.asm"
 INCLUDE "maps/BerryFieldsHouse.asm"
+INCLUDE "maps/Route5LumioseGate.asm"
 
 
 SECTION "Map Scripts 7", ROMX
@@ -186,7 +187,6 @@ INCLUDE "maps/Route6.asm"
 INCLUDE "maps/Route7East.asm"
 INCLUDE "maps/Route7West.asm"
 INCLUDE "maps/ConnectingCave.asm"
-INCLUDE "maps/Route5LumioseGate.asm"
 ; INCLUDE "maps/LakeOfRage.asm"
 ; INCLUDE "maps/CeladonDeptStore1F.asm"
 ; INCLUDE "maps/CeladonDeptStore2F.asm"

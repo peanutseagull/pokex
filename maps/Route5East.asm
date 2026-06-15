@@ -1,11 +1,15 @@
 	object_const_def
+	const ROUTE5EAST_KORRINA
+	const ROUTE5EAST_LUCARIO1
+	const ROUTE5EAST_LUCARIO2
 	const ROUTE5EAST_SUPER_NERD
 	const ROUTE5EAST_FISHER
 	
 Route5East_MapScripts:
 	def_scene_scripts
-	scene_script Route5EastNoop1Scene, SCENE_ROUTE5EAST_TIERNO
-	scene_script Route5EastNoop2Scene, SCENE_ROUTE5EAST_NOOP
+	scene_script Route5EastNoop1Scene, SCENE_ROUTE5EAST_KORRINA
+	scene_script Route5EastNoop2Scene, SCENE_ROUTE5EAST_TIERNO
+	scene_script Route5EastNoop3Scene, SCENE_ROUTE5EAST_NOOP
 	
 	def_callbacks
 	
@@ -14,6 +18,278 @@ Route5EastNoop1Scene:
 	
 Route5EastNoop2Scene:
 	end
+	
+Route5EastNoop3Scene:
+	end
+	
+Route5KorrinaScene1:
+	clearevent EVENT_ROUTE_5_EAST_KORRINA
+	appear ROUTE5EAST_LUCARIO1
+	showemote PLAYER, EMOTE_SHOCK, 15
+	applymovement ROUTE5EAST_LUCARIO1, Route5EastLucarioApproachesYouMovement1
+	opentext
+	writetext Route5EastLucarioText
+	cry MACHAMP ; LUCARIO
+	waitsfx
+	promptbutton
+	writetext Route5EastKorrinaYellsText
+	waitbutton
+	closetext
+	moveobject ROUTE5EAST_KORRINA, 41, 10
+	moveobject ROUTE5EAST_LUCARIO2, 41, 11
+	appear ROUTE5EAST_KORRINA
+	appear ROUTE5EAST_LUCARIO2 
+	follow ROUTE5EAST_KORRINA, ROUTE5EAST_LUCARIO2
+	applymovement ROUTE5EAST_KORRINA, Route5EastKorrinaApproachesYouMovement
+	stopfollow
+	applymovement ROUTE5EAST_LUCARIO2, Route5EastLucario2Movement1
+	opentext
+	writetext Route5EastKorrinaText1
+	waitbutton
+	closetext
+	turnobject ROUTE5EAST_LUCARIO1, LEFT
+	cry MACHAMP
+	waitsfx
+	opentext
+	writetext Route5EastLucarioText
+	waitbutton
+	closetext
+	turnobject ROUTE5EAST_LUCARIO1, RIGHT
+	opentext
+	writetext Route5EastKorrinaText2
+	; loadmenu .MenuHeader
+	; verticalmenu
+	; closewindow
+	promptbutton
+	writetext Route5EastSaidThanksText
+	waitbutton
+	closetext
+	follow ROUTE5EAST_KORRINA, ROUTE5EAST_LUCARIO2
+	applymovement ROUTE5EAST_KORRINA, Route5EastLeavingMovement
+	disappear ROUTE5EAST_KORRINA
+	disappear ROUTE5EAST_LUCARIO2
+	applymovement ROUTE5EAST_LUCARIO1, Route5EastLeavingMovement
+	disappear ROUTE5EAST_LUCARIO1
+	setevent EVENT_ROUTE_5_EAST_KORRINA
+	setscene SCENE_ROUTE5EAST_TIERNO
+	end
+	
+; .MenuHeader:
+	; db MENU_BACKUP_TILES ; flags
+	; menu_coords 8, 10, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	; dw .MenuData
+	; db 1 ; default option
+
+; .MenuData:
+	; db STATICMENU_CURSOR | STATICMENU_DISABLE_B ; flags
+	; db 2 ; items
+	; db "Thanks!@"
+	; db "You think so?@"
+	
+Route5KorrinaScene2:
+	clearevent EVENT_ROUTE_5_EAST_KORRINA
+	moveobject ROUTE5EAST_LUCARIO1, 41, 11
+	appear ROUTE5EAST_LUCARIO1
+	showemote PLAYER, EMOTE_SHOCK, 15
+	applymovement ROUTE5EAST_LUCARIO1, Route5EastLucarioApproachesYouMovement2
+	opentext
+	writetext Route5EastLucarioText
+	cry MACHAMP ; LUCARIO
+	waitsfx
+	promptbutton
+	writetext Route5EastKorrinaYellsText
+	waitbutton
+	closetext
+	moveobject ROUTE5EAST_KORRINA, 41, 11
+	moveobject ROUTE5EAST_LUCARIO2, 41, 10
+	appear ROUTE5EAST_KORRINA
+	appear ROUTE5EAST_LUCARIO2 
+	follow ROUTE5EAST_KORRINA, ROUTE5EAST_LUCARIO2
+	applymovement ROUTE5EAST_KORRINA, Route5EastKorrinaApproachesYouMovement
+	stopfollow
+	applymovement ROUTE5EAST_LUCARIO2, Route5EastLucario2Movement2
+	opentext
+	writetext Route5EastKorrinaText1
+	waitbutton
+	closetext
+	turnobject ROUTE5EAST_LUCARIO1, LEFT
+	cry MACHAMP
+	waitsfx
+	opentext
+	writetext Route5EastLucarioText
+	waitbutton
+	closetext
+	turnobject ROUTE5EAST_LUCARIO1, RIGHT
+	opentext
+	; writetext Route5EastKorrinaText2
+	; loadmenu .MenuHeader
+	; verticalmenu
+	; closewindow
+	promptbutton
+	writetext Route5EastSaidThanksText
+	waitbutton
+	closetext
+	follow ROUTE5EAST_KORRINA, ROUTE5EAST_LUCARIO2
+	applymovement ROUTE5EAST_KORRINA, Route5EastLeavingMovement
+	disappear ROUTE5EAST_KORRINA
+	disappear ROUTE5EAST_LUCARIO2
+	applymovement ROUTE5EAST_LUCARIO1, Route5EastLeavingMovement
+	disappear ROUTE5EAST_LUCARIO1
+	setevent EVENT_ROUTE_5_EAST_KORRINA
+	setscene SCENE_ROUTE5EAST_TIERNO
+	end		
+	
+; .MenuHeader:
+	; db MENU_BACKUP_TILES ; flags
+	; menu_coords 8, 10, SCREEN_WIDTH - 1, TEXTBOX_Y - 1
+	; dw .MenuData
+	; db 1 ; default option
+
+; .MenuData:
+	; db STATICMENU_CURSOR | STATICMENU_DISABLE_B ; flags
+	; db 2 ; items
+	; db "Thanks!@"
+	; db "You think so?@"
+	
+Route5EastLucarioText:
+	text "LUCARIO: Carrrr!"
+	done
+	
+Route5EastKorrinaYellsText:
+	text "???: Wait!"
+	line "LUCARIO!!!"
+	done
+
+Route5EastKorrinaText1:
+	text "Sorry about that!"
+	line "Are you OK?"
+	
+	para "I was just doing"
+	line "some special"
+	cont "training with my"
+	cont "LUCARIO when all"
+	cont "of a sudden it"
+	cont "dashed off…"
+	
+	para "Hey, LUCARIO!"
+	line "What's going on"
+	cont "with you?"
+	
+	para "Did you get drawn"
+	line "by this Trainer's"
+	cont "aura or something?"
+	done
+	
+Route5EastKorrinaText2:
+	text "Huh. Well, it"
+	line "seems LUCARIO"
+	cont "likes you!"
+	done
+	
+Route5EastSaidThanksText:
+	text "See, LUCARIO can"
+	line "read people's"
+	cont "auras."
+	
+	para "I guess something"
+	line "in your aura has"
+	cont "made this one take"
+	cont "a liking to a"
+	cont "stranger!"
+	
+	para "This LUCARIO is"
+	line "always getting"
+	cont "worked up in"
+	cont "battle with my"
+	cont "other one."
+	
+	para "Maybe it's just"
+	line "been waiting for a"
+	cont "strong enough"
+	cont "Trainer to"
+	cont "challenge it…"
+	
+	para "Oops, sorry!"
+	line "I was on such a"
+	cont "roll, I forgot to"
+	cont "even introduce"
+	cont "myself!"
+	
+	para "I'm KORRINA, the"
+	line "SHALOUR CITY Gym"
+	cont "Leader."
+	
+	para "If you're"
+	line "collecting Gym"
+	cont "Badges, I'm sure"
+	cont "we'll be battling"
+	cont "sooner or later!"
+	
+	para "I'll be looking"
+	line "forward to it."
+	cont "I hope you know"
+	cont "how to roll with"
+	cont "the punches."
+	done
+	
+Route5EastLucarioApproachesYouMovement1:
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step DOWN
+	step RIGHT
+	step RIGHT
+	step UP
+	turn_head LEFT
+	step DOWN
+	step LEFT
+	step LEFT
+	step UP
+	turn_head RIGHT
+	step_end
+	
+Route5EastLucarioApproachesYouMovement2:
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step UP
+	step RIGHT
+	step RIGHT
+	step DOWN
+	turn_head LEFT
+	step UP
+	step LEFT
+	step LEFT
+	step DOWN
+	turn_head RIGHT
+	step_end
+	
+Route5EastKorrinaApproachesYouMovement:
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step_end
+
+Route5EastLucario2Movement1:
+	step DOWN
+	step RIGHT
+	step_end
+	
+Route5EastLucario2Movement2:
+	step UP
+	step RIGHT
+	step_end
+	
+Route5EastLeavingMovement:
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step_end
 	
 Route5TiernoSceneDown:
 	showemote EMOTE_SHOCK, PLAYER, 15
@@ -388,6 +664,8 @@ Route5East_MapEvents:
 	warp_event 47, 11, ROUTE_5_LUMIOSE_GATE, 4
 	
 	def_coord_events
+	coord_event 46, 10, SCENE_ROUTE5EAST_KORRINA, Route5KorrinaScene1
+	coord_event 46, 11, SCENE_ROUTE5EAST_KORRINA, Route5KorrinaScene2
 	coord_event 24, 18, SCENE_ROUTE5EAST_TIERNO, Route5TiernoSceneUp
 	coord_event 24, 19, SCENE_ROUTE5EAST_TIERNO, Route5TiernoSceneDown
 	
@@ -396,6 +674,9 @@ Route5East_MapEvents:
 	bg_event 37,  3, BGEVENT_ITEM, Route5HiddenParlyzHeal
 
 	def_object_events
+	object_event 40, 10, SPRITE_WHITNEY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_5_EAST_KORRINA
+	object_event 41, 10, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_5_EAST_KORRINA
+	object_event 39, 10, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_5_EAST_KORRINA
 	object_event 21, 17, SPRITE_SUPER_NERD, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_TIERNO_ROUTE_5
 	object_event 20, 18, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_TIERNO_ROUTE_5
 	object_event 28, 10, SPRITE_TWIN, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerTwinsMayandjoy1, -1
@@ -405,4 +686,3 @@ Route5East_MapEvents:
 	object_event 27,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route5SuperPotion2, EVENT_ROUTE_5_SUPER_POTION2
 	object_event 38, 23, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route5GreatBall, EVENT_ROUTE_5_GREAT_BALL
 	object_event 13, 20, SPRITE_FRUIT_TREE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route5FruitTree, -1
-
