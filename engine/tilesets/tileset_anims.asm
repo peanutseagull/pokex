@@ -136,6 +136,10 @@ TilesetPortAnim:
 	dw NULL,  DoneTileAnimation
 
 TilesetEliteFourRoomAnim:
+	dw vTiles2 tile $72, ReadTileToAnimBuffer
+	dw wTileAnimBuffer, ScrollTileDown
+	dw wTileAnimBuffer, ScrollTileDown
+	dw vTiles2 tile $72, WriteTileFromAnimBuffer
 	dw NULL,  AnimateLavaBubbleTile2
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation

@@ -3130,8 +3130,12 @@ wParfumPalace2FBalconySceneID::					  db
 wFossilLabSceneID::								  db
 wGlitteringCaveDeepSceneID::					  db
 wRoute8LowerSceneID::							  db
+wCyllageCitySceneID::							  db
+; wCyllageBikeShopSceneID::						  db
+wRoute10SceneID::								  db
+wGeosengeTownSceneID::							  db
 
-	ds 91
+	ds 90
 
 ; fight counts
 wJackFightCount::    db

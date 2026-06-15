@@ -22,6 +22,7 @@ BikeShopEmployee:
 	sjump .loop
 .Correct
 	playsound SFX_1ST_PLACE
+	waitsfx
 	writetext BikeShopCorrectText
 	loadmenu .MenuHeader
 	verticalmenu

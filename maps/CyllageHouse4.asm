@@ -64,6 +64,7 @@ CyllageHouse4QuizScript:
 	
 .correct1
 	playsound SFX_1ST_PLACE
+	waitsfx
 	writetext BerryQuizCorrectText
 	loadmenu .BerryQuizQuestion2MenuHeader
 	verticalmenu
@@ -74,6 +75,7 @@ CyllageHouse4QuizScript:
 
 .correct2
 	playsound SFX_1ST_PLACE
+	waitsfx
 	writetext BerryQuizWinText
 	promptbutton
 	verbosegiveitem BITTER_BERRY, $3
@@ -85,6 +87,7 @@ CyllageHouse4QuizScript:
 		
 .incorrect
 	playsound SFX_WRONG
+	waitsfx
 	writetext BerryQuizWrongText
 	waitbutton
 	closetext

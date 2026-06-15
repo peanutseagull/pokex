@@ -6,11 +6,20 @@ DEF CYLLAGECITY_DOZENSODAPOPSPRICE EQU 3600
 	
 CyllageCity_MapScripts:
 	def_scene_scripts
+	scene_script CyllageCityNoop1Scene, SCENE_CYLLAGECITY_GRANT
+	scene_script CyllageCityNoop2Scene, SCENE_CYLLAGECITY_NOOP
 	
 	def_callbacks
 	
-CyllageCityGrantScript:
+CyllageCityNoop1Scene:
+	end
+	
+CyllageCityNoop2Scene:
+	end
+	
+CyllageCityGrantScene:
 	showemote PLAYER, EMOTE_SHOCK, 15
+	applymovement CYLLAGECITY_GRANT, GrantApproachesMovement
 	opentext
 	writetext CyllageCityGrantText1
 	promptbutton
@@ -22,13 +31,22 @@ CyllageCityGrantScript:
 	applymovement CYLLAGECITY_GRANT, GrantLeavesMovement
 	disappear CYLLAGECITY_GRANT
 	reloadmap
+	setscene SCENE_CYLLAGECITY_NOOP
 	end
+	
+GrantApproachesMovement:
+	step LEFT
+	step LEFT
+	step LEFT
+	step_end
 	
 GrantLeavesMovement:
 	turn_head RIGHT
 	step RIGHT
 	step RIGHT
-	step UP
+	step RIGHT
+	step RIGHT
+	step RIGHT
 	step_end
 	
 CyllageCityGrantText1:
@@ -379,6 +397,7 @@ CyllageCity_MapEvents:
 	warp_event 17,  5, ROUTE_10_GATE, 1
 	
 	def_coord_events
+	coord_event 40, 34, SCENE_CYLLAGECITY_GRANT, CyllageCityGrantScene
 	
 	def_bg_events
 	bg_event 33, 33, BGEVENT_READ, CyllageCitySign
@@ -392,7 +411,7 @@ CyllageCity_MapEvents:
 	bg_event  5, 18, BGEVENT_ITEM, CyllageCityHiddenPearl
 	
 	def_object_events
-	object_event 44, 34, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CyllageCityGrantScript, EVENT_CYLLAGE_CITY_GRANT
+	object_event 44, 34, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_CYLLAGE_CITY_GRANT
 	object_event 37, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CyllageCitySuperPotion, EVENT_CYLLAGE_CITY_SUPER_POTION
 	object_event 47, 39, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CyllageCityXDefend, EVENT_CYLLAGE_CITY_X_DEFEND
 	object_event 39, 10, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, CyllageCityXSpecial, EVENT_CYLLAGE_CITY_X_SPECIAL

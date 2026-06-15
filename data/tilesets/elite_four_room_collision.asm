@@ -63,3 +63,6 @@
 	tilecoll WALL, WALL, WALL, WALL ; 3e
 	tilecoll WALL, WALL, WALL, WALL ; 3f
 	tilecoll FLOOR, FLOOR, WALL, WALL ; 40
+	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 41
+	tilecoll WATERFALL, WATERFALL, WATERFALL, WATERFALL ; 42
+	tilecoll WALL, WALL, WALL, WALL ; 43
