@@ -3135,7 +3135,7 @@ wCyllageCitySceneID::							  db
 wRoute10SceneID::								  db
 wGeosengeTownSceneID::							  db
 
-	ds 90
+	ds 88
 
 ; fight counts
 wJackFightCount::    db

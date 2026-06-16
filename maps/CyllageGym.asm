@@ -105,7 +105,7 @@ CyllageGymGrantScript:
 	setmapscene ROUTE_10, SCENE_ROUTE10_FLARES
 	setmapscene GEOSENGE_TOWN, SCENE_GEOSENGETOWN_FLARES_1
 	clearevent EVENT_ROUTE_10_FLARES
-	clearevent EVENT_GEOSENGE_TOWN_FLARES
+	clearevent EVENT_GEOSENGE_TOWN_FLARE1
 	waitsfx
 	end
 

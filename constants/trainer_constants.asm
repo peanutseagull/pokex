@@ -35,7 +35,8 @@ DEF KRIS EQU __trainer_class__
 	const GRANT1
 	
 	trainerclass KORRINA ; 3
-	const KORRINA1
+	const KORRINA1 ; Geosenge Town
+	const KORRINA2 ; Actual Gym Fight
 	
 	trainerclass RAMOS ; 4
 	const RAMOS1
