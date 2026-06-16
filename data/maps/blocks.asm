@@ -177,6 +177,8 @@ FossilLab_Blocks:
 Route10_Blocks:
 	INCBIN "maps/Route10.blk"
 	
+Route11_Blocks:
+	INCBIN "maps/Route11.blk"	
 
 SECTION "Map Blocks 2", ROMX
 

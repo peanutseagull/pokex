@@ -60,6 +60,7 @@ ENDM
 	map_const CONNECTING_CAVE,							   25, 15 ;  2
 	map_const GLITTERING_CAVE_ENTRANCE,					   12, 30 ;  3
 	map_const GLITTERING_CAVE_DEEP,						   15, 14 ;  4
+	; map_const REFLECTION_CAVE,
 	endgroup
 	
 	newgroup SANTALUNE											  ;  4
@@ -214,11 +215,19 @@ ENDM
 	map_const GEOSENGE_HOUSE_2,								4,  4 ;  7
 	map_const HOTEL_MARINE_SNOW_1F,						   10,  6 ;  8
 	map_const HOTEL_MARINE_SNOW_2F,						    9,  6 ;  9
-	; map_const ROUTE_11,
+	map_const ROUTE_11,									   25, 11 ; 10
 	endgroup
 	
 	newgroup SHALOUR											  ; 13
 	map_const SHALOUR_CITY, 							    1,  1 ;  1
+	; map_const SHALOUR_POKECENTER_1F,
+	; map_const SHALOUR_MART,
+	; map_const SHALOUR_HOUSE_1,
+	; map_const SHALOUR_HOUSE_2,
+	; map_const SHALOUR_HOUSE_3,
+	; map_const SHALOUR_GYM,
+	; map_const TOWER_OF_MASTERY_1F
+	; map_const TOWER_OF_MASTERY_TOP
 	endgroup
 	
 	newgroup COUMARINE											  ; 14

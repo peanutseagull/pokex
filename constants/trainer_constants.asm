@@ -197,13 +197,17 @@ DEF KRIS EQU __trainer_class__
 	trainerclass PSYCHIC_T ; 30
 	const ROBERT
 	const SAYID
+	const EMANUEL
 	
 	trainerclass BLACKBELT_T ; 31
 	const CADOC
 	
 	trainerclass BRAINS_BRAWN ; 32
+	const FRANKANDSLY1
+	const FRANKANDSLY2
 
 	trainerclass BATTLE_GIRL ; 33
+	const GERARDINE
 	
 	trainerclass COOLTRAINERM ; 34 (ACETRAINERM)
 
@@ -281,6 +285,7 @@ DEF KRIS EQU __trainer_class__
 	
 	trainerclass SKYTRAINERF ; 4d
 	const AVEZA
+	const YVETTE
 	
 	trainerclass FISHER ; 4e
 	const WHARTON

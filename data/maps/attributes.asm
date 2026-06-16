@@ -260,8 +260,12 @@ ENDM
 	map_attributes Route10, ROUTE_10, $05, NORTH
 	connection north, GeosengeTown, GEOSENGE_TOWN, -5
 
-	map_attributes GeosengeTown, GEOSENGE_TOWN, $05, SOUTH
+	map_attributes GeosengeTown, GEOSENGE_TOWN, $05, SOUTH | EAST
 	connection south, Route10, ROUTE_10, 5
+	connection east, Route11, ROUTE_11, 8
+	
+	map_attributes Route11, ROUTE_11, $05, WEST
+	connection west, GeosengeTown, GEOSENGE_TOWN, -8
 	
 	map_attributes ShalourCity, SHALOUR_CITY, $00, 0
 	map_attributes CoumarineCity, COUMARINE_CITY, $00, 0

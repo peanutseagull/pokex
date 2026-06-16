@@ -526,6 +526,12 @@ PsychicGroup:
 	db 21, ESPURR
 	db 23, MR__MIME
 	db -1 ; end	
+	
+	; PSYCHIC_T (3)
+	db "EMANUEL@", TRAINERTYPE_NORMAL
+	db 25, ESPURR
+	db 25, PORYGON
+	db -1 ; end
 
 BlackbeltGroup:
 	; BLACK_BELT_T (1)
@@ -534,8 +540,23 @@ BlackbeltGroup:
 	db -1 ; end
 
 BrainsBrawnGroup:
+	; db BRAINS_BRAWN (1)
+	db " @", TRAINERTYPE_NORMAL ; FRANK AND SLY
+	db 26, MR__MIME
+	db 28, MACHOKE
+	db -1 ; end
+	
+	; db BRAINS_BRAWN (2)
+	db " @", TRAINERTYPE_NORMAL ; FRANK AND SLY
+	db 28, MACHOKE
+	db 26, MR__MIME
+	db -1 ; end	
 
 BattleGirLGroup:
+	; db BATTLE_GIRL (1)
+	db "GINA@", TRAINERTYPE_NORMAL ; GERARDINE is too many characters
+	db 28, PANCHAM
+	db -1 ; end
 
 CooltrainerMGroup:
 
@@ -728,6 +749,13 @@ SkytrainerFGroup:
 	db 22, FLETCHINDR
 	db -1 ; end
 
+	; SKYTRAINERF (2)
+	db "YVETTE@", TRAINERTYPE_NORMAL
+	db 24, FARFETCH_D
+	db 24, PIDGEOTTO
+	db 25, FLETCHINDR
+	db -1 ; end
+	
 FisherGroup:
 	; FISHER (1)
 	db "WHARTON@", TRAINERTYPE_NORMAL
