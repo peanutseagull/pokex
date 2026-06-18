@@ -529,4 +529,97 @@ JohtoGrassWildMons:
 	db 10, DEDENNE,		22, 23
 	end_grass_wildmons
 	
+	def_grass_wildmons REFLECTION_CAVE_1F
+	db 6 percent, 6 percent, 6 percent
+	; morn
+	;  %, species,		min, max
+	db 30, MR__MIME,	21, 21
+	db 20, GEODUDE,		22, 23
+	db 15, ONIX,		21, 21
+	db 15, CARBINK,		22, 22
+	db 10, WOBBUFFET,	22, 22
+	db  5, LARVITAR,	21, 21
+	db  5, PORYGON,		22, 23
+	; day
+	;  %, species,		min, max
+	db 30, MR__MIME,	21, 21
+	db 20, GEODUDE,		22, 23
+	db 15, ONIX,		21, 21
+	db 15, CARBINK,		22, 22
+	db 10, WOBBUFFET,	22, 22
+	db  5, LARVITAR,	21, 21
+	db  5, PORYGON,		22, 23
+	; nite
+	;  %, species,		min, max
+	db 30, MR__MIME,	21, 21
+	db 20, GEODUDE,		22, 23
+	db 15, ONIX,		21, 21
+	db 15, CARBINK,		22, 22
+	db 10, WOBBUFFET,	22, 22
+	db  5, LARVITAR,	21, 21
+	db  5, PORYGON,		22, 23
+	end_grass_wildmons
+	
+	def_grass_wildmons REFLECTION_CAVE_B1F
+	db 6 percent, 6 percent, 6 percent
+	; morn
+	;  %, species,		min, max
+	db 30, MR__MIME,	21, 21
+	db 20, GEODUDE,		22, 23
+	db 15, ONIX,		21, 21
+	db 15, CARBINK,		22, 22
+	db 10, WOBBUFFET,	22, 22
+	db  5, LARVITAR,	21, 21
+	db  5, PORYGON,		22, 23
+	; day
+	;  %, species,		min, max
+	db 30, MR__MIME,	21, 21
+	db 20, GEODUDE,		22, 23
+	db 15, ONIX,		21, 21
+	db 15, CARBINK,		22, 22
+	db 10, WOBBUFFET,	22, 22
+	db  5, LARVITAR,	21, 21
+	db  5, PORYGON,		22, 23
+	; nite
+	;  %, species,		min, max
+	db 30, MR__MIME,	21, 21
+	db 20, GEODUDE,		22, 23
+	db 15, ONIX,		21, 21
+	db 15, CARBINK,		22, 22
+	db 10, WOBBUFFET,	22, 22
+	db  5, LARVITAR,	21, 21
+	db  5, PORYGON,		22, 23
+	end_grass_wildmons
+	
+	def_grass_wildmons REFLECTION_CAVE_B2F
+	db 6 percent, 6 percent, 6 percent
+	; morn
+	;  %, species,		min, max
+	db 30, MR__MIME,	21, 21
+	db 20, GEODUDE,		22, 23
+	db 15, ONIX,		21, 21
+	db 15, CARBINK,		22, 22
+	db 10, WOBBUFFET,	22, 22
+	db  5, LARVITAR,	21, 21
+	db  5, PORYGON,		22, 23
+	; day
+	;  %, species,		min, max
+	db 30, MR__MIME,	21, 21
+	db 20, GEODUDE,		22, 23
+	db 15, ONIX,		21, 21
+	db 15, CARBINK,		22, 22
+	db 10, WOBBUFFET,	22, 22
+	db  5, LARVITAR,	21, 21
+	db  5, PORYGON,		22, 23
+	; nite
+	;  %, species,		min, max
+	db 30, MR__MIME,	21, 21
+	db 20, GEODUDE,		22, 23
+	db 15, ONIX,		21, 21
+	db 15, CARBINK,		22, 22
+	db 10, WOBBUFFET,	22, 22
+	db  5, LARVITAR,	21, 21
+	db  5, PORYGON,		22, 23
+	end_grass_wildmons
+	
 	db -1 ; end

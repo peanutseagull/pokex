@@ -86,6 +86,7 @@ DEF KRIS EQU __trainer_class__
 	
 	trainerclass TIERNO ; 11
 	const TIERNO_1
+	const TIERNO_2
 	
 	trainerclass TREVOR ; 12
 	const TREVOR_1
@@ -164,11 +165,13 @@ DEF KRIS EQU __trainer_class__
 	trainerclass HIKER ; 25
 	const CRAIG
 	const BERNARD
+	const DUNSTAN
 
 	trainerclass BACKPACKER ; 26
 	const HEIKE
 	const RODERICK
 	const JEROME
+	const LANE
 
 	trainerclass GARDENER ; 27
 	const WHEATON
@@ -198,9 +201,11 @@ DEF KRIS EQU __trainer_class__
 	const ROBERT
 	const SAYID
 	const EMANUEL
+	const FRANZ
 	
 	trainerclass BLACKBELT_T ; 31
 	const CADOC
+	const IGOR
 	
 	trainerclass BRAINS_BRAWN ; 32
 	const FRANKANDSLY1
@@ -208,10 +213,13 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass BATTLE_GIRL ; 33
 	const GERARDINE
+	const HEDVIG
 	
 	trainerclass COOLTRAINERM ; 34 (ACETRAINERM)
+	const EMIL
 
 	trainerclass COOLTRAINERF ; 35 (ACETRAINERF)
+	const MONIQUE
 	
 	trainerclass COOL_DUO ; 36 (ACE DUO)
 	
@@ -252,9 +260,11 @@ DEF KRIS EQU __trainer_class__
 
 	trainerclass TOURISTM ; 43
 	const TAKEMI
+	const HARUTO
 	
 	trainerclass TOURISTF ; 44
 	const MARI
+	const MONAMI
 	
 	trainerclass TOURIST_LADY ; 45
 	const HIROKO
@@ -263,6 +273,8 @@ DEF KRIS EQU __trainer_class__
 	const TOMOKO
 	
 	trainerclass HONEYMOONERS ; 46
+	const YUUANDAMI1
+	const YUUANDAMI2
 	
 	trainerclass ARTISTM ; 47
 	const PIERRE

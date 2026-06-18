@@ -53,7 +53,7 @@ TrainerGroups:
 	dw PsychicGroup 
 	dw BlackbeltGroup
 	dw BrainsBrawnGroup
-	dw BattleGirLGroup 
+	dw BattleGirlGroup 
 	dw CooltrainerMGroup 
 	dw CooltrainerFGroup
 	dw CoolDuoGroup

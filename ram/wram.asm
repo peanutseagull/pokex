@@ -3134,8 +3134,9 @@ wCyllageCitySceneID::							  db
 ; wCyllageBikeShopSceneID::						  db
 wRoute10SceneID::								  db
 wGeosengeTownSceneID::							  db
+wReflectionCaveB1FSceneID::						  db
 
-	ds 88
+	ds 87
 
 ; fight counts
 wJackFightCount::    db

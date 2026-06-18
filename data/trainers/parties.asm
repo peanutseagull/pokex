@@ -206,6 +206,14 @@ TiernoGroup:
 	db 14, EEVEE
 	db -1 ; end
 	
+	; TIERNO (2)
+	db "TIERNO@", TRAINERTYPE_NORMAL
+	db 26, AZUMARILL
+	db 26, FLAAFFY
+	db 26, PANCHAM
+	db 28, SYLVEON
+	db -1 ; end
+	
 TrevorGroup:
 	; TREVOR (1)
 	db "TREVOR@", TRAINERTYPE_NORMAL
@@ -446,6 +454,13 @@ HikerGroup:
 	db 23, ONIX
 	db -1 ; end
 	
+	; HIKER (3)
+	db "DUNSTAN@", TRAINERTYPE_NORMAL
+	db 23, GLIGAR
+	db 24, SANDSHREW
+	db 25, DIGGERSBY
+	db -1 ; end
+	
 BackpackerGroup:
 	; BACKPACKER (1)
 	db "HEIKE@", TRAINERTYPE_NORMAL
@@ -460,6 +475,11 @@ BackpackerGroup:
 	; BACKPACKER (3)
 	db "JEROME@", TRAINERTYPE_NORMAL
 	db 17, FLETCHLING
+	db -1 ; end
+	
+	; BACKPACKER (4)
+	db "LANE@", TRAINERTYPE_NORMAL
+	db 27, FURRET
 	db -1 ; end
 	
 GardenerGroup:
@@ -532,35 +552,63 @@ PsychicGroup:
 	db 25, ESPURR
 	db 25, PORYGON
 	db -1 ; end
+	
+	; PSYCHIC_T (4)
+	db "FRANZ@", TRAINERTYPE_NORMAL
+	db 25, HAUNTER
+	db 25, WOBBUFFET
+	db -1 ; end
 
 BlackbeltGroup:
 	; BLACK_BELT_T (1)
 	db "CADOC@", TRAINERTYPE_NORMAL
 	db 22, MACHOP
 	db -1 ; end
+	
+	; BLACK_BELT_T (2)
+	db "IGOR@", TRAINERTYPE_NORMAL
+	db 29, HERACROSS
+	db -1 ; end
 
 BrainsBrawnGroup:
-	; db BRAINS_BRAWN (1)
-	db " @", TRAINERTYPE_NORMAL ; FRANK AND SLY
+	; BRAINS_BRAWN (1)
+	db " @", TRAINERTYPE_NORMAL ; FRANKANDSLY
 	db 26, MR__MIME
 	db 28, MACHOKE
 	db -1 ; end
 	
 	; db BRAINS_BRAWN (2)
-	db " @", TRAINERTYPE_NORMAL ; FRANK AND SLY
+	db " @", TRAINERTYPE_NORMAL ; FRANKANDSLY
 	db 28, MACHOKE
 	db 26, MR__MIME
 	db -1 ; end	
 
-BattleGirLGroup:
-	; db BATTLE_GIRL (1)
+BattleGirlGroup:
+	; BATTLE_GIRL (1)
 	db "GINA@", TRAINERTYPE_NORMAL ; GERARDINE is too many characters
 	db 28, PANCHAM
 	db -1 ; end
+	
+	; BATTLE_GIRL (2)
+	db "HEDVIG@", TRAINERTYPE_NORMAL
+	db 25, PANCHAM
+	db 26, HAWLUCHA
+	db -1 ; end
 
 CooltrainerMGroup:
+	; COOLTRAINERM (1)
+	db "EMIL@", TRAINERTYPE_NORMAL
+	db 27, SNEASEL
+	db 27, PINSIR
+	db -1 ; end
 
 CooltrainerFGroup:
+	; COOLTRAINERF (1)
+	db "MONICA@", TRAINERTYPE_NORMAL ; MONIQUE is too many characters
+	db 25, DODUO
+	db 25, GRANBULL
+	db 26, HELIOPTILE
+	db -1 ; end
 
 CoolDuoGroup:
 
@@ -657,10 +705,20 @@ TouristMGroup:
 	db 18, HERACROSS
 	db -1 ; end
 	
+	; TOURISTM (2)
+	db "HARUTO@", TRAINERTYPE_NORMAL
+	db 27, NIDORINO
+	db -1 ; end
+	
 TouristFGroup:
 	; TOURISTF (1)
 	db "MARI@", TRAINERTYPE_NORMAL
 	db 18, LEDIAN
+	db -1 ; end
+	
+	; TOURISTF (2)
+	db "MONAMI@", TRAINERTYPE_NORMAL
+	db 27, NIDORINA
 	db -1 ; end
 
 TouristLadyGroup:
@@ -693,6 +751,17 @@ TouristLadyGroup:
 	db -1 ; end
 	
 HoneymoonersGroup:
+	; HONEYMOONERS (1)
+	db " @", TRAINERTYPE_NORMAL ; YUUANDAMI
+	db 26, ARIADOS
+	db 26, LEDIAN
+	db -1 ; end
+	
+	; HONEYMOONERS (2)
+	db " @", TRAINERTYPE_NORMAL ; YUUANDAMI
+	db 26, LEDIAN
+	db 26, ARIADOS
+	db -1 ; end
 	
 ArtistMGroup:
 	; ARTISTM (1)

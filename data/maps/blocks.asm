@@ -178,7 +178,20 @@ Route10_Blocks:
 	INCBIN "maps/Route10.blk"
 	
 Route11_Blocks:
-	INCBIN "maps/Route11.blk"	
+	INCBIN "maps/Route11.blk"
+	
+ReflectionCave1F_Blocks:
+	INCBIN "maps/ReflectionCave1F.blk"
+	
+ReflectionCaveB1F_Blocks:
+	INCBIN "maps/ReflectionCaveB1F.blk"
+	
+ReflectionCaveB2F_Blocks:
+	INCBIN "maps/ReflectionCaveB2F.blk"
+
+ReflectionCaveTmRoom_Blocks:
+	INCBIN "maps/ReflectionCaveTmRoom.blk"
+	
 
 SECTION "Map Blocks 2", ROMX
 

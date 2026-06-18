@@ -345,8 +345,7 @@ GeosengeTownKorrinaLeavesMovement2:
 	step RIGHT
 	step RIGHT
 	step RIGHT
-	step_end	
-	
+	step_end
 	
 GeosengeTownGuideScript:
 	faceplayer

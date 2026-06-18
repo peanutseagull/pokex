@@ -48,4 +48,5 @@ MapScenes::
 	; scene_var CYLLAGE_BIKE_SHOP,						   wCyllageBikeShopSceneID
 	scene_var ROUTE_10,								       wRoute10SceneID
 	scene_var GEOSENGE_TOWN,							   wGeosengeTownSceneID
+	scene_var REFLECTION_CAVE_B1F,						   wReflectionCaveB1FSceneID
 	db -1 ; end

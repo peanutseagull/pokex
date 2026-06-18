@@ -1,53 +1,96 @@
 SHALOUR BRANCH:
 Maps:
-	Connecting Cave Cyllage Side
-	Cyllage City + Gym
-	Route 10
-	Geosenge Town
-	Route 11
-	Reflection Cave
-	Shalour City + Gym
+	Add Serena battle to Geosenge Town?		
+	Reflection Cave 
+		decorative Rocks
+		
+	Shalour City
+		Main Map
+		Pokecenter
+		Mart
+		House 1
+		House 2
+		House 3
+		Gym
+		Npc Blocks You! Demo is over
+	
 	Tower of Mastery
 	
-To do:
+Other Stuff:
+Items:
+	Sachet - cyllage city house
+	heal ball - route 7
+	timer ball - geosenge town
+	Destiny Knot - Hotel Cyllage 2f
+	
+Maps:
+	Hotel rotating NPCs
+	Cyllage Cafe
+	Headbutt trees - Geosenge, Route 10, Route 11, SHALOUR
+	
+Features:
+	Spawn points up to Shalour
+	Qwilfish Swarm Aquacorde - go back with old rod
+	Yanma Swarm Route 6? 10?
+	Sycamore Phone Call at stairs outside Reflection Cave
+	Reflection Cave trainers see behind them?
+	
+Graphical:
+	shiny palettes: braixen?
+	add music note character - Geosenge Town
+	
+Bug:
+	Tierno says wrong text after beating him Reflection Cave
 
-Stuff to come back to:
+BEYOND SHALOUR BRANCH:
 	Maps:
 	Shutterbug Cafe Long/Short Dialogue
 	Coiffure Clips? what did i mean by this
-	Route 8 Upper Strength Area
-	does guy go back to Shabboneau castle?
-	Hotel NPCs
 	Battle Chateau
+	Turn Bike Shop into scene?
 	
 	Require surf:
 	Route 8 Lower Surf Area - items, swimmers, sky trainer
+	Cyllage House
 	Route 22 - area behind surf	
+	All surf encounter tables
 	
 	Features:
-	heal ball?
-	Restaurant Le Nah reward doesn't work as intended
 	Boutique Couture + Style Mechanic
 	Add Rocks to Break with Rhyhorn?
-	Spawn points for rest of Kalos
+	Spawn points/Flypoints for rest of Kalos
 	glittering cave unique rock smash items
 	Fix TMs!!!!
 	Aerodactylite
-	Qwilfish Swarm Aquacorde
 	ROCKY HELMET EFFECT
+	Drop strength boulder in hole - route 8, connecting cave, route 10, Reflection Cave
+	Reflection cave, trainers see behind
+	Double battle trainers walk together?
 
 	Graphical:
-	Walking animation for karen twin and black belt
-	Should Trainer PR studio be the other way around?
-	Glittering Cave Unique Tileset?
+	Walking animation for twin and black belt
 	Animate Aquarium Tiles
 	Remove 'm type characters?
+	Replace ... with …
+	Geosenge roof
+	Shiny Palettes
+	Separate Cave and Dark Cave Tilesets
+	
+	Tilesets:
+	Geosenge Town
+	Glittering Cave
+	Parfum Palace Interior
+	
+Design Flaws Still To Complete:
+	PokemonPicPointers and UnownPicPointers are assumed to start at the same address
+	Music IDs $64 and $80 or above have special behavior
+	The 6-bit caught level can only record up to level 63
+	Identical sine wave code and data is repeated five times
 	
 Non-urgent:
 	Pokegear - Mom, serena? shauna? tierno? trevor? fish guy?
 	Redo intro
 	Rename PC to Cassius' PC after meeting him
-	Surf pokemon Data
 	Headbutt trees
 	Modern berry system?
 	Sprites
@@ -57,16 +100,20 @@ Non-urgent:
 	Sky battles???? - subroutine to check list; return array
 	Reorganise items sensibly
 	Fly Callbacks
-	Redo Parfum Palace Interior
-	Fix Bugs+Glitches and Design Flaws
 	Different Genders for different Rivals - Variable Sprite?
+	Cyllage Bike Track looks ugly
+	different coloured bicycles?
+	ouiounon
+	Mr Bonding uses same script over and over - make it a jumpstd?
+	Should Trainer PR studio be the other way around?
+	Geosenge Hotel people - they're up to something I can't prove it
+	Shiny palettes
 
 Known Bugs:
 	Too many walking sprites in Camphrier Group
+	Too many walking sprites in Geosenge Group
 	Broken hitbox for NPCs with WALK_UP_DOWN and WALK_LEFT_RIGHT spritemovedata, only sometimes
-	
-	Wrong sprites: pyroar back
-	shiny palettes: braixen?
+	Restaurant Le Nah reward doesn't work as intended
 	
 	Haven't seen in a while:
 	Broken pokemon sprites occasionally (displaying tiles 01 and 02 in random spots)?
@@ -99,8 +146,10 @@ STUFF DONE:
     Reviving Pokémon from Fossils (Gen I)
 	(ONLY UP TO STEP 3) Allow more trainer parties, with individual DVs, stat experience, nicknames, variable teams, etc.
     Make wild encounters vary
+    Remove Pokémon sprite animations
 
 Tutorials to Follow:
+    Splash a Pokédex Entry from an Overworld Event (Generation I)
     Running Shoes
     Correct grammar for plural trainers like Twins
     Automatically reuse Repel
@@ -129,14 +178,13 @@ Tutorials to Follow:
     Puddles that splash when you walk
     Inverse Battles
     Grant Grass-type Pokémon immunity to Powder/Spore-based moves
+    Improving the Swarm System
+    Improve the event initialization system
 
 Stuff to do if i feel like it:
-    Improve the event initialization system
     Improve the trainer rematch system
     Remove the artificial save delay
-    Improving the Swarm System
     Create Battle Palettes for Different Times of Day and Environments
-    Remove Pokémon sprite animations
     Remove the 25% failure chance for AI status moves
     Reduce the command queue system to just stone tables
     Expand the Town Map tileset (Alternate)
@@ -159,9 +207,37 @@ Other tutorials (may or may not do):
     Add spinner tiles from Generation I Rocket Hideout
     Allow tall grass in forests
     Trashcan puzzle in Vermilion Gym
-    Splash a Pokédex Entry from an Overworld Event (Generation I)
 
     Customizable Pokédex Color
     Wall-to-wall carpeting in your room
     Replace Menu Account with a small clock in the corner of the screen
     Fight a copy of your own party in the Trainer House
+
+Bugs and Glitches, Design Flaws that can't be fixed?
+	Because of newbox?:
+	CheckOwnMon only checks the first five letters of OT names
+    CheckOwnMonAnywhere does not check the Day-Care
+    ChooseWildEncounter doesn't really validate the wild Pokémon species
+	
+	Because not possible?:
+	Saves corrupted by mid-save shutoff are not handled
+
+	Because of 253 pokemon?:
+	Pokédex entry banks are derived from their species IDs - breaks Pokedex
+	
+	faceplayer
+	opentext
+	writetext FreePokemans
+	pokenamemem FROGADIER, MEM_BUFFER_0
+	givepoke FROGADIER, 30
+	verbosegiveitem HM_CUT
+	verbosegiveitem HM_STRENGTH
+	verbosegiveitem EXP_SHARE
+	setflag ENGINE_POKEDEX
+	setflag ENGINE_MAP_CARD
+	closetext
+	end
+	
+FreePokemans:
+	text "take this i guess"
+	done

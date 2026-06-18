@@ -87,7 +87,7 @@ SkyTrainerYvetteBeatenText:
 	done
 	
 TrainerBrainsBrawnFrankandsly1:
-	trainer BRAINS_BRAWN, FRANKANDSLY1, EVENT_BEAT_BRAINS_BRAWN_FRANK_AND_SLY, BrainsBrawnFrankandslySeenText, BrainsBrawnFrankandslyBeatenText, 0, .Script
+	trainer BRAINS_BRAWN, FRANKANDSLY1, EVENT_BEAT_BRAINS_BRAWN_FRANK_SLY, BrainsBrawnFrankandslySeenText, BrainsBrawnFrankandslyBeatenText, 0, .Script
 	
 .Script:
 	endifjustbattled
@@ -98,7 +98,7 @@ TrainerBrainsBrawnFrankandsly1:
 	end
 
 TrainerBrainsBrawnFrankandsly2:
-	trainer BRAINS_BRAWN, FRANKANDSLY2, EVENT_BEAT_BRAINS_BRAWN_FRANK_AND_SLY, BrainsBrawnFrankandslySeenText, BrainsBrawnFrankandslyBeatenText, 0, .Script
+	trainer BRAINS_BRAWN, FRANKANDSLY2, EVENT_BEAT_BRAINS_BRAWN_FRANK_SLY, BrainsBrawnFrankandslySeenText, BrainsBrawnFrankandslyBeatenText, 0, .Script
 
 .Script:
 	endifjustbattled
@@ -275,7 +275,7 @@ Route11_MapEvents:
 	db 0, 0 ; filler
 	
 	def_warp_events
-	; warp_event 22,  5, REFLECTION_CAVE, 1
+	warp_event 22,  5, REFLECTION_CAVE_1F, 1
 	
 	def_coord_events
 	

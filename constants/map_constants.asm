@@ -60,7 +60,10 @@ ENDM
 	map_const CONNECTING_CAVE,							   25, 15 ;  2
 	map_const GLITTERING_CAVE_ENTRANCE,					   12, 30 ;  3
 	map_const GLITTERING_CAVE_DEEP,						   15, 14 ;  4
-	; map_const REFLECTION_CAVE,
+	map_const REFLECTION_CAVE_1F,						   23, 24 ;  5
+	map_const REFLECTION_CAVE_B1F,						   22, 23 ;  6
+	map_const REFLECTION_CAVE_B2F,						   14, 13 ;  7
+	map_const REFLECTION_CAVE_TM_ROOM,						7,  9 ;  8
 	endgroup
 	
 	newgroup SANTALUNE											  ;  4

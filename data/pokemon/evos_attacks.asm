@@ -3508,6 +3508,7 @@ DiancieEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, HARDEN
+	db 1, MOONBLAST
 	db 5, ROCK_THROW
 	db 8, SHARPEN
 	db 15, REFLECT

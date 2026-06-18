@@ -360,6 +360,10 @@ ENDM
 	map_attributes GeosengeHouse2, GEOSENGE_HOUSE_2, $00, 0
 	map_attributes HotelMarineSnow1F, HOTEL_MARINE_SNOW_1F, $00, 0
 	map_attributes HotelMarineSnow2F, HOTEL_MARINE_SNOW_2F, $00, 0
+	map_attributes ReflectionCave1F, REFLECTION_CAVE_1F, $09, 0
+	map_attributes ReflectionCaveB1F, REFLECTION_CAVE_B1F, $09, 0
+	map_attributes ReflectionCaveB2F, REFLECTION_CAVE_B2F, $09, 0
+	map_attributes ReflectionCaveTmRoom, REFLECTION_CAVE_TM_ROOM, $09, 0
 	; map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
 	; connection west, Route29, ROUTE_29, 0
 	; connection east, Route27, ROUTE_27, 0

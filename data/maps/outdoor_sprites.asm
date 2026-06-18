@@ -44,6 +44,7 @@ AquacordeGroupSprites:
 	
 DungeonsGroupSprites:
 ; Santalune Forest
+; Santalune Forest, Connecting Cave, Glittering Cave, Reflection Cave
 	db SPRITE_YOUNGSTER
 	db SPRITE_LASS
 	; 2 of max 9 walking sprites
