@@ -267,7 +267,12 @@ ENDM
 	map_attributes Route11, ROUTE_11, $05, WEST
 	connection west, GeosengeTown, GEOSENGE_TOWN, -8
 	
-	map_attributes ShalourCity, SHALOUR_CITY, $00, 0
+	map_attributes ShalourCity, SHALOUR_CITY, $07, 0 ; NORTH
+	; connection north, TowerOfMasteryOutside, TOWER_OF_MASTERY_OUTISDE, 0
+	
+	; map_attributes TowerOfMasteryOutside, TOWER_OF_MASTERY_OUTISDE, $35, SOUTH
+	; connection south, ShalourCity, SHALOUR_CITY, 0
+	
 	map_attributes CoumarineCity, COUMARINE_CITY, $00, 0
 	map_attributes LaverreCity, LAVERRE_CITY, $00, 0
 	map_attributes DendemilleTown, DENDEMILLE_TOWN, $00, 0
@@ -364,6 +369,18 @@ ENDM
 	map_attributes ReflectionCaveB1F, REFLECTION_CAVE_B1F, $09, 0
 	map_attributes ReflectionCaveB2F, REFLECTION_CAVE_B2F, $09, 0
 	map_attributes ReflectionCaveTmRoom, REFLECTION_CAVE_TM_ROOM, $09, 0
+	map_attributes ShalourPokecenter1F, SHALOUR_POKECENTER_1F, $00, 0
+	map_attributes ShalourMart, SHALOUR_MART, $00, 0
+	map_attributes ShalourHouse1, SHALOUR_HOUSE_1, $00, 0
+	map_attributes ShalourHouse2, SHALOUR_HOUSE_2, $00, 0
+	map_attributes ShalourHouse3, SHALOUR_HOUSE_3, $00, 0
+	map_attributes ShalourHouse4, SHALOUR_HOUSE_4, $00, 0
+	map_attributes ShalourHouse5, SHALOUR_HOUSE_5, $00, 0
+	; map_attributes ShalourGym, SHALOUR_GYM, $00, 0
+	; map_attributes TowerOfMastery1F, TOWER_OF_MASTERY_1F, $00, 0
+	; map_attributes TowerOfMasteryTop, TOWER_OF_MASTERY_TOP, $00, 0
+	
+	
 	; map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
 	; connection west, Route29, ROUTE_29, 0
 	; connection east, Route27, ROUTE_27, 0

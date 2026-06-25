@@ -57,6 +57,7 @@ DEF NUM_MAP_PALETTES EQU const_value
 	const FISHGROUP_AQUACORDE
 	const FISHGROUP_CAMPHRIER
 	const FISHGROUP_AMBRETTE
+	const FISHGROUP_SHALOUR
 DEF NUM_FISHGROUPS EQU const_value - 1
 
 ; connection directions (see data/maps/data.asm)

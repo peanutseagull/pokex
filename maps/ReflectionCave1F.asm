@@ -196,7 +196,7 @@ ReflectionCave1F_MapEvents:
 	warp_event  5, 27, ROUTE_11, 1
 	warp_event 39, 39, REFLECTION_CAVE_B1F, 1
 	warp_event 43, 13, REFLECTION_CAVE_B1F, 2
-	; warp_event 39, 11, SHALOUR_CITY, 1
+	warp_event 39, 11, SHALOUR_CITY, 1
 	
 	def_coord_events
 	

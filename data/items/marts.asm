@@ -15,6 +15,7 @@ Marts:
 	dw MartStoneEmporium
 	dw MartHerboriste
 	dw MartCyllageBalls
+	dw MartShalourTms
 	; dw MartAzalea
 	; dw MartCianwood
 	; dw MartGoldenrod2F1
@@ -183,8 +184,14 @@ MartCyllageBalls:
 	db DUSK_BALL
 	db -1 ; end
 	
-
-	
+MartShalourTms:
+	db 4 ; # items 5
+	db TM_DIG
+	; db TM_POISON_JAB
+	db TM_ENDURE ; SAFEGUARD
+	db TM_ZAP_CANNON ; HAIL
+	db TM_SANDSTORM
+	db -1 ; end
 	
 ; MartAzalea:
 	; db 9 ; # items

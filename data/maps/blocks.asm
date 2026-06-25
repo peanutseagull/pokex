@@ -47,6 +47,11 @@ CyllageHouse4_Blocks:
 CyllageSurfHouse_Blocks:
 GeosengeHouse1_Blocks:
 GeosengeHouse2_Blocks:
+ShalourHouse1_Blocks:
+ShalourHouse2_Blocks:
+ShalourHouse3_Blocks:
+ShalourHouse4_Blocks:
+ShalourHouse5_Blocks:
 	INCBIN "maps/House1.blk"
 	
 SantaluneBoutique_Blocks:
@@ -311,6 +316,18 @@ GeosengeTown_Blocks:
 ShalourCity_Blocks:
 	INCBIN "maps/ShalourCity.blk"
 	
+; ShalourGym_Blocks:
+	; INCBIN "maps/ShalourGym.blk"
+
+; TowerOfMasteryOutside_Blocks:
+	; INCBIN "maps/TowerOfMasteryOutside.blk"
+
+; TowerOfMastery1F_Blocks:
+	; INCBIN "maps/TowerOfMastery1F.blk"
+
+; TowerOfMasteryTop_Blocks:
+	; INCBIN "maps/TowerOfMasteryTop.blk"
+
 CoumarineCity_Blocks:
 	INCBIN "maps/CoumarineCity.blk"
 	
@@ -342,6 +359,7 @@ CamphrierMart_Blocks:
 AmbretteMart_Blocks:
 CyllageMart_Blocks:
 GeosengeMart_Blocks:
+ShalourMart_Blocks:
 	INCBIN "maps/Mart.blk"
 
 AquacordePokecenter1F_Blocks:
@@ -351,6 +369,7 @@ CamphrierPokecenter1F_Blocks:
 AmbrettePokecenter1F_Blocks:
 CyllagePokecenter1F_Blocks:
 GeosengePokecenter1F_Blocks:
+ShalourPokecenter1F_Blocks:
 	INCBIN "maps/Pokecenter1F.blk"
 
 ; GoldenrodDeptStore1F_Blocks:

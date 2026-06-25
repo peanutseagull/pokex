@@ -222,15 +222,18 @@ ENDM
 	endgroup
 	
 	newgroup SHALOUR											  ; 13
-	map_const SHALOUR_CITY, 							    1,  1 ;  1
-	; map_const SHALOUR_POKECENTER_1F,
-	; map_const SHALOUR_MART,
-	; map_const SHALOUR_HOUSE_1,
-	; map_const SHALOUR_HOUSE_2,
-	; map_const SHALOUR_HOUSE_3,
-	; map_const SHALOUR_GYM,
-	; map_const TOWER_OF_MASTERY_1F
-	; map_const TOWER_OF_MASTERY_TOP
+	map_const SHALOUR_CITY, 							   31, 20 ;  1
+	map_const SHALOUR_POKECENTER_1F,						5,  4 ;  2
+	map_const SHALOUR_MART,									6,  4 ;  3
+	map_const SHALOUR_HOUSE_1,								4,  4 ;  4
+	map_const SHALOUR_HOUSE_2,								4,  4 ;  5
+	map_const SHALOUR_HOUSE_3,								4,  4 ;  6
+	map_const SHALOUR_HOUSE_4,								4,  4 ;  7
+	map_const SHALOUR_HOUSE_5,								4,  4 ;  8
+	; map_const SHALOUR_GYM,								1,  1
+	; map_const TOWER_OF_MASTERY_OUTSIDE,					1,  1
+	; map_const TOWER_OF_MASTERY_1F,						1,  1
+	; map_const TOWER_OF_MASTERY_TOP,						1,  1
 	endgroup
 	
 	newgroup COUMARINE											  ; 14

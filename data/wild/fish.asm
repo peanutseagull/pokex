@@ -25,6 +25,7 @@ FishGroups:
 	fishgroup 50 percent + 1, .Aquacorde_Old,		 .Aquacorde_Good,		 .Aquacorde_Super
 	fishgroup 50 percent + 1, .Camphrier_Old,		 .Camphrier_Good,		 .Camphrier_Super
 	fishgroup 50 percent + 1, .Ambrette_Old,		 .Ambrette_Good,		 .Ambrette_Super
+	fishgroup 50 percent + 1, .Shalour_Old,			 .Shalour_Good,			 .Shalour_Super
 	assert_table_length NUM_FISHGROUPS
 
 ; .Shore_Old:
@@ -242,6 +243,18 @@ FishGroups:
 	db  90 percent,		CLAWITZER,	35
 	db 100 percent,		SEADRA,		35
 	
+.Shalour_Old:
+	db 100 percent,		MAGIKARP,	15
+	
+.Shalour_Good:
+	db  35 percent,		CHINCHOU,	25
+	db 100 percent,		REMORAID,	25
+	
+.Shalour_Super:
+	db   5 percent,		LANTURN,	35
+	db  40 percent,		OCTILLERY,	35
+	db 100 percent,		time_group 0
+	
 TimeFishGroups:
 	;  day              nite
-	db CORSOLA,    20,  STARYU,     20 ; 0
+	db CORSOLA,    20,  STARYU,     35 ; 0

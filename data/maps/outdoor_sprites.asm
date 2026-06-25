@@ -43,11 +43,17 @@ AquacordeGroupSprites:
 	db 0
 	
 DungeonsGroupSprites:
-; Santalune Forest
 ; Santalune Forest, Connecting Cave, Glittering Cave, Reflection Cave
 	db SPRITE_YOUNGSTER
 	db SPRITE_LASS
-	; 2 of max 9 walking sprites
+	; db SPRITE_BEAUTY
+	; db SPRITE_COOLTRAINER_M
+	; db SPRITE_COOLTRAINER_F
+	; db SPRITE_FISHER
+	; db SPRITE_BLACK_BELT
+	; db SPRITE_SCIENTIST
+	; db SPRITE_TEACHER
+	; 9 of max 9 walking sprites
 	db SPRITE_FRUIT_TREE
 	db SPRITE_BOULDER
 	db SPRITE_POKE_BALL
@@ -167,13 +173,14 @@ GeosengeGroupSprites:
 	db 0
 	
 ShalourGroupSprites:
-	db SPRITE_SUPER_NERD
-	db SPRITE_FISHER
-	db SPRITE_YOUNGSTER
+; Shalour City, Tower of Mastery
 	db SPRITE_ROCKER
-	db SPRITE_BEAUTY
+	db SPRITE_LASS
+	db SPRITE_FISHER
+	db SPRITE_COOLTRAINER_M
+	db SPRITE_SUPER_NERD
 	; 5 of max 9 walking sprites
-	db SPRITE_TWIN
+	db SPRITE_GYM_GUIDE
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db 0

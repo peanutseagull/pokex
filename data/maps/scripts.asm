@@ -400,6 +400,19 @@ INCLUDE "maps/Route11.asm"
 SECTION "Map Scripts 15", ROMX
 
 INCLUDE "maps/ShalourCity.asm"
+INCLUDE "maps/ShalourPokecenter1F.asm"
+INCLUDE "maps/ShalourMart.asm"
+INCLUDE "maps/ShalourHouse1.asm"
+INCLUDE "maps/ShalourHouse2.asm"
+INCLUDE "maps/ShalourHouse3.asm"
+INCLUDE "maps/ShalourHouse4.asm"
+INCLUDE "maps/ShalourHouse5.asm"
+; INCLUDE "maps/ShalourGym.asm"
+; INCLUDE "maps/TowerOfMasteryOutside.asm"
+; INCLUDE "maps/TowerOfMastery1F.asm"
+; INCLUDE "maps/TowerOfMasteryTop.asm"
+
+
 ; INCLUDE "maps/CeruleanGymBadgeSpeechHouse.asm"
 ; INCLUDE "maps/CeruleanPoliceStation.asm"
 ; INCLUDE "maps/CeruleanTradeSpeechHouse.asm"
