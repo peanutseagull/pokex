@@ -27,7 +27,7 @@ HotelMarineSnow2FMrBondingScript:
 	waitbutton
 	closetext
 	setevent EVENT_MR_BONDING_GEOSENGE
-	disappear HOTELCYLLAGE2F_MRBONDING
+	disappear HOTELMARINESNOW2F_MRBONDING
 	reloadmap
 	end
 
