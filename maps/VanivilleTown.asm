@@ -12,6 +12,11 @@ VanivilleTown_MapScripts:
 	scene_script VanivilleTownNoop3Scene, SCENE_VANIVILLETOWN_NOOP
 	
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, .Flypoint
+
+.Flypoint:
+	setflag ENGINE_FLYPOINT_VANIVILLE
+	return
 
 VanivilleTownNoop1Scene:
 	end
@@ -221,7 +226,7 @@ VanivilleTown_RivalsScene:
 
 .MenuHeader:
 	db MENU_BACKUP_TILES ; flags
-	menu_coords 0, 2, 17, TEXTBOX_Y - 2
+	menu_coords 9, 0, 19, 7
 	dw .MenuData
 	db 1 ; default option
 

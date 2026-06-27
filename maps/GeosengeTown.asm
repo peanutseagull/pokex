@@ -17,6 +17,11 @@ GeosengeTown_MapScripts:
 	scene_script GeosengeTownNoop4Scene, SCENE_GEOSENGETOWN_KORRINA
 	
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, .Flypoint
+
+.Flypoint:
+	setflag ENGINE_FLYPOINT_GEOSENGE
+	return
 	
 GeosengeTownNoop1Scene:
 	end

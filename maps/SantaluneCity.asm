@@ -8,6 +8,11 @@ SantaluneCity_MapScripts:
 	scene_script SantaluneCityNoop3Scene, SCENE_SANTALUNECITY_NOOP
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, .Flypoint
+
+.Flypoint:
+	setflag ENGINE_FLYPOINT_SANTALUNE
+	return
 	
 SantaluneCityNoop1Scene:
 	end

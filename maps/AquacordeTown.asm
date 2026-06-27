@@ -6,6 +6,11 @@ AquacordeTown_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, .Flypoint
+
+.Flypoint:
+	setflag ENGINE_FLYPOINT_AQUACORDE
+	return
 
 AquacordeTownFisherScript:
 	faceplayer

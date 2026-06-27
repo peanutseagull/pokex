@@ -5,6 +5,11 @@ LumioseSoutheast_MapScripts:
 	
 	def_callbacks
 	callback MAPCALLBACK_TILES, LumioseSoutheastBlackoutCallback
+	callback MAPCALLBACK_NEWMAP, .Flypoint
+
+.Flypoint:
+	setflag ENGINE_FLYPOINT_LUMIOSE
+	return
 
 LumioseSoutheastBlackoutCallback:
 	checkevent EVENT_BLACKOUT_OVER_2

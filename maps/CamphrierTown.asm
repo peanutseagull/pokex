@@ -12,6 +12,11 @@ CamphrierTown_MapScripts:
 	scene_script CamphrierTownNoop2Scene, SCENE_CAMPHRIERTOWN_NOOP
 	
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, .Flypoint
+
+.Flypoint:
+	setflag ENGINE_FLYPOINT_CAMPHRIER
+	return
 	
 CamphrierTownNoop1Scene:
 	end

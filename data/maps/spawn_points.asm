@@ -28,11 +28,13 @@ SpawnPoints:
 	spawn AQUACORDE_TOWN,			  15, 30
 	spawn SANTALUNE_CITY,			  23, 28
 	spawn LUMIOSE_SOUTHEAST,		   1, 14
+	; spawn LUMIOSE_NORTHEAST
+	; spawn CENTRICO_PLAZA
 	spawn CAMPHRIER_TOWN,			  21, 24
-	; spawn CYLLAGE_CITY,
 	spawn AMBRETTE_TOWN,			  19,  6
-	; spawn GEOSENGE_TOWN,
-	; spawn SHALOUR_CITY,
+	spawn CYLLAGE_CITY,				  27, 28
+	spawn GEOSENGE_TOWN,			  15, 36
+	spawn SHALOUR_CITY,				  37, 22
 	; spawn COUMARINE_CITY,
 	; spawn LAVERRE_CITY,
 	; spawn DENDEMILLE_TOWN,

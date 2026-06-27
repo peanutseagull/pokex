@@ -90,12 +90,14 @@ EngineFlags:
 	engine_flag wVisitedSpawns, SPAWN_VANIVILLE
 	engine_flag wVisitedSpawns, SPAWN_AQUACORDE
 	engine_flag wVisitedSpawns, SPAWN_SANTALUNE
-	engine_flag wVisitedSpawns, SPAWN_LUMIOSE
+	engine_flag wVisitedSpawns, SPAWN_LUMIOSE ; SOUTH
+	; engine_flag wVisitedSpawns, SPAWN_LUMIOSE_NORTH
+	; engine_flag wVisitedSpawns, SPAWN_LUMIOSE_CENTRICO
 	engine_flag wVisitedSpawns, SPAWN_CAMPHRIER
-	; engine_flag wVisitedSpawns, SPAWN_CYLLAGE
 	engine_flag wVisitedSpawns, SPAWN_AMBRETTE
-	; engine_flag wVisitedSpawns, SPAWN_GEOSENGE
-	; engine_flag wVisitedSpawns, SPAWN_SHALOUR
+	engine_flag wVisitedSpawns, SPAWN_CYLLAGE
+	engine_flag wVisitedSpawns, SPAWN_GEOSENGE
+	engine_flag wVisitedSpawns, SPAWN_SHALOUR
 	; engine_flag wVisitedSpawns, SPAWN_COUMARINE
 	; engine_flag wVisitedSpawns, SPAWN_LAVERRE
 	; engine_flag wVisitedSpawns, SPAWN_DENDEMILLE

@@ -10,6 +10,11 @@ CyllageCity_MapScripts:
 	scene_script CyllageCityNoop2Scene, SCENE_CYLLAGECITY_NOOP
 	
 	def_callbacks
+	callback MAPCALLBACK_NEWMAP, .Flypoint
+
+.Flypoint:
+	setflag ENGINE_FLYPOINT_CYLLAGE
+	return
 	
 CyllageCityNoop1Scene:
 	end
