@@ -49,4 +49,5 @@ MapScenes::
 	scene_var ROUTE_10,								       wRoute10SceneID
 	scene_var GEOSENGE_TOWN,							   wGeosengeTownSceneID
 	scene_var REFLECTION_CAVE_B1F,						   wReflectionCaveB1FSceneID
+	scene_var TOWER_OF_MASTERY_OUTSIDE,					   wTowerOfMasteryOutsideSceneID
 	db -1 ; end

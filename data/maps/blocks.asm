@@ -319,8 +319,8 @@ ShalourCity_Blocks:
 ; ShalourGym_Blocks:
 	; INCBIN "maps/ShalourGym.blk"
 
-; TowerOfMasteryOutside_Blocks:
-	; INCBIN "maps/TowerOfMasteryOutside.blk"
+TowerOfMasteryOutside_Blocks:
+	INCBIN "maps/TowerOfMasteryOutside.blk"
 
 ; TowerOfMastery1F_Blocks:
 	; INCBIN "maps/TowerOfMastery1F.blk"

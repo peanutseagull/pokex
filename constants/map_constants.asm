@@ -231,9 +231,9 @@ ENDM
 	map_const SHALOUR_HOUSE_4,								4,  4 ;  7
 	map_const SHALOUR_HOUSE_5,								4,  4 ;  8
 	; map_const SHALOUR_GYM,								1,  1
-	; map_const TOWER_OF_MASTERY_OUTSIDE,					1,  1
 	; map_const TOWER_OF_MASTERY_1F,						1,  1
 	; map_const TOWER_OF_MASTERY_TOP,						1,  1
+	map_const TOWER_OF_MASTERY_OUTSIDE,					   13, 15
 	endgroup
 	
 	newgroup COUMARINE											  ; 14

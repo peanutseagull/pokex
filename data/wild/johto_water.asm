@@ -67,4 +67,12 @@ JohtoWaterWildMons:
 	db  16, MANTINE,	 27,  27
 	end_water_wildmons
 	
+	def_water_wildmons TOWER_OF_MASTERY_OUTSIDE
+	db 2 percent
+	; %, species,		min, max
+	db  50, TENTACOOL,	 25,  25  
+	db  34, TENTACOOL,	 26,  27
+	db  16, MANTINE,	 27,  27
+	end_water_wildmons
+	
 	db -1 ; end

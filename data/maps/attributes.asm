@@ -267,11 +267,13 @@ ENDM
 	map_attributes Route11, ROUTE_11, $05, WEST
 	connection west, GeosengeTown, GEOSENGE_TOWN, -8
 	
-	map_attributes ShalourCity, SHALOUR_CITY, $07, 0 ; NORTH
-	; connection north, TowerOfMasteryOutside, TOWER_OF_MASTERY_OUTISDE, 0
+	map_attributes ShalourCity, SHALOUR_CITY, $07, NORTH
+	connection north, TowerOfMasteryOutside, TOWER_OF_MASTERY_OUTSIDE, 7
 	
-	; map_attributes TowerOfMasteryOutside, TOWER_OF_MASTERY_OUTISDE, $35, SOUTH
-	; connection south, ShalourCity, SHALOUR_CITY, 0
+	map_attributes TowerOfMasteryOutside, TOWER_OF_MASTERY_OUTSIDE, $35, SOUTH
+	connection south, ShalourCity, SHALOUR_CITY, -7
+	
+	map_attributes Route12, ROUTE_12, $07, 0
 	
 	map_attributes CoumarineCity, COUMARINE_CITY, $00, 0
 	map_attributes LaverreCity, LAVERRE_CITY, $00, 0

@@ -3135,8 +3135,10 @@ wCyllageCitySceneID::							  db
 wRoute10SceneID::								  db
 wGeosengeTownSceneID::							  db
 wReflectionCaveB1FSceneID::						  db
+wTowerOfMasteryOutsideSceneID::					  db
+wGurusRoomSceneID::								  db
 
-	ds 87
+	ds 85
 
 ; fight counts
 wJackFightCount::    db

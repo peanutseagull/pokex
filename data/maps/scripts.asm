@@ -408,9 +408,9 @@ INCLUDE "maps/ShalourHouse3.asm"
 INCLUDE "maps/ShalourHouse4.asm"
 INCLUDE "maps/ShalourHouse5.asm"
 ; INCLUDE "maps/ShalourGym.asm"
-; INCLUDE "maps/TowerOfMasteryOutside.asm"
 ; INCLUDE "maps/TowerOfMastery1F.asm"
 ; INCLUDE "maps/TowerOfMasteryTop.asm"
+INCLUDE "maps/TowerOfMasteryOutside.asm"
 
 
 ; INCLUDE "maps/CeruleanGymBadgeSpeechHouse.asm"
